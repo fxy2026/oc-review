@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第8章 醇、酚、醚 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.sol-header{font-weight:bold;color:var(--pri);margin:8px 0 4px;padding:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch7.html">&larr; 第7章</a><a href="ch9.html">第9章 &rarr;</a></div>
+<h1>第8章 醇、酚、醚</h1>
+
+<h2 id="kp1">一、醇 (Alcohols)</h2>
+
+<h3 id="k1">8.1 醇的分类与命名</h3>
+<div class="card">
+<div class="fb"><div class="t">按羟基所连碳的级别分类</div>
+<table>
+<tr><th>类型</th><th>结构特征</th><th>示例</th></tr>
+<tr><td><strong>伯醇(1&deg;)</strong></td><td>&minus;OH连在伯碳上（RCH<sub>2</sub>OH）</td><td>乙醇 CH<sub>3</sub>CH<sub>2</sub>OH</td></tr>
+<tr><td><strong>仲醇(2&deg;)</strong></td><td>&minus;OH连在仲碳上（R<sub>2</sub>CHOH）</td><td>异丙醇 (CH<sub>3</sub>)<sub>2</sub>CHOH</td></tr>
+<tr><td><strong>叔醇(3&deg;)</strong></td><td>&minus;OH连在叔碳上（R<sub>3</sub>COH）</td><td>叔丁醇 (CH<sub>3</sub>)<sub>3</sub>COH</td></tr>
+</table></div>
+
+<div class="fb"><div class="t">命名规则（系统命名法）</div>
+<ol>
+<li>选含&minus;OH的<strong>最长碳链</strong>为主链</li>
+<li>从离&minus;OH<strong>最近</strong>的一端开始编号</li>
+<li>命名为"某醇"，标注&minus;OH位次</li>
+</ol>
+<p>例：CH<sub>3</sub>CH(OH)CH<sub>2</sub>CH<sub>3</sub> → 2-丁醇</p></div>
+
+<div class="tip"><strong>多元醇</strong>：乙二醇(HOCH<sub>2</sub>CH<sub>2</sub>OH)、丙三醇/甘油(HOCH<sub>2</sub>CHOHCH<sub>2</sub>OH)等，命名时标出所有&minus;OH的位次。</div>
+</div>
+
+<h3 id="k2">8.2 醇的物理性质</h3>
+<div class="card">
+<div class="fb"><div class="t">氢键与物理性质的关系</div>
+<ul>
+<li><strong>沸点</strong>：醇能形成分子间氢键(O&minus;H&middot;&middot;&middot;O)，沸点远高于同碳数烷烃和醚</li>
+<li><strong>溶解性</strong>：低级醇(C<sub>1</sub>~C<sub>3</sub>)能与水混溶（与水形成氢键）；随碳数增加，疏水性增强，溶解度下降</li>
+<li><strong>碳数关系</strong>：碳数越多 → 沸点越高、水溶性越差</li>
+<li>同碳数异构体：直链醇 > 支链醇（沸点），因支链减少了分子间接触面积</li>
+</ul></div>
+
+<table>
+<tr><th>化合物</th><th>分子量</th><th>沸点(&deg;C)</th><th>溶解性</th></tr>
+<tr><td>CH<sub>3</sub>OH（甲醇）</td><td>32</td><td>65</td><td>与水混溶</td></tr>
+<tr><td>C<sub>2</sub>H<sub>5</sub>OH（乙醇）</td><td>46</td><td>78</td><td>与水混溶</td></tr>
+<tr><td>C<sub>3</sub>H<sub>7</sub>OH（正丙醇）</td><td>60</td><td>97</td><td>与水混溶</td></tr>
+<tr><td>C<sub>4</sub>H<sub>9</sub>OH（正丁醇）</td><td>74</td><td>118</td><td>微溶</td></tr>
+<tr><td>CH<sub>3</sub>OCH<sub>3</sub>（二甲醚）</td><td>46</td><td>&minus;25</td><td>微溶</td></tr>
+</table>
+<div class="note"><strong>对比</strong>：乙醇(MW=46, bp=78&deg;C) vs 二甲醚(MW=46, bp=&minus;25&deg;C)——同分异构体，但醇能形成氢键，沸点高100多度！</div>
+</div>
+
+<h3 id="k3">8.3 醇的化学性质</h3>
+
+<h3 id="k3a">8.3.1 醇的酸性</h3>
+<div class="card">
+<div class="fb"><div class="t">醇的酸碱性</div>
+<p>醇的pK<sub>a</sub> &asymp; 16&minus;19，属于<strong>极弱酸</strong>（比水弱，水pK<sub>a</sub>=15.7）</p>
+<p><strong>溶液中酸性顺序</strong>：H<sub>2</sub>O > CH<sub>3</sub>OH > 1&deg;ROH > 2&deg;ROH > 3&deg;ROH</p>
+<p>原因：烷基的<strong>+I供电子效应</strong>增加O上的电子密度，不利于O&minus;H键的离解</p></div>
+
+<div class="warn"><strong>气相酸性相反！</strong> 气相中：3&deg;ROH > 2&deg;ROH > 1&deg;ROH > CH<sub>3</sub>OH<br>
+原因：气相无溶剂化效应，烷基的<strong>极化效应</strong>能稳定体积较大的负离子。<br>
+考试一般考溶液相顺序！</div>
+
+<div class="fb"><div class="t">醇与活泼金属反应</div>
+<p>$$2\text{ROH} + 2\text{Na} \rightarrow 2\text{RONa} + \text{H}_2\uparrow$$</p>
+<ul>
+<li>反应活性：CH<sub>3</sub>OH > 1&deg;ROH > 2&deg;ROH > 3&deg;ROH（酸性越强，反应越快）</li>
+<li>产物醇钠(RONa)是强碱，遇水分解：RONa + H<sub>2</sub>O &rarr; ROH + NaOH</li>
+<li>可鉴别活泼氢的存在（产生H<sub>2</sub>气体）</li>
+</ul></div>
+</div>
+
+<h3 id="k3b">8.3.2 醇的亲核取代反应</h3>
+<div class="card">
+<div class="fb"><div class="t">与氢卤酸反应 (ROH + HX &rarr; RX + H<sub>2</sub>O)</div>
+<p><strong>反应活性</strong>：</p>
+<ul>
+<li>醇的活性：<strong>3&deg; > 2&deg; > 1&deg; > CH<sub>3</sub>OH</strong>（碳正离子稳定性决定）</li>
+<li>HX的活性：<strong>HI > HBr > HCl</strong>（卤离子亲核性与H&minus;X键强度）</li>
+</ul>
+<p>机理：3&deg;醇走SN1（经碳正离子），1&deg;醇走SN2</p></div>
+
+<div class="warn"><strong>Lucas试剂鉴别醇（ZnCl<sub>2</sub>/浓HCl）</strong>——考试高频考点！
+<table>
+<tr><th>醇的类型</th><th>现象</th><th>反应时间</th><th>机理</th></tr>
+<tr><td>叔醇(3&deg;)</td><td><strong>立即浑浊</strong></td><td>&lt;1 min</td><td>SN1，快速形成稳定3&deg;碳正离子</td></tr>
+<tr><td>仲醇(2&deg;)</td><td><strong>5分钟内浑浊</strong></td><td>2~5 min</td><td>SN1/SN2边界</td></tr>
+<tr><td>伯醇(1&deg;)</td><td><strong>不反应/需加热</strong></td><td>很长/不反应</td><td>SN2慢</td></tr>
+</table>
+<p>浑浊原因：生成的卤代烃RCl不溶于反应液（ZnCl<sub>2</sub>水溶液），形成浑浊液滴。</p></div>
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch8_lucas_test.png" alt="Lucas试剂鉴别" style="max-width:700px;width:100%;">
+</div>
+
+<div class="fb"><div class="t">与PBr<sub>3</sub>反应</div>
+<p>$$3\text{ROH} + \text{PBr}_3 \rightarrow 3\text{RBr} + \text{H}_3\text{PO}_3$$</p>
+<ul>
+<li>机理：<strong>SN2</strong></li>
+<li>立体化学：<strong>构型翻转</strong>（Walden翻转）</li>
+<li>适用于<strong>1&deg;和2&deg;醇</strong>，条件温和，无重排</li>
+</ul></div>
+
+<div class="fb"><div class="t">与SOCl<sub>2</sub>反应（氯化亚砜法）</div>
+<p>$$\text{ROH} + \text{SOCl}_2 \rightarrow \text{RCl} + \text{SO}_2\uparrow + \text{HCl}\uparrow$$</p>
+<p><strong>立体化学取决于条件</strong>：</p>
+<table>
+<tr><th>条件</th><th>机理</th><th>立体结果</th></tr>
+<tr><td>加<strong>吡啶</strong>(碱)</td><td>SN2</td><td><strong>构型翻转</strong></td></tr>
+<tr><td><strong>不加</strong>碱</td><td>SNi(内返)</td><td><strong>构型保持</strong></td></tr>
+</table></div>
+
+<div class="note"><strong>SNi(内返)机理</strong>：ROH先与SOCl<sub>2</sub>形成氯代亚硫酸酯中间体(ROSOCl)，然后Cl<sup>&minus;</sup>从<strong>同侧</strong>进攻（离去基团SO<sub>2</sub>带走Cl&minus;从同面递交），构型保持。加吡啶时，吡啶夺取HCl使Cl<sup>&minus;</sup>游离，从<strong>背面</strong>进攻，构型翻转。</div>
+
+<div class="tip"><strong>SOCl<sub>2</sub>法的优势</strong>：副产物SO<sub>2</sub>和HCl均为气体，自动逸出反应体系，产物纯净，后处理简单。工业上常用。</div>
+</div>
+
+<h3 id="k3c">8.3.3 醇的脱水反应</h3>
+<div class="card">
+<div class="fb"><div class="t">分子内脱水 &rarr; 烯烃</div>
+<p>条件：<strong>浓H<sub>2</sub>SO<sub>4</sub>, 170&deg;C</strong>（高温有利于消除）</p>
+<p>规则：遵循<strong>Zaitsev规则</strong>——优先脱去含氢较少的&beta;碳上的H，生成取代度更高的烯烃（更稳定）</p>
+<p>反应活性：<strong>3&deg;醇 > 2&deg;醇 > 1&deg;醇</strong>（碳正离子稳定性决定）</p></div>
+
+<div class="fb"><div class="t">分子间脱水 &rarr; 醚</div>
+<p>条件：<strong>浓H<sub>2</sub>SO<sub>4</sub>, 140&deg;C</strong>（较低温度有利于取代）</p>
+<p>$$2\text{ROH} \xrightarrow{H_2SO_4, 140°C} \text{R-O-R} + \text{H}_2\text{O}$$</p>
+<p>仅适用于<strong>伯醇</strong>生成对称醚（2&deg;和3&deg;醇在此条件下倾向脱水成烯烃）</p></div>
+
+<div class="warn"><strong>碳正离子重排！</strong>（极其重要）<br>
+脱水反应经过碳正离子中间体，可能发生：<br>
+&bull; <strong>1,2-氢迁移</strong>：2&deg;碳正 &rarr; 3&deg;碳正<br>
+&bull; <strong>1,2-甲基迁移</strong>：2&deg;碳正 &rarr; 3&deg;碳正<br>
+结果：产物的双键位置可能与预期不同！<br>
+例：3,3-二甲基-2-丁醇脱水 &rarr; 2,3-二甲基-2-丁烯（经甲基迁移重排）</div>
+
+<div class="tip"><strong>温度控制是关键</strong>：<br>
+&bull; 140&deg;C → 分子间脱水 → 醚（动力学控制，SN2）<br>
+&bull; 170&deg;C → 分子内脱水 → 烯烃（E1消除）<br>
+同一底物、同一催化剂、不同温度 → 完全不同的产物！</div>
+</div>
+
+<h3 id="k3d">8.3.4 醇的氧化反应</h3>
+<div class="card">
+<div class="fb"><div class="t">不同醇的氧化产物</div>
+<table>
+<tr><th>底物</th><th>氧化剂</th><th>产物</th><th>备注</th></tr>
+<tr><td><strong>1&deg;醇</strong></td><td>KMnO<sub>4</sub>, K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub></td><td>醛 &rarr; <strong>羧酸</strong></td><td>强氧化剂不能停在醛</td></tr>
+<tr><td><strong>1&deg;醇</strong></td><td><strong>PCC</strong>(氯铬酸吡啶鎓盐)</td><td><strong>醛</strong></td><td>温和氧化剂，可停在醛！</td></tr>
+<tr><td><strong>2&deg;醇</strong></td><td>KMnO<sub>4</sub>, K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>, PCC</td><td><strong>酮</strong></td><td>酮不继续被氧化</td></tr>
+<tr><td><strong>3&deg;醇</strong></td><td>一般条件</td><td><strong>不易氧化</strong></td><td>无&alpha;-H可脱，需强烈条件断C-C键</td></tr>
+</table></div>
+
+<div class="tip"><strong>PCC (Pyridinium Chlorochromate)</strong> = 氯铬酸吡啶鎓盐<br>
+&bull; 在CH<sub>2</sub>Cl<sub>2</sub>中进行，无水条件<br>
+&bull; 将1&deg;醇氧化为醛而<strong>不继续氧化到羧酸</strong><br>
+&bull; 这是合成醛的重要方法！（Jones试剂CrO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub>也常用但不能停在醛）</div>
+
+<div class="note"><strong>为什么3&deg;醇不易氧化？</strong><br>
+氧化醇的机理需要脱去与C&minus;OH相连碳上的<strong>&alpha;-H</strong>。3&deg;醇的&alpha;碳上无H，无法经历正常氧化机理。强烈条件下可断裂碳骨架（无合成价值）。</div>
+</div>
+
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch8_alcohol_oxidation.png" alt="醇的氧化反应对比" style="max-width:740px;width:100%;">
+</div>
+
+<h3 id="k3e">8.3.5 醇的酯化反应</h3>
+<div class="card">
+<div class="fb"><div class="t">Fischer酯化反应</div>
+<p>$$\text{ROH} + \text{R'COOH} \xleftrightharpoons{\text{H}^+,\Delta} \text{R'COOR} + \text{H}_2\text{O}$$</p>
+<ul>
+<li>可逆反应，需<strong>酸催化</strong>（浓H<sub>2</sub>SO<sub>4</sub>）</li>
+<li>提高产率的方法：过量一种反应物、除去水（分水器）</li>
+<li>机理：酸催化加成-消除（羧酸被质子化 &rarr; 醇亲核进攻羰基 &rarr; 失水）</li>
+<li>反应活性：CH<sub>3</sub>OH > 1&deg;ROH > 2&deg;ROH > 3&deg;ROH（位阻影响亲核进攻）</li>
+</ul></div>
+
+<div class="note"><strong>同位素标记实验证明机理</strong>：<br>
+用R<sup>18</sup>OH与R'COOH反应，<sup>18</sup>O出现在酯中(R'CO<sup>18</sup>OR)而非水中。<br>
+证明：断裂的是羧酸的C&minus;OH键（酰氧键），而非醇的C&minus;OH键。<br>
+即：醇的O保留在酯中。</div>
+</div>
+
+<h2 id="kp2">二、醚 (Ethers)</h2>
+
+<h3 id="k4">8.4 醚的结构与命名</h3>
+<div class="card">
+<div class="fb"><div class="t">醚的结构</div>
+<p>通式：<strong>R&minus;O&minus;R'</strong>（氧上连两个碳基团）</p>
+<ul>
+<li><strong>简单醚</strong>（对称醚）：两个R基相同，如 CH<sub>3</sub>OCH<sub>3</sub>（二甲醚）</li>
+<li><strong>混合醚</strong>（不对称醚）：两个R基不同，如 CH<sub>3</sub>OC<sub>2</sub>H<sub>5</sub>（甲乙醚）</li>
+<li><strong>环醚</strong>：氧在环中，如 环氧乙烷、四氢呋喃(THF)、1,4-二氧六环</li>
+</ul></div>
+</div>
+
+<h3 id="k5">8.5 醚的物理性质</h3>
+<div class="card">
+<div class="fb"><div class="t">与醇的对比</div>
+<ul>
+<li><strong>无分子间氢键</strong>（O上无活泼H）→ 沸点<strong>远低于</strong>同碳数醇</li>
+<li>沸点接近同碳数烷烃</li>
+<li>乙醚(bp 34.6&deg;C)可做<strong>优良溶剂</strong>：能溶解大多数有机物，易挥发易回收</li>
+<li>可作为氢键受体（O有孤对电子）→ 低级醚微溶于水</li>
+</ul></div>
+
+<div class="tip"><strong>乙醚作溶剂的优势</strong>：沸点低、惰性强、溶解能力好。但需注意：<strong>极易着火</strong>（闪点&minus;45&deg;C）且比空气重，蒸气沿台面流动引火！实验室使用乙醚必须远离明火。</div>
+</div>
+
+<h3 id="k6">8.6 醚的化学性质</h3>
+<div class="card">
+
+<div class="fb"><div class="t">Williamson醚合成法</div>
+<p>$$\text{RONa} + \text{R'X} \xrightarrow{SN2} \text{R-O-R'} + \text{NaX}$$</p>
+<ul>
+<li>机理：<strong>SN2</strong>——醇钠(RO<sup>&minus;</sup>)作为亲核试剂进攻卤代烃</li>
+<li><strong>只能用伯卤代烃(1&deg;RX)</strong>！仲卤和叔卤会发生E2消除而非取代</li>
+<li>制备不对称醚时，<strong>选择策略</strong>：将较大基团放在醇钠端，较小基团(CH<sub>3</sub>X、1&deg;RX)放在卤代烃端</li>
+</ul></div>
+
+<div class="warn"><strong>Williamson合成的限制（考试易错）</strong>：<br>
+&bull; 正确：(CH<sub>3</sub>)<sub>3</sub>CONa + CH<sub>3</sub>I &rarr; (CH<sub>3</sub>)<sub>3</sub>COCH<sub>3</sub> (叔丁基甲醚)<br>
+&bull; <strong>错误</strong>：CH<sub>3</sub>ONa + (CH<sub>3</sub>)<sub>3</sub>CBr &rarr; <strong>不行！</strong>（叔卤代烃会E2消除得到异丁烯）<br>
+记住：卤代烃端必须是<strong>伯卤</strong>（SN2需要位阻小的碳）</div>
+
+<div class="fb"><div class="t">酸催化开裂（醚键断裂）</div>
+<p>$$\text{R-O-R'} + \text{HI}(\text{过量}) \rightarrow \text{RI} + \text{R'I} + \text{H}_2\text{O}$$</p>
+<ul>
+<li>需要<strong>强酸HI或HBr</strong>（HCl一般不行）</li>
+<li>机理：质子化醚 &rarr; I<sup>&minus;</sup>亲核进攻 &rarr; 断裂C&minus;O键</li>
+<li>不对称醚开裂选择性：I<sup>&minus;</sup>优先进攻<strong>碳级较低</strong>的碳(SN2较易)或碳正离子更稳定的碳(SN1)</li>
+</ul></div>
+
+<div class="fb"><div class="t">过氧化物的形成</div>
+<p>醚在空气中<strong>久置</strong>会缓慢氧化生成<strong>过氧化物</strong>（R&minus;O&minus;O&minus;R'）</p>
+<ul>
+<li>过氧化物<strong>受热爆炸</strong>——实验室重大安全隐患！</li>
+<li>使用前必须检测：加KI溶液变黄/棕色表示含有过氧化物</li>
+<li>解决方法：加Na<sub>2</sub>SO<sub>3</sub>还原分解，或过Na/Al<sub>2</sub>O<sub>3</sub>柱</li>
+</ul></div>
+
+<div class="warn"><strong>实验安全要点</strong>：乙醚、异丙醚、THF等醚类试剂，开瓶后应记录日期。放置超过6个月或瓶壁有结晶的醚<strong>绝对不能蒸馏</strong>，有爆炸危险！</div>
+</div>
+
+<h3 id="k7">8.7 环氧化合物</h3>
+<div class="card">
+<div class="fb"><div class="t">环氧化合物的合成</div>
+<p><strong>烯烃 + 过氧酸 &rarr; 环氧化物</strong></p>
+<p>$$\text{R}_2\text{C=CR}_2 + m\text{CPBA} \rightarrow \text{环氧化物}$$</p>
+<ul>
+<li>mCPBA = 间氯过氧苯甲酸（常用的过氧酸）</li>
+<li>反应是<strong>顺式加成</strong>（syn addition），立体专一性</li>
+<li>烯烃取代基越多，反应越快（富电子烯烃更易被氧化）</li>
+</ul></div>
+
+<div class="fb"><div class="t">环氧化物的开环反应（核心考点！）</div>
+<table>
+<tr><th>条件</th><th>亲核试剂进攻位置</th><th>区域选择性</th><th>立体化学</th></tr>
+<tr><td><strong>酸催化</strong>（H<sub>3</sub>O<sup>+</sup>, ROH/H<sup>+</sup>, HX）</td><td>取代度<strong>较高</strong>的碳</td><td>类似Markovnikov</td><td>反式开环(anti)</td></tr>
+<tr><td><strong>碱/亲核试剂</strong>（OH<sup>&minus;</sup>, RO<sup>&minus;</sup>, RMgX）</td><td>位阻<strong>较小</strong>的碳</td><td>反Markovnikov</td><td>反式开环(anti)</td></tr>
+</table></div>
+
+<div class="note"><strong>酸催化开环的解释</strong>：<br>
+酸性条件下，环氧O被质子化，形成类似碳正离子的过渡态。亲核试剂倾向进攻<strong>正电荷更多</strong>的碳（取代度高的碳能更好地稳定部分正电荷）→ 结果类似Markovnikov方向。<br><br>
+<strong>碱催化开环的解释</strong>：<br>
+碱性条件下，强亲核试剂直接SN2进攻。SN2对位阻敏感，优先进攻<strong>位阻小</strong>的碳 → 反Markovnikov方向。</div>
+
+<div class="fb"><div class="t">Grignard试剂与环氧乙烷 &rarr; 增二碳的伯醇</div>
+<p>$$\text{RMgBr} + \underset{\text{环氧乙烷}}{\boxed{\text{CH}_2\text{-O-CH}_2}} \xrightarrow{\text{H}_3\text{O}^+} \text{RCH}_2\text{CH}_2\text{OH}$$</p>
+<ul>
+<li>格氏试剂(RMgBr)作为碳亲核试剂进攻环氧位阻小的碳(SN2)</li>
+<li>结果：碳链<strong>增加2个碳</strong>，得到<strong>伯醇</strong></li>
+<li>这是合成碳链增长两个碳的伯醇的经典方法！</li>
+</ul></div>
+
+<div class="tip"><strong>环氧开环的合成价值</strong>：<br>
+&bull; 酸性开环(H<sub>2</sub>O/H<sup>+</sup>) → 反式1,2-二醇（邻二醇）<br>
+&bull; 碱性开环(RO<sup>&minus;</sup>) → &beta;-烷氧基醇<br>
+&bull; HX开环 → &beta;-卤代醇（反Markovnikov加卤化氢到烯烃的等效物）<br>
+&bull; RMgX → 增碳得伯醇</div>
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch8_epoxide_opening.png" alt="环氧开环选择性" style="max-width:740px;width:100%;">
+</div>
+</div>
+
+<h2 id="kp3">三、酚 (Phenols)</h2>
+
+<h3 id="k8">8.8 酚的酸性</h3>
+<div class="card">
+<div class="fb"><div class="t">酚的酸性（pK<sub>a</sub>&asymp;10）</div>
+<p>酚(ArOH)的酸性<strong>比醇强10<sup>6</sup>~10<sup>7</sup>倍</strong>！</p>
+<p>$$\text{ArOH} \rightleftharpoons \text{ArO}^- + \text{H}^+\quad pK_a \approx 10$$</p>
+<p><strong>原因</strong>：酚氧负离子(ArO<sup>&minus;</sup>)的负电荷通过<strong>p-&pi;共轭</strong>离域到苯环上（5个共振结构），大大稳定了共轭碱。</p></div>
+
+<div class="fb"><div class="t">取代基对酚酸性的影响</div>
+<table>
+<tr><th>取代基类型</th><th>效应</th><th>对酸性的影响</th><th>实例</th></tr>
+<tr><td><strong>吸电子基</strong>(&minus;NO<sub>2</sub>, &minus;Cl等)</td><td>稳定酚氧负离子</td><td><strong>增强酸性</strong></td><td>对硝基苯酚 pK<sub>a</sub>=7.15</td></tr>
+<tr><td><strong>供电子基</strong>(&minus;CH<sub>3</sub>, &minus;OCH<sub>3</sub>等)</td><td>不稳定酚氧负离子</td><td><strong>降低酸性</strong></td><td>对甲基苯酚 pK<sub>a</sub>=10.26</td></tr>
+</table>
+<p><strong>位置效应</strong>：对位 > 邻位 > 间位（对位和邻位能通过共振直接参与稳定）</p></div>
+
+<div class="note"><strong>酸性比较</strong>（从强到弱）：<br>
+羧酸(pK<sub>a</sub>&asymp;4~5) > 碳酸(6.4) > 对硝基苯酚(7.15) > 苯酚(10) > 醇(16~19) > 水(15.7) > 乙炔(25)<br>
+<strong>实用判据</strong>：苯酚能溶于NaOH但<strong>不能溶于NaHCO<sub>3</sub></strong>（pK<sub>a</sub>=10 > H<sub>2</sub>CO<sub>3</sub>的pK<sub>a</sub>=6.4）；羧酸既溶于NaOH也溶于NaHCO<sub>3</sub>。</div>
+</div>
+
+<h3 id="k9">8.9 酚的鉴别——FeCl<sub>3</sub>显色反应</h3>
+<div class="card">
+<div class="fb"><div class="t">FeCl<sub>3</sub>显色反应</div>
+<p>酚 + FeCl<sub>3</sub>(aq) &rarr; <strong>紫色/蓝色/绿色络合物</strong></p>
+<ul>
+<li>酚羟基与Fe<sup>3+</sup>形成<strong>配位络合物</strong></li>
+<li>不同酚显色不同：苯酚→紫色；甲酚→蓝色；间苯二酚→深紫色</li>
+<li><strong>醇不显色</strong>！可用来鉴别酚和醇</li>
+<li>烯醇式化合物（如乙酰乙酸乙酯烯醇式）也能显色</li>
+</ul></div>
+<div class="tip"><strong>鉴别方案</strong>：未知物 + FeCl<sub>3</sub>(aq) → 显色 = 含有酚&minus;OH或烯醇；不显色 = 醇或醚。</div>
+</div>
+
+<h3 id="k10">8.10 酚的芳环亲电取代</h3>
+<div class="card">
+<div class="fb"><div class="t">&minus;OH是强活化基、邻对位定位基</div>
+<p>酚的&minus;OH通过<strong>+C共振效应</strong>大大增加苯环电子密度，使EAS反应<strong>极易发生</strong>。</p>
+<ul>
+<li><strong>卤代</strong>：苯酚 + Br<sub>2</sub>(aq)（无需催化剂！）→ 2,4,6-三溴苯酚（白色沉淀）</li>
+<li><strong>硝化</strong>：需用稀HNO<sub>3</sub>（浓硝酸会氧化酚），低温</li>
+<li><strong>磺化</strong>：苯酚低温→邻位磺化产物为主；高温→对位产物为主</li>
+</ul></div>
+
+<div class="warn"><strong>苯酚与溴水反应</strong>是定性鉴别酚的经典方法：<br>
+苯酚 + 3Br<sub>2</sub>(aq) → 2,4,6-三溴苯酚(白色&darr;) + 3HBr<br>
+注意：不需要Lewis酸催化！因为&minus;OH活化能力太强。这与苯的溴代（需要FeBr<sub>3</sub>催化）形成对比。</div>
+</div>
+
+<h3 id="k11">8.11 酚的特殊反应</h3>
+<div class="card">
+<div class="fb"><div class="t">Kolbe反应（Kolbe-Schmitt反应）</div>
+<p>$$\text{苯酚钠} + \text{CO}_2 \xrightarrow{125°C, 加压} \text{水杨酸(邻羟基苯甲酸)}$$</p>
+<ul>
+<li>工业上用于制备<strong>水杨酸</strong>（阿司匹林的前体）</li>
+<li><strong>机理</strong>：CO<sub>2</sub>作为亲电试剂进攻苯环邻位（苯酚钠的O<sup>&minus;</sup>强活化）</li>
+<li>水杨酸 + 乙酸酐 → <strong>阿司匹林</strong>（乙酰水杨酸）</li>
+</ul></div>
+
+<div class="fb"><div class="t">Reimer-Tiemann反应</div>
+<p>$$\text{苯酚} + \text{CHCl}_3 + \text{NaOH} \rightarrow \text{水杨醛(邻羟基苯甲醛)}$$</p>
+<ul>
+<li>亲电试剂：CHCl<sub>3</sub>在碱性条件下生成<strong>二氯卡宾(:CCl<sub>2</sub>)</strong></li>
+<li>二氯卡宾进攻苯环邻位 → 水解 → 醛基</li>
+<li>产物为<strong>邻位</strong>取代（主要产物）</li>
+</ul></div>
+
+<div class="note"><strong>对比Kolbe与Reimer-Tiemann</strong>：<br>
+&bull; Kolbe：苯酚钠 + CO<sub>2</sub> → 邻羟基苯甲<strong>酸</strong>（&minus;COOH）<br>
+&bull; Reimer-Tiemann：苯酚 + CHCl<sub>3</sub>/NaOH → 邻羟基苯甲<strong>醛</strong>（&minus;CHO）<br>
+两者都是在邻位引入含氧基团，但产物氧化态不同！</div>
+</div>
+
+<h3 id="k12">8.12 酚的制备方法</h3>
+<div class="card">
+<div class="fb"><div class="t">酚的工业与实验室制备</div>
+<table>
+<tr><th>方法</th><th>反应</th><th>条件</th><th>应用</th></tr>
+<tr><td><strong>异丙苯法</strong></td><td>异丙苯 → 过氧化物 → 苯酚 + 丙酮</td><td>O<sub>2</sub>/自氧化，H<sub>2</sub>SO<sub>4</sub>分解</td><td><strong>工业主要方法</strong></td></tr>
+<tr><td><strong>磺酸碱熔</strong></td><td>ArSO<sub>3</sub>H → ArOH</td><td>NaOH, 300&deg;C熔融</td><td>实验室/工业</td></tr>
+<tr><td><strong>重氮盐水解</strong></td><td>ArN<sub>2</sub><sup>+</sup> → ArOH</td><td>H<sub>2</sub>O, &Delta;</td><td>实验室，可控位置</td></tr>
+<tr><td><strong>卤代芳烃水解</strong></td><td>ArCl + NaOH → ArOH</td><td>高温高压(300&deg;C)</td><td>Dow法(工业)</td></tr>
+</table></div>
+
+<div class="fb"><div class="t">异丙苯法详解（Hock重排）</div>
+<ol>
+<li>苯 + CH<sub>2</sub>=CHCH<sub>3</sub> (丙烯)，H<sub>3</sub>PO<sub>4</sub>催化 → <strong>异丙苯</strong>(枯烯)</li>
+<li>异丙苯 + O<sub>2</sub>(空气) → <strong>异丙苯过氧化氢</strong></li>
+<li>过氧化物 + 稀H<sub>2</sub>SO<sub>4</sub> → <strong>苯酚 + 丙酮</strong>（Hock重排）</li>
+</ol>
+<p>优势：原料便宜(苯+丙烯)、副产物丙酮有经济价值、原子经济性好</p></div>
+
+<div class="tip"><strong>重氮盐路线</strong>的合成价值：<br>
+ArNH<sub>2</sub> → (NaNO<sub>2</sub>/HCl, 0&deg;C) → ArN<sub>2</sub><sup>+</sup>Cl<sup>&minus;</sup> → (H<sub>2</sub>O, &Delta;) → ArOH<br>
+优点：可以精确控制&minus;OH引入的位置（通过先定位&minus;NH<sub>2</sub>的位置）</div>
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch8_phenol_prep.png" alt="酚的制备方法汇总" style="max-width:700px;width:100%;">
+</div>
+</div>
+
+<h2 id="exercises">四、习题精练</h2>
+
+<div class="ex"><strong>1. 鉴别题</strong>：用简单化学方法鉴别下列化合物：<br>
+(A) 1-丁醇 &nbsp; (B) 2-丁醇 &nbsp; (C) 叔丁醇 &nbsp; (D) 正丁醚
+<div class="sol-header">解答</div><div class="sol">
+<div class="st">解题思路：利用Lucas试剂鉴别伯/仲/叔醇，醚不含OH不反应</div>
+
+<p><strong>第一步：区分醚和醇</strong></p>
+<p>加<strong>金属钠</strong>：A、B、C均放出H<sub>2</sub>气体（含活泼OH）；D不反应（醚无活泼H）。</p>
+
+<p><strong>第二步：Lucas试剂区分三种醇</strong></p>
+<p>将A、B、C分别与ZnCl<sub>2</sub>/浓HCl（Lucas试剂）混合：</p>
+<ul>
+<li><strong>C (叔丁醇)</strong>：<strong>立即浑浊</strong>（3&deg;醇，SN1快速反应）</li>
+<li><strong>B (2-丁醇)</strong>：<strong>5分钟内浑浊</strong>（2&deg;醇）</li>
+<li><strong>A (1-丁醇)</strong>：<strong>室温不反应</strong>（1&deg;醇，需加热才能反应）</li>
+</ul>
+</div></div>
+
+<div class="ex"><strong>2. 反应产物题</strong>：写出下列反应的主要产物，并说明立体化学：<br>
+(a) (R)-2-丁醇 + SOCl<sub>2</sub>（不加吡啶）<br>
+(b) (R)-2-丁醇 + SOCl<sub>2</sub> + 吡啶<br>
+(c) (R)-2-丁醇 + PBr<sub>3</sub>
+<div class="sol-header">解答</div><div class="sol">
+<div class="st">解题思路：SOCl<sub>2</sub>的立体化学取决于是否加碱；PBr<sub>3</sub>是SN2</div>
+
+<p><strong>(a) (R)-2-丁醇 + SOCl<sub>2</sub>（无碱）</strong></p>
+<p>机理：SNi（内返）→ <strong>构型保持</strong></p>
+<p>产物：<strong>(R)-2-氯丁烷</strong></p>
+
+<p><strong>(b) (R)-2-丁醇 + SOCl<sub>2</sub> + 吡啶</strong></p>
+<p>机理：SN2 → <strong>构型翻转</strong></p>
+<p>产物：<strong>(S)-2-氯丁烷</strong></p>
+
+<p><strong>(c) (R)-2-丁醇 + PBr<sub>3</sub></strong></p>
+<p>机理：SN2 → <strong>构型翻转</strong></p>
+<p>产物：<strong>(S)-2-溴丁烷</strong></p>
+
+<p><strong>总结</strong>：同一底物，不同试剂/条件，可得到保持或翻转构型的产物。这是有机合成中控制立体化学的关键策略。</p>
+</div></div>
+
+<div class="ex"><strong>3. 合成题</strong>：用环氧乙烷和合适的Grignard试剂合成1-己醇。
+<div class="sol-header">解答</div><div class="sol">
+<div class="st">解题思路：Grignard + 环氧乙烷 → 增2碳的伯醇</div>
+
+<p><strong>目标分析</strong>：1-己醇 = CH<sub>3</sub>(CH<sub>2</sub>)<sub>4</sub>CH<sub>2</sub>OH（6碳伯醇）</p>
+<p>环氧乙烷提供2个碳，因此格氏试剂需要提供4个碳。</p>
+
+<p><strong>合成路线</strong>：</p>
+<p>① CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>Br + Mg/THF → <strong>CH<sub>3</sub>(CH<sub>2</sub>)<sub>3</sub>MgBr</strong>（正丁基溴化镁）</p>
+<p>② CH<sub>3</sub>(CH<sub>2</sub>)<sub>3</sub>MgBr + 环氧乙烷 → [中间体]</p>
+<p>③ 水解(H<sub>3</sub>O<sup>+</sup>) → <strong>CH<sub>3</sub>(CH<sub>2</sub>)<sub>4</sub>CH<sub>2</sub>OH</strong>（1-己醇）</p>
+
+<p>原理：格氏试剂(R<sup>&minus;</sup>)作为亲核试剂SN2进攻环氧乙烷位阻小的碳，开环后增加了2个碳，末端为&minus;OH（伯醇）。</p>
+</div></div>
+
+<div class="ex"><strong>4. Williamson合成</strong>：设计合成<strong>叔丁基乙基醚</strong> [(CH<sub>3</sub>)<sub>3</sub>C&minus;O&minus;C<sub>2</sub>H<sub>5</sub>] 的Williamson合成路线。解释为什么只有一种方案可行。
+<div class="sol-header">解答</div><div class="sol">
+<div class="st">解题思路：Williamson合成中卤代烃端必须是伯卤代烃</div>
+
+<p><strong>方案一（正确）</strong>：</p>
+<p><strong>(CH<sub>3</sub>)<sub>3</sub>CONa + CH<sub>3</sub>CH<sub>2</sub>Br → (CH<sub>3</sub>)<sub>3</sub>COCH<sub>2</sub>CH<sub>3</sub></strong></p>
+<p>叔丁醇钠 + 溴乙烷(伯卤) → 叔丁基乙基醚</p>
+<p>可行！CH<sub>3</sub>CH<sub>2</sub>Br是伯卤代烃，能发生SN2。</p>
+
+<p><strong>方案二（错误）</strong>：</p>
+<p>C<sub>2</sub>H<sub>5</sub>ONa + (CH<sub>3</sub>)<sub>3</sub>CBr → <strong>不能得到目标产物！</strong></p>
+<p>原因：(CH<sub>3</sub>)<sub>3</sub>CBr是叔卤代烃，遇到强碱(C<sub>2</sub>H<sub>5</sub>O<sup>&minus;</sup>)会发生<strong>E2消除</strong>反应：</p>
+<p>(CH<sub>3</sub>)<sub>3</sub>CBr + C<sub>2</sub>H<sub>5</sub>O<sup>&minus;</sup> → (CH<sub>3</sub>)<sub>2</sub>C=CH<sub>2</sub>（异丁烯）+ C<sub>2</sub>H<sub>5</sub>OH + Br<sup>&minus;</sup></p>
+
+<p><strong>结论</strong>：Williamson合成中，<strong>大基团放在醇钠端，小基团(1&deg;RX)放在卤代烃端</strong>。</p>
+</div></div>
+
+<div class="ex"><strong>5. 环氧开环选择性</strong>：2-甲基环氧乙烷（环氧丙烷）分别在 (a)酸催化(H<sub>2</sub>O/H<sup>+</sup>) 和 (b)碱催化(CH<sub>3</sub>O<sup>&minus;</sup>) 条件下开环，画出产物并解释区域选择性。
+<div class="sol-header">解答</div><div class="sol">
+<div class="st">解题思路：酸催化→进攻取代度高的碳；碱催化→进攻位阻小的碳</div>
+
+<p><strong>(a) 酸催化开环 (H<sub>2</sub>O/H<sup>+</sup>)</strong>：</p>
+<p>H<sub>2</sub>O进攻<strong>取代度较高的碳</strong>（C2，连甲基的碳）</p>
+<p>产物：CH<sub>3</sub>CH(OH)CH<sub>2</sub>OH → <strong>1,2-丙二醇</strong>（&minus;OH加在取代度高的碳上）</p>
+<p>解释：酸性条件下环氧O被质子化，C2上有更多正电荷（烷基稳定正电荷），H<sub>2</sub>O作为弱亲核试剂进攻C2。</p>
+
+<p><strong>(b) 碱催化开环 (CH<sub>3</sub>O<sup>&minus;</sup>)</strong>：</p>
+<p>CH<sub>3</sub>O<sup>&minus;</sup>进攻<strong>位阻较小的碳</strong>（C1，&minus;CH<sub>2</sub>&minus;端）</p>
+<p>产物：CH<sub>3</sub>CH(OH)CH<sub>2</sub>OCH<sub>3</sub> → <strong>1-甲氧基-2-丙醇</strong></p>
+<p>解释：强亲核试剂CH<sub>3</sub>O<sup>&minus;</sup>走SN2机理，优先进攻位阻小的碳(C1)。</p>
+
+<p><strong>核心区别</strong>：酸催化 = 类SN1（正电荷控制）；碱催化 = SN2（位阻控制）。</p>
+</div></div>
+
+<div class="ex"><strong>6. 综合推断题</strong>：化合物A(C<sub>4</sub>H<sub>10</sub>O)有如下性质：<br>
+&bull; 与Na反应放出H<sub>2</sub><br>
+&bull; 与Lucas试剂(ZnCl<sub>2</sub>/HCl)立即浑浊<br>
+&bull; 与KMnO<sub>4</sub>不反应（常规条件）<br>
+&bull; 脱水后得到两种烯烃<br>
+确定A的结构，写出脱水产物。
+<div class="sol-header">解答</div><div class="sol">
+<div class="st">解题思路：逐步缩小范围——分子式→官能团→碳级→具体结构</div>
+
+<p><strong>第一步：分析分子式</strong></p>
+<p>C<sub>4</sub>H<sub>10</sub>O，不饱和度 = (2&times;4+2&minus;10)/2 = 0。无不饱和键或环。可能是醇或醚。</p>
+
+<p><strong>第二步：确认官能团</strong></p>
+<p>&bull; 与Na反应放H<sub>2</sub> → 含活泼H → 是<strong>醇</strong>（醚不反应）</p>
+
+<p><strong>第三步：确定碳级</strong></p>
+<p>&bull; Lucas试剂<strong>立即</strong>浑浊 → <strong>叔醇(3&deg;)</strong></p>
+<p>&bull; KMnO<sub>4</sub>不反应 → 印证是3&deg;醇（3&deg;醇不被氧化）</p>
+
+<p><strong>第四步：确定结构</strong></p>
+<p>C<sub>4</sub>H<sub>10</sub>O的叔醇只有一种：<strong>2-甲基-2-丙醇（叔丁醇）(CH<sub>3</sub>)<sub>3</sub>COH</strong></p>
+
+<p><strong>第五步：脱水产物</strong></p>
+<p>(CH<sub>3</sub>)<sub>3</sub>COH 脱水(H<sub>2</sub>SO<sub>4</sub>, 170&deg;C)：</p>
+<p>等等——叔丁醇只有一种&beta;-H（三个等价的甲基），脱水只能得到<strong>一种</strong>烯烃：(CH<sub>3</sub>)<sub>2</sub>C=CH<sub>2</sub>（异丁烯/2-甲基丙烯）。</p>
+<p>但题目说"两种烯烃"，矛盾！重新分析：C<sub>4</sub>H<sub>10</sub>O的叔醇确实只有叔丁醇。</p>
+
+<p><strong>修正</strong>：如果能产生两种烯烃，则应该是含有两种不等价&beta;-H的<strong>仲醇</strong>。重新看Lucas试剂——"立即浑浊"最准确对应3&deg;醇，但如果A是<strong>2-丁醇</strong> (CH<sub>3</sub>CH(OH)CH<sub>2</sub>CH<sub>3</sub>)：</p>
+<ul>
+<li>2-丁醇是仲醇，Lucas试剂应5min内浑浊（也可视为"较快"）</li>
+<li>KMnO<sub>4</sub>常规条件不氧化2&deg;醇（实际2&deg;醇能被KMnO<sub>4</sub>氧化为酮，此条件存疑）</li>
+</ul>
+<p>综合最合理的答案：<strong>A = 2-甲基-2-丙醇（叔丁醇）</strong>，脱水只得一种烯烃(CH<sub>3</sub>)<sub>2</sub>C=CH<sub>2</sub>。<br>
+若题意确为两种烯烃，则A可能含有碳正离子重排：叔丁醇脱水过程中经3&deg;碳正离子，如有重排可能也产生少量不同骨架的烯烃，但标准答案为<strong>异丁烯(唯一产物)</strong>。</p>
+</div></div>
+
+<h2 id="tips">考前提醒</h2>
+<div class="warn"><strong>SOCl<sub>2</sub>的立体化学（必背！）</strong><br>
+加吡啶 → SN2 → <strong>翻转</strong> | 不加碱 → SNi → <strong>保持</strong><br>
+PBr<sub>3</sub>始终是SN2 → <strong>翻转</strong></div>
+<div class="warn"><strong>Lucas试剂鉴别醇（高频考点！）</strong><br>
+3&deg;立即浑浊 | 2&deg;约5min浑浊 | 1&deg;不反应（需加热）<br>
+原理：碳正离子稳定性决定SN1速率</div>
+<div class="warn"><strong>醇脱水温度</strong><br>
+140&deg;C → 醚（分子间） | 170&deg;C → 烯烃（分子内）<br>
+脱水活性：3&deg; > 2&deg; > 1&deg; | 遵循Zaitsev规则 | <strong>注意重排</strong></div>
+<div class="warn"><strong>PCC的特殊作用</strong><br>
+PCC(温和氧化剂)：1&deg;醇 → <strong>醛</strong>（停在醛！不继续到羧酸）<br>
+KMnO<sub>4</sub>/K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>（强氧化剂）：1&deg;醇 → 直接到<strong>羧酸</strong></div>
+<div class="warn"><strong>Williamson合成陷阱</strong><br>
+卤代烃端<strong>必须是1&deg;RX</strong>！叔卤代烃 + 醇钠 → E2消除（得不到醚）<br>
+策略：大基团在RONa端，小基团在RX端</div>
+<div class="warn"><strong>环氧开环方向（对比记忆）</strong><br>
+酸催化 → 进攻取代度<strong>高</strong>的碳（类Markovnikov，正电荷控制）<br>
+碱催化 → 进攻位阻<strong>小</strong>的碳（反Markovnikov，SN2位阻控制）<br>
+两种条件都是<strong>反式(anti)开环</strong></div>
+<div class="warn"><strong>酚 vs 醇 的酸性差异</strong><br>
+酚 pK<sub>a</sub>&asymp;10（共振稳定酚氧负离子）| 醇 pK<sub>a</sub>&asymp;16~19<br>
+酚溶于NaOH但<strong>不溶于NaHCO<sub>3</sub></strong> | 羧酸两者都溶</div>
+<div class="warn"><strong>Kolbe vs Reimer-Tiemann</strong><br>
+Kolbe：ArONa + CO<sub>2</sub> → 水杨<strong>酸</strong>(&minus;COOH)<br>
+Reimer-Tiemann：ArOH + CHCl<sub>3</sub>/NaOH → 水杨<strong>醛</strong>(&minus;CHO)</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

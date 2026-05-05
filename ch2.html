@@ -221,13 +221,22 @@ DBE=4 → 很可能含苯环(3双键+1环)</div>
 <div class="card">
 <div class="fb"><div class="t">支链烷烃IUPAC命名规则（五步法）</div>
 <ol>
-<li><strong>选主链</strong>：选碳原子数最多的链为主链，简称"<strong>碳链最长原则</strong>"。根据主链所含碳原子数称其为"某"烷</li>
+<li><strong>选主链</strong>：选碳原子数最多的链为主链，简称"<strong>碳链最长原则</strong>"。根据主链所含碳原子数称其为"某"烷。若存在等长碳链，依次按以下规则选择：
+  <ul>
+  <li>①碳链最长（首要）</li>
+  <li>②<strong>支链最多</strong>（等长时取支链数多的为主链）</li>
+  <li>③<strong>支链位次最小</strong>（支链数也相同时，取支链编号之和最小的）</li>
+  </ul></li>
 <li><strong>编号</strong>：从最靠近支链的一端开始编号</li>
 <li><strong>命名取代基</strong>：链上的基团命名为烷基取代基，取代基写在烷烃的前面</li>
 <li><strong>英文字母优先</strong>排序：按照取代基英文名称字母进行排序，<strong>英文字母优先的取代基写在前面</strong>。如果取代基编号相同，英文字母优先的取代基<strong>优先编号</strong>
   <ul><li>例：4-乙基-2-甲基己烷（ethyl在methyl前）</li></ul></li>
-<li><strong>"取代基位次组最低原则"</strong>：使取代基的位号尽可能小。若有多个取代基，<strong>逐个比较</strong>，直至比出高低
-  <ul><li>例：编号方案[2,3,5]优于[2,4,5]，因为第二个位次3 &lt; 4</li></ul></li>
+<li><strong>"取代基位次组最低原则"</strong>：使取代基的位号尽可能小。若有多个取代基，采用<strong>逐个比较法</strong>——将各方案的取代基位次从小到大排列成组，然后逐个位次对比，直至比出高低
+  <ul>
+  <li>例：编号方案[2,3,5]优于[2,4,5]，因为第一个位次2=2相同，第二个位次3 &lt; 4，即分出胜负</li>
+  <li>例：方案[2,3,6]优于[2,4,5]，因为第二个位次3 &lt; 4</li>
+  <li>注意：<strong>不是</strong>比较位次之和，而是逐个比较</li>
+  </ul></li>
 </ol></div>
 <div class="fb"><div class="t">直链烷烃的中英文命名（必记）</div>
 <table>
@@ -309,7 +318,17 @@ CH<sub>3</sub>CH=CHCH<sub>2</sub>CH<sub>3</sub> → <strong>2-戊烯</strong></d
 <div class="card">
 <div class="fb"><div class="t">单环烷烃命名</div>
 <p>只有一个环的环烷烃称为<strong>单环烷烃</strong>（monocyclic alkane）。对环上<strong>没有取代基</strong>的环烷烃命名时，中文名称只需在相应的烷烃前加"环"字。</p>
-<p>当环上<strong>有取代基</strong>时，把取代基作为支链，英文字母优先的基团先编号和列出，使取代基位次尽可能小。</p>
+<p>当环上<strong>有取代基</strong>时，命名规则如下：</p>
+<ol>
+<li><strong>环上只有一个取代基时，无需编号</strong>（取代基位置唯一确定）。例：甲基环戊烷（不写"1-甲基环戊烷"）</li>
+<li><strong>环上有多个取代基时</strong>，按英文字母优先原则（alphabetical order）确定编号起点和列出顺序，使取代基位次尽可能小。例：1-乙基-3-甲基环己烷（ethyl在methyl前，ethyl所在碳编为1）</li>
+<li><strong>"较大环"与"较小环"规则</strong>——判断环和链哪个做母体：
+  <ul>
+  <li>环的碳数 &ge; 链的碳数 → 环为母体，链为取代基（常见情况）</li>
+  <li>环的碳数 &le; 3，且取代基碳数 &gt; 环碳数 → <strong>环做取代基</strong>（环丙基、环丁基等作为前缀）</li>
+  <li>例：丁基环丙烷 → 应命名为<strong>环丙基丁烷</strong>（因为环仅3碳，链有4碳，链为母体）</li>
+  </ul></li>
+</ol>
 <p><strong>实例</strong>：甲基环戊烷(methylcyclopentane)、1-异丙基-2-甲基环戊烷、1,1,4-三甲基环己烷</p>
 <img src="img/struct_cyclohexane.png" alt="环己烷" style="max-width:120px;display:inline-block;margin:5px 15px;">
 <img src="img/struct_methylcyclohexane.png" alt="甲基环己烷" style="max-width:120px;display:inline-block;margin:5px 15px;">
@@ -327,12 +346,25 @@ CH<sub>3</sub>CH=CHCH<sub>2</sub>CH<sub>3</sub> → <strong>2-戊烯</strong></d
 </ol>
 <p><strong>实例</strong>：</p>
 <ul>
-<li><strong>降冰片烷</strong> = 二环[2.2.1]庚烷：共7个碳，两个桥头碳 + 三座桥分别含2、2、1个碳</li>
+<li><strong>降冰片烷</strong> = 二环[2.2.1]庚烷：共7个碳，两个桥头碳(C1和C4) + 三座桥分别含2、2、1个碳。编号：C1(桥头)→C2→C3(最长桥2碳)→C4(桥头)→C5→C6(次长桥2碳)→C7(最短桥1碳，回到C1)</li>
+<li><strong>7,7-二甲基二环[4.1.0]庚烷</strong>：总碳数7，桥为[4.1.0]即最长桥4碳、次长桥1碳、最短桥0碳（三元环与六元环共用一条边）。7位(最短桥上唯一碳)连两个甲基</li>
 <li>1-乙基-2,8-二甲基二环[3.2.1]辛烷</li>
 <li>2,7,7-三甲基二环[4.1.0]庚烷</li>
 </ul>
 <img src="img/struct_bridged.png" alt="桥环结构" style="max-width:350px;display:block;margin:10px auto;">
 <img src="img/ppt_ch2_bridge_naming.png" alt="桥环命名示例" style="max-width:450px;display:block;margin:10px auto;">
+</div>
+
+<div class="fb"><div class="t">多环烷烃的环数判断公式</div>
+<p>对于任意多环烷烃（仅含碳骨架），可用以下公式快速判断<strong>环的数目</strong>：</p>
+$$\text{环数} = \text{C-C键数} - \text{碳原子数} + 1$$
+<p>即：从碳骨架中，数出所有C-C键的数目，减去碳原子总数，再加1。</p>
+<ul>
+<li>例：环己烷 → C-C键数=6，碳原子数=6，环数=6-6+1=<strong>1</strong>（单环）</li>
+<li>例：降冰片烷（二环[2.2.1]庚烷） → C-C键数=8，碳原子数=7，环数=8-7+1=<strong>2</strong>（二环）</li>
+<li>例：金刚烷（C<sub>10</sub>H<sub>16</sub>） → C-C键数=12，碳原子数=10，环数=12-10+1=<strong>3</strong>（三环）</li>
+</ul>
+<div class="tip"><strong>注意</strong>：此公式仅适用于碳骨架（只数C-C单键和构成环的键），不计入C-H键。对于含杂原子的环，同理将杂原子也计入"原子数"、相应键计入"键数"即可。</div>
 </div>
 
 <div class="fb"><div class="t">螺环化合物命名（四条规则）</div>

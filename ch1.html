@@ -82,6 +82,17 @@ $$\text{形式电荷} = \text{价电子数} - \text{孤电子数} - \tfrac{1}{2}
 <p><strong>成键轨道</strong>：能量降低，电子云集中在核间（同相叠加）</p>
 <p><strong>反键轨道</strong>（$\sigma^*$, $\pi^*$）：能量升高，核间有节面（反相叠加）</p></div>
 
+<div class="fb"><div class="t">前线分子轨道理论（FMO）— HOMO与LUMO</div>
+<p><strong>HOMO</strong>（Highest Occupied Molecular Orbital）：最高已占分子轨道 — 分子中能量最高的含电子轨道</p>
+<p><strong>LUMO</strong>（Lowest Unoccupied Molecular Orbital）：最低未占分子轨道 — 分子中能量最低的空轨道</p>
+<p><strong>核心思想</strong>：化学反应主要由HOMO和LUMO之间的相互作用决定：</p>
+<ul>
+<li><strong>亲核试剂</strong>（Lewis碱）用其<strong>HOMO</strong>提供电子</li>
+<li><strong>亲电试剂</strong>（Lewis酸）用其<strong>LUMO</strong>接受电子</li>
+<li>反应发生条件：HOMO与LUMO能量差越小、对称性匹配越好 → 相互作用越强 → 反应越容易</li>
+</ul>
+<div class="tip"><strong>应用</strong>：烯烃的HOMO是$\pi$轨道，亲电试剂的LUMO是空轨道。Diels-Alder反应中，二烯体HOMO与亲二烯体LUMO相互作用驱动[4+2]环加成。</div></div>
+
 <div class="fb"><div class="t">碳原子轨道</div>
 <p>基态电子排布：$1s^2 2s^2 2p^2$（4个价电子）</p>
 <p>碳形成四个共价键的原因：激发态 $2s^1 2p^3$ → 杂化后形成4个等价杂化轨道</p>
@@ -284,6 +295,77 @@ $$\text{A (酸)} + \text{:B (碱)} \longrightarrow \text{A:B (酸碱配合物)}$
 </div>
 <div class="card" style="text-align:center;padding:8px;">
 <img src="img/ch1_dipole_examples.png" alt="分子极性判断例题" style="max-width:640px;width:100%;">
+</div>
+
+<h3 id="kp5b">1.5b 感应效应（Inductive Effect）</h3>
+<div class="card">
+<div class="fb"><div class="t">定义</div>
+<p><strong>感应效应（诱导效应，I效应）</strong>：由于原子或基团电负性差异，引起σ键电子云沿碳链向某一方向偏移的效应。</p>
+<p>以氢为标准（H的感应效应定义为零）：</p>
+<ul>
+<li><strong>吸电子诱导效应（−I）</strong>：比H更吸电子的基团。如 −F, −Cl, −Br, −OH, −NO<sub>2</sub>, −CN, −COOH, −C=O</li>
+<li><strong>给电子诱导效应（+I）</strong>：比H更推电子的基团。如 −CH<sub>3</sub>, −C<sub>2</sub>H<sub>5</sub>, −C(CH<sub>3</sub>)<sub>3</sub>（烷基）以及 −O<sup>−</sup>, −COO<sup>−</sup></li>
+</ul></div>
+
+<div class="fb"><div class="t">感应效应的特征（考点）</div>
+<ol>
+<li><strong>沿σ键传递</strong>：通过共价键（σ键骨架）逐步传递，不通过空间</li>
+<li><strong>随距离递减</strong>：每经过一个碳，强度大幅衰减，一般经过3个碳后可忽略不计</li>
+<li><strong>方向永恒不变</strong>：给电子基永远给电子，吸电子基永远吸电子（不像共轭效应可因体系不同而表现不同）</li>
+</ol></div>
+
+<div class="fb"><div class="t">感应效应强度的判断标准</div>
+<ol>
+<li><strong>电负性越大，−I效应越强</strong>：F > O > N > C（同周期从右到左减弱）</li>
+<li><strong>同族元素，从上到下−I减弱</strong>：F > Cl > Br > I</li>
+<li><strong>不饱和程度越高，−I越强</strong>：−C≡C− > −C=C− > −C−C−（s成分越多电负性越大）</li>
+<li><strong>正电荷增强吸电子</strong>：−NR<sub>3</sub><sup>+</sup> > −NR<sub>2</sub>；<strong>负电荷增强推电子</strong>：−O<sup>−</sup> > −OH</li>
+</ol></div>
+
+<div class="ex"><strong>应用实例</strong>：解释氯代乙酸酸性递变</div>
+<div class="sol">
+<p>Cl<sub>3</sub>CCOOH(pK<sub>a</sub>=0.65) > Cl<sub>2</sub>CHCOOH(1.29) > ClCH<sub>2</sub>COOH(2.86) > CH<sub>3</sub>COOH(4.75)</p>
+<p><strong>解释</strong>：Cl的−I效应通过σ键传递，使羧基O−H键极性增大、共轭碱(COO<sup>−</sup>)中负电荷更分散。Cl原子越多，−I叠加越强，酸性越强。</p>
+</div>
+<div class="warn"><strong>注意</strong>：感应效应是"短程效应"。例如：CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>COOH(pK<sub>a</sub>=4.82) 与 CH<sub>3</sub>CH<sub>2</sub>CHClCOOH(pK<sub>a</sub>=2.84) 差异大，但 ClCH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>COOH(pK<sub>a</sub>=4.52) 与丁酸差异很小——Cl距羧基3个碳时影响已大幅减弱。</div>
+</div>
+
+<h3 id="kp5c">1.5c 共轭效应与感应效应对比</h3>
+<div class="card">
+<div class="fb"><div class="t">共轭效应（Conjugation/Mesomeric Effect, C效应/M效应）</div>
+<p><strong>定义</strong>：在共轭体系中，由于p轨道侧面重叠形成离域π键，导致电子云沿共轭链离域分布的效应。</p>
+<ul>
+<li><strong>给电子共轭效应（+C/+M）</strong>：孤电子对参与共轭向体系供电子。如 −NH<sub>2</sub>, −OH, −OR, −X（卤素）</li>
+<li><strong>吸电子共轭效应（−C/−M）</strong>：通过π键从体系吸收电子。如 −NO<sub>2</sub>, −C=O, −COOH, −CN, −SO<sub>3</sub>H</li>
+</ul></div>
+
+<div class="fb"><div class="t">感应效应 vs 共轭效应 — 核心对比（考点）</div>
+<table>
+<tr><th>对比项目</th><th>感应效应（I效应）</th><th>共轭效应（C效应）</th></tr>
+<tr><td><strong>传递途径</strong></td><td>沿<strong>σ键</strong>传递</td><td>沿<strong>共轭π体系（p-π/π-π）</strong>传递</td></tr>
+<tr><td><strong>传递距离</strong></td><td>短程，经3个碳后基本消失</td><td>长程，可沿整个共轭链传递不衰减</td></tr>
+<tr><td><strong>衰减规律</strong></td><td>随距离<strong>迅速递减</strong></td><td>理论上<strong>不递减</strong>（实际稍有减弱）</td></tr>
+<tr><td><strong>传递方式</strong></td><td>σ电子的极化（静电诱导）</td><td>π电子/p电子的离域</td></tr>
+<tr><td><strong>存在条件</strong></td><td>任何极性共价键都存在</td><td>必须有<strong>共轭体系</strong>（交替的p轨道）</td></tr>
+<tr><td><strong>方向</strong></td><td>固定不变</td><td>可因体系需要改变方向</td></tr>
+<tr><td><strong>强度比较</strong></td><td>一般较弱</td><td>一般<strong>共轭 > 诱导</strong>（二者冲突时共轭常占主导）</td></tr>
+</table></div>
+
+<div class="tip"><strong>两效应叠加判断示例</strong>：<br>
+&bull; <strong>−Cl</strong>：−I（吸电子）+ +C（Cl的孤电子对p-π共轭给电子）→ 整体对苯环：邻对位定位基（+C > −I）<br>
+&bull; <strong>−NO<sub>2</sub></strong>：−I + −C → 双重吸电子 → 强间位定位基<br>
+&bull; <strong>−OH</strong>：−I + +C → +C占主导 → 活化苯环、邻对位定位基</div>
+
+<div class="note"><strong>共振结构稳定性判断规则</strong>（笔记重点）：<br>
+1. 满足所有原子<strong>八隅体</strong>的共振式贡献最大<br>
+2. <strong>共价键越多</strong>的共振式越稳定（共价键多=成键电子多=能量低）<br>
+3. <strong>电荷分离越少</strong>越稳定（无电荷分离 > 有电荷分离）<br>
+4. <strong>负电荷位于电负性较大的原子上</strong>时更稳定（如−1在O上优于在C上）<br>
+5. 正电荷位于电正性较大的原子上时更稳定<br>
+6. 等价共振式贡献相等，共振稳定化能最大</div>
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch1_inductive_vs_conjugation.png" alt="感应效应vs共轭效应对比" style="max-width:740px;width:100%;">
+</div>
 </div>
 
 <h3 id="kp6">1.6 分子间作用力与物理性质</h3>

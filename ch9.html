@@ -38,7 +38,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <link rel="stylesheet" href="toc.css">
 </head>
 <body>
-<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch7.html">&larr; 第7章</a><a href="index.html">&#x1F4DA; 目录</a></div>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch8.html">&larr; 第8章</a><a href="index.html">&#x1F4DA; 目录</a></div>
 <h1>第9章 卤代烃</h1>
 
 <h2 id="kp">核心知识点</h2>
@@ -192,11 +192,26 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 &bull; 环己烷衍生物中，H和X必须处于<strong>1,2-双直键(diaxial)</strong>位置才能E2消除<br>
 &bull; 如果只有一个&beta;-H能满足anti关系 → 只得到一种产物（即使不是Saytzeff产物）</div>
 
+<div class="fb"><div class="t">E2反式消除的Newman投影式分析</div>
+<p>判断E2产物时，应画出Newman投影式确认H和X的anti关系：</p>
+<ul>
+<li><strong>步骤①</strong>：沿C<sub>&alpha;</sub>&minus;C<sub>&beta;</sub>键画Newman投影</li>
+<li><strong>步骤②</strong>：找到H在&beta;碳、X在&alpha;碳且二者呈<strong>180&deg;（anti）</strong>的构象</li>
+<li><strong>步骤③</strong>：该构象消除得到的烯烃即为E2产物</li>
+</ul>
+<p>应用实例：2-溴丁烷的E2消除，沿C2-C3键看Newman投影 → H(C3)和Br(C2)呈anti时消除得<strong>trans-2-丁烯</strong>（Saytzeff产物，且以trans为主）。</p></div>
+
 <h4 style="color:var(--acc);margin-top:15px;">E1 消除（单分子）</h4>
 <div class="fb"><div class="t">E1 机理</div>
 <p>第一步（慢）：R&minus;X → R<sup>+</sup> + X<sup>&minus;</sup>（与S<sub>N</sub>1共享同一步）<br>
 第二步（快）：碱夺取碳正离子的&beta;-H → 生成烯烃</p>
 <p>速率 = k[RX]，E1总是<strong>伴随S<sub>N</sub>1</strong>发生（竞争关系）</p></div>
+
+<div class="warn"><strong>E1 vs E2的关键立体化学区别</strong>：<br>
+&bull; <strong>E2要求反式共平面</strong>（anti-periplanar）：H和X必须呈180&deg;，这是E2的立体电子效应要求<br>
+&bull; <strong>E1无此要求</strong>：因为碳正离子中间体是平面的sp<sup>2</sup>杂化，任何方向的&beta;-H都可以被碱夺取 → E1产物无需满足anti关系<br>
+&bull; 因此E1通常给出<strong>热力学最稳定产物</strong>（最多取代的烯烃），不受构象限制</div>
+
 <div class="tip"><strong>E1 vs E2</strong>：E1在S<sub>N</sub>1条件下伴随发生，无法独立控制；E2可通过强碱诱导，在S<sub>N</sub>2条件下也可发生。</div>
 
 <h4 style="color:var(--acc);margin-top:15px;">超共轭效应解释Saytzeff规则</h4>
@@ -271,6 +286,9 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <div class="card" style="text-align:center;padding:8px;">
 <img src="img/ch9_four_competition.png" alt="SN1/SN2/E1/E2四大竞争判断" style="max-width:740px;width:100%;">
 </div>
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch9_reaction_flowchart.png" alt="SN1/SN2/E1/E2快速判断流程" style="max-width:760px;width:100%;">
+</div>
 
 <h3 id="k7">9.7 亲核试剂与离去基团</h3>
 <div class="card">
@@ -286,10 +304,29 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li>负离子 > 对应中性分子：HO<sup>&minus;</sup> > H<sub>2</sub>O；RO<sup>&minus;</sup> > ROH</li>
 </ul></div>
 
-<div class="note"><strong>碱性 vs 亲核性</strong>：<br>
-&bull; <strong>碱性</strong>：与H<sup>+</sup>结合的热力学能力(用pK<sub>a</sub>衡量)<br>
-&bull; <strong>亲核性</strong>：与碳原子成键的动力学能力(受可极化性、位阻影响)<br>
-&bull; 例如：I<sup>&minus;</sup>碱性弱但亲核性很强(大原子可极化)；t-BuO<sup>&minus;</sup>碱性强但亲核性差(位阻大)</div>
+<div class="note"><strong>碱性 vs 亲核性——不是一回事！</strong><br>
+&bull; <strong>碱性</strong>：与H<sup>+</sup>结合的能力，是<strong>热力学平衡性质</strong>，用pK<sub>a</sub>衡量<br>
+&bull; <strong>亲核性</strong>：与碳原子成键的能力，是<strong>动力学概念</strong>，受可极化性、位阻影响<br>
+&bull; <strong>碱性大的不一定亲核性大！</strong></div>
+
+<div class="fb"><div class="t">碱性与亲核性不一致的典型例子</div>
+<table>
+<tr><th>比较对象</th><th>碱性（pK<sub>a</sub>）</th><th>亲核性</th><th>原因</th></tr>
+<tr><td>HO<sup>&minus;</sup> vs CN<sup>&minus;</sup></td><td>HO<sup>&minus;</sup> > CN<sup>&minus;</sup></td><td>CN<sup>&minus;</sup> > HO<sup>&minus;</sup></td><td>CN<sup>&minus;</sup>的碳原子可极化性更大，电子云易变形</td></tr>
+<tr><td>I<sup>&minus;</sup> vs F<sup>&minus;</sup></td><td>F<sup>&minus;</sup> >> I<sup>&minus;</sup></td><td>I<sup>&minus;</sup> >> F<sup>&minus;</sup></td><td>I<sup>&minus;</sup>原子半径大、可极化性强</td></tr>
+<tr><td>t-BuO<sup>&minus;</sup> vs EtO<sup>&minus;</sup></td><td>t-BuO<sup>&minus;</sup> > EtO<sup>&minus;</sup></td><td>EtO<sup>&minus;</sup> >> t-BuO<sup>&minus;</sup></td><td>t-BuO<sup>&minus;</sup>位阻太大，不能接近碳</td></tr>
+<tr><td>RS<sup>&minus;</sup> vs RO<sup>&minus;</sup></td><td>RO<sup>&minus;</sup> > RS<sup>&minus;</sup></td><td>RS<sup>&minus;</sup> > RO<sup>&minus;</sup></td><td>S比O可极化性大，电子云更松散</td></tr>
+</table></div>
+
+<div class="fb"><div class="t">可极化性对亲核性的影响</div>
+<p><strong>可极化性</strong>：原子/离子的电子云在外电场作用下变形的难易程度。原子越大、电子越多 → 可极化性越大 → 亲核性越强。</p>
+<ul>
+<li><strong>同族元素（质子溶剂中）亲核性</strong>：F<sup>&minus;</sup> < Cl<sup>&minus;</sup> < Br<sup>&minus;</sup> < <strong>I<sup>&minus;</sup></strong>（碱性减小，但亲核性增大！）</li>
+<li>原因：大原子可极化性强 → 电子云易向碳原子方向变形 → 与碳原子轨道重叠更有效</li>
+<li><strong>RS<sup>&minus;</sup> > RO<sup>&minus;</sup></strong>：S在第三周期，比O（第二周期）可极化性大 → 硫醇盐亲核性优于醇盐</li>
+<li><strong>RSe<sup>&minus;</sup> > RS<sup>&minus;</sup> > RO<sup>&minus;</sup></strong>：同族从下到上，亲核性递减</li>
+</ul>
+<p><strong>注意</strong>：在极性非质子溶剂中（如DMSO），溶剂化效应减弱，亲核性与碱性趋势一致：F<sup>&minus;</sup> > Cl<sup>&minus;</sup> > Br<sup>&minus;</sup> > I<sup>&minus;</sup>。上述"碱性减小但亲核性增大"的反常现象主要出现在质子溶剂中。</p></div>
 </div>
 
 <h3 id="k8">9.8 溶剂效应</h3>
@@ -301,9 +338,18 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <tr><td>极性非质子溶剂</td><td>DMSO, DMF, 丙酮</td><td>极性强但无活泼H</td><td><strong>S<sub>N</sub>2</strong></td></tr>
 </table></div>
 <div class="tip"><strong>为什么？</strong><br>
-&bull; 极性质子溶剂通过氢键<strong>溶剂化</strong>亲核试剂，降低其亲核性 → 不利S<sub>N</sub>2<br>
-&bull; 极性质子溶剂稳定碳正离子中间体 → 有利S<sub>N</sub>1<br>
+&bull; 极性质子溶剂通过氢键<strong>溶剂化</strong>亲核试剂（阴离子被氢键"包裹"），降低其亲核性 → 不利S<sub>N</sub>2<br>
+&bull; 极性质子溶剂稳定碳正离子中间体和离去基团阴离子 → 有利S<sub>N</sub>1<br>
 &bull; 极性非质子溶剂不与阴离子形成氢键 → 亲核试剂保持"裸露"高活性 → 有利S<sub>N</sub>2</div>
+
+<div class="fb"><div class="t">改变溶剂可逆转SN1/SN2的相对速度</div>
+<p>同一底物、同一试剂，仅改变溶剂就可能改变反应的主要路径：</p>
+<table>
+<tr><th>反应体系</th><th>极性质子溶剂(如H<sub>2</sub>O/EtOH)</th><th>极性非质子溶剂(如DMSO/DMF)</th></tr>
+<tr><td>2-溴丁烷 + NaOH</td><td>S<sub>N</sub>1/E1竞争增加</td><td><strong>S<sub>N</sub>2为主</strong></td></tr>
+<tr><td>原因</td><td>质子溶剂溶剂化HO<sup>&minus;</sup>，降低亲核性；稳定碳正离子</td><td>HO<sup>&minus;</sup>"裸露"，亲核性极强，直接背面进攻</td></tr>
+</table>
+<p><strong>核心要点</strong>：溶剂效应是调控SN1/SN2竞争的重要手段——极性非质子溶剂可将S<sub>N</sub>2速率提高10<sup>3</sup>~10<sup>5</sup>倍！</p></div>
 </div>
 
 <h3 id="k9">9.9 卤代烃的活性规律</h3>
@@ -325,16 +371,30 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <div class="card">
 <div class="fb"><div class="t">卤代烃的主要制备方法</div>
 <ol>
-<li><strong>烷烃卤代</strong>（自由基取代）：RH + X<sub>2</sub> →(hv)→ RX + HX</li>
-<li><strong>烯烃加HX</strong>：遵循Markovnikov规则；过氧化物存在时反Markovnikov(仅HBr)</li>
-<li><strong>醇 + HX</strong>：ROH + HX → RX + H<sub>2</sub>O（S<sub>N</sub>1或S<sub>N</sub>2）</li>
-<li><strong>醇 + SOCl<sub>2</sub></strong>：ROH + SOCl<sub>2</sub> →(吡啶)→ RCl + SO<sub>2</sub> + HCl（<strong>构型翻转</strong>，S<sub>N</sub>2机理）</li>
-<li><strong>醇 + PBr<sub>3</sub></strong>：3ROH + PBr<sub>3</sub> → 3RBr + H<sub>3</sub>PO<sub>3</sub></li>
-<li><strong>卤素交换</strong>(Finkelstein)：RCl + NaI →(丙酮)→ RI + NaCl↓（利用NaCl在丙酮中不溶）</li>
-<li><strong>烯丙位/苄位溴代</strong>：NBS/hv → 烯丙位或苄位溴代的专用试剂</li>
+<li><strong>烷烃卤代</strong>（自由基取代）：RH + X<sub>2</sub> →(hv或&Delta;)→ RX + HX<br>
+<span style="color:#666;">选择性：Br<sub>2</sub>选择性高（优先取代3&deg;H），Cl<sub>2</sub>选择性差</span></li>
+<li><strong>烯烃加HX</strong>（亲电加成）：C=C + HX → RX<br>
+<span style="color:#666;">遵循Markovnikov规则（H加到含H多的碳）；过氧化物存在时反Markovnikov(仅HBr有效)</span></li>
+<li><strong>醇 + HX</strong>：ROH + HX → RX + H<sub>2</sub>O（3&deg;走S<sub>N</sub>1, 1&deg;走S<sub>N</sub>2）</li>
+<li><strong>醇 + SOCl<sub>2</sub></strong>：ROH + SOCl<sub>2</sub> → RCl + SO<sub>2</sub> + HCl<br>
+<span style="color:#666;">有吡啶时：经S<sub>N</sub>2 → <strong>构型翻转</strong>；无吡啶时：经S<sub>N</sub>i(内返机理) → <strong>构型保持</strong></span></li>
+<li><strong>醇 + PBr<sub>3</sub></strong>：3ROH + PBr<sub>3</sub> → 3RBr + H<sub>3</sub>PO<sub>3</sub>（<strong>S<sub>N</sub>2机理，构型翻转</strong>）</li>
+<li><strong>卤素交换——Finkelstein反应</strong>：RBr(或RCl) + NaI →(丙酮)→ <strong>RI</strong> + NaBr(或NaCl)↓<br>
+<span style="color:#666;">机理：S<sub>N</sub>2（I<sup>&minus;</sup>作为亲核试剂从背面进攻）<br>
+驱动力：NaCl/NaBr不溶于丙酮而沉淀 → 平衡右移（Le Chatelier原理）<br>
+应用：将RCl或RBr转化为反应活性更高的RI</span></li>
+<li><strong>烯丙位/苄位溴代</strong>（NBS溴代）：<br>
+<span style="color:#666;">NBS(N-溴代丁二酰亚胺)/hv 或 CCl<sub>4</sub> → 选择性在烯丙位或苄位引入Br<br>
+机理：自由基取代（链引发→链传递→链终止），NBS提供低浓度Br<sub>2</sub>避免加成副反应</span></li>
 <li><strong>醇 + PCl<sub>3</sub></strong>：3ROH + PCl<sub>3</sub> → 3RCl + H<sub>3</sub>PO<sub>3</sub></li>
 <li><strong>醇 + PCl<sub>5</sub></strong>：ROH + PCl<sub>5</sub> → RCl + POCl<sub>3</sub> + HCl</li>
 </ol></div>
+
+<div class="tip"><strong>制备方法选择策略</strong>：<br>
+&bull; 需保持构型 → 用SOCl<sub>2</sub>（无吡啶，SNi保持）<br>
+&bull; 需翻转构型 → 用SOCl<sub>2</sub>/吡啶 或 PBr<sub>3</sub>（SN2翻转）<br>
+&bull; 需高活性碘代物 → 先制溴代物再Finkelstein交换<br>
+&bull; 需烯丙位选择性溴代 → NBS</div>
 
 <div class="fb"><div class="t">Zn脱卤还原制备烯烃</div>
 <p>邻二卤代物与锌粉反应，脱去两个卤素生成烯烃：</p>
@@ -380,11 +440,26 @@ RMgX + HA → RH + MgXA（格氏试剂被破坏）<br>
 
 <div class="tip"><strong>格氏试剂在乙醚中不溶的情况</strong>：双键或苯环上的卤素（乙烯基/芳基卤）不易与Mg反应，需用<strong>THF</strong>（四氢呋喃）作溶剂，配位能力更强。</div>
 
-<h4 style="color:var(--acc);margin-top:15px;">Corey-House 偶联</h4>
-<div class="fb"><div class="t">有机铜锂试剂</div>
-<p>2RLi + CuI → R<sub>2</sub>CuLi（二烃基铜锂）<br>
-R<sub>2</sub>CuLi + R'X → R&minus;R' + RCu + LiX</p>
-<p>优势：<strong>交叉偶联</strong>效率高，选择性好（R'X最好是1&deg;卤代烃）</p></div>
+<h4 style="color:var(--acc);margin-top:15px;">与金属锂反应——Corey-House 偶联合成</h4>
+<div class="fb"><div class="t">有机铜锂试剂（Gilman试剂）</div>
+<p><strong>制备步骤</strong>：</p>
+<ol>
+<li>RX + 2Li →(乙醚)→ <strong>RLi</strong>（有机锂试剂）+ LiX</li>
+<li>2RLi + CuI → <strong>R<sub>2</sub>CuLi</strong>（二烃基铜锂，Gilman试剂）+ LiI</li>
+</ol>
+<p><strong>偶联反应</strong>：</p>
+<p style="text-align:center;">R<sub>2</sub>CuLi + R'X → <strong>R&minus;R'</strong> + RCu + LiX</p></div>
+
+<div class="fb"><div class="t">Corey-House合成的优点</div>
+<ul>
+<li><strong>可合成不对称烷烃</strong>（R&ne;R'）：这是直接合成C-C键形成不对称烷烃的重要方法</li>
+<li><strong>选择性好</strong>：R'X最好是伯卤代烃或仲卤代烃（S<sub>N</sub>2机理），叔卤代烃会消除</li>
+<li><strong>温和条件</strong>：反应在低温乙醚中进行</li>
+<li>格氏试剂直接偶联（RMgX + R'X）产率低，而Corey-House法产率高</li>
+</ul>
+<p><strong>实例</strong>：合成正庚烷 CH<sub>3</sub>(CH<sub>2</sub>)<sub>5</sub>CH<sub>3</sub>：</p>
+<p>① 2CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>Li + CuI → <strong>(C<sub>4</sub>H<sub>9</sub>)<sub>2</sub>CuLi</strong><br>
+② (C<sub>4</sub>H<sub>9</sub>)<sub>2</sub>CuLi + CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>Br → <strong>CH<sub>3</sub>(CH<sub>2</sub>)<sub>5</sub>CH<sub>3</sub></strong>（正庚烷）</p></div>
 </div>
 
 <h3 id="k12">9.12 消除取向</h3>

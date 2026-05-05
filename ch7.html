@@ -38,7 +38,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <link rel="stylesheet" href="toc.css">
 </head>
 <body>
-<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch6.html">&larr; 第6章</a><a href="ch9.html">第9章 &rarr;</a></div>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch6.html">&larr; 第6章</a><a href="ch8.html">第8章 &rarr;</a></div>
 <h1>第7章 芳香烃</h1>
 
 <h2 id="kp">核心知识点</h2>
@@ -96,9 +96,27 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 </table>
 
 <div class="note"><strong>反芳香 vs 非芳香</strong>：<br>
-&bull; <strong>反芳香</strong>：满足环状共轭+共平面，但&pi;电子=4n → 特别<strong>不稳定</strong><br>
-&bull; <strong>非芳香</strong>：不满足环状共轭或不共平面 → 稳定性正常<br>
-&bull; 环辛四烯采取<strong>船式非平面构象</strong>，避免反芳香性，变为非芳香</div>
+&bull; <strong>芳香性</strong>（4n+2个&pi;电子）：环状共轭+共平面 → 特别<strong>稳定</strong>，有额外共振能<br>
+&bull; <strong>反芳香性</strong>（4n个&pi;电子）：满足环状共轭+共平面，但&pi;电子=4n → 特别<strong>不稳定</strong>（比非共轭体系还不稳定！）<br>
+&bull; <strong>非芳香性</strong>：不满足环状共轭或不共平面 → 稳定性正常，无芳香增稳也无反芳香去稳<br>
+&bull; 环辛四烯(8&pi;电子)采取<strong>船式非平面构象</strong>，主动避免反芳香性，变为非芳香</div>
+
+<div class="fb"><div class="t">轮烯的芳香性</div>
+<p><strong>轮烯([n]annulene)</strong>= 全共轭单环烃 C<sub>n</sub>H<sub>n</sub>，判断其芳香性需同时满足：</p>
+<ol>
+<li>&pi;电子数满足4n+2规则</li>
+<li>分子必须能<strong>保持平面构象</strong>（环内H原子不能产生严重位阻）</li>
+</ol>
+<table>
+<tr><th>轮烯</th><th>&pi;电子</th><th>4n+2?</th><th>能否平面?</th><th>结论</th></tr>
+<tr><td>[4]轮烯(环丁二烯)</td><td>4</td><td>4n ✗</td><td>能</td><td><strong>反芳香</strong>，极不稳定</td></tr>
+<tr><td>[8]轮烯(COT)</td><td>8</td><td>4n ✗</td><td>能但选择不平面</td><td><strong>非芳香</strong>（避开反芳香）</td></tr>
+<tr><td>[10]轮烯</td><td>10</td><td>n=2 ✓</td><td>环内H位阻大，难平面</td><td>实际<strong>非芳香</strong></td></tr>
+<tr><td>[14]轮烯</td><td>14</td><td>n=3 ✓</td><td>能（环足够大）</td><td><strong>芳香</strong></td></tr>
+<tr><td>[18]轮烯</td><td>18</td><td>n=4 ✓</td><td>能（环足够大）</td><td><strong>芳香</strong>（近乎等长C-C键）</td></tr>
+</table>
+<p>[18]轮烯的环电流效应：外侧H化学位移&delta;=9.28 ppm（去屏蔽），内侧H &delta;=&minus;2.99 ppm（屏蔽），是芳香性的直接NMR证据。</p>
+</div>
 
 <div class="tip"><strong>杂环芳香化合物</strong>：吡咯(N提供2个e，6&pi;)、呋喃(O提供2个e，6&pi;)、噻吩(S提供2个e，6&pi;)、吡啶(N提供1个e进入&pi;体系，孤对在sp<sup>2</sup>中，6&pi;)</div>
 
@@ -205,25 +223,29 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li><strong>烯烃</strong>：苯 + CH<sub>2</sub>=CH<sub>2</sub> + AlCl<sub>3</sub> → 乙基苯（烯烃质子化产生碳正离子）</li>
 <li><strong>醇</strong>：苯 + ROH + BF<sub>3</sub> → 烷基苯（Lewis酸活化醇羟基产生碳正离子）</li>
 </ul></div>
-<div class="fb"><div class="t">F-C烷基化的四大问题</div>
+<div class="warn"><strong>F-C烷基化的限制与问题（超级重要！）</strong>
 <ol>
 <li><strong>碳正离子重排</strong>：1&deg;卤代烃 → 生成更稳定的2&deg;/3&deg;碳正离子（例：正丙基氯→异丙基苯）</li>
-<li><strong>多取代</strong>：产物ArR比苯更活泼，继续反应生成二取代、三取代</li>
-<li><strong>不能用于钝化苯环</strong>：含-NO<sub>2</sub>、-COR等吸电子基的苯环不反应</li>
-<li><strong>不能用于胺</strong>：-NH<sub>2</sub>与AlCl<sub>3</sub>配位，使催化剂失活</li>
+<li><strong>不能停在一次取代！（多烷基化问题）</strong>：产物ArR因烷基供电子效应<strong>比底物苯更活泼</strong>，反应速率更快，不断继续反应生成二取代、三取代产物。想得到一元产物需用<strong>大大过量的苯</strong>来稀释，实际操作困难</li>
+<li><strong>不能用于含强吸电子基的苯环</strong>：含&minus;NO<sub>2</sub>、&minus;COR、&minus;SO<sub>3</sub>H、&minus;CN、&minus;COOH等基团的芳环电子密度太低，不能与碳正离子反应，F-C反应<strong>完全不发生</strong></li>
+<li><strong>不能用于胺</strong>：&minus;NH<sub>2</sub>、&minus;NHR、&minus;NR<sub>2</sub>的孤对电子与AlCl<sub>3</sub>配位，形成Lewis酸碱加合物，使催化剂失活</li>
 </ol></div>
+<div class="note"><strong>对比：F-C酰基化不存在多取代问题！</strong><br>
+&bull; 烷基化：产物&minus;R是<strong>供电子基</strong>(活化环) → 产物比底物更活泼 → 反应越来越快 → <strong>无法停止</strong><br>
+&bull; 酰基化：产物&minus;COR是<strong>吸电子基</strong>(钝化环) → 产物比底物更惰性 → 反应自动停止在一元取代<br>
+这是两者最根本的区别！</div>
 
 <h4 style="color:var(--acc);margin-top:15px;">⑤ Friedel-Crafts 酰基化</h4>
 <div class="fb"><div class="t">酰基化的优势</div>
 <ul>
 <li><strong>不会重排</strong>：酰基正离子(RCO<sup>+</sup>)有共振稳定，不重排</li>
-<li><strong>只生成一元取代</strong>：产物含-COR（吸电子基），使苯环钝化</li>
+<li><strong>只生成一元取代</strong>：产物含-COR（吸电子基），使苯环钝化，反应自动停止</li>
 <li>可通过<strong>Clemmensen还原</strong>(Zn-Hg/HCl)或<strong>Wolff-Kishner还原</strong>(NH<sub>2</sub>NH<sub>2</sub>/KOH)将C=O还原为CH<sub>2</sub></li>
 <li><strong>需要过量AlCl<sub>3</sub></strong>（&gt;1当量）：产物酮的C=O与AlCl<sub>3</sub>络合，消耗催化剂，因此AlCl<sub>3</sub>需超过化学计量</li>
 </ul></div>
-<div class="tip"><strong>合成直链烷基苯的策略</strong>：避免重排！<br>
+<div class="tip"><strong>合成直链烷基苯的策略（酰基化-还原法）</strong>：避免重排和多取代！<br>
 苯 →(RCOCl/AlCl<sub>3</sub>)→ ArCOR →(Zn-Hg/HCl 或 NH<sub>2</sub>NH<sub>2</sub>/KOH)→ ArCH<sub>2</sub>R<br>
-<strong>酰基化-还原法</strong> = 间接烷基化，避免碳正离子重排</div>
+<strong>酰基化-还原法</strong> = 间接实现烷基化。优势：①不重排 ②不多取代 ③可得到纯一元直链烷基苯</div>
 
 <h4 style="color:var(--acc);margin-top:15px;">⑥ 氯甲基化反应（Blanc反应）</h4>
 <div class="fb"><div class="t">氯甲基化</div>
@@ -237,23 +259,32 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 
 <h3 id="k6">7.6 定位效应</h3>
 <div class="card">
-<div class="fb"><div class="t">第一类定位基（邻对位定位基）</div>
-<p><strong>活化+邻对位</strong>：&minus;NH<sub>2</sub>, &minus;NHR, &minus;NR<sub>2</sub>, &minus;OH, &minus;OR, &minus;NHCOR, &minus;OCOCH<sub>3</sub>, &minus;R, &minus;C<sub>6</sub>H<sub>5</sub></p>
-<p>特征：与苯环直接相连的原子上有<strong>孤对电子</strong>或提供电子的&sigma;键，能通过<strong>共振效应(+C)</strong>或<strong>超共轭</strong>向环供电子</p></div>
+<div class="fb"><div class="t">第一类定位基（邻对位导向基）——致活基团</div>
+<p><strong>强活化</strong>：&minus;O<sup>&minus;</sup>, &minus;NR<sub>2</sub>, &minus;NHR, &minus;NH<sub>2</sub>, &minus;OH<br>
+<strong>中等活化</strong>：&minus;NHCOR, &minus;OCOCH<sub>3</sub>, &minus;OR<br>
+<strong>弱活化</strong>：&minus;CH<sub>3</sub>(&minus;R), &minus;C<sub>6</sub>H<sub>5</sub></p>
+<p><strong>特征规律</strong>：与苯环直接相连的原子上有<strong>可用于共轭的孤对电子</strong>（p轨道中的非键电子对），能通过<strong>+C共振效应</strong>向环供电子。或者通过超共轭(&minus;R)向环供电子。这些基团总体上<strong>提高苯环电子密度</strong>（致活），使反应速率比苯更快。</p></div>
 
-<div class="fb"><div class="t">特殊：卤素（邻对位+钝化）</div>
+<div class="fb"><div class="t">特殊：卤素（邻对位定位但致钝！）</div>
 <p>&minus;F, &minus;Cl, &minus;Br, &minus;I</p>
-<p>吸电子诱导效应(&minus;I) > 供电子共振效应(+C) → <strong>总体钝化</strong><br>
-但共振效应决定位置 → <strong>邻对位定位</strong></p></div>
+<p>吸电子诱导效应(&minus;I) > 供电子共振效应(+C) → <strong>总体钝化（致钝基团）</strong><br>
+但共振效应决定位置（卤素p轨道孤对电子与苯环共轭，稳定邻对位&sigma;络合物）→ <strong>邻对位定位</strong></p>
+<p>卤素是唯一的"<strong>邻对位定位 + 致钝</strong>"类型，是定位效应的特殊例外，考试必须记牢！</p></div>
 
-<div class="fb"><div class="t">第二类定位基（间位定位基）</div>
-<p><strong>钝化+间位</strong>：&minus;NO<sub>2</sub>, &minus;CF<sub>3</sub>, &minus;CN, &minus;SO<sub>3</sub>H, &minus;CHO, &minus;COR, &minus;COOH, &minus;COOR, &minus;CONH<sub>2</sub></p>
-<p>特征：与苯环直接相连的原子含有<strong>多重键</strong>（双键或三键连接电负性原子），强吸电子</p></div>
+<div class="fb"><div class="t">第二类定位基（间位导向基）——致钝基团</div>
+<p><strong>强钝化</strong>：&minus;NR<sub>3</sub><sup>+</sup>, &minus;NO<sub>2</sub>, &minus;CF<sub>3</sub>, &minus;CCl<sub>3</sub><br>
+<strong>中等~强钝化</strong>：&minus;CN, &minus;SO<sub>3</sub>H, &minus;CHO, &minus;COR, &minus;COOH, &minus;COOR, &minus;CONH<sub>2</sub></p>
+<p><strong>特征规律</strong>：与苯环直接相连的原子上含有<strong>指向电负性原子的多重键</strong>（C=O、C&equiv;N、N=O等），或者直接带正电荷(&minus;NR<sub>3</sub><sup>+</sup>)。这些结构通过<strong>&minus;C共振效应</strong>和<strong>&minus;I诱导效应</strong>强烈吸电子，<strong>降低苯环电子密度</strong>（致钝），使反应速率比苯慢。</p></div>
+
+<div class="note"><strong>致活 vs 致钝——快速判断规则</strong>：<br>
+&bull; <strong>致活基团（activating）</strong>= 第一类定位基（除卤素外）：加速EAS反应，使苯环比苯本身更活泼<br>
+&bull; <strong>致钝基团（deactivating）</strong>= 第二类定位基 + 卤素：减慢EAS反应<br>
+&bull; <strong>快速判断</strong>：看<strong>与苯环直接相连的原子</strong>——若该原子有孤对电子可共轭→第一类（邻对位）；若该原子连有电负性原子的多重键或本身带正电→第二类（间位）</div>
 
 <div class="note"><strong>定位效应的本质</strong>：<br>
-&bull; 邻对位定位基使邻对位碳上电子密度增大 → E<sup>+</sup>优先进攻邻对位<br>
-&bull; 间位定位基使邻对位碳电子密度降低 → 间位相对最不被钝化<br>
-&bull; 实际上间位定位基使<strong>所有位置都钝化</strong>，但间位钝化最少</div>
+&bull; 邻对位定位基使邻对位碳上电子密度增大（共振结构在邻对位放置负电荷）→ E<sup>+</sup>优先进攻邻对位<br>
+&bull; 间位定位基使邻对位碳电子密度降低（共振结构在邻对位放置正电荷）→ 间位相对最不被钝化<br>
+&bull; 实际上间位定位基使<strong>所有位置都钝化</strong>，但间位钝化最少（E<sup>+</sup>"被迫"选间位）</div>
 
 <h4 style="color:var(--acc);margin-top:15px;">邻对位比例的影响因素</h4>
 <div class="tip"><strong>位阻效应</strong>：取代基体积越大 → 对位产物比例越高<br>
@@ -312,7 +343,24 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 &bull; 无论侧链多长，都氧化为<strong>&minus;COOH</strong><br>
 &bull; 二甲苯、三甲苯等多侧链 → 多个&minus;COOH</div>
 
-<div class="tip"><strong>苄基自由基/碳正离子</strong>的稳定性：苄基位（&alpha;-C）上形成的自由基或碳正离子因与苯环共轭而稳定（类似烯丙基）。NBS(N-溴代丁二酰亚胺)/hv 是苄位溴代的常用试剂。</div>
+<div class="tip"><strong>苄基自由基/碳正离子</strong>的稳定性：苄基位（&alpha;-C）上形成的自由基或碳正离子因与苯环共轭而稳定（类似烯丙基）。</div>
+
+<div class="fb"><div class="t">苯环侧链卤化的标准方法（自由基反应）</div>
+<ul>
+<li><strong>NBS(N-溴代丁二酰亚胺) + hv 或过氧化物引发</strong>：苄位溴代的最佳试剂，低浓度Br<sub>2</sub>保证一元取代</li>
+<li><strong>Br<sub>2</sub>/hv 或 Br<sub>2</sub>/&Delta;</strong>：也可用于侧链溴代，但控制较难</li>
+<li><strong>Cl<sub>2</sub>/hv</strong>：侧链氯代，选择性不如溴代（氯自由基活性太高）</li>
+<li><strong>机理</strong>：自由基链式反应——引发(Br<sub>2</sub>→2Br&middot;)→传递(夺&alpha;-H形成苄基自由基→与Br<sub>2</sub>反应)→终止</li>
+</ul></div>
+
+<div class="fb"><div class="t">含多个苄位时的选择性</div>
+<ul>
+<li>当分子中存在<strong>多种苄位氢</strong>时，优先在形成<strong>更稳定自由基</strong>的位置反应</li>
+<li>稳定性：<strong>3&deg;苄基自由基 > 2&deg;苄基自由基 > 1&deg;苄基自由基</strong></li>
+<li>例：异丙基苯(枯烯) + NBS/hv → 优先在叔碳上取代（形成3&deg;苄基自由基）</li>
+<li>例：乙苯 + NBS/hv → 优先在&alpha;碳取代得 C<sub>6</sub>H<sub>5</sub>CHBrCH<sub>3</sub>（2&deg;苄基自由基 vs 1&deg;）</li>
+<li><strong>溴的高选择性</strong>：Br&middot;的选择性远高于Cl&middot;（因为Br&middot;夺H是吸热反应，过渡态晚，对C-H键强弱更敏感）</li>
+</ul></div>
 <div class="card" style="text-align:center;padding:8px;">
 <img src="img/ch7_side_chain.png" alt="芳烃侧链反应总结" style="max-width:680px;width:100%;">
 </div>
@@ -375,6 +423,15 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 
 <h3 id="k9">7.9 萘的化学</h3>
 <div class="card">
+<div class="fb"><div class="t">萘的结构</div>
+<p><strong>分子式</strong>：C<sub>10</sub>H<sub>8</sub>，10个&pi;电子（4n+2, n=2），具有芳香性</p>
+<ul>
+<li>所有原子<strong>共平面</strong>，10个碳均为sp<sup>2</sup>杂化</li>
+<li>键长<strong>不完全等同</strong>（与苯不同！）：C<sub>1</sub>&minus;C<sub>2</sub> = 0.136 nm (a), C<sub>2</sub>&minus;C<sub>3</sub> = 0.140 nm (b), C<sub>1</sub>&minus;C<sub>8a</sub> = 0.142 nm (c), C<sub>4a</sub>&minus;C<sub>8a</sub> = 0.139 nm (d)</li>
+<li>键长交替表明萘的芳香性不如苯完美，&pi;电子离域不如苯均匀</li>
+<li>共振能 ≈ 255 kJ/mol（苯为152），但<strong>平均每环</strong>的共振能(127.5)比苯低 → 芳香性比苯弱</li>
+</ul></div>
+
 <svg width="260" height="120" viewBox="0 0 260 120" style="display:block;margin:10px auto;">
   <!-- naphthalene -->
   <polygon points="30,40 60,25 90,40 90,70 60,85 30,70" fill="none" stroke="#333" stroke-width="1.5"/>
@@ -390,12 +447,18 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
   <text x="185" y="60" font-size="11" fill="#333">&beta;位 = 2,3,6,7位</text>
 </svg>
 
-<div class="fb"><div class="t">萘的亲电取代</div>
+<div class="fb"><div class="t">萘的亲电取代——优先发生在&alpha;位(1-位)</div>
 <ul>
-<li>萘比苯<strong>更容易</strong>发生亲电取代（活性更高）</li>
+<li>萘比苯<strong>更容易</strong>发生亲电取代（活性更高，因芳香性较弱、电子密度更高）</li>
 <li><strong>动力学控制</strong>（低温、温和条件）→ <strong>&alpha;位取代</strong>（过渡态能量更低）</li>
 <li><strong>热力学控制</strong>（高温、剧烈条件）→ <strong>&beta;位取代</strong>（产物更稳定）</li>
 </ul></div>
+
+<div class="note"><strong>&alpha;位优先的原因——&sigma;络合物稳定性分析</strong>：<br>
+&bull; E<sup>+</sup>进攻<strong>&alpha;位</strong>时，形成的&sigma;络合物(碳正离子中间体)有<strong>2个共振结构保留完整苯环</strong>（另一个环未被破坏），还有其他共振结构分散正电荷<br>
+&bull; E<sup>+</sup>进攻<strong>&beta;位</strong>时，形成的&sigma;络合物只有<strong>1个共振结构保留完整苯环</strong><br>
+&bull; 保留完整苯环的共振结构能量更低、贡献更大 → &alpha;位&sigma;络合物更稳定 → &alpha;位取代活化能更低<br>
+&bull; 因此在动力学控制条件下，萘的亲电取代<strong>优先发生在&alpha;位</strong></div>
 
 <div class="warn"><strong>经典考点：萘的磺化</strong><br>
 &bull; 低温(80&deg;C)磺化 → <strong>&alpha;-萘磺酸</strong>（动力学产物）<br>
@@ -432,11 +495,22 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <table>
 <tr><th>名称</th><th>环数</th><th>&pi;电子数</th><th>特点</th></tr>
 <tr><td>萘</td><td>2</td><td>10</td><td>芳香性比苯弱，反应活性更高</td></tr>
-<tr><td>蒽</td><td>3(线形)</td><td>14</td><td>9,10-位最活泼</td></tr>
-<tr><td>菲</td><td>3(角形)</td><td>14</td><td>9,10-位最活泼</td></tr>
+<tr><td>蒽</td><td>3(线形)</td><td>14</td><td>9,10-位最活泼（中间环双键性最强）</td></tr>
+<tr><td>菲</td><td>3(角形)</td><td>14</td><td>9,10-位最活泼（该键键长0.134nm，接近双键）</td></tr>
 </table></div>
-<p>&bull; 稠环芳烃的芳香性：萘 > 蒽/菲；环数越多，越容易加成<br>
-&bull; 蒽的9,10-位可发生<strong>Diels-Alder反应</strong>（作为双烯体）</p>
+
+<div class="fb"><div class="t">蒽和菲的9,10-位反应性</div>
+<p>蒽和菲的<strong>取代、氧化、还原都优先发生在9,10-位</strong>：</p>
+<ul>
+<li><strong>亲电取代</strong>：蒽/菲 + Br<sub>2</sub> → 9-溴蒽 / 9-溴菲（无需Lewis酸催化！9,10位活性极高）</li>
+<li><strong>氧化</strong>：蒽 + CrO<sub>3</sub>或Na<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> → <strong>蒽醌</strong>（9,10-位被氧化为C=O）；菲 + CrO<sub>3</sub> → <strong>菲醌</strong></li>
+<li><strong>还原</strong>：蒽 + Na/醇 → <strong>9,10-二氢蒽</strong>（9,10位先加氢）</li>
+<li><strong>Diels-Alder加成</strong>：蒽的9,10-位可作为<strong>双烯体</strong>，与亲双烯体（如马来酸酐）发生[4+2]环加成反应</li>
+</ul></div>
+<div class="note"><strong>9,10-位活泼的原因</strong>：<br>
+&bull; 蒽/菲在9,10-位反应后，剩余部分形成<strong>两个独立苯环</strong>（每个都保留完整芳香性）<br>
+&bull; 9,10-位的键最具"烯烃双键"特征（键级最高、芳香性贡献最小）<br>
+&bull; 总体规律：<strong>稠环芳烃的芳香性随环数增加而降低</strong>，苯 > 萘 > 蒽/菲，越容易发生加成反应</div>
 </div>
 
 <h3 id="k11">7.11 合成策略总结</h3>
@@ -773,9 +847,10 @@ D(3种产物) = <strong>间二甲苯</strong></p>
 <h2 id="tips">考前提醒</h2>
 <div class="warn"><strong>条件决定位置（必考！）</strong><br>
 Lewis酸催化(FeBr<sub>3</sub>) → 苯环上 | hv/NBS/高温 → 侧链&alpha;位 | KMnO<sub>4</sub> → 侧链氧化为-COOH</div>
-<div class="warn"><strong>F-C烷基化 vs 酰基化</strong><br>
-烷基化：会重排、多取代、可逆、不能用于钝化苯环<br>
-酰基化：不重排、一元取代、不可逆</div>
+<div class="warn"><strong>F-C烷基化 vs 酰基化（超级重要！）</strong><br>
+烷基化：会重排���<strong>不能停在一次取代</strong>（多烷基化）、不能用于钝化苯环(&minus;NO<sub>2</sub>、&minus;COR等)、不能用于胺<br>
+酰基化：不重排、自动停在一元取代（产物被钝化）、不可逆<br>
+<strong>间接烷基化</strong>：酰基化→Clemmensen/Wolff-Kishner还原 = 解决重排+多取代两大问题</div>
 <div class="warn"><strong>合成题的引入顺序</strong><br>
 取代基的相对位置决定引入顺序！邻对位关系 → 先引入邻对位定位基；间位关系 → 先引入间位定位基</div>
 <div class="warn"><strong>磺酸基占位</strong>：磺化可逆！利用磺酸基暂时占位，阻挡不需要的位置</div>

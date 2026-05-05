@@ -198,6 +198,16 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <img src="img/ch5_carbocation_rearrange.png" alt="碳正离子重排1,2-迁移" style="max-width:700px;width:100%;">
 </div>
 
+<div class="card">
+<div class="fb"><div class="t">碳正离子重排产物分析步骤</div>
+<p><strong>Step 1</strong>：确定初始碳正离子（由亲电加成第一步生成）</p>
+<p><strong>Step 2</strong>：检查邻碳(β-碳)上是否有可迁移的H或烷基</p>
+<p><strong>Step 3</strong>：判断迁移后碳正离子是否更稳定（2°→3°？或释放环张力？）</p>
+<p><strong>Step 4</strong>：若更稳定则重排发生 → 亲核试剂进攻重排后的碳正离子 → 写出产物</p></div>
+<div class="tip"><strong>重排驱动力</strong>：本质是<strong>热力学驱动</strong>——体系总是倾向于经过能量最低的中间体。1,2-H迁移(活化能低,速率快) &gt; 1,2-烷基迁移。两者均为协同过程（迁移基团带着一对电子从邻碳移向缺电子碳）。</div>
+<div class="warn"><strong>重排产物的判断</strong>：注意碳骨架在重排后会改变！必须重新编号碳原子确定最终产物的IUPAC名称。常见错误是忘记碳骨架已变而写错产物名。</div>
+</div>
+
 <!-- ==================== 5.3 卤素加成 ==================== -->
 <h2 id="s3">5.3 卤素加成与立体化学</h2>
 <h3>溴鎓离子机理（Br₂加成）</h3>
@@ -395,6 +405,11 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <div class="fb"><div class="t">为什么在烯丙位？</div>
 <p>烯丙基自由基有<strong>p-π共轭</strong>稳定化（电子离域到相邻π体系）</p>
 <p>NBS的作用：维持低浓度Br₂ → 有利于取代(自由基链反应)而非加成</p></div>
+<div class="fb"><div class="t">内烯烃的反应位点分析</div>
+<p>例：CH₃-CH=CH-CH₃ (2-丁烯) 在自由基条件(NBS/hν)下：</p>
+<p>①C1和C4位的H均为烯丙位氢 → 断裂后形成烯丙基自由基(p-π共轭稳定)</p>
+<p>②反应位点：<strong>两端的α-H</strong>均可被取代 → 产物为 CH₂Br-CH=CH-CH₃ 和 CH₃-CH=CH-CH₂Br</p>
+<p>③对称烯烃(如2-丁烯)→两端等价→只得一种产物</p></div>
 <div class="warn"><strong>区分</strong>：NBS/hν = 烯丙位取代；Br₂ = 双键加成。不要搞混！</div>
 </div>
 
@@ -423,6 +438,93 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <li>特点：可控制聚合物的立构规整性（等规/间规聚合）</li>
 </ul>
 <div class="tip">自由基聚合→支链多→低密度；配位聚合→线型→高密度。这是高频考点对比。</div>
+</div>
+
+<!-- ==================== 共轭二烯烃 ==================== -->
+<h2 id="s6c">5.6c 共轭二烯烃</h2>
+<h3>共轭二烯的结构特点</h3>
+<div class="card">
+<div class="fb"><div class="t">共轭体系的稳定性</div>
+<p>1,3-丁二烯：四个p轨道相互重叠形成<strong>π-π共轭体系</strong>，电子离域</p>
+<p>稳定性：共轭二烯 &gt; 隔离二烯（氢化热差值≈16 kJ/mol = 共轭稳定化能）</p></div>
+<p><strong>构象</strong>：</p>
+<ul>
+<li><strong>s-trans构象</strong>：C2-C3单键两侧双键呈反式，能量更低（基态优势构象）</li>
+<li><strong>s-cis构象</strong>：C2-C3单键两侧双键呈顺式，能量略高，但是<strong>Diels-Alder反应所需构象</strong></li>
+</ul>
+</div>
+
+<h3>1,2-加成 vs 1,4-加成</h3>
+<div class="card">
+<svg width="460" height="130" viewBox="0 0 460 130">
+  <text x="230" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">1,3-丁二烯 + HBr</text>
+  <text x="80" y="50" font-size="12">CH₂=CH-CH=CH₂ + HBr</text>
+  <line x1="240" y1="45" x2="280" y2="30" stroke="#27ae60" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="240" y1="45" x2="280" y2="65" stroke="#c0392b" stroke-width="2" marker-end="url(#arr2)"/>
+  <text x="290" y="30" font-size="11" fill="#27ae60" font-weight="bold">CH₃-CHBr-CH=CH₂ (1,2-加成)</text>
+  <text x="290" y="70" font-size="11" fill="#c0392b" font-weight="bold">CH₃-CH=CH-CH₂Br (1,4-加成)</text>
+  <text x="230" y="100" text-anchor="middle" font-size="11" fill="#666">中间体：烯丙基碳正离子 CH₃-CH⁺-CH=CH₂ ↔ CH₃-CH=CH-CH₂⁺</text>
+  <text x="230" y="118" text-anchor="middle" font-size="10" fill="#666">（正电荷离域在C2和C4）</text>
+</svg>
+<div class="fb"><div class="t">动力学控制 vs 热力学控制</div>
+<p><strong>低温(-80°C)，动力学控制</strong>：1,2-加成产物为主 → 活化能较低(Br⁻进攻较近的C2更快)</p>
+<p><strong>高温(40°C以上)，热力学控制</strong>：1,4-加成产物为主 → 产物更稳定(内烯烃，取代更多)</p></div>
+<table>
+<tr><th>条件</th><th>主产物</th><th>原因</th></tr>
+<tr><td>低温(-80°C)、短时间</td><td>1,2-加成产物</td><td>活化能低，生成速率快（动力学控制）</td></tr>
+<tr><td>高温(40°C+)、长时间</td><td>1,4-加成产物</td><td>产物热力学更稳定，平衡有利（热力学控制）</td></tr>
+</table>
+<div class="warn"><strong>注意</strong>：1,4-加成产物中双键位置在C2-C3之间(中间位置)，比1,2-产物中的末端双键更稳定。</div>
+</div>
+
+<h3>Diels-Alder反应（[4+2]环加成）</h3>
+<div class="card">
+<svg width="440" height="110" viewBox="0 0 440 110">
+  <text x="220" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">Diels-Alder反应示意</text>
+  <!-- diene -->
+  <path d="M50,70 L80,45 L110,70 L140,45" fill="none" stroke="#333" stroke-width="2.5"/>
+  <text x="95" y="90" text-anchor="middle" font-size="10">共轭二烯</text>
+  <text x="95" y="102" text-anchor="middle" font-size="9" fill="#27ae60">(s-cis构象)</text>
+  <!-- + -->
+  <text x="165" y="62" font-size="16">+</text>
+  <!-- dienophile -->
+  <line x1="190" y1="55" x2="230" y2="55" stroke="#333" stroke-width="3"/>
+  <line x1="190" y1="48" x2="230" y2="48" stroke="#333" stroke-width="3"/>
+  <text x="210" y="75" text-anchor="middle" font-size="10">亲二烯体</text>
+  <text x="210" y="87" text-anchor="middle" font-size="9" fill="#c0392b">(含吸电子基)</text>
+  <!-- arrow -->
+  <text x="260" y="55" font-size="14">→</text>
+  <text x="260" y="40" font-size="9" fill="#666">Δ</text>
+  <!-- product cyclohexene -->
+  <polygon points="310,35 340,25 370,35 370,65 340,75 310,65" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="310" y1="40" x2="310" y2="60" stroke="#333" stroke-width="2.5"/>
+  <text x="340" y="95" text-anchor="middle" font-size="10">环己烯产物</text>
+</svg>
+<div class="fb"><div class="t">Diels-Alder反应条件与特点</div>
+<p><strong>共轭二烯（4π电子）</strong>：必须能采取<strong>s-cis构象</strong>；富电子二烯反应更快</p>
+<p><strong>亲二烯体（2π电子）</strong>：含<strong>吸电子基团</strong>(如-CHO, -COOR, -COR, -CN, -NO₂)的烯烃</p>
+<p><strong>反应特点</strong>：</p>
+<ul>
+<li>协同反应(一步完成)，无中间体，经六元环过渡态</li>
+<li><strong>顺式加成(syn)</strong>：双键上取代基的顺反关系完全保持到产物中</li>
+<li>条件：加热即可反应（"顺则反应" = 只需要加热这一简单条件）</li>
+<li>可逆：高温时发生逆Diels-Alder反应(retro-DA)</li>
+</ul></div>
+<div class="ex"><strong>典型例子</strong>：
+<p>1,3-丁二烯 + 马来酸酐 → 四氢邻苯二甲酸酐（经典DA反应）</p>
+<p>1,3-丁二烯 + 乙烯(高温高压) → 环己烯</p>
+<p>环戊二烯(天然s-cis) + 马来酸酐 → 降冰片烯二酸酐(endo为主)</p></div>
+<div class="tip"><strong>记忆</strong>：DA反应 = "电子互补"原则：二烯富电子 + 亲二烯体缺电子 → 匹配良好 → 反应快。</div>
+<div class="note"><strong>"顺则反应"</strong>：指共轭二烯能采取s-cis构象时即可发生DA反应。若二烯被锁定在s-trans构象（如环外双键）则无法反应。</div>
+</div>
+
+<h3>DA反应的区域选择性与立体化学</h3>
+<div class="card">
+<div class="fb"><div class="t">endo规则（次要了解）</div>
+<p>当亲二烯体有吸电子取代基时，产物中该取代基优先处于<strong>endo位</strong>（动力学产物）</p>
+<p>原因：过渡态中吸电子基与二烯的次级轨道重叠（secondary orbital interaction）有利</p></div>
+<div class="fb"><div class="t">区域选择性（"ortho/para规则"）</div>
+<p>不对称二烯 + 不对称亲二烯体 → 优先形成"1,2-"或"1,4-"取代的环己烯（类似邻/对位取向）</p></div>
 </div>
 
 <!-- ==================== 烯烃的制备 ==================== -->
