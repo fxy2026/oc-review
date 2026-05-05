@@ -29,6 +29,7 @@ th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
 th{background:var(--pri);color:#fff;}
 tr:nth-child(even){background:#f0f7f0;}
 details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+.sol-header{font-weight:bold;color:var(--pri);border-top:2px solid var(--border);margin-top:10px;padding-top:8px;}
 ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
@@ -109,7 +110,9 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <ul>
 <li>C2&minus;C3键长：<strong>146.0 pm</strong>，介于C&minus;C单键(154 pm)和C=C双键(134 pm)之间 → 键长平均化</li>
 <li>分子近乎平面构型，电子离域在整个共轭体系上</li>
-</ul></div>
+</ul>
+<img src="img/struct_conjugation_types.svg" alt="共轭类型示意图" style="max-width:350px;display:block;margin:10px auto;">
+</div>
 <div class="fb"><div class="t">共轭效应（离域效应）</div>
 <p><strong>定义</strong>：在共轭体系中，电子离域（不再局限于两个原子之间）导致体系能量降低、稳定性增大的效应。</p>
 <p><strong>氢化热数据验证</strong>：</p>
@@ -189,11 +192,28 @@ CH<sub>3</sub>CH=CHCH<sub>2</sub>CH<sub>3</sub> → <strong>2-戊烯</strong></d
 <p>取代环烃：取代基少 → 环为母体；取代基多或链长 → 链为母体+环为取代基</p></div>
 
 <div class="fb"><div class="t">桥环命名</div>
-<p><strong>二环[a.b.c]某烷</strong>：a&ge;b&ge;c，a、b、c为三座桥的碳数</p>
-<p>编号：从一个桥头碳开始，沿<strong>最长桥→次长桥→最短桥</strong>编号</p></div>
+<p><strong>二环[a.b.c]某烷</strong>：a&ge;b&ge;c，a、b、c为三座桥的碳数（不包含桥头碳）</p>
+<p>编号：从一个桥头碳开始，沿<strong>最长桥→次长桥→最短桥</strong>编号</p>
+<p><strong>实例详解</strong>：</p>
+<ul>
+<li><strong>降冰片烷</strong> = 二环[2.2.1]庚烷：共7个碳，两个桥头碳 + 三座桥分别含2、2、1个碳(2+2+1+2桥头=7)</li>
+<li><strong>二环[3.3.1]壬烷</strong>：共9个碳，三座桥分别含3、3、1个碳(3+3+1+2桥头=9)</li>
+<li><strong>二环[2.2.2]辛烷</strong>：共8个碳，三座桥各含2个碳(2+2+2+2桥头=8)</li>
+</ul>
+<img src="img/struct_bridged.svg" alt="桥环结构" style="max-width:350px;display:block;margin:10px auto;">
+</div>
 
 <div class="fb"><div class="t">螺环命名</div>
-<p><strong>螺[a.b]某烷</strong>：a&le;b，从<strong>小环</strong>上与螺原子相邻的碳开始编号</p></div>
+<p><strong>螺[a.b]某烷</strong>：a&le;b，a和b分别为两个环中<strong>不包括螺原子</strong>的碳数</p>
+<p>编号：从<strong>小环</strong>上与螺原子相邻的碳开始编号，绕小环→经螺原子→绕大环</p>
+<p><strong>实例详解</strong>：</p>
+<ul>
+<li><strong>螺[4.5]癸烷</strong>：总碳数=4+5+1(螺原子)=10（癸=10碳）。[4.5]表示小环除螺原子外有4个碳，大环除螺原子外有5个碳。即一个五元环和一个六元环共享一个螺原子。</li>
+<li><strong>螺[3.4]辛烷</strong>：总碳数=3+4+1=8。一个四元环和一个五元环共享螺原子。</li>
+<li><strong>螺[2.5]辛烷</strong>：总碳数=2+5+1=8。一个三元环和一个六元环共享螺原子。</li>
+</ul>
+<img src="img/struct_spirocyclic.svg" alt="螺环结构" style="max-width:350px;display:block;margin:10px auto;">
+</div>
 <div class="tip"><strong>桥环实例</strong>：降冰片烷 = 二环[2.2.1]庚烷(共7个碳，桥分别含2、2、1个碳)</div>
 </div>
 
@@ -241,14 +261,14 @@ CH<sub>3</sub>CH=CHCH<sub>2</sub>CH<sub>3</sub> → <strong>2-戊烯</strong></d
 <h2 id="ex">课后习题精选</h2>
 
 <div class="ex"><strong>1. &sigma;键与&pi;键</strong>：比较&sigma;键和&pi;键的性质有什么不同。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(1) &sigma;键是轨道"头对头"方式重叠形成的，&pi;键是由两个p轨道彼此"肩并肩"方式侧面平行重叠；所以重叠程度不如&sigma;键大，&pi;键不如&sigma;键稳定。</p>
 <p>(2) 以双键相连的两原子不能自由旋转；如果旋转，两个p轨道就不能很好平行，&pi;键就会被破坏。</p>
 <p>(3) &pi;键的电子云分布在平面的上方和下方，因此平面上下方电子云密度较大，&pi;键反应活性大。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>2. 杂化判断</strong>：标明下列化合物中所有碳原子的杂化方式，尝试标出O、N原子的杂化方式。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>判断方法：数"区域数"（成键原子数+孤电子对数）= 杂化轨道数</p>
 <p>&bull; 饱和碳（连4个原子）→ sp<sup>3</sup><br>
 &bull; 双键碳/苯环碳 → sp<sup>2</sup><br>
@@ -256,30 +276,30 @@ CH<sub>3</sub>CH=CHCH<sub>2</sub>CH<sub>3</sub> → <strong>2-戊烯</strong></d
 &bull; 羰基O（=O，2个孤对）→ sp<sup>2</sup><br>
 &bull; 醇/醚的O（-O-，2个孤对+2个&sigma;键）→ sp<sup>3</sup><br>
 &bull; 胺的N(-NH<sub>2</sub>，1个孤对+3个&sigma;键)→ sp<sup>3</sup></p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>3. 官能团识别</strong>：马来酸左旋氨氯地平分子中标出各官能团。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>常见官能团：氯原子、酯基、氨基、双键、羧基(马来酸部分)等。</p>
 <p>(a) 强极性的共价单键：C-O、C-N<br>
 (b) 强极性的共价双键：C=O、C=C<br>
 (c) 几乎无极性的共价键：C-C、C-H<br>
 (d) sp<sup>2</sup>杂化的碳原子：苯环、双键、羰基碳<br>
 (e) 不同杂化类型的碳原子之间的键：sp<sup>2</sup>-sp<sup>3</sup>(如苯环与单键碳之间)</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>4. 常见基团命名</strong>：写出常见基团的中英文名称。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>甲基(methyl)、乙基(ethyl)、丙基(propyl)、异丙基(isopropyl)、丁基(butyl)、叔丁基(tert-butyl)、异丁基(isobutyl)、仲丁基(sec-butyl)</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>5. 碳和氢的分类</strong>：指出下列化合物中各碳和氢分别属于什么类型(伯/仲/叔/季)。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>连1个碳的为伯碳(1&deg;)，连2个碳的为仲碳(2&deg;)，连3个碳的为叔碳(3&deg;)，连4个碳的为季碳(4&deg;)。碳上的氢与碳同级。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>6. 同分异构体</strong>：写出C<sub>6</sub>H<sub>14</sub>和C<sub>4</sub>H<sub>8</sub>（不含双键）的同分异构体的结构式并命名。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p><strong>C<sub>6</sub>H<sub>14</sub></strong>（5种）：<br>
 (1) 正己烷 CH<sub>3</sub>(CH<sub>2</sub>)<sub>4</sub>CH<sub>3</sub><br>
 (2) 2-甲基戊烷<br>
@@ -289,55 +309,55 @@ CH<sub>3</sub>CH=CHCH<sub>2</sub>CH<sub>3</sub> → <strong>2-戊烯</strong></d
 <p><strong>C<sub>4</sub>H<sub>8</sub></strong>（不含双键，DBE=1→只含环）：<br>
 (1) 环丁烷<br>
 (2) 甲基环丙烷</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>7. 符合条件的异构体</strong>：写出符合C<sub>4</sub>H<sub>10</sub>O条件的结构。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(1) 只含有伯氢：2,2-二甲基丙醇 (CH<sub>3</sub>)<sub>3</sub>CCH<sub>2</sub>OH? 不对，C<sub>4</sub>需要。正确的是新戊醇不符合C4。<br>
 对于C<sub>4</sub>H<sub>10</sub>O：包括醇和醚两类异构体。<br>
 醇：1-丁醇、2-丁醇、2-甲基-1-丙醇、2-甲基-2-丙醇(叔丁醇)<br>
 醚：乙醚(CH<sub>3</sub>CH<sub>2</sub>OCH<sub>2</sub>CH<sub>3</sub>)、甲基丙基醚、甲基异丙基醚</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>8. 系统命名</strong>：命名下列化合物。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(1) 2,3-二甲基丁烷 &nbsp; (2) 2,2,3-三甲基丁烷 &nbsp; (3) 2-甲基戊烷<br>
 (4) 3-乙基-3-甲基庚烷 &nbsp; (5) 2-溴-二环[3.3.1]壬烷 &nbsp; (6) 7-氯二环[2.2.1]庚烷</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>9. 同一化合物判断</strong>：下列四种结构式是否为同一化合物？
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>是同一化合物：<strong>3-甲基己烷</strong>。不论怎样弯折碳链，只要最长链和取代基位次一致，就是同一化合物。命名是判断同一性的最好方法。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>10. 结构式书写</strong>：写出下列名称对应的结构式。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(1) 2,3-二甲基己烷 &nbsp; (2) 3-乙-2,4-二甲基己烷<br>
 (3) 3-乙基-2,4-二甲基己烷 &nbsp; (4) 反-1,3-二甲基环己烷<br>
 (5) 2,2,3,4-四甲基戊烷 &nbsp; (6) 反-1,3-二甲基环戊烷<br>
 (7) 顺-1-溴-2-甲基环己烷 &nbsp; (8) 7-乙基-3,8-二甲基-二环[4.2.0]辛烷<br>
 (9) 3,5,7-三甲基双环[4.1.0]庚烷</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>12. Z/E构型标记</strong>：标出Z/E构型。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(1) Z &nbsp; (2) Z &nbsp; (3) E &nbsp; (4) E<br>
 判断方法：按CIP次序规则确定双键两端各自的高优先基团，同侧=Z，异侧=E。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>14. 顺反异构数目</strong>：庚-2,4-二烯有几种顺反异构体？
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>2,4-庚二烯有两个双键，每个双键各有E/Z两种可能：<br>
 (2E,4E)、(2Z,4E)、(2E,4Z)、(2Z,4Z) → 共<strong>4种</strong>顺反异构体。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>19. 共振式判断</strong>：判断下列共振式书写是否正确。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(1) <strong>错误</strong>：原子位置发生了改变（共振式只能移动电子，不能移动原子）<br>
 (2) <strong>正确</strong>：电子分布不同但原子骨架相同<br>
 (3) <strong>正确</strong>：合理的电子重新分配<br>
 (4) <strong>错误</strong>：未成对电子数不同（违反规则3）</p>
-</div></details></div>
+</div></div>
 
 <h2 id="tips">考前提醒</h2>
 <div class="warn"><strong>不饱和度必须先算</strong>：拿到分子式第一步就算DBE，快速判断可能的结构类型</div>

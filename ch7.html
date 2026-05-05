@@ -21,6 +21,7 @@ h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var
 .ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
 .sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
 .sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.sol-header{font-weight:bold;color:var(--pri);margin:8px 0 4px;padding:4px;}
 .tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
 .warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
 .note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
@@ -163,6 +164,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
   <text x="500" y="40" font-size="11" fill="#666">决速步：②</text>
   <text x="500" y="58" font-size="11" fill="#666">&sigma;络合物能量最高</text>
 </svg>
+<img src="img/struct_eas_mechanism.svg" alt="亲电芳香取代机理" style="max-width:550px;display:block;margin:10px auto;">
 <div class="warn"><strong>为什么取代而不加成？</strong> 加成会永久破坏芳香性(损失~152kJ/mol共振能)，而取代反应通过失去H<sup>+</sup>恢复芳香性，热力学更有利。</div>
 </div>
 
@@ -250,6 +252,26 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <h4 style="color:var(--acc);margin-top:15px;">邻对位比例的影响因素</h4>
 <div class="tip"><strong>位阻效应</strong>：取代基体积越大 → 对位产物比例越高<br>
 例：甲苯硝化 → 邻:对 ≈ 58:37；叔丁基苯硝化 → 对位为主(>80%)</div>
+
+<h4 style="color:var(--acc);margin-top:15px;">定位效应总结表</h4>
+<table>
+<tr><th>类别</th><th>取代基</th><th>活化/钝化强度</th><th>定位</th></tr>
+<tr><td rowspan="5"><strong>邻对位定位基<br>(活化)</strong></td><td>&minus;NH<sub>2</sub>, &minus;NHR, &minus;NR<sub>2</sub></td><td>强活化</td><td>邻/对位</td></tr>
+<tr><td>&minus;OH, &minus;O<sup>&minus;</sup></td><td>强活化</td><td>邻/对位</td></tr>
+<tr><td>&minus;OR, &minus;OCOR</td><td>中等活化</td><td>邻/对位</td></tr>
+<tr><td>&minus;NHCOR</td><td>中等活化</td><td>邻/对位</td></tr>
+<tr><td>&minus;R, &minus;C<sub>6</sub>H<sub>5</sub></td><td>弱活化</td><td>邻/对位</td></tr>
+<tr><td rowspan="4"><strong>邻对位定位基<br>(钝化，卤素)</strong></td><td>&minus;F</td><td>弱钝化</td><td>邻/对位</td></tr>
+<tr><td>&minus;Cl</td><td>弱钝化</td><td>邻/对位</td></tr>
+<tr><td>&minus;Br</td><td>弱钝化</td><td>邻/对位</td></tr>
+<tr><td>&minus;I</td><td>弱钝化</td><td>邻/对位</td></tr>
+<tr><td rowspan="5"><strong>间位定位基<br>(钝化)</strong></td><td>&minus;NO<sub>2</sub></td><td>强钝化</td><td>间位</td></tr>
+<tr><td>&minus;CF<sub>3</sub>, &minus;CCl<sub>3</sub></td><td>强钝化</td><td>间位</td></tr>
+<tr><td>&minus;CN, &minus;SO<sub>3</sub>H</td><td>强钝化</td><td>间位</td></tr>
+<tr><td>&minus;CHO, &minus;COR, &minus;COOH, &minus;COOR</td><td>中等钝化</td><td>间位</td></tr>
+<tr><td>&minus;CONH<sub>2</sub>, &minus;NR<sub>3</sub><sup>+</sup></td><td>中等~强钝化</td><td>间位</td></tr>
+</table>
+<div class="tip"><strong>活化能力强→弱</strong>：&minus;NH<sub>2</sub> > &minus;OH > &minus;OR > &minus;NHCOR > &minus;R > &minus;H > &minus;F > &minus;Cl > &minus;Br > &minus;I > &minus;COR > &minus;COOH > &minus;CN > &minus;SO<sub>3</sub>H > &minus;NO<sub>2</sub> > &minus;NR<sub>3</sub><sup>+</sup></div>
 </div>
 
 <h3 id="k7">7.7 二取代苯定位规则</h3>
@@ -299,6 +321,36 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li><strong>供电子基</strong>（-OR, -R）：供电子基所在碳上<strong>保留双键</strong>（供电子基连在双键碳上）</li>
 <li><strong>吸电子基</strong>（-COOH）：吸电子基所在碳上<strong>失去双键</strong>（还原发生在吸电子基所在位置）</li>
 </ul></div>
+
+<div class="fb"><div class="t">Birch还原产物模式详解（1,4-二烯）</div>
+<p><strong>供电子基(EDG)取代苯</strong>（如 -OCH<sub>3</sub>, -CH<sub>3</sub>）：</p>
+<p style="text-align:center;">产物：<strong>取代基连在双键碳上</strong>（2,5-二氢产物）</p>
+<p>例：苯甲醚(C<sub>6</sub>H<sub>5</sub>OCH<sub>3</sub>) → <strong>1-甲氧基-1,4-环己二烯</strong>（2,5-二氢苯甲醚）</p>
+<pre style="text-align:center;font-family:monospace;margin:8px 0;">
+  OCH₃           OCH₃
+   |               |
+ /===\    Na/NH₃   /==\
+||   ||  ------→  |    |
+ \===/    EtOH    \==/
+                 1,4-二烯（C1=C2, C5=C6未被还原）
+</pre>
+<p>解释：EDG增加苯环电子密度 → 电子不易被加上 → 还原发生在EDG<strong>远端</strong>（C3,C6位被还原加H）→ EDG所在碳<strong>保留</strong>在双键上。</p>
+
+<p style="margin-top:12px;"><strong>吸电子基(EWG)取代苯</strong>（如 -COOH, -COOR, -COR）：</p>
+<p style="text-align:center;">产物：<strong>取代基连在非双键碳（sp<sup>3</sup>碳）上</strong>（1,4-二氢产物）</p>
+<p>例：苯甲酸(C<sub>6</sub>H<sub>5</sub>COOH) → <strong>1-羧基-2,5-环己二烯-1-羧酸 → 2,5-环己二烯-1-羧酸</strong>（1,4-二氢苯甲酸）</p>
+<pre style="text-align:center;font-family:monospace;margin:8px 0;">
+  COOH            COOH
+   |               |
+ /===\    Na/NH₃    H-C-H
+||   ||  ------→   /==\
+ \===/    EtOH    ||  ||
+                   \==/
+                 1,4-二烯（C2=C3, C5=C6未被还原）
+</pre>
+<p>解释：EWG降低苯环电子密度 → 电子易加到EWG所在碳 → 还原发生在EWG<strong>近端</strong>（C1位被还原加H）→ EWG所在碳变为sp<sup>3</sup>，双键移到C2=C3和C5=C6位。</p>
+</div>
+<div class="tip"><strong>记忆口诀</strong>：供电子基"留双键"——取代基碳保持sp<sup>2</sup>；吸电子基"去双键"——取代基碳变为sp<sup>3</sup>。产物均为<strong>1,4-环己二烯</strong>型（非共轭二烯）。</div>
 
 <h4 style="color:var(--acc);margin-top:15px;">苯的加成反应</h4>
 <div class="fb"><div class="t">苯环的加成（需剧烈条件）</div>
@@ -396,126 +448,170 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <h2 id="ex">课后习题精选</h2>
 
 <div class="ex"><strong>1. 芳香性判断</strong>：判断下列物种的芳香性：(a) 环戊二烯负离子 (b) 环庚三烯正离子 (c) 环辛四烯 (d) 环丙烯正离子 (e) 环丁二烯
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(a) 环戊二烯<sup>&minus;</sup>：5个C各提供1个p轨道，6个&pi;电子(4n+2, n=1)，共平面 → <strong>芳香</strong></p>
 <p>(b) 环庚三烯<sup>+</sup>：7个C，6个&pi;电子(4n+2, n=1)，共平面 → <strong>芳香</strong></p>
 <p>(c) 环辛四烯：8个&pi;电子(4n, n=2)，但采取非平面船式构象 → <strong>非芳香</strong>（刻意避免反芳香）</p>
 <p>(d) 环丙烯<sup>+</sup>：3个C，2个&pi;电子(4n+2, n=0)，共平面 → <strong>芳香</strong></p>
 <p>(e) 环丁二烯：4个&pi;电子(4n, n=1)，平面 → <strong>反芳香</strong>，极不稳定</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>2. 亲电取代产物</strong>：甲苯分别与下列试剂反应，写出主要产物：(a) Br<sub>2</sub>/FeBr<sub>3</sub> (b) Br<sub>2</sub>/hv (c) HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> (d) KMnO<sub>4</sub>/H<sup>+</sup>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(a) Br<sub>2</sub>/FeBr<sub>3</sub>：苯环亲电取代，-CH<sub>3</sub>为邻对位活化基 → <strong>邻溴甲苯 + 对溴甲苯</strong></p>
 <p>(b) Br<sub>2</sub>/hv：侧链自由基取代，苄位H被取代 → <strong>C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>Br</strong>（苄基溴）</p>
 <p>(c) HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub>：苯环硝化，-CH<sub>3</sub>邻对位定位 → <strong>邻硝基甲苯 + 对硝基甲苯</strong></p>
 <p>(d) KMnO<sub>4</sub>/H<sup>+</sup>：侧链氧化(&alpha;-H存在) → <strong>苯甲酸 C<sub>6</sub>H<sub>5</sub>COOH</strong></p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>3. 合成题</strong>：从苯出发合成<strong>邻硝基苯甲酸</strong>
-<details><summary>答案</summary><div class="sol"><div class="st">磺酸基占位策略</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">磺酸基占位策略</div>
 <p>① 苯 + CH<sub>3</sub>Cl/AlCl<sub>3</sub> → 甲苯<br>
 ② 甲苯 + 发烟H<sub>2</sub>SO<sub>4</sub> → <strong>对甲苯磺酸</strong>（对位被占）<br>
 ③ 对甲苯磺酸 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → <strong>邻位硝化</strong>（对位已被磺酸基占据）<br>
 ④ 稀酸/水蒸气蒸馏 → <strong>脱去磺酸基</strong><br>
 ⑤ KMnO<sub>4</sub> → 氧化甲基为-COOH → <strong>邻硝基苯甲酸</strong></p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>4. 合成题</strong>：从苯出发合成<strong>正丁基苯</strong>（不能用F-C烷基化直接做，会重排）
-<details><summary>答案</summary><div class="sol"><div class="st">酰基化-还原法</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">酰基化-还原法</div>
 <p>① 苯 + CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>COCl/AlCl<sub>3</sub> → 苯基丁酮 C<sub>6</sub>H<sub>5</sub>COCH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>（F-C酰基化，不重排）<br>
 ② 苯基丁酮 + Zn-Hg/HCl → <strong>正丁基苯</strong>（Clemmensen还原）<br>
 或 ② 苯基丁酮 + NH<sub>2</sub>NH<sub>2</sub>/KOH/&Delta; → <strong>正丁基苯</strong>（Wolff-Kishner还原）</p>
 <p><strong>注意</strong>：直接用正丁基氯/AlCl<sub>3</sub>会发生1,2-氢迁移重排，得到仲丁基苯！</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>5. 定位效应</strong>：预测下列化合物硝化的主要产物位置：(a) 苯甲酸 (b) 苯胺 (c) 氯苯 (d) 对硝基甲苯
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(a) 苯甲酸：-COOH为间位定位基 → <strong>间硝基苯甲酸</strong></p>
 <p>(b) 苯胺：-NH<sub>2</sub>为强邻对位活化基 → <strong>邻硝基苯胺 + 对硝基苯胺</strong>（实际需先保护为-NHCOCH<sub>3</sub>再硝化，否则-NH<sub>2</sub>太活泼会被氧化）</p>
 <p>(c) 氯苯：-Cl为邻对位定位+钝化 → <strong>邻氯硝基苯 + 对氯硝基苯</strong>（反应比苯慢）</p>
 <p>(d) 对硝基甲苯：-CH<sub>3</sub>(邻对位) vs -NO<sub>2</sub>(间位)矛盾 → -CH<sub>3</sub>活化更强 → 新基团进入<strong>甲基的邻位</strong>，即<strong>2-硝基-4-硝基甲苯(2,4-二硝基甲苯)</strong></p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>6. 萘的取代</strong>：(a) 萘在80&deg;C磺化的主要产物？(b) 在160&deg;C呢？(c) 解释原因。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(a) 80&deg;C → <strong>&alpha;-萘磺酸</strong>（1-萘磺酸），动力学产物</p>
 <p>(b) 160&deg;C → <strong>&beta;-萘磺酸</strong>（2-萘磺酸），热力学产物</p>
 <p>(c) <strong>原因</strong>：&alpha;位取代过渡态能量低，反应速度快（动力学有利）。但&beta;-产物位阻小、更稳定（热力学有利）。磺化<strong>可逆</strong>，高温下有足够能量使&alpha;-产物脱磺酸后重新磺化到&beta;位，达到热力学平衡。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>7. 合成题</strong>：从甲苯出发合成<strong>对溴苯甲酸</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>甲苯 + Br<sub>2</sub>/FeBr<sub>3</sub> → 对溴甲苯（-CH<sub>3</sub>邻对位定位，取对位产物）<br>
 对溴甲苯 + KMnO<sub>4</sub>/H<sup>+</sup> → <strong>对溴苯甲酸</strong></p>
 <p><strong>注意顺序</strong>：不能先氧化！如果先氧化为苯甲酸(-COOH间位定位)，再溴代会得到间溴苯甲酸。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>8. 合成题</strong>：从苯出发合成<strong>间溴硝基苯</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>分析：Br和NO<sub>2</sub>处于间位关系。</p>
 <p>方案：苯 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → 硝基苯 → 硝基苯 + Br<sub>2</sub>/FeBr<sub>3</sub> → <strong>间溴硝基苯</strong></p>
 <p>-NO<sub>2</sub>为间位定位基，Br进入间位。<br>
 <strong>不能反过来</strong>：先溴代再硝化，-Br是邻对位定位，会得到邻/对硝基溴苯。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>9. 合成题</strong>：从苯出发合成<strong>对硝基苯甲酸</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>① 苯 + CH<sub>3</sub>Cl/AlCl<sub>3</sub> → 甲苯<br>
 ② 甲苯 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → 对硝基甲苯（-CH<sub>3</sub>邻对位定位，取对位）<br>
 ③ 对硝基甲苯 + KMnO<sub>4</sub>/H<sup>+</sup> → <strong>对硝基苯甲酸</strong></p>
 <p><strong>关键</strong>：先硝化后氧化。不能先氧化(变成-COOH间位定位)再硝化。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>10. 比较稳定性</strong>：环戊二烯失去H<sup>+</sup>的酸性(pK<sub>a</sub>≈16)远大于环庚三烯(pK<sub>a</sub>≈36)，为什么？
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>环戊二烯失去H<sup>+</sup>后形成<strong>环戊二烯负离子</strong>（5个C，6个&pi;电子，满足4n+2规则）→ <strong>芳香稳定</strong></p>
 <p>环庚三烯失去H<sup>+</sup>后形成环庚三烯负离子（7个C，8个&pi;电子，4n）→ <strong>反芳香</strong>，极不稳定</p>
 <p>因此环戊二烯更容易失去H<sup>+</sup>，酸性更强。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>11. 合成题</strong>：从甲苯合成<strong>2,4,6-三硝基甲苯(TNT)</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>甲苯在<strong>混酸</strong>(HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub>)中多次硝化：</p>
 <p>① 甲苯 + 混酸(稀) → 对硝基甲苯（主产物）+ 邻硝基甲苯<br>
 ② 对硝基甲苯 + 混酸(较浓) → 2,4-二硝基甲苯<br>
 ③ 2,4-二硝基甲苯 + 混酸(浓，加热) → <strong>2,4,6-三硝基甲苯(TNT)</strong></p>
 <p>-CH<sub>3</sub>始终为邻对位定位基，三次硝化分别占据2,4,6三个位置。注意每引入一个-NO<sub>2</sub>会钝化苯环，需要更强条件。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>12. 反应条件辨析</strong>：写出下列反应的产物<br>
 (a) 乙苯 + Cl<sub>2</sub>/AlCl<sub>3</sub><br>
 (b) 乙苯 + Cl<sub>2</sub>/hv<br>
 (c) 乙苯 + KMnO<sub>4</sub>/H<sup>+</sup>加热
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(a) 苯环上亲电取代，-C<sub>2</sub>H<sub>5</sub>为邻对位定位 → <strong>邻氯乙苯 + 对氯乙苯</strong></p>
 <p>(b) 侧链自由基取代，&alpha;位C-H键最弱(苄基自由基稳定) → <strong>C<sub>6</sub>H<sub>5</sub>CHClCH<sub>3</sub></strong>（1-氯-1-苯基乙烷）</p>
 <p>(c) 侧链氧化，有&alpha;-H → <strong>苯甲酸 C<sub>6</sub>H<sub>5</sub>COOH</strong>（不论侧链多长，都变成-COOH）</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>13. F-C反应</strong>：解释为什么用正丙基氯和AlCl<sub>3</sub>与苯反应得到的主要产物是<strong>异丙基苯</strong>而非正丙基苯？
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>Cl + AlCl<sub>3</sub> → CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub><sup>+</sup> (1&deg;碳正离子)</p>
 <p>1&deg;碳正离子不稳定，发生<strong>1,2-氢迁移</strong> → (CH<sub>3</sub>)<sub>2</sub>CH<sup>+</sup> (2&deg;碳正离子，更稳定)</p>
 <p>2&deg;碳正离子进攻苯环 → <strong>异丙基苯</strong>（而非正丙基苯）</p>
 <p>这就是F-C烷基化的重排问题。解决方法：用<strong>酰基化-还原法</strong>。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>14. Birch还原</strong>：苯甲醚(C<sub>6</sub>H<sub>5</sub>OCH<sub>3</sub>)经Na/液NH<sub>3</sub>/EtOH还原的产物是什么？
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>苯甲醚的-OCH<sub>3</sub>为供电子基，Birch还原规则：供电子基所在碳<strong>保留双键</strong>。</p>
 <p>产物为<strong>2,5-二氢苯甲醚</strong>（1-甲氧基-1,4-环己二烯），-OCH<sub>3</sub>连在双键碳上。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>15. 综合合成</strong>：从苯和不超过4个碳的有机物出发，合成<strong>对氨基苯甲酸</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>分析：-NH<sub>2</sub>(邻对位)和-COOH(间位)在对位关系。</p>
 <p>① 苯 + CH<sub>3</sub>Cl/AlCl<sub>3</sub> → 甲苯<br>
 ② 甲苯 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → <strong>对硝基甲苯</strong><br>
 ③ 对硝基甲苯 + KMnO<sub>4</sub> → 对硝基苯甲酸<br>
 ④ 对硝基苯甲酸 + Fe/HCl(或Sn/HCl) → <strong>对氨基苯甲酸</strong></p>
 <p>关键：利用-CH<sub>3</sub>的邻对位定位引入-NO<sub>2</sub>到对位，再氧化侧链，最后还原-NO<sub>2</sub>为-NH<sub>2</sub>。</p>
-</div></details></div>
+</div></div>
+
+<h2 id="synth">合成路线设计</h2>
+
+<div class="ex"><strong>合成练习1</strong>：从苯出发合成<strong>对硝基苯甲酸</strong>
+<div class="sol-header">解答</div><div class="sol"><div class="st">分析</div>
+<p>目标：苯环上对位有 -NO<sub>2</sub> 和 -COOH。-NO<sub>2</sub>是间位定位基，-COOH也是间位定位基，但它们互为对位关系。</p>
+<div class="st">策略：利用-CH<sub>3</sub>的邻对位定位效应</div>
+<p>① 苯 + CH<sub>3</sub>Cl/AlCl<sub>3</sub> → <strong>甲苯</strong><br>
+② 甲苯 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → <strong>对硝基甲苯</strong>（-CH<sub>3</sub>邻对位定位，取对位主产物）<br>
+③ 对硝基甲苯 + KMnO<sub>4</sub>/H<sup>+</sup>,&Delta; → <strong>对硝基苯甲酸</strong></p>
+<p><strong>关键</strong>：必须先硝化后氧化。若先氧化得苯甲酸(-COOH间位定位)，再硝化会得到间位产物。</p>
+</div></div>
+
+<div class="ex"><strong>合成练习2</strong>：从苯出发合成<strong>1,3,5-三溴苯</strong>
+<div class="sol-header">解答</div><div class="sol"><div class="st">分析</div>
+<p>目标：三个Br均匀分布在1,3,5位。直接三次溴代苯不可行（第一个Br是邻对位定位，会得到1,2,4-三溴苯）。</p>
+<div class="st">策略：利用强活化基-NH<sub>2</sub>先引入三个Br，再脱去-NH<sub>2</sub></div>
+<p>① 苯 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → 硝基苯<br>
+② 硝基苯 + Fe/HCl → <strong>苯胺</strong>（还原-NO<sub>2</sub>为-NH<sub>2</sub>）<br>
+③ 苯胺 + 3Br<sub>2</sub>/H<sub>2</sub>O → <strong>2,4,6-三溴苯胺</strong>（-NH<sub>2</sub>强活化，邻对位全部溴代）<br>
+④ 2,4,6-三溴苯胺 + NaNO<sub>2</sub>/H<sub>2</sub>SO<sub>4</sub>,0&deg;C → 重氮盐 → H<sub>3</sub>PO<sub>2</sub>（次磷酸）还原脱去-N<sub>2</sub><sup>+</sup> → <strong>1,3,5-三溴苯</strong></p>
+<p><strong>关键</strong>：利用-NH<sub>2</sub>作为"导向+活化基"，完成后通过重氮化-脱氮去除。</p>
+</div></div>
+
+<div class="ex"><strong>合成练习3</strong>：从甲苯出发合成<strong>间氯苯甲酸</strong>
+<div class="sol-header">解答</div><div class="sol"><div class="st">分析</div>
+<p>目标：-Cl和-COOH在间位关系。-COOH是间位定位基。</p>
+<div class="st">策略</div>
+<p>① 甲苯 + KMnO<sub>4</sub>/H<sup>+</sup>,&Delta; → <strong>苯甲酸</strong>（氧化侧链）<br>
+② 苯甲酸 + Cl<sub>2</sub>/FeCl<sub>3</sub> → <strong>间氯苯甲酸</strong>（-COOH为间位定位基）</p>
+<p><strong>关键</strong>：先氧化为苯甲酸（间位定位基），再利用其间位定位引入Cl。不能先氯代再氧化（-Cl是邻对位定位，顺序不对）。</p>
+</div></div>
+
+<div class="ex"><strong>合成练习4</strong>：从苯出发合成<strong>对溴苯胺</strong>
+<div class="sol-header">解答</div><div class="sol"><div class="st">分析</div>
+<p>目标：-Br和-NH<sub>2</sub>在对位关系。-NH<sub>2</sub>是强邻对位活化基，直接苯胺溴代会得到2,4,6-三溴苯胺。</p>
+<div class="st">策略：保护-NH<sub>2</sub>为酰胺，降低活性</div>
+<p>① 苯 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → 硝基苯<br>
+② 硝基苯 + Fe/HCl → 苯胺<br>
+③ 苯胺 + CH<sub>3</sub>COCl → <strong>乙酰苯胺</strong>（-NHCOCH<sub>3</sub>，活性降低，仍为邻对位定位）<br>
+④ 乙酰苯胺 + Br<sub>2</sub>/FeBr<sub>3</sub> → <strong>对溴乙酰苯胺</strong>（对位产物为主）<br>
+⑤ 对溴乙酰苯胺 + H<sub>3</sub>O<sup>+</sup>/&Delta; → <strong>对溴苯胺</strong>（水解脱保护）</p>
+<p><strong>关键</strong>：先保护-NH<sub>2</sub>为-NHCOCH<sub>3</sub>（中等活化，不会过度溴代），溴代后再水解恢复-NH<sub>2</sub>。</p>
+</div></div>
 
 <h2 id="tips">考前提醒</h2>
 <div class="warn"><strong>条件决定位置（必考！）</strong><br>

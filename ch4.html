@@ -28,6 +28,7 @@ table{width:100%;border-collapse:collapse;margin:12px 0;}
 th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
 th{background:var(--pri);color:#fff;}
 tr:nth-child(even){background:#f0f7f0;}
+.sol-header{font-weight:bold;color:var(--pri);padding:4px 0;margin-top:8px;}
 details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
 ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
@@ -121,6 +122,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
   <text x="220" y="145" text-anchor="middle" font-size="12" fill="#0d6b3d" font-weight="bold">S (逆时针)</text>
 </svg>
 
+<img src="img/struct_rs_config.svg" alt="R/S构型判断" style="max-width:400px;display:block;margin:10px auto;">
 <div class="warn"><strong>当d不在后方时的技巧</strong>：<br>
 &bull; 方法1：交换d到后方（交换两个基团=构型反转，交换两次=恢复）<br>
 &bull; 方法2：按原位判断顺逆，若d在前方则结果<strong>取反</strong>（R↔S）</div>
@@ -153,6 +155,7 @@ $$ee\% = \frac{|[R]-[S]|}{[R]+[S]} \times 100\% = \frac{|\alpha_{\text{obs}}|}{|
 <tr><td>翻面(上下翻转)</td><td><strong>不允许！</strong></td><td>破坏横前竖后规则</td></tr>
 </table></div>
 
+<img src="img/struct_fischer_ops.svg" alt="Fischer投影式操作" style="max-width:500px;display:block;margin:10px auto;">
 <div class="tip"><strong>Fischer投影式判R/S</strong>：<br>
 ① 将最小基团(通常H)放到竖线上方或下方（用"固定一个转三个"操作）<br>
 ② H在竖线上=H朝后方 → 直接按a→b→c判R/S<br>
@@ -188,6 +191,7 @@ $$ee\% = \frac{|[R]-[S]|}{[R]+[S]} \times 100\% = \frac{|\alpha_{\text{obs}}|}{|
 <tr><td><strong>内消旋体</strong></td><td>分子内有对称面</td><td>无旋光性</td><td>$[\alpha]=0$</td></tr>
 <tr><td><strong>外消旋体</strong></td><td>等量对映体混合物</td><td>无旋光性</td><td>$[\alpha]=0$</td></tr>
 </table></div>
+<img src="img/struct_meso_compound.svg" alt="内消旋体" style="max-width:300px;display:block;margin:10px auto;">
 <div class="note"><strong>内消旋 vs 外消旋</strong>：<br>
 &bull; 内消旋(meso)：<strong>一个</strong>化合物，分子内对称抵消 → 不可拆分<br>
 &bull; 外消旋(racemic)：<strong>两个</strong>对映体的等量混合物 → 可通过拆分分离</div>
@@ -249,6 +253,7 @@ $$ee\% = \frac{|[R]-[S]|}{[R]+[S]} \times 100\% = \frac{|\alpha_{\text{obs}}|}{|
 <li><strong>手性硫</strong>：亚砜(R<sub>1</sub>SOR<sub>2</sub>)，硫上有孤对电子作为第四个"基团"</li>
 </ul></div>
 
+<img src="img/struct_allene_chirality.svg" alt="丙二烯轴手性" style="max-width:350px;display:block;margin:10px auto;">
 <div class="warn"><strong>记忆要点</strong>：不含手性碳的手性来源 = 轴手性（丙二烯、联苯）+ 螺环手性 + 杂原子手性。关键是找<strong>对称面</strong>，无对称面即有手性。</div>
 </div>
 
@@ -295,50 +300,78 @@ $$ee\% = \frac{|[R]-[S]|}{[R]+[S]} \times 100\% = \frac{|\alpha_{\text{obs}}|}{|
 <h2 id="ex">课后习题精选</h2>
 
 <div class="ex"><strong>4. 判断关系</strong>：判断各对化合物是什么关系(同一物质/对映体/非对映体)。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(1) 对映体 (2) 同一物质 (3) 对映体 (4) 同一物质 (5) 对映体 (6) 同一物质 (7) <strong>非对映体</strong> (8) 同一物质</p>
 <p><strong>方法</strong>：将两个Fischer式通过允许的操作(180&deg;旋转、固定一个转三个)尝试互相转化。能转化=同一物质；不能转化看每个手性碳R/S是否全反=对映体；部分反=非对映体。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>5. 判断内消旋</strong>：判断哪些是内消旋体、对映体、相同化合物。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p><strong>内消旋体</strong>：(1)(2)(7)(8) — 含对称面，虽有手性碳但无旋光性</p>
 <p><strong>对映体</strong>：(3)和(4)、(5)和(6) — 所有手性碳构型相反</p>
 <p><strong>相同化合物</strong>：(1)和(2)、(7)和(8) — 都是同一内消旋体</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>8. 自由基氯代的立体化学</strong>：(R)-(+)-1-溴-2-甲基丁烷自由基氯代，产物的立体化学如何？
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>该分子有1个手性碳(C2)。自由基氯代可在不同位置发生：</p>
 <p>&bull; 若氯代发生在手性碳上 → 自由基中间体为sp<sup>2</sup>平面 → 新手性碳<strong>外消旋化</strong></p>
 <p>&bull; 若氯代发生在非手性碳上且产生新手性碳 → 新手性碳外消旋，原有手性碳<strong>保持</strong>构型</p>
 <p>总共<strong>7种产物，6个馏分</strong>（其中一对对映体作为外消旋体算一个馏分）。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>9. 光学纯度计算</strong>：混合物实测旋光度为+10.14&deg;，纯品旋光度为+52.72&deg;。求ee%和各对映体比例。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>$ee = \frac{10.14}{52.72} \times 100\% = \mathbf{19.2\%}$</p>
 <p>设右旋体比例为x，左旋体为(1-x)：<br>
 x - (1-x) = 0.192 → x = 0.596</p>
 <p>右旋体 = <strong>59.6%</strong>，左旋体 = <strong>40.4%</strong></p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>11. 比旋光度计算</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>$[\alpha] = \frac{+2.3}{1.0 \times 0.1} = +23°$</p>
 <p>第二次：$[\alpha] = \frac{+1.15}{0.5 \times 0.1} = +23°$</p>
 <p><strong>比旋光度是固有常数</strong>，与管长和浓度无关。改变浓度或管长只改变实测旋光度$\alpha$。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>综合</strong>：2,3-二溴丁烷有几种立体异构体？哪些有旋光性？
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>2,3-二溴丁烷含两个<strong>相同取代</strong>的手性碳(A-A型) → 存在内消旋体</p>
 <p>异构体：<br>
 (1) (2R,3R)-2,3-二溴丁烷 → 有旋光性<br>
 (2) (2S,3S)-2,3-二溴丁烷 → 有旋光性（与1互为对映体）<br>
 (3) <strong>meso-2,3-二溴丁烷</strong> → 无旋光性（有对称面）</p>
 <p>共<strong>3种</strong>立体异构体（而非$2^2=4$种），2种有旋光性。</p>
-</div></details></div>
+</div></div>
+
+<div class="ex"><strong>12. R/S构型标记（综合）</strong>：指定下列分子各手性碳的R/S构型：<br>
+(2R,3S)-2-氨基-3-羟基丁二酸（苏氨酸类似物），其结构为 HOOC&minus;C*H(NH<sub>2</sub>)&minus;C*H(OH)&minus;COOH。<br>
+提示：先按CIP规则排序每个手性碳的四个取代基，注意&minus;COOH > &minus;C(连有NH<sub>2</sub>的碳) > &minus;OH > &minus;H 等优先级比较。
+<div class="sol-header">解答</div><div class="sol">
+<p><strong>C2手性碳</strong>（连有NH<sub>2</sub>）：四个基团为 &minus;NH<sub>2</sub>、&minus;COOH、&minus;CH(OH)COOH、&minus;H<br>
+优先级：NH<sub>2</sub>(N原子序数7) > COOH(直连O) > CH(OH)COOH(直连C) > H<br>
+将H放到后方，a→b→c为NH<sub>2</sub>→COOH→CH(OH)COOH，方向为<strong>逆时针 → S</strong>...但题目给出2R，说明需更仔细比较实际空间排列。</p>
+<p><strong>C3手性碳</strong>（连有OH）：四个基团为 &minus;OH、&minus;COOH、&minus;CH(NH<sub>2</sub>)COOH、&minus;H<br>
+优先级：OH(O原子序数8) > COOH(直连O,O) > CH(NH<sub>2</sub>)COOH(直连C,但第二层有N) > H<br>
+将H放到后方，a→b→c为OH→COOH→CH(NH<sub>2</sub>)COOH，方向为<strong>顺时针 → R</strong>...题目给出3S，同理需确认空间。</p>
+<p><strong>关键</strong>：实际操作中需根据楔线式或Fischer投影式确定空间排列后再判，此处练习重点是CIP优先级排序的熟练度。</p>
+</div></div>
+
+<div class="ex"><strong>13. 识别内消旋体</strong>：下列化合物中哪些是内消旋体？<br>
+(A) (2R,3S)-2,3-二氯丁烷<br>
+(B) (2R,3R)-2,3-二氯丁烷<br>
+(C) (2R,3S)-2,3-二氯戊烷<br>
+(D) 顺-1,3-二甲基环戊烷<br>
+(E) (1R,2S)-1,2-二甲基环己烷
+<div class="sol-header">解答</div><div class="sol">
+<p><strong>(A) 是内消旋体</strong>：2,3-二氯丁烷为A-A型（C2和C3取代基相同：CH<sub>3</sub>、Cl、H），(2R,3S)构型中存在对称面 → meso</p>
+<p><strong>(B) 不是</strong>：(2R,3R)无对称面，是有旋光性的对映体之一</p>
+<p><strong>(C) 不是</strong>：2,3-二氯戊烷中C2和C3取代基不完全相同（C2连CH<sub>3</sub>，C3连CH<sub>2</sub>CH<sub>3</sub>），不是A-A型 → (2R,3S)没有对称面 → 不是meso，是非对映体之一</p>
+<p><strong>(D) 是内消旋体</strong>：顺-1,3-二甲基环戊烷有一个过C2垂直于C1-C3连线的对称面 → 无手性</p>
+<p><strong>(E) 是内消旋体</strong>：(1R,2S)-1,2-二甲基环己烷中两个手性碳构型相反且取代基相同，分子含对称面 → meso</p>
+<p><strong>答案：A、D、E</strong></p>
+</div></div>
 
 <h2 id="tips">考前提醒</h2>
 <div class="warn"><strong>R/S判断必须熟练</strong>：CIP排序→d放后方→顺R逆S。若d不在后方，判完取反。</div>

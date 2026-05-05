@@ -28,6 +28,7 @@ table{width:100%;border-collapse:collapse;margin:12px 0;}
 th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
 th{background:var(--pri);color:#fff;}
 tr:nth-child(even){background:#f0f7f0;}
+.sol-header{font-weight:bold;color:var(--pri);padding:4px 0;margin-top:8px;}
 details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
 ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
@@ -56,7 +57,8 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <div class="card">
 <div class="fb"><div class="t">Newman投影式</div>
 <p>沿C&minus;C键轴方向观察：<strong>前碳</strong>=圆心+三条线；<strong>后碳</strong>=圆+三条线</p>
-<p><strong>交叉式</strong>(staggered)比<strong>重叠式</strong>(eclipsed)稳定（扭转应变小）</p></div>
+<p><strong>交叉式</strong>(staggered)比<strong>重叠式</strong>(eclipsed)稳定（扭转应变小）</p>
+<img src="img/struct_newman_ethane.svg" alt="乙烷Newman投影式" style="max-width:500px;display:block;margin:10px auto;"></div>
 
 <svg width="400" height="140" viewBox="0 0 400 140" style="display:block;margin:10px auto;">
   <defs><marker id="ah" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#666"/></marker></defs>
@@ -106,15 +108,17 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li><strong>e键</strong>(equatorial, 平伏键)：与环平面近似平行，向外伸展</li>
 <li>环翻转(ring-flip)：所有a键变e键，所有e键变a键</li>
 <li><strong>大基团优先占e键</strong> → 减少1,3-二直立键相互作用(1,3-diaxial strain)</li>
-</ul></div>
+</ul>
+<img src="img/struct_chair_axeq.svg" alt="环己烷椅式构象" style="max-width:450px;display:block;margin:10px auto;"></div>
 
 <div class="fb"><div class="t">构象能(A值) — 基团占a键的能量代价</div>
 <table>
 <tr><th>基团</th><th>A值/(kJ/mol)</th><th>基团</th><th>A值/(kJ/mol)</th></tr>
-<tr><td>F</td><td>1.0</td><td>CH<sub>3</sub></td><td>7.1</td></tr>
-<tr><td>Cl</td><td>2.0</td><td>CH<sub>2</sub>CH<sub>3</sub></td><td>7.3</td></tr>
-<tr><td>Br</td><td>2.3</td><td>CH(CH<sub>3</sub>)<sub>2</sub></td><td>9.2</td></tr>
-<tr><td>OH</td><td>2.1</td><td>C(CH<sub>3</sub>)<sub>3</sub></td><td>22.8</td></tr>
+<tr><td>F</td><td>0.15</td><td>CH<sub>3</sub></td><td>7.1</td></tr>
+<tr><td>Cl</td><td>0.53</td><td>CH<sub>2</sub>CH<sub>3</sub></td><td>7.3</td></tr>
+<tr><td>Br</td><td>0.48</td><td>CH(CH<sub>3</sub>)<sub>2</sub></td><td>9.2</td></tr>
+<tr><td>OH</td><td>0.87</td><td>C(CH<sub>3</sub>)<sub>3</sub></td><td>22.8</td></tr>
+<tr><td>COOH</td><td>1.35</td><td>Ph(C<sub>6</sub>H<sub>5</sub>)</td><td>3.0</td></tr>
 </table>
 <p>A值越大 → 越强烈要求占e键。<strong>叔丁基</strong>的A值极大，几乎100%占e键（"构象锁"）。</p></div>
 
@@ -167,6 +171,27 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p>&Delta;H = D(C&minus;H) &minus; D(H&minus;Cl) = 435 &minus; 431 = +4 kJ/mol（微弱吸热）</p>
 <p>例：CH<sub>4</sub> + Br&middot; → CH<sub>3</sub>&middot; + HBr</p>
 <p>&Delta;H = D(C&minus;H) &minus; D(H&minus;Br) = 435 &minus; 366 = +69 kJ/mol（明显吸热 → 高选择性）</p></div>
+
+<div class="ex"><strong>完整实例：CH<sub>4</sub> + Cl<sub>2</sub> → CH<sub>3</sub>Cl + HCl 逐步机理与能量分析</strong>
+<div class="sol">
+<p><strong>引发(Initiation)</strong>：</p>
+<p>Cl&minus;Cl →(hv)→ 2Cl&middot;&emsp;&emsp;&Delta;H = +D(Cl&minus;Cl) = +242 kJ/mol</p>
+<p><strong>传递(Propagation)</strong>：</p>
+<p>步骤①：CH<sub>4</sub> + Cl&middot; → CH<sub>3</sub>&middot; + HCl<br>
+&emsp;断键：D(CH<sub>3</sub>&minus;H) = 435 kJ/mol<br>
+&emsp;成键：D(H&minus;Cl) = 431 kJ/mol<br>
+&emsp;&Delta;H<sub>1</sub> = 435 &minus; 431 = <strong>+4 kJ/mol</strong>（微弱吸热）</p>
+<p>步骤②：CH<sub>3</sub>&middot; + Cl<sub>2</sub> → CH<sub>3</sub>Cl + Cl&middot;<br>
+&emsp;断键：D(Cl&minus;Cl) = 242 kJ/mol<br>
+&emsp;成键：D(CH<sub>3</sub>&minus;Cl) = 351 kJ/mol<br>
+&emsp;&Delta;H<sub>2</sub> = 242 &minus; 351 = <strong>&minus;109 kJ/mol</strong>（强放热）</p>
+<p><strong>总反应热</strong>：&Delta;H = &Delta;H<sub>1</sub> + &Delta;H<sub>2</sub> = 4 + (&minus;109) = <strong>&minus;105 kJ/mol</strong>（放热反应，热力学有利）</p>
+<p><strong>终止(Termination)</strong>：</p>
+<p>Cl&middot; + Cl&middot; → Cl<sub>2</sub><br>
+CH<sub>3</sub>&middot; + Cl&middot; → CH<sub>3</sub>Cl<br>
+CH<sub>3</sub>&middot; + CH<sub>3</sub>&middot; → CH<sub>3</sub>CH<sub>3</sub></p>
+<p><strong>结论</strong>：传递步骤①微弱吸热 → 过渡态类似反应物(早期TS) → 对自由基稳定性不敏感 → Cl<sub>2</sub>选择性低。</p>
+</div></div>
 
 <div class="tip"><strong>碳自由基稳定性</strong>：3&deg; > 2&deg; > 1&deg; > CH<sub>3</sub>&middot;（超共轭效应稳定）</div>
 
@@ -235,49 +260,49 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <h2 id="ex">课后习题精选</h2>
 
 <div class="ex"><strong>1. 沸点排序</strong>：正庚烷、正己烷、正戊烷、2-甲基戊烷、2,2-二甲基丁烷
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>正庚烷 > 正己烷 > 正戊烷 > 2-甲基戊烷 > 2,2-二甲基丁烷</p>
 <p>规律：碳链越长沸点越高；同碳数下支链越多沸点越低。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>2. 最稳定构象</strong>：画出下列化合物最稳定构象的Newman投影式。
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(1) 1,2-二溴乙烷：<strong>anti构象</strong>（两Br对位180&deg;，距离最远）</p>
 <p>(2) 乙二醇：<strong>gauche构象</strong>（OH...OH分子内氢键！）</p>
 <p>(3) 2-氯乙醇：<strong>gauche构象</strong>（Cl和OH间氢键）</p>
 <p>(4) 反-1-叔丁基-4-甲基环己烷：叔丁基和甲基都占<strong>e键</strong></p>
 <p>(5) 顺-1-异丙基-3-甲基环己烷：两个基团都可占e键</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>4. 环己烷顺反判断</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(1)反式 (2)反式 (3)反式 (4)顺式 (5)顺式 (6)顺式<br>
 判断方法：同侧=顺，异侧=反。椅式中1,2-双e或双a=反式；一e一a=顺式。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>5. 稳定性比较</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>&bull; 1,2-二甲基环己烷：反式 > 顺式（反式双e）<br>
 &bull; 1,3-二甲基环己烷：顺式 > 反式（顺式双e）<br>
 &bull; 1,4-二甲基环己烷：反式 > 顺式（反式双e）<br>
 &bull; 小环稳定性：环戊烷 > 环丁烷 > 环丙烷（环张力递增）</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>7. 卤代反应产物</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>&bull; CH<sub>3</sub>CH<sub>2</sub>CH<sub>3</sub> + Cl<sub>2</sub>/hv → 1-氯丙烷(6H&times;1=6) + 2-氯丙烷(2H&times;3.8=7.6) → 主要2-氯丙烷(56%)</p>
 <p>&bull; 溴代选择性极高 → 若有叔碳，几乎只在叔碳位取代</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>8. 异丁烷一溴代机理</strong>
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p><strong>引发</strong>：Br<sub>2</sub> →(hv)→ 2Br&middot;</p>
 <p><strong>传递</strong>：<br>
 (CH<sub>3</sub>)<sub>3</sub>CH + Br&middot; → (CH<sub>3</sub>)<sub>3</sub>C&middot; + HBr（叔碳自由基，稳定）<br>
 (CH<sub>3</sub>)<sub>3</sub>C&middot; + Br<sub>2</sub> → (CH<sub>3</sub>)<sub>3</sub>CBr + Br&middot;</p>
 <p><strong>终止</strong>：Br&middot;+Br&middot;→Br<sub>2</sub>；R&middot;+Br&middot;→RBr等</p>
 <p>由于Br<sub>2</sub>选择性极高(3&deg;H活性=1600)，几乎只得到<strong>叔丁基溴</strong>。</p>
-</div></details></div>
+</div></div>
 
 <h2 id="tips">考前提醒</h2>
 <div class="warn"><strong>Newman投影式必须会画</strong>：前碳圆心+3线，后碳圆+3线，交叉式=错开60&deg;</div>

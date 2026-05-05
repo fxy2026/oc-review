@@ -29,6 +29,7 @@ th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
 th{background:var(--pri);color:#fff;}
 tr:nth-child(even){background:#f0f7f0;}
 details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+.sol-header{font-weight:bold;color:var(--pri);padding:4px 0;margin-top:8px;}
 ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
@@ -161,6 +162,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
   <marker id="arr2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#c0392b"/></marker></defs>
 </svg>
 <p><strong>碳正离子稳定性</strong>：</p>
+<img src="img/struct_carbocation_stability.svg" alt="碳正离子稳定性" style="max-width:550px;display:block;margin:10px auto;">
 <div class="fb"><div class="t">稳定性排序</div>
 <p>苄基 ≈ 烯丙基 &gt; 3° &gt; 2° &gt; 1° &gt; CH₃⁺ &gt; 乙烯基</p>
 <p>稳定化因素：超共轭(烷基)、共振(苄基/烯丙基)、杂原子孤对电子</p></div>
@@ -183,17 +185,18 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
   <text x="330" y="80" font-size="10" fill="#27ae60" font-weight="bold">3°碳正离子(更稳定)</text>
 </svg>
 <div class="ex"><strong>典型例题</strong>：3,3-二甲基-1-丁烯 + HCl 的主产物是什么？
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>①H⁺加到C1(马氏规则) → 在C2形成2°碳正离子</p>
 <p>②C3上甲基1,2-迁移到C2 → 变为3°碳正离子</p>
 <p>③Cl⁻进攻3°碳 → 产物为2-氯-2,3-二甲基丁烷</p>
-</div></details></div>
+</div></div>
 </div>
 
 <!-- ==================== 5.3 卤素加成 ==================== -->
 <h2 id="s3">5.3 卤素加成与立体化学</h2>
 <h3>溴鎓离子机理（Br₂加成）</h3>
 <div class="card">
+<img src="img/struct_bromonium.svg" alt="溴鎓离子" style="max-width:500px;display:block;margin:10px auto;">
 <svg width="460" height="140" viewBox="0 0 460 140">
   <text x="230" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">溴鎓离子机理 → 反式(anti)加成</text>
   <!-- alkene -->
@@ -334,9 +337,9 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <p>C=C + O₃ → 臭氧化物(molozonide) → 重排为ozonide → 还原裂解得醛/酮</p>
 <p><strong>应用</strong>：已知产物(醛/酮)可<strong>反推</strong>原来的烯烃结构（两个C=O拼回C=C）</p></div>
 <div class="ex"><strong>例题</strong>：臭氧化后得到丙酮(CH₃COCH₃)和甲醛(HCHO)，原始烯烃是什么？
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>将两个羰基碳用双键连接：(CH₃)₂C=CH₂ → <strong>2-甲基丙烯(异丁烯)</strong></p>
-</div></details></div>
+</div></div>
 </div>
 
 <h3>环氧化反应</h3>
@@ -419,11 +422,11 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <p><strong>机理</strong>：①醇质子化 → ②失水生成碳正离子 → ③消除β-H得烯烃</p>
 <p><strong>Zaitsev(扎依采夫)消除规则</strong>：消除反应优先生成<strong>取代最多（最稳定）</strong>的烯烃</p>
 <div class="ex"><strong>例</strong>：2-丁醇脱水 → 主产物为2-丁烯(双取代)，而非1-丁烯(单取代)
-<details><summary>解释</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>碳正离子中间体可从C1或C3失去H：</p>
 <p>失去C3的H → 2-丁烯（更稳定，双取代烯烃）= 主产物(Zaitsev规则)</p>
 <p>失去C1的H → 1-丁烯（单取代烯烃）= 次产物</p>
-</div></details></div>
+</div></div>
 <p><strong>醇脱水活性</strong>：3°醇 &gt; 2°醇 &gt; 1°醇（碳正离子越稳定越容易形成）</p>
 <div class="warn"><strong>注意</strong>：醇脱水经过碳正离子中间体，因此<strong>可能发生重排</strong>！</div>
 </div>
@@ -469,20 +472,20 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <h2 id="ex">课后习题精选与详解</h2>
 
 <div class="ex"><strong>第1题</strong>：写出下列烯烃的系统命名（含E/Z标记）
-<details><summary>解析</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>命名步骤：①找含双键的最长碳链 ②从靠近双键的一端开始编号 ③标出取代基位置和名称 ④用CIP规则判断E/Z</p>
 <p>例：CH₃CH=C(CH₃)₂ → 2-甲基-2-丁烯（三取代烯烃，无E/Z，因为一端两个相同基团）</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第3题</strong>：按稳定性排列下列碳正离子
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>排序依据：①共振稳定(苄基/烯丙基) ②取代度(3°>2°>1°) ③超共轭</p>
 <p>苄基碳正离子 &gt; 烯丙基碳正离子 &gt; 叔碳正离子 &gt; 仲碳正离子 &gt; 伯碳正离子 &gt; 甲基正离子</p>
 <p>苄基特别稳定因为正电荷可以离域到整个苯环(4个共振式)</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第5题</strong>：判断加成产物有无旋光性
-<details><summary>详解</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p><strong>分析方法</strong>：</p>
 <p>①确定加成方式(syn/anti) ②画出产物立体结构 ③判断是否有对称面</p>
 <p><strong>情况1</strong>：对称烯烃(如2-丁烯) + Br₂ → 反式加成</p>
@@ -490,60 +493,115 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <p>  (Z)-2-丁烯 + Br₂ → (R,R)+(S,S)外消旋体 → <strong>无旋光性</strong>(混合物)</p>
 <p><strong>情况2</strong>：不对称烯烃 → 通常得外消旋体(无旋光性)</p>
 <p><strong>结论</strong>：加成反应一般<strong>不产生旋光性</strong>，除非使用手性试剂/催化剂</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第7题</strong>：写出下列反应的产物并说明机理
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>(a) 1-甲基环己烯 + HBr → 1-溴-1-甲基环己烷(马氏，3°碳正离子)</p>
 <p>(b) 1-甲基环己烯 + HBr/ROOR → 1-甲基-2-溴环己烷(反马氏，自由基)</p>
 <p>(c) 1-甲基环己烯 + Br₂ → trans-1,2-二溴-1-甲基环己烷(反式加成)</p>
 <p>(d) 1-甲基环己烯 + BH₃→H₂O₂ → trans-2-甲基环己醇(反马氏+顺式加成)</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第9题</strong>：碳正离子重排机理题
-<details><summary>详解</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p><strong>3,3-二甲基-1-丁烯 + HCl</strong>：</p>
 <p>①H⁺加到C1 → C2形成2°碳正离子: (CH₃)₃C-CH⁺-CH₃</p>
 <p>②C3上的甲基(或C3-C2的σ键)进行1,2-迁移 → C2变为3°碳正离子</p>
 <p>③Cl⁻进攻 → 2-氯-2,3-二甲基丁烷</p>
 <p><strong>环扩张实例</strong>：甲基环丁烯+HCl → 初始形成环丁基碳正离子(张力大) → C-C键迁移扩张为环戊基碳正离子(张力释放) → 产物为氯代环戊烷衍生物</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第10题</strong>：用化学方法区分下列化合物
-<details><summary>答案</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>①<strong>Br₂/CCl₄</strong>：烯烃使溴褪色(加成)，烷烃不反应</p>
 <p>②<strong>稀冷KMnO₄</strong>：烯烃使紫色褪色(氧化为邻二醇)，烷烃不反应</p>
 <p>③<strong>浓H₂SO₄</strong>：烯烃溶解(质子化形成碳正离子)，烷烃不溶</p>
 <p>区分不同烯烃：催化加氢后鉴定产物；臭氧化后鉴定醛酮产物</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第11题</strong>：溴鎓离子机理详解（含立体化学分析）
-<details><summary>详解</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p><strong>环己烯 + Br₂ → trans-1,2-二溴环己烷</strong></p>
 <p>步骤1：Br₂靠近电子云 → π电子进攻Br-Br → 形成三元环溴鎓离子 + Br⁻</p>
 <p>步骤2：Br⁻从溴鎓离子<strong>背面(anti)</strong>进攻 → SN2型开环</p>
 <p>立体结果：两个Br必须处于环的trans位置(diaxial构象)</p>
 <p>光学活性：环己烯是对称分子 → 加成得到的trans产物为<strong>内消旋体</strong>(有对称面) → 无旋光性</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>挑战题</strong>：萜类生物合成中的碳正离子串联反应
-<details><summary>详解</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p>天然萜类(如薄荷醇、樟脑)的生物合成涉及：</p>
 <p>①焦磷酸酯离去 → 形成烯丙基碳正离子</p>
 <p>②碳正离子进攻分子内双键 → 新C-C键(环化)</p>
 <p>③连续1,2-迁移/环扩张 → 最终产物骨架</p>
 <p>④消除H⁺或被亲核试剂捕获 → 终止</p>
 <p>这体现了碳正离子化学在自然界中的重要性！</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>补充知识：烯烃的酸催化二聚</strong>
-<details><summary>详解</summary><div class="sol">
+<div class="sol-header">解答</div><div class="sol">
 <p><strong>异丁烯在H₂SO₄催化下的二聚反应</strong>：</p>
 <p>①质子化：(CH₃)₂C=CH₂ + H⁺ → (CH₃)₃C⁺（叔碳正离子）</p>
 <p>②碳正离子进攻另一分子异丁烯的双键：(CH₃)₃C⁺ + (CH₃)₂C=CH₂ → (CH₃)₃C-CH₂-C⁺(CH₃)₂（新的叔碳正离子）</p>
 <p>③Zaitsev消除(失去β-H)：生成取代最多的烯烃 → 2,4,4-三甲基-2-戊烯(主)或2,4,4-三甲基-1-戊烯(次)</p>
 <p><strong>关键</strong>：整个过程体现了碳正离子的生成→亲电加成→消除的串联反应</p>
-</div></details></div>
+</div></div>
+
+<!-- ==================== 烯烃反应总表 ==================== -->
+<h2 id="s7b">5.7b 烯烃反应完整总表</h2>
+<div class="card">
+<table>
+<tr><th>反应</th><th>试剂/条件</th><th>产物</th><th>区域化学</th><th>立体化学</th><th>机理类型</th></tr>
+<tr><td>HX加成</td><td>HCl, HBr, HI</td><td>卤代烃</td><td>马氏</td><td>无特定</td><td>亲电加成(碳正离子)</td></tr>
+<tr><td>酸催化水合</td><td>H₂SO₄/H₂O</td><td>醇</td><td>马氏</td><td>无特定</td><td>亲电加成(碳正离子)</td></tr>
+<tr><td>卤素加成</td><td>Br₂/CCl₄</td><td>邻二卤代烃</td><td>—</td><td>反式(anti)</td><td>亲电加成(鎓离子)</td></tr>
+<tr><td>卤水加成</td><td>Br₂/H₂O</td><td>卤醇</td><td>OH在多取代碳</td><td>反式(anti)</td><td>亲电加成(鎓离子)</td></tr>
+<tr><td>自由基加HBr</td><td>HBr/ROOR</td><td>卤代烃</td><td>反马氏</td><td>无特定</td><td>自由基链式</td></tr>
+<tr><td>硼氢化-氧化</td><td>BH₃→H₂O₂/NaOH</td><td>醇</td><td>反马氏</td><td>顺式(syn)</td><td>协同(四元环)</td></tr>
+<tr><td>催化加氢</td><td>H₂/Pd(Pt,Ni)</td><td>烷烃</td><td>—</td><td>顺式(syn)</td><td>表面催化</td></tr>
+<tr><td>邻二醇化(稀冷)</td><td>KMnO₄稀冷 或 OsO₄/NMO</td><td>邻二醇</td><td>—</td><td>顺式(syn)</td><td>环酯中间体</td></tr>
+<tr><td>氧化裂解</td><td>KMnO₄浓热/酸性</td><td>羧酸+酮</td><td>—</td><td>—</td><td>强氧化断键</td></tr>
+<tr><td>臭氧化-还原裂解</td><td>O₃→Zn/H₂O</td><td>醛+酮</td><td>—</td><td>—</td><td>协同环加成</td></tr>
+<tr><td>臭氧化-氧化裂解</td><td>O₃→H₂O₂</td><td>羧酸+酮</td><td>—</td><td>—</td><td>协同环加成</td></tr>
+<tr><td>环氧化</td><td>mCPBA(过氧酸)</td><td>环氧化物</td><td>—</td><td>顺式(syn)</td><td>协同(蝶形)</td></tr>
+<tr><td>烯丙位溴代</td><td>NBS/hν</td><td>烯丙基溴</td><td>烯丙位</td><td>—</td><td>自由基取代</td></tr>
+<tr><td>醇加成</td><td>ROH/H⁺</td><td>醚</td><td>马氏</td><td>无特定</td><td>亲电加成(碳正离子)</td></tr>
+<tr><td>硫酸加成-水解</td><td>浓H₂SO₄→H₂O</td><td>醇(间接水合)</td><td>马氏</td><td>无特定</td><td>亲电加成(碳正离子)</td></tr>
+<tr><td>聚合反应</td><td>引发剂/高温高压 或 Ziegler-Natta</td><td>聚合物</td><td>—</td><td>—</td><td>自由基/配位聚合</td></tr>
+</table>
+</div>
+
+<!-- ==================== 碳正离子重排补充例题 ==================== -->
+<h2 id="s7c">5.7c 碳正离子重排补充例题</h2>
+
+<div class="ex"><strong>重排例题A</strong>：2-甲基-3-丁烯-2-醇在H₂SO₄催化下脱水，主产物是什么？
+<div class="sol-header">解答</div><div class="sol">
+<p><strong>底物</strong>：(CH₃)₂C(OH)-CH=CH₂</p>
+<p>①质子化OH → 失水生成碳正离子：(CH₃)₂C⁺-CH=CH₂</p>
+<p>②该碳正离子为<strong>烯丙基碳正离子</strong>（p-π共轭稳定），已经很稳定，无需重排</p>
+<p>③消除β-H → 生成共轭二烯：<strong>CH₂=C(CH₃)-CH=CH₂</strong>（异戊二烯/2-甲基-1,3-丁二烯）</p>
+<p><strong>关键</strong>：不是所有碳正离子都需要重排！烯丙基/苄基碳正离子本身足够稳定。</p>
+</div></div>
+
+<div class="ex"><strong>重排例题B</strong>：新戊基溴((CH₃)₃CCH₂Br)在AgNO₃/乙醇中水解，产物是什么？
+<div class="sol-header">解答</div><div class="sol">
+<p>①离去基Br⁻在Ag⁺辅助下离去 → 形成1°碳正离子：(CH₃)₃C-CH₂⁺</p>
+<p>②1°碳正离子极不稳定 → 立即发生1,2-甲基迁移：</p>
+<p>  (CH₃)₃C-CH₂⁺ → (CH₃)₂C⁺-CH₂CH₃（从1°重排为3°碳正离子）</p>
+<p>③亲核试剂(EtOH/H₂O)进攻3°碳正离子 → 产物为<strong>2-甲基-2-丁醇</strong></p>
+<p><strong>注意</strong>：碳骨架发生了变化！产物不再保持新戊基的骨架。这就是Wagner-Meerwein重排。</p>
+</div></div>
+
+<div class="ex"><strong>重排例题C</strong>：2,2-二甲基-4-戊烯-1-醇在H₃PO₄催化下加热，生成六元环产物，推测机理。
+<div class="sol-header">解答</div><div class="sol">
+<p><strong>底物</strong>：(CH₃)₂C(CH₂CH=CH₂)CH₂OH</p>
+<p>①-OH质子化后失水 → 形成1°碳正离子</p>
+<p>②1,2-甲基迁移 → 生成更稳定的3°碳正离子</p>
+<p>③分子内双键进攻3°碳正离子（分子内亲电加成）→ 成环</p>
+<p>④生成的新碳正离子消除β-H → 得到<strong>1-甲基-2-甲基环戊烯</strong>（或相关六元环产物）</p>
+<p><strong>核心思路</strong>：重排+分子内环化 = 串联反应，是合成环系的重要方法</p>
+</div></div>
 
 <!-- ==================== 易错点 ==================== -->
 <h2 id="s8">5.8 考试易错点总结</h2>

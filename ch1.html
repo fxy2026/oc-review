@@ -29,6 +29,7 @@ th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
 th{background:var(--pri);color:#fff;}
 tr:nth-child(even){background:#f0f7f0;}
 details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+.sol-header{font-weight:bold;color:var(--pri);border-top:2px solid var(--border);margin-top:10px;padding-top:8px;}
 ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
@@ -143,11 +144,18 @@ $$\text{F}(4.0) > \text{O}(3.5) > \text{N}=\text{Cl}(3.0) > \text{Br}(2.8) > \te
 <table>
 <tr><th>化合物</th><th>$\text{pK}_a$</th><th>化合物</th><th>$\text{pK}_a$</th></tr>
 <tr><td>$\text{HI}$</td><td>-10</td><td>$\text{H}_2\text{O}$</td><td>15.7</td></tr>
-<tr><td>$\text{H}_3\text{O}^+$</td><td>-1.7</td><td>$\text{CH}_3\text{OH}$</td><td>15.5</td></tr>
-<tr><td>$\text{CH}_3\text{COOH}$</td><td>4.75</td><td>$\text{HC≡CH}$ (端炔)</td><td>25</td></tr>
-<tr><td>$\text{HCN}$</td><td>9.2</td><td>$\text{NH}_3$</td><td>38</td></tr>
-<tr><td>$\text{C}_2\text{H}_5\text{OH}$</td><td>15.9</td><td>$\text{CH}_4$</td><td>48</td></tr>
+<tr><td>$\text{HBr}$</td><td>-9</td><td>$\text{CH}_3\text{OH}$ (甲醇)</td><td>15.5</td></tr>
+<tr><td>$\text{HCl}$</td><td>-7</td><td>$\text{C}_2\text{H}_5\text{OH}$ (乙醇)</td><td>15.9</td></tr>
+<tr><td>$\text{H}_2\text{SO}_4$</td><td>-3</td><td>$(CH_3)_3COH$ (叔丁醇)</td><td>19</td></tr>
+<tr><td>$\text{H}_3\text{O}^+$</td><td>-1.7</td><td>$\text{HC≡CH}$ (乙炔)</td><td>25</td></tr>
+<tr><td>$\text{HF}$</td><td>3.2</td><td>$\text{H}_2\text{C=CH}_2$ (乙烯)</td><td>44</td></tr>
+<tr><td>$\text{CH}_3\text{COOH}$ (乙酸)</td><td>4.75</td><td>$\text{NH}_3$ (氨)</td><td>38</td></tr>
+<tr><td>$\text{HCO}_2\text{H}$ (甲酸)</td><td>3.75</td><td>$(CH_3)_2NH$ (二甲胺)</td><td>36</td></tr>
+<tr><td>$\text{HCN}$ (氢氰酸)</td><td>9.2</td><td>$\text{CH}_3\text{CH}_3$ (乙烷)</td><td>50</td></tr>
+<tr><td>$\text{C}_6\text{H}_5\text{OH}$ (苯酚)</td><td>10.0</td><td>$\text{CH}_4$ (甲烷)</td><td>48</td></tr>
+<tr><td>$\text{NH}_4^+$ (铵离子)</td><td>9.2</td><td>$(CH_3)_3N$ (三甲胺共轭酸)</td><td>9.8</td></tr>
 </table>
+<div class="tip"><strong>pKa记忆技巧</strong>：强酸(HI/HBr/HCl/H<sub>2</sub>SO<sub>4</sub>) &lt; 0 &lt; 弱无机酸(HF~3) &lt; 羧酸(~5) &lt; 苯酚(~10) &lt; 水/醇(~16) &lt; 端炔(~25) &lt; 胺(~36-38) &lt; 烯/烷(~44-50)。从左到右酸性递减。</div>
 
 <div class="fb"><div class="t">Lewis酸碱</div>
 <p><strong>Lewis酸</strong>（亲电试剂，缺电子）：$\text{H}^+$, $\text{AlCl}_3$, $\text{BF}_3$, $\text{NO}_2^+$, 碳正离子 $\text{R}^+$</p>
@@ -181,19 +189,45 @@ $$\text{F}(4.0) > \text{O}(3.5) > \text{N}=\text{Cl}(3.0) > \text{Br}(2.8) > \te
 </table></div>
 <div class="tip"><strong>沸点</strong>受分子间力控制：能形成氢键 > 极性分子 > 非极性分子(同分子量下)。<br>
 <strong>溶解性</strong>："相似相溶"——极性溶质溶于极性溶剂，非极性溶质溶于非极性溶剂。</div>
+
+<div class="fb"><div class="t">沸点对比表（相近分子量，不同分子间力）</div>
+<table>
+<tr><th>化合物</th><th>分子量</th><th>主要分子间力</th><th>沸点/&#8451;</th></tr>
+<tr><td>$\text{CH}_3\text{CH}_2\text{OH}$ (乙醇)</td><td>46</td><td>氢键</td><td><strong>78</strong></td></tr>
+<tr><td>$\text{CH}_3\text{CHO}$ (乙醛)</td><td>44</td><td>偶极-偶极</td><td><strong>20</strong></td></tr>
+<tr><td>$\text{CH}_3\text{CH}_2\text{CH}_3$ (丙烷)</td><td>44</td><td>London力</td><td><strong>-42</strong></td></tr>
+<tr><td colspan="4" style="background:#eee;font-style:italic;">MW~30-32组</td></tr>
+<tr><td>$\text{CH}_3\text{OH}$ (甲醇)</td><td>32</td><td>氢键</td><td><strong>65</strong></td></tr>
+<tr><td>$\text{HCHO}$ (甲醛)</td><td>30</td><td>偶极-偶极</td><td><strong>-19</strong></td></tr>
+<tr><td>$\text{C}_2\text{H}_6$ (乙烷)</td><td>30</td><td>London力</td><td><strong>-89</strong></td></tr>
+<tr><td colspan="4" style="background:#eee;font-style:italic;">MW~58-60组</td></tr>
+<tr><td>$\text{CH}_3\text{CH}_2\text{CH}_2\text{OH}$ (正丙醇)</td><td>60</td><td>氢键</td><td><strong>97</strong></td></tr>
+<tr><td>$(\text{CH}_3)_2\text{C=O}$ (丙酮)</td><td>58</td><td>偶极-偶极</td><td><strong>56</strong></td></tr>
+<tr><td>$\text{CH}_3\text{CH}_2\text{CH}_2\text{CH}_3$ (丁烷)</td><td>58</td><td>London力</td><td><strong>-1</strong></td></tr>
+</table>
+<p><strong>结论</strong>：分子量相近时，能形成氢键的化合物沸点远高于仅有偶极作用的极性分子，后者又高于仅靠色散力的非极性分子。</p></div>
 </div>
 
 <h3 id="kp7">1.7 官能团概述</h3>
 <div class="card">
 <div class="fb"><div class="t">常见官能团与反应类型</div>
 <table>
-<tr><th>官能团</th><th>典型反应</th></tr>
-<tr><td>C=C (烯烃)</td><td>亲电加成</td></tr>
-<tr><td>C&equiv;C (炔烃)</td><td>亲电加成、亲核加成</td></tr>
-<tr><td>C-X (卤代烃)</td><td>亲核取代、消除</td></tr>
-<tr><td>C=O (醛酮)</td><td>亲核加成</td></tr>
-<tr><td>-OH (醇)</td><td>取代、消除、氧化</td></tr>
-<tr><td>苯环</td><td>亲电取代</td></tr>
+<tr><th>官能团</th><th>结构</th><th>化合物类</th><th>典型反应</th><th>实例</th></tr>
+<tr><td>C=C (碳碳双键)</td><td>R<sub>2</sub>C=CR<sub>2</sub></td><td>烯烃</td><td>亲电加成</td><td>丙烯、环己烯</td></tr>
+<tr><td>C&equiv;C (碳碳三键)</td><td>RC&equiv;CR</td><td>炔烃</td><td>亲电加成、亲核加成</td><td>乙炔、丙炔</td></tr>
+<tr><td>C-X (碳卤键)</td><td>R-X</td><td>卤代烃</td><td>亲核取代、消除</td><td>氯甲烷、溴乙烷</td></tr>
+<tr><td>-OH (羟基)</td><td>R-OH</td><td>醇</td><td>取代、消除、氧化</td><td>乙醇、环己醇</td></tr>
+<tr><td>Ar-OH (酚羟基)</td><td>Ar-OH</td><td>酚</td><td>亲电取代、酸性</td><td>苯酚、对甲酚</td></tr>
+<tr><td>R-O-R (醚键)</td><td>R-O-R'</td><td>醚</td><td>较惰性；酸性条件断裂</td><td>乙醚、THF</td></tr>
+<tr><td>-CHO (醛基)</td><td>RCHO</td><td>醛</td><td>亲核加成、氧化</td><td>甲醛、苯甲醛</td></tr>
+<tr><td>C=O (酮基)</td><td>RCOR'</td><td>酮</td><td>亲核加成</td><td>丙酮、环己酮</td></tr>
+<tr><td>-COOH (羧基)</td><td>RCOOH</td><td>羧酸</td><td>酸性、酯化、还原</td><td>乙酸、苯甲酸</td></tr>
+<tr><td>-COOR (酯基)</td><td>RCOOR'</td><td>酯</td><td>水解、还原</td><td>乙酸乙酯</td></tr>
+<tr><td>-NH<sub>2</sub> (氨基)</td><td>RNH<sub>2</sub></td><td>胺</td><td>碱性、亲核、酰化</td><td>乙胺、苯胺</td></tr>
+<tr><td>-CONH<sub>2</sub> (酰胺基)</td><td>RCONH<sub>2</sub></td><td>酰胺</td><td>水解</td><td>乙酰胺</td></tr>
+<tr><td>-NO<sub>2</sub> (硝基)</td><td>R-NO<sub>2</sub></td><td>硝基化合物</td><td>还原为胺</td><td>硝基苯</td></tr>
+<tr><td>-SH (巯基)</td><td>R-SH</td><td>硫醇</td><td>氧化成二硫键</td><td>半胱氨酸</td></tr>
+<tr><td>苯环 (芳环)</td><td>C<sub>6</sub>H<sub>5</sub>-</td><td>芳香烃</td><td>亲电取代</td><td>苯、甲苯、萘</td></tr>
 </table></div>
 <div class="note"><strong>结构决定性质！</strong> 官能团是有机化学的核心——决定了化合物能发生什么反应。识别官能团是分析有机反应的第一步。</div>
 </div>
@@ -202,21 +236,21 @@ $$\text{F}(4.0) > \text{O}(3.5) > \text{N}=\text{Cl}(3.0) > \text{Br}(2.8) > \te
 <h2 id="exercises">课后习题详解</h2>
 
 <div class="ex"><strong>第1题</strong>：判断分子极性，指出偶极方向。
-<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解</div>
 <p>(1) $(\text{CH}_3)_3\text{N}$ — <strong>极性</strong>，N有孤电子对，三角锥形，偶极指向N<br>
 (2) $\text{CF}_2\text{Cl}_2$ — <strong>极性</strong>，四面体不对称<br>
 (3) $\text{CH}_3\text{C≡N}$ — <strong>极性</strong>，C≡N强极性<br>
 (4) $\text{CH}_2{=}\text{CH}-\text{CH}{=}\text{CH}_2$ — <strong>非极性</strong>，对称结构偶极抵消</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第2题</strong>：极性/非极性判断。
-<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解</div>
 <p><strong>极性</strong>：(1)$\text{CH}_3\text{CH}_2\text{OH}$ (2)$(\text{C}_2\text{H}_5)_2\text{O}$ (3)$\text{CHCl}_3$ (5)$\text{HBr}$<br>
 <strong>非极性</strong>：(4)$\text{CH}_3\text{CH}_2\text{CH}_3$（近似对称） (6)$\text{CO}_2$（直线形，抵消）</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第3题</strong>：完成酸碱反应，判断平衡方向。
-<details><summary>查看解答</summary><div class="sol"><div class="st">解（平衡有利于生成较弱酸+较弱碱）</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解（平衡有利于生成较弱酸+较弱碱）</div>
 <p>(1) $\text{CH}_3\text{COO}^- + \text{CH}_3\text{OH} \rightleftharpoons \text{CH}_3\text{COOH} + \text{CH}_3\text{O}^-$ — <strong>偏左</strong><br>
 <small>$\text{CH}_3\text{COOH}$($pK_a$=4.75)酸性远强于$\text{CH}_3\text{OH}$($pK_a$=15.5)，平衡不利于生成强碱$\text{CH}_3\text{O}^-$</small></p>
 <p>(2) $\text{H}_3\text{O}^+ + \text{CH}_3\text{O}^- \to \text{H}_2\text{O} + \text{CH}_3\text{OH}$ — <strong>强烈偏右</strong></p>
@@ -224,52 +258,52 @@ $$\text{F}(4.0) > \text{O}(3.5) > \text{N}=\text{Cl}(3.0) > \text{Br}(2.8) > \te
 <p>(4) $\text{C}_2\text{H}_5\text{OH} + \text{CH}_3\text{ONa} \rightleftharpoons$ — <strong>接近平衡</strong>（$pK_a$相近）</p>
 <p>(5) $\text{CH}_3\text{ONa} + \text{NH}_3 \rightleftharpoons$ — <strong>偏左</strong>（$\text{NH}_3$ $pK_a$≈38 远大于$\text{CH}_3\text{OH}$）</p>
 <p>(6) $\text{CH}_3\text{OH} + \text{NaOH} \rightleftharpoons$ — <strong>微偏右</strong></p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第4题</strong>：Lewis结构式。
-<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解</div>
 <p>&bull; $\text{BH}_3$：B只有6个电子，<strong>不满足八隅体</strong>，典型Lewis酸<br>
 &bull; $\text{CH}_3\text{O}^-$：O有<strong>3对孤电子对</strong>，带负电荷<br>
 &bull; $\text{CH}_3\text{NO}_2$：N带+1形式电荷，一个O带-1形式电荷，有两个等价共振式<br>
 &bull; $\text{H}_2\text{O}_2$：H-O-O-H，每个O有2对孤电子对</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第5题</strong>：判断Lewis酸碱。
-<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解</div>
 <p><strong>Lewis酸</strong>：$\text{H}^+$, $\text{CH}_3\text{CH}_2^+$, $\text{AlCl}_3$, $\text{NO}_2^+$, $\text{SnCl}_2$（缺电子/有空轨道）<br>
 <strong>Lewis碱</strong>：$\text{X}^-$, $\text{OH}^-$, $\text{H}_2\text{O}$, $\text{C}_2\text{H}_5\text{OH}$, $\text{CH}_3\text{OCH}_3$（有孤电子对）</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第6题</strong>：弯箭头正误判断。
-<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解</div>
 <p><strong>正确</strong>：(1)(5) — 箭头从富电子→缺电子<br>
 <strong>错误</strong>：(2)(3)(6) — 箭头方向反了，需修正<br>
 <strong>(4)不反应</strong> — $\text{NH}_3$无法脱去$\text{CH}_4$的H（$pK_a$≈48）</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第7题</strong>：共轭酸碱与$pK_a$ — 哪个N优先质子化？
-<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解</div>
 <p>叔胺N共轭酸$pK_a$≈10.6 > 吡啶型N共轭酸$pK_a$≈2.2<br>
 $pK_a$大→共轭酸弱→碱强→<strong>叔胺N优先质子化</strong></p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>第8题</strong>：判断顺式-1,2-二氯乙烯和反式-1,2-二氯乙烯的极性。
-<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解</div>
 <p><strong>顺式-1,2-二氯乙烯</strong>（极性分子）：两个C-Cl键偶极方向相同侧，向量和 ≠ 0，分子有净偶极矩。</p>
 <p><strong>反式-1,2-二氯乙烯</strong>（非极性分子）：两个C-Cl键偶极方向相反，向量和 = 0，偶极矩相互抵消。</p>
 <p><strong>规律</strong>：对于双键限制旋转的分子，顺式异构体中相同取代基在同侧，键偶极无法抵消→极性；反式异构体对称性高，键偶极抵消→非极性。</p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>挑战题1</strong>：$\text{CH}_3\text{Li}$的碱性
-<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解</div>
 <p>$\text{CH}_3\text{CH}_2\text{OH} + \text{CH}_3\text{Li} \to \text{CH}_3\text{CH}_2\text{OLi} + \text{CH}_4$<br>
 共轭酸$\text{CH}_4$的$pK_a$≈48 → $\text{CH}_3^-$是<strong>极强碱</strong></p>
-</div></details></div>
+</div></div>
 
 <div class="ex"><strong>挑战题2</strong>：合成中碱的选择
-<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<div class="sol-header">解答</div><div class="sol"><div class="st">解</div>
 <p>碱的$pK_a$需匹配底物：太弱无法脱质子，太强会破坏其他官能团。选$pK_a$适中的碱（吡啶类≈6.8）实现温和脱质子。</p>
-</div></details></div>
+</div></div>
 
 <h2 id="sum">考点总结</h2>
 <div class="card">
