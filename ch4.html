@@ -34,6 +34,24 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
 .nav-bar a:hover{background:var(--pri);color:#fff;}
+/* Mobile optimization */
+img{max-width:100%;height:auto;}
+svg{max-width:100%;height:auto;}
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0;}
+@media(max-width:600px){
+  body{padding:12px;font-size:15px;line-height:1.7;}
+  h1{font-size:1.4em;}
+  h2{font-size:1.15em;padding:8px 14px;}
+  h3{font-size:1.05em;}
+  .card{padding:12px;}
+  .fb{padding:10px 12px;}
+  .ex,.tip,.warn,.note{padding:8px 12px;}
+  .nav-bar{padding:8px 12px;margin:-12px -12px 16px;}
+  .nav-bar a{padding:8px 12px;font-size:1em;display:inline-block;min-height:44px;line-height:28px;}
+  td,th{padding:4px 6px;font-size:.9em;}
+  details summary{padding:8px 0;min-height:44px;}
+}
 </style>
 <link rel="stylesheet" href="toc.css">
 </head>
@@ -124,7 +142,7 @@ C2连接：Br、CH<sub>3</sub>、CH<sub>3</sub>、CH<sub>3</sub> → 有三个�
 <li>从a→b→c的方向：<strong>顺时针=R</strong>，<strong>逆时针=S</strong></li>
 </ol></div>
 
-<svg width="300" height="150" viewBox="0 0 300 150" style="display:block;margin:10px auto;">
+<svg width="300" height="150" viewBox="0 0 300 150" style="display:block;margin:10px auto;max-width:100%;height:auto;">
   <defs><marker id="ah" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#666"/></marker></defs>
   <!-- R config -->
   <circle cx="80" cy="75" r="5" fill="#333"/>
@@ -150,14 +168,14 @@ C2连接：Br、CH<sub>3</sub>、CH<sub>3</sub>、CH<sub>3</sub> → 有三个�
   <text x="220" y="145" text-anchor="middle" font-size="12" fill="#0d6b3d" font-weight="bold">S (逆时针)</text>
 </svg>
 
-<img src="img/struct_rs_config.png" alt="R/S构型判断" style="max-width:500px;display:block;margin:10px auto;">
+<img src="img/struct_rs_config.png" alt="R/S构型判断" style="max-width:min(500px,100%);display:block;margin:10px auto;">
 <img src="_img_ppt/ppt_ch4_p31.png" alt="PPT: 构型表示方法——透视式(wedge-dash)判断R/S" style="max-width:100%;margin:4px 0;">
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：R/S构型判断��骤图解（点击展开）</summary>
 <img src="_img_ppt/ppt_ch4_p20.png" alt="PPT: CIP优先级规则" style="max-width:100%;margin:8px 0;">
 <img src="_img_ppt/ppt_ch4_p22.png" alt="PPT: R/S判断三步法" style="max-width:100%;margin:8px 0;">
 </details>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch4_stereo_relations.png" alt="对映体vs非对映体vs相同化合物" style="max-width:700px;width:100%;">
+<img src="img/ch4_stereo_relations.png" alt="对映体vs非对映体vs相同化合物" style="max-width:min(700px,100%);width:100%;">
 </div>
 <div class="warn"><strong>当d不在后方时的技巧</strong>：<br>
 &bull; 方法1：交换d到后方（交换两个基团=构型反转，交换两次=恢复）<br>
@@ -227,7 +245,7 @@ $$O.P. = \frac{[\alpha]_{\text{观察}}}{[\alpha]_{\text{纯品}}} \times 100\%$
 </div>
 <div class="note"><strong>旋光方向与构型无关</strong>：R不一定是(+)右旋，S不一定是(-)左旋。旋光方向只能由实验测定。</div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch4_optical_activity.png" alt="旋光性、比旋光度与ee%" style="max-width:660px;width:100%;">
+<img src="img/ch4_optical_activity.png" alt="旋光性、比旋光度与ee%" style="max-width:min(660px,100%);width:100%;">
 </div>
 </div>
 
@@ -247,7 +265,7 @@ $$O.P. = \frac{[\alpha]_{\text{观察}}}{[\alpha]_{\text{纯品}}} \times 100\%$
 <tr><td>翻面(上下翻转)</td><td><strong>不允许！</strong></td><td>破坏横前竖后规则</td></tr>
 </table></div>
 
-<img src="img/struct_fischer_ops.png" alt="Fischer投影式操作" style="max-width:500px;display:block;margin:10px auto;">
+<img src="img/struct_fischer_ops.png" alt="Fischer投影式操作" style="max-width:min(500px,100%);display:block;margin:10px auto;">
 <img src="_img_ppt/ppt_ch4_p33.png" alt="PPT: Fischer投影式旋转180°=同一化合物" style="max-width:100%;margin:4px 0;">
 <img src="_img_ppt/ppt_ch4_p36.png" alt="PPT: Fischer投影式旋转90°变为对映体" style="max-width:100%;margin:4px 0;">
 <div class="tip"><strong>Fischer投影式判R/S</strong>：<br>
@@ -328,7 +346,7 @@ H在横线（左）= 朝前方。Br→OH→CH<sub>3</sub> = 逆时针 = S，但H
 <tr><td><strong>内消旋体</strong></td><td>分子内有对称面</td><td>无旋光性</td><td>$[\alpha]=0$</td></tr>
 <tr><td><strong>外消旋体</strong></td><td>等量对映体混合物</td><td>无旋光性</td><td>$[\alpha]=0$</td></tr>
 </table></div>
-<img src="img/struct_meso_compound.png" alt="内消旋体" style="max-width:300px;display:block;margin:10px auto;">
+<img src="img/struct_meso_compound.png" alt="内消旋体" style="max-width:min(300px,100%);display:block;margin:10px auto;">
 <div class="note"><strong>内消旋 vs 外消旋</strong>：<br>
 &bull; 内消旋(meso)：<strong>一个</strong>化合物，分子内部手性碳产生的旋光能力相互<strong>抵消</strong> → 不可拆分<br>
 &bull; 外消旋(racemic)：<strong>两个</strong>对映体的等量混合物，两种分子间旋光能力相互抵消 → 可通过拆分分离<br>
@@ -481,7 +499,7 @@ H在横线（左）= 朝前方。Br→OH→CH<sub>3</sub> = 逆时针 = S，但H
 <li><strong>手性硫</strong>：亚砜(R<sub>1</sub>SOR<sub>2</sub>)，硫上有孤对电子作为第四个"基团"</li>
 </ul></div>
 
-<img src="img/struct_allene_chirality.png" alt="丙二烯轴手性" style="max-width:350px;display:block;margin:10px auto;">
+<img src="img/struct_allene_chirality.png" alt="丙二烯轴手性" style="max-width:min(350px,100%);display:block;margin:10px auto;">
 <div class="warn"><strong>记忆要点</strong>：不含手性碳的手性来源 = 轴手性（丙二烯、联苯）+ 螺环手性 + 杂原子手性。关键是找<strong>对称面</strong>，无对称面即有手性。</div>
 </div>
 

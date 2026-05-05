@@ -35,6 +35,24 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
 .nav-bar a:hover{background:var(--pri);color:#fff;}
 svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
+/* Mobile optimization */
+img{max-width:100%;height:auto;}
+svg{max-width:100%;height:auto;}
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0;}
+@media(max-width:600px){
+  body{padding:12px;font-size:15px;line-height:1.7;}
+  h1{font-size:1.4em;}
+  h2{font-size:1.15em;padding:8px 14px;}
+  h3{font-size:1.05em;}
+  .card{padding:12px;}
+  .fb{padding:10px 12px;}
+  .ex,.tip,.warn,.note{padding:8px 12px;}
+  .nav-bar{padding:8px 12px;margin:-12px -12px 16px;}
+  .nav-bar a{padding:8px 12px;font-size:1em;display:inline-block;min-height:44px;line-height:28px;}
+  td,th{padding:4px 6px;font-size:.9em;}
+  details summary{padding:8px 0;min-height:44px;}
+}
 </style>
 <link rel="stylesheet" href="toc.css">
 </head>
@@ -46,7 +64,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <h2 id="s1">5.1 烯烃的结构与命名</h2>
 <h3>sp²杂化与π键</h3>
 <div class="card">
-<svg width="420" height="160" viewBox="0 0 420 160">
+<svg width="420" height="160" viewBox="0 0 420 160" style="max-width:100%;height:auto;">
   <text x="210" y="18" text-anchor="middle" font-size="13" fill="#0d6b3d" font-weight="bold">乙烯 sp²杂化示意</text>
   <line x1="130" y1="80" x2="290" y2="80" stroke="#333" stroke-width="3"/>
   <line x1="130" y1="72" x2="290" y2="72" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,3"/>
@@ -80,7 +98,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <p>①原子序数大者优先 ②第一个原子相同则比较下一个 ③双键按两个单键计算</p>
 <p><strong>Z</strong>(zusammen)：两个优先基团在<strong>同侧</strong>；<strong>E</strong>(entgegen)：在<strong>异侧</strong></p>
 </div>
-<svg width="400" height="120" viewBox="0 0 400 120">
+<svg width="400" height="120" viewBox="0 0 400 120" style="max-width:100%;height:auto;">
   <text x="100" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">(Z)-2-丁烯</text>
   <text x="300" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#c0392b">(E)-2-丁烯</text>
   <line x1="60" y1="60" x2="140" y2="60" stroke="#333" stroke-width="3"/>
@@ -130,7 +148,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <h2 id="s2">5.2 亲电加成反应</h2>
 <h3>亲电加成总机理</h3>
 <div class="card">
-<svg width="460" height="100" viewBox="0 0 460 100">
+<svg width="460" height="100" viewBox="0 0 460 100" style="max-width:100%;height:auto;">
   <rect x="10" y="25" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#27ae60" stroke-width="2"/>
   <text x="60" y="55" text-anchor="middle" font-size="13" font-weight="bold">C=C + E⁺</text>
   <text x="150" y="55" text-anchor="middle" font-size="20">→</text>
@@ -152,7 +170,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <div class="fb"><div class="t">Markovnikov规则（马氏规则）</div>
 <p>不对称烯烃加HX：H加到<strong>含H较多</strong>的双键碳 → 生成<strong>更稳定的碳正离子</strong></p>
 <p>本质：经过更稳定的碳正离子中间体（能量更低的过渡态）</p></div>
-<svg width="440" height="130" viewBox="0 0 440 130">
+<svg width="440" height="130" viewBox="0 0 440 130" style="max-width:100%;height:auto;">
   <text x="220" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">丙烯 + HBr 的区域选择性</text>
   <text x="60" y="55" font-size="13">CH₃CH=CH₂ + HBr</text>
   <line x1="200" y1="50" x2="240" y2="35" stroke="#27ae60" stroke-width="2" marker-end="url(#arr)"/>
@@ -165,7 +183,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
   <marker id="arr2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#c0392b"/></marker></defs>
 </svg>
 <p><strong>碳正离子稳定性</strong>：</p>
-<img src="img/struct_carbocation_stability.png" alt="碳正离子稳定性" style="max-width:550px;display:block;margin:10px auto;">
+<img src="img/struct_carbocation_stability.png" alt="碳正离子稳定性" style="max-width:min(550px,100%);display:block;margin:10px auto;">
 <div class="fb"><div class="t">稳定性排序</div>
 <p>苄基 ≈ 烯丙基 &gt; 3° &gt; 2° &gt; 1° &gt; CH₃⁺ &gt; 乙烯基</p>
 <p>稳定化因素：超共轭(烷基)、共振(苄基/烯丙基)、杂原子孤对电子</p></div>
@@ -184,7 +202,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <p>②1,2-甲基迁移：甲基(或其他烷基)带电子对迁移</p>
 <p>③方向：总是从<strong>不稳定</strong>→<strong>更稳定</strong>碳正离子</p>
 <p>④环扩张：四/五元环→五/六元环(张力释放)</p></div>
-<svg width="440" height="100" viewBox="0 0 440 100">
+<svg width="440" height="100" viewBox="0 0 440 100" style="max-width:100%;height:auto;">
   <text x="20" y="50" font-size="12">CH₃-C(CH₃)₂-CH⁺-CH₃</text>
   <text x="220" y="50" font-size="16">→</text>
   <text x="205" y="30" font-size="10" fill="#c0392b">CH₃迁移</text>
@@ -200,7 +218,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 </div></div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch5_carbocation_rearrange.png" alt="碳正离子重排1,2-迁移" style="max-width:700px;width:100%;">
+<img src="img/ch5_carbocation_rearrange.png" alt="碳正离子重排1,2-迁移" style="max-width:min(700px,100%);width:100%;">
 </div>
 
 <div class="card">
@@ -217,8 +235,8 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 <h2 id="s3">5.3 卤素加成与立体化学</h2>
 <h3>溴鎓离子机理（Br₂加成）</h3>
 <div class="card">
-<img src="img/struct_bromonium.png" alt="溴鎓离子" style="max-width:500px;display:block;margin:10px auto;">
-<svg width="460" height="140" viewBox="0 0 460 140">
+<img src="img/struct_bromonium.png" alt="溴鎓离子" style="max-width:min(500px,100%);display:block;margin:10px auto;">
+<svg width="460" height="140" viewBox="0 0 460 140" style="max-width:100%;height:auto;">
   <text x="230" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">溴鎓离子机理 → 反式(anti)加成</text>
   <!-- alkene -->
   <line x1="40" y1="70" x2="90" y2="70" stroke="#333" stroke-width="3"/>
@@ -328,7 +346,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 
 <h3>硼氢化-氧化反应</h3>
 <div class="card">
-<svg width="440" height="80" viewBox="0 0 440 80">
+<svg width="440" height="80" viewBox="0 0 440 80" style="max-width:100%;height:auto;">
   <text x="30" y="45" font-size="13">R-CH=CH₂</text>
   <text x="140" y="35" font-size="11" fill="#0d6b3d">BH₃/THF</text>
   <line x1="130" y1="45" x2="190" y2="45" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -391,7 +409,7 @@ svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
 
 <h3>环氧化反应</h3>
 <div class="card">
-<svg width="360" height="90" viewBox="0 0 360 90">
+<svg width="360" height="90" viewBox="0 0 360 90" style="max-width:100%;height:auto;">
   <text x="30" y="50" font-size="13">C=C</text>
   <text x="100" y="35" font-size="10" fill="#0d6b3d">mCPBA</text>
   <line x1="70" y1="48" x2="130" y2="48" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -425,7 +443,7 @@ CH<sub>2</sub>=CH<sub>2</sub>(乙烯) > RCH=CH<sub>2</sub> > R<sub>2</sub>C=CH<s
 <h3>烯丙位溴代（NBS反应）</h3>
 <div class="card">
 <img src="_img_ppt/ppt_ch5_p63.png" alt="PPT: α-H的卤代反应(α-碳和α-氢)" style="max-width:100%;margin:4px 0;">
-<svg width="400" height="80" viewBox="0 0 400 80">
+<svg width="400" height="80" viewBox="0 0 400 80" style="max-width:100%;height:auto;">
   <text x="30" y="45" font-size="13">R-CH₂-CH=CH₂</text>
   <text x="180" y="30" font-size="10" fill="#0d6b3d">NBS, hν 或 ROOR</text>
   <line x1="160" y1="42" x2="240" y2="42" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -486,7 +504,7 @@ CH<sub>2</sub>=CH<sub>2</sub>(乙烯) > RCH=CH<sub>2</sub> > R<sub>2</sub>C=CH<s
 
 <h3>1,2-加成 vs 1,4-加成</h3>
 <div class="card">
-<svg width="460" height="130" viewBox="0 0 460 130">
+<svg width="460" height="130" viewBox="0 0 460 130" style="max-width:100%;height:auto;">
   <text x="230" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">1,3-丁二烯 + HBr</text>
   <text x="80" y="50" font-size="12">CH₂=CH-CH=CH₂ + HBr</text>
   <line x1="240" y1="45" x2="280" y2="30" stroke="#27ae60" stroke-width="2" marker-end="url(#arr)"/>
@@ -509,7 +527,7 @@ CH<sub>2</sub>=CH<sub>2</sub>(乙烯) > RCH=CH<sub>2</sub> > R<sub>2</sub>C=CH<s
 
 <h3>Diels-Alder反应（[4+2]环加成）</h3>
 <div class="card">
-<svg width="440" height="110" viewBox="0 0 440 110">
+<svg width="440" height="110" viewBox="0 0 440 110" style="max-width:100%;height:auto;">
   <text x="220" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">Diels-Alder反应示意</text>
   <!-- diene -->
   <path d="M50,70 L80,45 L110,70 L140,45" fill="none" stroke="#333" stroke-width="2.5"/>

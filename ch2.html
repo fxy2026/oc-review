@@ -34,6 +34,24 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
 .nav-bar a:hover{background:var(--pri);color:#fff;}
+/* Mobile optimization */
+img{max-width:100%;height:auto;}
+svg{max-width:100%;height:auto;}
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0;}
+@media(max-width:600px){
+  body{padding:12px;font-size:15px;line-height:1.7;}
+  h1{font-size:1.4em;}
+  h2{font-size:1.15em;padding:8px 14px;}
+  h3{font-size:1.05em;}
+  .card{padding:12px;}
+  .fb{padding:10px 12px;}
+  .ex,.tip,.warn,.note{padding:8px 12px;}
+  .nav-bar{padding:8px 12px;margin:-12px -12px 16px;}
+  .nav-bar a{padding:8px 12px;font-size:1em;display:inline-block;min-height:44px;line-height:28px;}
+  td,th{padding:4px 6px;font-size:.9em;}
+  details summary{padding:8px 0;min-height:44px;}
+}
 </style>
 <link rel="stylesheet" href="toc.css">
 </head>
@@ -96,7 +114,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li>2个C的p<sub>z</sub>轨道侧面重叠形成1个π键</li>
 </ul>
 <p><strong>键长键角数据</strong>：C=C键长 133.7pm，C-H键长 108.6pm，H-C=C键角 121.6°，H-C-H键角 116.7°</p>
-<img src="img/struct_ethylene.png" alt="乙烯结构" style="max-width:300px;display:block;margin:10px auto;">
+<img src="img/struct_ethylene.png" alt="乙烯结构" style="max-width:min(300px,100%);display:block;margin:10px auto;">
 </div>
 
 <img src="_img_ppt/ppt_ch2_p15.png" alt="PPT: sp杂化：直线形结构（轨道示意图）" style="max-width:100%;margin:4px 0;">
@@ -108,7 +126,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li>2对p轨道侧面重叠形成<strong>2个互相垂直的π键</strong></li>
 </ul>
 <p><strong>键长键角数据</strong>：C≡C键长 120.7pm，C-H键长 105.9pm，直线形 180°</p>
-<img src="img/struct_acetylene.png" alt="乙炔结构" style="max-width:300px;display:block;margin:10px auto;">
+<img src="img/struct_acetylene.png" alt="乙炔结构" style="max-width:min(300px,100%);display:block;margin:10px auto;">
 </div>
 
 <div class="fb"><div class="t">氧原子和氮原子的杂化（考点）</div>
@@ -123,7 +141,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 </table>
 <div class="warn"><strong>酰胺中N为sp²</strong>：酰胺键R-CO-NH₂中，N的孤电子对与C=O形成p-π共轭 → N为sp²平面结构 → 这是蛋白质肽键为平面的原因！</div></div>
 
-<img src="img/ppt_ch2_hybridization_summary.png" alt="杂化轨道总结" style="max-width:500px;display:block;margin:10px auto;">
+<img src="img/ppt_ch2_hybridization_summary.png" alt="杂化轨道总结" style="max-width:min(500px,100%);display:block;margin:10px auto;">
 </div>
 
 <h3 id="k2">2.2 共振结构式</h3>
@@ -166,7 +184,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p>共振论是价键理论的延伸和发展，以经典结构式为基础。共振式的稳定性需要考虑<strong>八隅规则</strong>，使分子中有最少的电荷分离，同时尽可能使电负性强的原子带有较多的负电荷和较少的正电荷。</p></div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch2_resonance_rules.png" alt="共振结构七条规则" style="max-width:700px;width:100%;">
+<img src="img/ch2_resonance_rules.png" alt="共振结构七条规则" style="max-width:min(700px,100%);width:100%;">
 </div>
 
 <h3 id="k2b">2.2b 共轭二烯烃与共轭效应</h3>
@@ -178,8 +196,8 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li>分子近乎平面构型，电子离域在整个共轭体系上</li>
 <li>丁-1,3-二烯键角数据：C-C=C键角 122.4°, C1=C2键长 133.7pm, C2-C3键长 146.0pm</li>
 </ul>
-<img src="img/struct_13butadiene.png" alt="1,3-丁二烯结构" style="max-width:300px;display:block;margin:10px auto;">
-<img src="img/struct_conjugation_types.png" alt="共轭类型示意图" style="max-width:350px;display:block;margin:10px auto;">
+<img src="img/struct_13butadiene.png" alt="1,3-丁二烯结构" style="max-width:min(300px,100%);display:block;margin:10px auto;">
+<img src="img/struct_conjugation_types.png" alt="共轭类型示意图" style="max-width:min(350px,100%);display:block;margin:10px auto;">
 </div>
 <div class="fb"><div class="t">共轭效应（离域效应）</div>
 <p><strong>定义</strong>：在共轭体系中，电子离域（不再局限于两个原子之间）导致体系能量降低、稳定性增大的效应。共轭效应使分子更稳定、内能更小、键长趋于平均化。</p>
@@ -220,7 +238,7 @@ DBE=4 → 很可能含苯环(3双键+1环)</div>
 <div class="ex"><strong>例</strong>：C<sub>7</sub>H<sub>6</sub>O<sub>2</sub> 的DBE = (2&times;7+2-6)/2 = <strong>5</strong>。含苯环(4)+1个C=O或环。</div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch2_dbe_guide.png" alt="不饱和度计算指南" style="max-width:660px;width:100%;">
+<img src="img/ch2_dbe_guide.png" alt="不饱和度计算指南" style="max-width:min(660px,100%);width:100%;">
 </div>
 
 <h3 id="k4">2.4 IUPAC系统命名法</h3>
@@ -341,8 +359,8 @@ CH<sub>3</sub>CH=CHCH<sub>2</sub>CH<sub>3</sub> → <strong>2-戊烯</strong></d
   </ul></li>
 </ol>
 <p><strong>实例</strong>：甲基环戊烷(methylcyclopentane)、1-异丙基-2-甲基环戊烷、1,1,4-三甲基环己烷</p>
-<img src="img/struct_cyclohexane.png" alt="环己烷" style="max-width:120px;display:inline-block;margin:5px 15px;">
-<img src="img/struct_methylcyclohexane.png" alt="甲基环己烷" style="max-width:120px;display:inline-block;margin:5px 15px;">
+<img src="img/struct_cyclohexane.png" alt="环己烷" style="max-width:min(120px,100%);display:inline-block;margin:5px 15px;">
+<img src="img/struct_methylcyclohexane.png" alt="甲基环己烷" style="max-width:min(120px,100%);display:inline-block;margin:5px 15px;">
 </div>
 
 <div class="fb"><div class="t">桥环化合物命名（五条规则）</div>
@@ -362,8 +380,8 @@ CH<sub>3</sub>CH=CHCH<sub>2</sub>CH<sub>3</sub> → <strong>2-戊烯</strong></d
 <li>1-乙基-2,8-二甲基二环[3.2.1]辛烷</li>
 <li>2,7,7-三甲基二环[4.1.0]庚烷</li>
 </ul>
-<img src="img/struct_bridged.png" alt="桥环结构" style="max-width:350px;display:block;margin:10px auto;">
-<img src="img/ppt_ch2_bridge_naming.png" alt="桥环命名示例" style="max-width:450px;display:block;margin:10px auto;">
+<img src="img/struct_bridged.png" alt="桥环结构" style="max-width:min(350px,100%);display:block;margin:10px auto;">
+<img src="img/ppt_ch2_bridge_naming.png" alt="桥环命名示例" style="max-width:min(450px,100%);display:block;margin:10px auto;">
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：桥环 + 螺环命名详解（点击展开）</summary>
 <img src="_img_ppt/ppt_ch2_p41.png" alt="PPT: 桥环二环命名规则" style="max-width:100%;margin:8px 0;">
 <img src="_img_ppt/ppt_ch2_p43.png" alt="PPT: 螺环命名规则" style="max-width:100%;margin:8px 0;">
@@ -397,8 +415,8 @@ $$\text{环数} = \text{C-C键数} - \text{碳原子数} + 1$$
 <li><strong>螺[4.5]癸烷</strong>：总碳数=4+5+1=10，一个五元环和一个六元环</li>
 <li><strong>5-甲基螺[3.4]辛烷</strong>：总碳数=3+4+1=8，5位有甲基取代</li>
 </ul>
-<img src="img/struct_spirocyclic.png" alt="螺环结构" style="max-width:350px;display:block;margin:10px auto;">
-<img src="img/ppt_ch2_spiro_naming.png" alt="螺环命名示例" style="max-width:450px;display:block;margin:10px auto;">
+<img src="img/struct_spirocyclic.png" alt="螺环结构" style="max-width:min(350px,100%);display:block;margin:10px auto;">
+<img src="img/ppt_ch2_spiro_naming.png" alt="螺环命名示例" style="max-width:min(450px,100%);display:block;margin:10px auto;">
 </div>
 <div class="tip"><strong>桥环实例</strong>：降冰片烷 = 二环[2.2.1]庚烷(共7个碳，桥分别含2、2、1个碳)</div>
 </div>
@@ -422,7 +440,7 @@ $$\text{环数} = \text{C-C键数} - \text{碳原子数} + 1$$
 <img src="_img_ppt/ppt_ch2_p55.png" alt="PPT: E/Z命名：外推法（CIP优先顺序规则）" style="max-width:100%;margin:4px 0;">
 <img src="_img_ppt/ppt_ch2_p57.png" alt="PPT: E/Z命名实例" style="max-width:100%;margin:4px 0;">
 
-<img src="img/ppt_ch2_ze_naming.png" alt="Z/E命名示例" style="max-width:450px;display:block;margin:10px auto;">
+<img src="img/ppt_ch2_ze_naming.png" alt="Z/E命名示例" style="max-width:min(450px,100%);display:block;margin:10px auto;">
 
 <div class="fb"><div class="t">Z/E判断</div>
 <p>对双键两端各选优先级高的基团：<br>
@@ -441,8 +459,8 @@ $$\text{环数} = \text{C-C键数} - \text{碳原子数} + 1$$
 </ul>
 <p>例：(cis)-丁-2-烯 vs (trans)-丁-2-烯</p>
 <div class="card" style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:8px;">
-<figure style="text-align:center;margin:0"><img src="img/struct_cis2butene.png" alt="顺-2-丁烯" style="max-width:150px;"><figcaption style="font-size:.85em;">(cis)-丁-2-烯</figcaption></figure>
-<figure style="text-align:center;margin:0"><img src="img/struct_trans2butene.png" alt="反-2-丁烯" style="max-width:150px;"><figcaption style="font-size:.85em;">(trans)-丁-2-烯</figcaption></figure>
+<figure style="text-align:center;margin:0"><img src="img/struct_cis2butene.png" alt="顺-2-丁烯" style="max-width:min(150px,100%);"><figcaption style="font-size:.85em;">(cis)-丁-2-烯</figcaption></figure>
+<figure style="text-align:center;margin:0"><img src="img/struct_trans2butene.png" alt="反-2-丁烯" style="max-width:min(150px,100%);"><figcaption style="font-size:.85em;">(trans)-丁-2-烯</figcaption></figure>
 </div></div>
 
 <div class="tip"><strong>烯炔共存时</strong>：先烯后炔命名(-X-烯-Y-炔)；同位次时<strong>双键编号优先于三键</strong>。</div>
@@ -462,7 +480,7 @@ $$\text{环数} = \text{C-C键数} - \text{碳原子数} + 1$$
 <p>庚-2,4-二烯 CH₃CH=CH-CH=CHCH₂CH₃ 中每个双键独立判断Z/E → 可得(2E,4E)、(2E,4Z)、(2Z,4E)、(2Z,4Z)四种异构体。</p></div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch2_ze_vs_cistrans.png" alt="Z/E命名与顺/反对比" style="max-width:680px;width:100%;">
+<img src="img/ch2_ze_vs_cistrans.png" alt="Z/E命名与顺/反对比" style="max-width:min(680px,100%);width:100%;">
 </div>
 
 <h3 id="k7">2.7 常见官能团与分类</h3>
@@ -516,7 +534,7 @@ $$\text{环数} = \text{C-C键数} - \text{碳原子数} + 1$$
 <tr><td>C2(中心)</td><td><strong>sp</strong></td><td>形成两个C=C双键，两个π键互相垂直</td></tr>
 </table>
 <div class="warn"><strong>重点</strong>：中心碳为sp杂化！两端CH<sub>2</sub>平面互相垂直（90°二面角）。这导致丙二烯具有轴手性（当两端取代基不同时为手性分子）。</div>
-<img src="img/struct_allene_simple.png" alt="丙二烯结构" style="max-width:250px;display:block;margin:10px auto;">
+<img src="img/struct_allene_simple.png" alt="丙二烯结构" style="max-width:min(250px,100%);display:block;margin:10px auto;">
 
 <p><strong>(d) HCONH<sub>2</sub></strong>（甲酰胺）：</p>
 <table><tr><th>原子</th><th>杂化</th><th>说明</th></tr>

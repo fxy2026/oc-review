@@ -37,6 +37,24 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 .page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
 .page-label{display:inline-block;background:var(--pri);color:#fff;padding:4px 14px;border-radius:4px;font-weight:bold;font-size:1.1em;margin-bottom:10px;}
 .rxn{font-family:'Courier New',monospace;background:#f8f8f8;padding:8px 14px;border-radius:5px;margin:6px 0;display:block;overflow-x:auto;white-space:nowrap;}
+/* Mobile optimization */
+img{max-width:100%;height:auto;}
+svg{max-width:100%;height:auto;}
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0;}
+@media(max-width:600px){
+  body{padding:12px;font-size:15px;line-height:1.7;}
+  h1{font-size:1.4em;}
+  h2{font-size:1.15em;padding:8px 14px;}
+  h3{font-size:1.05em;}
+  .card{padding:12px;}
+  .fb{padding:10px 12px;}
+  .ex,.tip,.warn,.note{padding:8px 12px;}
+  .nav-bar{padding:8px 12px;margin:-12px -12px 16px;}
+  .nav-bar a{padding:8px 12px;font-size:1em;display:inline-block;min-height:44px;line-height:28px;}
+  .page-img{border-radius:4px;}
+  td,th{padding:4px 6px;font-size:.9em;}
+}
 </style>
 <link rel="stylesheet" href="toc.css">
 </head>

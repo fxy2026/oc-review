@@ -34,6 +34,24 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
 .nav-bar a:hover{background:var(--pri);color:#fff;}
+/* Mobile optimization */
+img{max-width:100%;height:auto;}
+svg{max-width:100%;height:auto;}
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0;}
+@media(max-width:600px){
+  body{padding:12px;font-size:15px;line-height:1.7;}
+  h1{font-size:1.4em;}
+  h2{font-size:1.15em;padding:8px 14px;}
+  h3{font-size:1.05em;}
+  .card{padding:12px;}
+  .fb{padding:10px 12px;}
+  .ex,.tip,.warn,.note{padding:8px 12px;}
+  .nav-bar{padding:8px 12px;margin:-12px -12px 16px;}
+  .nav-bar a{padding:8px 12px;font-size:1em;display:inline-block;min-height:44px;line-height:28px;}
+  td,th{padding:4px 6px;font-size:.9em;}
+  details summary{padding:8px 0;min-height:44px;}
+}
 </style>
 <link rel="stylesheet" href="toc.css">
 </head>
@@ -80,7 +98,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p>亲核试剂从离去基团的<strong>背面</strong>进攻，经过<strong>五配位过渡态</strong>，一步完成：</p>
 <p style="text-align:center;font-size:1.05em;">Nu<sup>&minus;</sup> + R&minus;X → [Nu&middot;&middot;&middot;R&middot;&middot;&middot;X]<sup>‡</sup> → Nu&minus;R + X<sup>&minus;</sup></p></div>
 
-<svg width="500" height="130" viewBox="0 0 500 130" style="display:block;margin:10px auto;">
+<svg width="500" height="130" viewBox="0 0 500 130" style="display:block;margin:10px auto;max-width:100%;height:auto;">
   <defs><marker id="ah" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#666"/></marker></defs>
   <!-- substrate -->
   <text x="30" y="60" font-size="14" fill="#0d6b3d" font-weight="bold">Nu⁻</text>
@@ -107,7 +125,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
   <text x="350" y="115" text-anchor="middle" font-size="10" fill="#c0392b">构型翻转!</text>
 </svg>
 
-<img src="img/struct_sn2_mechanism.png" alt="SN2机理" style="max-width:550px;display:block;margin:10px auto;">
+<img src="img/struct_sn2_mechanism.png" alt="SN2机理" style="max-width:min(550px,100%);display:block;margin:10px auto;">
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：SN2机理详解（点击展开）</summary>
 <img src="_img_ppt/ppt_ch9_p21.png" alt="PPT: SN2机理" style="max-width:100%;margin:8px 0;">
 <img src="_img_ppt/ppt_ch9_p22.png" alt="PPT: SN2能量图与特征" style="max-width:100%;margin:8px 0;">
@@ -178,7 +196,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li>若用<strong>大位阻碱</strong>(如 t-BuOK)：得<strong>Hofmann产物</strong>（取代少的烯烃）</li>
 </ul></div>
 
-<svg width="400" height="130" viewBox="0 0 400 130" style="display:block;margin:10px auto;">
+<svg width="400" height="130" viewBox="0 0 400 130" style="display:block;margin:10px auto;max-width:100%;height:auto;">
   <!-- Newman-like anti arrangement -->
   <circle cx="120" cy="65" r="35" fill="#fff" stroke="#333" stroke-width="1.5"/>
   <line x1="120" y1="30" x2="120" y2="10" stroke="#333" stroke-width="1.5"/>
@@ -196,7 +214,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
   <text x="275" y="100" text-anchor="middle" font-size="11" fill="#333">烯烃</text>
 </svg>
 
-<img src="img/struct_e2_mechanism.png" alt="E2机理" style="max-width:450px;display:block;margin:10px auto;">
+<img src="img/struct_e2_mechanism.png" alt="E2机理" style="max-width:min(450px,100%);display:block;margin:10px auto;">
 <img src="_img_ppt/ppt_ch9_p75.png" alt="PPT: E2反式共平面消除menthyl chloride示例" style="max-width:100%;margin:4px 0;">
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：E2反式共平面消除（点击展开）</summary>
 <img src="_img_ppt/ppt_ch9_p74.png" alt="PPT: E2反式共平面" style="max-width:100%;margin:8px 0;">
@@ -311,10 +329,10 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <div class="tip"><strong>记忆口诀</strong>：醇中消除水中代——KOH/醇 → 消除；KOH/水 → 取代。</div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch9_four_competition.png" alt="SN1/SN2/E1/E2四大竞争判断" style="max-width:740px;width:100%;">
+<img src="img/ch9_four_competition.png" alt="SN1/SN2/E1/E2四大竞争判断" style="max-width:min(740px,100%);width:100%;">
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch9_reaction_flowchart.png" alt="SN1/SN2/E1/E2快速判断流程" style="max-width:760px;width:100%;">
+<img src="img/ch9_reaction_flowchart.png" alt="SN1/SN2/E1/E2快速判断流程" style="max-width:min(760px,100%);width:100%;">
 </div>
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：四大竞争核心判断图（点击展开）</summary>
 <img src="_img_ppt/ppt_ch9_p79.png" alt="PPT: SN2/E2 vs SN1/E1竞争图" style="max-width:100%;margin:8px 0;">
@@ -468,7 +486,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 RMgX + HA → RH + MgXA（格氏试剂被破坏）<br>
 <strong>因此</strong>：制备格氏试剂时分子中不能含上述基团；必须<strong>无水无氧</strong>操作。</div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch9_grignard_reactions.png" alt="Grignard试剂制备与反应" style="max-width:720px;width:100%;">
+<img src="img/ch9_grignard_reactions.png" alt="Grignard试剂制备与反应" style="max-width:min(720px,100%);width:100%;">
 </div>
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：格氏试剂活泼氢分解 + Corey-House合成（点击展开）</summary>
 <img src="_img_ppt/ppt_ch9_p93.png" alt="PPT: 格氏试剂遇活泼氢分解" style="max-width:100%;margin:8px 0;">

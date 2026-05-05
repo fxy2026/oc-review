@@ -34,6 +34,24 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
 .nav-bar a:hover{background:var(--pri);color:#fff;}
+/* Mobile optimization */
+img{max-width:100%;height:auto;}
+svg{max-width:100%;height:auto;}
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0;}
+@media(max-width:600px){
+  body{padding:12px;font-size:15px;line-height:1.7;}
+  h1{font-size:1.4em;}
+  h2{font-size:1.15em;padding:8px 14px;}
+  h3{font-size:1.05em;}
+  .card{padding:12px;}
+  .fb{padding:10px 12px;}
+  .ex,.tip,.warn,.note{padding:8px 12px;}
+  .nav-bar{padding:8px 12px;margin:-12px -12px 16px;}
+  .nav-bar a{padding:8px 12px;font-size:1em;display:inline-block;min-height:44px;line-height:28px;}
+  td,th{padding:4px 6px;font-size:.9em;}
+  details summary{padding:8px 0;min-height:44px;}
+}
 </style>
 <link rel="stylesheet" href="toc.css">
 </head>
@@ -67,7 +85,7 @@ $$\text{形式电荷} = \text{价电子数} - \text{孤电子数} - \tfrac{1}{2}
 <p><strong>σ键</strong>（头碰头重叠）：s-s重叠、s-p重叠、p-p轴向重叠 → 沿键轴圆柱对称，可自由旋转</p>
 <p><strong>π键</strong>（肩并肩重叠）：p-p侧面重叠 → 节面包含键轴，不能自由旋转</p>
 <p>单键 = 1σ；双键 = 1σ + 1π；叁键 = 1σ + 2π</p>
-<img src="img/ppt_ch1_bond_types.png" alt="σ键与π键示意图" style="max-width:420px;display:block;margin:10px auto;">
+<img src="img/ppt_ch1_bond_types.png" alt="σ键与π键示意图" style="max-width:min(420px,100%);display:block;margin:10px auto;">
 <img src="_img_ppt/ppt_ch1_p38.png" alt="PPT: σ键和π键" style="max-width:100%;margin:4px 0;"></div>
 
 <div class="fb"><div class="t">π键的三个重要特征（考点）</div>
@@ -110,12 +128,12 @@ $$\text{形式电荷} = \text{价电子数} - \text{孤电子数} - \tfrac{1}{2}
 </div>
 
 <div class="card" style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:12px;">
-<figure style="text-align:center;margin:0"><img src="img/ch1_methane.png" alt="甲烷sp³" style="max-width:160px;"><figcaption style="font-size:.85em;">甲烷 sp³ — 四面体</figcaption></figure>
-<figure style="text-align:center;margin:0"><img src="img/ch1_ethylene.png" alt="乙烯sp²" style="max-width:200px;"><figcaption style="font-size:.85em;">乙烯 sp² — 平面形</figcaption></figure>
-<figure style="text-align:center;margin:0"><img src="img/ch1_acetylene.png" alt="乙炔sp" style="max-width:200px;"><figcaption style="font-size:.85em;">乙炔 sp — 线形</figcaption></figure>
+<figure style="text-align:center;margin:0"><img src="img/ch1_methane.png" alt="甲烷sp³" style="max-width:min(160px,100%);"><figcaption style="font-size:.85em;">甲烷 sp³ — 四面体</figcaption></figure>
+<figure style="text-align:center;margin:0"><img src="img/ch1_ethylene.png" alt="乙烯sp²" style="max-width:min(200px,100%);"><figcaption style="font-size:.85em;">乙烯 sp² — 平面形</figcaption></figure>
+<figure style="text-align:center;margin:0"><img src="img/ch1_acetylene.png" alt="乙炔sp" style="max-width:min(200px,100%);"><figcaption style="font-size:.85em;">乙炔 sp — 线形</figcaption></figure>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch1_hybridization_compare.png" alt="杂化方式对比" style="max-width:680px;width:100%;">
+<img src="img/ch1_hybridization_compare.png" alt="杂化方式对比" style="max-width:min(680px,100%);width:100%;">
 </div>
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：杂化轨道总结表 + 电负性表（点击展开）</summary>
 <img src="_img_ppt/ppt_ch2_p17.png" alt="PPT: sp3/sp2/sp杂化总结表" style="max-width:100%;margin:8px 0;">
@@ -204,7 +222,7 @@ $$\text{F}(4.0) > \text{O}(3.5) > \text{N}=\text{Cl}(3.0) > \text{Br}(2.8) > \te
 <div class="warn"><strong>考试重点</strong>：碳正离子稳定性顺序必记！叔碳正离子(3°) > 仲碳正离子(2°) > 伯碳正离子(1°) > 甲基正离子(CH₃⁺)。烯丙基和苄基正离子因共振特别稳定。</div></div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch1_bond_cleavage.png" alt="均裂vs异裂" style="max-width:640px;width:100%;">
+<img src="img/ch1_bond_cleavage.png" alt="均裂vs异裂" style="max-width:min(640px,100%);width:100%;">
 </div>
 
 <h3 id="kp3">1.3 酸碱理论</h3>
@@ -248,7 +266,7 @@ $$\text{A (酸)} + \text{:B (碱)} \longrightarrow \text{A:B (酸碱配合物)}$
 <p>Lewis酸碱反应中，碱的孤电子对→酸的空轨道，形成<strong>配位键</strong>。弯箭头从碱指向酸。</p></div>
 <img src="_img_ppt/ppt_ch1_p59.png" alt="PPT: Lewis酸碱理论——Lewis酸=亲电试剂，Lewis碱=亲核试剂" style="max-width:100%;margin:4px 0;">
 <img src="_img_ppt/ppt_ch1_p60.png" alt="PPT: Lewis酸碱反应实例——弯箭头表示电子转移方向" style="max-width:100%;margin:4px 0;">
-<img src="img/ppt_ch1_lewis_acid_base.png" alt="Lewis酸碱反应示意" style="max-width:420px;display:block;margin:10px auto;">
+<img src="img/ppt_ch1_lewis_acid_base.png" alt="Lewis酸碱反应示意" style="max-width:min(420px,100%);display:block;margin:10px auto;">
 
 <div class="fb"><div class="t">Lewis酸（亲电试剂，E）的类型</div>
 <ul>
@@ -267,7 +285,7 @@ $$\text{A (酸)} + \text{:B (碱)} \longrightarrow \text{A:B (酸碱配合物)}$
 <div class="note"><strong>教授强调</strong>：大部分有机反应都可以看成Lewis酸碱反应！<strong>Lewis酸 = 亲电试剂（electrophilic agent）</strong>，<strong>Lewis碱 = 亲核试剂（nucleophilic agent）</strong>。理解这一点是学习有机反应机理的基础。</div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch1_lewis_bronsted.png" alt="Lewis vs Brønsted酸碱" style="max-width:640px;width:100%;">
+<img src="img/ch1_lewis_bronsted.png" alt="Lewis vs Brønsted酸碱" style="max-width:min(640px,100%);width:100%;">
 </div>
 
 <h3 id="kp3b">1.3b 影响酸碱强度的因素（考点总结）</h3>
@@ -289,7 +307,7 @@ $$\text{A (酸)} + \text{:B (碱)} \longrightarrow \text{A:B (酸碱配合物)}$
 </ol></div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch1_acid_strength_factors.png" alt="酸性强弱四大因素" style="max-width:700px;width:100%;">
+<img src="img/ch1_acid_strength_factors.png" alt="酸性强弱四大因素" style="max-width:min(700px,100%);width:100%;">
 </div>
 
 <h3 id="kp4">1.4 弯箭头表示法</h3>
@@ -307,7 +325,7 @@ $$\text{A (酸)} + \text{:B (碱)} \longrightarrow \text{A:B (酸碱配合物)}$
 <img src="_img_ppt/ppt_ch1_p54.png" alt="PPT: 分子极性与键的极性——CCl4无极性 vs CHCl3有极性对比图" style="max-width:100%;margin:4px 0;">
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch1_dipole_examples.png" alt="分子极性判断例题" style="max-width:640px;width:100%;">
+<img src="img/ch1_dipole_examples.png" alt="分子极性判断例题" style="max-width:min(640px,100%);width:100%;">
 </div>
 
 <h3 id="kp5b">1.5b 感应效应（Inductive Effect）</h3>
@@ -377,7 +395,7 @@ $$\text{A (酸)} + \text{:B (碱)} \longrightarrow \text{A:B (酸碱配合物)}$
 5. 正电荷位于电正性较大的原子上时更稳定<br>
 6. 等价共振式贡献相等，共振稳定化能最大</div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch1_inductive_vs_conjugation.png" alt="感应效应vs共轭效应对比" style="max-width:740px;width:100%;">
+<img src="img/ch1_inductive_vs_conjugation.png" alt="感应效应vs共轭效应对比" style="max-width:min(740px,100%);width:100%;">
 </div>
 </div>
 
@@ -435,7 +453,7 @@ $$\text{A (酸)} + \text{:B (碱)} \longrightarrow \text{A:B (酸碱配合物)}$
 <div class="note"><strong>结构决定性质！</strong> 官能团是有机化学的核心——决定了化合物能发生什么反应。识别官能团是分析有机反应的第一步。</div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch1_functional_groups.png" alt="主要官能团总览" style="max-width:760px;width:100%;">
+<img src="img/ch1_functional_groups.png" alt="主要官能团总览" style="max-width:min(760px,100%);width:100%;">
 </div>
 
 <!-- ========== 习题 ========== -->

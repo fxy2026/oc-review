@@ -34,6 +34,24 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
 .nav-bar a:hover{background:var(--pri);color:#fff;}
+/* Mobile optimization */
+img{max-width:100%;height:auto;}
+svg{max-width:100%;height:auto;}
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0;}
+@media(max-width:600px){
+  body{padding:12px;font-size:15px;line-height:1.7;}
+  h1{font-size:1.4em;}
+  h2{font-size:1.15em;padding:8px 14px;}
+  h3{font-size:1.05em;}
+  .card{padding:12px;}
+  .fb{padding:10px 12px;}
+  .ex,.tip,.warn,.note{padding:8px 12px;}
+  .nav-bar{padding:8px 12px;margin:-12px -12px 16px;}
+  .nav-bar a{padding:8px 12px;font-size:1em;display:inline-block;min-height:44px;line-height:28px;}
+  td,th{padding:4px 6px;font-size:.9em;}
+  details summary{padding:8px 0;min-height:44px;}
+}
 </style>
 <link rel="stylesheet" href="toc.css">
 </head>
@@ -53,7 +71,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li>6个p轨道<strong>侧面重叠</strong>形成闭合共轭体系</li>
 <li>键角均为120&deg;，分子具有D<sub>6h</sub>对称性</li>
 </ul></div>
-<svg width="280" height="180" viewBox="0 0 280 180" style="display:block;margin:10px auto;">
+<svg width="280" height="180" viewBox="0 0 280 180" style="display:block;margin:10px auto;max-width:100%;height:auto;">
   <polygon points="140,20 210,55 210,125 140,160 70,125 70,55" fill="none" stroke="#0d6b3d" stroke-width="2"/>
   <polygon points="140,40 195,67 195,113 140,140 85,113 85,67" fill="none" stroke="#0d6b3d" stroke-width="1.5" stroke-dasharray="6,3"/>
   <circle cx="140" cy="90" r="30" fill="none" stroke="#c0392b" stroke-width="2" opacity="0.6"/>
@@ -126,7 +144,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 &bull; 对于大环轮烯，需同时考虑分子是否能保持平面构象</div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch7_huckel_rule.png" alt="Hückel规则与芳香性判断" style="max-width:740px;width:100%;">
+<img src="img/ch7_huckel_rule.png" alt="Hückel规则与芳香性判断" style="max-width:min(740px,100%);width:100%;">
 </div>
 
 <h3 id="k2b">7.2b 芳烃的物理性质</h3>
@@ -162,7 +180,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p>① 生成亲电试剂 E<sup>+</sup><br>
 ② E<sup>+</sup> 进攻苯环&pi;电子 → 形成<strong>&sigma;络合物</strong>（Wheland中间体，芳香性被破坏）<br>
 ③ &sigma;络合物失去H<sup>+</sup> → 恢复芳香性，得到取代产物</p></div>
-<svg width="600" height="120" viewBox="0 0 600 120" style="display:block;margin:10px auto;">
+<svg width="600" height="120" viewBox="0 0 600 120" style="display:block;margin:10px auto;max-width:100%;height:auto;">
   <!-- benzene -->
   <polygon points="50,30 80,15 110,30 110,60 80,75 50,60" fill="none" stroke="#333" stroke-width="1.5"/>
   <circle cx="80" cy="45" r="14" fill="none" stroke="#333" stroke-width="1"/>
@@ -187,7 +205,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
   <text x="500" y="40" font-size="11" fill="#666">决速步：②</text>
   <text x="500" y="58" font-size="11" fill="#666">&sigma;络合物能量最高</text>
 </svg>
-<img src="img/struct_eas_mechanism.png" alt="亲电芳香取代机理" style="max-width:550px;display:block;margin:10px auto;">
+<img src="img/struct_eas_mechanism.png" alt="亲电芳香取代机理" style="max-width:min(550px,100%);display:block;margin:10px auto;">
 <img src="_img_ppt/ppt_ch7_p20.png" alt="PPT: 亲电取代反应机理" style="max-width:100%;margin:4px 0;">
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：EAS通用机理能量图（点击展开）</summary>
 <img src="_img_ppt/ppt_ch7_p19.png" alt="PPT: EAS通用机理+能量图" style="max-width:100%;margin:8px 0;">
@@ -380,7 +398,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li><strong>溴的高选择性</strong>：Br&middot;的选择性远高于Cl&middot;（因为Br&middot;夺H是吸热反应，过渡态晚，对C-H键强弱更敏感）</li>
 </ul></div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch7_side_chain.png" alt="芳烃侧链反应总结" style="max-width:680px;width:100%;">
+<img src="img/ch7_side_chain.png" alt="芳烃侧链反应总结" style="max-width:min(680px,100%);width:100%;">
 </div>
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：Br2/hv vs Br2/Fe条件决定产物 + FC酰基化优点（点击展开）</summary>
 <img src="_img_ppt/ppt_ch7_p84.png" alt="PPT: 条件决定反应位置（hv=侧链，Fe=苯环）" style="max-width:100%;margin:8px 0;">
@@ -454,7 +472,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li>共振能 ≈ 255 kJ/mol（苯为152），但<strong>平均每环</strong>的共振能(127.5)比苯低 → 芳香性比苯弱</li>
 </ul></div>
 
-<svg width="260" height="120" viewBox="0 0 260 120" style="display:block;margin:10px auto;">
+<svg width="260" height="120" viewBox="0 0 260 120" style="display:block;margin:10px auto;max-width:100%;height:auto;">
   <!-- naphthalene -->
   <polygon points="30,40 60,25 90,40 90,70 60,85 30,70" fill="none" stroke="#333" stroke-width="1.5"/>
   <circle cx="60" cy="52" r="14" fill="none" stroke="#333" stroke-width="1"/>
@@ -508,7 +526,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 </ul></div>
 </div>
 <div class="card" style="text-align:center;padding:8px;">
-<img src="img/ch7_naphthalene.png" alt="萘的化学——α/β位选择性" style="max-width:680px;width:100%;">
+<img src="img/ch7_naphthalene.png" alt="萘的化学——α/β位选择性" style="max-width:min(680px,100%);width:100%;">
 <details><summary style="cursor:pointer;color:var(--pri);font-weight:bold;">PPT参考：萘的EAS定位规则（点击展开）</summary>
 <img src="_img_ppt/ppt_ch7_p92.png" alt="PPT: 萘的EAS α/β选择性" style="max-width:100%;margin:8px 0;">
 <img src="_img_ppt/ppt_ch7_p94.png" alt="PPT: 萘取代定位规则" style="max-width:100%;margin:8px 0;">
