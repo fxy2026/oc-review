@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第7章 卤代烃 梳理 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'194',right:'194',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+h4{color:#2c3e50;font-size:1.05em;margin:15px 0 8px;font-weight:bold;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+.page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.page-label{display:inline-block;background:var(--pri);color:#fff;padding:4px 14px;border-radius:4px;font-weight:bold;font-size:1.1em;margin-bottom:10px;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar">
+<a href="index.html">&#x1F4DA; 目录</a>
+<a href="summary.html">&#x1F4D6; 梳理目录</a>
+<a href="summary_ch6.html">&larr; 上一章</a><a href="summary_ch89.html">下一章 &rarr;</a>
+</div>
+
+<h1>第7章 卤代烃 梳理</h1>
+<div style="margin:30px 0;">
+<span class="page-label">第 22 页</span>
+<img src="_img_summary/p22.png" class="page-img" alt="第22页手写原稿">
+<div class="card">
+
+<h2 id="ch7">第七章 卤代烃</h2>
+
+<h3>一、分类</h3>
+<div class="card">
+<table>
+<tr><th>类型</th><th>结构</th><th>级别</th></tr>
+<tr><td>$\text{R-C-X}$（伯卤代烃）</td><td>$\text{R-CH}_2\text{-X}$</td><td>1&deg;</td></tr>
+<tr><td>仲卤代烃</td><td>$\text{R}_2\text{CH-X}$</td><td>2&deg;</td></tr>
+<tr><td>叔卤代烃</td><td>$\text{R}_3\text{C-X}$</td><td>3&deg;</td></tr>
+</table>
+<p>卤代芳烃（$\text{X}$ 直接连苯环）和苄基型（$\text{X}$ 连在苯环侧链上）。</p>
+<div class="tip">
+<strong>烯丙型</strong>、<strong>苄基型</strong>：形成的 $\text{C}^+$ 稳定性更高 → 反应更快（$\text{S}_N1$有利）。<br>
+<span class="green">乙烯型</span>、<span class="green">苯基型</span>：$\text{S}_N1$、$\text{S}_N2$ 都不容易发生。<br>
+<span class="red">( 桥碳的 C 与卤素量级 $p$ 与 $\pi$ 交叉，释放 )</span>
+</div>
+</div>
+
+<h3>二、系统命名法</h3>
+<div class="card">
+<ul>
+<li>①选择：含<strong>卤原子</strong>的<strong>最长碳链</strong>作为主链</li>
+<li>②编号：使<strong>取代基位号之和最小</strong>（注意：<span class="red">面</span>向取代基较多的端开始编号）</li>
+<li>③命名：卤代基作为<strong>取代基</strong>，按 $\text{F} > \text{Cl} > \text{Br} > \text{I}$ 的优先顺序（<span class="red">如果其他取代基名称较长，则按字母顺序</span>）</li>
+</ul>
+</div>
+
+<h3>三、结构</h3>
+<div class="card">
+<p>$\text{R-C-X}$ 中的 $\text{C-X}$ 键是<strong>极性共价键</strong>。</p>
+<ul>
+<li>键的极性：$\text{C-F} > \text{C-Cl} > \text{C-Br} > \text{C-I}$</li>
+<li>键的解离能：$\text{C-Cl} > \text{C-Br} > \text{C-I}$</li>
+<li>碳卤代烃中，偶极矩：$\text{C-Cl} > \text{C-F} > \text{C-Br} > \text{C-I}$</li>
+<li>卤代烃发生反应时，$\text{C-X}$ 键断裂：均裂→自由基反应，异裂→离子反应</li>
+</ul>
+</div>
+
+<h3>四、物理性质</h3>
+<div class="card">
+<p>相对密度：$\left\{\begin{array}{l} \text{一氟、一氯代烃} < 1 \\ -\text{Br}/ \text{多卤代烃} > 1 \end{array}\right.$</p>
+<p>沸点：随碳数↑而↑，<span class="blue">液态/固态代烃不溶于水</span>。</p>
+</div>
+
+<h3>五、化学性质</h3>
+
+<h4>概览：亲核取代反应</h4>
+<div class="card">
+<div class="fb">
+<div class="t">$\text{S}_N$ 反应机理</div>
+<p>亲核取代（Nucleophilic Substitution）：$\text{Nu}^- + \text{R-X} \longrightarrow \text{R-Nu} + \text{X}^-$</p>
+<ul>
+<li><strong>$\text{S}_N1$</strong>：单分子亲核取代</li>
+<li><strong>$\text{S}_N2$</strong>：双分子亲核取代</li>
+</ul>
+</div>
+
+<p><strong>①与OH$^-$反应</strong>（水解）</p>
+<span class="rxn">$\text{R-X} + \text{NaOH(aq)} \longrightarrow \text{R-OH} + \text{NaX}$</span>
+<p><strong>②与OR'$^-$反应</strong>（Williamson合成醚）</p>
+<span class="rxn">$\text{R-X} + \text{NaOR'} \longrightarrow \text{R-OR'} + \text{NaX}$</span>
+
+<h4>③亲核取代（各种亲核试剂）</h4>
+<div class="fb">
+<div class="t">亲核试剂的亲核性次序</div>
+$$\text{CH}_3\text{S}^- > \text{I}^- > \text{CN}^- > \text{CH}_3\text{O}^- > \text{NH}_3 > \text{Br}^- > \text{Cl}^-$$
+<p>（也可写为 $> \text{CH}_3\text{COO}^-$）</p>
+</div>
+
+<p>有机反应中的亲核试剂：$\text{H}^-$，$\text{R}^-$，$\text{OH}^-$（<span class="blue">含碳的亲核试剂</span>）</p>
+
+<h4>④ $\text{S}_N1$ 反应</h4>
+<div class="card">
+<div class="warn">
+<strong>叔碳易发生 $\text{S}_N1$ 反应</strong>（$3°$ 首选 $\text{C}^+$，甲苄和叔碳只能发生 $\text{S}_N1$ 反应！）
+</div>
+
+<p>反应分两步进行：</p>
+<ol>
+<li><strong>慢步骤（速率决定步骤）</strong>：$\text{R-X} \longrightarrow \text{R}^+ + \text{X}^-$（形成碳正离子）</li>
+<li><strong>快步骤</strong>：$\text{R}^+ + \text{Nu}^- \longrightarrow \text{R-Nu}$</li>
+</ol>
+<p>速率方程：$v = k_1[\text{RX}]$（只与底物浓度有关）</p>
+
+<p>$\text{S}_N1$ 反应中可能伴随<strong>碳正离子重排</strong>：$1° \text{C}^+ \to 2° \text{C}^+ \to 3° \text{C}^+$</p>
+
+<div class="fb">
+<div class="t">产物构型</div>
+$$\text{R-X} \xrightarrow{\text{S}_N1} \overset{\text{C}^+}{\longrightarrow} \begin{cases} \text{R-Nu (构型翻转)} \\ \text{R-Nu (构型保持)} \end{cases}$$
+<p>碳正离子 $sp^2$ 平面结构 → 亲核试剂从两面进攻几率相等 → <span class="red">外消旋化</span></p>
+<p>（但实际中因离去基团离子对效应，<strong>构型翻转略占优势</strong>）</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- ======================== 第23页 ======================== -->
+<div style="margin:30px 0;">
+<span class="page-label">第 23 页</span>
+<img src="_img_summary/p23.png" class="page-img" alt="第23页手写原稿">
+<div class="card">
+
+<h3>$\text{S}_N1$ 反应的构型问题</h3>
+<div class="card">
+<p>$\text{S}_N1$ 经过 $\text{C}^+$ 中间体 → 产物的构型问题：</p>
+<ul>
+<li>$\text{C}^+$ 是 $sp^2$ 平面型，亲核试剂可从两面进攻</li>
+<li>理论上产生 <strong>外消旋体</strong></li>
+</ul>
+<p>中间体有 $\text{C}^+$，存在<strong>离子对</strong>重排问题</p>
+</div>
+
+<h3>碳正离子重排 &mdash; 典型的 $\text{S}_N1$ 机理</h3>
+<div class="card">
+<div class="ex">
+<p><strong>典型的 $\text{S}_N1$ 例题</strong>：</p>
+<span class="rxn">$\text{AgNO}_3 / \text{EtOH}$ 条件下</span>
+<ul>
+<li>甲基卤代烃 $\text{CH}_3\text{X}$：$\text{AgNO}_3 / \text{EtOH}$ → $\text{AgX}\downarrow$</li>
+<li>伯卤 $\text{RX}$：$\text{AgNO}_3 / \text{EtOH}$ → 不反应（需加热）</li>
+<li>$\text{R}_3\text{CX}$（叔卤）：即刻产生 $\text{AgX}$ 沉淀</li>
+</ul>
+<p>用来鉴别不同级别卤代烃的反应速率：<span class="red">$3° > 2° > 1° > \text{CH}_3\text{X}$</span></p>
+</div>
+</div>
+
+<h3>$\text{S}_N2$ 反应</h3>
+<div class="card">
+<h4>机理</h4>
+<p>一步反应：亲核试剂<strong>从离去基团背面进攻</strong> → <span class="red">$-\text{Nu}^-$ 与 $\text{C-X}$ 呈 $180°$</span> 直线进攻</p>
+<p>过渡态：$[\text{Nu} \cdots \text{C} \cdots \text{X}]^{\ddagger}$ （五配位碳的过渡态）</p>
+
+<div class="fb">
+<div class="t">$\text{S}_N2$ 反应特点</div>
+<ol>
+<li><strong>直接进攻</strong>，一步完成</li>
+<li>$v = k [\text{RX}][\text{Nu}^-]$（双分子反应）</li>
+<li><strong>构型翻转 &mdash; Walden翻转</strong></li>
+<li>反应活性为：$\text{CH}_3\text{X} > 1° > 2° > 3°$（<span class="blue">注意：与 $\text{S}_N1$ 相反！因为空间位阻</span>）</li>
+</ol>
+</div>
+
+<div class="warn">
+<strong>卤代烃的活性顺序</strong>：$\text{RI} > \text{RBr} > \text{RCl}$（$\text{C-I}$ 键最弱，最易断裂）
+</div>
+</div>
+
+<h3>$\text{S}_N1$ 与 $\text{S}_N2$ 的比较</h3>
+<div class="card">
+<table>
+<tr><th>比较项</th><th>$\text{S}_N1$</th><th>$\text{S}_N2$</th></tr>
+<tr><td>反应步数</td><td>两步（经 $\text{C}^+$）</td><td>一步（过渡态）</td></tr>
+<tr><td>速率方程</td><td>$v = k[\text{RX}]$</td><td>$v = k[\text{RX}][\text{Nu}]$</td></tr>
+<tr><td>构型</td><td>外消旋化</td><td>Walden翻转</td></tr>
+<tr><td>底物活性</td><td>$3° > 2° > 1°$</td><td>$\text{CH}_3 > 1° > 2° > 3°$</td></tr>
+<tr><td>重排</td><td>可能（碳正离子重排）</td><td>不重排</td></tr>
+</table>
+</div>
+
+<h3>(1) 底物（卤代烃）结构的影响</h3>
+<div class="card">
+<table>
+<tr><th>底物</th><th>$\text{CH}_3\text{X}$</th><th>$\text{RCH}_2\text{X}$</th><th>$\text{R}_2\text{CHX}$</th><th>$\text{R}_3\text{CX}$</th></tr>
+<tr><td>反应类型</td><td>$\text{S}_N2$</td><td>$\text{S}_N2$</td><td>$\text{S}_N2, \text{S}_N1$</td><td>$\text{S}_N1$</td></tr>
+</table>
+
+<div class="tip">
+<strong>判断依据</strong>：
+<ul>
+<li>$\alpha\text{-C}$ 上 $\text{H}$ 越少（取代基越多），空间位阻越大 → <strong>$\text{S}_N2$ 不利</strong></li>
+<li>$\alpha\text{-C}$ 上烷基越多，$\text{C}^+$ 越稳定（超共轭效应） → <strong>$\text{S}_N1$ 有利</strong></li>
+</ul>
+</div>
+
+<div class="fb">
+<div class="t">苄基/烯丙基型</div>
+<p><strong>苄基/烯丙基卤代烃</strong>：$\text{C}^+$ 能被苯环或 $\pi$ 键稳定化（共轭效应），因此 $\text{S}_N1$ 活性高；同时 $\alpha\text{-C}$ 上取代基不大时也可 $\text{S}_N2$。</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- ======================== 第24页 ======================== -->
+<div style="margin:30px 0;">
+<span class="page-label">第 24 页</span>
+<img src="_img_summary/p24.png" class="page-img" alt="第24页手写原稿">
+<div class="card">
+
+<h3>结构因素对 $\text{S}_N$ 的影响（续）</h3>
+
+<h4>桥环型：$\text{S}_N1$、$\text{S}_N2$ 都不容易</h4>
+<div class="card">
+<p><strong>桥碳型</strong>：面背型 $\text{S}_N1$ $\text{S}_N2$ 都不容易发生</p>
+<ul>
+<li>$\text{S}_N1$：$\text{C}^+$ 不能变成平面型 $sp^2$（桥头碳被骨架限制，不能形成稳定的 $\text{C}^+$）</li>
+<li>$\text{S}_N2$：背面进攻受到骨架<strong>空间阻碍</strong>（Bredt规则）</li>
+</ul>
+</div>
+
+<h4>(2) 离去基团的影响</h4>
+<div class="card">
+<p>离去基团越稳定（即其共轭酸 $\text{HX}$ 的 $\text{p}K_a$ 越小），离去能力越强。</p>
+<ul>
+<li>$\text{S}_N1$：$\text{C-X}$ 键断裂，速度与 $\text{C}^+$ 稳定性和 $\text{X}^-$ 离去能力正相关</li>
+<li>$\text{S}_N2$：$\text{Nu}^-$ 进攻同时 $\text{X}^-$ 离去，离去基团影响过渡态稳定性</li>
+</ul>
+
+<div class="fb">
+<div class="t">好的离去基团</div>
+<p>$\text{RSO}_3^-$ &nbsp; $\text{Br}^-$ &nbsp; $\text{OMs}(\text{CH}_3\text{SO}_3^-)$ &nbsp; $\text{CF}_3\text{SO}_3^-$</p>
+<p>其他好的离去基团：$\text{I}^-$, $\text{Br}^-$, $\text{Cl}^-$, $\text{H}_2\text{O}$</p>
+</div>
+
+<div class="warn">
+<strong>不好的离去基团</strong>：$\text{F}^-$, $\text{HO}^-$, $\text{RO}^-$, $\text{H}_2\text{N}^-$, $\text{RNH}^-$, $\text{CN}^-$ 等（$[\text{X}^-]$碱性太强，不易离去）
+</div>
+</div>
+
+<h4>(3) 亲核试剂的影响</h4>
+<div class="card">
+<p><strong>对 $\text{S}_N1$</strong>：亲核试剂不参与速率决定步骤，速率与亲核试剂<span class="red">无关</span></p>
+<p><strong>对 $\text{S}_N2$</strong>：亲核试剂强 → 速度快（$\text{Nu}^-$ 的亲核性越强越好）</p>
+</div>
+
+<h4>亲核性 vs 碱性</h4>
+<div class="card">
+<div class="fb">
+<div class="t">亲核性与碱性的区别</div>
+<p><strong>(1)</strong> 一般同族：碱性越强 → 亲核性越强。如 $\text{NH}_2^- > \text{HO}^- > \text{F}^-$</p>
+<p><strong>(2)</strong> 可极化度增大 → 亲核性增强。如 $\text{HS}^- > \text{HO}^-$，$\text{I}^- > \text{Cl}^-$</p>
+</div>
+
+<div class="warn">
+<strong>试剂的碱性与亲核性不是一回事！</strong><br>
+碱性用 $\text{p}K_a$ 表示，通过化学平衡测量，描述其与<strong>质子</strong>结合的能力。<br>
+亲核性是描述其与<strong>碳（原子/底物中心）</strong>成键的能力。
+</div>
+
+<p>例如：$\text{HO}^- > \text{CN}^-$（碱性） &nbsp; vs &nbsp; $\text{CN}^- > \text{HO}^-$（亲核性）</p>
+
+<h4>卤素离子的活性顺序</h4>
+<table>
+<tr><th></th><th>$\text{F}^-$</th><th>$\text{Cl}^-$</th><th>$\text{Br}^-$</th><th>$\text{I}^-$</th><th></th><th>$\text{RO}^-$</th><th>$\text{RS}^-$</th></tr>
+<tr><td>碱性</td><td colspan="4">$\text{F}^- > \text{Cl}^- > \text{Br}^- > \text{I}^-$</td><td rowspan="2">碱性减小<br>亲核性增大</td><td colspan="2">$\text{RO}^- > \text{RS}^-$（碱性）</td></tr>
+<tr><td>亲核性</td><td colspan="4">$\text{I}^- > \text{Br}^- > \text{Cl}^- > \text{F}^-$</td><td colspan="2">$\text{RS}^- > \text{RO}^-$（亲核性）</td></tr>
+</table>
+
+<div class="tip">
+<strong>同周期元素对比</strong>：随原子半径增大 → 可极化性↑ → 亲核性↑（但碱性↓）。
+</div>
+</div>
+
+<h4>可极化性</h4>
+<div class="card">
+<div class="fb">
+<div class="t">可极化性的作用</div>
+<p>在亲核取代反应中，<strong>可极化性大</strong>的亲核试剂能更有效地与碳原子作用：</p>
+<ul>
+<li>外层电子云大、松散 → 容易被底物碳原子的正电性极化 → 亲核进攻更有效</li>
+<li>如 $\text{SH}^- > \text{CN}^- > \text{OH}^- > \text{NH}_3 > \text{CH}_3\text{COO}^- > \text{Cl}^- > \text{H}_2\text{O}$（在质子性溶剂中的亲核性顺序）</li>
+</ul>
+</div>
+
+<p>实际应用：</p>
+<ul>
+<li>第一卤代烷的碘化反应（Finkelstein反应）：$\text{RCl} + \text{NaI} \xrightarrow{\text{丙酮}} \text{RI} + \text{NaCl}\downarrow$</li>
+<li>卤交换（碘代替代氯）：利用 $\text{NaCl}$ 在丙酮中不溶而沉淀，平衡右移</li>
+<li>$\text{RCH}_2\text{I} + \text{H}_2\text{O} \xrightarrow{\text{慢}} \text{RCH}_2\text{OH} + \text{HI}$（水解）</li>
+<li>$\text{RCH}_2\text{I} + \text{H}_2\text{O} \xrightarrow{\text{S}_N} \text{RCH}_2\text{OH} + \text{HI}$</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>手写笔记 p25-p30 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+h4{color:#2c3e50;font-size:1.05em;margin:15px 0 8px;font-weight:bold;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.page-label{display:inline-block;background:var(--pri);color:#fff;padding:2px 10px;border-radius:4px;font-size:.85em;margin:10px 0 4px;}
+.rxn{font-family:'Courier New',monospace;background:#f8f8f8;padding:8px 14px;border-radius:5px;margin:6px 0;display:block;overflow-x:auto;white-space:nowrap;}
+</style>
+</head>
+<body>
+
+<h1>手写笔记电子化 p25-p30</h1>
+
+<!-- ======================== 第25页 ======================== -->
+<div style="margin:30px 0;">
+<span class="page-label">第 25 页</span>
+<img src="_img_summary/p25.png" class="page-img" alt="第25页手写原稿">
+<div class="card">
+
+<h2>(4) 溶剂的影响</h2>
+
+<h3>极性质子溶剂 vs 极性非质子溶剂</h3>
+<p>极性质子溶剂：溶剂含$\ce{N-H}$和$\ce{O-H}$键，如$\ce{H2O}$、$\ce{ROH}$等</p>
+<p>对底物溶解提供$\ce{ROH}$质子给予作用，提高$\ce{S_N1}$反应速率（稳定离去基团和碳正离子）。</p>
+
+<h4>$\ce{S_N2}$ 和溶剂</h4>
+<ul>
+<li>在极性非质子溶剂中（如$\ce{DMSO}$、$\ce{DMF}$），亲核试剂可以表现出很高的亲核性，有利于$\ce{S_N2}$反应速率提高。</li>
+<li>极性非质子溶剂不能以氢键溶剂化阴离子亲核试剂，使亲核试剂"裸露"，亲核性增强。</li>
+</ul>
+
+<div class="fb">
+<div class="t">判别 $\ce{S_N1}$ 与 $\ce{S_N2}$ 反应的主要因素</div>
+<p>一般情况下，在弱极性不太强的溶剂（如含水乙醇溶液）中，叔碳代烷主要按$\ce{S_N1}$机理反应，伯碳代烷主要按$\ce{S_N2}$机理反应，仲碳代烷两种机理兼有。</p>
+<p>改变溶剂的极性有可能改变反应历程。在强极性质子溶剂中，伯碳代烷也可以按$\ce{S_N1}$机理反应；而在弱极性非质子性溶剂中，叔碳代烷也可以按$\ce{S_N2}$机理反应。</p>
+</div>
+
+<div class="fb">
+<div class="t">影响$\ce{S_N1}$和$\ce{S_N2}$的主要因素</div>
+<table>
+<tr><th>因素</th><th>有利于$\ce{S_N1}$</th><th>有利于$\ce{S_N2}$</th></tr>
+<tr><td>底物结构上烃基数</td><td>$\ce{R_3C-X > R_2CH-X > RCH_2-X > CH_3-X}$</td><td>$\ce{CH_3-X > RCH_2-X > R_2CHX > R_3CX}$</td></tr>
+<tr><td>离去基团</td><td colspan="2">$\ce{RI > RBr > RCl}$</td></tr>
+<tr><td>亲核试剂</td><td>弱碱（如$\ce{H_2O}$）</td><td>强亲核试剂</td></tr>
+<tr><td>溶剂</td><td>强极性质子溶剂</td><td>极性非质子溶剂</td></tr>
+</table>
+</div>
+
+<h2>消除反应 (E)</h2>
+
+<h3>定义</h3>
+<p>$\beta$-消除：从相邻的两个碳原子上脱去$\ce{H}$和一个基团（如$\ce{-X}$），生成碳碳双键或三键的反应。</p>
+$$\ce{-C(-H)-C(-X)- -> C=C + HX}$$
+<p>碱的作用是脱去$\beta$位的$\ce{H}$并与离去基一起产生$\Delta +\ce{HX}$。</p>
+
+<h3>消除反应的分类</h3>
+<ul>
+<li><strong>(1) $\alpha$-消除（1,1-消除）</strong>：从同一碳上脱去$\ce{H}$和$\ce{X}$ $\longrightarrow$ 形成卡宾（$\ce{:CR2}$），如$\ce{CHCl3 ->[\text{强碱}] :CCl2}$</li>
+<li><strong>(2) $\beta$-消除（1,2-消除）</strong>：卤代烃的消除反应主要为$\ce{1,2}$-消除</li>
+<li><strong>按速度规律分类</strong>：双分子消除反应$\ce{E2}$和单分子消除反应$\ce{E1}$</li>
+</ul>
+
+<div class="fb">
+<div class="t">消除反应分类</div>
+<ul>
+<li>$\ce{E1}$：单分子消除</li>
+<li>$\ce{E2}$：双分子消除反应</li>
+</ul>
+</div>
+
+<h3>(1) $\ce{E2}$ 反应（双分子消除）</h3>
+<p>$\ce{E2}$反应可以理解为：碱进攻$\beta$-$\ce{H}$，同时$\ce{C-X}$键断裂，一步完成。</p>
+<div class="ex">
+<p><strong>例：</strong></p>
+$$\ce{C2H5O^- + CH3CH2Br ->[\text{EtOH}] CH2=CH2 + EtOH + Br^-}$$
+</div>
+
+<div class="tip">
+<strong>注意区别：</strong>这种碱进攻$\beta\text{-H}$的反应是$\ce{E2}$消除反应。而碱直接进攻碳的是$\ce{S_N2}$反应。
+</div>
+
+<div class="warn">
+<strong>E2与S_N2竞争：</strong>在$\ce{EtO^-/EtOH}$条件下，反应实际上同时发生$\ce{E2}$消除和$\ce{S_N2}$取代反应。
+</div>
+
+</div>
+</div>
+
+<!-- ======================== 第26页 ======================== -->
+<div style="margin:30px 0;">
+<span class="page-label">第 26 页</span>
+<img src="_img_summary/p26.png" class="page-img" alt="第26页手写原稿">
+<div class="card">
+
+<h3>(2) $\ce{E1}$ 消除</h3>
+<p>E1消除：分两步，先离解后消除。</p>
+$$\ce{R_2C(-H)-C(-X)R_2 -> R_2C^+-CR_2H + X^- -> R_2C=CR_2 + H^+}$$
+<p>第一步：$\ce{C-X}$键断裂，生成碳正离子（与$\ce{S_N1}$第一步相同）；</p>
+<p>第二步：碳正离子脱去$\beta$-$\ce{H}$，形成双键。</p>
+
+<div class="tip">
+<strong>S_N1 与 E1 共享第一步！</strong>碳正离子形成后，若亲核试剂进攻碳正离子 $\to$ $\ce{S_N1}$取代；若碱夺取$\beta$-$\ce{H}$ $\to$ $\ce{E1}$消除。
+</div>
+
+<p><strong>升温</strong>有利于消除反应（$\ce{E1}$），因为升温后有利于形成更稳定的烯烃产物。</p>
+
+<h3>(3) 消除反应的取向问题</h3>
+
+<h4>① $\ce{E1}$ 和Saytzeff（扎伊采夫）规则</h4>
+<p>过渡态：$\alpha$-C上的$\beta$-H被脱去。</p>
+<div class="fb">
+<div class="t">Saytzeff规则</div>
+<p>消除反应中，优先脱去含氢较少的$\beta$碳上的$\ce{H}$，生成<strong>取代基较多</strong>的烯烃（更稳定的烯烃）。</p>
+$$\ce{H-C=C-CH3}$$
+<p>双取代 &lt; 三取代 &lt; 四取代烯烃（稳定性依次增大）</p>
+</div>
+
+<h4>② $\ce{E2}$ 的取向</h4>
+<p>当消除基团较大、$\beta$-$\ce{H}$位阻较大时，进攻试剂体积又大时，重排反应较大（Hofmann消除）。</p>
+
+<div class="fb">
+<div class="t">E2的特点</div>
+<ul>
+<li>进攻试剂 $\longleftrightarrow$ $\beta$-$\ce{H}$方向</li>
+<li>取大体积的$\beta$-$\ce{H}$受阻时，导致反应取向相反</li>
+<li>也遵循Saytzeff规则（大多数情况下）</li>
+</ul>
+</div>
+
+<h2>$\ce{E2}$ 是反式共面消除</h2>
+
+<div class="fb">
+<div class="t">反式消除 (anti-periplanar)</div>
+<p>$\ce{E2}$反应要求$\ce{H}$和$\ce{X}$处于<strong>反式共面</strong>（anti-periplanar）构象，即$\ce{H-C-C-X}$的二面角为$180°$。</p>
+<p>这是$\ce{E2}$反应的<strong>立体电子效应</strong>要求。</p>
+</div>
+
+<h3>(4) 消除反应与亲核取代反应的竞争，哪些因素利于消除？</h3>
+
+<p>消除反应与亲核取代反应往往同时发生，需要判断哪种反应为主导。</p>
+<div class="fb">
+<div class="t">消除反应的判断</div>
+<p>合理判断亲核取代反应（按照讨论的顺序优先级）：</p>
+</div>
+
+<h4>① 底物结构</h4>
+<p>$\ce{S_N2}$ 为主：</p>
+$$\ce{R-C-X} \quad \text{（伯碳）}$$
+<p>底物为叔碳时：</p>
+$$\ce{R_2CH-C-X \to E}$$
+<p>叔碳上容易发生消除反应（$\ce{E}$较多），$\ce{S_N}$取代较难。</p>
+
+<div class="warn">
+<strong>major factor：</strong>体积（立体因素、位阻）。$\ce{S_N}$: $\alpha$-C进攻难。$\ce{E}$: $\beta$-H较多。
+</div>
+
+</div>
+</div>
+
+<!-- ======================== 第27页 ======================== -->
+<div style="margin:30px 0;">
+<span class="page-label">第 27 页</span>
+<img src="_img_summary/p27.png" class="page-img" alt="第27页手写原稿">
+<div class="card">
+
+<h4>② 进攻试剂</h4>
+<p>碱性较强，趋向于消除。</p>
+<p>$\ce{E}$：进攻$\beta$-$\ce{H}$，夺取试剂为$\ce{Nu/B}$；$\ce{S_N}$：进攻$\alpha$-$\ce{C}$，亲核试剂对$\alpha$碳发生进攻。</p>
+
+<div class="fb">
+<div class="t">碱性排序（碱性越强越利于消除）</div>
+$$\ce{NH2^- > RO^- > HO^- > CH3COO^- > I^-}$$
+</div>
+
+<div class="tip">
+<strong>提示：</strong>当 $\ce{R-}$ 较大（大体积碱）时，更趋向于消除反应。碱的体积越大，越难以进攻$\alpha$-C（$\ce{S_N2}$），而更容易夺取$\beta$-H（$\ce{E2}$）。
+</div>
+
+<h4>③ 溶剂的极性</h4>
+<p>极性小时 → 有利于消除反应。</p>
+<p><strong>醇类溶剂</strong>：消除。</p>
+<p><strong>非质子极性溶剂</strong>：$\ce{S_N2}$。</p>
+
+<div class="note">
+<p>消除反应中：</p>
+<ul>
+<li>$\frac{E}{S_N}$：$\ce{M-H -> C=C-\overset{\delta-}{X}}$（消除）</li>
+<li>$\frac{S_N}{E}$：$\ce{Nu -> R-X}$（亲核取代）</li>
+</ul>
+<p>极性弱，处于溶剂对其有利消除反应的一侧。</p>
+</div>
+
+<h4>④ 反应温度</h4>
+<p>消除反应的活化能通常要高于$\ce{C-H}$亲核取代反应的活化能，升温有利于消除。</p>
+<div class="warn">
+<strong>高温有利于消除反应，低温有利于取代反应。</strong>
+</div>
+
+<h3>卤代烃与金属的反应</h3>
+
+<h4>（1）格氏反应 —— 与$\ce{Mg}$的反应（Grignard反应）</h4>
+<p>制备有机金属化合物（格氏试剂）：</p>
+$$\ce{R-X + Mg ->[\text{干燥乙醚}] R-MgX}$$
+<p>格氏试剂（Grignard试剂）$\ce{R-MgX}$，其中碳带有负电性（$\ce{C^{\delta-}-Mg^{\delta+}}$），具有很强的亲核性和碱性。</p>
+
+<div class="warn">
+<strong>格氏试剂使用注意：</strong>须在无水无氧条件下制备和使用，遇$\ce{H2O}$、$\ce{ROH}$、$\ce{RNH2}$等活泼氢化合物会被分解。
+</div>
+
+<div class="fb">
+<div class="t">格氏试剂与含活泼氢化合物的反应（格氏试剂的酸碱反应）</div>
+<table>
+<tr><th>含活泼氢化合物</th><th>反应产物</th></tr>
+<tr><td>$\ce{H2O}$</td><td>$\ce{R-H + Mg(OH)X}$</td></tr>
+<tr><td>$\ce{ROH}$</td><td>$\ce{R-H + Mg(OR)X}$</td></tr>
+<tr><td>$\ce{RNH2}$</td><td>$\ce{R-H + Mg(NHR)X}$</td></tr>
+<tr><td>$\ce{RCOOH}$</td><td>$\ce{R-H + Mg(OOCR)X}$</td></tr>
+<tr><td>$\ce{RC#CH}$</td><td>$\ce{R-H + RC#CMgX}$</td></tr>
+</table>
+</div>
+
+<h4>制备Grignard试剂的卤代烃活性</h4>
+<p>卤代烃制备格氏试剂的活性次序：$\ce{I > Br > Cl}$。反应类型更接近于自由基过程（表面反应）。</p>
+<p>仅适用于伯和仲卤代烃，叔卤代烃很难制得（容易发生消除反应）。</p>
+
+<h3>与金属锂反应</h3>
+$$\ce{CH3CH2CH2CH2Br + 2Li ->[\text{干燥乙醚}] CH3CH2CH2CH2Li + LiBr}$$
+<p>烷基锂是比格氏试剂更活泼的有机金属化合物。</p>
+
+<div class="tip">
+<p>卤素被锂取代产生有机锂试剂：$\ce{2RLi + CuX -> R2CuLi + LiX}$</p>
+</div>
+
+<h4>Corey-House合成</h4>
+<div class="fb">
+<div class="t">Corey-House合成法</div>
+$$\ce{RX + R2CuLi -> R-R' + RCu + LiX}$$
+<p>利用二烷基铜锂与卤代烃偶联生成新的碳-碳键。</p>
+</div>
+
+</div>
+</div>
+
+<!-- ======================== 第28页 ======================== -->
+<div style="margin:30px 0;">
+<span class="page-label">第 28 页</span>
+<img src="_img_summary/p28.png" class="page-img" alt="第28页手写原稿">
+<div class="card">
+
+<h3>卤代烃的其他反应</h3>
+
+<h4>（II）与乙烯基卤化物反应</h4>
+<p>乙烯基卤（$\ce{CH2=CHX}$）和芳基卤的反应活性很低。</p>
+<div class="ex">
+<p><strong>例：</strong></p>
+$$\ce{CH2=CH-Cl + (C2H5)2CuLi ->[\text{-78°C}] CH2=CH-C2H5 + C2H5Cu + LiCl}$$
+</div>
+
+<h4>（III）二烷基铜锂与酰氯的反应</h4>
+<p>速反应，与酮不反应。反应选择性好、条件温和。</p>
+<p>酰氯可以反应，酯和酮几乎不反应。</p>
+$$\ce{CH3CH2CH2COCl + R2CuLi -> CH3CH2CH2COR + RCu + LiCl}$$
+
+<h3>Grignard试剂（格氏试剂）的制备与使用</h3>
+
+<div class="warn">
+<strong>乙烯基和芳基上的卤原子注意：</strong>对于双键或苯环上的卤原子，特别是溴原子在乙醚中不易形成格氏试剂，常用<strong>四氢呋喃（THF）</strong>作溶剂。四氢呋喃是一环状醚，氧上的孤对电子与Mg配位更强，所以配合能力更强。
+</div>
+
+<div class="ex">
+<p><strong>实例：</strong></p>
+<p>无水乙醚中：$\ce{CH2=CH-}$ + Mg → 不反应</p>
+<p>但在THF（四氢呋喃）中$\ce{Cl}$可以与$\ce{Mg}$反应：</p>
+$$\ce{Cl-C6H4 + Mg ->[\text{THF}] C6H4MgCl}$$
+<p>THF = Tetrahydrofuran（四氢呋喃），环状醚，配位能力更强。</p>
+</div>
+
+<p>烷基锂是比$\ce{Mg}$化合物更活泼的有机金属。</p>
+
+<h2>卤代烃的制备</h2>
+
+<h4>1. 烷烃卤化</h4>
+$$\ce{CH3CH3 + HCl -> CH3CH2Cl + H2}$$
+
+<h4>2. 不饱和烃加成卤化氢</h4>
+$$\ce{R-CH=CH2 ->[\ce{HX}] R-CH(X)-CH3}$$
+<p>（Markovnikov加成）</p>
+
+<h4>3. 由醇制备</h4>
+<div class="fb">
+<div class="t">$\ce{S_N2}$ 反应</div>
+$$\ce{ROH + SOCl2 ->[\text{吡啶/HCl}] RCl + SO2 + HCl}$$
+<p>构型翻转（$\ce{S_N2}$型反应，背面进攻）。适用于伯醇和仲醇。</p>
+</div>
+
+<h4>4. 卤化物互换（Finkelstein反应）</h4>
+<div class="tip">
+<p>$\ce{S_N2}$ 反应类型：</p>
+$$\ce{RCl + NaI ->[\text{丙酮}] RI + NaCl}$$
+$$\ce{RBr + NaI ->[\text{丙酮}] RI + NaBr}$$
+<p>仅适用于伯和仲卤代烃，叔卤代烃不适用。</p>
+</div>
+
+<h4>5. 脂肪重氮化的间接方法</h4>
+$$\ce{CH3CH2OH + CH2=CHCH2MgBr ->[\text{加热}] CH2=CHCH2CH2OH + ...}$$
+<p>然后再转化为卤代烃。</p>
+
+<div class="tip">
+<p>$\ce{NBS}$（N-溴代丁二酰亚胺）：烯丙位溴代的专用试剂</p>
+<p>烯丙位溴代：$$\ce{CH2=CH-CH3 ->[\ce{NBS}] CH2=CH-CH2Br}$$</p>
+</div>
+
+</div>
+</div>
+
+<!-- ======================== 第29页 ======================== -->
+<div style="margin:30px 0;">
+<span class="page-label">第 29 页</span>
+<img src="_img_summary/p29.png" class="page-img" alt="第29页手写原稿">
+<div class="card">
+
+<h2>课后习题</h2>
+
+<h3>P37 亲核取代反应</h3>
+<div class="ex">
+<p>以溴代环己烷为底物，写出与以下试剂反应的主要产物：</p>
+<ul>
+<li>$\ce{KOH/H2O}$ → 水解 → 环己醇 $\ce{-OH}$</li>
+<li>$\ce{CH3ONa/CH3OH}$ → $\ce{CH3O^-}$强碱亲核性较强 → 甲基环己基醚 $\ce{-OCH3}$</li>
+<li>$\ce{AgNO3/CH3OH}$ → → 环己基硝酸酯 $\ce{-ONO2}$</li>
+<li>$\ce{NaCN/H2O-C2H5OH}$ → → 环己基氰 $\ce{-CN}$</li>
+<li>$\ce{NaSCH3}$ → → 环己基硫甲基醚 $\ce{-SCH3}$</li>
+<li>$\ce{NaI}$ / 丙酮 → → $\ce{-I + NaBr}$（Finkelstein反应，卤素互换）</li>
+</ul>
+</div>
+
+<h3>P48 消除反应</h3>
+<div class="ex">
+<p><strong>(1)(a)</strong> $\ce{CH3CH(Br)CH2CH2CH(Br)CH2CH3}$（双溴代物）</p>
+$$\ce{->[\ce{KOH}][\text{醇}]} \ce{CH3C=CH-CH=CHCH2CH3}$$
+<p>产物：共轭二烯烃（双键双键共轭体系，更稳定）</p>
+
+<p><strong>(1)(b)</strong> 含$\ce{Cl}$的环己烷底物（二氯代物，邻二卤代物）</p>
+$$\ce{->[\ce{KOH}][\text{醇}]} \ce{CH3C#CCH2CH3}$$
+<p>产物：炔烃（两次消除$\ce{HCl}$得到三键）</p>
+</div>
+
+<div class="ex">
+<p><strong>(2)</strong> $\ce{CH3CH(Br)CH3 ->[\text{E2}] CH3CH=CH2}$</p>
+<p>（$\beta$-$\ce{H}$消除，得到丙烯）</p>
+</div>
+
+<h3>P49 格氏反应</h3>
+<div class="ex">
+<p>环戊基溴与乙基格氏试剂的反应：</p>
+$$\ce{C5H9-Br + CH3CH2MgI ->[\text{干醚}][\ce{H+}] C5H9-H + CH3CH3 + MgIBr}$$
+<p>格氏试剂（$\ce{CH3CH2MgI}$）作为碱夺取了活泼氢，生成烃。</p>
+</div>
+
+<h3>P49 消除HBr的取向</h3>
+<div class="ex">
+<p>判断含$\ce{Br}$的底物消除$\ce{HBr}$后的主要产物取向：</p>
+<p>按照<strong>Saytzeff规则</strong>，脱去含氢较少一侧$\beta$碳上的$\ce{H}$，得到取代基更多的烯烃为主要产物。</p>
+<p>结构$\ce{C-C(Br)-C=C}$中：取代基多的一侧为主产物。</p>
+<p>标注：(1)、(2)、(3)题按照$\ce{C^+}$碳正离子稳定性判断反应速率和取向。</p>
+</div>
+
+<h3>$\ce{AgNO3}$ 与卤代烃的反应</h3>
+<div class="fb">
+<div class="t">$\ce{AgNO3 + RX -> AgX v}$</div>
+<p>鉴别卤代烃活性（$\ce{S_N1}$反应速率）：</p>
+<ul>
+<li>$3°$（叔碳）：室温，沉淀↓，速度最快。$\ce{(CH3)3CX}$反应最快</li>
+<li>$2°$（仲碳）：温热，沉淀↓，速度中等</li>
+<li>$1°$（伯碳）：需加热↑，速度最慢</li>
+</ul>
+</div>
+
+<div class="ex">
+<p><strong>易一题：(1) (2)(3)</strong> → $\ce{C^+}$ 稳定性判断</p>
+<p>碳正离子越稳定，$\ce{S_N1}$反应越快，$\ce{AgX}$沉淀出现越早。</p>
+</div>
+
+</div>
+</div>
+
+<!-- ======================== 第30页 ======================== -->
+<div style="margin:30px 0;">
+<span class="page-label">第 30 页</span>
+<img src="_img_summary/p30.png" class="page-img" alt="第30页手写原稿">
+<div class="card">
+
+<h2>卤代烃总结</h2>
+
+<h3>(i) 亲核取代</h3>
+<div class="fb">
+<div class="t">$\ce{S_N1}$ / $\ce{S_N2}$</div>
+$$\ce{Nu^- + R-X -> R-Nu + X^-}$$
+<p>亲核试剂 $\ce{Nu^-}$ = $\ce{OH^-}$, $\ce{OR^-}$, $\ce{CN^-}$, $\ce{HS^-}$, $\ce{Mg}$, $\ce{SCN^-}$, $\ce{I^-}$, $\ce{AcO^-}$ ...</p>
+</div>
+
+<div class="warn">
+<p>重要对比（习题精解 P49 核心考点）：</p>
+<ul>
+<li>$\ce{S_N2}$ vs $\ce{S_N1}$</li>
+<li>$\ce{E2}$ vs $\ce{E1}$</li>
+<li>$\ce{S_N}$ vs $\ce{E}$</li>
+</ul>
+</div>
+
+<h3>(ii) $\beta$-消除</h3>
+<div class="fb">
+<div class="t">$\ce{E1}$ / $\ce{E2}$</div>
+$$\ce{-C(-H)-C(-X)- + NaOR ->[\text{ROH}][\Delta] C=C}$$
+</div>
+
+<h3>(iii) 与金属反应</h3>
+$$\ce{R-X + Mg ->[\text{干燥乙醚}] R-MgX}$$
+<p>进一步反应（进一步与亲电试剂反应）：</p>
+$$\ce{R-MgX + CO2 -> R-COOMgX ->[\ce{H^+}] R-COOH}$$
+
+<div class="fb">
+<div class="t">金属偶联反应（Corey-House合成）</div>
+<p>$\ce{R-X}$ 与 $\ce{R'-X}$偶联合成新的$\ce{C-C}$键：</p>
+<p>$\ce{R'}$ = 烯基、炔基时 → 保持构型</p>
+$$\ce{R-X ->[\ce{Li}] R-Li ->[\ce{CuX}] R2CuLi ->[\ce{R'-C-X}] R-R'}$$
+<p>完整路线：$\ce{R-X ->[\text{2Li}] R-Li ->[\text{CuX}] R_2CuLi} \quad;\quad \ce{R_2CuLi + R'X -> R-R' + RCu + LiX}$</p>
+</div>
+
+<h3>(iv) 制备$\ce{R-X}$的方法总结</h3>
+
+<table>
+<tr><th>序号</th><th>方法</th><th>反应</th></tr>
+<tr><td>①</td><td>烷烃卤代</td><td>$\ce{R-H + X2 ->[\ce{h\nu}] R-X + HX}$（自由基取代）</td></tr>
+<tr><td>②</td><td>烯烃加成$\ce{HX}$</td><td>$\ce{C=C ->[\ce{HX}]}$（Markovnikov加成）</td></tr>
+<tr><td>③</td><td>醇与$\ce{SOCl2}$</td><td>$\ce{R-OH + SOCl2 ->[\text{吡啶}] R-Cl + SO2\uparrow + HCl}$</td></tr>
+<tr><td>④</td><td>Finkelstein卤素互换</td><td>$\ce{R-Br + NaI ->[\text{丙酮}] R-I + NaBr\downarrow}$</td></tr>
+<tr><td>⑤</td><td>烯丙位溴代（NBS）</td><td>$\ce{CH2=CHCH3 ->[\ce{NBS}] CH2=CHCH2Br}$</td></tr>
+</table>
+
+</div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>手写笔记 p31-p36 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+h4{color:#2c3e50;font-size:1.05em;margin:15px 0 8px;font-weight:bold;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.page-label{display:inline-block;background:var(--pri);color:#fff;padding:2px 10px;border-radius:4px;font-size:.85em;margin:10px 0 4px;}
+.rxn{font-family:'Courier New',monospace;background:#f8f8f8;padding:8px 14px;border-radius:5px;margin:6px 0;display:block;overflow-x:auto;white-space:nowrap;}
+</style>
+</head>
+<body>
+
+<h1>手写笔记 p31&ndash;p36 电子化</h1>
+
+<!-- ==================== 第31页 ==================== -->
+
+</body>
+</html>

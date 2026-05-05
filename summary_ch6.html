@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6章 对映异构 梳理 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'194',right:'194',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+h4{color:#2c3e50;font-size:1.05em;margin:15px 0 8px;font-weight:bold;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+.page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.page-label{display:inline-block;background:var(--pri);color:#fff;padding:4px 14px;border-radius:4px;font-weight:bold;font-size:1.1em;margin-bottom:10px;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar">
+<a href="index.html">&#x1F4DA; 目录</a>
+<a href="summary.html">&#x1F4D6; 梳理目录</a>
+<a href="summary_ch5.html">&larr; 上一章</a><a href="summary_ch7.html">下一章 &rarr;</a>
+</div>
+
+<h1>第6章 对映异构 梳理</h1>
+<div style="margin:30px 0;">
+<span class="page-label">第 20 页</span>
+<img src="_img_summary/p20.png" class="page-img" alt="第20页手写原稿">
+<div class="card">
+
+<h2 id="ch6">第六章 对映异构体</h2>
+
+<h3>概念</h3>
+<div class="card">
+<p><strong>手性</strong>：物质的<strong>实体与镜像</strong>不能完全重叠的性质。[<em>相当于左手和右手的关系</em>]</p>
+<p><strong>方向性与条件</strong>：①<span class="red">没有</span>对称面、对称中心、$S_4$交替轴 → 才有手性</p>
+</div>
+
+<h3>R/S 构型</h3>
+<div class="card">
+<p>由 <strong>CIP 优先次序规则</strong>判断：将<strong>最小基团</strong>朝离观察者最远方向（向后），剩余三个基团按优先次序排列：</p>
+<ul>
+<li><strong>顺时针 → R 构型</strong></li>
+<li><strong>逆时针 → S 构型</strong></li>
+</ul>
+<div class="tip">
+有旋光性时，每台旋光的标记为 $R/S$
+</div>
+</div>
+
+<h3>ee% 光学纯度</h3>
+<div class="card">
+<div class="fb">
+<div class="t">对映体过量百分率</div>
+$$ee\% = \frac{[R]-[S]}{[R]+[S]} \times 100\%$$
+<p>也可表示为：</p>
+$$ee\% = \frac{[\alpha]_{\text{obs}}}{[\alpha]_{\max}} \times 100\%$$
+<p>外消旋体的 $ee\% = 0$，纯对映体的 $ee\% = 100\%$</p>
+</div>
+</div>
+
+<h3>对映体 vs 非对映体</h3>
+<div class="card">
+<ul>
+<li><strong>对映体（enantiomers）</strong>：互为镜像关系的立体异构体，<span class="blue">所有手性碳构型全部相反</span></li>
+<li><strong>非对映体（diastereomers）</strong>：不是镜像关系的立体异构体，有些手性碳相同/有些相反</li>
+</ul>
+<div class="warn">
+两个 $E/Z$ 构型化合物不能算对映体和非对映体！指的是<strong>手性碳</strong>的构型关系。
+</div>
+<p>指甲利对映体：$R$和$S$之间是对映关系，$RR$和$SS$之间也是对映关系</p>
+<p><strong>外消旋体</strong>：$R/S$ 等量混合物（等量+旋光相互抵消），旋光度 = 0</p>
+<p><strong>$M$ 构型</strong>：| 以 $\dot{C}$ 为中心，$4$个不同基团按CIP优先序从 $1$ 到 $4$ 排列后的左旋/右旋判断排列方向 |</p>
+<p>$(+)$：右旋（dextrorotatory）&nbsp;&nbsp; $(-)$：左旋（levorotatory）&nbsp;&nbsp;（与 $R/S$ <span class="red">无必然对应关系</span>，需实验测定）</p>
+</div>
+
+<h3>构型的表示方法</h3>
+<div class="card">
+
+<h4>1. 透视式（楔形式）</h4>
+<p>用楔形键、虚线键表示空间方向：</p>
+<ul>
+<li><strong>实楔形</strong>：伸向观察者（前方）</li>
+<li><strong>虚线楔形</strong>：远离观察者（后方）</li>
+<li>要标清楚氢的位置，可直观判断 $R/S$</li>
+</ul>
+
+<h4>2. Fischer 投影式</h4>
+<p><strong>"横前竖后"</strong>：横线上的取代基朝向观察者（前方），竖线上的取代基远离观察者（后方）</p>
+<div class="fb">
+<div class="t">Fischer 投影式规则</div>
+<ul>
+<li>①投影后为"十"字，手性碳C在交叉点</li>
+<li>②竖直方向固定（碳链纵向），最高氧化态碳在上方</li>
+<li>③旋转 $180°$ 后，<strong>构型不变</strong>；旋转 $90°$ 后，<strong>构型改变</strong></li>
+<li>④不能离开纸面翻转（翻转 = 构型改变），<span class="red">不能随意交换</span>两个基团的位置</li>
+</ul>
+</div>
+
+<div class="warn">
+<strong>相互转化</strong>：Fischer投影式、Sawhorse（锯架式）、Newman投影式之间可以相互转化，但要注意规则。
+</div>
+</div>
+
+<h3>比旋光度</h3>
+<div class="card">
+<p>比旋光度公式：</p>
+$$[\alpha]_D^{t} = \frac{\alpha}{l \cdot c}$$
+<p>大写希腊 $\alpha$ = 实测旋光度，$l$ = 光程长度（dm），$c$ = 浓度（g/mL），$t$ = 温度，$D$ = 钠光波长（589 nm）</p>
+</div>
+
+</div>
+</div>
+
+<!-- ======================== 第21页 ======================== -->
+<div style="margin:30px 0;">
+<span class="page-label">第 21 页</span>
+<img src="_img_summary/p21.png" class="page-img" alt="第21页手写原稿">
+<div class="card">
+
+<h3>构型标记方法：D-L 构型标记法</h3>
+<div class="card">
+<p>D-L 构型标记法：糖、氨基酸等化合物的标记中使用最广。</p>
+<div class="fb">
+<div class="t">D-L 标记规则</div>
+<ul>
+<li>以<strong>甘油醛</strong>为标准进行标记（Fischer投影式）。实质是指与标准物的构型关系，右为 D，左为 L。</li>
+<li>以<strong>甘油醛</strong>为参考标准，看<strong>不改变手性碳构型</strong>的条件下，能否从D-甘油醛或L-甘油醛出发合成该化合物 → 即定为 $D$ 或 $L$。</li>
+</ul>
+</div>
+
+<p>D-甘油醛（$-\text{OH}$ 在右）&nbsp;&nbsp;→&nbsp;&nbsp; L-甘油醛（$-\text{OH}$ 在左）</p>
+<p>D-丙氨酸 &nbsp;&nbsp;&nbsp; L-丙氨酸 &nbsp;&nbsp;&nbsp; D-(-)-甘油醛 &nbsp;&nbsp;&nbsp; L-(+)-甘油醛</p>
+
+<div class="warn">
+D, L 表示构型，(+) 为右旋，(-) 为左旋。<strong>D 不一定是右旋，L 不一定是左旋。</strong>需由实验测定旋光方向。
+</div>
+</div>
+
+<h3>对映与构型的关系 与 非对映的关系</h3>
+<div class="card">
+<h4>非对映对称面</h4>
+<table>
+<tr><th></th><th>对称面</th><th>互变关系</th></tr>
+<tr><td>对映体</td><td>有镜面</td><td>全互换</td></tr>
+<tr><td>非对映体</td><td>无镜面</td><td>非全互换</td></tr>
+</table>
+
+<h4>概念</h4>
+<ul>
+<li><strong>对映体</strong> vs <strong>非对映体</strong></li>
+<li><strong>内消旋体</strong> vs <strong>外消旋体</strong></li>
+<li>内消旋：<strong>分子内</strong>有对称面/对称中心，虽有手性碳但分子整体无旋光性</li>
+<li>外消旋：<strong>两个对映体</strong>等量混合，旋光性相互抵消，净旋光度 = 0</li>
+<li>左旋体对映体 → 右旋体对映体（配对关系），右旋体 + 左旋体 = 外消旋体</li>
+</ul>
+
+<div class="fb">
+<div class="t">每一个手性碳 = 最多 $2^n$ 个立体异构体</div>
+<p>$n$ 个手性碳 → 最多 $2^n$ 个立体异构体（含内消旋后可能减少）</p>
+</div>
+
+<h4>赤式 vs 苏式</h4>
+<table>
+<tr><th></th><th>赤式(erythro)</th><th>苏式(threo)</th></tr>
+<tr><td>相同类型</td><td>相同基团同侧</td><td>相同基团异侧</td></tr>
+<tr><td>不同类型</td><td>不全同侧</td><td>—</td></tr>
+</table>
+<p>（两对相似/相同的取代基在同侧 = 赤式，异侧 = 苏式）</p>
+</div>
+
+<h3>环状化合物的对映异构体</h3>
+<div class="card">
+<p>环状化合物中如存在手性碳，也有对映异构体问题。</p>
+<ul>
+<li>以二取代环己烷、环戊烷为例</li>
+<li>顺式：两个取代基在环平面同侧</li>
+<li>反式：两个取代基在环平面两侧</li>
+</ul>
+<p>例：<strong>反式-1,2-二甲基环戊烷</strong> → 有一对对映体；<strong>顺式-1,2-二甲基环戊烷</strong> → 有内消旋面，是 $meso$ 化合物</p>
+</div>
+
+<h3>含多个手性碳的化合物 (meso)</h3>
+<div class="card">
+<div class="fb">
+<div class="t">meso 化合物 = 内消旋体</div>
+<p>$\text{meso}$ = 特殊情况：含偶数个手性碳，分子内有对称面（或对称中心），整体无旋光性。</p>
+</div>
+
+<p>$A\overset{a}{-}\overset{}{C}\overset{b}{=}\overset{}{C}\overset{a'}{-}A'$：如果 $a = a', b = b'$，则可能有 $\text{meso}$ 构型</p>
+
+<div class="warn">
+<strong>每一个C达到2个相同的基团</strong>就记得考虑 $\text{meso}$（内消旋体）是否存在！
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- ======================== 第22页 ======================== -->
+
+</body>
+</html>
