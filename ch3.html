@@ -85,6 +85,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 </svg>
 
 <p><strong>乙烷旋转能垒</strong> = 12.5 kJ/mol（全重叠→全交叉的能量差）</p>
+<div class="tip"><strong>乙烷构象能量细节</strong>：每对H-H重叠贡献约4.2 kJ/mol扭转应变，3对共12.5 kJ/mol。乙烷有无数个构象，但只有两种极端：全交叉(能量最低)和全重叠(能量最高)。</div>
 
 <div class="fb"><div class="t">丁烷构象稳定性排序</div>
 <table>
@@ -98,6 +99,9 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <div class="warn"><strong>特例：gauche更稳定的情况</strong><br>
 &bull; 乙二醇(HOCH<sub>2</sub>CH<sub>2</sub>OH)：gauche构象中OH...OH可形成<strong>分子内氢键</strong> → gauche更稳定<br>
 &bull; 2-氯乙醇(ClCH<sub>2</sub>CH<sub>2</sub>OH)：同理，Cl和OH间氢键</div>
+</div>
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch3_butane_energy.png" alt="正丁烷构象能量图" style="max-width:640px;width:100%;">
 </div>
 
 <h3 id="k3">3.3 环己烷构象</h3>
@@ -121,6 +125,9 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <tr><td>COOH</td><td>1.35</td><td>Ph(C<sub>6</sub>H<sub>5</sub>)</td><td>3.0</td></tr>
 </table>
 <p>A值越大 → 越强烈要求占e键。<strong>叔丁基</strong>的A值极大，几乎100%占e键（"构象锁"）。</p></div>
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch3_methylcyclohexane_conf.png" alt="甲基环己烷e键vs a键构象" style="max-width:700px;width:100%;">
+</div>
 
 <div class="fb"><div class="t">环己烷其他构象</div>
 <ul>
@@ -135,6 +142,19 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 &bull; 1,2-二取代：<strong>反式</strong>稳定（两基团都可占e键，即ee构象）<br>
 &bull; 1,3-二取代：<strong>顺式</strong>稳定（两基团都可占e键）<br>
 &bull; 1,4-二取代：<strong>反式</strong>稳定（两基团都可占e键）</div>
+
+<div class="fb"><div class="t">十氢萘(Decalin)的构象</div>
+<p>十氢萘是萘完全加氢的产物，由两个共用一条边的环己烷稠合而成。存在<strong>顺式(cis)</strong>和<strong>反式(trans)</strong>两种异构体：</p>
+<ul>
+<li><strong>反-十氢萘(trans-decalin)</strong>：两个环的稠合键为反式(一上一下)，两个环都采取椅式构象，稠合位H为<strong>双a键(diaxial)</strong>或<strong>双e键(diequatorial)</strong>，整体刚性，<strong>不能翻环</strong>。<strong>更稳定</strong>。</li>
+<li><strong>顺-十氢萘(cis-decalin)</strong>：两个环的稠合键为顺式(同侧)，稠合位H为一个a键一个e键，<strong>可以翻环</strong>（柔性较大），稳定性稍差。</li>
+</ul>
+<p><strong>反-十氢萘比顺-十氢萘更稳定</strong>，因为反式稠合中两个环都能保持理想的全交叉椅式构象，无额外的gauche相互作用。</p>
+<div class="tip"><strong>考试常考</strong>：画出顺-和反-十氢萘的椅式构象，判断哪个更稳定→反式更稳定。</div>
+</div>
+
+<div class="fb"><div class="t">环戊烷的构象</div>
+<p>环戊烷<strong>不是平面</strong>结构。平面环戊烷会有严重的重叠式扭转张力(10对H-H重叠)。实际上环戊烷采取<strong>信封式(envelope)</strong>构象，其中四个碳共面，一个碳翘起。这种褶皱(puckering)消除了大部分扭转张力。</p></div>
 </div>
 
 <h3 id="k4">3.4 自由基链式反应</h3>
@@ -193,9 +213,44 @@ CH<sub>3</sub>&middot; + CH<sub>3</sub>&middot; → CH<sub>3</sub>CH<sub>3</sub>
 <p><strong>结论</strong>：传递步骤①微弱吸热 → 过渡态类似反应物(早期TS) → 对自由基稳定性不敏感 → Cl<sub>2</sub>选择性低。</p>
 </div></div>
 
-<div class="tip"><strong>碳自由基稳定性</strong>：3&deg; > 2&deg; > 1&deg; > CH<sub>3</sub>&middot;（超共轭效应稳定）</div>
+<div class="fb"><div class="t">碳自由基稳定性</div>
+<p><strong>稳定性顺序</strong>：3&deg; &gt; 2&deg; &gt; 1&deg; &gt; CH<sub>3</sub>&middot;（超共轭效应稳定）</p>
+<p><strong>对应C-H键BDE(kJ/mol)</strong>：</p>
+<table>
+<tr><th>键类型</th><th>示例</th><th>BDE/(kJ/mol)</th><th>自由基类型</th></tr>
+<tr><td>CH<sub>3</sub>&minus;H</td><td>甲烷</td><td>439</td><td>甲基自由基(最不稳定)</td></tr>
+<tr><td>1&deg; C&minus;H</td><td>CH<sub>3</sub>CH<sub>2</sub>&minus;H</td><td>420</td><td>伯自由基</td></tr>
+<tr><td>2&deg; C&minus;H</td><td>(CH<sub>3</sub>)<sub>2</sub>CH&minus;H</td><td>413</td><td>仲自由基</td></tr>
+<tr><td>3&deg; C&minus;H</td><td>(CH<sub>3</sub>)<sub>3</sub>C&minus;H</td><td>400</td><td>叔自由基(最稳定)</td></tr>
+</table>
+<p>BDE越小→键越容易断→生成的自由基越稳定。碳自由基稳定性的原因：<strong>超共轭效应</strong>——相邻C-H的&sigma;轨道与自由基p轨道侧面重叠，分散不成对电子的电子密度。连接的烷基越多，超共轭效应越强。</p></div>
 
 <div class="note"><strong>Hammond假说</strong>：放热反应的过渡态类似反应物（早期过渡态，选择性低→Cl<sub>2</sub>）；吸热反应的过渡态类似产物（晚期过渡态，选择性高→Br<sub>2</sub>）</div>
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch3_halogenation.png" alt="卤代反应选择性与自由基机理" style="max-width:700px;width:100%;">
+</div>
+
+<div class="fb"><div class="t">卤代反应产物预测的计算综合例题（PPT重点）</div>
+<p><strong>问题</strong>：用氯化或溴化来制备目标一卤代烃，判断哪种方法合适？</p>
+<div class="ex"><strong>例1</strong>：制备(CH<sub>3</sub>)<sub>3</sub>CCl（叔丁基氯），原料(CH<sub>3</sub>)<sub>3</sub>CH（异丁烷）<br>
+&bull; 氯代时：1&deg;H活性比为9&times;1=9，3&deg;H为1&times;5=5，3&deg;产物比例=5/14=36%，混合物难分离→<strong>不适合</strong><br>
+&bull; 溴代时：1&deg;H为9&times;1=9，3&deg;H为1&times;1600=1600，3&deg;产物比例=1600/1609&asymp;<strong>99%</strong>→<strong>适合！</strong></div>
+<div class="ex"><strong>例2</strong>：制备环己基溴，原料环己烷<br>
+&bull; 环己烷只有2&deg;H → 溴代只得到单一产物环己基溴→<strong>适合</strong></div>
+<div class="ex"><strong>例3</strong>：制备新戊基氯 (CH<sub>3</sub>)<sub>3</sub>CCH<sub>2</sub>Cl，原料新戊烷(CH<sub>3</sub>)<sub>4</sub>C<br>
+&bull; 新戊烷只有1&deg;H(12个，全部等价) → 氯代只得到单一产物→<strong>氯代适合</strong></div>
+</div>
+
+<div class="fb"><div class="t">异丁烷溴代反应机理（PPT例题）</div>
+<p><strong>引发</strong>：Br<sub>2</sub> →(hv)→ 2Br&middot;</p>
+<p><strong>传递</strong>：<br>
+①(CH<sub>3</sub>)<sub>3</sub>CH + Br&middot; → (CH<sub>3</sub>)<sub>3</sub>C&middot; + HBr（抽3&deg;H，优先）<br>
+②(CH<sub>3</sub>)<sub>3</sub>C&middot; + Br<sub>2</sub> → (CH<sub>3</sub>)<sub>3</sub>CBr + Br&middot;</p>
+<p><strong>终止</strong>：<br>
+Br&middot; + Br&middot; → Br<sub>2</sub><br>
+(CH<sub>3</sub>)<sub>3</sub>C&middot; + Br&middot; → (CH<sub>3</sub>)<sub>3</sub>CBr<br>
+(CH<sub>3</sub>)<sub>3</sub>C&middot; + (CH<sub>3</sub>)<sub>3</sub>C&middot; → (CH<sub>3</sub>)<sub>3</sub>C-C(CH<sub>3</sub>)<sub>3</sub></p>
+</div>
 </div>
 
 <h3 id="k5">3.5 环烷烃化学性质</h3>
@@ -208,7 +263,11 @@ CH<sub>3</sub>&middot; + CH<sub>3</sub>&middot; → CH<sub>3</sub>CH<sub>3</sub>
 <tr><td>环戊烷</td><td>很小(26kJ/mol)</td><td>稳定，类似烷烃</td></tr>
 <tr><td>环己烷</td><td>无(0)</td><td>最稳定，完全无张力</td></tr>
 </table></div>
-<div class="warn"><strong>环丙烷像烯烃</strong>：环丙烷因弯曲键(banana bond)具有部分&pi;键特征，能与Br<sub>2</sub>、HBr等加成开环。</div>
+<div class="card" style="text-align:center;padding:8px;">
+<img src="img/ch3_ring_strain.png" alt="环烷烃环张力比较" style="max-width:640px;width:100%;">
+</div>
+<div class="warn"><strong>环丙烷像烯烃</strong>：环丙烷因弯曲键(banana bond)具有部分&pi;键特征，能与Br<sub>2</sub>、HBr等加成开环。<br>
+<strong>Baeyer张力学说</strong>：环烷烃的键角偏离109.5&deg;越大，角张力越大。环丙烷(60&deg;)和环丁烷(90&deg;)偏差大→有角张力。但环戊烷(108&deg;)接近理想角→张力很小。环己烷通过折叠(椅式)完全消除角张力。</div>
 
 <div class="fb"><div class="t">环丙烷开环加成的区域选择性</div>
 <p>取代环丙烷与HBr加成开环时，遵循类似Markovnikov规则：<strong>Br加到含氢较少的碳上</strong>（即取代基较多的碳），H加到含氢较多的碳上。</p>
@@ -223,17 +282,23 @@ CH<sub>3</sub>&middot; + CH<sub>3</sub>&middot; → CH<sub>3</sub>CH<sub>3</sub>
 <p>特点：双键完全加氢，产物为对应烷烃。</p></div>
 
 <div class="fb"><div class="t">Wurtz合成法</div>
-<p>2RBr + 2Na → R&minus;R + 2NaBr</p>
-<p><strong>局限性</strong>：仅适用于合成<strong>对称烷烃</strong>（R&minus;R）。若用两种不同RX，会得到三种产物（R-R、R'-R'、R-R'混合物）。</p></div>
+<p>2RBr + 2Na →(乙醚溶剂)→ R&minus;R + 2NaBr</p>
+<p><strong>适用范围</strong>：仅适用于合成<strong>对称烷烃和环烷烃</strong>。常用的卤代烃为<strong>溴代烃和碘代烃</strong>，一般伯卤代烃产率较高。</p>
+<p><strong>局限性</strong>：若用两种不同RX，会得到三种产物（R-R、R'-R'、R-R'混合物），无法得到纯净的不对称产物。</p></div>
 
 <div class="fb"><div class="t">卤代烃还原</div>
-<p>RX + Zn + H<sup>+</sup> → RH + ZnX<sub>2</sub></p>
-<p>将卤代烃还原为烷烃，常用Zn/HCl或Zn/AcOH体系。</p></div>
+<p>2R&minus;X + Zn + 2H<sup>+</sup> → 2R&minus;H + ZnX<sub>2</sub></p>
+<p>Zn作为还原剂给出电子，烷基接受电子，最后再与酸作用得到烷烃。</p>
+<p>例：2CH<sub>3</sub>CH<sub>2</sub>CHCH<sub>3</sub>(Br) + Zn →(H<sup>+</sup>)→ 2CH<sub>3</sub>CH<sub>2</sub>CHCH<sub>3</sub>(H) + ZnBr<sub>2</sub></p></div>
 
-<div class="fb"><div class="t">Corey-House合成（有机铜锂试剂法）</div>
+<div class="fb"><div class="t">Corey-House合成（有机铜锂试剂法）——可制备不对称长碳链烷烃</div>
 <p>R<sub>2</sub>CuLi + R'X → R&minus;R' + RCu + LiX</p>
 <p><strong>优势</strong>：可制备<strong>不对称烷烃</strong>（R≠R'），是Wurtz反应的重要改进。</p>
-<p>制备步骤：2RLi + CuI → R<sub>2</sub>CuLi + LiI（先制备二烷基铜锂）</p></div>
+<p>制备步骤：2RLi + CuI → R<sub>2</sub>CuLi + LiI（先制备二烷基铜锂）</p>
+<p><strong>PPT具体实例</strong>：(CH<sub>3</sub>)<sub>2</sub>CuLi + CH<sub>3</sub>(CH<sub>2</sub>)<sub>3</sub>CH<sub>2</sub>I →(干醚, 25&deg;C, 3.5h)→ CH<sub>3</sub>(CH<sub>2</sub>)<sub>3</sub>CH<sub>2</sub>CH<sub>3</sub> + CH<sub>3</sub>Cu + LiI，产率<strong>98%</strong></p></div>
+
+<div class="fb"><div class="t">其他方法：Diels-Alder反应</div>
+<p>利用[4+2]环加成反应（Diels-Alder反应）可以制备环己烯及其衍生物。</p></div>
 </div>
 
 <h3 id="k7">3.7 其他化学性质</h3>
@@ -406,6 +471,50 @@ CH<sub>3</sub>• + CH<sub>3</sub>• → C<sub>2</sub>H<sub>6</sub></p>
 <p>修正：C<sub>5</sub>H<sub>10</sub>，DBE=1，不与Br<sub>2</sub>/HBr反应→<strong>A = 环戊烷</strong>。但加氢得甲基环丁烷不合理。</p>
 <p>最终：<strong>A = 甲基环丁烷</strong>（C<sub>5</sub>H<sub>10</sub>，环+CH<sub>3</sub>）。DBE=1 ✓，环丁烷不与Br<sub>2</sub>/HBr反应 ✓。"催化加氢"在苛刻条件下可开环得正戊烷，或题意为"该化合物本身即为加氢产物的答案"。</p>
 <div class="note">本题考察逻辑推理：环丙烷以外的环烷烃化学性质稳定，类似烷烃。鉴别环烷烃与烯烃：Br<sub>2</sub>/CCl<sub>4</sub>（烯烃褪色，环烷烃不褪色）。</div>
+</div>
+
+<h3>题8 沸点排序（课后习题1）</h3>
+<div class="ex"><strong>题8</strong> 不参看物理常数表，试推测下列化合物沸点高低的顺序：<br>
+(1) 正庚烷 (2) 正己烷 (3) 2-甲基戊烷 (4) 2,2-二甲基丁烷 (5) 正癸烷</div>
+<div class="sol-header">解答</div><div class="sol">
+<p>主链越长→沸点越高；支链越多→沸点越低。因此：<strong>(5)&gt;(1)&gt;(2)&gt;(3)&gt;(4)</strong></p>
+</div>
+
+<h3>题9 画最稳定构象（课后习题2）</h3>
+<div class="ex"><strong>题9</strong> 画出下列化合物的最稳定构象：<br>
+(1) 1,2-二溴乙烷 (2) 乙二醇 (3) 2-氟乙醇<br>
+(4) 反-1-叔丁基-2-甲基-环己烷 (5) 顺-1-异丙基-3-甲基环己烷</div>
+<div class="sol-header">解答</div><div class="sol">
+<p><strong>(1) 1,2-二溴乙烷</strong>：两个Br体积大、电负性强，对位交叉(anti)最稳定（Br-Br距离最远）。</p>
+<p><strong>(2) 乙二醇</strong>：虽然anti位减少位阻，但OH...OH形成<strong>分子内氢键</strong>→<strong>gauche构象更稳定</strong>。</p>
+<p><strong>(3) 2-氟乙醇</strong>：F与OH形成分子内氢键→<strong>gauche构象更稳定</strong>。</p>
+<p><strong>(4) 反-1-叔丁基-2-甲基环己烷</strong>：反式1,2-二取代→可实现双e构象。叔丁基A值极大，锁定e位，甲基也在e位。</p>
+<p><strong>(5) 顺-1-异丙基-3-甲基环己烷</strong>：顺式1,3-二取代→可实现双e构象（两基团都在e位）。</p>
+</div>
+
+<h3>题10 二取代环己烷稳定性比较（课后习题5）</h3>
+<div class="ex"><strong>题10</strong> 比较下列各系列化合物的稳定性：<br>
+(1) 顺-1,2-二甲基环己烷 和 反-1,2-二甲基环己烷<br>
+(2) 顺-1,3-二甲基环己烷 和 反-1,3-二甲基环己烷<br>
+(3) 顺-1,4-二甲基环己烷 和 反-1,4-二甲基环己烷<br>
+(4) 1-乙基环丙烷、1-甲基环丁烷 和 环戊烷</div>
+<div class="sol-header">解答</div><div class="sol">
+<p><strong>解析</strong>：对于环己烷来说，<strong>平伏键越多，越稳定</strong>；而对于六元环以下的环状化合物，<strong>环越小，越不稳定</strong>。</p>
+<table>
+<tr><th>比较</th><th>结论</th><th>原因</th></tr>
+<tr><td>(1) 顺 vs 反-1,2-二甲基</td><td><strong>反式更稳定</strong></td><td>反式可双e；顺式为一a一e</td></tr>
+<tr><td>(2) 顺 vs 反-1,3-二甲基</td><td><strong>顺式更稳定</strong></td><td>顺式可双e；反式为一a一e</td></tr>
+<tr><td>(3) 顺 vs 反-1,4-二甲基</td><td><strong>反式更稳定</strong></td><td>反式可双e；顺式为一a一e</td></tr>
+<tr><td>(4) 三种环烷烃</td><td>环戊烷 &gt; 甲基环丁烷 &gt; 乙基环丙烷</td><td>环越大张力越小</td></tr>
+</table>
+</div>
+
+<h3>题11 碳碳键裂解产物（课后习题7）</h3>
+<div class="ex"><strong>题11</strong> 下列化合物碳-碳键裂解可以生成哪几种自由基？按稳定性从高到低排序（只考虑碳碳键的一次裂解，无需考虑自由基的重排）。</div>
+<div class="sol-header">解答</div><div class="sol">
+<p><strong>自由基稳定性排序原则</strong>：碳自由基中的碳原子所连的烷基越多，稳定性越高。</p>
+<p>排序：3&deg;自由基 &gt; 2&deg;自由基 &gt; 1&deg;自由基 &gt; 甲基自由基</p>
+<p><strong>解题方法</strong>：依次切断分子中每一条C-C键，写出两个自由基片段，最后将所有自由基按稳定性排序。</p>
 </div>
 
 </body>
