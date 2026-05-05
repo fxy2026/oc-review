@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>命名专项汇总 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+h4{color:#2c3e50;font-size:1.05em;margin:15px 0 8px;font-weight:bold;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+.toc{background:#f0f7f0;border:2px solid var(--border);border-radius:8px;padding:16px 20px;margin:0 0 20px;}
+.toc a{color:var(--pri);text-decoration:none;display:block;padding:3px 0;}
+.toc a:hover{text-decoration:underline;}
+.step{display:inline-block;background:var(--acc);color:#fff;width:26px;height:26px;text-align:center;line-height:26px;border-radius:50%;font-weight:bold;font-size:.85em;margin-right:6px;}
+.red{color:#c0392b;font-weight:bold;}
+.blue{color:#2980b9;}
+/* Mobile optimization */
+img{max-width:100%;height:auto;}
+svg{max-width:100%;height:auto;}
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0;}
+@media(max-width:600px){
+  body{padding:12px;font-size:15px;line-height:1.7;}
+  h1{font-size:1.4em;}
+  h2{font-size:1.15em;padding:8px 14px;}
+  h3{font-size:1.05em;}
+  .card{padding:12px;}
+  .fb{padding:10px 12px;}
+  .ex,.tip,.warn,.note{padding:8px 12px;}
+  .toc{padding:10px 14px;}
+  .nav-bar{padding:8px 12px;margin:-12px -12px 16px;}
+  .nav-bar a{padding:8px 12px;font-size:1em;display:inline-block;min-height:44px;line-height:28px;}
+  td,th{padding:4px 6px;font-size:.9em;}
+}
+</style>
+</head>
+<body>
+<div class="nav-bar">
+<a href="index.html">&#x1F4DA; 返回目录</a>
+</div>
+
+<h1>命名专项汇总</h1>
+<p style="text-align:center;color:#888;margin-bottom:20px;">覆盖1-9章所有命名规则 | 一站式复习</p>
+
+<div class="toc">
+<strong>目录</strong>
+<a href="#sec1">一、IUPAC系统命名法通用步骤</a>
+<a href="#sec2">二、直链烷烃命名 &amp; 常见基团</a>
+<a href="#sec3">三、支链烷烃命名（五步法）</a>
+<a href="#sec4">四、环烷烃命名</a>
+<a href="#sec5">五、桥环化合物命名</a>
+<a href="#sec6">六、螺环化合物命名</a>
+<a href="#sec7">七、烯烃命名</a>
+<a href="#sec8">八、炔烃命名 &amp; 烯炔共存</a>
+<a href="#sec9">九、CIP次序规则</a>
+<a href="#sec10">十、Z/E 与 cis/trans 命名</a>
+<a href="#sec11">十一、R/S 构型标记</a>
+<a href="#sec12">十二、D/L 构型标记</a>
+<a href="#sec13">十三、Fischer投影式操作规则</a>
+<a href="#sec14">十四、芳烃命名</a>
+<a href="#sec15">十五、醇、酚、醚命名</a>
+<a href="#sec16">十六、卤代烃命名</a>
+<a href="#sec17">十七、官能团优先次序 &amp; 后缀总表</a>
+</div>
+
+<!-- ==================== 一、通用步骤 ==================== -->
+<h2 id="sec1">一、IUPAC系统命名法通用步骤</h2>
+<div class="card">
+<ol>
+  <li><span class="step">1</span><strong>选母体</strong>：找含主要官能团的最长碳链（或最大环）作为母体</li>
+  <li><span class="step">2</span><strong>编号</strong>：从离主要官能团最近的一端开始编号，使官能团位次最小</li>
+  <li><span class="step">3</span><strong>命名取代基</strong>：把支链/取代基按名称列出</li>
+  <li><span class="step">4</span><strong>排列顺序</strong>：取代基按<strong>英文字母序</strong>（或中文笔画序）排列</li>
+  <li><span class="step">5</span><strong>写全名</strong>：取代基位次-取代基名称-母体名称</li>
+</ol>
+</div>
+
+<div class="warn">
+<strong>母体选择优先级</strong>：含官能团 > 最长 > 支链最多 > 取代基位次之和最小
+</div>
+
+<!-- ==================== 二、直链烷烃 ==================== -->
+<h2 id="sec2">二、直链烷烃命名 &amp; 常见基团</h2>
+
+<h3>直链烷烃 $\text{C}_n\text{H}_{2n+2}$</h3>
+<div class="card">
+<table>
+<tr><th>碳数</th><th>中文名</th><th>英文名</th><th>碳数</th><th>中文名</th><th>英文名</th></tr>
+<tr><td>1</td><td>甲烷</td><td>methane</td><td>6</td><td>己烷</td><td>hexane</td></tr>
+<tr><td>2</td><td>乙烷</td><td>ethane</td><td>7</td><td>庚烷</td><td>heptane</td></tr>
+<tr><td>3</td><td>丙烷</td><td>propane</td><td>8</td><td>辛烷</td><td>octane</td></tr>
+<tr><td>4</td><td>丁烷</td><td>butane</td><td>9</td><td>壬烷</td><td>nonane</td></tr>
+<tr><td>5</td><td>戊烷</td><td>pentane</td><td>10</td><td>癸烷</td><td>decane</td></tr>
+</table>
+</div>
+
+<h3>常见烷基</h3>
+<div class="card">
+<table>
+<tr><th>结构</th><th>中文名</th><th>缩写</th><th>来源</th></tr>
+<tr><td>$\text{CH}_3\text{-}$</td><td>甲基</td><td>Me</td><td>甲烷去一个H</td></tr>
+<tr><td>$\text{C}_2\text{H}_5\text{-}$</td><td>乙基</td><td>Et</td><td>乙烷去一个H</td></tr>
+<tr><td>$\text{CH}_3\text{CH}_2\text{CH}_2\text{-}$</td><td>正丙基</td><td>$n$-Pr</td><td>丙烷伯碳去H</td></tr>
+<tr><td>$(\text{CH}_3)_2\text{CH-}$</td><td>异丙基</td><td>$i$-Pr</td><td>丙烷仲碳去H</td></tr>
+<tr><td>$\text{CH}_3\text{CH}_2\text{CH}_2\text{CH}_2\text{-}$</td><td>正丁基</td><td>$n$-Bu</td><td>丁烷伯碳去H</td></tr>
+<tr><td>$(\text{CH}_3)_3\text{C-}$</td><td>叔丁基</td><td>$t$-Bu</td><td>异丁烷叔碳去H</td></tr>
+</table>
+</div>
+
+<h3>碳原子分类</h3>
+<div class="fb"><div class="t">按连接碳原子数分类</div>
+<table>
+<tr><th>类型</th><th>符号</th><th>定义</th><th>对应氢</th></tr>
+<tr><td>伯碳</td><td>1°</td><td>与<strong>1个</strong>碳相连</td><td>伯氢（$1°\text{-H}$）</td></tr>
+<tr><td>仲碳</td><td>2°</td><td>与<strong>2个</strong>碳相连</td><td>仲氢（$2°\text{-H}$）</td></tr>
+<tr><td>叔碳</td><td>3°</td><td>与<strong>3个</strong>碳相连</td><td>叔氢（$3°\text{-H}$）</td></tr>
+<tr><td>季碳</td><td>4°</td><td>与<strong>4个</strong>碳相连</td><td>无氢</td></tr>
+</table>
+</div>
+
+<h3>常见烯基</h3>
+<div class="card">
+<table>
+<tr><th>结构</th><th>中文名</th><th>英文名</th></tr>
+<tr><td>$\text{CH}_2\text{=CH-}$</td><td>乙烯基</td><td>vinyl / ethenyl</td></tr>
+<tr><td>$\text{CH}_3\text{CH=CH-}$</td><td>丙烯基</td><td>propenyl</td></tr>
+<tr><td>$\text{CH}_2\text{=CHCH}_2\text{-}$</td><td>烯丙基</td><td>allyl</td></tr>
+<tr><td>$\text{CH}_2\text{=C(CH}_3\text{)-}$</td><td>异丙烯基</td><td>isopropenyl</td></tr>
+</table>
+</div>
+
+<!-- ==================== 三、支链烷烃 ==================== -->
+<h2 id="sec3">三、支链烷烃命名（五步法）</h2>
+
+<div class="fb"><div class="t">五步法</div>
+<ol>
+  <li><span class="step">1</span><strong>选主链</strong>：含取代基最多的<span class="red">最长碳链</span>
+    <div class="tip" style="margin:6px 0;">口诀：<strong>长 > 多 > 近</strong>（最长 → 支链最多 → 取代基位次最小）</div>
+  </li>
+  <li><span class="step">2</span><strong>编号</strong>：从<span class="red">离取代基最近</span>的一端开始编号，使取代基位次之和最小
+    <div class="warn" style="margin:6px 0;"><strong>最低系列原则</strong>：逐位比较法，如 [2,3,5] 优于 [2,4,5]（第二位 3 &lt; 4）</div>
+  </li>
+  <li><span class="step">3</span><strong>命名取代基</strong>：确定各支链的名称</li>
+  <li><span class="step">4</span><strong>排列</strong>：多个取代基按<strong>先小后大</strong>（中文）或<strong>字母序</strong>（英文）排列</li>
+  <li><span class="step">5</span><strong>写全名</strong>：位次用阿拉伯数字，位次之间用逗号，位次与名称之间用短线</li>
+</ol>
+</div>
+
+<div class="ex">
+<strong>实例</strong>：
+<p>$\text{CH}_3\text{CH(CH}_3\text{)CH}_2\text{CH(C}_2\text{H}_5\text{)CH}_2\text{CH}_3$</p>
+<p>主链：6个碳 → 己烷；取代基：2-位甲基、4-位乙基</p>
+<p>命名：<span class="red">4-乙基-2-甲基己烷</span>（英文字母 E 在 M 前）</p>
+</div>
+
+<div class="fb"><div class="t">复杂取代基命名</div>
+<ul>
+<li>取代基本身有支链时，用<strong>圆括号</strong>括起</li>
+<li>从与主链直接相连的碳开始编号（1' 碳）</li>
+<li>例：$\text{5-(1,1-二甲基丙基)-2-甲基癸烷}$</li>
+</ul>
+</div>
+
+<!-- ==================== 四、环烷烃 ==================== -->
+<h2 id="sec4">四、环烷烃命名</h2>
+
+<h3>单环烷烃</h3>
+<div class="card">
+<ol>
+  <li><strong>无取代基</strong>：直接在烷烃名前加"环"字 → 环丙烷、环丁烷、环戊烷、环己烷</li>
+  <li><strong>仅1个取代基</strong>：无需编号 → 如 甲基环己烷</li>
+  <li><strong>多个取代基</strong>：编号使取代基位次之和最小，按字母序排列</li>
+</ol>
+</div>
+
+<div class="warn">
+<strong>环 vs 链：谁做母体？</strong>
+<ul>
+<li>环碳数 $\geq$ 链碳数 → <strong>环为母体</strong>，链为取代基</li>
+<li>环碳数 $\leq 3$ 且链碳数 &gt; 环碳数 → <strong>链为母体</strong>，环为取代基</li>
+<li>例：丁基环丙烷 → 写成"环丙基丁烷"（链4 &gt; 环3，链做母体）</li>
+</ul>
+</div>
+
+<h3>多环环烷烃的环数判断</h3>
+<div class="fb"><div class="t">公式</div>
+$$\text{环数} = \text{C-C 键数} - \text{碳原子数} + 1$$
+</div>
+
+<!-- ==================== 五、桥环 ==================== -->
+<h2 id="sec5">五、桥环化合物命名</h2>
+
+<div class="fb"><div class="t">桥环命名五条规则</div>
+<ol>
+  <li><span class="step">1</span>"<strong>二环</strong>"作为词头，总碳数定母体名称（如"二环[2.2.1]庚烷"= 7个碳）</li>
+  <li><span class="step">2</span>找<strong>桥头碳</strong>（两环共用的碳）→ 其余为<strong>桥碳</strong></li>
+  <li><span class="step">3</span><strong>编号</strong>：桥头碳开始 → 最长桥 → 次长桥 → 最短桥</li>
+  <li><span class="step">4</span>各桥碳数<strong>由大到小</strong>排列，用圆点分隔，放在<strong>方括号</strong>中</li>
+  <li><span class="step">5</span>有取代基时，位次尽可能小，写在"二环"之前</li>
+</ol>
+</div>
+
+<div class="ex">
+<strong>实例</strong>：
+<ul>
+<li><strong>降冰片烷</strong> = 二环[2.2.1]庚烷（三个桥分别有 2、2、1 个碳）</li>
+<li>7,7-二甲基二环[4.1.0]庚烷</li>
+</ul>
+</div>
+
+<!-- ==================== 六、螺环 ==================== -->
+<h2 id="sec6">六、螺环化合物命名</h2>
+
+<div class="fb"><div class="t">螺环命名四条规则</div>
+<ol>
+  <li><span class="step">1</span>"<strong>螺</strong>"作词头，按总碳数命名（两环共一个<strong>螺原子</strong>）</li>
+  <li><span class="step">2</span><strong>编号</strong>：从较<strong>小</strong>环邻接螺原子的碳开始 → 小环 → 螺原子 → 大环</li>
+  <li><span class="step">3</span>方括号中数字 = 两环<strong>除螺原子外</strong>的碳数，小到大排列</li>
+  <li><span class="step">4</span>有取代基时，位次尽可能小</li>
+</ol>
+</div>
+
+<div class="ex">
+<strong>实例</strong>：
+<ul>
+<li>螺[2.4]庚烷（小环2碳 + 螺原子 + 大环4碳 = 7碳）</li>
+<li>螺[4.5]癸烷（4 + 1 + 5 = 10碳）</li>
+<li>5-甲基螺[3.4]辛烷</li>
+</ul>
+</div>
+
+<!-- ==================== 七、烯烃 ==================== -->
+<h2 id="sec7">七、烯烃命名</h2>
+
+<div class="fb"><div class="t">烯烃系统命名规则</div>
+<ol>
+  <li>选<strong>含 C=C 双键</strong>的最长碳链为主链</li>
+  <li>从<strong>靠近双键</strong>的一端开始编号（双键位次尽可能小）</li>
+  <li>双键位次以编号较小的碳表示，写在"烯"字前面</li>
+  <li>取代基的命名和编号与烷烃相同</li>
+</ol>
+</div>
+
+<div class="ex">
+<strong>实例</strong>：
+<ul>
+<li>$\text{CH}_3\text{CH=CHCH}_2\text{CH}_3$ → <strong>2-戊烯</strong>（pent-2-ene）</li>
+<li>$\text{CH}_2\text{=C(CH}_3\text{)CH}_2\text{CH}_3$ → <strong>2-甲基-1-丁烯</strong></li>
+<li>环己烯：双键碳编为 1,2 位</li>
+</ul>
+</div>
+
+<!-- ==================== 八、炔烃 ==================== -->
+<h2 id="sec8">八、炔烃命名 &amp; 烯炔共存</h2>
+
+<div class="fb"><div class="t">炔烃命名规则</div>
+<ol>
+  <li>选含 $\text{C}\!\equiv\!\text{C}$ <strong>叁键</strong>的最长碳链为主链</li>
+  <li>从<strong>靠近叁键</strong>的一端开始编号</li>
+  <li>叁键位次写在"炔"字前面</li>
+</ol>
+</div>
+
+<div class="warn">
+<strong>烯炔共存时的命名规则</strong>：
+<ol>
+<li>选<strong>同时包含双键和叁键</strong>的最长碳链为母体</li>
+<li>编号使双键和叁键的<strong>位次之和最小</strong></li>
+<li>若位次相同时，<span class="red">双键编号优先</span>（双键位次更小）</li>
+<li>母体名称："X-烯-Y-炔"</li>
+</ol>
+</div>
+
+<div class="ex">
+<strong>实例</strong>：
+<p>$\text{HC}\!\equiv\!\text{C-CH}_2\text{-CH=CH}_2$ → <strong>1-戊烯-4-炔</strong>（pent-1-en-4-yne）</p>
+<p>（双键编号 1，叁键编号 4；若反向编号则为 4-烯-1-炔，位次和相同但双键优先取小号）</p>
+</div>
+
+<!-- ==================== 九、CIP次序规则 ==================== -->
+<h2 id="sec9">九、CIP 次序规则（Cahn-Ingold-Prelog）</h2>
+
+<div class="card">
+<p>CIP次序规则是 <strong>Z/E命名</strong> 和 <strong>R/S构型</strong> 的共同基础，务必熟练掌握。</p>
+</div>
+
+<div class="fb"><div class="t">规则一：原子序数大者优先</div>
+$$\text{I}(53) > \text{Br}(35) > \text{Cl}(17) > \text{S}(16) > \text{O}(8) > \text{N}(7) > \text{C}(6) > \text{H}(1)$$
+<p>同位素按原子质量排列：$\text{D} > \text{H}$，${}^{14}\text{C} > {}^{12}\text{C}$</p>
+</div>
+
+<div class="fb"><div class="t">规则二：逐层外推比较法</div>
+<ul>
+<li>第一层：比较直接与立体中心相连的原子</li>
+<li>若相同 → 比较<strong>第二层</strong>（各原子各自连的原子）</li>
+<li>再相同 → 比较<strong>第三层</strong>……依此类推直到分出高低</li>
+</ul>
+</div>
+
+<div class="fb"><div class="t">规则三：不饱和键的拆分处理</div>
+<table>
+<tr><th>键类型</th><th>处理方式</th></tr>
+<tr><td>$\text{C=C}$</td><td>每个 C 各补一个<strong>虚拟 C</strong> 原子</td></tr>
+<tr><td>$\text{C=O}$</td><td>C 补虚拟 O，O 补虚拟 C</td></tr>
+<tr><td>$\text{C}\!\equiv\!\text{C}$</td><td>每个 C 各补<strong>两个</strong>虚拟 C 原子</td></tr>
+<tr><td>$\text{C}\!\equiv\!\text{N}$</td><td>C 补两个虚拟 N，N 补两个虚拟 C</td></tr>
+</table>
+<p style="margin-top:8px;">虚拟原子不再向外扩展，仅用于该层比较。</p>
+</div>
+
+<div class="ex">
+<strong>常考优先级排序</strong>：
+<ul>
+<li>$-\text{OH} > -\text{NH}_2 > -\text{COOH} > -\text{CHO} > -\text{CH}_2\text{OH} > -\text{C}_6\text{H}_5 > -\text{CH=CH}_2 > -\text{C(CH}_3)_3 > -\text{CH(CH}_3)_2 > -\text{CH}_2\text{CH}_3 > -\text{CH}_3 > -\text{H}$</li>
+<li>卤素：$-\text{I} > -\text{Br} > -\text{Cl} > -\text{F}$</li>
+</ul>
+</div>
+
+<!-- ==================== 十、Z/E ==================== -->
+<h2 id="sec10">十、Z/E 与 cis/trans 命名</h2>
+
+<h3>Z/E 命名法</h3>
+<div class="fb"><div class="t">判断方法</div>
+<ol>
+<li>对双键<strong>每一端</strong>的两个基团，用 CIP 规则分出优先级</li>
+<li>两端的<strong>优先基团</strong>在双键<strong>同侧</strong> → <span class="red">Z</span>（zusammen，德语"一起"）</li>
+<li>两端的<strong>优先基团</strong>在双键<strong>异侧</strong> → <span class="red">E</span>（entgegen，德语"相反"）</li>
+</ol>
+</div>
+
+<h3>cis/trans 命名法（传统）</h3>
+<div class="card">
+<ul>
+<li><strong>cis（顺式）</strong>：两个<strong>相同</strong>基团在双键同侧</li>
+<li><strong>trans（反式）</strong>：两个<strong>相同</strong>基团在双键异侧</li>
+</ul>
+</div>
+
+<div class="warn">
+<strong>Z/E 与 cis/trans 不一定对应！</strong>
+<ul>
+<li>Z/E 按 CIP <strong>优先级</strong>判断（客观唯一）</li>
+<li>cis/trans 按<strong>相同基团</strong>判断（有时不适用）</li>
+<li>当双键两端各有三个或四个不同基团时，<span class="red">只能用 Z/E</span></li>
+</ul>
+</div>
+
+<div class="ex">
+<strong>判断练习</strong>：
+<p>$\text{BrHC=CHI}$ 中，一端 Br>H，另一端 I>H → Br 和 I 同侧 = <strong>Z</strong></p>
+<p>按 cis/trans 无法命名（四个基团全不同），只能用 Z/E。</p>
+</div>
+
+<div class="tip">
+<strong>多个双键时</strong>：每个双键独立判断 Z/E，如 (2E,4Z)-庚二烯
+</div>
+
+<div class="note">
+<strong>不存在顺反异构的条件</strong>：双键某一端的两个基团<strong>相同</strong>时（如 $\text{CH}_2\text{=CHR}$），该分子无顺反异构体。
+</div>
+
+<!-- ==================== 十一、R/S ==================== -->
+<h2 id="sec11">十一、R/S 构型标记</h2>
+
+<div class="fb"><div class="t">R/S 判定三步法</div>
+<ol>
+  <li><span class="step">1</span>按 CIP 次序规则排列手性碳上四个基团的优先级：$a > b > c > d$</li>
+  <li><span class="step">2</span>将<strong>最小基团 $d$</strong>（通常是 H）放到离眼睛<strong>最远处</strong>（纸面后方）</li>
+  <li><span class="step">3</span>从 $a \to b \to c$ 的方向：
+    <ul>
+      <li><span class="red">顺时针 = R</span>（rectus，拉丁语"右"）</li>
+      <li><span class="red">逆时针 = S</span>（sinister，拉丁语"左"）</li>
+    </ul>
+  </li>
+</ol>
+</div>
+
+<div class="warn">
+<strong>d 不在后方时的技巧</strong>：
+<ul>
+<li><strong>方法一</strong>：做两次交换把 d 换到后方（偶数次交换不改变构型）</li>
+<li><strong>方法二</strong>：直接按 $a \to b \to c$ 判断，若 d 在前方则<strong>结果取反</strong>（R↔S）</li>
+</ul>
+</div>
+
+<div class="ex">
+<strong>实例</strong>：
+<ul>
+<li>乳酸 $\text{CH}_3\text{CH(OH)COOH}$：$\text{OH} > \text{COOH} > \text{CH}_3 > \text{H}$</li>
+<li>$\text{H}$ 朝后看，$\text{OH} \to \text{COOH} \to \text{CH}_3$ 逆时针 → <strong>S</strong> 构型</li>
+</ul>
+</div>
+
+<h3>Fischer 投影式判 R/S 技巧</h3>
+<div class="fb"><div class="t">速判法</div>
+<ul>
+<li>H 在<strong>竖线</strong>上（上或下）→ 按 $a \to b \to c$ <strong>直接判</strong></li>
+<li>H 在<strong>横线</strong>上（左或右）→ 按 $a \to b \to c$ 判完后 <strong>取反</strong></li>
+</ul>
+</div>
+
+<!-- ==================== 十二、D/L ==================== -->
+<h2 id="sec12">十二、D/L 构型标记</h2>
+
+<div class="card">
+<p><strong>适用范围</strong>：仅用于<strong>糖类</strong>和<strong>氨基酸</strong>的构型标记。</p>
+</div>
+
+<div class="fb"><div class="t">D/L 判断规则</div>
+<ol>
+<li>写出 Fischer 投影式，碳链<strong>竖直放置</strong></li>
+<li>氧化态最高的碳（$\text{-CHO}$、$\text{-COOH}$）放在<strong>上端</strong></li>
+<li>看<strong>最下方手性碳</strong>上的 $\text{-OH}$（糖）或 $\text{-NH}_2$（氨基酸）：
+  <ul>
+    <li>在<strong>右边</strong> → <span class="red">D 型</span></li>
+    <li>在<strong>左边</strong> → <span class="red">L 型</span></li>
+  </ul>
+</li>
+</ol>
+</div>
+
+<div class="warn">
+<strong>三个"无关"</strong>：
+<ul>
+<li>D/L 与 R/S <strong>无固定对应</strong>关系</li>
+<li>D/L 与 (+)/(-) 旋光方向<strong>无直接关系</strong>（旋光方向需实验测定）</li>
+<li>D 不一定右旋，L 不一定左旋</li>
+</ul>
+</div>
+
+<div class="tip">
+<strong>参考标准</strong>：以 D-(+)-甘油醛为参考。与它最下方手性碳构型相同者为 D 型，相反者为 L 型。
+</div>
+
+<!-- ==================== 十三、Fischer投影式 ==================== -->
+<h2 id="sec13">十三、Fischer 投影式操作规则</h2>
+
+<div class="fb"><div class="t">基本规则：横前竖后</div>
+<ul>
+<li><strong>横线</strong>上的基团朝向观察者（伸出纸面）</li>
+<li><strong>竖线</strong>上的基团远离观察者（伸入纸面）</li>
+</ul>
+</div>
+
+<div class="card">
+<table>
+<tr><th>操作</th><th>结果</th><th>说明</th></tr>
+<tr><td>旋转 $180°$</td><td class="red">同一化合物</td><td>偶数次交换</td></tr>
+<tr><td>固定一个基团，转其余三个</td><td class="red">同一化合物</td><td>等价于空间旋转</td></tr>
+<tr><td>旋转 $90°$</td><td class="red">对映体</td><td>奇数次交换</td></tr>
+<tr><td>交换任意两个基团</td><td class="red">对映体</td><td>一次交换 = 构型翻转</td></tr>
+<tr><td>交换两次</td><td class="red">同一化合物</td><td>两次翻转 = 恢复</td></tr>
+<tr><td>翻面（上下翻转）</td><td class="red">不允许！</td><td>破坏横前竖后规则</td></tr>
+</table>
+</div>
+
+<div class="warn">
+<strong>含多个手性碳的异构体数目</strong>：
+<ul>
+<li>$n$ 个<strong>不同</strong>手性碳 → 最多 $2^n$ 个旋光异构体</li>
+<li>有<strong>相同取代</strong>的手性碳 → 少于 $2^n$ 个（因存在 meso 体）</li>
+<li><strong>meso 化合物</strong>：有手性碳但整体有对称面 → 无旋光性</li>
+</ul>
+</div>
+
+<div class="note">
+<strong>判手性的关键</strong>：
+<ul>
+<li>有<strong>对称面</strong> → 无手性（不论有几个手性碳）</li>
+<li>有<strong>对称中心</strong> → 无手性</li>
+<li>有手性碳 $\neq$ 有手性（meso 化合物的反例）</li>
+<li>无手性碳也可有手性（丙二烯型、联苯轴手性）</li>
+</ul>
+</div>
+
+<!-- ==================== 十四、芳烃 ==================== -->
+<h2 id="sec14">十四、芳烃命名</h2>
+
+<h3>一元取代苯</h3>
+<div class="card">
+<p>简单取代基直接命名：</p>
+<table>
+<tr><th>化合物</th><th>名称</th><th>化合物</th><th>名称</th></tr>
+<tr><td>$\text{C}_6\text{H}_5\text{CH}_3$</td><td>甲苯 (toluene)</td><td>$\text{C}_6\text{H}_5\text{OH}$</td><td>苯酚 (phenol)</td></tr>
+<tr><td>$\text{C}_6\text{H}_5\text{Cl}$</td><td>氯苯</td><td>$\text{C}_6\text{H}_5\text{NH}_2$</td><td>苯胺 (aniline)</td></tr>
+<tr><td>$\text{C}_6\text{H}_5\text{NO}_2$</td><td>硝基苯</td><td>$\text{C}_6\text{H}_5\text{COOH}$</td><td>苯甲酸</td></tr>
+<tr><td>$\text{C}_6\text{H}_5\text{CHO}$</td><td>苯甲醛</td><td>$\text{C}_6\text{H}_5\text{-}$</td><td>苯基 (Ph-)</td></tr>
+</table>
+</div>
+
+<h3>二元取代苯（邻间对）</h3>
+<div class="fb"><div class="t">位置标记</div>
+<table>
+<tr><th>位置关系</th><th>中文</th><th>英文</th><th>缩写</th><th>示例</th></tr>
+<tr><td>1,2-</td><td>邻位</td><td>ortho</td><td><strong>o-</strong></td><td>邻二甲苯 (o-xylene)</td></tr>
+<tr><td>1,3-</td><td>间位</td><td>meta</td><td><strong>m-</strong></td><td>间二甲苯 (m-xylene)</td></tr>
+<tr><td>1,4-</td><td>对位</td><td>para</td><td><strong>p-</strong></td><td>对二甲苯 (p-xylene)</td></tr>
+</table>
+</div>
+
+<h3>多元取代苯</h3>
+<div class="card">
+<ul>
+<li>编号使取代基位次之和<strong>最小</strong></li>
+<li>多个取代基按次序规则排列</li>
+<li>例：2,4,6-三硝基甲苯（TNT）</li>
+</ul>
+</div>
+
+<div class="tip">
+<strong>常用俗名</strong>：
+甲苯(toluene)、二甲苯(xylene)、苯乙烯(styrene)、萘(naphthalene)、蒽(anthracene)、菲(phenanthrene)、苯基(phenyl, Ph-)、苄基(benzyl, Bn-)
+</div>
+
+<!-- ==================== 十五、醇酚醚 ==================== -->
+<h2 id="sec15">十五、醇、酚、醚命名</h2>
+
+<h3>醇的命名</h3>
+<div class="fb"><div class="t">系统命名法</div>
+<ol>
+<li>选含 $\text{-OH}$ 的<strong>最长碳链</strong>为母体</li>
+<li>从离 $\text{-OH}$ <strong>最近</strong>的一端编号</li>
+<li>命名为"X-某醇"</li>
+</ol>
+</div>
+
+<div class="card">
+<table>
+<tr><th>分类</th><th>结构特征</th><th>示例</th></tr>
+<tr><td>伯醇 (1°)</td><td>$\text{RCH}_2\text{OH}$</td><td>1-丁醇</td></tr>
+<tr><td>仲醇 (2°)</td><td>$\text{R}_2\text{CHOH}$</td><td>2-丁醇</td></tr>
+<tr><td>叔醇 (3°)</td><td>$\text{R}_3\text{COH}$</td><td>2-甲基-2-丙醇</td></tr>
+</table>
+</div>
+
+<div class="tip">
+<strong>多元醇</strong>：标出所有 $\text{-OH}$ 位次，如 1,2-乙二醇、1,2,3-丙三醇（甘油）
+</div>
+
+<h3>酚的命名</h3>
+<div class="card">
+<ul>
+<li>以"苯酚"为母体，取代基位次从 $\text{-OH}$ 所在碳（1位）开始编号</li>
+<li>例：2-甲基苯酚（邻甲酚）、2,4,6-三硝基苯酚（苦味酸）</li>
+</ul>
+</div>
+
+<h3>醚的命名</h3>
+<div class="card">
+<ul>
+<li><strong>简单醚</strong>：两个烃基名 + "醚"，小基在前 → 甲乙醚、二乙醚</li>
+<li><strong>复杂醚</strong>：以较大的烃基为母体，$\text{-OR}$ 为烷氧基取代基 → 2-甲氧基丁烷</li>
+<li><strong>环氧化合物</strong>：以"环氧"为前缀 → 1,2-环氧丙烷</li>
+</ul>
+</div>
+
+<!-- ==================== 十六、卤代烃 ==================== -->
+<h2 id="sec16">十六、卤代烃命名</h2>
+
+<div class="fb"><div class="t">系统命名法</div>
+<ol>
+<li>选<strong>最长碳链</strong>为母体</li>
+<li>卤素作为<strong>取代基</strong>（氟、氯、溴、碘），不是官能团</li>
+<li>编号使取代基位次最小</li>
+</ol>
+</div>
+
+<div class="card">
+<table>
+<tr><th>分类</th><th>结构特征</th><th>示例</th></tr>
+<tr><td>伯卤代烃 (1°)</td><td>$\text{RCH}_2\text{X}$</td><td>1-溴丁烷</td></tr>
+<tr><td>仲卤代烃 (2°)</td><td>$\text{R}_2\text{CHX}$</td><td>2-溴丁烷</td></tr>
+<tr><td>叔卤代烃 (3°)</td><td>$\text{R}_3\text{CX}$</td><td>2-溴-2-甲基丙烷</td></tr>
+</table>
+</div>
+
+<div class="tip">
+<strong>常见俗名</strong>：
+氯仿 ($\text{CHCl}_3$)、碘仿 ($\text{CHI}_3$)、四氯化碳 ($\text{CCl}_4$)、氯乙烯 ($\text{CH}_2\text{=CHCl}$)
+</div>
+
+<!-- ==================== 十七、官能团总表 ==================== -->
+<h2 id="sec17">十七、官能团优先次序 &amp; 后缀总表</h2>
+
+<div class="warn">
+<strong>当分子中有多个官能团时</strong>，优先级最高的官能团决定母体名称（后缀），其余作为取代基（前缀）。
+</div>
+
+<div class="fb"><div class="t">官能团优先次序（由高到低）</div>
+<table>
+<tr><th>优先级</th><th>官能团</th><th>结构</th><th>作后缀</th><th>作前缀</th></tr>
+<tr><td>1</td><td>羧酸</td><td>$\text{-COOH}$</td><td>-酸 (-oic acid)</td><td>羧基-</td></tr>
+<tr><td>2</td><td>磺酸</td><td>$\text{-SO}_3\text{H}$</td><td>-磺酸</td><td>磺基-</td></tr>
+<tr><td>3</td><td>酯</td><td>$\text{-COOR}$</td><td>-酸某酯 (-oate)</td><td>烷氧羰基-</td></tr>
+<tr><td>4</td><td>酰卤</td><td>$\text{-COX}$</td><td>-酰卤</td><td>卤代甲酰-</td></tr>
+<tr><td>5</td><td>酰胺</td><td>$\text{-CONH}_2$</td><td>-酰胺 (-amide)</td><td>氨基甲酰-</td></tr>
+<tr><td>6</td><td>醛</td><td>$\text{-CHO}$</td><td>-醛 (-al)</td><td>甲酰基- (formyl-)</td></tr>
+<tr><td>7</td><td>酮</td><td>$\text{-CO-}$</td><td>-酮 (-one)</td><td>氧代- (oxo-)</td></tr>
+<tr><td>8</td><td>醇</td><td>$\text{-OH}$</td><td>-醇 (-ol)</td><td>羟基- (hydroxy-)</td></tr>
+<tr><td>9</td><td>酚</td><td>$\text{Ar-OH}$</td><td>-酚</td><td>羟基-</td></tr>
+<tr><td>10</td><td>胺</td><td>$\text{-NH}_2$</td><td>-胺 (-amine)</td><td>氨基- (amino-)</td></tr>
+<tr><td>11</td><td>醚</td><td>$\text{-O-}$</td><td>—</td><td>烷氧基- (alkoxy-)</td></tr>
+<tr><td>—</td><td>烯</td><td>$\text{C=C}$</td><td>-烯 (-ene)</td><td>—</td></tr>
+<tr><td>—</td><td>炔</td><td>$\text{C}\!\equiv\!\text{C}$</td><td>-炔 (-yne)</td><td>—</td></tr>
+<tr><td>—</td><td>卤素</td><td>$\text{-F, -Cl, -Br, -I}$</td><td>—</td><td>氟/氯/溴/碘-</td></tr>
+<tr><td>—</td><td>硝基</td><td>$\text{-NO}_2$</td><td>—</td><td>硝基-</td></tr>
+</table>
+</div>
+
+<div class="note">
+<strong>记忆技巧</strong>：酸 > 酯 > 醛 > 酮 > 醇 > 胺（<strong>酸脂醛酮醇胺</strong>，由高到低）
+</div>
+
+<div class="ex">
+<strong>综合命名实例</strong>：
+<ul>
+<li>$\text{HOCH}_2\text{CH}_2\text{COOH}$ → 3-羟基丙酸（$\text{-COOH}$ 优先级最高做后缀，$\text{-OH}$ 做前缀"羟基"）</li>
+<li>$\text{CH}_3\text{COCH}_2\text{CHO}$ → 3-氧代丁醛（$\text{-CHO}$ 优先于 $\text{-CO-}$，酮做前缀"氧代"）</li>
+<li>$\text{BrCH}_2\text{CH=CHCOOH}$ → 4-溴-2-丁烯酸（$\text{-COOH}$ 做后缀，Br 做前缀，含双键写为"烯酸"）</li>
+</ul>
+</div>
+
+<p style="text-align:center;color:#aaa;font-size:.8em;margin-top:40px;">
+基于邢其毅《基础有机化学》第四版 | AI辅助整理
+</p>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>
