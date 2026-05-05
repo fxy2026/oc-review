@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'194',right:'194',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
 <style>
 :root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -117,33 +117,42 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <div class="warn"><strong>基团优先级与命名</strong><br>
 含有烯、炔双功能团时，编号使不饱和键位次之和最小；位次相同时，双键优先获得较小编号。</div>
 
-<h3>(5) 亲电取代 — 卤化 $\text{X}_2$ ($\alpha$, $\beta$)</h3>
-<p>催化卤化反应：</p>
-<p>$\text{CH}_3\text{Br} + \text{FeBr}_3 \to \text{CH}_3^+ + \text{FeBr}_4^-$</p>
-<p>$\text{CH}_3^+ + \text{C}_6\text{H}_6 \to \text{甲苯} + \text{HBr}$</p>
-<p>活化顺序（邻对位定位基）：$\text{-OH} > \text{-OR} > \text{-NH}_2 > \text{-CH}_3$</p>
-
-<div class="fb"><div class="t">选择性</div>
-<ul>
-<li>甲基为<strong>邻对位</strong>定位基（给电子基团活化芳环）</li>
-<li>卤素活泼性：$\text{F}_2 > \text{Cl}_2 > \text{Br}_2 > \text{I}_2$</li>
-</ul>
+<h3>(2) 催化加氢（还原反应）</h3>
+<div class="fb"><div class="t">三条路径</div>
+<table>
+<tr><th>试剂/条件</th><th>产物</th><th>立体化学</th></tr>
+<tr><td>$\text{H}_2/\text{Pt}$（完全加氢）</td><td>烷烃 $\text{-CH}_2\text{CH}_2\text{-}$</td><td>—</td></tr>
+<tr><td>Lindlar 催化剂（$\text{Pd/CaCO}_3$, 喹啉毒化）</td><td><strong>顺式</strong>烯烃</td><td>syn 加成</td></tr>
+<tr><td>$\text{Na/NH}_3(\text{l})$（Birch 还原）</td><td><strong>反式</strong>烯烃</td><td>anti 加成</td></tr>
+</table>
 </div>
+<div class="warn"><strong>必考</strong>：Lindlar → 顺式；$\text{Na/NH}_3(\text{l})$ → 反式。</div>
 
+<h3>(3) 亲电加成</h3>
+<h4>(a) 卤素加成 $\text{X}_2$</h4>
+<p>$\text{R-C}\equiv\text{C-H} + \text{X}_2 \to \text{R-CX=CHX}$（反式加成，1 mol $\text{X}_2$）</p>
+<p>$\text{R-CX=CHX} + \text{X}_2 \to \text{R-CX}_2\text{-CHX}_2$（四卤代物，2 mol $\text{X}_2$）</p>
 <div class="note">
-<strong>注意</strong>：$\text{C}(sp)$ 电负性 > $\text{C}(sp^2)$，含炔基的碳吸电子。<br>
-中间体碳正离子可能发生重排（1,2-H 迁移或 1,2-甲基迁移），但在芳环上不发生。
+<strong>注意</strong>：$\text{C}(sp)$ 电负性 > $\text{C}(sp^2)$，炔烃的 $\pi$ 电子被束缚更紧，<strong>亲电加成活性低于烯烃</strong>。<br>
+因此炔烃可以控制只加一分子 $\text{X}_2$ 停在烯烃阶段。
 </div>
 
-<h3>(6) 加 HX (HCl, HBr, HI)</h3>
-<p><strong>硝化反应</strong>：</p>
-<p>$\text{ArH} + \text{HNO}_3 \xrightarrow{\text{H}_2\text{SO}_4} \text{Ar-NO}_2 + \text{H}_2\text{O}$</p>
-<p>亲电试剂：$\text{NO}_2^+$（硝基正离子），由混酸产生：</p>
-<p>$\text{HNO}_3 + 2\text{H}_2\text{SO}_4 \to \text{NO}_2^+ + \text{H}_3\text{O}^+ + 2\text{HSO}_4^-$</p>
+<h4>(b) 加 HX (HCl, HBr, HI)</h4>
+<p>$\text{R-C}\equiv\text{CH} + \text{HX} \to \text{R-CX=CH}_2$（遵循<strong>马氏规则</strong>，X 加到含取代基多的碳上）</p>
+<p>$\text{R-CX=CH}_2 + \text{HX} \to \text{R-CX}_2\text{-CH}_3$（<strong>gem-二卤代物</strong>，两分子 HX）</p>
 <div class="warn" style="border-left-color:#c0392b;"><strong style="color:#c0392b;">重要概念区分</strong><br>
 <strong>Geminal</strong>（gem-，同碳）二卤代物：两个卤素在同一碳上<br>
-<strong>Vicinal</strong>（vic-，邻碳）二卤代物：两个卤素在相邻碳上<br><br>
-<strong>注</strong>：二卤化物的命名（CHEM）中这两个前缀需要牢记区分。三级碳正离子比二级稳定，可影响加成区域选择性。</div>
+<strong>Vicinal</strong>（vic-，邻碳）二卤代物：两个卤素在相邻碳上</div>
+
+<h4>(c) 加 $\text{H}_2\text{O}$ — 水合反应</h4>
+<p>$\text{R-C}\equiv\text{CH} + \text{H}_2\text{O} \xrightarrow{\text{HgSO}_4/\text{H}_2\text{SO}_4} [\text{烯醇}] \xrightarrow{\text{互变}} \text{R-CO-CH}_3$（酮）</p>
+<p>马氏加成 → <strong>烯醇中间体</strong> → <strong>酮式-烯醇式互变异构</strong>（Keto-Enol Tautomerism）</p>
+<p>乙炔水合得到<strong>乙醛</strong>（唯一例外：$\text{CH}\equiv\text{CH} \to \text{CH}_3\text{CHO}$）；其他端炔水合得到<strong>甲基酮</strong>。</p>
+<div class="tip"><strong>反马氏水合 — 硼氢化-氧化</strong>：<br>
+$\text{R-C}\equiv\text{CH} \xrightarrow{\text{1) (sia)}_2\text{BH}} \xrightarrow{\text{2) H}_2\text{O}_2/\text{NaOH}} \text{R-CH}_2\text{-CHO}$（<strong>醛</strong>）<br>
+两种方法互补：$\text{HgSO}_4$ 水合 → 酮；硼氢化 → 醛。</div>
+
+<div class="note"><strong>注</strong>：一卤乙烯经历 $\alpha$-消除可生成<strong>卡宾</strong>（carbene）中间体；二卤化物在碱作用下也可消除生成炔烃（逆反应路径）。</div>
 
 </div>
 </div>
@@ -154,9 +163,9 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <img src="_img_summary/p9.png" class="page-img" alt="第9页手写原稿">
 <div class="card">
 
-<h2>(5) 催化还原 / 氧化反应（续）</h2>
+<h2>(4) 亲核加成与金属炔化物</h2>
 
-<h3>催化加氢</h3>
+<h3>催化加氢（补充表格）</h3>
 <table>
 <tr><th>试剂/条件</th><th>产物</th><th>立体化学</th></tr>
 <tr><td>$\text{H}_2/\text{Pt}$（完全加氢）</td><td>烷烃</td><td>顺式加成</td></tr>
@@ -275,6 +284,11 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p>用 $\text{Cu}^{2+}$ 盐直接进行，无需先制备炔化铜。</p>
 </div>
 
+<div class="fb"><div class="t">Cadiot-Chodkiewicz 交叉偶联</div>
+<p>$\text{RC}\equiv\text{CH} \xrightarrow{\text{R'MgX}} \text{RC}\equiv\text{CMgX} \xrightarrow[\text{Cu(NH}_3)_2\text{Cl 催化}]{\text{R''X}} \text{RC}\equiv\text{CR''}$</p>
+<p>通过格氏试剂路线和 $\text{Cu(I)}$ 催化实现<strong>交叉偶联</strong>，可用于合成<strong>不对称二炔</strong>或内炔。</p>
+</div>
+
 <h3>乙炔的工业来源（电石法）</h3>
 <p>$\text{CaO} + 3\text{C} \xrightarrow{\text{电弧}} \text{CaC}_2 + \text{CO}$</p>
 <p>$\text{CaC}_2 + 2\text{H}_2\text{O} \to \text{Ca(OH)}_2 + \text{CH}\equiv\text{CH}\uparrow$</p>
@@ -284,6 +298,12 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p><strong>酰化</strong>：$\text{RC}\equiv\text{CH} \xrightarrow[\text{(1) BuLi}]{\text{(2) R'COCl}} \text{R'C(=O)-C}\equiv\text{CR}$（炔基酮）</p>
 <p><strong>烷基化</strong>：$\text{RC}\equiv\text{CMgBr} + \text{R'X} \to \text{RC}\equiv\text{CR'} + \text{MgBrX}$</p>
 <p>利用格氏试剂进行 $\text{S}_\text{N}2$ 碳碳键形成。注意只适用于<strong>伯卤代烃</strong>。</p>
+
+<h3>HCN 加成（氰化反应）</h3>
+<div class="fb"><div class="t">氰基加成</div>
+<p>$\text{HC}\equiv\text{CH} + \text{HCN} \xrightarrow{\text{CuCl}} \text{CH}_2\text{=CH-CN}$（<strong>丙烯腈</strong>）</p>
+<p>工业上重要反应，丙烯腈是合成丁腈橡胶和腈纶的单体。</p>
+</div>
 
 <h2>共轭二烯烃</h2>
 
@@ -433,6 +453,11 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p>$\text{R-C}\equiv\text{CH} + \text{ROH} \xrightarrow{\text{NaOR}} \text{R-C(=CH}_2\text{)-OR}$（乙烯基醚）</p>
 </div>
 
+<div class="fb"><div class="t">RCOOH 加成</div>
+<p>$\text{HC}\equiv\text{CH} + \text{CH}_3\text{COOH} \xrightarrow{\text{Hg}^{2+}} \text{CH}_2\text{=CH-OOCCH}_3$（醋酸乙烯酯）</p>
+<p>用于合成<strong>聚醋酸乙烯酯</strong>（PVAc）。</p>
+</div>
+
 <!-- 右半页 -->
 
 <h3>(5) 亲核取代（碳链增长）</h3>
@@ -465,8 +490,18 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <div class="warn"><strong>安全</strong>：干燥的金属炔化物<strong>受撞击或加热会爆炸</strong>！实验后须用稀 $\text{HNO}_3$ 分解。</div>
 
 <h3>6) 氧化</h3>
+<p><strong>高锰酸钾氧化</strong>：</p>
 <p>$\text{R-C}\equiv\text{CH} \xrightarrow{\text{KMnO}_4} \text{RCOOH} + \text{CO}_2\uparrow$</p>
 <p>$\text{R-C}\equiv\text{C-R'} \xrightarrow{\text{KMnO}_4} \text{RCOOH} + \text{R'COOH}$</p>
+<p><strong>臭氧化</strong>：</p>
+<p>$\text{R-C}\equiv\text{C-R'} \xrightarrow{\text{1) O}_3} \xrightarrow{\text{2) H}_2\text{O}} \text{RCOOH} + \text{R'COOH}$</p>
+<p>末端炔氧化产生 $\text{CO}_2$（而非甲酸）；可用于<strong>确定三键位置</strong>。</p>
+
+<h3>7) 偶联反应</h3>
+<div class="fb"><div class="t">氧化偶联</div>
+<p><strong>Glaser</strong>：$2\ \text{RC}\equiv\text{CCu} \xrightarrow{\text{O}_2} \text{RC}\equiv\text{C-C}\equiv\text{CR}$</p>
+<p><strong>Eglinton</strong>：$2\ \text{RC}\equiv\text{CH} \xrightarrow{\text{Cu(OAc)}_2} \text{RC}\equiv\text{C-C}\equiv\text{CR}$</p>
+</div>
 
 <h2>二烯烃总结</h2>
 
@@ -529,6 +564,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li><strong>1,2-加成</strong>（动力学控制）</li>
 <li><strong>1,4-加成</strong>（热力学控制）</li>
 <li><strong>D-A 反应</strong>（[4+2] 环加成，快速记忆）</li>
+<li><strong>聚合反应</strong>（1,4-加成聚合为主，如顺丁橡胶、天然橡胶、氯丁橡胶）</li>
 </ul>
 
 <!-- 右半页 -->
@@ -580,77 +616,21 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p>末端炔 → 羧酸 + $\text{CO}_2$；内炔 → 两分子羧酸。可用于<strong>确定三键位置</strong>。</p>
 </div>
 
-<div class="fb"><div class="t">5) 金属炔化物 / 取代</div>
-<p>$\text{RC}\equiv\text{CH} \xrightarrow{\text{NaNH}_2} \text{RC}\equiv\text{CNa} \xrightarrow{\text{R'X}} \text{RC}\equiv\text{CR'}$（亲核取代，碳链增长）</p>
-<p>$\text{RCOH} \xrightarrow{[\text{Ag(NH}_3)_2]^+} \text{RC}\equiv\text{CAg}\downarrow$（鉴别末端炔）</p>
-<p>$[\text{Cu(NH}_3)_2\text{Cl}]$：$\text{RC}\equiv\text{CH} \to \text{RC}\equiv\text{CCu}\downarrow$（红棕色，鉴别末端炔）</p>
+<div class="fb"><div class="t">5) 偶联反应</div>
+<p><strong>Glaser 偶联</strong>：$2\ \text{RC}\equiv\text{CCu} \xrightarrow{\text{O}_2,\ \text{吡啶}} \text{RC}\equiv\text{C-C}\equiv\text{CR}$（氧化偶联，同种偶联）</p>
+<p><strong>Eglinton 偶联</strong>：$2\ \text{RC}\equiv\text{CH} \xrightarrow{\text{Cu(OAc)}_2} \text{RC}\equiv\text{C-C}\equiv\text{CR}$</p>
+<p><strong>Cadiot-Chodkiewicz 交叉偶联</strong>：$\text{RC}\equiv\text{CMgX} \xrightarrow[\text{Cu(I) 催化}]{\text{R'X}} \text{RC}\equiv\text{CR'}$</p>
 </div>
 
 <div class="tip"><strong>炔烃化学性质总结</strong>：<br>
-(1) 亲电加成活性：<strong>炔烃 < 烯烃</strong>（三键的 $\pi$ 电子被束缚更紧，不易给出电子）<br>
-(2) 亲核加成活性：<strong>炔烃 > 烯烃</strong>（sp 碳电负性大）<br>
+(1) 亲电加成活性：<strong>炔烃 &lt; 烯烃</strong>（三键的 $\pi$ 电子被束缚更紧，不易给出电子）<br>
+(2) 亲核加成活性：<strong>炔烃 &gt; 烯烃</strong>（sp 碳电负性大）<br>
 (3) 末端炔的 C-H 有酸性（$\text{p}K_a \approx 25$），可与 $\text{NaNH}_2$ 等强碱反应<br>
-(4) 末端炔可被银氨、铜氨试剂检验（形成不溶性金属炔化物沉淀）</div>
+(4) 末端炔可被银氨、铜氨试剂检验（形成不溶性金属炔化物沉淀）<br>
+(5) 偶联反应可形成共轭二炔或不对称炔烃（Glaser / Eglinton / Cadiot-Chodkiewicz）</div>
 
 </div>
 </div>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>手写笔记电子化 p13-p18 | 有机化学复习</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
-<style>
-:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
-h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
-h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
-h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
-h4{color:#2c3e50;font-size:1.05em;margin:15px 0 8px;font-weight:bold;}
-.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
-.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
-.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
-.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
-.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
-.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
-.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-table{width:100%;border-collapse:collapse;margin:12px 0;}
-th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
-th{background:var(--pri);color:#fff;}
-tr:nth-child(even){background:#f0f7f0;}
-details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
-ul,ol{margin-left:20px;margin-bottom:8px;}
-.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
-.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
-.nav-bar a:hover{background:var(--pri);color:#fff;}
-.page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
-.page-label{display:inline-block;background:var(--pri);color:#fff;padding:2px 10px;border-radius:4px;font-size:.85em;margin:10px 0 4px;}
-.rxn{font-family:'Courier New',monospace;background:#f8f8f8;padding:8px 14px;border-radius:5px;margin:6px 0;display:block;overflow-x:auto;white-space:nowrap;}
-.red{color:#c0392b;font-weight:bold;}
-.blue{color:#2471a3;font-weight:bold;}
-.green{color:#27ae60;font-weight:bold;}
-</style>
-</head>
-<body>
-<div class="nav-bar">
-<a href="index.html">&#x1F4DA; 目录</a>
-<a href="#p13">p13</a><a href="#p14">p14</a><a href="#p15">p15</a><a href="#p16">p16</a><a href="#p17">p17</a><a href="#p18">p18</a>
-</div>
-
-<h1>第五章 芳烃 (手写笔记 p13-p18)</h1>
-
-<!-- ===================== 第13页 ===================== -->
 
 </body>
 </html>

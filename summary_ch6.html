@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'194',right:'194',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
 <style>
 :root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -56,7 +56,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <h3>概念</h3>
 <div class="card">
 <p><strong>手性</strong>：物质的<strong>实体与镜像</strong>不能完全重叠的性质。[<em>相当于左手和右手的关系</em>]</p>
-<p><strong>方向性与条件</strong>：①<span class="red">没有</span>对称面、对称中心、$S_4$交替轴 → 才有手性</p>
+<p><strong>方向性与条件</strong>：①<span class="red">没有</span>对称面、对称中心、$S_4$ 交替轴 → 才有手性；②要有<strong>不对称碳</strong>（$C^*$），即连有4个不同基团的碳</p>
 </div>
 
 <h3>R/S 构型</h3>
@@ -115,8 +115,8 @@ $$ee\% = \frac{[\alpha]_{\text{obs}}}{[\alpha]_{\max}} \times 100\%$$
 <ul>
 <li>①投影后为"十"字，手性碳C在交叉点</li>
 <li>②竖直方向固定（碳链纵向），最高氧化态碳在上方</li>
-<li>③旋转 $180°$ 后，<strong>构型不变</strong>；旋转 $90°$ 后，<strong>构型改变</strong></li>
-<li>④不能离开纸面翻转（翻转 = 构型改变），<span class="red">不能随意交换</span>两个基团的位置</li>
+<li>③旋转 $180°$ 后，<strong>构型不变</strong>（同一化合物）；旋转 $90°$ 后，<strong>构型改变</strong>（变为对映体）</li>
+<li>④不能离开纸面翻转（翻转 = 构型改变），<span class="red">不能随意交换</span>两个基团的位置；交换<strong>奇数次</strong> → 变为对映体；交换<strong>偶数次</strong> → 同一化合物</li>
 </ul>
 </div>
 
@@ -152,8 +152,9 @@ $$[\alpha]_D^{t} = \frac{\alpha}{l \cdot c}$$
 </ul>
 </div>
 
-<p>D-甘油醛（$-\text{OH}$ 在右）&nbsp;&nbsp;→&nbsp;&nbsp; L-甘油醛（$-\text{OH}$ 在左）</p>
-<p>D-丙氨酸 &nbsp;&nbsp;&nbsp; L-丙氨酸 &nbsp;&nbsp;&nbsp; D-(-)-甘油醛 &nbsp;&nbsp;&nbsp; L-(+)-甘油醛</p>
+<p>D-甘油醛（Fischer投影式中 $-\text{OH}$ 在右）&nbsp;&nbsp;→&nbsp;&nbsp; L-甘油醛（$-\text{OH}$ 在左）</p>
+<p>D-(+)-甘油醛 &nbsp;&nbsp;&nbsp; L-(-)-甘油醛 &nbsp;&nbsp;&nbsp; D-丙氨酸 &nbsp;&nbsp;&nbsp; L-丙氨酸</p>
+<p>人为规定 D-甘油醛为 (+) 右旋；实验测定旋光方向。</p>
 
 <div class="warn">
 D, L 表示构型，(+) 为右旋，(-) 为左旋。<strong>D 不一定是右旋，L 不一定是左旋。</strong>需由实验测定旋光方向。
@@ -170,12 +171,15 @@ D, L 表示构型，(+) 为右旋，(-) 为左旋。<strong>D 不一定是右旋
 </table>
 
 <h4>概念</h4>
+<table>
+<tr><th>对比项</th><th>对映体 vs 非对映体</th><th>内消旋 vs 外消旋</th></tr>
+<tr><td>定义</td><td>对映体：互为镜像的立体异构体<br>非对映体：非镜像关系的立体异构体</td><td>内消旋：分子内对称，整体无旋光性<br>外消旋：等量对映体混合物</td></tr>
+<tr><td>性质差异</td><td>对映体：物理性质相同（除旋光方向）<br>非对映体：物理性质不同</td><td>内消旋：纯物质，无法拆分<br>外消旋：混合物，可拆分</td></tr>
+<tr><td>旋光性</td><td>对映体：旋光度等值反号<br>非对映体：旋光度各不相同</td><td>两者旋光度均 = 0</td></tr>
+</table>
 <ul>
-<li><strong>对映体</strong> vs <strong>非对映体</strong></li>
-<li><strong>内消旋体</strong> vs <strong>外消旋体</strong></li>
-<li>内消旋：<strong>分子内</strong>有对称面/对称中心，虽有手性碳但分子整体无旋光性</li>
-<li>外消旋：<strong>两个对映体</strong>等量混合，旋光性相互抵消，净旋光度 = 0</li>
 <li>左旋体对映体 → 右旋体对映体（配对关系），右旋体 + 左旋体 = 外消旋体</li>
+<li><strong>两对相似取代基</strong>在同侧 → 赤式(erythro)，异侧 → 苏式(threo)；<strong>两者都是非对映体关系</strong></li>
 </ul>
 
 <div class="fb">
@@ -220,7 +224,6 @@ D, L 表示构型，(+) 为右旋，(-) 为左旋。<strong>D 不一定是右旋
 </div>
 </div>
 
-<!-- ======================== 第22页 ======================== -->
 
 </body>
 </html>

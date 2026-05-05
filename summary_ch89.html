@@ -6,8 +6,9 @@
 <title>第8-9章 醇酚醚 梳理 | 有机化学复习</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/mhchem.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'194',right:'194',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
 <style>
 :root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -35,6 +36,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar a:hover{background:var(--pri);color:#fff;}
 .page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
 .page-label{display:inline-block;background:var(--pri);color:#fff;padding:4px 14px;border-radius:4px;font-weight:bold;font-size:1.1em;margin-bottom:10px;}
+.rxn{font-family:'Courier New',monospace;background:#f8f8f8;padding:8px 14px;border-radius:5px;margin:6px 0;display:block;overflow-x:auto;white-space:nowrap;}
 </style>
 <link rel="stylesheet" href="toc.css">
 </head>
@@ -51,7 +53,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <img src="_img_summary/p31.png" class="page-img" alt="第31页手写原稿">
 <div class="card">
 
-<h2>第九章：醇、酮、醛、酯</h2>
+<h2>第九章：醇、酚、醚</h2>
 
 <h3>(1) 结构</h3>
 <div class="fb"><div class="t">醇的结构</div>
@@ -128,6 +130,27 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p>$pK_a$：$\ce{H2O}$ 15.7 &nbsp; $\ce{ROH}$ 16~18 &nbsp; $\ce{HC#CH}$ 25 &nbsp; $\ce{NH3}$ ~35</p>
 </div>
 
+<h3>醇的制备方法</h3>
+<div class="fb"><div class="t">醇的制备方法总结</div>
+<table>
+<tr><th>方法</th><th>反应</th><th>说明</th></tr>
+<tr><td>卤代烃水解</td><td>$\ce{RX + NaOH(aq) -> ROH + NaX}$</td><td>SN2 为主（伯卤代烃）</td></tr>
+<tr><td>Grignard 试剂 + 甲醛</td><td>$\ce{RMgX + HCHO ->[\ce{H3O+}] RCH2OH}$</td><td>得到伯醇</td></tr>
+<tr><td>Grignard 试剂 + 醛</td><td>$\ce{RMgX + R'CHO ->[\ce{H3O+}] RR'CHOH}$</td><td>得到仲醇</td></tr>
+<tr><td>Grignard 试剂 + 酮</td><td>$\ce{RMgX + R'COR'' ->[\ce{H3O+}] RR'R''COH}$</td><td>得到叔醇</td></tr>
+<tr><td>Grignard 试剂 + 环氧乙烷</td><td>$\ce{RMgX + 环氧乙烷 ->[\ce{H3O+}] RCH2CH2OH}$</td><td>增加两个碳的伯醇</td></tr>
+<tr><td>醛酮还原</td><td>$\ce{RCHO ->[\ce{NaBH4}] RCH2OH}$</td><td>NaBH<sub>4</sub> 或 LiAlH<sub>4</sub></td></tr>
+<tr><td>烯烃水合</td><td>$\ce{RCH=CH2 ->[\ce{H2O/H+}] RCH(OH)CH3}$</td><td>Markovnikov 加成</td></tr>
+<tr><td>硼氢化-氧化</td><td>$\ce{RCH=CH2 ->[\ce{BH3}][\ce{H2O2/OH-}] RCH2CH2OH}$</td><td>anti-Markovnikov 加成</td></tr>
+</table>
+</div>
+
+<h3>脱羧顺序</h3>
+<div class="card">
+<p>醇与 Na 反应放出 H<sub>2</sub> 的速度：<strong>甲醇 &gt; 伯醇 &gt; 仲醇 &gt; 叔醇</strong></p>
+<p>可用于鉴别不同级别的醇（与 Lucas 试验互补）。</p>
+</div>
+
 </div>
 </div>
 
@@ -185,7 +208,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <p>$\ce{ROH + ZnCl2 -> R-O-ZnCl + HCl}$</p>
 <p>$\ce{ZnCl2}$ 作为 Lewis 酸配合醇的氧，使其成为更好的离去基团。</p>
 <p>活性差别取决于碳正离子稳定性：$3° > 2° > 1°$</p>
-<p>地位及适用性：<span style="color:#c0392b;">C &le; 6 的可溶醇</span>，$5° > 2° > 1°$（反应速度排列），烯丙醇和苄醇速度与叔醇相当。</p>
+<p>适用性：<span style="color:#c0392b;">C &le; 6 的可溶醇</span>，反应速度：$3° > 2° > 1°$；烯丙醇和苄醇速度与叔醇相当（碳正离子被共轭稳定化）。</p>
 </div>
 
 <h3>PX<sub>3</sub> 与 ROH 反应</h3>
@@ -275,7 +298,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 
 <h3>3. 酯化反应</h3>
 <div class="fb"><div class="t">酯化反应 (Fischer 酯化)</div>
-<p class="rxn">$\ce{RCOOH + R'OH <=>[\ce{H+}][\Delta] RCOOR' + H2O}$</p>
+<p class="rxn">$\text{RCOOH} + \text{R'OH} \underset{\Delta}{\overset{\text{H}^+}{\rightleftharpoons}} \text{RCOOR'} + \text{H}_2\text{O}$</p>
 <p>1&deg; 醇：酰氧键断裂（<strong>醇的 O&minus;H 断裂</strong>，酸的 C&minus;OH 断裂）</p>
 <p>3&deg; 醇：烷氧键断裂（<strong>醇的 C&minus;O 断裂</strong>）</p>
 <p>可逆反应，需移除水或过量一种反应物以推动平衡。</p>
@@ -423,7 +446,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 
 <h3>1. 酸性</h3>
 <div class="fb"><div class="t">酚的酸性</div>
-<p class="rxn">$\ce{Ar-OH <=> Ar-O^- + H+}$</p>
+<p class="rxn">$\ce{Ar-OH} \rightleftharpoons \ce{Ar-O^-} + \ce{H+}$</p>
 <p>酚的酸性比碳酸弱但比醇强（酚氧负离子与苯环共轭稳定化）。</p>
 <p><strong>影响酸性的因素</strong>：</p>
 <ul>
@@ -436,7 +459,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <div class="warn"><strong>酸性强弱比较</strong>：
 <p>$\ce{PhOH + CH3O^- -> PhO^- + CH3OH}$ &check;（酚酸性 &gt; 醇酸性）</p>
 <p>$\ce{PhOH + HCO3^- -> PhO^- + CO2 ^ + H2O}$ &cross;（酚酸性 &lt; 碳酸 $\ce{H2CO3}$）</p>
-<p>$\ce{PhCOOH + HCO3^- -> PhCOO^- + CO2 + H2O}$ &cross;（这里 PhCOOH 是苯甲酸不是酚）</p>
+<p>$\ce{PhCOOH + HCO3^- -> PhCOO^- + CO2 ^ + H2O}$ &check;（苯甲酸酸性 &gt; 碳酸，可以反应）</p>
 <p style="color:#c0392b;">即酚能与 NaOH 反应，但不能与 NaHCO<sub>3</sub> 反应 → 可借此区分酚和羧酸。</p>
 </div>
 
@@ -567,51 +590,6 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 
 </div>
 </div>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>手写笔记 p37-42 | 有机化学复习</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
-<style>
-:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
-h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
-h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
-h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
-h4{color:#2c3e50;font-size:1.05em;margin:15px 0 8px;font-weight:bold;}
-.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
-.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
-.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
-.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
-.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
-.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
-.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-table{width:100%;border-collapse:collapse;margin:12px 0;}
-th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
-th{background:var(--pri);color:#fff;}
-tr:nth-child(even){background:#f0f7f0;}
-details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
-ul,ol{margin-left:20px;margin-bottom:8px;}
-.page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
-.page-label{display:inline-block;background:var(--pri);color:#fff;padding:2px 10px;border-radius:4px;font-size:.85em;margin:10px 0 4px;}
-.rxn{font-family:'Courier New',monospace;background:#f8f8f8;padding:8px 14px;border-radius:5px;margin:6px 0;display:block;overflow-x:auto;white-space:nowrap;}
-</style>
-</head>
-<body>
-
-<h1>手写笔记 第37-42页 电子化</h1>
 
 <!-- ==================== 第37页 ==================== -->
 <div style="margin:30px 0;">
@@ -1052,7 +1030,13 @@ $$\text{酮} \xrightarrow{mCPBA} \text{酯}$$
 $$R\text{-}CO\text{-}R' \xrightarrow{mCPBA} R\text{-}COO\text{-}R' \quad (\text{或} R'\text{-}COO\text{-}R)$$
 </div>
 
-<div class="tip"><strong>醇到醛的选择性氧化试剂</strong>：$RCH_2OH \xrightarrow{PCC 或 Swern} RCHO$（不会过度氧化到羧酸）。</div>
+<div class="tip"><strong>醇到醛的选择性氧化试剂</strong>：$RCH_2OH \xrightarrow{PCC \text{ 或 } Swern} RCHO$（不会过度氧化到羧酸）。</div>
+
+<div class="fb"><div class="t">选择性还原试剂补充</div>
+<p><strong>$\ce{LiAl(O-tBu)3H}$</strong>（三叔丁氧基锂铝氢）：温和还原剂，可将酰氯选择性还原为醛，不继续还原到醇。</p>
+<p class="rxn">$\ce{RCOCl ->[\ce{LiAl(O-tBu)3H}] RCHO}$</p>
+<p><strong>MPV 还原</strong>（Meerwein-Ponndorf-Verley）：$\ce{Al(O-iPr)3}$ + 异丙醇，将酮还原为醇（Oppenauer 氧化的逆反应）。</p>
+</div>
 
 </div>
 </div>
@@ -1068,8 +1052,9 @@ $$R\text{-}CO\text{-}R' \xrightarrow{mCPBA} R\text{-}COO\text{-}R' \quad (\text{
 <h3>(1) 酸性（比较）</h3>
 <div class="fb"><div class="t">酚的酸性</div>
 <p>酚的酸性比醇强，但比碳酸弱：</p>
-$$PhOH + Na_2CO_3 \longrightarrow NaOH + PhONa$$
-<p>即酚可以与 $Na_2CO_3$（碳酸钠）反应，但<strong>不能</strong>与 $NaHCO_3$ 反应。（注意：酚不能使石蕊变色。）</p>
+$$PhOH + Na_2CO_3 \longrightarrow PhONa + NaHCO_3$$
+<p>酚可以与 $\ce{NaOH}$ 和 $\ce{Na2CO3}$ 反应，但<strong>不能</strong>与 $\ce{NaHCO3}$ 反应（酚酸性 &lt; 碳酸）。</p>
+<p style="color:#c0392b;">利用此性质可区分酚与羧酸：羧酸能与 NaHCO<sub>3</sub> 反应放出 CO<sub>2</sub>，酚不能。</p>
 </div>
 
 <h3>(2) FeCl<sub>3</sub> 显色</h3>
@@ -1133,16 +1118,19 @@ $$\text{PhOH} \xrightarrow{[O]} \text{对苯醌} \quad (p\text{-benzoquinone})$$
 <p>这就是酚在空气中变色发黑的原因。</p>
 </div>
 
-<h3>(5) 酯化（酚入酰氯反应）</h3>
+<h3>(5) 酯化与烷基化</h3>
 <div class="fb"><div class="t">酚的酯化</div>
-<p>酚 + 酰氯（或酸酐）：</p>
-$$PhOH + R\text{-}CH\!=\!CH_2 \xrightarrow{酸催化} PhO\text{-}CHR\text{-}CH_3 \quad (C^0\text{烷基化为主})$$
-<p>酚 + 酰氯：</p>
+<p>酚 + 酰氯（或酸酐）→ 酚酯：</p>
 $$PhOH + RCOCl \longrightarrow PhOCOR + HCl$$
-<p>Fries 重排：酚酯在 $AlCl_3$ 催化下重排为羟基芳酮：</p>
+
+<p><strong>酚与烯烃</strong>（酸催化）：</p>
+$$PhOH + R\text{-}CH\!=\!CH_2 \xrightarrow{\text{酸催化}} \text{烷基酚}$$
+<p style="color:#c0392b;">酚与烯烃反应以 <strong>C-烷基化</strong>（芳环上取代）为主，而非 O-烷基化。</p>
+
+<p><strong>Fries 重排</strong>：酚酯在 $AlCl_3$ 催化下重排为羟基芳酮：</p>
 <ul>
-<li>低温 &rarr; 对位产物</li>
-<li>高温 &rarr; 邻位产物</li>
+<li>低温 &rarr; <strong>对位</strong>产物为主</li>
+<li>高温 &rarr; <strong>邻位</strong>产物为主</li>
 </ul>
 </div>
 
@@ -1193,7 +1181,7 @@ $$2\;R\text{-}OH \xrightarrow{H_2SO_4} R\text{-}O\text{-}R + H_2O$$
 <p>适用于<strong>伯醇制对称醚</strong>（仅限 $1°$ 醇，$2°/3°$ 醇易消除）。</p>
 
 <p><strong>b) Williamson 合成</strong>：</p>
-$$R\text{-}OM \xrightarrow{\Delta} R\text{-}O\text{-}R' \quad [\text{回扣}]$$
+$$RX + NaOR' \longrightarrow ROR' + NaX \quad (\text{S}_\text{N}\text{2})$$
 </div>
 
 <div class="fb"><div class="t">制备方法</div>
@@ -1237,8 +1225,8 @@ $$\text{1,5-己二烯} \xrightarrow{\Delta} \text{异构化的1,5-己二烯}$$
 
 <h3>Williamson 合成补充</h3>
 <div class="fb"><div class="t">Williamson 合成中的 S<sub>N</sub>2 vs E2</div>
-$$R\text{-}OM \xrightarrow{\Delta / RX} R\text{-}O\text{-}R' \quad [\text{回扣}]$$
 $$RX + NaOR' \longrightarrow ROR' + NaX$$
+<p>卤代烃与醇钠的 S<sub>N</sub>2 反应，伯卤代烃最佳。</p>
 </div>
 
 <div class="warn"><strong>S<sub>N</sub>2 兼有 S<sub>N</sub>1 的投射</strong>：<br>
@@ -1251,11 +1239,6 @@ $$RX + NaOR' \longrightarrow ROR' + NaX$$
 
 </div>
 </div>
-
-</body>
-</html>
-
-
 
 </body>
 </html>

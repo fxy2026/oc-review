@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'194',right:'194',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
 <style>
 :root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -76,6 +76,20 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 </table>
 </div>
 
+<div class="fb"><div class="t">表示方式</div>
+<ul>
+  <li><strong>显示氢</strong>：全展开式（Lewis 结构式）</li>
+  <li><strong>不显示一部分H</strong>：缩写式（骨架式/折线式）</li>
+</ul>
+<table>
+<tr><th>键线表示</th><th>含义</th></tr>
+<tr><td>实线 $-$</td><td>共用电子对（共价键）</td></tr>
+<tr><td>虚线 $\cdots$</td><td>氢键 / 配位键</td></tr>
+<tr><td>楔形线 &#x25B2;</td><td>向前（伸出纸面）</td></tr>
+<tr><td>虚楔形线 &#x25BD;</td><td>向后（伸入纸面）</td></tr>
+</table>
+</div>
+
 <h3>二、有机物中的化学键</h3>
 
 <div class="fb"><div class="t">共价键类型</div>
@@ -121,6 +135,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <ul>
   <li><strong>诱导效应</strong>：沿 $\sigma$ 键传递，随距离递减 → <span style="color:red">影响酸碱性</span></li>
   <li><strong>共轭效应</strong>：$p$-$\pi$ 共轭、$\pi$-$\pi$ 共轭</li>
+  <li><strong>超共轭效应</strong>：$\sigma$-$\pi$ 超共轭、$\sigma$-$p$ 超共轭（C-H $\sigma$ 键与相邻空轨道或 $\pi$ 键的重叠）</li>
 </ul>
 </div>
 
@@ -138,6 +153,12 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 </ul>
 </div>
 
+<div class="note">
+<strong>碳正离子的稳定性</strong>（超共轭/诱导效应/共轭）：
+$$3°\text{C}^+ > 2°\text{C}^+ > 1°\text{C}^+ > \text{CH}_3^+$$
+<p>稳定性来源：相邻 C-H $\sigma$ 键的超共轭效应（$\alpha$-H 越多越稳定），以及烷基的供电子诱导效应。</p>
+</div>
+
 <h3>三、有机酸碱理论</h3>
 
 <div class="fb"><div class="t">Br&oslash;nsted 酸碱理论</div>
@@ -150,6 +171,12 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
   <li><strong>Lewis 酸</strong>（Acid）：接受电子对 / 缺电子物种，如 $\text{BF}_3$, $\text{AlCl}_3$</li>
   <li><strong>Lewis 碱</strong>（Base）：提供电子对，如 $\text{NH}_3$, $\text{H}_2\text{O}$</li>
 </ul>
+</div>
+
+<div class="ex">
+<strong>Lewis 酸碱反应示例</strong>：
+$$\text{BF}_3 + \text{NH}_3 \to \text{F}_3\text{B}\!\leftarrow\!\text{NH}_3$$
+<p>$\text{BF}_3$（Lewis 酸，缺电子）+ $\text{NH}_3$（Lewis 碱，有孤对电子）→ 形成配位键加合物</p>
 </div>
 
 <div class="tip">

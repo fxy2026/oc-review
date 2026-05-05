@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'194',right:'194',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
 <style>
 :root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -33,6 +33,9 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 .nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
 .nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
 .nav-bar a:hover{background:var(--pri);color:#fff;}
+.red{color:#c0392b;font-weight:bold;}
+.blue{color:#2471a3;font-weight:bold;}
+.green{color:#0d6b3d;font-weight:bold;}
 .page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
 .page-label{display:inline-block;background:var(--pri);color:#fff;padding:4px 14px;border-radius:4px;font-weight:bold;font-size:1.1em;margin-bottom:10px;}
 </style>
@@ -93,11 +96,11 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <li><strong>不溶于水</strong>，溶于有机溶剂（乙醚、$\text{CCl}_4$、石油醚）</li>
 <li>一般芳烃的<strong>比水轻</strong>，$d &lt; 1$</li>
 <li>沸点随相对分子量增大而升高；<strong>液态</strong>芳烃的沸点与相对分子质量有关，还与<strong>分子结构/对称性</strong>有关。<span class="red">邻/间/对二甲苯中，对二甲苯对称性最高，熔点最高；而沸点差距不大</span></li>
-<li><strong>$^{1}\text{H NMR}$</strong> 化学位移：芳环质子 $\delta = 6\text{-}7\;\text{ppm}$</li>
+<li><strong>$^{1}\text{H NMR}$</strong> 化学位移：芳环质子 $\delta \approx 6.5\text{-}8.5\;\text{ppm}$（去屏蔽效应，低场移动）</li>
 </ul>
 </div>
 
-<div class="note"><strong>芳环质子 NMR 化学位移范围</strong>：$\delta = 6\text{-}7\;\text{ppm}$（此处原笔记标注为苯环 $\text{H}$ 的特征位移范围）</div>
+<div class="note"><strong>芳环质子 NMR 化学位移范围</strong>：$\delta \approx 6.5\text{-}8.5\;\text{ppm}$（芳环质子因环电流去屏蔽效应，化学位移出现在低场区域）</div>
 
 <h3>五、化学反应</h3>
 
@@ -108,15 +111,16 @@ $$\text{ArH} + \text{E}^+ \longrightarrow \text{ArE} + \text{H}^+$$
 <p>其中 $\text{E}^+$ 为亲电试剂。苯环提供 $\pi$ 电子作为亲核体，与亲电试剂结合。</p>
 </div>
 
-<div class="fb"><div class="t">亲电取代机理（两步）</div>
+<div class="fb"><div class="t">亲电取代机理</div>
 <ol>
-<li><strong>第一步（慢，决速步）</strong>：亲电试剂进攻苯环 $\pi$ 电子，生成 <span class="red">$\sigma$ 络合物</span>（Wheland中间体/碳正离子中间体），芳香性被破坏</li>
-<li><strong>第二步（快）</strong>：$\sigma$ 络合物失去一个质子($\text{H}^+$)，恢复芳香性，生成取代产物</li>
+<li><strong>$\pi$ 络合物</strong>（$\pi$ complex）：亲电试剂 $\text{E}^+$ 先与苯环 $\pi$ 电子形成松散的 $\pi$ 络合物（快速、可逆）</li>
+<li><strong>$\sigma$ 络合物</strong>（<strong>慢，决速步</strong>）：$\text{E}^+$ 与苯环一个碳形成 $\sigma$ 键，生成 <span class="red">$\sigma$ 络合物</span>（Wheland中间体/碳正离子中间体），芳香性被破坏</li>
+<li><strong>失去质子</strong>（快）：$\sigma$ 络合物失去一个 $\text{H}^+$，恢复芳香性，生成取代产物</li>
 </ol>
-$$\text{ArH} + \text{E}^+ \xrightarrow{\text{慢}} [\text{ArHE}]^+ \xrightarrow{-\text{H}^+,\;\text{快}} \text{ArE}$$
+$$\text{ArH} + \text{E}^+ \rightleftharpoons [\pi\text{络合物}] \xrightarrow{\text{慢}} [\text{ArHE}]^+(\sigma\text{络合物}) \xrightarrow{-\text{H}^+,\;\text{快}} \text{ArE}$$
 </div>
 
-<div class="warn"><strong>$\sigma$ 络合物</strong>（又叫 Wheland 中间体、碳正离子中间体）：苯环芳香性被破坏，一个碳变为 $sp^3$ 杂化，正电荷在环上离域。这是亲电取代的<strong>速控步骤</strong>的产物。</div>
+<div class="warn"><strong>$\sigma$ 络合物</strong>（又叫 Wheland 中间体、碳正离子中间体）：苯环芳香性被破坏，一个碳变为 $sp^3$ 杂化，正电荷在环上离域（可在邻位和对位碳上画出共振式）。$\pi$ 络合物 $\rightarrow$ $\sigma$ 络合物这一步是<strong>速控步骤</strong>。</div>
 
 <h4>（二）卤代反应</h4>
 <div class="fb"><div class="t">苯的卤代</div>
@@ -131,9 +135,13 @@ $$\text{C}_6\text{H}_6 + \text{X}_2 \xrightarrow{\text{FeX}_3} \text{C}_6\text{H
 </ol>
 </div>
 
-<div class="tip"><strong>一硝基化反应</strong>：$\text{C}_6\text{H}_6 + \text{HO-NO}_2 \xrightarrow{\text{H}_2\text{SO}_4} \text{C}_6\text{H}_5\text{NO}_2 + \text{H}_2\text{O}$<br>
-亲电试剂为 $\text{NO}_2^+$（硝基正离子），由混酸（$\text{HNO}_3 + \text{H}_2\text{SO}_4$）产生。<br>
-<span class="blue">[$\text{HNO}_3$ 提供 $\text{NO}_2^+$，$\text{H}_2\text{SO}_4$ 起催化/脱水作用]</span></div>
+<h4>（三）硝化反应</h4>
+<div class="fb"><div class="t">苯的硝化</div>
+$$\text{C}_6\text{H}_6 + \text{HO-NO}_2 \xrightarrow{\text{H}_2\text{SO}_4} \text{C}_6\text{H}_5\text{NO}_2 + \text{H}_2\text{O}$$
+<p><strong>亲电试剂</strong>：$\text{NO}_2^+$（硝酰正离子 / nitronium ion），由<strong>混酸</strong>产生：</p>
+$$\text{HNO}_3 + 2\text{H}_2\text{SO}_4 \longrightarrow \text{NO}_2^+ + \text{H}_3\text{O}^+ + 2\text{HSO}_4^-$$
+<p>$\text{HNO}_3$ 提供 $\text{NO}_2^+$，$\text{H}_2\text{SO}_4$ 起<strong>催化/脱水</strong>作用（质子化 $\text{HNO}_3$，促进 $\text{NO}_2^+$ 生成）。</p>
+</div>
 
 <div class="note"><strong>要点归纳</strong>：反应是<strong>取代</strong>而非加成，因为取代产物<strong>恢复了芳香性</strong>（<span class="red">保留 $4n+2$ 个 $\pi$ 电子的环状共轭体系</span>），在<strong>热力学上更加稳定</strong>。</div>
 
@@ -156,7 +164,7 @@ $$\text{C}_6\text{H}_6 + \text{X}_2 \xrightarrow{\text{FeX}_3} \text{C}_6\text{H
 <img src="_img_summary/p14.png" class="page-img" alt="第14页手写原稿">
 <div class="card">
 
-<h3>（三）卤代反应（续） &mdash; 甲苯的卤代</h3>
+<h3>（二）卤代反应（续） &mdash; 甲苯的卤代</h3>
 <div class="fb"><div class="t">甲苯的氯代</div>
 $$\text{C}_6\text{H}_5\text{CH}_3 + \text{X}_2 \xrightarrow{\text{FeX}_3} \text{C}_6\text{H}_4(\text{CH}_3)\text{X} + \text{HX} \quad (\text{X}=\text{Cl, Br})$$
 <p>产物为<strong>邻位和对位</strong>取代产物（邻对位混合物），因为 $\text{-CH}_3$ 是<span class="red">邻对位定位基</span>。</p>
@@ -364,9 +372,13 @@ $$\text{C}_6\text{H}_5\text{-R} \xrightarrow{\text{KMnO}_4 / \text{H}^+} \text{C
 <p>前提：苯环相邻碳（$\alpha$-碳）上必须有<strong>氢原子</strong>（$\alpha\text{-H}$）。若 $\alpha$-碳上无氢（如叔丁基苯），<span class="red">不被氧化</span>。</p>
 </div>
 
-<div class="tip"><strong>侧链催化加氢</strong>：
-$$\text{C}_6\text{H}_5\text{-CH=CH}_2 + \text{H}_2 \xrightarrow{\text{Ni}, 175°\text{C}, 180\;\text{atm}} \text{C}_6\text{H}_{11}\text{-CH}_2\text{CH}_3$$
-在高温高压下，苯环也可被加氢成为环己烷衍生物。</div>
+<h4>苯环的催化加氢</h4>
+<div class="fb"><div class="t">苯环加氢</div>
+<p>苯环在<strong>高温高压</strong>和催化剂（$\text{Ni}$, $\text{Pt}$, $\text{Pd}$ 等）条件下可被完全加氢：</p>
+$$\text{C}_6\text{H}_6 + 3\text{H}_2 \xrightarrow{\text{Ni},\;175°\text{C},\;180\;\text{atm}} \text{C}_6\text{H}_{12}\;\text{（环己烷）}$$
+<p>苯乙烯等含侧链不饱和键的芳烃，侧链双键先被加氢，苯环在更苛刻条件下才加氢：</p>
+$$\text{C}_6\text{H}_5\text{CH=CH}_2 \xrightarrow{\text{H}_2,\;\text{Ni}} \text{C}_6\text{H}_5\text{CH}_2\text{CH}_3 \xrightarrow{\text{高温高压}} \text{C}_6\text{H}_{11}\text{CH}_2\text{CH}_3$$
+</div>
 
 <div class="warn">
 <strong>苄位（$\alpha$-碳）的特殊反应性</strong>：
@@ -607,150 +619,113 @@ $$\text{C}_6\text{H}_6 + \text{HCHO} + \text{HCl} \xrightarrow{\text{ZnCl}_2} \t
 </div>
 </div>
 
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>手写笔记 p19-p24 | 有机化学复习</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
-<style>
-:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
-h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
-h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
-h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
-h4{color:#2c3e50;font-size:1.05em;margin:15px 0 8px;font-weight:bold;}
-.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
-.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
-.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
-.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
-.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
-.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
-.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-table{width:100%;border-collapse:collapse;margin:12px 0;}
-th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
-th{background:var(--pri);color:#fff;}
-tr:nth-child(even){background:#f0f7f0;}
-details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
-ul,ol{margin-left:20px;margin-bottom:8px;}
-.page-img{max-width:100%;border:1px solid #ddd;border-radius:6px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
-.page-label{display:inline-block;background:var(--pri);color:#fff;padding:2px 10px;border-radius:4px;font-size:.85em;margin:10px 0 4px;}
-.rxn{font-family:'Courier New',monospace;background:#f8f8f8;padding:8px 14px;border-radius:5px;margin:6px 0;display:block;overflow-x:auto;white-space:nowrap;}
-.red{color:#c0392b;font-weight:bold;}
-.blue{color:#2471a3;font-weight:bold;}
-.green{color:#0d6b3d;font-weight:bold;}
-</style>
-</head>
-<body>
-
-<h1>手写笔记电子化 (p19 - p24)</h1>
-
-<!-- ======================== 第19页 ======================== -->
-<div style="margin:30px 0;">
+<!-- ===================== 第19页 ===================== -->
+<div id="p19" style="margin:30px 0;">
 <span class="page-label">第 19 页</span>
 <img src="_img_summary/p19.png" class="page-img" alt="第19页手写原稿">
 <div class="card">
 
-<h2>第五章 芳香烃（续）</h2>
-
-<h3>(6) 还原反应</h3>
-<div class="card">
-<p>萘的还原反应：</p>
-<span class="rxn">萘 $\xrightarrow{Na, \text{ROH}}$ 1,4-二氢萘 $\xrightarrow{\text{继续}}$ 四氢萘（Birch还原）</span>
-<p>注：Na/ROH 条件下的 Birch 还原，先得到 <strong>1,4-二氢萘</strong>。</p>
+<h3>b) 萘的还原反应</h3>
+<div class="fb"><div class="t">Birch 还原</div>
+<p>萘在 $\text{Na / ROH}$（液氨中）条件下发生 Birch 还原：</p>
+$$\text{萘} \xrightarrow{\text{Na},\;\text{ROH}} \text{1,4-二氢萘} \xrightarrow{\text{继续}} \text{1,2,3,4-四氢萘}$$
+<p>注：Na/ROH 条件下先得到 <strong>1,4-二氢萘</strong>（非共轭的1,4-加氢产物）。</p>
 </div>
 
-<h3>2. 蒽</h3>
-<div class="card">
-<p>蒽由<strong>三个苯环线性稠合</strong>构成。环的编号为 1-10，其中 9,10 位活性最高。</p>
-<p>芳香性比苯及萘差，<strong>取代、氧化、还原都发生在 9,10-位</strong>。</p>
+<h4>2. 蒽 (anthracene)</h4>
+<div class="fb"><div class="t">蒽的结构与反应</div>
+<p>蒽由<strong>三个苯环线性稠合</strong>构成。环的编号为 1-10，其中 <span class="red">9,10 位活性最高</span>。</p>
+<p>芳香性比苯及萘差，<strong>取代、氧化、还原都优先发生在 9,10-位</strong>。</p>
+<p>蒽的 9,10-位被称为<strong>meso 位</strong>。蒽醌是重要的染料中间体。</p>
 </div>
 
-<h3>3. 菲</h3>
-<div class="card">
+<h4>3. 菲 (phenanthrene)</h4>
+<div class="fb"><div class="t">菲的结构与反应</div>
 <p>菲由<strong>三个苯环角状稠合</strong>构成。</p>
-<p>芳香性比苯及萘差，<strong>取代、氧化、还原都发生在 9,10-位</strong>。</p>
+<p>芳香性比苯及萘差，<strong>取代、氧化、还原都优先发生在 9,10-位</strong>（<span class="red">K 区</span>）。</p>
+<p>菲的 9,10-键长最短（$0.134\;\text{nm}$），双键特征最强，化学活性最高。</p>
 </div>
 
-<h3>芳香性</h3>
-<div class="fb">
-<div class="t">Huckel 规则 [离王，有芳香性]</div>
+<div class="warn"><strong>稠环芳烃反应活性总结</strong>：芳香性比苯及萘差，取代、氧化、还原都发生在 9,10-位。</div>
+
+<h2>芳香性</h2>
+
+<h3>Huckel 规则</h3>
+<div class="fb"><div class="t">Huckel 规则 &mdash; 判定芳香性的三个条件（必须全部满足）</div>
 <ol>
-<li>单环<strong>共轭多烯</strong>环，环外骨架<strong>共面</strong>（平面结构）</li>
-<li>环上<strong>每个原子</strong>都有 $p$ 轨道</li>
-<li>环域 $\pi$ 电子数为 $4n+2$（$n=0,1,2...$）</li>
+<li><strong>单环共轭多烯</strong>，环上骨架<strong>共平面</strong>（平面结构）</li>
+<li>环上<strong>每个原子</strong>都有 $p$ 轨道（参与共轭）</li>
+<li>离域 $\pi$ 电子数为 $4n+2$（$n=0,1,2,\ldots$），即 $2, 6, 10, 14, 18, \ldots$</li>
 </ol>
 </div>
 
 <h3>芳香性判据</h3>
-<div class="card">
-<p><strong>(1) 亲电取代反应（首选）</strong></p>
-<ul>
-<li>$+ \text{E}^+ \longrightarrow +\text{H}^+$，$\text{E}^+ = \text{NO}_2^+, \text{X}^+, \text{R}^+-\text{SO}_3\text{H}, \text{R-}\dot{\text{C}}\text{O}^+$</li>
-</ul>
+<div class="fb"><div class="t">(1) 亲电取代反应（首选判据）</div>
+<p>能发生<strong>亲电取代反应</strong>（而非加成反应）是芳香性的最直接证据：</p>
+$$+ \text{E}^+ \longrightarrow \text{取代产物} + \text{H}^+$$
+<p>$\text{E}^+ = \text{NO}_2^+,\;\text{X}^+,\;\text{R}^+,\;^+\text{SO}_3\text{H},\;\text{RCO}^+$ 等</p>
+</div>
 
-<p><strong>(2) 磁环流</strong></p>
+<div class="fb"><div class="t">(2) 磁环流（NMR 判据）</div>
 <ul>
-<li>$\vec{E}$ 环流（顺H, 即为 $p$ 电子环流）</li>
-<li class="blue">芳香性：环外质子<strong>低场移动</strong>（$\delta$偏大）；环内质子<strong>高场移动</strong>（$\delta$偏小）</li>
-<li class="red">反芳香性：正好相反</li>
+<li>芳香化合物在外磁场中产生<strong>环电流</strong>（$\pi$ 电子环流）</li>
+<li><span class="blue">芳香性</span>：环外质子受<strong>去屏蔽效应</strong>，化学位移<strong>偏向低场</strong>（$\delta$ 值大）；环内质子（如[18]轮烯内部H）化学位移<strong>偏向高场</strong>（$\delta$ 值小）</li>
+<li><span class="red">反芳香性</span>：环电流方向相反，效果正好相反</li>
 </ul>
+</div>
 
-<p><strong>(3) 热力学稳定性</strong></p>
+<div class="fb"><div class="t">(3) 热力学稳定性</div>
 <ul>
-<li>$\Delta H$ 比较：如氢化热低于理论值，说明有额外稳定化能</li>
+<li>比较<strong>氢化热</strong> $\Delta H$：实测氢化热低于理论计算值，差值即为<strong>共振能/离域能</strong>（额外稳定化能）</li>
+<li>共振能越大，芳香性越强</li>
 </ul>
 </div>
 
 <h3>非苯芳烃</h3>
-<div class="card">
-<p><strong>(4) 满足 Huckel 规则的非苯芳烃：</strong></p>
+<div class="fb"><div class="t">(4) 轮烯 (annulene)</div>
+<p>轮烯是全共轭的单环多烯。命名：[$n$]轮烯（$n$ 为环上碳原子数）。</p>
 <ul>
-<li><strong>轮烯</strong>：连续双键 $\rightarrow$ 必须是 $4n+2$ 个 $\pi$ 电子</li>
-<li>[10]轮烯、[14]轮烯、[18]轮烯 → 有芳香性</li>
-<li>[4]轮烯、[8]轮烯 → <span class="red">反芳香性</span>（$4n$ 个 $\pi$ 电子）</li>
+<li><strong>有芳香性</strong>：[6]轮烯（苯）、[10]轮烯、[14]轮烯、[18]轮烯 &mdash; $\pi$ 电子数满足 $4n+2$</li>
+<li><span class="red">反芳香性</span>：[4]轮烯（环丁二烯）、[8]轮烯（环辛四烯）&mdash; $\pi$ 电子数为 $4n$</li>
 </ul>
+<p>注：[10]轮烯因氢原子空间排斥，实际上并非严格平面，芳香性较弱。[18]轮烯几乎为平面，有明显芳香性。</p>
 </div>
 
-<h3>芳香离子</h3>
-<div class="card">
-<p><strong>(5) 具有芳香性的离子和杂环化合物：</strong></p>
+<h3>芳香离子与杂环</h3>
+<div class="fb"><div class="t">(5) 具有芳香性的离子</div>
 <ul>
-<li><strong>环丙烯正离子</strong> $\text{C}_3\text{H}_3^+$：$2$ 个 $\pi$ 电子（$4 \times 0 + 2 = 2$），芳香性</li>
-<li><strong>环戊二烯负离子</strong> $\text{C}_5\text{H}_5^-$：$6$ 个 $\pi$ 电子（$4 \times 1 + 2 = 6$），芳香性</li>
-<li><strong>环庚三烯正离子（对应"卓"）</strong> $\text{C}_7\text{H}_7^+$：$6$ 个 $\pi$ 电子，芳香性</li>
+<li><strong>环丙烯正离子</strong> $\text{C}_3\text{H}_3^+$：$2$ 个 $\pi$ 电子（$4 \times 0 + 2 = 2$），具有芳香性</li>
+<li><strong>环戊二烯负离子</strong> $\text{C}_5\text{H}_5^-$：$6$ 个 $\pi$ 电子（$4 \times 1 + 2 = 6$），具有芳香性</li>
+<li><strong>环庚三烯正离子</strong>（$\text{C}_7\text{H}_7^+$，对应"[七]卓鎓离子"）：$6$ 个 $\pi$ 电子，具有芳香性</li>
 </ul>
+</div>
 
 <div class="tip">
-<strong>判断步骤：</strong>①确认是否共面且环上每个原子都有 $p$ 轨道 → ②数 $\pi$ 电子数 → ③是否 $4n+2$
+<strong>芳香性判断步骤</strong>：
+<ol>
+<li>确认是否为<strong>平面环状共轭</strong>体系（环上每个原子都有 $p$ 轨道）</li>
+<li>数 $\pi$ 电子数（注意孤电子对是否参与共轭）</li>
+<li>判断是否满足 $4n+2$：满足 → <span class="green">芳香性</span>；$4n$ → <span class="red">反芳香性</span></li>
+</ol>
 </div>
 
-<p><strong>(6) 薁（甘菊环）= 五元环 + 七元环稠合</strong></p>
+<div class="fb"><div class="t">(6) 薁（azulene，甘菊环）</div>
+<p>薁 = <strong>五元环 + 七元环稠合</strong>的非苯芳烃。</p>
 <ul>
-<li>$10$ 个 $\pi$ 电子（$4 \times 2 + 2 = 10$），有芳香性</li>
-<li>偶极矩较大：五元环端带部分负电，七元环端带部分正电</li>
+<li>$10$ 个 $\pi$ 电子（$4 \times 2 + 2 = 10$），满足 Huckel 规则，具有芳香性</li>
+<li>偶极矩较大：五元环端带部分<strong>负电</strong>（类似环戊二烯负离子），七元环端带部分<strong>正电</strong>（类似环庚三烯正离子）</li>
 </ul>
+</div>
 
-<p><strong>(7) 稠环芳烃的判断：</strong></p>
+<div class="fb"><div class="t">(7) 稠环芳烃的芳香性判断</div>
 <ul>
-<li>薁、苊、荧蒽等 → 分析外周 $\pi$ 电子是否满足 $4n+2$</li>
+<li>对于稠环芳烃（如薁、苊、荧蒽等），分析<strong>外周 $\pi$ 电子</strong>是否满足 $4n+2$</li>
+<li>共用边上的电子不重复计数</li>
 </ul>
 </div>
 
 </div>
 </div>
-
-<!-- ======================== 第20页 ======================== -->
 
 </body>
 </html>

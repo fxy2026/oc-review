@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'194',right:'194',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
 <style>
 :root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -46,6 +46,8 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 </div>
 
 <h1>第3章 烯烃 梳理</h1>
+
+<!-- ======================== 第 4 页 ======================== -->
 <div style="margin:30px 0;">
 <span class="page-label">第 4 页</span>
 <img src="_img_summary/p4.png" class="page-img" alt="第4页手写原稿">
@@ -66,7 +68,13 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <ul>
   <li>① 选含 $\text{C}=\text{C}$ 的<strong>最长碳链</strong>为主链</li>
   <li>② 从靠近 $\text{C}=\text{C}$ 的一端开始编号：<strong style="color:red">$Z$-/$E$- 标注</strong>（重要！）</li>
-  <li>③ 烯烃 → $-\text{CH}=\text{CH}_2$（乙烯基）；烯丙基 → $-\text{CH}=\text{CH-CH}_3$</li>
+  <li>③ 常见基团名称：
+    <ul>
+      <li>乙烯基（vinyl）：$-\text{CH}=\text{CH}_2$</li>
+      <li>烯丙基（allyl）：$-\text{CH}_2\text{-CH}=\text{CH}_2$</li>
+      <li>亚乙烯基：$-\text{CH}=\text{CH}-$</li>
+    </ul>
+  </li>
 </ul>
 </div>
 
@@ -88,68 +96,112 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 
 <div class="warn">
 <strong>注意</strong>：$Z$/$E$ 与顺/反不一定一致！<br>
-$Z$ 不一定是 "顺式"，$E$ 不一定是 "反式"，取决于取代基的优先次序
+$Z$ 不一定是 "顺式"，$E$ 不一定是 "反式"，取决于取代基的优先次序。
 </div>
 
-<h3>3. 化学性质</h3>
+<h3>3. 物理性质</h3>
+<div class="fb"><div class="t">物理性质概要</div>
+<ul>
+  <li>沸点：随碳数增加而升高；支链增多 → 沸点降低</li>
+  <li>密度：比水小</li>
+  <li>溶解度：不溶于水，溶于有机溶剂</li>
+  <li>顺式异构体的沸点通常略高于反式（偶极矩较大）</li>
+</ul>
+</div>
+
+<h3>4. 化学性质概览</h3>
 
 <div class="fb"><div class="t">烯烃的特征反应</div>
-<p>烯烃 $\pi$ 键电子易受亲电试剂进攻 → <strong style="color:red">亲电加成反应</strong>为核心</p>
+<p>烯烃 $\pi$ 键电子云暴露在外，易受<strong>亲电试剂</strong>进攻 → <strong style="color:red">亲电加成反应</strong>为核心反应类型</p>
 </div>
 
-<div class="fb"><div class="t">烯烃的稳定性</div>
+<h4>(一) 催化加氢</h4>
+<div class="fb"><div class="t">催化氢化</div>
+<p>催化剂：$\text{Pt}$、$\text{Pd}$、$\text{Ni}$（异相催化）；Wilkinson 催化剂（均相催化）</p>
+$$\text{C}=\text{C} + \text{H}_2 \xrightarrow{\text{Pt (或 Pd, Ni)}} \text{C}-\text{C}$$
+<p><strong>立体化学</strong>：<strong>顺式加成</strong>（syn addition）—— $\text{H}_2$ 从同一面加到双键上</p>
+</div>
+
+<div class="fb"><div class="t">烯烃的稳定性与氢化热</div>
 <ul>
-  <li>可通过<strong>氢化热</strong>（加 $\text{H}_2$ 释放的热量）判断稳定性</li>
+  <li>可通过<strong>氢化热</strong>（$\Delta H_{\text{hydrog}}$，加 $\text{H}_2$ 释放的热量）判断稳定性</li>
   <li>氢化热越低 → 烯烃越稳定</li>
-  <li>取代基越多 → 烯烃越稳定：$\text{R}_2\text{C}=\text{CR}_2 > \text{R}_2\text{C}=\text{CHR} > \text{RCH}=\text{CHR} > \text{RCH}=\text{CH}_2$</li>
-  <li><strong style="color:red">超共轭效应</strong>：$\alpha$-H 的 C-H 键与 $\pi$ 键的 $\sigma$-$\pi$ 超共轭，$\alpha$-H 越多越稳定</li>
-  <li>反式（$E$）比顺式（$Z$）更稳定（空间位阻小）</li>
+  <li>取代基越多 → 烯烃越稳定：</li>
 </ul>
-</div>
-
-<div class="fb"><div class="t">HX 酸催化加成与 Markovnikov 规则</div>
-<p>烯烃催化加 HX 时<strong>H 加到含 H 较多的碳</strong>上，$\text{X}$ 加到含 H 较少的碳上（Markovnikov 规则）</p>
-<p>本质：反应经过<strong>较稳定的碳正离子</strong>中间体（$3° > 2° > 1°$）</p>
-<p><strong style="color:red">碳正离子</strong>稳定性：$3° > 2° > 1° > \text{CH}_3^+$，这决定了加成的区域选择性和可能的<strong>重排</strong></p>
-</div>
-
-<div class="fb"><div class="t">$\text{H}_2\text{SO}_4$ / $\text{H}_3\text{PO}_4$ 加成</div>
-<p>间接水合法制醇：先加 $\text{H}_2\text{SO}_4$，再水解</p>
-</div>
-
-<div class="fb"><div class="t">卤化反应</div>
-<p>(1) 加 $\text{Cl}_2$ / $\text{Br}_2$（<span style="color:blue">反应活性区别</span>）</p>
-$$\text{C}=\text{C} + \text{Cl}_2/\text{Br}_2 \xrightarrow{} \text{二卤代物}$$
-<p><strong>反应机理</strong>：</p>
-<ol>
-  <li>$\pi$ 电子进攻 $\text{Br}_2$ → 形成<strong style="color:red">溴鎓离子</strong>（环状三元中间体）</li>
-  <li>$\text{Br}^-$ 从<strong>背面</strong>进攻 → <strong>反式加成</strong>（anti addition）</li>
-</ol>
-</div>
-
-<div class="tip">
-<strong style="color:red">重要结论</strong>：卤素加成是经过<strong>卤鎓离子</strong>中间体的<strong>反式加成</strong>。
+$$\text{R}_2\text{C}=\text{CR}_2 > \text{R}_2\text{C}=\text{CHR} > \text{RCH}=\text{CHR} > \text{RCH}=\text{CH}_2 > \text{CH}_2=\text{CH}_2$$
 <ul>
-  <li>溴鎓离子是<strong>桥环</strong>正离子</li>
-  <li>$\text{Br}^-$ 从<strong>背面</strong>（anti）进攻</li>
-  <li>产物为 <strong>anti 加成产物</strong>（反式邻二卤代物）</li>
+  <li><strong style="color:red">超共轭效应</strong>：$\alpha$-$\text{C-H}$ 键 $\sigma$ 轨道与 $\pi$ 键的 $\sigma$-$\pi$ 超共轭，$\alpha$-H 越多越稳定</li>
+  <li>反式（$E$）比顺式（$Z$）更稳定（空间位阻小）</li>
+  <li><strong style="color:red">氢化热顺序</strong>（同分子式）：$\text{H}_1 > \text{H}_2 > \text{H}_3$，氢化热越高越不稳定</li>
 </ul>
 </div>
 
-<div class="fb"><div class="t">亲电加成的机理总结</div>
-<p>① 亲电试剂进攻 $\pi$ 键 → 碳正离子（或环状鎓离子）</p>
-<p>② 亲核试剂与碳正离子结合 → 产物</p>
-<p>机理决定产物的区域选择性（Markovnikov）和立体选择性（反式加成）</p>
-</div>
-
-<div class="fb"><div class="t">卤化氢（$\text{HX}$）加成</div>
-<p>活性：$\text{HI} > \text{HBr} > \text{HCl} > \text{HF}$</p>
-<p>遵循 <strong>Markovnikov 规则</strong>（经碳正离子中间体，遵循稳定性序列）</p>
-<p>$\text{Cl}^-$ 不生成氯鎓离子 → 无立体选择性；一般生成顺反混合物</p>
+<h4>(二) HX 加成与 Markovnikov 规则</h4>
+<div class="fb"><div class="t">HX 酸催化加成</div>
+<p>不对称烯烃加 HX 时<strong>H 加到含 H 较多的碳</strong>上，$\text{X}$ 加到含 H 较少的碳上 — <strong style="color:red">Markovnikov 规则</strong></p>
+<p>本质：反应经过<strong>较稳定的碳正离子</strong>中间体（$3° > 2° > 1°$）</p>
+<p><strong style="color:red">碳正离子</strong>稳定性：$3° > 2° > 1° > \text{CH}_3^+$，决定加成的<strong>区域选择性</strong>和可能的<strong>重排</strong></p>
+<p><strong>HX 反应活性</strong>：$\text{HI} > \text{HBr} > \text{HCl} > \text{HF}$</p>
 </div>
 
 <div class="note">
 <strong>地位和意义</strong>：碳正离子稳定性的比较是有机化学的核心考点之一，贯穿亲电加成、消除反应、重排反应等多个章节。
+<br><strong style="color:red">$\text{C}^+$ 的 $p$ 空轨道</strong>：稳定性可通过超共轭和诱导效应解释。
+</div>
+
+<h4>(三) $\text{H}_2\text{SO}_4$ / $\text{H}_3\text{PO}_4$ 加成</h4>
+<div class="fb"><div class="t">间接水合法制醇</div>
+<p>先加 $\text{H}_2\text{SO}_4$，生成硫酸氢烷基酯，再水解得到醇（Markovnikov 方向）：</p>
+$$\text{烯烃} \xrightarrow{\text{H}_2\text{SO}_4} \text{硫酸氢烷基酯} \xrightarrow{\text{H}_2\text{O}} \text{醇} + \text{H}_2\text{SO}_4$$
+<p>遵循 Markovnikov 规则 → 产物为<strong>仲/叔醇</strong></p>
+</div>
+
+<h4>(四) 卤化反应（加 $\text{Cl}_2$ / $\text{Br}_2$）</h4>
+<div class="fb"><div class="t">卤素加成机理（<span style="color:blue">反式加成，经卤鎓离子</span>）</div>
+$$\text{C}=\text{C} + \text{Br}_2 \to \text{邻二溴代物}$$
+<p><strong>反应机理</strong>：</p>
+<ol>
+  <li>$\pi$ 电子进攻 $\text{Br}_2$（亲电进攻） → 形成<strong style="color:red">溴鎓离子</strong>（bromonium ion，环状三元中间体）+ $\text{Br}^-$ 离去</li>
+  <li>$\text{Br}^-$ 从溴鎓离子的<strong>背面</strong>进攻（$S_N2$ 类型） → <strong style="color:red">反式加成</strong>（anti addition）</li>
+</ol>
+</div>
+
+<div class="tip">
+<strong style="color:red">重要结论</strong>：卤素加成是经过<strong>卤鎓离子</strong>（桥环正离子）中间体的<strong>反式加成</strong>。
+<ul>
+  <li>溴鎓离子是<strong>三元环</strong>正离子</li>
+  <li>$\text{Br}^-$ 从<strong>背面</strong>（anti）进攻 → 产物为<strong>反式加成产物</strong></li>
+  <li>$\text{Cl}^-$ 不生成稳定的氯鎓离子 → 无明显立体选择性</li>
+</ul>
+</div>
+
+<h4>(五) 卤化氢（$\text{HX}$）加成的机理</h4>
+<div class="fb"><div class="t">亲电加成的分步机理</div>
+<p>① 亲电试剂（$\text{H}^+$）进攻 $\pi$ 键 → 碳正离子中间体（<strong>决速步</strong>）</p>
+<p>② 亲核试剂（$\text{X}^-$）与碳正离子结合 → 产物</p>
+<p>机理决定：</p>
+<ul>
+  <li><strong>区域选择性</strong>：Markovnikov 规则（经较稳定碳正离子）</li>
+  <li><strong>立体选择性</strong>：HX 加成一般无立体选择性（平面碳正离子，两面均可被进攻）</li>
+</ul>
+</div>
+
+<div class="fb"><div class="t">碳正离子重排</div>
+<p>当初始生成的碳正离子不够稳定时，可通过<strong>1,2-迁移</strong>重排为更稳定的碳正离子：</p>
+<ul>
+  <li><strong>1,2-氢迁移</strong>：$2°\text{C}^+ \to 3°\text{C}^+$</li>
+  <li><strong>1,2-甲基迁移</strong>：$2°\text{C}^+ \to 3°\text{C}^+$</li>
+  <li>重排的驱动力：<strong>碳正离子趋向更稳定的结构</strong></li>
+</ul>
+</div>
+
+<div class="warn">
+<strong>碳正离子重排的判断要点</strong>：
+<ul>
+  <li>HX 加成反应中，当邻碳有可能形成更稳定碳正离子时，<span style="color:red">常伴随重排产物</span></li>
+  <li>重排产物可能是主要产物——一定要检查邻碳是否能形成更稳定的 $\text{C}^+$</li>
+  <li>碳正离子不仅参与加成反应，也参与消除反应和取代反应（$S_N1$）</li>
+</ul>
 </div>
 
 </div>
@@ -161,84 +213,81 @@ $$\text{C}=\text{C} + \text{Cl}_2/\text{Br}_2 \xrightarrow{} \text{二卤代物}
 <img src="_img_summary/p5.png" class="page-img" alt="第5页手写原稿">
 <div class="card">
 
-<h3>亲电加成的区域选择性（续）</h3>
+<h3>亲电加成的进一步讨论</h3>
 
-<div class="fb"><div class="t">Markovnikov 规则（马氏规则）</div>
-<ul>
-  <li>不对称烯烃加 HX 时，<strong>H 加在含 H 较多的碳</strong>上，X 加在含 H 较少的碳上</li>
-  <li>本质：经过<strong style="color:red">较稳定的碳正离子</strong>中间体</li>
-  <li>碳正离子稳定性：$3° > 2° > 1° > \text{CH}_3^+$</li>
-  <li>可用<strong>超共轭效应</strong>和<strong>诱导效应</strong>解释</li>
-</ul>
+<div class="fb"><div class="t">亲电试剂的鉴别 — $\text{Ag}^+$ 检验</div>
+<p>检验卤素离子（$\text{Cl}^-$、$\text{Br}^-$）时，需注意<strong>离子型反应</strong>产生的卤素离子才能被 $\text{AgNO}_3$ 检出。</p>
+<p>亲电加成过程中，在溶液里如果有 $\text{Ag}^+$ 存在，可以帮助拉动 $\text{Br}_2$ 的异裂，加速反应。</p>
 </div>
 
-<div class="fb"><div class="t">碳正离子重排</div>
-<p>当初始生成的碳正离子不够稳定时，可通过<strong>1,2-迁移</strong>（H 迁移或 $\text{CH}_3$ 迁移）重排为更稳定的碳正离子：</p>
+<div class="fb"><div class="t">碱性与亲核性的关系</div>
 <ul>
-  <li><strong>1,2-氢迁移</strong>：$2°\text{C}^+ \xrightarrow{} 3°\text{C}^+$</li>
-  <li><strong>1,2-甲基迁移</strong>：同理</li>
-  <li>重排发生的驱动力：<strong>碳正离子趋向更稳定的结构</strong></li>
-</ul>
-</div>
-
-<div class="warn">
-<strong>碳正离子重排的判断要点</strong>：
-<ul>
-  <li>氢酸和硫酸的加成反应，常伴随碳正离子重排</li>
-  <li>氯化氢与烯烃的加成反应：<span style="color:red">常有重排产物</span></li>
-  <li>注意：碳正离子不仅参与加成反应，也参与消除反应和取代反应</li>
+  <li>氮酸（$\text{HX}$）与烯烃的加成反应：常伴随碳正离子中间体和可能的重排</li>
+  <li>碱性强的试剂一般亲核性也强，但需注意<strong>碱性和亲核性是不同概念</strong></li>
 </ul>
 </div>
 
 <div class="fb"><div class="t">例题：判断烯烃亲电加成的产物</div>
-<p>例题：下列化合物中的烯烃能否与下列试剂进行加成反应？如不反应写出其产物；如果有过渡态的复杂化合物产物写出：</p>
+<p>例题：下列化合物中的烯烃能否与下列试剂进行加成反应？如果能反应，写出主要产物：</p>
 <ol>
-  <li>$\text{C}=\text{C}-\text{C}-\text{C}$ 加 $\text{HBr}$ → $\text{H}_3\text{C}-\overset{\text{Br}}{|}\text{C}-\text{C}-\text{C}$（马氏产物）</li>
-  <li>$\text{CH}_2=\text{C}(\text{CH}_3)-\text{C}(\text{CH}_3)_2$ 加 HBr → 可能发生重排</li>
-  <li>$\text{CH}_3\text{CH}=\text{CHCH}_3 + \text{Cl}_2$ → 反式加成产物</li>
+  <li>$\text{CH}_3\text{CH}_2\text{CH}=\text{CH}_2 + \text{HBr}$ → $\text{CH}_3\text{CH}_2\text{CHBrCH}_3$（马氏产物，$\text{Br}$ 加在 $2°$ 碳上）</li>
+  <li>$\text{CH}_2=\text{C}(\text{CH}_3)\text{C}(\text{CH}_3)_3 + \text{HBr}$ → 可能发生碳正离子重排</li>
+  <li>$\text{CH}_3\text{CH}=\text{CHCH}_3 + \text{Cl}_2$ → 反式加成产物（邻二氯代物）</li>
+  <li>$\text{CH}_3\text{CH}_2\text{CH}=\text{CH(CH}_3\text{)} + \text{Cl}_2$ → 反式加成产物</li>
 </ol>
 </div>
 
-<h3>(8) 烯烃的自由基加成（反Markovnikov加成）</h3>
+<h3>(六) 烯烃的自由基加成（反 Markovnikov 加成）</h3>
 
-<div class="fb"><div class="t">过氧化物效应（反马氏加成）</div>
-<p>在<strong style="color:red">过氧化物（ROOR）</strong>存在下：</p>
+<div class="fb"><div class="t">过氧化物效应（反马氏加成）— <span style="color:red">自由基机理</span></div>
+<p>在<strong style="color:red">过氧化物（$\text{ROOR}$）</strong>存在下，$\text{HBr}$ 对烯烃发生<strong>反马氏加成</strong>：</p>
+
+<p><strong>引发</strong>：</p>
 $$\text{ROOR} \xrightarrow{\Delta} 2\text{RO}\cdot$$
 $$\text{RO}\cdot + \text{HBr} \to \text{ROH} + \text{Br}\cdot$$
-<p>自由基加成机理：</p>
-$$\text{Br}\cdot + \text{CH}_2=\text{CHCH}_2\text{CH}_3 \to \text{CH}_3\text{CHCH}_2\text{CH}_3 \xrightarrow{\text{HBr}} \text{CH}_3\text{CH}(\text{Br})\text{CH}_2\text{CH}_3$$
-<p>产物为<strong>反 Markovnikov</strong>加成产物</p>
+
+<p><strong>链增长</strong>（自由基加成）：</p>
+$$\text{Br}\cdot + \text{CH}_2\text{=CHCH}_2\text{CH}_3 \to \text{BrCH}_2\text{-}\dot{\text{C}}\text{HCH}_2\text{CH}_3$$
+$$\text{BrCH}_2\dot{\text{C}}\text{HCH}_2\text{CH}_3 + \text{HBr} \to \text{BrCH}_2\text{CH}_2\text{CH}_2\text{CH}_3 + \text{Br}\cdot$$
+
+<p>产物为<strong style="color:red">反 Markovnikov</strong>加成产物（$\text{Br}$ 加在含 H 多的碳上）</p>
+<p>本质：$\text{Br}\cdot$ 加成时生成<strong>较稳定的自由基</strong>（$2° > 1°$）</p>
 </div>
 
 <div class="warn">
 <strong>过氧化物效应的限制</strong>：
 <ul>
-  <li><span style="color:red">仅限于 $\text{HBr}$</span>；$\text{HCl}$ 和 $\text{HI}$ 不发生（$\text{HCl}$ 难以夺取 Br·，$\text{HI}$ 中 I· 太稳定不反应）</li>
+  <li><span style="color:red">仅限于 $\text{HBr}$</span></li>
+  <li>$\text{HCl}$：$\text{Cl}\cdot$ 与烯烃反应放热太多，选择性差，且链传递中夺 H 困难</li>
+  <li>$\text{HI}$：$\text{I}\cdot$ 太稳定，加成到双键上的反应吸热，不能维持链反应</li>
+  <li>只有 $\text{HBr}$ 的两步链传递都是<strong>放热</strong>的，链反应得以维持</li>
 </ul>
 </div>
 
-<h3>(10) 硼氢化-氧化（<span style="color:red">重要反应</span>）</h3>
+<h3>(七) 硼氢化-氧化反应（<span style="color:red">重要反应</span>）</h3>
 
-<div class="fb"><div class="t">硼氢化-氧化反应</div>
+<div class="fb"><div class="t">硼氢化-氧化反应（Hydroboration-Oxidation）</div>
 <p>这是一个<strong>协同反应</strong>（<span style="color:red">特殊反应</span>）：不产生碳正离子/自由基中间体</p>
 
-<p><strong>烯烃的硼氢化 —— 氧化反应</strong>（<strong style="color:red">反马氏加成、顺式加成</strong>）：</p>
-<p>反应条件与步骤：</p>
+<p><strong>反应步骤</strong>：</p>
 <ol>
-  <li>硼氢化：$\text{烯烃} + (\text{BH}_3)_2 \xrightarrow{\text{THF}} \text{烷基硼}$</li>
-  <li>氧化：$\text{烷基硼} + \text{H}_2\text{O}_2 / \text{NaOH} \to \text{醇}$</li>
+  <li>硼氢化：$\text{烯烃} + (\text{BH}_3)_2 \xrightarrow{\text{THF}} \text{烷基硼}$（$\text{BH}_3$ 以 THF 配合物形式使用）</li>
+  <li>氧化：$\text{烷基硼} \xrightarrow{\text{H}_2\text{O}_2,\;\text{NaOH}} \text{醇}$</li>
 </ol>
 
 <p><strong>特点</strong>：</p>
 <ul>
-  <li><strong style="color:red">反马氏</strong>方向：B 加在含 H 多的碳上（$\text{OH}$ 最终在含 H 多的碳上）</li>
-  <li><strong>顺式加成</strong>（syn addition）：B 和 H 从同侧加成</li>
-  <li>本反应为<strong>协同反应</strong>，无碳正离子中间体，<strong>不会重排</strong></li>
+  <li><strong style="color:red">反马氏</strong>方向：$\text{B}$ 加在含 H 多的碳上（位阻小的碳），$\text{OH}$ 最终也在含 H 多的碳上</li>
+  <li><strong>顺式加成</strong>（syn addition）：$\text{B}$ 和 $\text{H}$ 从<strong>同一面</strong>加成</li>
+  <li><strong>协同机理</strong>（四元环过渡态），无碳正离子中间体，<strong style="color:red">不会发生重排</strong></li>
 </ul>
 
-<p>例：</p>
+<p>例（环己烯 → 环己醇）：</p>
+$$\bigcirc\!\!=  \xrightarrow{1.\,(\text{BH}_3)_2,\;\text{THF}} \xrightarrow{2.\,\text{H}_2\text{O}_2,\;\text{NaOH}} \text{环己醇（顺式 syn 加成产物）}$$
+
+<p>例（丙烯 → 正丙醇）：</p>
 $$\text{CH}_3\text{CH}=\text{CH}_2 \xrightarrow{1.\,(\text{BH}_3)_2} \xrightarrow{2.\,\text{H}_2\text{O}_2,\,\text{NaOH}} \text{CH}_3\text{CH}_2\text{CH}_2\text{OH}$$
-<p>（产物为<strong>反马氏</strong>的伯醇）</p>
+<p>（产物为<strong>反马氏</strong>的<strong>伯醇</strong>）</p>
 </div>
 
 <div class="tip">
@@ -250,12 +299,13 @@ $$\text{CH}_3\text{CH}=\text{CH}_2 \xrightarrow{1.\,(\text{BH}_3)_2} \xrightarro
 </table>
 </div>
 
-<h3>环氧化反应</h3>
+<h3>(八) 环氧化反应</h3>
 
 <div class="fb"><div class="t">烯烃的环氧化（过氧酸氧化）</div>
-<p>使用 mCPBA（间氯过氧苯甲酸）或其他过氧酸：</p>
-$$\text{烯烃} + \text{RCOOOH} \xrightarrow{} \text{环氧化物} + \text{RCOOH}$$
+<p>使用 <strong>mCPBA</strong>（间氯过氧苯甲酸）或其他过氧酸（$\text{RCO}_3\text{H}$）：</p>
+$$\text{烯烃} + \text{RCO}_3\text{H} \xrightarrow{} \text{环氧化物} + \text{RCOOH}$$
 <p><strong>特点</strong>：<strong>顺式加成</strong>（协同机理），保持双键两侧取代基的相对构型</p>
+<p><strong>本反应为协同反应</strong>（蝴蝶形过渡态），不经过碳正离子，不会重排</p>
 </div>
 
 </div>
@@ -267,56 +317,43 @@ $$\text{烯烃} + \text{RCOOOH} \xrightarrow{} \text{环氧化物} + \text{RCOOH
 <img src="_img_summary/p6.png" class="page-img" alt="第6页手写原稿">
 <div class="card">
 
-<h3>对比氧化的反应机理</h3>
+<h3>对比氧化的反应机理（续）</h3>
 
-<div class="fb"><div class="t">四氧化锇（$\text{OsO}_4$）氧化</div>
-<p>四氧化锇 $\text{OsO}_4$ 与烯烃进行<span style="color:red">顺式双羟基化</span>反应：</p>
-$$\text{烯烃} \xrightarrow{\text{OsO}_4} \text{锇酸酯中间体} \xrightarrow{\text{还原（如 }\text{NaHSO}_3\text{）}} \text{邻二醇（顺式）}$$
+<div class="fb"><div class="t">四氧化锇（$\text{OsO}_4$）氧化 —— 顺式双羟基化</div>
+<p>$\text{OsO}_4$ 与烯烃进行<span style="color:red">顺式双羟基化</span>反应：</p>
+$$\text{烯烃} \xrightarrow{\text{OsO}_4} \text{锇酸酯（环状中间体）} \xrightarrow{\text{还原（}\text{NaHSO}_3\text{ 或 }  \text{H}_2\text{S}\text{）}} \text{邻二醇（顺式）}$$
 <p><strong>特点</strong>：</p>
 <ul>
-  <li><strong>协同机理</strong>：$\text{OsO}_4$ 从烯烃<strong>同一面</strong>进攻 → <strong>顺式</strong>邻二醇</li>
-  <li>产物保持 syn 立体化学</li>
-</ul>
-</div>
-
-<div class="fb"><div class="t">高锰酸钾（$\text{KMnO}_4$）氧化</div>
-<ul>
-  <li><strong>冷、稀、碱性</strong>条件（Baeyer 试验）：$\text{烯烃} \xrightarrow{\text{KMnO}_4(\text{冷，稀})} \text{邻二醇}$（<strong>顺式</strong>双羟基化，类似 $\text{OsO}_4$）</li>
-  <li><strong>热、浓、酸性</strong>条件：氧化断键 → 产生酮 / 羧酸</li>
+  <li><strong>协同机理</strong>：$\text{OsO}_4$ 从烯烃<strong>同一面</strong>进攻（[3+2] 环加成）→ <strong style="color:red">顺式</strong>邻二醇</li>
+  <li>产物保持 <strong>syn</strong> 立体化学</li>
+  <li>$\text{OsO}_4$ 有毒且昂贵，可用催化量的 $\text{OsO}_4$ + 共氧化剂（如 $\text{NMO}$）代替</li>
 </ul>
 </div>
 
 <div class="warn">
 <strong>对比记忆</strong>：
 <ol>
-  <li>双键上的<strong>顺式加成</strong>氧化试剂不会发生碳骨架断裂反应</li>
-  <li>双键上的剧烈氧化（热 $\text{KMnO}_4$）则<strong>电子彻底代谢</strong>，对应有断键作用</li>
+  <li>双键上的<strong>顺式加成</strong>氧化试剂（$\text{OsO}_4$、冷稀 $\text{KMnO}_4$）不会发生碳骨架断裂</li>
+  <li>双键上的<strong>剧烈氧化</strong>（热浓酸性 $\text{KMnO}_4$）则电子被彻底夺取，对应有<strong>断键作用</strong></li>
 </ol>
 </div>
 
-<div class="fb"><div class="t">烯烃在 $\text{KMnO}_4$ 下的断裂规则</div>
-<p>被氧化断键后的产物判断：</p>
-<table>
-<tr><th>双键碳类型</th><th>氧化产物</th></tr>
-<tr><td>$\text{R}_2\text{C}=$ （两个 R 取代）</td><td>酮 $\text{R}_2\text{C}=\text{O}$</td></tr>
-<tr><td>$\text{RCH}=$（一个 R 取代）</td><td>羧酸 $\text{RCOOH}$</td></tr>
-<tr><td>$\text{CH}_2=$（无 R 取代）</td><td>$\text{CO}_2 + \text{H}_2\text{O}$</td></tr>
-</table>
-</div>
-
-<h3>(2) $\alpha$-H 卤代反应（<span style="color:red">自由基反应</span>）</h3>
+<h3>(九) $\alpha$-H 卤代反应（<span style="color:red">自由基反应</span>）</h3>
 
 <div class="fb"><div class="t">烯丙位 $\alpha$-H 的卤代（NBS 卤代）</div>
-<p>烯丙型自由基：$\text{p}$-$\pi$ 共轭稳定 → <strong>比一般自由基更稳定</strong></p>
-$$\text{H}_2\text{C}=\text{CH}-\text{CH}_3 \xrightarrow{} \text{烯丙基自由基}$$
-<p>使用 <strong>NBS（N-溴代丁二酰亚胺）</strong>进行 $\alpha$-H 溴代：</p>
-$$\text{CH}_2=\text{CH-CH}_3 \xrightarrow{\text{NBS, }h\nu} \text{CH}_2=\text{CH-CH}_2\text{Br}$$
+<p><strong>烯丙型自由基</strong>：$\text{p}$-$\pi$ 共轭稳定 → <strong>比一般自由基更稳定</strong>（中间体稳定）</p>
+$$\text{H}_2\text{C}=\text{CH}-\text{CH}_3 \xrightarrow{\text{NBS},\;h\nu\text{ 或 }\Delta} \text{H}_2\text{C}=\text{CH}-\text{CH}_2\text{Br}$$
+<p>使用 <strong>NBS（N-溴代丁二酰亚胺）</strong>进行选择性 $\alpha$-H 溴代</p>
 </div>
 
-<div class="fb"><div class="t">高温、气相条件下的取代反应</div>
+<div class="fb"><div class="t">高温 vs 常温：加成与取代的竞争</div>
 <ul>
-  <li><strong>常温、室温</strong>：$\text{Cl}_2$ 发生<strong>加成反应</strong>（离子型，双键加成）：$\text{H}_3\text{C}-\text{CH}=\text{CH}_2 + \text{Cl}_2 \to$ 二氯代物</li>
-  <li><strong>高温（500°C）</strong>：$\text{Cl}_2$ 发生<strong>取代反应</strong>（自由基型，$\alpha$-H 取代）：$\text{H}_3\text{C}-\text{CH}=\text{CH}_2 + \text{Cl}_2 \xrightarrow{500°\text{C}} \text{ClCH}_2\text{-CH}=\text{CH}_2 + \text{HCl}$</li>
+  <li><strong>常温、溶液中</strong>：$\text{Cl}_2$ 发生<strong>加成反应</strong>（离子型，双键参与）
+    $$\text{CH}_3\text{CH}=\text{CH}_2 + \text{Cl}_2 \xrightarrow{\text{常温}} \text{CH}_3\text{CHClCH}_2\text{Cl}$$
+  </li>
+  <li><strong>高温（$500\,°\text{C}$）、气相</strong>：$\text{Cl}_2$ 发生<strong>取代反应</strong>（自由基型，$\alpha$-H 取代）
+    $$\text{CH}_3\text{CH}=\text{CH}_2 + \text{Cl}_2 \xrightarrow{500\,°\text{C}} \text{ClCH}_2\text{CH}=\text{CH}_2 + \text{HCl}$$
+  </li>
 </ul>
 </div>
 
@@ -328,17 +365,44 @@ $$\text{CH}_2=\text{CH-CH}_3 \xrightarrow{\text{NBS, }h\nu} \text{CH}_2=\text{CH
 </ul>
 </div>
 
-<h3>(六) 双键位置的测定</h3>
+<h3>(十) 双数化物（副产物）</h3>
 
-<div class="fb"><div class="t">臭氧化反应</div>
-<p>臭氧化-还原水解用于确定烯烃双键的位置：</p>
-$$\text{烯烃} \xrightarrow{\text{O}_3} \text{臭氧化物} \xrightarrow{\text{Zn}/\text{H}_2\text{O}(\text{或 Me}_2\text{S})} \text{醛/酮}$$
+<div class="fb"><div class="t">$\text{KMnO}_4$ 氧化</div>
+<ul>
+  <li><strong>冷、稀、碱性</strong>条件（<strong>Baeyer 试验</strong>）：
+    $$\text{烯烃} \xrightarrow{\text{KMnO}_4\text{（冷、稀）}} \text{邻二醇（顺式）}$$
+    紫色 $\text{KMnO}_4$ 褪色 → 可用于<strong>鉴别不饱和键</strong>（Baeyer 试剂）
+  </li>
+  <li><strong>热、浓、酸性</strong>条件：氧化断键 → 产生酮 / 羧酸 / $\text{CO}_2$</li>
+</ul>
+</div>
+
+<div class="fb"><div class="t">$\text{KMnO}_4$ 氧化断键规则</div>
+<table>
+<tr><th>双键碳类型</th><th>氧化产物</th></tr>
+<tr><td>$\text{R}_2\text{C}=$（两个 R 取代）</td><td>酮 $\text{R}_2\text{C}=\text{O}$</td></tr>
+<tr><td>$\text{RCH}=$（一个 R 取代）</td><td>羧酸 $\text{RCOOH}$</td></tr>
+<tr><td>$\text{CH}_2=$（无 R 取代）</td><td>$\text{CO}_2 + \text{H}_2\text{O}$</td></tr>
+</table>
+</div>
+
+<div class="fb"><div class="t">低碳酸盐氧化（环氧化 → 邻二醇）</div>
+<p>烯烃先<strong>环氧化</strong>，再在酸性或碱性条件下<strong>开环水解</strong>，可得到<strong>反式邻二醇</strong>（anti addition）：</p>
+$$\text{烯烃} \xrightarrow{\text{RCO}_3\text{H}} \text{环氧化物} \xrightarrow{\text{H}_3\text{O}^+\text{ 或 OH}^-} \text{反式邻二醇}$$
+<p><strong>对比 $\text{OsO}_4$</strong>：$\text{OsO}_4$ 给<strong>顺式</strong>邻二醇，环氧化开环给<strong>反式</strong>邻二醇</p>
+</div>
+
+<h3>(十一) 臭氧化反应</h3>
+
+<div class="fb"><div class="t">臭氧化-还原水解</div>
+<p>用于确定烯烃双键的位置：</p>
+$$\text{烯烃} \xrightarrow{\text{O}_3} \text{臭氧化物} \xrightarrow{\text{Zn}/\text{H}_2\text{O}\;\text{或}\;\text{Me}_2\text{S}} \text{醛/酮}$$
 
 <p><strong>机理</strong>：</p>
 <ol>
-  <li>$\text{O}_3$ 进行 [3+2] 环加成 → 摩尔臭氧化物（molozonide）</li>
+  <li>$\text{O}_3$ 进行 [3+2] 环加成 → 初级臭氧化物（molozonide）</li>
   <li>重排 → 臭氧化物（ozonide）</li>
-  <li>还原水解 → 两个羰基化合物（醛和/或酮）</li>
+  <li>还原水解（$\text{Zn}/\text{H}_2\text{O}$ 或 $\text{(CH}_3\text{)}_2\text{S}$） → 两个羰基化合物（醛和/或酮）</li>
 </ol>
 
 <p><strong>产物判断规则</strong>：双键断裂处各变为 $\text{C}=\text{O}$</p>
@@ -377,144 +441,106 @@ $$\text{烯烃} \xrightarrow{\text{O}_3} \text{臭氧化物} \xrightarrow{\text{
 </div>
 </div>
 
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>手写笔记电子化 p7-p12 | 有机化学</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
-<style>
-:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1100px;margin:0 auto;}
-h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
-h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
-h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
-.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
-.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
-.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
-.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
-.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-table{width:100%;border-collapse:collapse;margin:12px 0;}
-th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
-th{background:var(--pri);color:#fff;}
-tr:nth-child(even){background:#f0f7f0;}
-ul,ol{margin-left:20px;margin-bottom:8px;}
-.page-label{display:inline-block;background:var(--pri);color:#fff;padding:4px 16px;border-radius:20px;font-weight:bold;font-size:1.1em;margin-bottom:10px;}
-.page-img{width:100%;max-width:1000px;border:2px solid var(--border);border-radius:8px;margin:10px 0 18px;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
-</style>
-</head>
-<body>
-
-<h1>手写笔记电子化 (第7-12页)</h1>
-
-<!-- ==================== 第7页 ==================== -->
+<!-- ======================== 第 7 页 ======================== -->
 <div style="margin:30px 0;">
 <span class="page-label">第 7 页</span>
 <img src="_img_summary/p7.png" class="page-img" alt="第7页手写原稿">
 <div class="card">
 
-<h2>(五) 聚合反应</h2>
+<h3>(十二) 聚合反应</h3>
 
 <div class="fb"><div class="t">定义</div>
-<p>由低相对分子质量的化合物通过自相加或互相加成反应转变为高相对分子质量化合物的反应。</p>
+<p>由低相对分子质量的化合物通过自相加成或互相加成反应转变为高相对分子质量化合物的反应。</p>
 </div>
 
-<h3>自由基聚合反应</h3>
-<p>$n\text{CH}_2\text{=CH}_2 \xrightarrow[\text{100-300}^\circ\text{C, 高压}]{\text{自由基引发剂}} \text{[-CH}_2\text{-CH}_2\text{-]}_n$</p>
-<p>用上法可制得<strong>高压聚乙烯</strong>（密度较低），支链较多、支链度较高、结晶度低。</p>
-<p>某些烯烃也可用自由基聚合在较低压下进行，得到<strong>低压聚乙烯</strong>（高密度、支链少、结晶度高、线型分子）。</p>
-<div class="tip">高压聚乙烯 vs 低压聚乙烯：高压法得到的产品分子量约 20,000-50,000；低压法（Ziegler-Natta）产品分子量更高。</div>
-
-<h3>Ziegler-Natta 催化聚合</h3>
-<p>催化剂为 $\text{TiCl}_4$ / $\text{Al(C}_2\text{H}_5\text{)}_3$</p>
-<p>$n\text{CH}_2\text{=CH}_2 \xrightarrow{\text{TiCl}_4\text{-Al(C}_2\text{H}_5\text{)}_3,\ 50\ ^\circ\text{C},\ 2.0\text{ MPa}} \text{[-CH}_2\text{-CH}_2\text{-]}_n$</p>
-<div class="tip">Ziegler-Natta 催化剂能实现<strong>定向聚合</strong>（等规聚合），产物结构规整、结晶度高。</div>
-
-<h2>(六) 烯烃的来源和制备</h2>
-
-<h3>1. 乙醇脱水</h3>
-<p>$\text{CH}_3\text{CH}_2\text{OH} \xrightarrow{\text{H}_2\text{SO}_4,\ 170\ ^\circ\text{C}} \text{CH}_2\text{=CH}_2 + \text{H}_2\text{O}$</p>
-
-<h3>2. 卤代烃脱卤化氢</h3>
-<p>$\text{CH}_3\text{CH}_2\text{CH}_2\text{Br} \xrightarrow{\text{KOH/EtOH}} \text{CH}_3\text{CH=CH}_2 + \text{HBr}$</p>
-
-<h3>3. 邻二卤代物脱卤素</h3>
-<p>$\text{CH}_3\text{CHBrCHBrCH}_3 \xrightarrow{\Delta,\ \text{Zn}} \text{CH}_3\text{CH=CHCH}_3 + \text{ZnBr}_2$</p>
-<div class="note"><strong>应用</strong>：乙烯可用作植物催熟剂，但使用不当会造成乙烯辐射催熟。<br>
-$[\text{(ClCH}_2\text{CH}_2\text{)}_2\text{O}]$ — 芥子气（含氯代物的典型例子）</div>
-
-<!-- 右半页：烯烃反应续 -->
-
-<h2>烯烃反应续</h2>
-
-<h3>(7) 硼氢化反应 ($\text{BH}_3/\text{THF}$)</h3>
-<p>$\text{C=C} \xrightarrow{\text{BH}_3/\text{THF}} \text{烷基硼} \xrightarrow{\text{H}_2\text{O}_2/\text{NaOH}} \text{醇}$</p>
-<div class="fb"><div class="t">硼氢化-氧化 (Hydroboration-Oxidation)</div>
-<p>选择性：<strong>反马氏加成</strong>（B 加到含 H 多的碳上，即位阻小的碳）</p>
-<p>立体化学：<strong>顺式加成</strong>（syn addition）</p>
-<p>综合效果：实现<strong>反马氏、顺式</strong>的醇合成</p>
+<h4>自由基聚合反应</h4>
+<div class="fb"><div class="t">高压聚乙烯</div>
+$$n\text{CH}_2\text{=CH}_2 \xrightarrow[\text{100-300}\,°\text{C},\;\text{高压}]{\text{自由基引发剂}} \text{[-CH}_2\text{-CH}_2\text{-]}_n$$
+<p>高压法（自由基引发）得到的产品：支链较多、支链度较高、结晶度低，分子量约 20,000-50,000。</p>
 </div>
 
-<h3>(8) 碳烯（卡宾, Carbene）加成</h3>
+<div class="fb"><div class="t">低压聚乙烯（Ziegler-Natta 催化聚合）</div>
+<p>催化剂：$\text{TiCl}_4$ / $\text{Al(C}_2\text{H}_5\text{)}_3$（Ziegler-Natta 催化剂）</p>
+$$n\text{CH}_2\text{=CH}_2 \xrightarrow[\sim50\,°\text{C},\;2.0\;\text{MPa}]{\text{TiCl}_4\text{-Al(C}_2\text{H}_5\text{)}_3} \text{[-CH}_2\text{-CH}_2\text{-]}_n$$
+<p>低压法产品：高密度、支链少、结晶度高、线型分子，分子量更高。</p>
+</div>
+
+<div class="tip">
+<strong>高压聚乙烯 vs 低压聚乙烯</strong>：
 <table>
-<tr><th>碳烯类型</th><th>生成方法</th></tr>
-<tr><td>$\text{:CH}_2$（亚甲基）</td><td>$\text{CH}_2\text{N}_2 \xrightarrow{h\nu} \text{:CH}_2 + \text{N}_2$</td></tr>
-<tr><td>$\text{:CX}_2$（二卤卡宾）</td><td>$\text{HCX}_3 + \text{KOBu-t} \to \text{:CX}_2$</td></tr>
-<tr><td>$\text{:CCl}_2$</td><td>$\text{CHCl}_3 + \text{KOH} \to \text{:CCl}_2 + \text{KCl} + \text{H}_2\text{O}$</td></tr>
+<tr><th>类型</th><th>引发方式</th><th>条件</th><th>产物特征</th></tr>
+<tr><td>高压聚乙烯</td><td>自由基引发</td><td>高温高压</td><td>支链多、密度低、结晶度低</td></tr>
+<tr><td>低压聚乙烯</td><td>Ziegler-Natta 催化</td><td>低温低压</td><td>支链少、密度高、结晶度高</td></tr>
 </table>
-<p>碳烯与烯烃反应生成<strong>环丙烷</strong>衍生物（Simmons-Smith 反应用 $\text{CH}_2\text{I}_2/\text{Zn(Cu)}$ 也可）。</p>
+</div>
 
-<h3>(9) 烯烃的氧化</h3>
+<h3>(十三) 烯烃的来源和制备</h3>
 
-<h4>高锰酸钾氧化</h4>
-<p>用于双键的<strong>鉴别</strong>和<strong>定位</strong>。</p>
+<div class="fb"><div class="t">实验室和工业制备方法</div>
+<h4>1. 乙醇脱水</h4>
+$$\text{CH}_3\text{CH}_2\text{OH} \xrightarrow{\text{H}_2\text{SO}_4,\;170\,°\text{C}} \text{CH}_2\text{=CH}_2 + \text{H}_2\text{O}$$
+
+<h4>2. 卤代烃脱卤化氢</h4>
+$$\text{CH}_3\text{CH}_2\text{CH}_2\text{Br} \xrightarrow{\text{KOH/EtOH}} \text{CH}_3\text{CH=CH}_2 + \text{KBr} + \text{H}_2\text{O}$$
+
+<h4>3. 邻二卤代物脱卤素</h4>
+$$\text{CH}_3\text{CHBrCHBrCH}_3 \xrightarrow{\text{Zn},\;\Delta} \text{CH}_3\text{CH=CHCH}_3 + \text{ZnBr}_2$$
+</div>
+
+<div class="note"><strong>应用</strong>：乙烯可用作植物催熟剂，但使用不当会造成危害。<br>
+芥子气 $[\text{(ClCH}_2\text{CH}_2\text{)}_2\text{S}]$ 是含氯代物的典型有毒化合物。</div>
+
+<h3>烯烃反应总结表</h3>
+
+<div class="fb"><div class="t">烯烃主要反应汇总</div>
 <table>
-<tr><th>条件</th><th>产物</th><th>用途</th></tr>
-<tr><td>冷、稀 $\text{KMnO}_4$（Baeyer试剂）</td><td>邻二醇（顺式加成）</td><td>鉴别不饱和键（$\text{KMnO}_4$ 紫色褪色）</td></tr>
-<tr><td>酸性 $\text{KMnO}_4$，加热</td><td>酮 / 羧酸</td><td>氧化切断定位</td></tr>
+<tr><th>反应类型</th><th>试剂</th><th>方向/立体</th><th>机理</th><th>产物</th></tr>
+<tr><td>催化加氢</td><td>$\text{H}_2$/Pt(Pd,Ni)</td><td>顺式加成</td><td>异相催化</td><td>烷烃</td></tr>
+<tr><td>加 HX</td><td>$\text{HCl, HBr, HI}$</td><td>马氏</td><td>碳正离子</td><td>卤代烃</td></tr>
+<tr><td>加 $\text{X}_2$</td><td>$\text{Cl}_2, \text{Br}_2$</td><td>反式加成</td><td>卤鎓离子</td><td>邻二卤代物</td></tr>
+<tr><td>加 $\text{H}_2\text{O}$（酸催化）</td><td>$\text{H}_2\text{SO}_4/\text{H}_2\text{O}$</td><td>马氏</td><td>碳正离子</td><td>醇（仲/叔）</td></tr>
+<tr><td>自由基加 HBr</td><td>$\text{HBr/ROOR}$</td><td>反马氏</td><td>自由基</td><td>卤代烃（反马）</td></tr>
+<tr><td>硼氢化-氧化</td><td>$\text{BH}_3$/THF; $\text{H}_2\text{O}_2$/NaOH</td><td>反马氏、顺式</td><td>协同</td><td>醇（伯）</td></tr>
+<tr><td>环氧化</td><td>$\text{RCO}_3\text{H}$</td><td>顺式</td><td>协同</td><td>环氧化物</td></tr>
+<tr><td>$\text{OsO}_4$ 氧化</td><td>$\text{OsO}_4$</td><td>顺式双羟化</td><td>协同 [3+2]</td><td>顺式邻二醇</td></tr>
+<tr><td>$\text{KMnO}_4$（冷稀）</td><td>$\text{KMnO}_4$</td><td>顺式双羟化</td><td>类似 $\text{OsO}_4$</td><td>顺式邻二醇</td></tr>
+<tr><td>$\text{KMnO}_4$（热浓酸）</td><td>$\text{KMnO}_4$</td><td>氧化断键</td><td>—</td><td>酮/$\text{RCOOH}$/$\text{CO}_2$</td></tr>
+<tr><td>臭氧化</td><td>$\text{O}_3$ + $\text{Zn/H}_2\text{O}$</td><td>断键</td><td>[3+2]</td><td>醛/酮</td></tr>
+<tr><td>$\alpha$-H 卤代</td><td>NBS / $\text{Cl}_2$(高温)</td><td>烯丙位</td><td>自由基</td><td>烯丙基卤代物</td></tr>
+<tr><td>聚合</td><td>引发剂 / 催化剂</td><td>—</td><td>自由基/配位</td><td>聚合物</td></tr>
 </table>
+</div>
 
-<h4>臭氧氧化</h4>
-<p>$\text{R}_1\text{R}_2\text{C=CHR}_3 \xrightarrow{\text{O}_3} \text{臭氧化物} \xrightarrow{\text{Zn/H}_2\text{O}} \text{R}_1\text{R}_2\text{C=O} + \text{R}_3\text{CHO}$</p>
-<div class="tip">臭氧化-还原水解可用于确定双键位置（<strong>逆推原始烯烃结构</strong>）。</div>
+<h3>烯烃的制备方法汇总</h3>
 
-<h4>过氧酸环氧化</h4>
-<p>$\text{C=C} \xrightarrow{\text{MCPBA (间氯过氧苯甲酸)}} \text{环氧化合物}$</p>
-<p>$\text{R-CH=CH-R'} \xrightarrow{\text{RCO}_3\text{H}} $ 环氧化物（保持双键的立体化学）</p>
+<div class="fb"><div class="t">制备方法总结</div>
+<table>
+<tr><th>方法</th><th>反应</th></tr>
+<tr><td>醇脱水</td><td>$\text{R-OH} \xrightarrow{\text{H}_2\text{SO}_4,\;\Delta} \text{C=C} + \text{H}_2\text{O}$</td></tr>
+<tr><td>卤代烃消除（$E2$）</td><td>$\text{R-X} \xrightarrow{\text{NaOH/EtOH}} \text{C=C} + \text{NaX} + \text{H}_2\text{O}$</td></tr>
+<tr><td>邻二卤代物脱卤</td><td>$\text{R-CHX-CHX-R'} \xrightarrow{\text{Zn}} \text{C=C} + \text{ZnX}_2$</td></tr>
+<tr><td>Wittig 反应</td><td>$\text{R}_2\text{C=O} + \text{Ph}_3\text{P=CHR'} \to \text{R}_2\text{C=CHR'} + \text{Ph}_3\text{P=O}$</td></tr>
+</table>
+</div>
 
-<h4>催化氧化（工业）</h4>
-<p>$\text{CH}_2\text{=CH}_2 \xrightarrow[\text{O}_2]{\text{Ag}} \text{环氧乙烷}$</p>
+<div class="note">
+<strong>Wittig 反应</strong>：可精确指定双键位置，是合成烯烃的重要方法。Wittig 试剂（$\text{Ph}_3\text{P=CHR}$，磷叶立德）与醛/酮反应，生成烯烃和三苯基氧膦。
+</div>
 
-<h4>$\text{OsO}_4$ 氧化（顺式双羟化）</h4>
-<p>$\text{C=C} \xrightarrow{\text{OsO}_4} \text{邻二醇（顺式）}$</p>
+<h3>$\alpha,\beta$-不饱和体系与共轭二烯</h3>
 
-<h3>(10) 烯烃的制备方法汇总</h3>
+<div class="fb"><div class="t">共轭二烯的加成（预告）</div>
+<p>$\text{C=C-C=C}$（共轭二烯体系）</p>
 <ul>
-<li><strong>醇脱水</strong>：$\text{R-OH} \xrightarrow{\text{H}_2\text{SO}_4,\ \Delta} \text{C=C}$</li>
-<li><strong>卤代烃消除</strong>：$\text{R-X} \xrightarrow{\text{NaOH/EtOH}} \text{C=C}$</li>
-<li><strong>邻二卤代物脱卤</strong>：$\text{R-CHX-CHX-R'} \xrightarrow{\text{Zn}} \text{C=C}$</li>
-<li><strong>Wittig 反应</strong>：$\text{R}_2\text{C=O} + \text{Ph}_3\text{P=CHR'} \to \text{R}_2\text{C=CHR'}$</li>
+  <li><strong>1,2-加成</strong>：加在一个双键上</li>
+  <li><strong>1,4-加成</strong>（共轭加成）：$\text{X}$ 加在 1,4 位，中间形成新双键</li>
 </ul>
-
-<h3>(11) $\alpha,\beta$-不饱和体系</h3>
-<p>$\text{C=C-C=C}$（共轭二烯）</p>
-<p>共轭加成（1,4-加成）：$\text{C=C-C=C} + \text{X}_2 \to \text{X-C-C=C-C-X}$</p>
-<p>共轭二烯的 1,4-加成 vs 1,2-加成竞争。</p>
+$$\text{CH}_2\text{=CH-CH=CH}_2 + \text{HBr} \to \begin{cases} \text{1,2-加成产物} \\ \text{1,4-加成产物} \end{cases}$$
+<p>1,2-加成 vs 1,4-加成的竞争由温度等条件决定（将在后续章节详述）。</p>
+</div>
 
 </div>
 </div>
-
-<!-- ==================== 第8页 ==================== -->
 
 </body>
 </html>

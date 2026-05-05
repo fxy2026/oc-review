@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'194',right:'194',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
 <style>
 :root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -64,24 +64,38 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 
 <h3>二、命名</h3>
 
+<div class="fb"><div class="t">常见烷基</div>
+<table>
+<tr><th>烷基</th><th>简写</th><th>来源</th></tr>
+<tr><td>$\text{CH}_3\!-$（甲基）</td><td>$\text{Me}$</td><td>甲烷去一个H</td></tr>
+<tr><td>$\text{C}_2\text{H}_5\!-$（乙基）</td><td>$\text{Et}$</td><td>乙烷去一个H</td></tr>
+<tr><td>$\text{(CH}_3\text{)}_2\text{CH}\!-$（异丙基）</td><td>$i\text{-Pr}$</td><td>丙烷仲碳去H</td></tr>
+<tr><td>$\text{(CH}_3\text{)}_3\text{C}\!-$（叔丁基）</td><td>$t\text{-Bu}$</td><td>异丁烷叔碳去H</td></tr>
+</table>
+<p>通式：$\text{C}_n\text{H}_{2n+1}\!-$（烷基，一价基团）</p>
+</div>
+
+<div class="fb"><div class="t">同分异构体</div>
+<p>分子式相同、结构不同的化合物互为同分异构体。碳链异构体数目随碳数增多而<strong>急剧增加</strong>。</p>
+<p>构造异构 = 碳链异构 + 位置异构 + 官能团异构</p>
+</div>
+
 <div class="fb"><div class="t">A. 开链烷烃（系统命名法）</div>
 <ol>
   <li><strong>选主链</strong>：最长碳链（长 > 多 > 支 &rarr; 多）</li>
   <li><strong>编号</strong>：近（近取代基端）、低（编号之和最小）</li>
-  <li>写名称：① 写名 ② 加取代 ③ 写明主链副位次 ④ 标顺序</li>
-  <li>书写格式：2,05-三甲基-7-乙基庚烷</li>
+  <li>写名称：① 写名称 ② 加取代基 ③ 写明主链和位次 ④ 标顺序（先小后大）</li>
+  <li>书写格式例：<strong>2,5-二甲基-7-乙基庚烷</strong></li>
 </ol>
 </div>
 
 <div class="fb"><div class="t">B. 单环烷烃</div>
 <ol>
-  <li>编号：$\alpha$ 取代基的位置要尽量标记小的编号</li>
-  <li>先<strong>尝试从各方向编号</strong>
-    <ul>
-      <li>② 先产生<strong>最低系列</strong>的 ③ 与 ④</li>
-      <li>例：编号 1,2- ... 优于 1,3- ...</li>
-    </ul>
-  </li>
+  <li>编号：$\alpha$ 取代基的位置要尽量标记<strong>最小</strong>的编号</li>
+  <li>先<strong>尝试从各方向编号</strong>，选使取代基位次之和<strong>最小</strong>的方案</li>
+  <li>② 先产生<strong>最低系列</strong>（逐位比较，第一个不同的位次更小者优先）</li>
+  <li>③ 先列较小的取代基（按"先小后大"的次序书写）</li>
+  <li>例：1,2-二甲基环戊烷 优于 1,5-二甲基环戊烷</li>
 </ol>
 </div>
 
@@ -91,7 +105,7 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
   <li>由<strong>桥环连接</strong>，各桥按<strong>碳数从大到小</strong>排列</li>
   <li>命名格式：二环[X.Y.Z]烷，括号内标注各桥碳原子数（降序排列，如 [2.2.1]）</li>
   <li>编号起点：从<strong>桥头碳</strong>开始，沿最长桥 → 次长桥 → 最短桥</li>
-  <li>例：二环[2.2.1]庚烷；1,7,7-三甲基二环[2.2.1]庚烷-2-酮（即樟脑）</li>
+  <li>例：二环[2.2.1]庚烷；1,7,7-三甲基二环[2.2.1]庚烷-2-酮（即<strong>樟脑</strong>，又称酮基莰）</li>
 </ol>
 </div>
 
@@ -123,7 +137,9 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 <ul>
   <li>小环（3~4元环）：角张力大，不稳定</li>
   <li>常见环（5~6元环）：最稳定（接近 $109.5°$）</li>
-  <li>特别注意：<span style="color:red">三元环：角张力 → 弯曲键</span></li>
+  <li>特别注意：<span style="color:red">三元环：角张力 → 弯曲键（"香蕉键"，轨道弯曲重叠，类似 $\pi$ 键性质）</span></li>
+  <li>张力来源：<strong>角张力</strong>（Bayer 张力，键角偏离 $109.5°$）+ <strong>扭转张力</strong>（重叠构象导致）</li>
+  <li>Bayer 张力学说仅对小环适用；大环（$\geq 6$元环）可通过折叠消除角张力</li>
 </ul>
 </div>
 
@@ -150,10 +166,11 @@ ul,ol{margin-left:20px;margin-bottom:8px;}
 
 <div class="fb"><div class="t">丁烷构象</div>
 <ul>
-  <li><strong>全交叉式</strong>（anti）：最稳定</li>
-  <li><strong>邻交叉式</strong>（gauche）：$\text{CH}_3$ 之间 gauche 相互作用</li>
-  <li><strong>全重叠式</strong>：最不稳定</li>
-  <li>稳定性：<strong>对位交叉 > 邻位交叉 > 部分重叠 > 全重叠</strong></li>
+  <li><strong>对位交叉</strong>（anti）：最稳定，两个 $\text{CH}_3$ 距离最远</li>
+  <li><strong>邻位交叉</strong>（gauche）：$\text{CH}_3$ 之间 gauche 相互作用，能量较高</li>
+  <li><strong>部分重叠</strong>：$\text{CH}_3$ 与 $\text{H}$ 重叠</li>
+  <li><strong>全重叠</strong>：两个 $\text{CH}_3$ 完全重叠，最不稳定（能量最高）</li>
+  <li>稳定性：<strong>对位交叉 &gt; 邻位交叉 &gt; 部分重叠 &gt; 全重叠</strong></li>
 </ul>
 </div>
 
@@ -227,7 +244,9 @@ $$\text{R-H} + \text{X}_2 \xrightarrow{h\nu \text{ 或 }\Delta} \text{R-X} + \te
 <ul>
   <li>活性（H的种类）：<strong style="color:red">$3°\text{C-H} > 2°\text{C-H} > 1°\text{C-H}$</strong></li>
   <li>判断卤代产物时须同时考虑：<strong style="color:red">H 的种类 + H 的个数</strong></li>
-  <li>选择性：$\text{Br}_2$ 选择性 &gt; $\text{Cl}_2$（$\text{Br}_2$ 几乎只取代 3°H）</li>
+  <li>选择性：$\text{Br}_2$ 选择性 &gt; $\text{Cl}_2$（$\text{Br}_2$ 几乎只取代 $3°\text{H}$）</li>
+  <li>$\text{Cl}_2$：活性大但选择性差 → 容易产生<strong>多种卤代产物</strong>（包括多卤代物）</li>
+  <li>$\text{Br}_2$：活性小但选择性高 → 几乎<strong>只取代叔碳氢</strong></li>
 </ul>
 </div>
 
@@ -242,7 +261,7 @@ $$3°\text{C}\cdot > 2°\text{C}\cdot > 1°\text{C}\cdot > \text{CH}_3\cdot$$
 <div class="fb"><div class="t">小环烷烃的开环加成（<span style="color:red">环丙烷特有</span>）</div>
 <p>环丙烷的弯曲键使其像烯烃一样可发生加成反应：</p>
 
-<p>(1) <strong>加 $\text{H}_2$</strong>（催化加氢）：</p>
+<p>(1) <strong>加 $\text{H}_2$</strong>（催化加氢，催化剂 $\text{Ni}$/$\text{Pt}$/$\text{Pd}$）：</p>
 $$\triangle + \text{H}_2 \xrightarrow{\text{Ni}, \Delta} \text{CH}_3\text{CH}_2\text{CH}_3$$
 
 <p>(2) <strong>加 $\text{Cl}_2$ / $\text{Br}_2$</strong>：</p>
@@ -267,9 +286,9 @@ $$\triangle + \text{HBr} \to \text{CH}_3\text{CH}_2\text{CH}_2\text{Br}$$
 <div class="fb"><div class="t">氧化反应</div>
 <p>(1) <strong>燃烧</strong>（完全氧化）</p>
 
-<p>(2) <strong>受控氧化</strong>：</p>
-$$\text{RCHCOR'} + \text{O}_2 \xrightarrow{\text{Mn}^{2+}/\text{Co}^{2+}} \text{RCOOH} + \text{R'COOH} + \text{羧酸/酮}$$
-<p>烷烃在催化条件下可被氧化为羧酸（工业用途）</p>
+<p>(2) <strong>受控氧化</strong>（工业用途）：</p>
+$$\text{RCH}_2\text{CH}_2\text{R'} + \text{O}_2 \xrightarrow{\text{Mn}^{2+}/\text{Co}^{2+}} \text{RCOOH} + \text{R'COOH} + \text{羧酸/酮}$$
+<p>长链烷烃在催化剂（$\text{Mn}^{2+}$/$\text{Co}^{2+}$）条件下可被氧化断链，生成羧酸（工业制备脂肪酸的方法）</p>
 </div>
 
 </div>
