@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第4章 对映异构 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch3.html">&larr; 第3章</a><a href="ch5.html">第5章 &rarr;</a></div>
+<h1>第4章 对映异构</h1>
+<h2 id="kp">核心知识点</h2>
+
+<h3 id="k0">4.0 异构体分类总览</h3>
+<div class="card">
+<div class="fb"><div class="t">异构体分类体系</div>
+<p><strong>同分异构体</strong>（分子式相同，结构不同）分为：</p>
+<ul>
+<li><strong>构造异构</strong>（原子连接顺序不同）
+  <ul>
+  <li>碳骨架异构：碳链不同（如正丁烷 vs 异丁烷）</li>
+  <li>官能团异构：官能团种类不同（如乙醇 vs 二甲醚）</li>
+  <li>位置异构：官能团位置不同（如1-丙醇 vs 2-丙醇）</li>
+  </ul>
+</li>
+<li><strong>立体异构</strong>（原子连接顺序相同，空间排列不同）
+  <ul>
+  <li>构象异构：单键旋转引起（能垒低，室温快速互变）</li>
+  <li>构型异构：需断键才能互变
+    <ul>
+    <li>顺反异构（几何异构）：双键或环上取代基的位置关系</li>
+    <li>对映异构（光学异构）：互为不可重叠镜像</li>
+    </ul>
+  </li>
+  </ul>
+</li>
+</ul></div>
+
+<div class="warn"><strong>"构造"、"构型"、"构象"三概念辨析</strong><br>
+&bull; <strong>构造(Constitution)</strong>：原子间的<strong>连接方式</strong>（谁和谁相连）<br>
+&bull; <strong>构型(Configuration)</strong>：原子在空间的<strong>固定排列</strong>，改变需断键（如R/S、E/Z）<br>
+&bull; <strong>构象(Conformation)</strong>：单键旋转产生的<strong>不同空间形态</strong>，室温可自由互变（如交叉式/重叠式）</div>
+
+<div class="tip"><strong>考试易混点</strong>：构型异构体是可分离的不同化合物；构象异构体在通常条件下不可分离（互变太快）。</div>
+</div>
+
+<h3 id="k1">4.1 手性与手性碳</h3>
+<div class="card">
+<div class="fb"><div class="t">基本概念</div>
+<ul>
+<li><strong>手性(Chirality)</strong>：分子与其镜像<strong>不能重叠</strong>的性质</li>
+<li><strong>手性碳(C*)</strong>：连接<strong>四个不同基团</strong>的sp<sup>3</sup>碳原子</li>
+<li><strong>对映体(Enantiomers)</strong>：互为镜像且不能重叠的一对异构体</li>
+<li><strong>非对映体(Diastereomers)</strong>：立体异构体但不是对映体</li>
+</ul></div>
+<div class="note"><strong>沙利度胺事件</strong>：R型=镇静安眠，S型=致畸。手性药物必须拆分的经典案例。</div>
+</div>
+
+<h3 id="k2">4.2 R/S构型标记</h3>
+<div class="card">
+<div class="fb"><div class="t">CIP规则三步法</div>
+<ol>
+<li>按<strong>CIP次序规则</strong>排列四个基团优先级：a > b > c > d</li>
+<li>将最小基团d放到<strong>最远处</strong>（离眼睛最远/朝纸面后方）</li>
+<li>从a→b→c的方向：<strong>顺时针=R</strong>，<strong>逆时针=S</strong></li>
+</ol></div>
+
+<svg width="300" height="150" viewBox="0 0 300 150" style="display:block;margin:10px auto;">
+  <defs><marker id="ah" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#666"/></marker></defs>
+  <!-- R config -->
+  <circle cx="80" cy="75" r="5" fill="#333"/>
+  <line x1="80" y1="75" x2="80" y2="30" stroke="#333" stroke-width="1.5"/>
+  <text x="80" y="22" text-anchor="middle" font-size="13" fill="#0d6b3d" font-weight="bold">a</text>
+  <line x1="80" y1="75" x2="40" y2="110" stroke="#333" stroke-width="1.5"/>
+  <text x="30" y="120" font-size="13" fill="#0d6b3d" font-weight="bold">b</text>
+  <line x1="80" y1="75" x2="120" y2="110" stroke="#333" stroke-width="1.5"/>
+  <text x="130" y="120" font-size="13" fill="#0d6b3d" font-weight="bold">c</text>
+  <text x="95" y="72" font-size="10" fill="#999">d(后方)</text>
+  <path d="M 75,38 A 40,40 0 0,1 113,102" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#ah)"/>
+  <text x="80" y="145" text-anchor="middle" font-size="12" fill="#c0392b" font-weight="bold">R (顺时针)</text>
+  <!-- S config -->
+  <circle cx="220" cy="75" r="5" fill="#333"/>
+  <line x1="220" y1="75" x2="220" y2="30" stroke="#333" stroke-width="1.5"/>
+  <text x="220" y="22" text-anchor="middle" font-size="13" fill="#0d6b3d" font-weight="bold">a</text>
+  <line x1="220" y1="75" x2="260" y2="110" stroke="#333" stroke-width="1.5"/>
+  <text x="270" y="120" font-size="13" fill="#0d6b3d" font-weight="bold">b</text>
+  <line x1="220" y1="75" x2="180" y2="110" stroke="#333" stroke-width="1.5"/>
+  <text x="170" y="120" font-size="13" fill="#0d6b3d" font-weight="bold">c</text>
+  <text x="235" y="72" font-size="10" fill="#999">d(后方)</text>
+  <path d="M 225,38 A 40,40 0 0,0 187,102" fill="none" stroke="#0d6b3d" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#ah)"/>
+  <text x="220" y="145" text-anchor="middle" font-size="12" fill="#0d6b3d" font-weight="bold">S (逆时针)</text>
+</svg>
+
+<div class="warn"><strong>当d不在后方时的技巧</strong>：<br>
+&bull; 方法1：交换d到后方（交换两个基团=构型反转，交换两次=恢复）<br>
+&bull; 方法2：按原位判断顺逆，若d在前方则结果<strong>取反</strong>（R↔S）</div>
+<div class="tip"><strong>D/L标记法</strong>：仅用于糖和氨基酸。D/L指的是Fischer投影式中最下面手性碳上OH的位置（右=D，左=L）。<strong>D/L与R/S无固定对应，D/L与(+)/(-)也无直接关系！</strong></div>
+</div>
+
+<h3 id="k3">4.3 旋光性</h3>
+<div class="card">
+<div class="fb"><div class="t">比旋光度</div>
+$$[\alpha]_\lambda^T = \frac{\alpha}{c \times l}$$
+<p>$\alpha$=实测旋光度，$c$=浓度(g/mL)，$l$=样品管长(dm)。比旋光度是物质的<strong>固有常数</strong>。</p></div>
+<div class="fb"><div class="t">对映体过量(ee%)</div>
+$$ee\% = \frac{|[R]-[S]|}{[R]+[S]} \times 100\% = \frac{|\alpha_{\text{obs}}|}{|\alpha_{\text{pure}}|} \times 100\%$$</div>
+<div class="note"><strong>旋光方向与构型无关</strong>：R不一定是(+)右旋，S不一定是(-)左旋。旋光方向只能由实验测定。</div>
+</div>
+
+<h3 id="k4">4.4 Fischer投影式（高频考点！）</h3>
+<div class="card">
+<div class="fb"><div class="t">基本规则：横前竖后</div>
+<p>横线上的基团朝向<strong>观察者</strong>（伸出纸面），竖线上的基团远离观察者（伸入纸面）。</p></div>
+
+<div class="fb"><div class="t">操作规则（必记！）</div>
+<table>
+<tr><th>操作</th><th>结果</th><th>原因</th></tr>
+<tr><td>旋转180&deg;</td><td><strong>同一化合物</strong></td><td>等价于偶数次交换</td></tr>
+<tr><td>固定一个基团，转其余三个</td><td><strong>同一化合物</strong></td><td>相当于空间中旋转分子</td></tr>
+<tr><td>旋转90&deg;</td><td><strong>对映体</strong></td><td>等价于奇数次交换</td></tr>
+<tr><td>交换任意两个基团</td><td><strong>对映体</strong></td><td>一次交换=构型翻转</td></tr>
+<tr><td>交换两次（4个基团中任意两对）</td><td><strong>同一化合物</strong></td><td>两次翻转=恢复</td></tr>
+<tr><td>翻面(上下翻转)</td><td><strong>不允许！</strong></td><td>破坏横前竖后规则</td></tr>
+</table></div>
+
+<div class="tip"><strong>Fischer投影式判R/S</strong>：<br>
+① 将最小基团(通常H)放到竖线上方或下方（用"固定一个转三个"操作）<br>
+② H在竖线上=H朝后方 → 直接按a→b→c判R/S<br>
+③ 若H在横线上=H朝前方 → 判完后<strong>取反</strong></div>
+</div>
+
+<h3 id="k5">4.5 对称因素与手性判断</h3>
+<div class="card">
+<div class="fb"><div class="t">判断手性的对称因素</div>
+<ul>
+<li><strong>对称面(&sigma;)</strong>：将分子分为互为镜像的两半 → 有对称面 = 无手性</li>
+<li><strong>对称中心(i)</strong>：通过中心点连线两端对应的原子 → 有对称中心 = 无手性</li>
+<li><strong>对称轴(C<sub>n</sub>)</strong>：<strong>不能单独判断手性</strong>！有些有C<sub>2</sub>轴的分子仍有手性</li>
+</ul></div>
+
+<div class="warn"><strong>三大易错点</strong><br>
+&bull; <strong>有手性碳 &ne; 有手性</strong>：内消旋体(meso)有手性碳但有对称面 → 无手性<br>
+&bull; <strong>无手性碳也可有手性</strong>：丙二烯型(如丙二烯二取代)、联苯轴手性、螺环手性<br>
+&bull; <strong>对称轴不能判手性</strong>：酒石酸有C<sub>2</sub>轴但仍有手性</div>
+</div>
+
+<h3 id="k6">4.6 含多个手性碳的异构体</h3>
+<div class="card">
+<div class="fb"><div class="t">异构体数目</div>
+<p>n个<strong>不同</strong>手性碳 → 最多 $2^n$ 个旋光异构体</p>
+<p>含<strong>相同</strong>取代手性碳(A-A型) → 存在<strong>内消旋体(meso)</strong>，实际数 < $2^n$</p></div>
+
+<div class="fb"><div class="t">异构体关系总结</div>
+<table>
+<tr><th>关系</th><th>定义</th><th>物理性质</th><th>旋光</th></tr>
+<tr><td><strong>对映体</strong></td><td>互为镜像不可重叠</td><td>除旋光方向外完全相同</td><td>旋光度等大反向</td></tr>
+<tr><td><strong>非对映体</strong></td><td>立体异构但非镜像</td><td>物理性质不同</td><td>旋光度不同</td></tr>
+<tr><td><strong>内消旋体</strong></td><td>分子内有对称面</td><td>无旋光性</td><td>$[\alpha]=0$</td></tr>
+<tr><td><strong>外消旋体</strong></td><td>等量对映体混合物</td><td>无旋光性</td><td>$[\alpha]=0$</td></tr>
+</table></div>
+<div class="note"><strong>内消旋 vs 外消旋</strong>：<br>
+&bull; 内消旋(meso)：<strong>一个</strong>化合物，分子内对称抵消 → 不可拆分<br>
+&bull; 外消旋(racemic)：<strong>两个</strong>对映体的等量混合物 → 可通过拆分分离</div>
+</div>
+
+<h3 id="k6b">4.6b 环状化合物的对映异构</h3>
+<div class="card">
+<div class="fb"><div class="t">环状化合物手性判断原则</div>
+<p>环上取代基的顺/反关系直接影响对称性，进而决定分子是否有手性。</p></div>
+
+<div class="fb"><div class="t">奇数环（以环丙烷1,2-二取代为例）</div>
+<ul>
+<li><strong>顺式</strong>（两个取代基在环平面同侧）：分子存在<strong>对称面</strong>（过C3垂直于C1-C2连线的平面）→ <strong>无手性</strong>，无旋光性</li>
+<li><strong>反式</strong>（两个取代基在环平面异侧）：无对称面 → <strong>有手性</strong>，存在一对对映体</li>
+</ul></div>
+
+<div class="fb"><div class="t">偶数环（以环丁烷1,2-二取代为例）</div>
+<ul>
+<li>需<strong>具体分析</strong>对称因素，不能简单套用奇数环结论</li>
+<li>顺-1,2-二甲基环丁烷有对称面→无手性；反-1,2-二甲基环丁烷无对称面→有手性</li>
+</ul></div>
+
+<div class="fb"><div class="t">环己烷的特殊情况（构象翻转影响手性！）</div>
+<table>
+<tr><th>化合物</th><th>构象翻转效果</th><th>手性/旋光性</th></tr>
+<tr><td><strong>顺-1,2-二甲基环己烷</strong></td><td>翻转后实物变为原来的镜像</td><td>外消旋体→<strong>无旋光性</strong></td></tr>
+<tr><td><strong>反-1,2-二甲基环己烷</strong></td><td>翻转后不产生镜像（仍是同一对映体）</td><td><strong>有旋光性</strong>，可拆分</td></tr>
+</table></div>
+
+<div class="note"><strong>重点理解</strong>：顺-1,2-二甲基环己烷的任一构象虽无对称面（看似有手性），但因构象快速翻转使两种构象等量互变（实物⇌镜像），宏观表现为外消旋→不旋光。这是<strong>"构象外消旋"</strong>的典型例子。</div>
+</div>
+
+<h3 id="k6c">4.6c 不含手性碳的手性化合物</h3>
+<div class="card">
+<div class="fb"><div class="t">丙二烯型（累积二烯手性/轴手性）</div>
+<ul>
+<li>结构：C=C=C，中心碳为<strong>sp杂化</strong>，两端各连两个基团</li>
+<li>两端平面<strong>互相垂直</strong> → 当两端取代基分别不同(ab&ne;cd)时，无对称面 → 有手性</li>
+<li>例：1,3-二甲基丙二烯 (CH<sub>3</sub>CH=C=CHCH<sub>3</sub>) 有对映体</li>
+</ul></div>
+
+<div class="fb"><div class="t">联苯型（阻转异构/轴手性）</div>
+<ul>
+<li>两个苯环间单键旋转被<strong>邻位大基团阻碍</strong> → 不能自由旋转 → 两环不共面</li>
+<li>条件：邻位取代基足够大（如NO<sub>2</sub>、COOH、Br等），使旋转能垒 > ~100 kJ/mol</li>
+<li>当两苯环各含不同取代基且缺乏对称面时 → 有轴手性</li>
+</ul></div>
+
+<div class="fb"><div class="t">螺环手性</div>
+<ul>
+<li>两个环共用一个碳（螺原子），两环平面<strong>互相垂直</strong></li>
+<li>当两环各自不对称取代时 → 无对称面 → 有手性</li>
+</ul></div>
+
+<div class="fb"><div class="t">杂原子手性</div>
+<ul>
+<li><strong>手性氮</strong>：季铵盐 $\text{N}^+abcd$，四个不同基团 → 有手性（普通胺因快速翻转无法拆分）</li>
+<li><strong>手性磷</strong>：膦(Pabcd)翻转能垒高 → 可拆分手性磷化合物</li>
+<li><strong>手性硫</strong>：亚砜(R<sub>1</sub>SOR<sub>2</sub>)，硫上有孤对电子作为第四个"基团"</li>
+</ul></div>
+
+<div class="warn"><strong>记忆要点</strong>：不含手性碳的手性来源 = 轴手性（丙二烯、联苯）+ 螺环手性 + 杂原子手性。关键是找<strong>对称面</strong>，无对称面即有手性。</div>
+</div>
+
+<h3 id="k7">4.7 构型表示法互转</h3>
+<div class="card">
+<div class="fb"><div class="t">四种表示法</div>
+<p><strong>楔线式</strong>(wedge-dash) ↔ <strong>Fischer投影式</strong> ↔ <strong>Newman投影式</strong> ↔ <strong>锯架式</strong>(sawhorse)</p></div>
+<div class="tip"><strong>Fischer→楔线式</strong>：横线上的基团用楔形键(朝前)，竖线上的基团用虚线键(朝后)。反过来也一样。</div>
+</div>
+
+<h3 id="k8">4.8 反应产物的立体化学</h3>
+<div class="card">
+<div class="fb"><div class="t">meso化合物反应后的立体化学变化</div>
+<ul>
+<li>内消旋体(meso)含有<strong>对称面</strong>，无旋光性</li>
+<li>若反应使对称面<strong>消失</strong>（如氧化一个手性碳上的取代基）→ 产物失去内部对称 → <strong>生成一对对映体</strong></li>
+<li>例：meso-酒石酸的一个-OH被氧化 → 对称面被破坏 → 产物有旋光性</li>
+</ul></div>
+
+<div class="fb"><div class="t">外消旋体的加成反应</div>
+<ul>
+<li>外消旋体加氢（如含C=C的手性分子）→ 新手性碳产生</li>
+<li>可能的产物：一对新的<strong>对映体</strong> + <strong>内消旋体</strong>（取决于加成方向和底物对称性）</li>
+<li>关键：分析加成后各手性碳的R/S组合，判断是否出现对称面</li>
+</ul></div>
+
+<div class="tip"><strong>解题思路</strong>：先画出反应前后手性碳的变化；再检查产物有无对称面；最后判断对映体/非对映体/内消旋体关系。</div>
+</div>
+
+<h3 id="k9">4.9 获取手性分子的方法</h3>
+<div class="card">
+<div class="fb"><div class="t">获取光学纯手性化合物的主要途径</div>
+<table>
+<tr><th>方法</th><th>原理</th><th>特点</th></tr>
+<tr><td><strong>天然产物分离</strong></td><td>生物体中酶催化具有立体专一性</td><td>来源有限，仅能得到一种对映体</td></tr>
+<tr><td><strong>外消旋体拆分</strong></td><td>利用手性试剂将对映体转为<strong>非对映体</strong>（物理性质不同）后分离</td><td>最多得到50%目标产物；常用手性酸/碱拆分</td></tr>
+<tr><td><strong>不对称合成</strong></td><td>手性辅基或手性催化剂诱导，使反应优先生成一种对映体</td><td>原子经济性高，可大量制备</td></tr>
+<tr><td><strong>不对称催化</strong></td><td>手性催化剂（如BINAP-Ru、脯氨酸）控制过渡态面选择性</td><td>催化量手性源即可，效率最高（诺贝尔奖2001）</td></tr>
+</table></div>
+
+<div class="note"><strong>拆分原理</strong>：对映体物理性质相同无法直接分离 → 加入手性试剂D → (R)+D与(S)+D成为非对映体 → 非对映体性质不同 → 结晶/色谱分离 → 除去D得纯对映体。</div>
+</div>
+
+<h2 id="ex">课后习题精选</h2>
+
+<div class="ex"><strong>4. 判断关系</strong>：判断各对化合物是什么关系(同一物质/对映体/非对映体)。
+<details><summary>答案</summary><div class="sol">
+<p>(1) 对映体 (2) 同一物质 (3) 对映体 (4) 同一物质 (5) 对映体 (6) 同一物质 (7) <strong>非对映体</strong> (8) 同一物质</p>
+<p><strong>方法</strong>：将两个Fischer式通过允许的操作(180&deg;旋转、固定一个转三个)尝试互相转化。能转化=同一物质；不能转化看每个手性碳R/S是否全反=对映体；部分反=非对映体。</p>
+</div></details></div>
+
+<div class="ex"><strong>5. 判断内消旋</strong>：判断哪些是内消旋体、对映体、相同化合物。
+<details><summary>答案</summary><div class="sol">
+<p><strong>内消旋体</strong>：(1)(2)(7)(8) — 含对称面，虽有手性碳但无旋光性</p>
+<p><strong>对映体</strong>：(3)和(4)、(5)和(6) — 所有手性碳构型相反</p>
+<p><strong>相同化合物</strong>：(1)和(2)、(7)和(8) — 都是同一内消旋体</p>
+</div></details></div>
+
+<div class="ex"><strong>8. 自由基氯代的立体化学</strong>：(R)-(+)-1-溴-2-甲基丁烷自由基氯代，产物的立体化学如何？
+<details><summary>答案</summary><div class="sol">
+<p>该分子有1个手性碳(C2)。自由基氯代可在不同位置发生：</p>
+<p>&bull; 若氯代发生在手性碳上 → 自由基中间体为sp<sup>2</sup>平面 → 新手性碳<strong>外消旋化</strong></p>
+<p>&bull; 若氯代发生在非手性碳上且产生新手性碳 → 新手性碳外消旋，原有手性碳<strong>保持</strong>构型</p>
+<p>总共<strong>7种产物，6个馏分</strong>（其中一对对映体作为外消旋体算一个馏分）。</p>
+</div></details></div>
+
+<div class="ex"><strong>9. 光学纯度计算</strong>：混合物实测旋光度为+10.14&deg;，纯品旋光度为+52.72&deg;。求ee%和各对映体比例。
+<details><summary>答案</summary><div class="sol">
+<p>$ee = \frac{10.14}{52.72} \times 100\% = \mathbf{19.2\%}$</p>
+<p>设右旋体比例为x，左旋体为(1-x)：<br>
+x - (1-x) = 0.192 → x = 0.596</p>
+<p>右旋体 = <strong>59.6%</strong>，左旋体 = <strong>40.4%</strong></p>
+</div></details></div>
+
+<div class="ex"><strong>11. 比旋光度计算</strong>
+<details><summary>答案</summary><div class="sol">
+<p>$[\alpha] = \frac{+2.3}{1.0 \times 0.1} = +23°$</p>
+<p>第二次：$[\alpha] = \frac{+1.15}{0.5 \times 0.1} = +23°$</p>
+<p><strong>比旋光度是固有常数</strong>，与管长和浓度无关。改变浓度或管长只改变实测旋光度$\alpha$。</p>
+</div></details></div>
+
+<div class="ex"><strong>综合</strong>：2,3-二溴丁烷有几种立体异构体？哪些有旋光性？
+<details><summary>答案</summary><div class="sol">
+<p>2,3-二溴丁烷含两个<strong>相同取代</strong>的手性碳(A-A型) → 存在内消旋体</p>
+<p>异构体：<br>
+(1) (2R,3R)-2,3-二溴丁烷 → 有旋光性<br>
+(2) (2S,3S)-2,3-二溴丁烷 → 有旋光性（与1互为对映体）<br>
+(3) <strong>meso-2,3-二溴丁烷</strong> → 无旋光性（有对称面）</p>
+<p>共<strong>3种</strong>立体异构体（而非$2^2=4$种），2种有旋光性。</p>
+</div></details></div>
+
+<h2 id="tips">考前提醒</h2>
+<div class="warn"><strong>R/S判断必须熟练</strong>：CIP排序→d放后方→顺R逆S。若d不在后方，判完取反。</div>
+<div class="warn"><strong>Fischer投影式操作</strong>：180&deg;旋转=同一物质；90&deg;旋转=对映体；交换一对=对映体</div>
+<div class="warn"><strong>有手性碳&ne;有手性</strong>：内消旋体有手性碳但有对称面→无手性→不旋光</div>
+<div class="warn"><strong>内消旋vs外消旋</strong>：内消旋=一个分子(不可拆分)；外消旋=混合物(可拆分)</div>
+<div class="warn"><strong>D/L与(+)/(-)无关，D/L与R/S无关</strong></div>
+<div class="warn"><strong>ee%计算</strong>：ee=|观测旋光度|/|纯品旋光度|&times;100%</div>
+<div class="warn"><strong>异构体计数</strong>：n个不同手性碳→$2^n$种；有相同手性碳(A-A型)→要减去内消旋体</div>
+<div class="warn"><strong>对称面是判断手性的王牌</strong>：找到对称面=无手性。对称轴不能单独判断！</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

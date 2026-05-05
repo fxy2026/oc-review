@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1章 绪论 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch2.html">第2章 命名 &rarr;</a></div>
+
+<h1>第1章 绪论</h1>
+
+<h2 id="kp">核心知识点</h2>
+
+<h3 id="kp1">1.1 共价键与Lewis结构</h3>
+<div class="card">
+<div class="fb"><div class="t">Lewis结构式书写步骤</div>
+<ol><li>计算总价电子数（阳离子减电荷，阴离子加电荷）</li>
+<li>确定中心原子（电负性较小者），用单键连接所有原子</li>
+<li>分配剩余电子为孤电子对（优先满足外围原子八隅体）</li>
+<li>若中心原子不满八隅体，将孤电子对变为多重键</li></ol></div>
+
+<div class="fb"><div class="t">形式电荷</div>
+$$\text{形式电荷} = \text{价电子数} - \text{孤电子数} - \tfrac{1}{2}\text{成键电子数}$$</div>
+
+<div class="warn"><strong>八隅体例外</strong><br>
+&bull; 缺电子：$\text{BH}_3$, $\text{AlCl}_3$（B/Al只有6个电子，Lewis酸）<br>
+&bull; 超价：第三周期后可扩展（$\text{PCl}_5$, $\text{SF}_6$）</div>
+</div>
+
+<h3 id="kp1b">1.1b 化学键理论</h3>
+<div class="card">
+<div class="fb"><div class="t">价键理论（VB理论）</div>
+<p><strong>核心思想</strong>：共价键的形成是原子轨道重叠（电子云重叠）的结果，重叠越多键越强。</p>
+<p><strong>σ键</strong>（头碰头重叠）：s-s重叠、s-p重叠、p-p轴向重叠 → 沿键轴圆柱对称，可自由旋转</p>
+<p><strong>π键</strong>（肩并肩重叠）：p-p侧面重叠 → 节面包含键轴，不能自由旋转</p>
+<p>单键 = 1σ；双键 = 1σ + 1π；叁键 = 1σ + 2π</p></div>
+
+<div class="fb"><div class="t">分子轨道理论（MO理论）基础</div>
+<p><strong>LCAO方法</strong>：n个原子轨道线性组合 → n个分子轨道</p>
+<p><strong>对称性匹配原则</strong>：只有对称性相同的原子轨道才能有效组合</p>
+<p><strong>成键轨道</strong>：能量降低，电子云集中在核间（同相叠加）</p>
+<p><strong>反键轨道</strong>（$\sigma^*$, $\pi^*$）：能量升高，核间有节面（反相叠加）</p></div>
+
+<div class="fb"><div class="t">碳原子轨道</div>
+<p>基态电子排布：$1s^2 2s^2 2p^2$（4个价电子）</p>
+<p>碳形成四个共价键的原因：激发态 $2s^1 2p^3$ → 杂化后形成4个等价杂化轨道</p>
+<p><strong>碳的四价</strong>是有机化学的基础——碳总是形成4根键（4个σ键，或σ+π组合）</p></div>
+</div>
+
+<h3 id="kp1c">1.1c 结构表示法与分类</h3>
+<div class="card">
+<div class="fb"><div class="t">键线式书写规则</div>
+<p>&bull; 碳原子和与碳相连的氢原子省略不写</p>
+<p>&bull; 端点和拐角处代表碳原子（补足四价即为H）</p>
+<p>&bull; 单线 = 单键；双线 = 双键；叁线 = 叁键</p>
+<p>&bull; 杂原子（O、N、S、X等）及其上的H必须写出</p></div>
+
+<div class="fb"><div class="t">有机化合物的系统分类</div>
+<table>
+<tr><th>大类</th><th>子类</th><th>示例</th></tr>
+<tr><td rowspan="2"><strong>链状</strong>（开链/脂肪族）</td><td>饱和</td><td>烷烃</td></tr>
+<tr><td>不饱和</td><td>烯烃、炔烃</td></tr>
+<tr><td rowspan="3"><strong>环状</strong></td><td>脂环</td><td>环己烷</td></tr>
+<tr><td>芳环</td><td>苯及其衍生物</td></tr>
+<tr><td>杂环</td><td>吡啶、呋喃、吡咯</td></tr>
+</table></div>
+
+<div class="fb"><div class="t">同分异构体</div>
+<p>分子式相同但结构不同的化合物。</p>
+<p><strong>例1</strong>：$\text{C}_2\text{H}_6\text{O}$ → 乙醇 $\text{CH}_3\text{CH}_2\text{OH}$（醇）vs 甲醚 $\text{CH}_3\text{OCH}_3$（醚）— 官能团异构</p>
+<p><strong>例2</strong>：$\text{C}_4\text{H}_{10}$ → 正丁烷（直链）vs 异丁烷/2-甲基丙烷（支链）— 碳骨架异构</p></div>
+</div>
+
+<h3 id="kp2">1.2 共价键的性质</h3>
+<div class="card">
+<div class="fb"><div class="t">键长</div>
+<p>两个成键原子核间的平衡距离。键级越高，键长越短：</p>
+<table>
+<tr><th>键类型</th><th>键长(pm)</th><th>示例</th></tr>
+<tr><td>C—C</td><td>154</td><td>乙烷</td></tr>
+<tr><td>C＝C</td><td>134</td><td>乙烯</td></tr>
+<tr><td>C≡C</td><td>120</td><td>乙炔</td></tr>
+</table></div>
+
+<div class="fb"><div class="t">键角</div>
+<p>两个共价键之间的夹角，由中心原子杂化方式决定：</p>
+<p>&bull; $sp^3$ 杂化（甲烷）：键角 <strong>109.5°</strong>（正四面体）</p>
+<p>&bull; $sp^2$ 杂化（乙烯）：键角 <strong>120°</strong>（平面三角形）</p>
+<p>&bull; $sp$ 杂化（乙炔）：键角 <strong>180°</strong>（直线形）</p></div>
+
+<div class="fb"><div class="t">键参数</div>
+<p><strong>键能</strong>（是平均值）：$\text{CH}_4$ 的C-H平均键能 = 414 kJ/mol</p>
+<p><strong>偶极矩</strong>：$\mu = q \times d$，分子偶极矩 = 各键偶极矩的向量和</p></div>
+
+<div class="fb"><div class="t">电负性序列（必记）</div>
+$$\text{F}(4.0) > \text{O}(3.5) > \text{N}=\text{Cl}(3.0) > \text{Br}(2.8) > \text{C}=\text{S}(2.5) > \text{I}(2.5) > \text{H}(2.1)$$</div>
+
+<div class="fb"><div class="t">键的断裂方式</div>
+<p><strong>均裂</strong>（光/热）→ 产生自由基：$\text{A:B} \to \text{A}\cdot + \text{B}\cdot$</p>
+<p><strong>异裂</strong>（酸碱/极性溶剂）→ 产生离子：$\text{A:B} \to \text{A}^+ + \text{B}^-$</p></div>
+</div>
+
+<h3 id="kp3">1.3 酸碱理论</h3>
+<div class="card">
+<div class="fb"><div class="t">Brønsted酸碱</div>
+<p>酸 = 质子供体（给 $\text{H}^+$）；碱 = 质子受体（接受 $\text{H}^+$）</p>
+<p>$\text{pK}_a$ 越小 → 酸性越强；$\text{pK}_a$ 越大 → 共轭碱越强</p></div>
+
+<div class="warn"><strong>核心规则</strong>：酸碱反应平衡有利于生成<strong>较弱的酸</strong>和<strong>较弱的碱</strong>。</div>
+
+<table>
+<tr><th>化合物</th><th>$\text{pK}_a$</th><th>化合物</th><th>$\text{pK}_a$</th></tr>
+<tr><td>$\text{HI}$</td><td>-10</td><td>$\text{H}_2\text{O}$</td><td>15.7</td></tr>
+<tr><td>$\text{H}_3\text{O}^+$</td><td>-1.7</td><td>$\text{CH}_3\text{OH}$</td><td>15.5</td></tr>
+<tr><td>$\text{CH}_3\text{COOH}$</td><td>4.75</td><td>$\text{HC≡CH}$ (端炔)</td><td>25</td></tr>
+<tr><td>$\text{HCN}$</td><td>9.2</td><td>$\text{NH}_3$</td><td>38</td></tr>
+<tr><td>$\text{C}_2\text{H}_5\text{OH}$</td><td>15.9</td><td>$\text{CH}_4$</td><td>48</td></tr>
+</table>
+
+<div class="fb"><div class="t">Lewis酸碱</div>
+<p><strong>Lewis酸</strong>（亲电试剂，缺电子）：$\text{H}^+$, $\text{AlCl}_3$, $\text{BF}_3$, $\text{NO}_2^+$, 碳正离子 $\text{R}^+$</p>
+<p><strong>Lewis碱</strong>（亲核试剂，富电子）：$\text{OH}^-$, $\text{NH}_3$, $\text{H}_2\text{O}$, $\text{ROH}$, $\text{X}^-$</p></div>
+
+<div class="note"><strong>教授强调</strong>：大部分有机反应都可以看成Lewis酸碱反应！Lewis酸 = 亲电试剂，Lewis碱 = 亲核试剂。</div>
+</div>
+
+<h3 id="kp4">1.4 弯箭头表示法</h3>
+<div class="card">
+<div class="warn"><strong>核心</strong>：箭头从<strong>电子密度高处</strong>（碱/亲核）指向<strong>电子密度低处</strong>（酸/亲电）。</div>
+<p>&bull; 全箭头（→）：一对电子转移 &nbsp; &bull; 半箭头（鱼钩）：单电子转移（自由基）</p>
+</div>
+
+<h3 id="kp5">1.5 分子极性判断</h3>
+<div class="card">
+<div class="fb"><div class="t">判断三步法</div>
+<ol><li>有无极性键？</li><li>分子空间对称性如何？</li><li>各键偶极向量和是否为零？</li></ol></div>
+<div class="tip"><strong>非极性</strong>：$\text{CO}_2$（直线）、$\text{CCl}_4$（正四面体）、$\text{CH}_2{=}\text{CHCH}{=}\text{CH}_2$（对称）<br>
+<strong>极性</strong>：$\text{CHCl}_3$、$(\text{CH}_3)_3\text{N}$（三角锥）、$\text{CH}_3\text{C≡N}$</div>
+</div>
+
+<h3 id="kp6">1.6 分子间作用力与物理性质</h3>
+<div class="card">
+<div class="fb"><div class="t">三种分子间作用力</div>
+<table>
+<tr><th>作用力</th><th>强度</th><th>条件</th><th>示例</th></tr>
+<tr><td><strong>氢键</strong></td><td>最强(10-40kJ/mol)</td><td>F-H、O-H、N-H与F/O/N</td><td>H<sub>2</sub>O、醇、酸、胺</td></tr>
+<tr><td><strong>偶极-偶极</strong></td><td>中等</td><td>极性分子间</td><td>CH<sub>3</sub>Cl、丙酮</td></tr>
+<tr><td><strong>London色散力</strong></td><td>最弱但普遍</td><td>所有分子都有</td><td>烷烃、惰性气体</td></tr>
+</table></div>
+<div class="tip"><strong>沸点</strong>受分子间力控制：能形成氢键 > 极性分子 > 非极性分子(同分子量下)。<br>
+<strong>溶解性</strong>："相似相溶"——极性溶质溶于极性溶剂，非极性溶质溶于非极性溶剂。</div>
+</div>
+
+<h3 id="kp7">1.7 官能团概述</h3>
+<div class="card">
+<div class="fb"><div class="t">常见官能团与反应类型</div>
+<table>
+<tr><th>官能团</th><th>典型反应</th></tr>
+<tr><td>C=C (烯烃)</td><td>亲电加成</td></tr>
+<tr><td>C&equiv;C (炔烃)</td><td>亲电加成、亲核加成</td></tr>
+<tr><td>C-X (卤代烃)</td><td>亲核取代、消除</td></tr>
+<tr><td>C=O (醛酮)</td><td>亲核加成</td></tr>
+<tr><td>-OH (醇)</td><td>取代、消除、氧化</td></tr>
+<tr><td>苯环</td><td>亲电取代</td></tr>
+</table></div>
+<div class="note"><strong>结构决定性质！</strong> 官能团是有机化学的核心——决定了化合物能发生什么反应。识别官能团是分析有机反应的第一步。</div>
+</div>
+
+<!-- ========== 习题 ========== -->
+<h2 id="exercises">课后习题详解</h2>
+
+<div class="ex"><strong>第1题</strong>：判断分子极性，指出偶极方向。
+<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<p>(1) $(\text{CH}_3)_3\text{N}$ — <strong>极性</strong>，N有孤电子对，三角锥形，偶极指向N<br>
+(2) $\text{CF}_2\text{Cl}_2$ — <strong>极性</strong>，四面体不对称<br>
+(3) $\text{CH}_3\text{C≡N}$ — <strong>极性</strong>，C≡N强极性<br>
+(4) $\text{CH}_2{=}\text{CH}-\text{CH}{=}\text{CH}_2$ — <strong>非极性</strong>，对称结构偶极抵消</p>
+</div></details></div>
+
+<div class="ex"><strong>第2题</strong>：极性/非极性判断。
+<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<p><strong>极性</strong>：(1)$\text{CH}_3\text{CH}_2\text{OH}$ (2)$(\text{C}_2\text{H}_5)_2\text{O}$ (3)$\text{CHCl}_3$ (5)$\text{HBr}$<br>
+<strong>非极性</strong>：(4)$\text{CH}_3\text{CH}_2\text{CH}_3$（近似对称） (6)$\text{CO}_2$（直线形，抵消）</p>
+</div></details></div>
+
+<div class="ex"><strong>第3题</strong>：完成酸碱反应，判断平衡方向。
+<details><summary>查看解答</summary><div class="sol"><div class="st">解（平衡有利于生成较弱酸+较弱碱）</div>
+<p>(1) $\text{CH}_3\text{COO}^- + \text{CH}_3\text{OH} \rightleftharpoons \text{CH}_3\text{COOH} + \text{CH}_3\text{O}^-$ — <strong>偏左</strong><br>
+<small>$\text{CH}_3\text{COOH}$($pK_a$=4.75)酸性远强于$\text{CH}_3\text{OH}$($pK_a$=15.5)，平衡不利于生成强碱$\text{CH}_3\text{O}^-$</small></p>
+<p>(2) $\text{H}_3\text{O}^+ + \text{CH}_3\text{O}^- \to \text{H}_2\text{O} + \text{CH}_3\text{OH}$ — <strong>强烈偏右</strong></p>
+<p>(3) $\text{CH}_3\text{ONa} + \text{HCN} \to \text{CH}_3\text{OH} + \text{NaCN}$ — <strong>偏右</strong>（HCN $pK_a$≈9.2 < $\text{CH}_3\text{OH}$ $pK_a$≈15.5）</p>
+<p>(4) $\text{C}_2\text{H}_5\text{OH} + \text{CH}_3\text{ONa} \rightleftharpoons$ — <strong>接近平衡</strong>（$pK_a$相近）</p>
+<p>(5) $\text{CH}_3\text{ONa} + \text{NH}_3 \rightleftharpoons$ — <strong>偏左</strong>（$\text{NH}_3$ $pK_a$≈38 远大于$\text{CH}_3\text{OH}$）</p>
+<p>(6) $\text{CH}_3\text{OH} + \text{NaOH} \rightleftharpoons$ — <strong>微偏右</strong></p>
+</div></details></div>
+
+<div class="ex"><strong>第4题</strong>：Lewis结构式。
+<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<p>&bull; $\text{BH}_3$：B只有6个电子，<strong>不满足八隅体</strong>，典型Lewis酸<br>
+&bull; $\text{CH}_3\text{O}^-$：O有<strong>3对孤电子对</strong>，带负电荷<br>
+&bull; $\text{CH}_3\text{NO}_2$：N带+1形式电荷，一个O带-1形式电荷，有两个等价共振式<br>
+&bull; $\text{H}_2\text{O}_2$：H-O-O-H，每个O有2对孤电子对</p>
+</div></details></div>
+
+<div class="ex"><strong>第5题</strong>：判断Lewis酸碱。
+<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<p><strong>Lewis酸</strong>：$\text{H}^+$, $\text{CH}_3\text{CH}_2^+$, $\text{AlCl}_3$, $\text{NO}_2^+$, $\text{SnCl}_2$（缺电子/有空轨道）<br>
+<strong>Lewis碱</strong>：$\text{X}^-$, $\text{OH}^-$, $\text{H}_2\text{O}$, $\text{C}_2\text{H}_5\text{OH}$, $\text{CH}_3\text{OCH}_3$（有孤电子对）</p>
+</div></details></div>
+
+<div class="ex"><strong>第6题</strong>：弯箭头正误判断。
+<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<p><strong>正确</strong>：(1)(5) — 箭头从富电子→缺电子<br>
+<strong>错误</strong>：(2)(3)(6) — 箭头方向反了，需修正<br>
+<strong>(4)不反应</strong> — $\text{NH}_3$无法脱去$\text{CH}_4$的H（$pK_a$≈48）</p>
+</div></details></div>
+
+<div class="ex"><strong>第7题</strong>：共轭酸碱与$pK_a$ — 哪个N优先质子化？
+<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<p>叔胺N共轭酸$pK_a$≈10.6 > 吡啶型N共轭酸$pK_a$≈2.2<br>
+$pK_a$大→共轭酸弱→碱强→<strong>叔胺N优先质子化</strong></p>
+</div></details></div>
+
+<div class="ex"><strong>第8题</strong>：判断顺式-1,2-二氯乙烯和反式-1,2-二氯乙烯的极性。
+<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<p><strong>顺式-1,2-二氯乙烯</strong>（极性分子）：两个C-Cl键偶极方向相同侧，向量和 ≠ 0，分子有净偶极矩。</p>
+<p><strong>反式-1,2-二氯乙烯</strong>（非极性分子）：两个C-Cl键偶极方向相反，向量和 = 0，偶极矩相互抵消。</p>
+<p><strong>规律</strong>：对于双键限制旋转的分子，顺式异构体中相同取代基在同侧，键偶极无法抵消→极性；反式异构体对称性高，键偶极抵消→非极性。</p>
+</div></details></div>
+
+<div class="ex"><strong>挑战题1</strong>：$\text{CH}_3\text{Li}$的碱性
+<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<p>$\text{CH}_3\text{CH}_2\text{OH} + \text{CH}_3\text{Li} \to \text{CH}_3\text{CH}_2\text{OLi} + \text{CH}_4$<br>
+共轭酸$\text{CH}_4$的$pK_a$≈48 → $\text{CH}_3^-$是<strong>极强碱</strong></p>
+</div></details></div>
+
+<div class="ex"><strong>挑战题2</strong>：合成中碱的选择
+<details><summary>查看解答</summary><div class="sol"><div class="st">解</div>
+<p>碱的$pK_a$需匹配底物：太弱无法脱质子，太强会破坏其他官能团。选$pK_a$适中的碱（吡啶类≈6.8）实现温和脱质子。</p>
+</div></details></div>
+
+<h2 id="sum">考点总结</h2>
+<div class="card">
+<table>
+<tr><th>考点</th><th>题型</th><th>重要度</th></tr>
+<tr><td>$pK_a$比较与平衡方向</td><td>选择/完成反应</td><td>⭐⭐⭐</td></tr>
+<tr><td>弯箭头表示法</td><td>机理题</td><td>⭐⭐⭐</td></tr>
+<tr><td>Lewis酸碱判断</td><td>选择</td><td>⭐⭐</td></tr>
+<tr><td>Lewis结构/形式电荷</td><td>填空</td><td>⭐⭐</td></tr>
+<tr><td>分子极性判断</td><td>选择/判断</td><td>⭐</td></tr>
+<tr><td>共价键断裂（均裂/异裂）</td><td>选择</td><td>⭐⭐</td></tr>
+<tr><td>电负性序列</td><td>基础</td><td>⭐</td></tr>
+</table>
+</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第5章 烯烃 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+svg text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch4.html">&larr; 第4章</a><a href="ch6.html">第6章 &rarr;</a></div>
+<h1>第5章 烯烃</h1>
+
+<!-- ==================== 5.1 结构与命名 ==================== -->
+<h2 id="s1">5.1 烯烃的结构与命名</h2>
+<h3>sp²杂化与π键</h3>
+<div class="card">
+<svg width="420" height="160" viewBox="0 0 420 160">
+  <text x="210" y="18" text-anchor="middle" font-size="13" fill="#0d6b3d" font-weight="bold">乙烯 sp²杂化示意</text>
+  <line x1="130" y1="80" x2="290" y2="80" stroke="#333" stroke-width="3"/>
+  <line x1="130" y1="72" x2="290" y2="72" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,3"/>
+  <circle cx="130" cy="80" r="18" fill="none" stroke="#0d6b3d" stroke-width="2"/>
+  <circle cx="290" cy="80" r="18" fill="none" stroke="#0d6b3d" stroke-width="2"/>
+  <text x="130" y="85" text-anchor="middle" font-size="14" font-weight="bold">C</text>
+  <text x="290" y="85" text-anchor="middle" font-size="14" font-weight="bold">C</text>
+  <line x1="112" y1="80" x2="70" y2="60" stroke="#555" stroke-width="2"/>
+  <line x1="112" y1="80" x2="70" y2="100" stroke="#555" stroke-width="2"/>
+  <line x1="308" y1="80" x2="350" y2="60" stroke="#555" stroke-width="2"/>
+  <line x1="308" y1="80" x2="350" y2="100" stroke="#555" stroke-width="2"/>
+  <text x="58" y="56" font-size="12">H</text>
+  <text x="58" y="106" font-size="12">H</text>
+  <text x="354" y="56" font-size="12">H</text>
+  <text x="354" y="106" font-size="12">H</text>
+  <ellipse cx="130" cy="80" rx="10" ry="35" fill="rgba(192,57,43,0.15)" stroke="#c0392b" stroke-width="1"/>
+  <ellipse cx="290" cy="80" rx="10" ry="35" fill="rgba(192,57,43,0.15)" stroke="#c0392b" stroke-width="1"/>
+  <text x="210" y="145" text-anchor="middle" font-size="11" fill="#666">σ键(实线) + π键(虚线) = 双键 | 键角≈120° | 平面结构</text>
+</svg>
+<ul>
+<li>C=C双键 = 1个σ键 + 1个π键，键能614 kJ/mol（σ:348 + π:266）</li>
+<li>π键较弱 → 烯烃化学性质活泼，易发生<strong>加成反应</strong></li>
+<li>双键不能自由旋转 → 产生<strong>顺反异构(E/Z异构)</strong></li>
+<li>键长：C=C 1.34Å &lt; C-C 1.54Å</li>
+</ul>
+</div>
+
+<h3>E/Z命名法与顺反异构</h3>
+<div class="card">
+<div class="fb"><div class="t">CIP优先次序规则确定E/Z</div>
+<p>①原子序数大者优先 ②第一个原子相同则比较下一个 ③双键按两个单键计算</p>
+<p><strong>Z</strong>(zusammen)：两个优先基团在<strong>同侧</strong>；<strong>E</strong>(entgegen)：在<strong>异侧</strong></p>
+</div>
+<svg width="400" height="120" viewBox="0 0 400 120">
+  <text x="100" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">(Z)-2-丁烯</text>
+  <text x="300" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#c0392b">(E)-2-丁烯</text>
+  <line x1="60" y1="60" x2="140" y2="60" stroke="#333" stroke-width="3"/>
+  <line x1="60" y1="53" x2="140" y2="53" stroke="#333" stroke-width="3"/>
+  <text x="40" y="42" font-size="11" fill="#0d6b3d" font-weight="bold">CH₃</text>
+  <text x="145" y="42" font-size="11" fill="#0d6b3d" font-weight="bold">CH₃</text>
+  <text x="40" y="82" font-size="11">H</text>
+  <text x="148" y="82" font-size="11">H</text>
+  <line x1="260" y1="60" x2="340" y2="60" stroke="#333" stroke-width="3"/>
+  <line x1="260" y1="53" x2="340" y2="53" stroke="#333" stroke-width="3"/>
+  <text x="238" y="42" font-size="11" fill="#c0392b" font-weight="bold">CH₃</text>
+  <text x="345" y="82" font-size="11" fill="#c0392b" font-weight="bold">CH₃</text>
+  <text x="242" y="82" font-size="11">H</text>
+  <text x="345" y="42" font-size="11">H</text>
+  <text x="100" y="108" text-anchor="middle" font-size="10" fill="#666">同侧=Z(顺)</text>
+  <text x="300" y="108" text-anchor="middle" font-size="10" fill="#666">异侧=E(反)</text>
+</svg>
+<div class="warn"><strong>注意</strong>：顺/反 与 Z/E 不一定对应！顺反是根据相同基团，E/Z是根据CIP优先次序。</div>
+</div>
+
+<h3>烯烃的稳定性</h3>
+<div class="card">
+<div class="fb"><div class="t">氢化热判断稳定性</div>
+<p>氢化热越小 → 烯烃越稳定。取代基越多 → 超共轭效应越强 → 越稳定</p></div>
+<p><strong>稳定性顺序</strong>：四取代 &gt; 三取代 &gt; 二取代(反式&gt;顺式) &gt; 一取代 &gt; 无取代</p>
+<div class="tip">超共轭效应：α-C-H的σ轨道与π*轨道部分重叠，提供电子密度稳定双键</div>
+</div>
+
+<!-- ==================== 5.1b 物理性质 ==================== -->
+<h2 id="s1b">5.1b 烯烃的物理性质</h2>
+<div class="card">
+<div class="fb"><div class="t">沸点与溶解性</div>
+<p>①沸点随分子量增大而升高；低级烯烃(C₂~C₄)为气态，C₅以上为液态</p>
+<p>②Z-异构体沸点略高于E-异构体：Z式偶极矩较大，分子间作用力更强</p>
+<p>③难溶于水，易溶于有机溶剂（非极性分子，"相似相溶"）</p>
+</div>
+<div class="fb"><div class="t">碳原子电负性与杂化的关系</div>
+<p>电负性：C<sub>sp</sub> &gt; C<sub>sp²</sub> &gt; C<sub>sp³</sub></p>
+<p>原因：s成分越多，电子越靠近原子核，对电子束缚力越强（表现为电负性越大）</p>
+<p>应用：乙炔C-H的酸性 &gt; 乙烯C-H &gt; 乙烷C-H</p>
+</div>
+</div>
+
+<!-- ==================== 5.2 亲电加成 ==================== -->
+<h2 id="s2">5.2 亲电加成反应</h2>
+<h3>亲电加成总机理</h3>
+<div class="card">
+<svg width="460" height="100" viewBox="0 0 460 100">
+  <rect x="10" y="25" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#27ae60" stroke-width="2"/>
+  <text x="60" y="55" text-anchor="middle" font-size="13" font-weight="bold">C=C + E⁺</text>
+  <text x="150" y="55" text-anchor="middle" font-size="20">→</text>
+  <rect x="180" y="25" width="120" height="50" rx="8" fill="#fff3e0" stroke="#e67e22" stroke-width="2"/>
+  <text x="240" y="48" text-anchor="middle" font-size="12" font-weight="bold">碳正离子</text>
+  <text x="240" y="65" text-anchor="middle" font-size="11">(或环鎓离子)</text>
+  <text x="340" y="55" text-anchor="middle" font-size="20">→</text>
+  <rect x="360" y="25" width="90" height="50" rx="8" fill="#f3e5f5" stroke="#8e24aa" stroke-width="2"/>
+  <text x="405" y="48" text-anchor="middle" font-size="12" font-weight="bold">Nu⁻进攻</text>
+  <text x="405" y="65" text-anchor="middle" font-size="11">加成产物</text>
+  <text x="230" y="95" text-anchor="middle" font-size="10" fill="#666">步骤1：亲电试剂进攻π键(慢，决速) → 步骤2：亲核试剂进攻碳正离子(快)</text>
+</svg>
+<div class="warn"><strong>核心</strong>：第一步生成碳正离子是决速步，碳正离子的稳定性决定了区域选择性和立体选择性！</div>
+</div>
+
+<h3>HX加成 — Markovnikov规则</h3>
+<div class="card">
+<div class="fb"><div class="t">Markovnikov规则（马氏规则）</div>
+<p>不对称烯烃加HX：H加到<strong>含H较多</strong>的双键碳 → 生成<strong>更稳定的碳正离子</strong></p>
+<p>本质：经过更稳定的碳正离子中间体（能量更低的过渡态）</p></div>
+<svg width="440" height="130" viewBox="0 0 440 130">
+  <text x="220" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">丙烯 + HBr 的区域选择性</text>
+  <text x="60" y="55" font-size="13">CH₃CH=CH₂ + HBr</text>
+  <line x1="200" y1="50" x2="240" y2="35" stroke="#27ae60" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="200" y1="50" x2="240" y2="70" stroke="#c0392b" stroke-width="2" marker-end="url(#arr2)"/>
+  <text x="280" y="35" font-size="12" fill="#27ae60" font-weight="bold">CH₃CHBrCH₃ (主产物)</text>
+  <text x="320" y="50" font-size="10" fill="#27ae60">经2°碳正离子(稳定)</text>
+  <text x="280" y="75" font-size="12" fill="#c0392b">CH₃CH₂CH₂Br (次产物)</text>
+  <text x="320" y="90" font-size="10" fill="#c0392b">经1°碳正离子(不稳定)</text>
+  <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#27ae60"/></marker>
+  <marker id="arr2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#c0392b"/></marker></defs>
+</svg>
+<p><strong>碳正离子稳定性</strong>：</p>
+<div class="fb"><div class="t">稳定性排序</div>
+<p>苄基 ≈ 烯丙基 &gt; 3° &gt; 2° &gt; 1° &gt; CH₃⁺ &gt; 乙烯基</p>
+<p>稳定化因素：超共轭(烷基)、共振(苄基/烯丙基)、杂原子孤对电子</p></div>
+</div>
+
+<h3>碳正离子重排</h3>
+<div class="card">
+<div class="warn"><strong>遇到碳正离子就要想重排！</strong>这是考试超高频考点。</div>
+<div class="fb"><div class="t">1,2-迁移规则</div>
+<p>①1,2-H迁移：H从邻碳带着电子对迁移到正电荷碳</p>
+<p>②1,2-甲基迁移：甲基(或其他烷基)带电子对迁移</p>
+<p>③方向：总是从<strong>不稳定</strong>→<strong>更稳定</strong>碳正离子</p>
+<p>④环扩张：四/五元环→五/六元环(张力释放)</p></div>
+<svg width="440" height="100" viewBox="0 0 440 100">
+  <text x="20" y="50" font-size="12">CH₃-C(CH₃)₂-CH⁺-CH₃</text>
+  <text x="220" y="50" font-size="16">→</text>
+  <text x="205" y="30" font-size="10" fill="#c0392b">CH₃迁移</text>
+  <text x="260" y="50" font-size="12">CH₃-C⁺(CH₃)-CH(CH₃)-CH₃</text>
+  <text x="80" y="80" font-size="10" fill="#666">2°碳正离子</text>
+  <text x="330" y="80" font-size="10" fill="#27ae60" font-weight="bold">3°碳正离子(更稳定)</text>
+</svg>
+<div class="ex"><strong>典型例题</strong>：3,3-二甲基-1-丁烯 + HCl 的主产物是什么？
+<details><summary>答案</summary><div class="sol">
+<p>①H⁺加到C1(马氏规则) → 在C2形成2°碳正离子</p>
+<p>②C3上甲基1,2-迁移到C2 → 变为3°碳正离子</p>
+<p>③Cl⁻进攻3°碳 → 产物为2-氯-2,3-二甲基丁烷</p>
+</div></details></div>
+</div>
+
+<!-- ==================== 5.3 卤素加成 ==================== -->
+<h2 id="s3">5.3 卤素加成与立体化学</h2>
+<h3>溴鎓离子机理（Br₂加成）</h3>
+<div class="card">
+<svg width="460" height="140" viewBox="0 0 460 140">
+  <text x="230" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d6b3d">溴鎓离子机理 → 反式(anti)加成</text>
+  <!-- alkene -->
+  <line x1="40" y1="70" x2="90" y2="70" stroke="#333" stroke-width="3"/>
+  <line x1="40" y1="63" x2="90" y2="63" stroke="#333" stroke-width="3"/>
+  <text x="65" y="95" text-anchor="middle" font-size="11">烯烃</text>
+  <!-- arrow -->
+  <text x="120" y="72" font-size="14">+Br₂→</text>
+  <!-- bromonium -->
+  <path d="M180,70 L220,50 L260,70" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="180" y1="70" x2="260" y2="70" stroke="none"/>
+  <circle cx="220" cy="85" r="14" fill="none" stroke="#c0392b" stroke-width="2"/>
+  <text x="220" y="90" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">Br⁺</text>
+  <line x1="195" y1="72" x2="210" y2="82" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="245" y1="72" x2="230" y2="82" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="220" y="120" text-anchor="middle" font-size="10">三元环溴鎓离子</text>
+  <!-- arrow2 -->
+  <text x="290" y="72" font-size="14">→</text>
+  <text x="290" y="52" font-size="9" fill="#666">Br⁻背面进攻</text>
+  <!-- product -->
+  <line x1="320" y1="70" x2="370" y2="70" stroke="#333" stroke-width="2"/>
+  <text x="310" y="55" font-size="11" fill="#c0392b">Br</text>
+  <text x="372" y="88" font-size="11" fill="#c0392b">Br</text>
+  <text x="345" y="120" text-anchor="middle" font-size="10" fill="#27ae60" font-weight="bold">反式加成产物</text>
+  <path d="M315,60 L325,70" stroke="#c0392b" stroke-width="2"/>
+  <path d="M370,70 L375,80" stroke="#c0392b" stroke-width="2" stroke-dasharray="3,2"/>
+</svg>
+<div class="fb"><div class="t">关键特征</div>
+<p>①Br₂被π电子极化 → Br⁺形成三元环桥接（溴鎓离子）</p>
+<p>②Br⁻只能从三元环<strong>背面(anti)</strong>进攻 → 两个Br在双键两侧</p>
+<p>③环己烯加Br₂ → <strong>反式-1,2-二溴环己烷</strong>（两个Br为trans-diaxial）</p></div>
+<div class="tip"><strong>立体结果</strong>：对称烯烃(如环己烯)得内消旋体(无旋光性)；不对称烯烃得外消旋体。</div>
+</div>
+
+<h3>氯的加成特殊性</h3>
+<div class="card">
+<p>Cl原子较小，不能有效形成三元环 → 经<strong>开放碳正离子</strong>中间体</p>
+<p>结果：Cl₂加成的立体选择性<strong>不如Br₂严格</strong>，可能得到顺式+反式混合物</p>
+<div class="note">考试中除非特别说明，一般Br₂加成才需要讨论反式加成的立体化学。</div>
+</div>
+
+<h3>卤水加成（HOX）</h3>
+<div class="card">
+<div class="fb"><div class="t">卤水加成的区域选择性</div>
+<p>烯烃 + Br₂/H₂O → 溴醇(halohydrin)</p>
+<p>机理：先形成溴鎓离子 → H₂O(而非Br⁻)作亲核试剂进攻</p>
+<p>区域：OH加到<strong>取代多</strong>的碳(马氏)，Br加到<strong>取代少</strong>的碳</p>
+<p>立体：仍为<strong>反式加成</strong>（OH和Br在两侧）</p></div>
+<div class="warn"><strong>解释</strong>：溴鎓离子中，取代多的碳承担更多正电荷 → 亲核试剂优先进攻该碳</div>
+</div>
+
+<h3>与硫酸加成（间接水合法）</h3>
+<div class="card">
+<div class="fb"><div class="t">间接水合法制醇</div>
+<p>烯烃 + H₂SO₄(浓) → 硫酸氢酯(ROSO₃H) → 水解 → 醇 + H₂SO₄</p>
+<p>总结果：马氏加水（H加到含H多的碳，OH加到含H少的碳）</p></div>
+<p><strong>烯烃活性与硫酸浓度的关系</strong>：烷基取代越多 → 形成碳正离子越稳定 → 所需H₂SO₄浓度越低</p>
+<ul>
+<li>乙烯：需要98% H₂SO₄</li>
+<li>丙烯：需要80% H₂SO₄</li>
+<li>异丁烯：仅需60% H₂SO₄</li>
+</ul>
+<div class="tip">工业上用间接水合法由乙烯制乙醇、丙烯制异丙醇。</div>
+</div>
+
+<h3>酸催化下烯烃与醇/羧酸加成</h3>
+<div class="card">
+<div class="fb"><div class="t">烯烃的酸催化加成扩展</div>
+<p>①烯烃 + 醇(H⁺催化) → 醚（马氏方向，碳正离子被ROH捕获）</p>
+<p>②烯烃 + 羧酸(H⁺催化) → 酯（碳正离子被RCOOH捕获）</p></div>
+<p>机理与HX加成类似：H⁺先加到双键形成碳正离子 → 亲核试剂(ROH或RCOOH)进攻碳正离子</p>
+<div class="note">这类反应本质都是亲电加成，遵循马氏规则，可能伴随碳正离子重排。</div>
+</div>
+
+<h3>卤素加成活性顺序</h3>
+<div class="card">
+<div class="fb"><div class="t">卤素亲电加成活性</div>
+<p>F₂ &gt; Cl₂ &gt; Br₂ &gt; I₂</p></div>
+<ul>
+<li><strong>F₂</strong>：反应过于剧烈，难以控制，常发生爆炸或碳链断裂，实验室很少使用</li>
+<li><strong>Cl₂</strong>：反应活泼，可用于加成（但立体选择性不如Br₂）</li>
+<li><strong>Br₂</strong>：最常用，经溴鎓离子中间体，反式加成，立体选择性好</li>
+<li><strong>I₂</strong>：反应太难进行（加成为可逆反应，热力学不利），一般不发生加成</li>
+</ul>
+<div class="warn"><strong>记忆</strong>：F₂太猛不可控，I₂太懒不反应，Cl₂和Br₂刚好用（Br₂最经典）。</div>
+</div>
+
+<!-- ==================== 5.4 反马氏加成 ==================== -->
+<h2 id="s4">5.4 反马氏加成</h2>
+<h3>过氧化物效应（自由基加成）</h3>
+<div class="card">
+<div class="warn"><strong>过氧化物效应仅对HBr有效！</strong>HCl(键能太大,引发困难)和HI(I-I太弱,链终止)均不行。</div>
+<div class="fb"><div class="t">自由基加成机理</div>
+<p>①引发：ROOR → 2RO· → RO· + HBr → ROH + <strong>Br·</strong></p>
+<p>②增长：Br·加到含H多的碳(因为生成更稳定自由基) → 碳自由基再夺HBr的H</p>
+<p>③终止：自由基偶合</p></div>
+<p>结果：<strong>反马氏加成</strong> — Br加到含H多的碳，H加到含H少的碳</p>
+<div class="tip">自由基稳定性：3° &gt; 2° &gt; 1°（与碳正离子顺序相同，但原因是超共轭而非电荷）</div>
+</div>
+
+<h3>硼氢化-氧化反应</h3>
+<div class="card">
+<svg width="440" height="80" viewBox="0 0 440 80">
+  <text x="30" y="45" font-size="13">R-CH=CH₂</text>
+  <text x="140" y="35" font-size="11" fill="#0d6b3d">BH₃/THF</text>
+  <line x1="130" y1="45" x2="190" y2="45" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="210" y="45" font-size="12">[R-CH(BH₂)-CH₃]</text>
+  <text x="340" y="35" font-size="11" fill="#0d6b3d">H₂O₂/NaOH</text>
+  <line x1="330" y1="45" x2="395" y2="45" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="400" y="45" font-size="12" fill="#c0392b" font-weight="bold">R-CH(OH)-CH₃</text>
+  <text x="220" y="72" text-anchor="middle" font-size="10" fill="#666">反马氏、顺式加成、不经碳正离子(无重排)</text>
+</svg>
+<div class="fb"><div class="t">硼氢化-氧化三大特点</div>
+<p>①<strong>反马氏</strong>：OH加到含H多的碳（B先加到位阻小的碳）</p>
+<p>②<strong>顺式加成(syn)</strong>：H和OH加到双键同侧（四元环过渡态协同反应）</p>
+<p>③<strong>无重排</strong>：不经过碳正离子中间体</p></div>
+<div class="note">与酸催化水合(马氏+可能重排)形成对比，硼氢化是合成反马氏醇的首选方法。</div>
+</div>
+
+<!-- ==================== 5.5 氧化反应 ==================== -->
+<h2 id="s5">5.5 氧化反应</h2>
+<h3>氧化试剂对比总表</h3>
+<div class="card">
+<table>
+<tr><th>试剂/条件</th><th>产物</th><th>立体化学</th><th>特点</th></tr>
+<tr><td>KMnO₄ 稀冷/中性</td><td>邻二醇(cis)</td><td>顺式加成</td><td>双键不断裂;可做检验</td></tr>
+<tr><td>OsO₄ + NMO</td><td>邻二醇(cis)</td><td>顺式加成</td><td>催化量OsO₄;选择性好</td></tr>
+<tr><td>KMnO₄ 浓热/酸性</td><td>羧酸 + 酮</td><td>—</td><td>双键断裂氧化</td></tr>
+<tr><td>O₃ → Zn/H₂O(还原)</td><td>醛 + 酮</td><td>—</td><td>臭氧化-还原裂解</td></tr>
+<tr><td>O₃ → H₂O₂(氧化)</td><td>羧酸 + 酮</td><td>—</td><td>臭氧化-氧化裂解</td></tr>
+<tr><td>mCPBA(过氧酸)</td><td>环氧化物</td><td>顺式加成</td><td>构型保持;协同机理</td></tr>
+</table>
+</div>
+
+<h3>臭氧化反应（结构推断利器）</h3>
+<div class="card">
+<div class="fb"><div class="t">臭氧化反应</div>
+<p>C=C + O₃ → 臭氧化物(molozonide) → 重排为ozonide → 还原裂解得醛/酮</p>
+<p><strong>应用</strong>：已知产物(醛/酮)可<strong>反推</strong>原来的烯烃结构（两个C=O拼回C=C）</p></div>
+<div class="ex"><strong>例题</strong>：臭氧化后得到丙酮(CH₃COCH₃)和甲醛(HCHO)，原始烯烃是什么？
+<details><summary>答案</summary><div class="sol">
+<p>将两个羰基碳用双键连接：(CH₃)₂C=CH₂ → <strong>2-甲基丙烯(异丁烯)</strong></p>
+</div></details></div>
+</div>
+
+<h3>环氧化反应</h3>
+<div class="card">
+<svg width="360" height="90" viewBox="0 0 360 90">
+  <text x="30" y="50" font-size="13">C=C</text>
+  <text x="100" y="35" font-size="10" fill="#0d6b3d">mCPBA</text>
+  <line x1="70" y1="48" x2="130" y2="48" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- epoxide ring -->
+  <line x1="160" y1="55" x2="190" y2="35" stroke="#333" stroke-width="2"/>
+  <line x1="190" y1="35" x2="220" y2="55" stroke="#333" stroke-width="2"/>
+  <line x1="160" y1="55" x2="220" y2="55" stroke="#c0392b" stroke-width="2"/>
+  <text x="190" y="68" text-anchor="middle" font-size="11" fill="#c0392b">O</text>
+  <text x="155" y="52" font-size="10">C</text>
+  <text x="222" y="52" font-size="10">C</text>
+  <text x="270" y="50" font-size="11" fill="#666">环氧化物</text>
+</svg>
+<p><strong>特点</strong>：协同机理(一步完成)，<strong>顺式加成</strong>，双键上原来的顺反构型完全保持</p>
+<p>富电子烯烃反应更快（取代越多越快）</p>
+<div class="tip"><strong>Sharpless不对称环氧化</strong>：用Ti(OiPr)₄/酒石酸二乙酯/TBHP可以对烯丙醇进行对映选择性环氧化(诺贝尔奖)</div>
+</div>
+
+<!-- ==================== 5.6 其他重要反应 ==================== -->
+<h2 id="s6">5.6 其他重要反应</h2>
+<h3>催化加氢</h3>
+<div class="card">
+<p><strong>H₂/Pd(或Pt、Ni)</strong> → 顺式加成（两个H从金属表面同侧加入）</p>
+<p>氢化热比较 → 取代越多的烯烃越稳定 → 氢化越<strong>慢</strong>（放热越少）</p>
+<div class="tip">Lindlar催化剂(Pd/CaCO₃/Pb(OAc)₂)：可以将炔烃半加氢为<strong>顺式烯烃</strong>，但不继续还原烯烃。</div>
+</div>
+
+<h3>烯丙位溴代（NBS反应）</h3>
+<div class="card">
+<svg width="400" height="80" viewBox="0 0 400 80">
+  <text x="30" y="45" font-size="13">R-CH₂-CH=CH₂</text>
+  <text x="180" y="30" font-size="10" fill="#0d6b3d">NBS, hν 或 ROOR</text>
+  <line x1="160" y1="42" x2="240" y2="42" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="260" y="45" font-size="13" fill="#c0392b">R-CHBr-CH=CH₂</text>
+  <text x="200" y="72" text-anchor="middle" font-size="10" fill="#666">自由基取代(非加成!) → 烯丙位C-H被Br取代</text>
+</svg>
+<div class="fb"><div class="t">为什么在烯丙位？</div>
+<p>烯丙基自由基有<strong>p-π共轭</strong>稳定化（电子离域到相邻π体系）</p>
+<p>NBS的作用：维持低浓度Br₂ → 有利于取代(自由基链反应)而非加成</p></div>
+<div class="warn"><strong>区分</strong>：NBS/hν = 烯丙位取代；Br₂ = 双键加成。不要搞混！</div>
+</div>
+
+<h3>烯烃复分解反应（了解）</h3>
+<div class="card">
+<p>Grubbs催化剂：两个烯烃交换双键两侧的基团</p>
+<p>R¹CH=CHR² + R³CH=CHR⁴ → R¹CH=CHR³ + R²CH=CHR⁴</p>
+<div class="note">2005年诺贝尔化学奖(Grubbs, Schrock, Chauvin)。考试一般只考概念。</div>
+</div>
+
+<h3>聚合反应</h3>
+<div class="card">
+<div class="fb"><div class="t">烯烃的加聚反应</div>
+<p>n CH₂=CH₂ → [-CH₂-CH₂-]<sub>n</sub>（聚乙烯）</p></div>
+<p><strong>①自由基聚合（高压法）</strong>：</p>
+<ul>
+<li>条件：高温(150~300°C)、高压(100~300 MPa)、引发剂(有机过氧化物)</li>
+<li>产物：低密度聚乙烯(LDPE)，有支链，柔软透明，用于薄膜、包装</li>
+<li>机理：引发→增长→终止（自由基链反应）</li>
+</ul>
+<p><strong>②Ziegler-Natta催化聚合（低压法）</strong>：</p>
+<ul>
+<li>催化剂：TiCl₄ / Al(C₂H₅)₃（Ziegler-Natta催化剂，诺贝尔奖）</li>
+<li>条件：低压(0.1~1 MPa)、较低温度</li>
+<li>产物：高密度聚乙烯(HDPE)，线型无支链，结晶度高，硬度大，强度高</li>
+<li>特点：可控制聚合物的立构规整性（等规/间规聚合）</li>
+</ul>
+<div class="tip">自由基聚合→支链多→低密度；配位聚合→线型→高密度。这是高频考点对比。</div>
+</div>
+
+<!-- ==================== 烯烃的制备 ==================== -->
+<h2 id="s6b">5.6b 烯烃的制备</h2>
+<h3>醇脱水</h3>
+<div class="card">
+<div class="fb"><div class="t">醇的酸催化脱水</div>
+<p>ROH → (H₂SO₄, 170°C) → 烯烃 + H₂O</p></div>
+<p><strong>机理</strong>：①醇质子化 → ②失水生成碳正离子 → ③消除β-H得烯烃</p>
+<p><strong>Zaitsev(扎依采夫)消除规则</strong>：消除反应优先生成<strong>取代最多（最稳定）</strong>的烯烃</p>
+<div class="ex"><strong>例</strong>：2-丁醇脱水 → 主产物为2-丁烯(双取代)，而非1-丁烯(单取代)
+<details><summary>解释</summary><div class="sol">
+<p>碳正离子中间体可从C1或C3失去H：</p>
+<p>失去C3的H → 2-丁烯（更稳定，双取代烯烃）= 主产物(Zaitsev规则)</p>
+<p>失去C1的H → 1-丁烯（单取代烯烃）= 次产物</p>
+</div></details></div>
+<p><strong>醇脱水活性</strong>：3°醇 &gt; 2°醇 &gt; 1°醇（碳正离子越稳定越容易形成）</p>
+<div class="warn"><strong>注意</strong>：醇脱水经过碳正离子中间体，因此<strong>可能发生重排</strong>！</div>
+</div>
+
+<h3>卤代烃消除（脱HX）</h3>
+<div class="card">
+<div class="fb"><div class="t">E2消除</div>
+<p>RX + KOH/EtOH(强碱/醇溶液) → 烯烃 + KX + H₂O</p></div>
+<p><strong>条件</strong>：强碱(KOH、NaOEt等) + 醇溶剂（促进消除而非取代）</p>
+<p><strong>区域选择性</strong>：遵循Zaitsev规则 → 优先生成取代最多的烯烃</p>
+<p><strong>立体要求</strong>：E2为反式共平面消除 → H和X必须处于anti-periplanar构象</p>
+<div class="tip"><strong>E2 vs E1</strong>：强碱+伯/仲卤代烃→E2(一步协同)；弱碱+叔卤代烃→E1(经碳正离子)</div>
+</div>
+
+<h3>邻二卤代物脱卤</h3>
+<div class="card">
+<div class="fb"><div class="t">锌粉脱卤</div>
+<p>R(X)CH-CH(X)R' + Zn → 烯烃 + ZnX₂</p></div>
+<p>试剂：锌粉/乙醇 或 NaI/丙酮</p>
+<p>特点：条件温和，不经过碳正离子（不重排），可保留原有双键位置</p>
+<p>应用：常用于炔烃加卤→邻二卤代物→脱卤得烯烃的合成路线中保护/去保护双键</p>
+</div>
+
+<!-- ==================== 5.7 反应类型总结 ==================== -->
+<h2 id="s7">5.7 加成反应立体化学总结</h2>
+<div class="card">
+<table>
+<tr><th>反应</th><th>区域选择性</th><th>立体选择性</th><th>中间体</th></tr>
+<tr><td>HX加成</td><td>马氏(Markovnikov)</td><td>无特定立体</td><td>碳正离子(可重排)</td></tr>
+<tr><td>H₂O/H⁺加成</td><td>马氏</td><td>无特定立体</td><td>碳正离子(可重排)</td></tr>
+<tr><td>Br₂加成</td><td>—</td><td><strong>反式(anti)</strong></td><td>溴鎓离子</td></tr>
+<tr><td>Br₂/H₂O</td><td>OH在多取代碳</td><td><strong>反式(anti)</strong></td><td>溴鎓离子</td></tr>
+<tr><td>HBr/ROOR</td><td>反马氏</td><td>无特定立体</td><td>自由基</td></tr>
+<tr><td>BH₃→H₂O₂</td><td>反马氏</td><td><strong>顺式(syn)</strong></td><td>四元环过渡态</td></tr>
+<tr><td>H₂/Pt</td><td>—</td><td><strong>顺式(syn)</strong></td><td>表面吸附</td></tr>
+<tr><td>OsO₄(KMnO₄稀)</td><td>—</td><td><strong>顺式(syn)</strong></td><td>环酯中间体</td></tr>
+<tr><td>mCPBA环氧化</td><td>—</td><td><strong>顺式(syn)</strong></td><td>协同(蝶形)</td></tr>
+</table>
+<div class="warn"><strong>记忆口诀</strong>：反式加成只有卤素(经鎓离子)；顺式加成=表面加氢/硼氢化/氧化(OsO₄,mCPBA)</div>
+</div>
+
+<!-- ==================== 习题 ==================== -->
+<h2 id="ex">课后习题精选与详解</h2>
+
+<div class="ex"><strong>第1题</strong>：写出下列烯烃的系统命名（含E/Z标记）
+<details><summary>解析</summary><div class="sol">
+<p>命名步骤：①找含双键的最长碳链 ②从靠近双键的一端开始编号 ③标出取代基位置和名称 ④用CIP规则判断E/Z</p>
+<p>例：CH₃CH=C(CH₃)₂ → 2-甲基-2-丁烯（三取代烯烃，无E/Z，因为一端两个相同基团）</p>
+</div></details></div>
+
+<div class="ex"><strong>第3题</strong>：按稳定性排列下列碳正离子
+<details><summary>答案</summary><div class="sol">
+<p>排序依据：①共振稳定(苄基/烯丙基) ②取代度(3°>2°>1°) ③超共轭</p>
+<p>苄基碳正离子 &gt; 烯丙基碳正离子 &gt; 叔碳正离子 &gt; 仲碳正离子 &gt; 伯碳正离子 &gt; 甲基正离子</p>
+<p>苄基特别稳定因为正电荷可以离域到整个苯环(4个共振式)</p>
+</div></details></div>
+
+<div class="ex"><strong>第5题</strong>：判断加成产物有无旋光性
+<details><summary>详解</summary><div class="sol">
+<p><strong>分析方法</strong>：</p>
+<p>①确定加成方式(syn/anti) ②画出产物立体结构 ③判断是否有对称面</p>
+<p><strong>情况1</strong>：对称烯烃(如2-丁烯) + Br₂ → 反式加成</p>
+<p>  (E)-2-丁烯 + Br₂ → 内消旋体(meso) → <strong>无旋光性</strong></p>
+<p>  (Z)-2-丁烯 + Br₂ → (R,R)+(S,S)外消旋体 → <strong>无旋光性</strong>(混合物)</p>
+<p><strong>情况2</strong>：不对称烯烃 → 通常得外消旋体(无旋光性)</p>
+<p><strong>结论</strong>：加成反应一般<strong>不产生旋光性</strong>，除非使用手性试剂/催化剂</p>
+</div></details></div>
+
+<div class="ex"><strong>第7题</strong>：写出下列反应的产物并说明机理
+<details><summary>答案</summary><div class="sol">
+<p>(a) 1-甲基环己烯 + HBr → 1-溴-1-甲基环己烷(马氏，3°碳正离子)</p>
+<p>(b) 1-甲基环己烯 + HBr/ROOR → 1-甲基-2-溴环己烷(反马氏，自由基)</p>
+<p>(c) 1-甲基环己烯 + Br₂ → trans-1,2-二溴-1-甲基环己烷(反式加成)</p>
+<p>(d) 1-甲基环己烯 + BH₃→H₂O₂ → trans-2-甲基环己醇(反马氏+顺式加成)</p>
+</div></details></div>
+
+<div class="ex"><strong>第9题</strong>：碳正离子重排机理题
+<details><summary>详解</summary><div class="sol">
+<p><strong>3,3-二甲基-1-丁烯 + HCl</strong>：</p>
+<p>①H⁺加到C1 → C2形成2°碳正离子: (CH₃)₃C-CH⁺-CH₃</p>
+<p>②C3上的甲基(或C3-C2的σ键)进行1,2-迁移 → C2变为3°碳正离子</p>
+<p>③Cl⁻进攻 → 2-氯-2,3-二甲基丁烷</p>
+<p><strong>环扩张实例</strong>：甲基环丁烯+HCl → 初始形成环丁基碳正离子(张力大) → C-C键迁移扩张为环戊基碳正离子(张力释放) → 产物为氯代环戊烷衍生物</p>
+</div></details></div>
+
+<div class="ex"><strong>第10题</strong>：用化学方法区分下列化合物
+<details><summary>答案</summary><div class="sol">
+<p>①<strong>Br₂/CCl₄</strong>：烯烃使溴褪色(加成)，烷烃不反应</p>
+<p>②<strong>稀冷KMnO₄</strong>：烯烃使紫色褪色(氧化为邻二醇)，烷烃不反应</p>
+<p>③<strong>浓H₂SO₄</strong>：烯烃溶解(质子化形成碳正离子)，烷烃不溶</p>
+<p>区分不同烯烃：催化加氢后鉴定产物；臭氧化后鉴定醛酮产物</p>
+</div></details></div>
+
+<div class="ex"><strong>第11题</strong>：溴鎓离子机理详解（含立体化学分析）
+<details><summary>详解</summary><div class="sol">
+<p><strong>环己烯 + Br₂ → trans-1,2-二溴环己烷</strong></p>
+<p>步骤1：Br₂靠近电子云 → π电子进攻Br-Br → 形成三元环溴鎓离子 + Br⁻</p>
+<p>步骤2：Br⁻从溴鎓离子<strong>背面(anti)</strong>进攻 → SN2型开环</p>
+<p>立体结果：两个Br必须处于环的trans位置(diaxial构象)</p>
+<p>光学活性：环己烯是对称分子 → 加成得到的trans产物为<strong>内消旋体</strong>(有对称面) → 无旋光性</p>
+</div></details></div>
+
+<div class="ex"><strong>挑战题</strong>：萜类生物合成中的碳正离子串联反应
+<details><summary>详解</summary><div class="sol">
+<p>天然萜类(如薄荷醇、樟脑)的生物合成涉及：</p>
+<p>①焦磷酸酯离去 → 形成烯丙基碳正离子</p>
+<p>②碳正离子进攻分子内双键 → 新C-C键(环化)</p>
+<p>③连续1,2-迁移/环扩张 → 最终产物骨架</p>
+<p>④消除H⁺或被亲核试剂捕获 → 终止</p>
+<p>这体现了碳正离子化学在自然界中的重要性！</p>
+</div></details></div>
+
+<div class="ex"><strong>补充知识：烯烃的酸催化二聚</strong>
+<details><summary>详解</summary><div class="sol">
+<p><strong>异丁烯在H₂SO₄催化下的二聚反应</strong>：</p>
+<p>①质子化：(CH₃)₂C=CH₂ + H⁺ → (CH₃)₃C⁺（叔碳正离子）</p>
+<p>②碳正离子进攻另一分子异丁烯的双键：(CH₃)₃C⁺ + (CH₃)₂C=CH₂ → (CH₃)₃C-CH₂-C⁺(CH₃)₂（新的叔碳正离子）</p>
+<p>③Zaitsev消除(失去β-H)：生成取代最多的烯烃 → 2,4,4-三甲基-2-戊烯(主)或2,4,4-三甲基-1-戊烯(次)</p>
+<p><strong>关键</strong>：整个过程体现了碳正离子的生成→亲电加成→消除的串联反应</p>
+</div></details></div>
+
+<!-- ==================== 易错点 ==================== -->
+<h2 id="s8">5.8 考试易错点总结</h2>
+<div class="card">
+<div class="warn"><strong>易错点1</strong>：过氧化物效应只对HBr有效！遇到HCl/ROOR或HI/ROOR，仍是马氏加成。</div>
+<div class="warn"><strong>易错点2</strong>：碳正离子重排不是"可能发生"，而是只要能变稳定就"一定发生"。</div>
+<div class="warn"><strong>易错点3</strong>：硼氢化-氧化是顺式+反马氏，不经碳正离子，所以<strong>不会重排</strong>。</div>
+<div class="warn"><strong>易错点4</strong>：NBS是取代烯丙位H(自由基取代)，不是加到双键上。</div>
+<div class="warn"><strong>易错点5</strong>：E/Z命名中，顺≠Z、反≠E（要看CIP优先次序，不是看"相同基团"）。</div>
+<div class="warn"><strong>易错点6</strong>：KMnO₄稀冷=邻二醇(不断键)；浓热=完全氧化(断键)。记清条件！</div>
+<div class="warn"><strong>易错点7</strong>：判断旋光性时，反式加成对称底物→内消旋(meso)；非对称→外消旋(racemic)。两者都无旋光性，但原因不同。</div>
+<div class="warn"><strong>易错点8</strong>：Zaitsev(扎依采夫)规则 — 消除反应优先生成取代最多（最稳定）的烯烃。适用于醇脱水、卤代烃消除(E1/E2)。注意：使用大位阻碱(如KOtBu)时可反Zaitsev(Hofmann消除)。</div>
+</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

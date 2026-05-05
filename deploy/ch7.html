@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第7章 芳香烃 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch6.html">&larr; 第6章</a><a href="ch9.html">第9章 &rarr;</a></div>
+<h1>第7章 芳香烃</h1>
+
+<h2 id="kp">核心知识点</h2>
+
+<h3 id="k1">7.1 苯的结构</h3>
+<div class="card">
+<p><strong>苯的分子式</strong>：C<sub>6</sub>H<sub>6</sub>，不饱和度 = 4（3个双键 + 1个环）</p>
+<div class="fb"><div class="t">苯的结构特征</div>
+<ul>
+<li>6个C均为<strong>sp<sup>2</sup>杂化</strong>，每个C有一个未杂化的p轨道</li>
+<li>所有原子<strong>共平面</strong>，C-C键长均为<strong>0.139 nm</strong>（介于单键0.154与双键0.134之间）</li>
+<li>6个p轨道<strong>侧面重叠</strong>形成闭合共轭体系</li>
+<li>键角均为120&deg;，分子具有D<sub>6h</sub>对称性</li>
+</ul></div>
+<svg width="280" height="180" viewBox="0 0 280 180" style="display:block;margin:10px auto;">
+  <polygon points="140,20 210,55 210,125 140,160 70,125 70,55" fill="none" stroke="#0d6b3d" stroke-width="2"/>
+  <polygon points="140,40 195,67 195,113 140,140 85,113 85,67" fill="none" stroke="#0d6b3d" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <circle cx="140" cy="90" r="30" fill="none" stroke="#c0392b" stroke-width="2" opacity="0.6"/>
+  <text x="140" y="95" text-anchor="middle" font-size="14" fill="#c0392b">6&pi;e</text>
+  <text x="140" y="15" text-anchor="middle" font-size="11" fill="#333">H</text>
+  <text x="220" y="55" font-size="11" fill="#333">H</text>
+  <text x="220" y="130" font-size="11" fill="#333">H</text>
+  <text x="140" y="175" text-anchor="middle" font-size="11" fill="#333">H</text>
+  <text x="50" y="130" font-size="11" fill="#333">H</text>
+  <text x="50" y="55" font-size="11" fill="#333">H</text>
+  <text x="5" y="100" font-size="12" fill="#666">离域&pi;键</text>
+  <line x1="45" y1="95" x2="68" y2="90" stroke="#666" stroke-width="1" marker-end="url(#ah)"/>
+  <defs><marker id="ah" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#666"/></marker></defs>
+</svg>
+<div class="tip"><strong>共振能(离域能)</strong>：苯的氢化热 = 208 kJ/mol，比预期的3&times;环己烯(3&times;120=360)少<strong>152 kJ/mol</strong>，说明苯特别稳定。</div>
+<div class="warn"><strong>苯不是"环己三烯"</strong>：苯不能使Br<sub>2</sub>/CCl<sub>4</sub>褪色，不能使KMnO<sub>4</sub>褪色——与烯烃性质截然不同！苯倾向于发生<strong>取代反应</strong>而非加成反应，以保持芳香性。</div>
+</div>
+
+<h3 id="k2">7.2 芳香性与H&uuml;ckel规则</h3>
+<div class="card">
+<div class="fb"><div class="t">H&uuml;ckel规则：判断芳香性的三个条件</div>
+<ol>
+<li><strong>环状</strong>共轭体系（连续共轭）</li>
+<li>环上所有原子<strong>共平面</strong>，每个原子都有<strong>p轨道</strong>参与共轭</li>
+<li>&pi;电子数 = <strong>4n+2</strong>（n = 0, 1, 2, ...）→ 2, 6, 10, 14...</li>
+</ol></div>
+
+<table>
+<tr><th>体系</th><th>&pi;电子数</th><th>4n+2?</th><th>判断</th></tr>
+<tr><td>苯</td><td>6</td><td>n=1 ✓</td><td><strong>芳香</strong></td></tr>
+<tr><td>环丁二烯</td><td>4</td><td>4n(n=1) ✗</td><td><strong>反芳香</strong></td></tr>
+<tr><td>环辛四烯</td><td>8</td><td>4n(n=2) ✗</td><td>非平面→<strong>非芳香</strong></td></tr>
+<tr><td>环戊二烯<sup>&minus;</sup></td><td>6</td><td>n=1 ✓</td><td><strong>芳香</strong></td></tr>
+<tr><td>环庚三烯<sup>+</sup></td><td>6</td><td>n=1 ✓</td><td><strong>芳香</strong></td></tr>
+<tr><td>环丙烯<sup>+</sup></td><td>2</td><td>n=0 ✓</td><td><strong>芳香</strong></td></tr>
+<tr><td>环丙烯<sup>&minus;</sup></td><td>4</td><td>4n(n=1) ✗</td><td><strong>反芳香</strong></td></tr>
+<tr><td>[10]轮烯</td><td>10</td><td>n=2 ✓</td><td>需共平面才芳香</td></tr>
+<tr><td>[14]轮烯</td><td>14</td><td>n=3 ✓</td><td><strong>芳香</strong></td></tr>
+<tr><td>[18]轮烯</td><td>18</td><td>n=4 ✓</td><td><strong>芳香</strong></td></tr>
+</table>
+
+<div class="note"><strong>反芳香 vs 非芳香</strong>：<br>
+&bull; <strong>反芳香</strong>：满足环状共轭+共平面，但&pi;电子=4n → 特别<strong>不稳定</strong><br>
+&bull; <strong>非芳香</strong>：不满足环状共轭或不共平面 → 稳定性正常<br>
+&bull; 环辛四烯采取<strong>船式非平面构象</strong>，避免反芳香性，变为非芳香</div>
+
+<div class="tip"><strong>杂环芳香化合物</strong>：吡咯(N提供2个e，6&pi;)、呋喃(O提供2个e，6&pi;)、噻吩(S提供2个e，6&pi;)、吡啶(N提供1个e进入&pi;体系，孤对在sp<sup>2</sup>中，6&pi;)</div>
+
+<div class="warn"><strong>Hückel规则的局限性</strong><br>
+&bull; 苝(pyrene, 16&pi;电子)、蔻(coronene, 24&pi;电子)虽不符合4n+2但仍具有芳香性<br>
+&bull; Hückel规则严格来说<strong>不适用于含3个以上稠环的体系</strong>（多环稠环芳烃需用其他判据）<br>
+&bull; 对于大环轮烯，需同时考虑分子是否能保持平面构象</div>
+</div>
+
+<h3 id="k2b">7.2b 芳烃的物理性质</h3>
+<div class="card">
+<div class="fb"><div class="t">芳烃的主要物理性质</div>
+<ul>
+<li><strong>非极性</strong>，不溶于水，易溶于有机溶剂；<strong>密度d&lt;1</strong>（比水轻）</li>
+<li><strong>对位异构体</strong>因分子对称性高，分子间排列紧密，<strong>熔点较高</strong>（高于邻位和间位异构体）</li>
+<li><sup>1</sup>H NMR：芳环氢的化学位移 <strong>&delta; 6-8 ppm</strong>（处于环电流去屏蔽区，是判断芳香性的重要依据）</li>
+<li>芳烃有特殊气味（"芳香"一词的来源），许多芳烃有毒（如苯为致癌物）</li>
+</ul></div>
+</div>
+
+<h3 id="k3">7.3 苯的命名</h3>
+<div class="card">
+<div class="fb"><div class="t">一元取代苯</div>
+<p>简单取代基直接命名：甲苯、氯苯、硝基苯、苯酚、苯胺、苯甲酸、苯甲醛等</p></div>
+<div class="fb"><div class="t">二元取代苯的位置表示</div>
+<table>
+<tr><th>位置关系</th><th>前缀</th><th>编号</th><th>示例</th></tr>
+<tr><td>1,2-</td><td><strong>邻(ortho-, o-)</strong></td><td>相邻</td><td>邻二甲苯</td></tr>
+<tr><td>1,3-</td><td><strong>间(meta-, m-)</strong></td><td>间隔一个</td><td>间二甲苯</td></tr>
+<tr><td>1,4-</td><td><strong>对(para-, p-)</strong></td><td>对面</td><td>对二甲苯</td></tr>
+</table></div>
+<div class="tip"><strong>多元取代苯</strong>命名：选择取代基编号之和最小的方案；按次序规则列出取代基。</div>
+</div>
+
+<h3 id="k4">7.4 亲电芳香取代反应（EAS）通用机理</h3>
+<div class="card">
+<div class="fb"><div class="t">三步机理</div>
+<p>① 生成亲电试剂 E<sup>+</sup><br>
+② E<sup>+</sup> 进攻苯环&pi;电子 → 形成<strong>&sigma;络合物</strong>（Wheland中间体，芳香性被破坏）<br>
+③ &sigma;络合物失去H<sup>+</sup> → 恢复芳香性，得到取代产物</p></div>
+<svg width="600" height="120" viewBox="0 0 600 120" style="display:block;margin:10px auto;">
+  <!-- benzene -->
+  <polygon points="50,30 80,15 110,30 110,60 80,75 50,60" fill="none" stroke="#333" stroke-width="1.5"/>
+  <circle cx="80" cy="45" r="14" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="80" y="95" text-anchor="middle" font-size="11" fill="#333">苯</text>
+  <!-- arrow 1 -->
+  <line x1="120" y1="45" x2="170" y2="45" stroke="#0d6b3d" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="145" y="38" text-anchor="middle" font-size="10" fill="#0d6b3d">+E⁺</text>
+  <!-- sigma complex -->
+  <polygon points="190,30 220,15 250,30 250,60 220,75 190,60" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="220" y="50" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">H E</text>
+  <text x="220" y="20" text-anchor="middle" font-size="9" fill="#c0392b">+</text>
+  <text x="220" y="95" text-anchor="middle" font-size="10" fill="#333">&sigma;络合物</text>
+  <!-- arrow 2 -->
+  <line x1="260" y1="45" x2="310" y2="45" stroke="#0d6b3d" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="285" y="38" text-anchor="middle" font-size="10" fill="#0d6b3d">&minus;H⁺</text>
+  <!-- product -->
+  <polygon points="330,30 360,15 390,30 390,60 360,75 330,60" fill="none" stroke="#333" stroke-width="1.5"/>
+  <circle cx="360" cy="45" r="14" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="360" y="10" text-anchor="middle" font-size="12" fill="#0d6b3d" font-weight="bold">E</text>
+  <text x="360" y="95" text-anchor="middle" font-size="11" fill="#333">取代产物</text>
+  <!-- energy note -->
+  <text x="500" y="40" font-size="11" fill="#666">决速步：②</text>
+  <text x="500" y="58" font-size="11" fill="#666">&sigma;络合物能量最高</text>
+</svg>
+<div class="warn"><strong>为什么取代而不加成？</strong> 加成会永久破坏芳香性(损失~152kJ/mol共振能)，而取代反应通过失去H<sup>+</sup>恢复芳香性，热力学更有利。</div>
+</div>
+
+<h3 id="k5">7.5 五大亲电取代反应</h3>
+<div class="card">
+<table>
+<tr><th>反应</th><th>试剂/条件</th><th>亲电试剂E<sup>+</sup></th><th>产物</th><th>要点</th></tr>
+<tr><td><strong>硝化</strong></td><td>浓HNO<sub>3</sub>/浓H<sub>2</sub>SO<sub>4</sub></td><td>NO<sub>2</sub><sup>+</sup></td><td>ArNO<sub>2</sub></td><td>混酸，温度控制</td></tr>
+<tr><td><strong>卤代</strong></td><td>Br<sub>2</sub>(Cl<sub>2</sub>)/FeBr<sub>3</sub>(FeCl<sub>3</sub>)</td><td>Br<sup>+</sup>(Cl<sup>+</sup>)</td><td>ArBr(ArCl)</td><td>必须Lewis酸催化</td></tr>
+<tr><td><strong>磺化</strong></td><td>发烟H<sub>2</sub>SO<sub>4</sub>(含SO<sub>3</sub>)</td><td>SO<sub>3</sub></td><td>ArSO<sub>3</sub>H</td><td><strong>可逆反应！</strong></td></tr>
+<tr><td><strong>F-C烷基化</strong></td><td>RCl/AlCl<sub>3</sub></td><td>R<sup>+</sup></td><td>ArR</td><td><strong>会重排+多取代</strong></td></tr>
+<tr><td><strong>F-C酰基化</strong></td><td>RCOCl/AlCl<sub>3</sub></td><td>RCO<sup>+</sup></td><td>ArCOR</td><td>不重排，一元取代</td></tr>
+</table>
+
+<h4 style="color:var(--acc);margin-top:15px;">① 硝化</h4>
+<div class="fb"><div class="t">亲电试剂的生成</div>
+<p>HNO<sub>3</sub> + 2H<sub>2</sub>SO<sub>4</sub> → NO<sub>2</sub><sup>+</sup> + H<sub>3</sub>O<sup>+</sup> + 2HSO<sub>4</sub><sup>&minus;</sup></p></div>
+
+<h4 style="color:var(--acc);margin-top:15px;">② 卤代</h4>
+<div class="fb"><div class="t">Lewis酸活化卤素</div>
+<p>Br<sub>2</sub> + FeBr<sub>3</sub> → Br<sup>+</sup>&middot;FeBr<sub>4</sub><sup>&minus;</sup>（极化产生亲电性Br）</p>
+<p>最后：FeBr<sub>4</sub><sup>&minus;</sup> + H<sup>+</sup> → FeBr<sub>3</sub> + HBr（催化剂再生）</p></div>
+<div class="warn"><strong>注意区分</strong>：Br<sub>2</sub>/FeBr<sub>3</sub> → 苯环上取代；Br<sub>2</sub>/hv或NBS/hv → 侧链自由基取代（&alpha;-H）</div>
+
+<h4 style="color:var(--acc);margin-top:15px;">③ 磺化</h4>
+<div class="tip"><strong>磺化是可逆的！</strong> 稀H<sub>2</sub>SO<sub>4</sub>水蒸气蒸馏可脱去磺酸基。这使磺酸基可用作<strong>"占位基团"</strong>——先占位阻挡不想要的位置，后续脱去。</div>
+
+<h4 style="color:var(--acc);margin-top:15px;">④ Friedel-Crafts 烷基化</h4>
+<div class="fb"><div class="t">F-C烷基化的底物类型</div>
+<ul>
+<li><strong>卤代烃</strong>：RCl/AlCl<sub>3</sub> → R<sup>+</sup>（经典底物）</li>
+<li><strong>烯烃</strong>：苯 + CH<sub>2</sub>=CH<sub>2</sub> + AlCl<sub>3</sub> → 乙基苯（烯烃质子化产生碳正离子）</li>
+<li><strong>醇</strong>：苯 + ROH + BF<sub>3</sub> → 烷基苯（Lewis酸活化醇羟基产生碳正离子）</li>
+</ul></div>
+<div class="fb"><div class="t">F-C烷基化的四大问题</div>
+<ol>
+<li><strong>碳正离子重排</strong>：1&deg;卤代烃 → 生成更稳定的2&deg;/3&deg;碳正离子（例：正丙基氯→异丙基苯）</li>
+<li><strong>多取代</strong>：产物ArR比苯更活泼，继续反应生成二取代、三取代</li>
+<li><strong>不能用于钝化苯环</strong>：含-NO<sub>2</sub>、-COR等吸电子基的苯环不反应</li>
+<li><strong>不能用于胺</strong>：-NH<sub>2</sub>与AlCl<sub>3</sub>配位，使催化剂失活</li>
+</ol></div>
+
+<h4 style="color:var(--acc);margin-top:15px;">⑤ Friedel-Crafts 酰基化</h4>
+<div class="fb"><div class="t">酰基化的优势</div>
+<ul>
+<li><strong>不会重排</strong>：酰基正离子(RCO<sup>+</sup>)有共振稳定，不重排</li>
+<li><strong>只生成一元取代</strong>：产物含-COR（吸电子基），使苯环钝化</li>
+<li>可通过<strong>Clemmensen还原</strong>(Zn-Hg/HCl)或<strong>Wolff-Kishner还原</strong>(NH<sub>2</sub>NH<sub>2</sub>/KOH)将C=O还原为CH<sub>2</sub></li>
+<li><strong>需要过量AlCl<sub>3</sub></strong>（&gt;1当量）：产物酮的C=O与AlCl<sub>3</sub>络合，消耗催化剂，因此AlCl<sub>3</sub>需超过化学计量</li>
+</ul></div>
+<div class="tip"><strong>合成直链烷基苯的策略</strong>：避免重排！<br>
+苯 →(RCOCl/AlCl<sub>3</sub>)→ ArCOR →(Zn-Hg/HCl 或 NH<sub>2</sub>NH<sub>2</sub>/KOH)→ ArCH<sub>2</sub>R<br>
+<strong>酰基化-还原法</strong> = 间接烷基化，避免碳正离子重排</div>
+
+<h4 style="color:var(--acc);margin-top:15px;">⑥ 氯甲基化反应（Blanc反应）</h4>
+<div class="fb"><div class="t">氯甲基化</div>
+<p>苯 + HCHO + HCl，ZnCl<sub>2</sub>催化，60&deg;C → C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>Cl（苄氯/氯化苄）</p>
+<ul>
+<li><strong>机理</strong>：甲醛与HCl在Lewis酸催化下形成氯甲基碳正离子中间体 ClCH<sub>2</sub><sup>+</sup>，进攻苯环发生亲电取代</li>
+<li>产物苄氯是重要的有机合成中间体</li>
+<li>本质上属于F-C烷基化的一种变体</li>
+</ul></div>
+</div>
+
+<h3 id="k6">7.6 定位效应</h3>
+<div class="card">
+<div class="fb"><div class="t">第一类定位基（邻对位定位基）</div>
+<p><strong>活化+邻对位</strong>：&minus;NH<sub>2</sub>, &minus;NHR, &minus;NR<sub>2</sub>, &minus;OH, &minus;OR, &minus;NHCOR, &minus;OCOCH<sub>3</sub>, &minus;R, &minus;C<sub>6</sub>H<sub>5</sub></p>
+<p>特征：与苯环直接相连的原子上有<strong>孤对电子</strong>或提供电子的&sigma;键，能通过<strong>共振效应(+C)</strong>或<strong>超共轭</strong>向环供电子</p></div>
+
+<div class="fb"><div class="t">特殊：卤素（邻对位+钝化）</div>
+<p>&minus;F, &minus;Cl, &minus;Br, &minus;I</p>
+<p>吸电子诱导效应(&minus;I) > 供电子共振效应(+C) → <strong>总体钝化</strong><br>
+但共振效应决定位置 → <strong>邻对位定位</strong></p></div>
+
+<div class="fb"><div class="t">第二类定位基（间位定位基）</div>
+<p><strong>钝化+间位</strong>：&minus;NO<sub>2</sub>, &minus;CF<sub>3</sub>, &minus;CN, &minus;SO<sub>3</sub>H, &minus;CHO, &minus;COR, &minus;COOH, &minus;COOR, &minus;CONH<sub>2</sub></p>
+<p>特征：与苯环直接相连的原子含有<strong>多重键</strong>（双键或三键连接电负性原子），强吸电子</p></div>
+
+<div class="note"><strong>定位效应的本质</strong>：<br>
+&bull; 邻对位定位基使邻对位碳上电子密度增大 → E<sup>+</sup>优先进攻邻对位<br>
+&bull; 间位定位基使邻对位碳电子密度降低 → 间位相对最不被钝化<br>
+&bull; 实际上间位定位基使<strong>所有位置都钝化</strong>，但间位钝化最少</div>
+
+<h4 style="color:var(--acc);margin-top:15px;">邻对位比例的影响因素</h4>
+<div class="tip"><strong>位阻效应</strong>：取代基体积越大 → 对位产物比例越高<br>
+例：甲苯硝化 → 邻:对 ≈ 58:37；叔丁基苯硝化 → 对位为主(>80%)</div>
+</div>
+
+<h3 id="k7">7.7 二取代苯定位规则</h3>
+<div class="card">
+<div class="fb"><div class="t">二取代苯第三个取代基进入位置的判断</div>
+<ol>
+<li><strong>两个基团定位一致</strong> → 产物明确（协同定位）</li>
+<li><strong>两个基团定位矛盾</strong> → 以<strong>活化能力强</strong>的为主</li>
+<li><strong>一般不进入两个邻位基团之间</strong>（位阻太大）</li>
+</ol></div>
+<div class="ex"><strong>例</strong>：对硝基甲苯的溴代，甲基(邻对位)和硝基(间位)矛盾 → 甲基活化更强 → 新基团进入<strong>甲基的邻位</strong>（同时也是硝基的间位），即2-位。
+</div>
+<div class="tip"><strong>活化能力排序</strong>：&minus;NH<sub>2</sub> > &minus;OH > &minus;OR > &minus;NHCOR > &minus;R > &minus;H > 卤素 > &minus;COR > &minus;COOH > &minus;NO<sub>2</sub></div>
+</div>
+
+<h3 id="k8">7.8 苯环侧链反应</h3>
+<div class="card">
+<div class="fb"><div class="t">三类条件 → 三种反应位置</div>
+<table>
+<tr><th>条件</th><th>反应类型</th><th>位置</th><th>示例</th></tr>
+<tr><td>Lewis酸(FeBr<sub>3</sub>)</td><td>亲电取代</td><td><strong>苯环上</strong></td><td>甲苯+Br<sub>2</sub>/FeBr<sub>3</sub>→邻/对溴甲苯</td></tr>
+<tr><td>hv / NBS / 高温</td><td>自由基取代</td><td><strong>侧链&alpha;-H</strong></td><td>甲苯+Br<sub>2</sub>/hv→苄基溴(C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>Br)</td></tr>
+<tr><td>KMnO<sub>4</sub></td><td>氧化</td><td><strong>侧链→COOH</strong></td><td>甲苯→苯甲酸</td></tr>
+</table></div>
+
+<div class="warn"><strong>KMnO<sub>4</sub>氧化侧链的条件</strong>：<br>
+&bull; 侧链必须有<strong>&alpha;-H</strong>（苄位氢），无&alpha;-H不被氧化<br>
+&bull; 叔丁基苯(无&alpha;-H) → 不反应！<br>
+&bull; 无论侧链多长，都氧化为<strong>&minus;COOH</strong><br>
+&bull; 二甲苯、三甲苯等多侧链 → 多个&minus;COOH</div>
+
+<div class="tip"><strong>苄基自由基/碳正离子</strong>的稳定性：苄基位（&alpha;-C）上形成的自由基或碳正离子因与苯环共轭而稳定（类似烯丙基）。NBS(N-溴代丁二酰亚胺)/hv 是苄位溴代的常用试剂。</div>
+
+<h4 style="color:var(--acc);margin-top:15px;">苯环的催化氧化（苯环破裂）</h4>
+<div class="fb"><div class="t">苯环的工业氧化</div>
+<p>苯 + O<sub>2</sub>，V<sub>2</sub>O<sub>5</sub>催化，500&deg;C → <strong>顺丁烯二酸酐</strong>（马来酸酐）</p>
+<ul>
+<li>这是<strong>苯环破裂</strong>的氧化反应，在工业上用于生产马来酸酐</li>
+<li>条件剧烈（高温+催化剂），与KMnO<sub>4</sub>氧化侧链不同</li>
+<li>注意：实验室条件下苯环对KMnO<sub>4</sub>稳定，不被氧化</li>
+</ul></div>
+
+<h4 style="color:var(--acc);margin-top:15px;">Birch还原</h4>
+<div class="fb"><div class="t">Na/液NH<sub>3</sub>/ROH（Birch还原）</div>
+<p>苯 → 1,4-环己二烯（部分还原，保留两个非共轭双键）</p>
+<ul>
+<li><strong>供电子基</strong>（-OR, -R）：供电子基所在碳上<strong>保留双键</strong>（供电子基连在双键碳上）</li>
+<li><strong>吸电子基</strong>（-COOH）：吸电子基所在碳上<strong>失去双键</strong>（还原发生在吸电子基所在位置）</li>
+</ul></div>
+
+<h4 style="color:var(--acc);margin-top:15px;">苯的加成反应</h4>
+<div class="fb"><div class="t">苯环的加成（需剧烈条件）</div>
+<ul>
+<li><strong>加氯</strong>：苯 + 3Cl<sub>2</sub>，紫外光照(hv) → C<sub>6</sub>H<sub>6</sub>Cl<sub>6</sub>（六氯环己烷，又称六六六/BHC，自由基加成）</li>
+<li><strong>催化加氢</strong>：苯 + 3H<sub>2</sub>，Ni催化，175&deg;C，180atm → 环己烷（需高温高压等剧烈条件）</li>
+</ul></div>
+<div class="warn"><strong>注意</strong>：苯的加成需要非常剧烈的条件，正是由于其芳香稳定性。这与苯倾向于发生取代反应（保留芳香性）而非加成反应的规律一致。</div>
+</div>
+
+<h3 id="k9">7.9 萘的化学</h3>
+<div class="card">
+<svg width="260" height="120" viewBox="0 0 260 120" style="display:block;margin:10px auto;">
+  <!-- naphthalene -->
+  <polygon points="30,40 60,25 90,40 90,70 60,85 30,70" fill="none" stroke="#333" stroke-width="1.5"/>
+  <circle cx="60" cy="52" r="14" fill="none" stroke="#333" stroke-width="1"/>
+  <polygon points="90,40 120,25 150,40 150,70 120,85 90,70" fill="none" stroke="#333" stroke-width="1.5"/>
+  <circle cx="120" cy="52" r="14" fill="none" stroke="#333" stroke-width="1"/>
+  <!-- labels -->
+  <text x="45" y="38" font-size="10" fill="#c0392b" font-weight="bold">&alpha;</text>
+  <text x="62" y="22" font-size="10" fill="#c0392b" font-weight="bold">&alpha;</text>
+  <text x="73" y="38" font-size="10" fill="#0d6b3d" font-weight="bold">&beta;</text>
+  <text x="73" y="76" font-size="10" fill="#0d6b3d" font-weight="bold">&beta;</text>
+  <text x="185" y="40" font-size="11" fill="#333">&alpha;位 = 1,4,5,8位</text>
+  <text x="185" y="60" font-size="11" fill="#333">&beta;位 = 2,3,6,7位</text>
+</svg>
+
+<div class="fb"><div class="t">萘的亲电取代</div>
+<ul>
+<li>萘比苯<strong>更容易</strong>发生亲电取代（活性更高）</li>
+<li><strong>动力学控制</strong>（低温、温和条件）→ <strong>&alpha;位取代</strong>（过渡态能量更低）</li>
+<li><strong>热力学控制</strong>（高温、剧烈条件）→ <strong>&beta;位取代</strong>（产物更稳定）</li>
+</ul></div>
+
+<div class="warn"><strong>经典考点：萘的磺化</strong><br>
+&bull; 低温(80&deg;C)磺化 → <strong>&alpha;-萘磺酸</strong>（动力学产物）<br>
+&bull; 高温(160&deg;C)磺化 → <strong>&beta;-萘磺酸</strong>（热力学产物）<br>
+&bull; 这与磺化的<strong>可逆性</strong>有关：高温下&alpha;-产物可脱磺酸再磺化到&beta;位</div>
+
+<div class="tip"><strong>萘上取代基的定位规则</strong>：<br>
+&bull; <strong>邻对位定位基</strong> → 新取代基进入<strong>同环</strong>（优先&alpha;位）<br>
+&bull; <strong>间位定位基</strong> → 新取代基进入<strong>异环</strong>（&alpha;位）</div>
+
+<h4 style="color:var(--acc);margin-top:15px;">萘的氧化</h4>
+<div class="fb"><div class="t">萘的氧化反应</div>
+<ul>
+<li>萘 + CrO<sub>3</sub>，25&deg;C → <strong>1,4-萘醌</strong>（温和条件，部分氧化）</li>
+<li>萘 + O<sub>2</sub>，V<sub>2</sub>O<sub>5</sub>催化，400-500&deg;C → <strong>邻苯二甲酸酐</strong>（工业氧化，萘环完全破裂）</li>
+</ul></div>
+<div class="note"><strong>规律</strong>：萘环比侧链更容易被氧化（与苯不同！苯环对KMnO<sub>4</sub>稳定，侧链先被氧化）。萘的芳香性比苯弱，因此萘环本身容易被氧化剂进攻。</div>
+
+<h4 style="color:var(--acc);margin-top:15px;">萘的还原</h4>
+<div class="fb"><div class="t">萘的还原反应</div>
+<ul>
+<li>萘 + Na/NH<sub>3</sub>(液)/乙醇（Birch还原）→ <strong>1,4-二氢萘</strong></li>
+<li>萘 + H<sub>2</sub>/Pd → <strong>四氢萘</strong>（1,2,3,4-四氢萘，一个环被还原）</li>
+<li>萘 + H<sub>2</sub>/高压高温 → <strong>十氢萘</strong>（两个环都被完全还原）</li>
+</ul></div>
+</div>
+
+<h3 id="k10">7.10 稠环芳烃</h3>
+<div class="card">
+<div class="fb"><div class="t">常见稠环芳烃</div>
+<table>
+<tr><th>名称</th><th>环数</th><th>&pi;电子数</th><th>特点</th></tr>
+<tr><td>萘</td><td>2</td><td>10</td><td>芳香性比苯弱，反应活性更高</td></tr>
+<tr><td>蒽</td><td>3(线形)</td><td>14</td><td>9,10-位最活泼</td></tr>
+<tr><td>菲</td><td>3(角形)</td><td>14</td><td>9,10-位最活泼</td></tr>
+</table></div>
+<p>&bull; 稠环芳烃的芳香性：萘 > 蒽/菲；环数越多，越容易加成<br>
+&bull; 蒽的9,10-位可发生<strong>Diels-Alder反应</strong>（作为双烯体）</p>
+</div>
+
+<h3 id="k11">7.11 合成策略总结</h3>
+<div class="card">
+<div class="fb"><div class="t">常用合成技巧</div>
+<ol>
+<li><strong>磺酸基占位法</strong>：先磺化占位 → 其他反应 → 脱磺酸基<br>
+  例：合成邻硝基甲苯——甲苯先对位磺化 → 邻位硝化 → 脱磺酸基</li>
+<li><strong>酰基化-还原法</strong>：避免F-C烷基化重排<br>
+  例：合成正丁基苯——苯先酰基化得ArCOC<sub>3</sub>H<sub>7</sub> → Clemmensen还原</li>
+<li><strong>先引入定位基</strong>：根据目标产物的取代模式，决定引入顺序<br>
+  例：合成间硝基苯甲酸——先硝化(间位定位) 还是先氧化？<br>
+  答：先甲基化 → KMnO<sub>4</sub>氧化 → 再硝化（-COOH间位定位）</li>
+<li><strong>利用-NH<sub>2</sub>的转化</strong>：-NO<sub>2</sub>(间位定位) →还原→ -NH<sub>2</sub>(邻对位定位)，灵活切换定位效应</li>
+</ol></div>
+
+<div class="warn"><strong>合成题解题步骤</strong>：<br>
+① 分析目标分子取代基的<strong>相对位置</strong>（邻/间/对）<br>
+② 判断哪个基团先引入（能正确定位后续基团的）<br>
+③ 考虑是否需要<strong>占位</strong>、<strong>保护</strong>或<strong>间接引入</strong><br>
+④ 写出完整路线并标注每步试剂和条件</div>
+</div>
+
+<h2 id="ex">课后习题精选</h2>
+
+<div class="ex"><strong>1. 芳香性判断</strong>：判断下列物种的芳香性：(a) 环戊二烯负离子 (b) 环庚三烯正离子 (c) 环辛四烯 (d) 环丙烯正离子 (e) 环丁二烯
+<details><summary>答案</summary><div class="sol">
+<p>(a) 环戊二烯<sup>&minus;</sup>：5个C各提供1个p轨道，6个&pi;电子(4n+2, n=1)，共平面 → <strong>芳香</strong></p>
+<p>(b) 环庚三烯<sup>+</sup>：7个C，6个&pi;电子(4n+2, n=1)，共平面 → <strong>芳香</strong></p>
+<p>(c) 环辛四烯：8个&pi;电子(4n, n=2)，但采取非平面船式构象 → <strong>非芳香</strong>（刻意避免反芳香）</p>
+<p>(d) 环丙烯<sup>+</sup>：3个C，2个&pi;电子(4n+2, n=0)，共平面 → <strong>芳香</strong></p>
+<p>(e) 环丁二烯：4个&pi;电子(4n, n=1)，平面 → <strong>反芳香</strong>，极不稳定</p>
+</div></details></div>
+
+<div class="ex"><strong>2. 亲电取代产物</strong>：甲苯分别与下列试剂反应，写出主要产物：(a) Br<sub>2</sub>/FeBr<sub>3</sub> (b) Br<sub>2</sub>/hv (c) HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> (d) KMnO<sub>4</sub>/H<sup>+</sup>
+<details><summary>答案</summary><div class="sol">
+<p>(a) Br<sub>2</sub>/FeBr<sub>3</sub>：苯环亲电取代，-CH<sub>3</sub>为邻对位活化基 → <strong>邻溴甲苯 + 对溴甲苯</strong></p>
+<p>(b) Br<sub>2</sub>/hv：侧链自由基取代，苄位H被取代 → <strong>C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>Br</strong>（苄基溴）</p>
+<p>(c) HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub>：苯环硝化，-CH<sub>3</sub>邻对位定位 → <strong>邻硝基甲苯 + 对硝基甲苯</strong></p>
+<p>(d) KMnO<sub>4</sub>/H<sup>+</sup>：侧链氧化(&alpha;-H存在) → <strong>苯甲酸 C<sub>6</sub>H<sub>5</sub>COOH</strong></p>
+</div></details></div>
+
+<div class="ex"><strong>3. 合成题</strong>：从苯出发合成<strong>邻硝基苯甲酸</strong>
+<details><summary>答案</summary><div class="sol"><div class="st">磺酸基占位策略</div>
+<p>① 苯 + CH<sub>3</sub>Cl/AlCl<sub>3</sub> → 甲苯<br>
+② 甲苯 + 发烟H<sub>2</sub>SO<sub>4</sub> → <strong>对甲苯磺酸</strong>（对位被占）<br>
+③ 对甲苯磺酸 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → <strong>邻位硝化</strong>（对位已被磺酸基占据）<br>
+④ 稀酸/水蒸气蒸馏 → <strong>脱去磺酸基</strong><br>
+⑤ KMnO<sub>4</sub> → 氧化甲基为-COOH → <strong>邻硝基苯甲酸</strong></p>
+</div></details></div>
+
+<div class="ex"><strong>4. 合成题</strong>：从苯出发合成<strong>正丁基苯</strong>（不能用F-C烷基化直接做，会重排）
+<details><summary>答案</summary><div class="sol"><div class="st">酰基化-还原法</div>
+<p>① 苯 + CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>COCl/AlCl<sub>3</sub> → 苯基丁酮 C<sub>6</sub>H<sub>5</sub>COCH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>（F-C酰基化，不重排）<br>
+② 苯基丁酮 + Zn-Hg/HCl → <strong>正丁基苯</strong>（Clemmensen还原）<br>
+或 ② 苯基丁酮 + NH<sub>2</sub>NH<sub>2</sub>/KOH/&Delta; → <strong>正丁基苯</strong>（Wolff-Kishner还原）</p>
+<p><strong>注意</strong>：直接用正丁基氯/AlCl<sub>3</sub>会发生1,2-氢迁移重排，得到仲丁基苯！</p>
+</div></details></div>
+
+<div class="ex"><strong>5. 定位效应</strong>：预测下列化合物硝化的主要产物位置：(a) 苯甲酸 (b) 苯胺 (c) 氯苯 (d) 对硝基甲苯
+<details><summary>答案</summary><div class="sol">
+<p>(a) 苯甲酸：-COOH为间位定位基 → <strong>间硝基苯甲酸</strong></p>
+<p>(b) 苯胺：-NH<sub>2</sub>为强邻对位活化基 → <strong>邻硝基苯胺 + 对硝基苯胺</strong>（实际需先保护为-NHCOCH<sub>3</sub>再硝化，否则-NH<sub>2</sub>太活泼会被氧化）</p>
+<p>(c) 氯苯：-Cl为邻对位定位+钝化 → <strong>邻氯硝基苯 + 对氯硝基苯</strong>（反应比苯慢）</p>
+<p>(d) 对硝基甲苯：-CH<sub>3</sub>(邻对位) vs -NO<sub>2</sub>(间位)矛盾 → -CH<sub>3</sub>活化更强 → 新基团进入<strong>甲基的邻位</strong>，即<strong>2-硝基-4-硝基甲苯(2,4-二硝基甲苯)</strong></p>
+</div></details></div>
+
+<div class="ex"><strong>6. 萘的取代</strong>：(a) 萘在80&deg;C磺化的主要产物？(b) 在160&deg;C呢？(c) 解释原因。
+<details><summary>答案</summary><div class="sol">
+<p>(a) 80&deg;C → <strong>&alpha;-萘磺酸</strong>（1-萘磺酸），动力学产物</p>
+<p>(b) 160&deg;C → <strong>&beta;-萘磺酸</strong>（2-萘磺酸），热力学产物</p>
+<p>(c) <strong>原因</strong>：&alpha;位取代过渡态能量低，反应速度快（动力学有利）。但&beta;-产物位阻小、更稳定（热力学有利）。磺化<strong>可逆</strong>，高温下有足够能量使&alpha;-产物脱磺酸后重新磺化到&beta;位，达到热力学平衡。</p>
+</div></details></div>
+
+<div class="ex"><strong>7. 合成题</strong>：从甲苯出发合成<strong>对溴苯甲酸</strong>
+<details><summary>答案</summary><div class="sol">
+<p>甲苯 + Br<sub>2</sub>/FeBr<sub>3</sub> → 对溴甲苯（-CH<sub>3</sub>邻对位定位，取对位产物）<br>
+对溴甲苯 + KMnO<sub>4</sub>/H<sup>+</sup> → <strong>对溴苯甲酸</strong></p>
+<p><strong>注意顺序</strong>：不能先氧化！如果先氧化为苯甲酸(-COOH间位定位)，再溴代会得到间溴苯甲酸。</p>
+</div></details></div>
+
+<div class="ex"><strong>8. 合成题</strong>：从苯出发合成<strong>间溴硝基苯</strong>
+<details><summary>答案</summary><div class="sol">
+<p>分析：Br和NO<sub>2</sub>处于间位关系。</p>
+<p>方案：苯 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → 硝基苯 → 硝基苯 + Br<sub>2</sub>/FeBr<sub>3</sub> → <strong>间溴硝基苯</strong></p>
+<p>-NO<sub>2</sub>为间位定位基，Br进入间位。<br>
+<strong>不能反过来</strong>：先溴代再硝化，-Br是邻对位定位，会得到邻/对硝基溴苯。</p>
+</div></details></div>
+
+<div class="ex"><strong>9. 合成题</strong>：从苯出发合成<strong>对硝基苯甲酸</strong>
+<details><summary>答案</summary><div class="sol">
+<p>① 苯 + CH<sub>3</sub>Cl/AlCl<sub>3</sub> → 甲苯<br>
+② 甲苯 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → 对硝基甲苯（-CH<sub>3</sub>邻对位定位，取对位）<br>
+③ 对硝基甲苯 + KMnO<sub>4</sub>/H<sup>+</sup> → <strong>对硝基苯甲酸</strong></p>
+<p><strong>关键</strong>：先硝化后氧化。不能先氧化(变成-COOH间位定位)再硝化。</p>
+</div></details></div>
+
+<div class="ex"><strong>10. 比较稳定性</strong>：环戊二烯失去H<sup>+</sup>的酸性(pK<sub>a</sub>≈16)远大于环庚三烯(pK<sub>a</sub>≈36)，为什么？
+<details><summary>答案</summary><div class="sol">
+<p>环戊二烯失去H<sup>+</sup>后形成<strong>环戊二烯负离子</strong>（5个C，6个&pi;电子，满足4n+2规则）→ <strong>芳香稳定</strong></p>
+<p>环庚三烯失去H<sup>+</sup>后形成环庚三烯负离子（7个C，8个&pi;电子，4n）→ <strong>反芳香</strong>，极不稳定</p>
+<p>因此环戊二烯更容易失去H<sup>+</sup>，酸性更强。</p>
+</div></details></div>
+
+<div class="ex"><strong>11. 合成题</strong>：从甲苯合成<strong>2,4,6-三硝基甲苯(TNT)</strong>
+<details><summary>答案</summary><div class="sol">
+<p>甲苯在<strong>混酸</strong>(HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub>)中多次硝化：</p>
+<p>① 甲苯 + 混酸(稀) → 对硝基甲苯（主产物）+ 邻硝基甲苯<br>
+② 对硝基甲苯 + 混酸(较浓) → 2,4-二硝基甲苯<br>
+③ 2,4-二硝基甲苯 + 混酸(浓，加热) → <strong>2,4,6-三硝基甲苯(TNT)</strong></p>
+<p>-CH<sub>3</sub>始终为邻对位定位基，三次硝化分别占据2,4,6三个位置。注意每引入一个-NO<sub>2</sub>会钝化苯环，需要更强条件。</p>
+</div></details></div>
+
+<div class="ex"><strong>12. 反应条件辨析</strong>：写出下列反应的产物<br>
+(a) 乙苯 + Cl<sub>2</sub>/AlCl<sub>3</sub><br>
+(b) 乙苯 + Cl<sub>2</sub>/hv<br>
+(c) 乙苯 + KMnO<sub>4</sub>/H<sup>+</sup>加热
+<details><summary>答案</summary><div class="sol">
+<p>(a) 苯环上亲电取代，-C<sub>2</sub>H<sub>5</sub>为邻对位定位 → <strong>邻氯乙苯 + 对氯乙苯</strong></p>
+<p>(b) 侧链自由基取代，&alpha;位C-H键最弱(苄基自由基稳定) → <strong>C<sub>6</sub>H<sub>5</sub>CHClCH<sub>3</sub></strong>（1-氯-1-苯基乙烷）</p>
+<p>(c) 侧链氧化，有&alpha;-H → <strong>苯甲酸 C<sub>6</sub>H<sub>5</sub>COOH</strong>（不论侧链多长，都变成-COOH）</p>
+</div></details></div>
+
+<div class="ex"><strong>13. F-C反应</strong>：解释为什么用正丙基氯和AlCl<sub>3</sub>与苯反应得到的主要产物是<strong>异丙基苯</strong>而非正丙基苯？
+<details><summary>答案</summary><div class="sol">
+<p>CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>Cl + AlCl<sub>3</sub> → CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub><sup>+</sup> (1&deg;碳正离子)</p>
+<p>1&deg;碳正离子不稳定，发生<strong>1,2-氢迁移</strong> → (CH<sub>3</sub>)<sub>2</sub>CH<sup>+</sup> (2&deg;碳正离子，更稳定)</p>
+<p>2&deg;碳正离子进攻苯环 → <strong>异丙基苯</strong>（而非正丙基苯）</p>
+<p>这就是F-C烷基化的重排问题。解决方法：用<strong>酰基化-还原法</strong>。</p>
+</div></details></div>
+
+<div class="ex"><strong>14. Birch还原</strong>：苯甲醚(C<sub>6</sub>H<sub>5</sub>OCH<sub>3</sub>)经Na/液NH<sub>3</sub>/EtOH还原的产物是什么？
+<details><summary>答案</summary><div class="sol">
+<p>苯甲醚的-OCH<sub>3</sub>为供电子基，Birch还原规则：供电子基所在碳<strong>保留双键</strong>。</p>
+<p>产物为<strong>2,5-二氢苯甲醚</strong>（1-甲氧基-1,4-环己二烯），-OCH<sub>3</sub>连在双键碳上。</p>
+</div></details></div>
+
+<div class="ex"><strong>15. 综合合成</strong>：从苯和不超过4个碳的有机物出发，合成<strong>对氨基苯甲酸</strong>
+<details><summary>答案</summary><div class="sol">
+<p>分析：-NH<sub>2</sub>(邻对位)和-COOH(间位)在对位关系。</p>
+<p>① 苯 + CH<sub>3</sub>Cl/AlCl<sub>3</sub> → 甲苯<br>
+② 甲苯 + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> → <strong>对硝基甲苯</strong><br>
+③ 对硝基甲苯 + KMnO<sub>4</sub> → 对硝基苯甲酸<br>
+④ 对硝基苯甲酸 + Fe/HCl(或Sn/HCl) → <strong>对氨基苯甲酸</strong></p>
+<p>关键：利用-CH<sub>3</sub>的邻对位定位引入-NO<sub>2</sub>到对位，再氧化侧链，最后还原-NO<sub>2</sub>为-NH<sub>2</sub>。</p>
+</div></details></div>
+
+<h2 id="tips">考前提醒</h2>
+<div class="warn"><strong>条件决定位置（必考！）</strong><br>
+Lewis酸催化(FeBr<sub>3</sub>) → 苯环上 | hv/NBS/高温 → 侧链&alpha;位 | KMnO<sub>4</sub> → 侧链氧化为-COOH</div>
+<div class="warn"><strong>F-C烷基化 vs 酰基化</strong><br>
+烷基化：会重排、多取代、可逆、不能用于钝化苯环<br>
+酰基化：不重排、一元取代、不可逆</div>
+<div class="warn"><strong>合成题的引入顺序</strong><br>
+取代基的相对位置决定引入顺序！邻对位关系 → 先引入邻对位定位基；间位关系 → 先引入间位定位基</div>
+<div class="warn"><strong>磺酸基占位</strong>：磺化可逆！利用磺酸基暂时占位，阻挡不需要的位置</div>
+<div class="warn"><strong>KMnO<sub>4</sub>氧化需&alpha;-H</strong>：叔丁基苯无&alpha;-H不能被KMnO<sub>4</sub>氧化！</div>
+<div class="warn"><strong>萘：低温&alpha;高温&beta;</strong>（动力学vs热力学控制）</div>
+<div class="warn"><strong>Birch还原记忆</strong>：供电子基"留双键"(双键在取代基碳上)，吸电子基"去双键"(取代基碳被还原)</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第2章 脂肪(环)烃的结构与命名 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch1.html">&larr; 第1章</a><a href="ch3.html">第3章 &rarr;</a></div>
+
+<h1>第2章 脂肪(环)烃的结构与命名</h1>
+<h2 id="kp">核心知识点</h2>
+
+<h3 id="k0">2.0 烃的分类体系</h3>
+<div class="card">
+<div class="fb"><div class="t">烃的分类总览</div>
+<ul>
+<li><strong>烃</strong>（碳氢化合物）
+  <ul>
+  <li><strong>脂肪烃</strong>（开链烃）
+    <ul>
+    <li>饱和：烷烃</li>
+    <li>不饱和：烯烃、炔烃</li>
+    </ul></li>
+  <li><strong>环烃</strong>
+    <ul>
+    <li>脂环烃（饱和：环烷烃；不饱和：环烯烃等）</li>
+    <li>芳香烃（苯及其衍生物）</li>
+    </ul></li>
+  </ul></li>
+</ul></div>
+</div>
+
+<h3 id="k1">2.1 碳原子的杂化</h3>
+<div class="card">
+<table>
+<tr><th>杂化类型</th><th>轨道组成</th><th>几何构型</th><th>键角</th><th>键类型</th><th>实例</th></tr>
+<tr><td>$sp^3$</td><td>1s+3p</td><td>四面体</td><td>109.5&deg;</td><td>4个&sigma;键</td><td>CH<sub>4</sub>、烷烃</td></tr>
+<tr><td>$sp^2$</td><td>1s+2p</td><td>平面三角</td><td>120&deg;</td><td>3&sigma;+1&pi;</td><td>CH<sub>2</sub>=CH<sub>2</sub>、苯</td></tr>
+<tr><td>$sp$</td><td>1s+1p</td><td>直线</td><td>180&deg;</td><td>2&sigma;+2&pi;</td><td>HC&equiv;CH、CO<sub>2</sub></td></tr>
+</table>
+<div class="fb"><div class="t">&sigma;键 vs &pi;键</div>
+<ul>
+<li>&sigma;键：头对头重叠，可<strong>自由旋转</strong>，键能高，键稳定</li>
+<li>&pi;键：肩并肩重叠，<strong>不可旋转</strong>（旋转会破坏），活性大，易发生加成</li>
+</ul></div>
+<div class="fb"><div class="t">键长与键能</div>
+<table>
+<tr><th>键</th><th>键长/pm</th><th>键能/(kJ/mol)</th></tr>
+<tr><td>C&minus;C</td><td>154</td><td>347</td></tr>
+<tr><td>C=C</td><td>134</td><td>611</td></tr>
+<tr><td>C&equiv;C</td><td>121</td><td>837</td></tr>
+</table>
+<p>键越短 → 键能越大 → 键越强 → 但&pi;键部分活性高</p></div>
+<div class="note"><strong>杂化判断口诀</strong>：看该原子连接的"基团数"（包括孤电子对计为一个基团）：4个→sp<sup>3</sup>，3个→sp<sup>2</sup>，2个→sp。</div>
+</div>
+
+<h3 id="k2">2.2 共振结构式</h3>
+<div class="card">
+<div class="fb"><div class="t">共振式书写七条规则</div>
+<ol>
+<li>只移动<strong>电子</strong>，<strong>不移动原子</strong>（原子骨架不变）</li>
+<li>每个共振式都必须是合理的<strong>Lewis结构</strong></li>
+<li>各共振式<strong>未成对电子数</strong>必须相同</li>
+<li>共价键越多的共振式越稳定（贡献越大）</li>
+<li>所有原子都满足八隅体的更稳定</li>
+<li>电荷分离越少的越稳定</li>
+<li>负电荷在<strong>电负性大</strong>的原子上更稳定</li>
+</ol></div>
+<div class="warn"><strong>共振≠互变异构</strong>：共振结构式是同一分子的不同电子描述（不能独立存在），真实结构是各共振式的杂化体。互变异构是不同分子的平衡。</div>
+<div class="tip"><strong>判断共振式贡献大小</strong>：满足上述规则4-7越多的共振式贡献越大。无电荷分离 > 有电荷分离；满足八隅体 > 不满足。</div>
+</div>
+
+<h3 id="k2b">2.2b 共轭二烯烃与共轭效应</h3>
+<div class="card">
+<div class="fb"><div class="t">丁-1,3-二烯的结构特征</div>
+<p>丁-1,3-二烯中4个碳均为sp<sup>2</sup>杂化，4个p轨道相互平行重叠形成<strong>大&pi;键</strong>（离域&pi;键）。</p>
+<ul>
+<li>C2&minus;C3键长：<strong>146.0 pm</strong>，介于C&minus;C单键(154 pm)和C=C双键(134 pm)之间 → 键长平均化</li>
+<li>分子近乎平面构型，电子离域在整个共轭体系上</li>
+</ul></div>
+<div class="fb"><div class="t">共轭效应（离域效应）</div>
+<p><strong>定义</strong>：在共轭体系中，电子离域（不再局限于两个原子之间）导致体系能量降低、稳定性增大的效应。</p>
+<p><strong>氢化热数据验证</strong>：</p>
+<table>
+<tr><th>化合物</th><th>氢化热/(kJ/mol)</th><th>说明</th></tr>
+<tr><td>1-丁烯(一个C=C)</td><td>127</td><td>基准值</td></tr>
+<tr><td>1,4-戊二烯(孤立二烯)</td><td>254(≈127&times;2)</td><td>无共轭稳定化</td></tr>
+<tr><td>1,3-丁二烯(共轭二烯)</td><td>237</td><td>比预期(254)低约<strong>17 kJ/mol</strong></td></tr>
+</table>
+<p>差值(~17 kJ/mol)即为<strong>共轭稳定化能</strong>。</p></div>
+<div class="fb"><div class="t">HOMO与LUMO简介</div>
+<ul>
+<li><strong>HOMO</strong>（最高占据分子轨道）：含有电子的能量最高的分子轨道，决定分子给出电子的能力</li>
+<li><strong>LUMO</strong>（最低未占据分子轨道）：不含电子的能量最低的分子轨道，决定分子接受电子的能力</li>
+<li>HOMO-LUMO能量差越小，分子越容易发生反应</li>
+</ul></div>
+</div>
+
+<h3 id="k3">2.3 不饱和度(DBE)</h3>
+<div class="card">
+<div class="fb"><div class="t">不饱和度计算公式</div>
+$$\text{DBE} = \frac{2C + 2 + N - H - X}{2}$$
+<p>C=碳数，N=氮数，H=氢数，X=卤素数。O和S不参与计算。</p></div>
+<div class="tip"><strong>不饱和度的含义</strong>：<br>
+DBE=0 → 饱和（烷烃/醚等）<br>
+DBE=1 → 1个双键或1个环<br>
+DBE=2 → 2个双键/环或1个三键<br>
+DBE=4 → 很可能含苯环(3双键+1环)</div>
+<div class="ex"><strong>例</strong>：C<sub>7</sub>H<sub>6</sub>O<sub>2</sub> 的DBE = (2&times;7+2-6)/2 = <strong>5</strong>。含苯环(4)+1个C=O或环。</div>
+</div>
+
+<h3 id="k4">2.4 IUPAC系统命名法</h3>
+<div class="card">
+<div class="fb"><div class="t">命名四步法</div>
+<ol>
+<li><strong>选主链</strong>：含官能团(双/三键)的最长碳链；同长选取代基最多的</li>
+<li><strong>编号</strong>：使取代基位次之和最小(最低位次组规则)；有双/三键时让不饱和键编号最小</li>
+<li><strong>命名取代基</strong>：按英文字母顺序排列(ethyl > methyl)</li>
+<li><strong>组合</strong>：位次-取代基名称-母体名(烷/烯/炔)</li>
+</ol></div>
+<div class="fb"><div class="t">碳的分类</div>
+<table>
+<tr><th>类型</th><th>连接C数</th><th>符号</th><th>氢叫法</th></tr>
+<tr><td>伯碳</td><td>1个C</td><td>1&deg;</td><td>伯氢</td></tr>
+<tr><td>仲碳</td><td>2个C</td><td>2&deg;</td><td>仲氢</td></tr>
+<tr><td>叔碳</td><td>3个C</td><td>3&deg;</td><td>叔氢</td></tr>
+<tr><td>季碳</td><td>4个C</td><td>4&deg;</td><td>无氢</td></tr>
+</table></div>
+<div class="ex"><strong>命名实例</strong>：<br>
+CH<sub>3</sub>CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> → <strong>2-甲基戊烷</strong><br>
+(CH<sub>3</sub>)<sub>3</sub>CCH<sub>2</sub>CH(CH<sub>3</sub>)<sub>2</sub> → <strong>2,2,4-三甲基戊烷</strong><br>
+CH<sub>3</sub>CH=CHCH<sub>2</sub>CH<sub>3</sub> → <strong>2-戊烯</strong></div>
+
+<div class="fb"><div class="t">烯基命名</div>
+<table>
+<tr><th>中文名</th><th>英文名</th><th>结构</th></tr>
+<tr><td>乙烯基</td><td>vinyl / ethenyl</td><td>CH<sub>2</sub>=CH&minus;</td></tr>
+<tr><td>丙烯基</td><td>propenyl</td><td>CH<sub>3</sub>CH=CH&minus;</td></tr>
+<tr><td>烯丙基</td><td>allyl / 2-propenyl</td><td>CH<sub>2</sub>=CHCH<sub>2</sub>&minus;</td></tr>
+<tr><td>异丙烯基</td><td>isopropenyl</td><td>CH<sub>2</sub>=C(CH<sub>3</sub>)&minus;</td></tr>
+</table>
+<p>注意区分：<strong>丙烯基</strong>（双键在1,2位，取代在1位）vs <strong>烯丙基</strong>（双键在1,2位，取代在3位）。</p></div>
+
+<div class="fb"><div class="t">复杂支链命名</div>
+<p>当支链本身还有支链（取代基上有取代基）时：</p>
+<ul>
+<li>支链名称用<strong>括号</strong>括起来</li>
+<li>支链编号从<strong>与主链直接相连的碳</strong>开始（而非从支链端头）</li>
+<li>例：主链上连有 &minus;CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>3</sub>，从连接点编号 → 1-甲基丙基，写作 <strong>(1-甲基丙基)</strong></li>
+</ul></div>
+</div>
+
+<h3 id="k5">2.5 环烃命名</h3>
+<div class="card">
+<div class="fb"><div class="t">单环命名</div>
+<p>环+碳数+烷/烯/炔。如：环己烷、环戊烯、1,3-环己二烯</p>
+<p>取代环烃：取代基少 → 环为母体；取代基多或链长 → 链为母体+环为取代基</p></div>
+
+<div class="fb"><div class="t">桥环命名</div>
+<p><strong>二环[a.b.c]某烷</strong>：a&ge;b&ge;c，a、b、c为三座桥的碳数</p>
+<p>编号：从一个桥头碳开始，沿<strong>最长桥→次长桥→最短桥</strong>编号</p></div>
+
+<div class="fb"><div class="t">螺环命名</div>
+<p><strong>螺[a.b]某烷</strong>：a&le;b，从<strong>小环</strong>上与螺原子相邻的碳开始编号</p></div>
+<div class="tip"><strong>桥环实例</strong>：降冰片烷 = 二环[2.2.1]庚烷(共7个碳，桥分别含2、2、1个碳)</div>
+</div>
+
+<h3 id="k6">2.6 Z/E命名与CIP规则</h3>
+<div class="card">
+<div class="fb"><div class="t">CIP次序规则（Cahn-Ingold-Prelog）</div>
+<ol>
+<li><strong>原子序数大者优先</strong>：I > Br > Cl > S > O > N > C > H</li>
+<li><strong>同种原子时逐层外推比较</strong>：沿链向外逐个比较直到分出高低</li>
+<li><strong>双键/三键拆分处理</strong>：C=C当作每个C各连一个"虚原子C"</li>
+<li><strong>质量数大的同位素优先</strong>：D(²H) > H(¹H)</li>
+</ol></div>
+
+<div class="fb"><div class="t">Z/E判断</div>
+<p>对双键两端各选优先级高的基团：<br>
+两个高优先基团在<strong>同侧 = Z</strong>(zusammen)，<strong>异侧 = E</strong>(entgegen)</p></div>
+
+<div class="warn"><strong>Z/E ≠ 顺/反(cis/trans)</strong>：<br>
+顺/反是按相同基团判断，Z/E按CIP次序规则判断。例：<br>
+(Z)-1-溴-1-氯-2-碘乙烯中，Br和I同侧为Z，但按传统顺反可能称为反式。</div>
+
+<div class="tip"><strong>烯炔共存时</strong>：先烯后炔命名(-X-烯-Y-炔)；同位次时<strong>双键编号优先于三键</strong>。</div>
+
+<div class="warn"><strong>顺反异构体不存在的条件</strong>：当双键某一端的两个基团<strong>相同</strong>时（如 CH<sub>2</sub>=CHR 或 R<sub>2</sub>C=CR'R''中一端为RR），该分子<strong>没有顺反异构体</strong>（Z/E构型无意义）。必须双键两端各连两个不同基团才有顺反异构。</div>
+</div>
+
+<h3 id="k7">2.7 常见官能团与分类</h3>
+<div class="card">
+<table>
+<tr><th>官能团</th><th>结构</th><th>化合物类</th><th>命名后缀</th></tr>
+<tr><td>碳碳双键</td><td>C=C</td><td>烯烃</td><td>-烯(-ene)</td></tr>
+<tr><td>碳碳三键</td><td>C&equiv;C</td><td>炔烃</td><td>-炔(-yne)</td></tr>
+<tr><td>羟基</td><td>&minus;OH</td><td>醇</td><td>-醇(-ol)</td></tr>
+<tr><td>醚键</td><td>&minus;O&minus;</td><td>醚</td><td>-醚(ether)</td></tr>
+<tr><td>醛基</td><td>&minus;CHO</td><td>醛</td><td>-醛(-al)</td></tr>
+<tr><td>酮基</td><td>&minus;CO&minus;</td><td>酮</td><td>-酮(-one)</td></tr>
+<tr><td>羧基</td><td>&minus;COOH</td><td>羧酸</td><td>-酸(-oic acid)</td></tr>
+<tr><td>酯基</td><td>&minus;COOR</td><td>酯</td><td>-酸某酯(-oate)</td></tr>
+<tr><td>氨基</td><td>&minus;NH<sub>2</sub></td><td>胺</td><td>-胺(-amine)</td></tr>
+<tr><td>酰胺基</td><td>&minus;CONH<sub>2</sub></td><td>酰胺</td><td>-酰胺(-amide)</td></tr>
+<tr><td>卤素</td><td>&minus;X</td><td>卤代烃</td><td>卤代-(halo-)</td></tr>
+</table>
+</div>
+
+<h2 id="ex">课后习题精选</h2>
+
+<div class="ex"><strong>1. &sigma;键与&pi;键</strong>：比较&sigma;键和&pi;键的性质有什么不同。
+<details><summary>答案</summary><div class="sol">
+<p>(1) &sigma;键是轨道"头对头"方式重叠形成的，&pi;键是由两个p轨道彼此"肩并肩"方式侧面平行重叠；所以重叠程度不如&sigma;键大，&pi;键不如&sigma;键稳定。</p>
+<p>(2) 以双键相连的两原子不能自由旋转；如果旋转，两个p轨道就不能很好平行，&pi;键就会被破坏。</p>
+<p>(3) &pi;键的电子云分布在平面的上方和下方，因此平面上下方电子云密度较大，&pi;键反应活性大。</p>
+</div></details></div>
+
+<div class="ex"><strong>2. 杂化判断</strong>：标明下列化合物中所有碳原子的杂化方式，尝试标出O、N原子的杂化方式。
+<details><summary>答案</summary><div class="sol">
+<p>判断方法：数"区域数"（成键原子数+孤电子对数）= 杂化轨道数</p>
+<p>&bull; 饱和碳（连4个原子）→ sp<sup>3</sup><br>
+&bull; 双键碳/苯环碳 → sp<sup>2</sup><br>
+&bull; 三键碳 → sp<br>
+&bull; 羰基O（=O，2个孤对）→ sp<sup>2</sup><br>
+&bull; 醇/醚的O（-O-，2个孤对+2个&sigma;键）→ sp<sup>3</sup><br>
+&bull; 胺的N(-NH<sub>2</sub>，1个孤对+3个&sigma;键)→ sp<sup>3</sup></p>
+</div></details></div>
+
+<div class="ex"><strong>3. 官能团识别</strong>：马来酸左旋氨氯地平分子中标出各官能团。
+<details><summary>答案</summary><div class="sol">
+<p>常见官能团：氯原子、酯基、氨基、双键、羧基(马来酸部分)等。</p>
+<p>(a) 强极性的共价单键：C-O、C-N<br>
+(b) 强极性的共价双键：C=O、C=C<br>
+(c) 几乎无极性的共价键：C-C、C-H<br>
+(d) sp<sup>2</sup>杂化的碳原子：苯环、双键、羰基碳<br>
+(e) 不同杂化类型的碳原子之间的键：sp<sup>2</sup>-sp<sup>3</sup>(如苯环与单键碳之间)</p>
+</div></details></div>
+
+<div class="ex"><strong>4. 常见基团命名</strong>：写出常见基团的中英文名称。
+<details><summary>答案</summary><div class="sol">
+<p>甲基(methyl)、乙基(ethyl)、丙基(propyl)、异丙基(isopropyl)、丁基(butyl)、叔丁基(tert-butyl)、异丁基(isobutyl)、仲丁基(sec-butyl)</p>
+</div></details></div>
+
+<div class="ex"><strong>5. 碳和氢的分类</strong>：指出下列化合物中各碳和氢分别属于什么类型(伯/仲/叔/季)。
+<details><summary>答案</summary><div class="sol">
+<p>连1个碳的为伯碳(1&deg;)，连2个碳的为仲碳(2&deg;)，连3个碳的为叔碳(3&deg;)，连4个碳的为季碳(4&deg;)。碳上的氢与碳同级。</p>
+</div></details></div>
+
+<div class="ex"><strong>6. 同分异构体</strong>：写出C<sub>6</sub>H<sub>14</sub>和C<sub>4</sub>H<sub>8</sub>（不含双键）的同分异构体的结构式并命名。
+<details><summary>答案</summary><div class="sol">
+<p><strong>C<sub>6</sub>H<sub>14</sub></strong>（5种）：<br>
+(1) 正己烷 CH<sub>3</sub>(CH<sub>2</sub>)<sub>4</sub>CH<sub>3</sub><br>
+(2) 2-甲基戊烷<br>
+(3) 3-甲基戊烷<br>
+(4) 2,2-二甲基丁烷<br>
+(5) 2,3-二甲基丁烷</p>
+<p><strong>C<sub>4</sub>H<sub>8</sub></strong>（不含双键，DBE=1→只含环）：<br>
+(1) 环丁烷<br>
+(2) 甲基环丙烷</p>
+</div></details></div>
+
+<div class="ex"><strong>7. 符合条件的异构体</strong>：写出符合C<sub>4</sub>H<sub>10</sub>O条件的结构。
+<details><summary>答案</summary><div class="sol">
+<p>(1) 只含有伯氢：2,2-二甲基丙醇 (CH<sub>3</sub>)<sub>3</sub>CCH<sub>2</sub>OH? 不对，C<sub>4</sub>需要。正确的是新戊醇不符合C4。<br>
+对于C<sub>4</sub>H<sub>10</sub>O：包括醇和醚两类异构体。<br>
+醇：1-丁醇、2-丁醇、2-甲基-1-丙醇、2-甲基-2-丙醇(叔丁醇)<br>
+醚：乙醚(CH<sub>3</sub>CH<sub>2</sub>OCH<sub>2</sub>CH<sub>3</sub>)、甲基丙基醚、甲基异丙基醚</p>
+</div></details></div>
+
+<div class="ex"><strong>8. 系统命名</strong>：命名下列化合物。
+<details><summary>答案</summary><div class="sol">
+<p>(1) 2,3-二甲基丁烷 &nbsp; (2) 2,2,3-三甲基丁烷 &nbsp; (3) 2-甲基戊烷<br>
+(4) 3-乙基-3-甲基庚烷 &nbsp; (5) 2-溴-二环[3.3.1]壬烷 &nbsp; (6) 7-氯二环[2.2.1]庚烷</p>
+</div></details></div>
+
+<div class="ex"><strong>9. 同一化合物判断</strong>：下列四种结构式是否为同一化合物？
+<details><summary>答案</summary><div class="sol">
+<p>是同一化合物：<strong>3-甲基己烷</strong>。不论怎样弯折碳链，只要最长链和取代基位次一致，就是同一化合物。命名是判断同一性的最好方法。</p>
+</div></details></div>
+
+<div class="ex"><strong>10. 结构式书写</strong>：写出下列名称对应的结构式。
+<details><summary>答案</summary><div class="sol">
+<p>(1) 2,3-二甲基己烷 &nbsp; (2) 3-乙-2,4-二甲基己烷<br>
+(3) 3-乙基-2,4-二甲基己烷 &nbsp; (4) 反-1,3-二甲基环己烷<br>
+(5) 2,2,3,4-四甲基戊烷 &nbsp; (6) 反-1,3-二甲基环戊烷<br>
+(7) 顺-1-溴-2-甲基环己烷 &nbsp; (8) 7-乙基-3,8-二甲基-二环[4.2.0]辛烷<br>
+(9) 3,5,7-三甲基双环[4.1.0]庚烷</p>
+</div></details></div>
+
+<div class="ex"><strong>12. Z/E构型标记</strong>：标出Z/E构型。
+<details><summary>答案</summary><div class="sol">
+<p>(1) Z &nbsp; (2) Z &nbsp; (3) E &nbsp; (4) E<br>
+判断方法：按CIP次序规则确定双键两端各自的高优先基团，同侧=Z，异侧=E。</p>
+</div></details></div>
+
+<div class="ex"><strong>14. 顺反异构数目</strong>：庚-2,4-二烯有几种顺反异构体？
+<details><summary>答案</summary><div class="sol">
+<p>2,4-庚二烯有两个双键，每个双键各有E/Z两种可能：<br>
+(2E,4E)、(2Z,4E)、(2E,4Z)、(2Z,4Z) → 共<strong>4种</strong>顺反异构体。</p>
+</div></details></div>
+
+<div class="ex"><strong>19. 共振式判断</strong>：判断下列共振式书写是否正确。
+<details><summary>答案</summary><div class="sol">
+<p>(1) <strong>错误</strong>：原子位置发生了改变（共振式只能移动电子，不能移动原子）<br>
+(2) <strong>正确</strong>：电子分布不同但原子骨架相同<br>
+(3) <strong>正确</strong>：合理的电子重新分配<br>
+(4) <strong>错误</strong>：未成对电子数不同（违反规则3）</p>
+</div></details></div>
+
+<h2 id="tips">考前提醒</h2>
+<div class="warn"><strong>不饱和度必须先算</strong>：拿到分子式第一步就算DBE，快速判断可能的结构类型</div>
+<div class="warn"><strong>命名时"最长链"是关键</strong>：不一定是直线写出的那条链，可能弯折！</div>
+<div class="warn"><strong>Z/E ≠ 顺/反</strong>：Z/E用CIP规则，顺/反看相同基团</div>
+<div class="warn"><strong>桥环编号</strong>：从桥头碳出发，先走最长桥 → 次长桥 → 最短桥</div>
+<div class="warn"><strong>共振式7条规则</strong>：原子不动、八隅体、未成对电子数不变是最容易犯错的三条</div>
+<div class="warn"><strong>杂化判断</strong>：数"区域数"(连接原子数+孤对数)：4→sp<sup>3</sup>，3→sp<sup>2</sup>，2→sp</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

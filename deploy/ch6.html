@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6章 炔烃和二烯烃 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="ch5.html">&larr; 第5章</a><a href="ch7.html">第7章 &rarr;</a></div>
+<h1>第6章 炔烃和二烯烃</h1>
+
+<!-- ==================== 知识点 ==================== -->
+<h2 id="kp">核心知识点</h2>
+
+<h3 id="k1">6.1 炔烃的结构</h3>
+<div class="card">
+<p><strong>sp杂化</strong>：碳碳三键由 1个&sigma;键 + 2个&pi;键组成，两个sp杂化碳原子呈<strong>直线形</strong>（键角180&deg;）。</p>
+<svg width="420" height="120" viewBox="0 0 420 120" style="display:block;margin:10px auto;">
+  <defs><marker id="ar6" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6Z" fill="#0d6b3d"/></marker></defs>
+  <!-- C-C triple bond -->
+  <line x1="120" y1="60" x2="300" y2="60" stroke="#333" stroke-width="3"/>
+  <line x1="120" y1="50" x2="300" y2="50" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="120" y1="70" x2="300" y2="70" stroke="#3498db" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- C atoms -->
+  <circle cx="120" cy="60" r="18" fill="#27ae60" opacity="0.9"/><text x="120" y="65" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">C</text>
+  <circle cx="300" cy="60" r="18" fill="#27ae60" opacity="0.9"/><text x="300" y="65" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">C</text>
+  <!-- sp labels -->
+  <text x="210" y="40" text-anchor="middle" fill="#e74c3c" font-size="11">&pi;键</text>
+  <text x="210" y="90" text-anchor="middle" fill="#3498db" font-size="11">&pi;键</text>
+  <text x="210" y="110" text-anchor="middle" fill="#333" font-size="11">&sigma;键(sp-sp)</text>
+  <!-- H atoms -->
+  <line x1="102" y1="60" x2="50" y2="60" stroke="#333" stroke-width="2"/>
+  <text x="38" y="65" text-anchor="middle" fill="#333" font-size="14" font-weight="bold">H</text>
+  <line x1="318" y1="60" x2="370" y2="60" stroke="#333" stroke-width="2"/>
+  <text x="382" y="65" text-anchor="middle" fill="#333" font-size="14" font-weight="bold">H</text>
+  <!-- angle -->
+  <text x="210" y="20" text-anchor="middle" fill="#0d6b3d" font-size="12" font-weight="bold">180&deg; 直线形</text>
+</svg>
+<div class="fb"><div class="t">键参数对比</div>
+<table><tr><th>杂化</th><th>键长(C-C)</th><th>键能</th><th>s成分</th><th>电负性</th></tr>
+<tr><td>sp (C&equiv;C)</td><td><strong>0.120 nm</strong></td><td>837 kJ/mol</td><td>50%</td><td>最大</td></tr>
+<tr><td>sp<sup>2</sup> (C=C)</td><td>0.134 nm</td><td>611 kJ/mol</td><td>33%</td><td>中等</td></tr>
+<tr><td>sp<sup>3</sup> (C-C)</td><td>0.154 nm</td><td>347 kJ/mol</td><td>25%</td><td>最小</td></tr></table>
+</div>
+<div class="tip"><strong>s成分越大 &rarr; 电子越靠近原子核 &rarr; 电负性越大 &rarr; C-H键极性越强 &rarr; 酸性越强</strong></div>
+
+<div class="fb"><div class="t">炔烃的物理性质</div>
+<ul>
+<li><strong>沸点</strong>：略高于同碳数的烷烃和烯烃。原因：炔烃分子呈<strong>细长线形</strong>，分子间接触面积大，范德华力（色散力）较强。</li>
+<li><strong>密度</strong>：均小于1（比水轻）。</li>
+<li><strong>溶解性</strong>：难溶于水，易溶于苯、CCl<sub>4</sub>、乙醚等有机溶剂。</li>
+</ul>
+</div>
+</div>
+
+<h3 id="k2">6.2 端炔的酸性</h3>
+<div class="card">
+<div class="fb"><div class="t">pK<sub>a</sub>比较</div>
+<table><tr><th>化合物</th><th>杂化</th><th>pK<sub>a</sub></th></tr>
+<tr><td>RC&equiv;C<strong>H</strong>（端炔）</td><td>sp</td><td><strong>&asymp; 25</strong></td></tr>
+<tr><td>R<sub>2</sub>C=C<strong>H</strong><sub>2</sub>（烯烃）</td><td>sp<sup>2</sup></td><td>&asymp; 44</td></tr>
+<tr><td>R<sub>3</sub>C<strong>H</strong>（烷烃）</td><td>sp<sup>3</sup></td><td>&asymp; 50</td></tr>
+<tr><td>H<sub>2</sub>O</td><td>—</td><td>15.7</td></tr>
+<tr><td>NH<sub>3</sub></td><td>—</td><td>38</td></tr></table>
+</div>
+<svg width="500" height="100" viewBox="0 0 500 100" style="display:block;margin:10px auto;">
+  <rect x="10" y="10" width="480" height="80" rx="8" fill="#edf7ed" stroke="#27ae60" stroke-width="2"/>
+  <text x="250" y="35" text-anchor="middle" font-size="13" fill="#333">RC&equiv;CH + NaNH₂ &rarr; RC&equiv;C⁻Na⁺ + NH₃</text>
+  <text x="250" y="58" text-anchor="middle" font-size="12" fill="#0d6b3d" font-weight="bold">炔钠（强亲核试剂，用于碳链增长）</text>
+  <text x="250" y="78" text-anchor="middle" font-size="11" fill="#888">pKa: 端炔(25) &lt; NH₃(38)，平衡右移</text>
+</svg>
+<div class="warn"><strong>只有端炔有酸性！</strong>内炔（如2-丁炔 CH<sub>3</sub>C&equiv;CCH<sub>3</sub>）没有sp杂化C-H键，不能形成炔钠。</div>
+<div class="fb"><div class="t">炔钠的合成应用（增碳链）</div>
+<p>RC&equiv;C<sup>&minus;</sup>Na<sup>+</sup> + R'CH<sub>2</sub>X &rarr; RC&equiv;C-CH<sub>2</sub>R'（S<sub>N</sub>2反应）</p>
+<p>例：HC&equiv;CH &xrarr;NaNH₂; HC&equiv;C<sup>&minus;</sup>Na<sup>+</sup> &xrarr;CH₃CH₂Br; HC&equiv;C-CH<sub>2</sub>CH<sub>3</sub>（1-丁炔）</p>
+</div>
+</div>
+
+<h3 id="k3">6.3 炔烃的加成反应</h3>
+<div class="card">
+<div class="fb"><div class="t">一、加卤素（Br<sub>2</sub>、Cl<sub>2</sub>）</div>
+<p>&bull; 1 mol Br<sub>2</sub> &rarr; 反式二溴烯烃（反式加成）<br>
+&bull; 过量 Br<sub>2</sub> &rarr; 四溴烷烃（完全加成）</p>
+<p>RC&equiv;CR' + Br<sub>2</sub> &rarr; 反式-RCBr=CR'Br &xrarr;Br₂; RCBr<sub>2</sub>-CR'Br<sub>2</sub></p>
+</div>
+
+<div class="fb"><div class="t">二、加HX（马氏规则）</div>
+<p>&bull; 1 mol HX &rarr; 卤代烯烃（马氏，X加在含H较少的C上）<br>
+&bull; 过量 HX &rarr; 偕二卤代烷（两个X在同一碳上）</p>
+<svg width="480" height="90" viewBox="0 0 480 90" style="display:block;margin:10px auto;">
+  <text x="10" y="30" font-size="13" fill="#333">CH₃C&equiv;CH</text>
+  <line x1="95" y1="25" x2="170" y2="25" stroke="#0d6b3d" stroke-width="2" marker-end="url(#ar6)"/>
+  <text x="133" y="18" text-anchor="middle" font-size="10" fill="#0d6b3d">HBr(1mol)</text>
+  <text x="180" y="30" font-size="13" fill="#333">CH₃CBr=CH₂</text>
+  <line x1="295" y1="25" x2="370" y2="25" stroke="#0d6b3d" stroke-width="2" marker-end="url(#ar6)"/>
+  <text x="333" y="18" text-anchor="middle" font-size="10" fill="#0d6b3d">HBr(1mol)</text>
+  <text x="380" y="30" font-size="13" fill="#333">CH₃CBr₂CH₃</text>
+  <text x="240" y="70" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">马氏规则：H加到含H多的C上，X加到含H少的C上</text>
+</svg>
+</div>
+
+<div class="fb"><div class="t">三、水合反应（Kucherov反应）——重要！</div>
+<p><strong>条件</strong>：HgSO<sub>4</sub> / H<sub>2</sub>SO<sub>4</sub> / H<sub>2</sub>O</p>
+<svg width="500" height="130" viewBox="0 0 500 130" style="display:block;margin:10px auto;">
+  <rect x="5" y="5" width="490" height="120" rx="8" fill="#fff3e0" stroke="#e67e22" stroke-width="1.5"/>
+  <!-- 端炔→酮 -->
+  <text x="20" y="35" font-size="13" fill="#333">端炔：RC&equiv;CH</text>
+  <line x1="135" y1="30" x2="220" y2="30" stroke="#e67e22" stroke-width="2" marker-end="url(#ar6)"/>
+  <text x="178" y="22" text-anchor="middle" font-size="9" fill="#e67e22">Hg²⁺/H⁺/H₂O</text>
+  <text x="230" y="35" font-size="13" fill="#333">[RC(OH)=CH₂]</text>
+  <line x1="355" y1="30" x2="400" y2="30" stroke="#e67e22" stroke-width="2" marker-end="url(#ar6)"/>
+  <text x="378" y="22" text-anchor="middle" font-size="9" fill="#e67e22">互变异构</text>
+  <text x="410" y="35" font-size="13" fill="#c0392b" font-weight="bold">RCOCH₃ (酮)</text>
+  <!-- 乙炔→乙醛 -->
+  <text x="20" y="70" font-size="13" fill="#333">乙炔：HC&equiv;CH</text>
+  <line x1="135" y1="65" x2="220" y2="65" stroke="#e67e22" stroke-width="2" marker-end="url(#ar6)"/>
+  <text x="178" y="57" text-anchor="middle" font-size="9" fill="#e67e22">Hg²⁺/H⁺/H₂O</text>
+  <text x="230" y="70" font-size="13" fill="#333">[CH₂=CHOH]</text>
+  <line x1="340" y1="65" x2="400" y2="65" stroke="#e67e22" stroke-width="2" marker-end="url(#ar6)"/>
+  <text x="410" y="70" font-size="13" fill="#c0392b" font-weight="bold">CH₃CHO (醛)</text>
+  <text x="250" y="105" text-anchor="middle" font-size="12" fill="#c0392b" font-weight="bold">马氏规则：端炔→甲基酮；乙炔是唯一生成醛的特例</text>
+</svg>
+<div class="note"><strong>烯醇-酮互变异构</strong>：烯醇式不稳定，自发转变为酮式。这是重要的有机化学概念。</div>
+</div>
+
+<div class="fb"><div class="t">四、硼氢化-氧化（反马氏水合）</div>
+<p>端炔 + R<sub>2</sub>BH &rarr; 烯基硼烷 &xrarr;H₂O₂/NaOH; <strong>醛</strong>（反马氏，OH加到端碳）</p>
+<svg width="460" height="70" viewBox="0 0 460 70" style="display:block;margin:10px auto;">
+  <text x="10" y="35" font-size="13" fill="#333">RC&equiv;CH</text>
+  <line x1="80" y1="30" x2="150" y2="30" stroke="#0d6b3d" stroke-width="2" marker-end="url(#ar6)"/>
+  <text x="115" y="22" text-anchor="middle" font-size="10" fill="#0d6b3d">R₂BH</text>
+  <text x="160" y="35" font-size="13" fill="#333">RCH=CHBR₂</text>
+  <line x1="280" y1="30" x2="350" y2="30" stroke="#0d6b3d" stroke-width="2" marker-end="url(#ar6)"/>
+  <text x="315" y="22" text-anchor="middle" font-size="10" fill="#0d6b3d">H₂O₂/OH⁻</text>
+  <text x="360" y="35" font-size="13" fill="#c0392b" font-weight="bold">RCH₂CHO (醛)</text>
+  <text x="230" y="60" text-anchor="middle" font-size="11" fill="#0d6b3d">反马氏：OH加在端碳 → 醛</text>
+</svg>
+<div class="warn"><strong>对比记忆</strong>：Kucherov水合（马氏）→ <strong>酮</strong>；硼氢化-氧化（反马氏）→ <strong>醛</strong>。互补方法！</div>
+</div>
+
+<div class="fb"><div class="t">五、硼氢化-还原（制备顺式烯烃）</div>
+<p>炔烃经硼氢化后，用<strong>CH<sub>3</sub>COOH</strong>（而非H<sub>2</sub>O<sub>2</sub>/NaOH）处理烯基硼烷，可得到<strong>顺式烯烃</strong>。</p>
+<p>RC&equiv;CR' &xrarr;R₂BH; 烯基硼烷 &xrarr;CH₃COOH; <strong>(Z)-RCH=CHR'（顺式烯烃）</strong></p>
+<div class="tip"><strong>对比</strong>：硼氢化-氧化（H<sub>2</sub>O<sub>2</sub>/NaOH）→ 醛；硼氢化-还原（CH<sub>3</sub>COOH）→ 顺式烯烃。两条不同的后处理路线！</div>
+</div>
+
+<div class="fb"><div class="t">六、过氧化物效应（反马氏HBr加成）</div>
+<p>炔烃 + HBr + <strong>过氧化物（ROOR）</strong> → <strong>反马氏产物</strong>（自由基加成机理）</p>
+<p>RC&equiv;CH + HBr &xrarr;ROOR; RCH=CHBr（Br加在端碳上，反马氏）</p>
+<div class="warn"><strong>注意</strong>：过氧化物效应只对<strong>HBr</strong>有效，对HCl和HI无效！机理为自由基链式反应。</div>
+</div>
+
+<div class="fb"><div class="t">七、炔烃的亲核加成反应</div>
+<p><strong>炔烃能发生亲核加成，而烯烃不能</strong>。原因：三键的&pi;电子云密度大，且sp碳电负性大，有利于亲核试剂进攻。反应需<strong>碱催化</strong>或<strong>高温高压</strong>条件。</p>
+<table><tr><th>反应物</th><th>条件</th><th>产物</th><th>应用</th></tr>
+<tr><td>HC&equiv;CH + CH<sub>3</sub>OH</td><td>KOH催化，160-165&deg;C</td><td><strong>CH<sub>2</sub>=CH-OCH<sub>3</sub></strong>（甲基乙烯基醚）</td><td>有机合成中间体</td></tr>
+<tr><td>HC&equiv;CH + CH<sub>3</sub>COOH</td><td>催化剂</td><td><strong>CH<sub>2</sub>=CH-OOCCH<sub>3</sub></strong>（醋酸乙烯酯）</td><td>乳胶漆、粘合剂原料</td></tr>
+<tr><td>HC&equiv;CH + HCN</td><td>催化剂</td><td><strong>CH<sub>2</sub>=CH-CN</strong>（丙烯腈）</td><td>合成腈纶纤维</td></tr></table>
+<div class="note"><strong>"乙烯基化反应"</strong>：上述反应的共同特征是将 CH<sub>2</sub>=CH- 基团（乙烯基）引入其他分子中，因此统称为乙烯基化反应。这是乙炔工业应用的重要途径。</div>
+</div>
+
+<div class="fb"><div class="t">炔烃亲电加成比烯烃慢的原因</div>
+<p>虽然炔烃有更多的&pi;电子，但其亲电加成反应速率反而<strong>比烯烃慢</strong>，原因有二：</p>
+<ol>
+<li><strong>C<sub>sp</sub>电负性 &gt; C<sub>sp²</sub></strong>：sp杂化碳s成分大（50%），对&pi;电子束缚更紧，不易提供给亲电试剂</li>
+<li><strong>中间体稳定性</strong>：炔烃亲电加成的中间体为<strong>烯基碳正离子</strong>（C<sup>+</sup>为sp杂化），不如烯烃加成的烷基碳正离子（C<sup>+</sup>为sp<sup>2</sup>杂化）稳定</li>
+</ol>
+</div>
+</div>
+</div>
+
+<h3 id="k4">6.4 炔烃的还原（立体选择性）——必考！</h3>
+<div class="card">
+<svg width="500" height="240" viewBox="0 0 500 240" style="display:block;margin:10px auto;">
+  <rect x="5" y="5" width="490" height="230" rx="10" fill="#e8f5e9" stroke="#27ae60" stroke-width="2"/>
+  <text x="250" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d6b3d">炔烃还原的三种方法</text>
+  <!-- 中心炔烃 -->
+  <rect x="190" y="45" width="120" height="30" rx="5" fill="#27ae60"/><text x="250" y="65" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">RC&equiv;CR'</text>
+  <!-- 左：Lindlar -->
+  <line x1="210" y1="75" x2="100" y2="120" stroke="#3498db" stroke-width="2" marker-end="url(#ar6)"/>
+  <rect x="20" y="120" width="160" height="50" rx="6" fill="#3498db" opacity="0.15" stroke="#3498db"/>
+  <text x="100" y="140" text-anchor="middle" font-size="11" fill="#3498db" font-weight="bold">H₂ / Lindlar催化剂</text>
+  <text x="100" y="158" text-anchor="middle" font-size="12" fill="#333">Z-烯烃（顺式）</text>
+  <text x="100" y="195" text-anchor="middle" font-size="10" fill="#3498db">顺式加氢，H从同侧加</text>
+  <text x="100" y="215" text-anchor="middle" font-size="10" fill="#888">Pd/CaCO₃/Pb(OAc)₂</text>
+  <!-- 右：Na/NH3 -->
+  <line x1="290" y1="75" x2="400" y2="120" stroke="#e74c3c" stroke-width="2" marker-end="url(#ar6)"/>
+  <rect x="320" y="120" width="160" height="50" rx="6" fill="#e74c3c" opacity="0.15" stroke="#e74c3c"/>
+  <text x="400" y="140" text-anchor="middle" font-size="11" fill="#e74c3c" font-weight="bold">Na / 液NH₃</text>
+  <text x="400" y="158" text-anchor="middle" font-size="12" fill="#333">E-烯烃（反式）</text>
+  <text x="400" y="195" text-anchor="middle" font-size="10" fill="#e74c3c">溶液中还原，反式选择性</text>
+  <text x="400" y="215" text-anchor="middle" font-size="10" fill="#888">经自由基阴离子中间体</text>
+  <!-- 下：H2/Pt -->
+  <line x1="250" y1="75" x2="250" y2="120" stroke="#888" stroke-width="2" marker-end="url(#ar6)"/>
+  <text x="250" y="140" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">H₂(过量) / Pt</text>
+  <text x="250" y="158" text-anchor="middle" font-size="11" fill="#333">烷烃（完全加氢）</text>
+</svg>
+
+<table><tr><th>还原条件</th><th>产物</th><th>立体化学</th><th>机理</th></tr>
+<tr><td>H<sub>2</sub> / Lindlar催化剂</td><td><strong>Z-烯烃（顺式）</strong></td><td>顺式加氢</td><td>催化表面同侧加H</td></tr>
+<tr><td>Na / 液NH<sub>3</sub></td><td><strong>E-烯烃（反式）</strong></td><td>反式还原</td><td>自由基阴离子中间体</td></tr>
+<tr><td>H<sub>2</sub>(过量) / Pt或Pd</td><td>烷烃</td><td>完全加氢</td><td>两步加氢</td></tr></table>
+
+<div class="warn"><strong>口诀</strong>：<strong>Lindlar → 顺(Z)，Na/NH₃ → 反(E)</strong>。这两种方法互补，可选择性地制备Z或E烯烃。</div>
+
+<div class="note"><strong>第4题考点</strong>：制备(Z)-2,3-二氘代丁-2-烯<br>
+&bull; D<sub>2</sub>/Lindlar &rarr; 顺式加氘 &rarr; (Z)构型 ✓<br>
+&bull; Na/液ND<sub>3</sub> &rarr; 反式加氘 &rarr; (E)构型 ✗<br>
+判断关键：看加成方式是顺式还是反式！</div>
+</div>
+
+<h3 id="k5">6.5 端炔的鉴别反应</h3>
+<div class="card">
+<div class="fb"><div class="t">银镜/铜镜反应（定性鉴别端炔）</div>
+<table><tr><th>试剂</th><th>反应</th><th>现象</th></tr>
+<tr><td>Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup>（银氨溶液）</td><td>RC&equiv;CH &rarr; RC&equiv;CAg&darr;</td><td><strong>白色</strong>沉淀（炔化银）</td></tr>
+<tr><td>Cu(NH<sub>3</sub>)<sub>2</sub><sup>+</sup>（铜氨溶液）</td><td>RC&equiv;CH &rarr; RC&equiv;CCu&darr;</td><td><strong>红棕色</strong>沉淀（炔化亚铜）</td></tr></table>
+</div>
+<div class="warn"><strong>注意</strong>：只有<strong>端炔</strong>（含C&equiv;C-H）能反应！内炔不能。<br>
+炔化银干燥后<strong>受热易爆炸</strong>，实验后需用稀HNO<sub>3</sub>分解。</div>
+<div class="tip"><strong>化学鉴别思路</strong>：Br<sub>2</sub>/CCl<sub>4</sub> 区分饱和/不饱和 &rarr; Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup> 区分端炔/烯烃/内炔</div>
+</div>
+
+<h3 id="k6">6.6 炔烃的氧化</h3>
+<div class="card">
+<div class="fb"><div class="t">KMnO<sub>4</sub>氧化（强氧化）</div>
+<p>&bull; 端炔 + KMnO<sub>4</sub>(酸性/热) &rarr; <strong>RCOOH + CO<sub>2</sub></strong><br>
+&bull; 内炔 + KMnO<sub>4</sub>(酸性/热) &rarr; <strong>两个羧酸</strong></p>
+<p>例：CH<sub>3</sub>C&equiv;CCH<sub>3</sub> &xrarr;KMnO₄/H⁺; 2 CH<sub>3</sub>COOH</p>
+<p>例：CH<sub>3</sub>CH<sub>2</sub>CH(CH<sub>3</sub>)CH<sub>2</sub>CH=CHCH<sub>3</sub>(含双键) &xrarr;KMnO₄/H⁺; 相应羧酸</p>
+</div>
+<div class="tip">氧化反应可用于<strong>推断炔烃结构</strong>：通过分析氧化产物（羧酸），可以反推三键的位置。</div>
+</div>
+
+<h3 id="k7">6.7 共轭二烯烃</h3>
+<div class="card">
+<div class="fb"><div class="t">二烯烃分类</div>
+<table><tr><th>类型</th><th>结构特征</th><th>例子</th><th>稳定性</th></tr>
+<tr><td><strong>累积二烯</strong></td><td>C=C=C（相邻）</td><td>丙二烯 CH<sub>2</sub>=C=CH<sub>2</sub></td><td>不稳定</td></tr>
+<tr><td><strong>共轭二烯</strong></td><td>C=C-C=C（交替）</td><td>1,3-丁二烯</td><td><strong>最稳定</strong>（离域能）</td></tr>
+<tr><td><strong>孤立二烯</strong></td><td>C=C-(CH<sub>2</sub>)<sub>n</sub>-C=C</td><td>1,4-戊二烯</td><td>中等</td></tr></table>
+</div>
+
+<div class="fb"><div class="t">共轭稳定化</div>
+<p>&bull; 1,3-丁二烯的氢化热 = 237 kJ/mol，而两个孤立双键预期 = 2&times;127 = 254 kJ/mol<br>
+&bull; <strong>离域能（共轭能）</strong> = 254 - 237 = <strong>17 kJ/mol</strong>，说明共轭体系更稳定</p>
+</div>
+
+<div class="fb"><div class="t">s-cis 与 s-trans 构象</div>
+<svg width="460" height="130" viewBox="0 0 460 130" style="display:block;margin:10px auto;">
+  <text x="115" y="15" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d6b3d">s-trans（更稳定）</text>
+  <line x1="40" y1="70" x2="80" y2="40" stroke="#333" stroke-width="3"/><line x1="80" y1="40" x2="120" y2="70" stroke="#333" stroke-width="3"/>
+  <line x1="120" y1="70" x2="160" y2="40" stroke="#333" stroke-width="3"/><line x1="160" y1="40" x2="200" y2="70" stroke="#333" stroke-width="3"/>
+  <line x1="42" y1="65" x2="78" y2="37" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="122" y1="65" x2="158" y2="37" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="115" y="100" text-anchor="middle" font-size="11" fill="#888">单键可自由旋转</text>
+
+  <text x="345" y="15" text-anchor="middle" font-size="13" font-weight="bold" fill="#c0392b">s-cis（D-A反应必需）</text>
+  <line x1="280" y1="70" x2="320" y2="40" stroke="#333" stroke-width="3"/><line x1="320" y1="40" x2="360" y2="70" stroke="#333" stroke-width="3"/>
+  <line x1="360" y1="70" x2="400" y2="40" stroke="#333" stroke-width="3"/><line x1="400" y1="40" x2="370" y2="80" stroke="#333" stroke-width="3"/>
+  <line x1="282" y1="65" x2="318" y2="37" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="362" y1="65" x2="398" y2="37" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="345" y="120" text-anchor="middle" font-size="11" fill="#c0392b">两双键同侧，可环加成</text>
+</svg>
+</div>
+<div class="tip"><strong>超共轭效应</strong>：&sigma;键（通常C-H键）与相邻&pi;键或空轨道相互作用，导致电子离域化，可解释烷基正离子稳定性。</div>
+
+<div class="fb"><div class="t">共轭体系分类</div>
+<table><tr><th>类型</th><th>特征</th><th>典型例子</th></tr>
+<tr><td><strong>&pi;-&pi;共轭</strong></td><td>单键两侧各有一个&pi;键，&pi;电子通过p轨道连续重叠而离域</td><td>1,3-丁二烯 CH<sub>2</sub>=CH-CH=CH<sub>2</sub></td></tr>
+<tr><td><strong>p-&pi;共轭</strong></td><td>单键一侧为&pi;键，另一侧原子提供p轨道（含孤对电子或空轨道）参与共轭</td><td>烯丙基碳正离子 CH<sub>2</sub>=CH-CH<sub>2</sub><sup>+</sup>（空p轨道）；氯乙烯中Cl的p轨道与C=C共轭</td></tr>
+<tr><td><strong>&sigma;-&pi;超共轭</strong></td><td>C-H的&sigma;键与相邻碳上的&pi;键（或空p轨道）发生部分重叠</td><td>丙烯中甲基C-H与C=C的超共轭；碳正离子稳定性解释</td></tr></table>
+<div class="note"><strong>共轭效果</strong>：&pi;-&pi;共轭 &gt; p-&pi;共轭 &gt; &sigma;-&pi;超共轭。共轭使体系能量降低、键长趋于平均化。</div>
+</div>
+
+<div class="fb"><div class="t">重要定义</div>
+<ul>
+<li><strong>氢化热</strong>：1 mol不饱和化合物经催化加氢时所放出的热量。氢化热越小，说明分子越稳定。可用于比较异构体、共轭与非共轭体系的相对稳定性。</li>
+<li><strong>离域能（共轭能）</strong>：共轭体系的实际能量与假设各双键孤立（无共轭）时的能量之差。例如1,3-丁二烯的离域能 = 2&times;127 - 237 = <strong>17 kJ/mol</strong>，表明共轭稳定化的程度。</li>
+</ul>
+</div>
+</div>
+
+<h3 id="k8">6.8 1,2-加成 vs 1,4-加成（动力学 vs 热力学控制）</h3>
+<div class="card">
+<svg width="500" height="200" viewBox="0 0 500 200" style="display:block;margin:10px auto;">
+  <rect x="5" y="5" width="490" height="190" rx="8" fill="#fff3e0" stroke="#e67e22" stroke-width="2"/>
+  <text x="250" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#c0392b">CH₂=CH-CH=CH₂ + HBr</text>
+  <!-- 左：1,2 -->
+  <line x1="180" y1="40" x2="100" y2="75" stroke="#3498db" stroke-width="2" marker-end="url(#ar6)"/>
+  <rect x="20" y="75" width="180" height="50" rx="6" fill="#3498db" opacity="0.12" stroke="#3498db"/>
+  <text x="110" y="95" text-anchor="middle" font-size="12" fill="#3498db" font-weight="bold">1,2-加成产物</text>
+  <text x="110" y="113" text-anchor="middle" font-size="11" fill="#333">CH₃CHBrCH=CH₂</text>
+  <!-- 右：1,4 -->
+  <line x1="320" y1="40" x2="400" y2="75" stroke="#e74c3c" stroke-width="2" marker-end="url(#ar6)"/>
+  <rect x="310" y="75" width="180" height="50" rx="6" fill="#e74c3c" opacity="0.12" stroke="#e74c3c"/>
+  <text x="400" y="95" text-anchor="middle" font-size="12" fill="#e74c3c" font-weight="bold">1,4-加成产物</text>
+  <text x="400" y="113" text-anchor="middle" font-size="11" fill="#333">CH₃CH=CHCH₂Br</text>
+  <!-- 条件 -->
+  <text x="110" y="145" text-anchor="middle" font-size="11" fill="#3498db"><tspan font-weight="bold">低温/短时间</tspan></text>
+  <text x="110" y="162" text-anchor="middle" font-size="10" fill="#3498db">动力学控制（速率快）</text>
+  <text x="110" y="179" text-anchor="middle" font-size="10" fill="#888">活化能低，先形成</text>
+  <text x="400" y="145" text-anchor="middle" font-size="11" fill="#e74c3c"><tspan font-weight="bold">高温/长时间</tspan></text>
+  <text x="400" y="162" text-anchor="middle" font-size="10" fill="#e74c3c">热力学控制（产物稳定）</text>
+  <text x="400" y="179" text-anchor="middle" font-size="10" fill="#888">内烯烃，超共轭稳定</text>
+</svg>
+
+<div class="warn"><strong>为什么1,4-加成产物更稳定？</strong><br>
+1,4-加成产物为<strong>内烯烃</strong>（双键在链内），有更多的&sigma;-&pi;*超共轭作用，分子更稳定。<br>
+1,2-加成产物为<strong>端烯烃</strong>（双键在链端），超共轭少，稳定性较低。</div>
+
+<div class="fb"><div class="t">烯丙基碳正离子</div>
+<p>共轭二烯加HX的第一步：H<sup>+</sup>加到C1，生成<strong>烯丙基碳正离子</strong>（p轨道与双键共轭，正电荷离域在C2和C4上）</p>
+<p>&bull; Br<sup>&minus;</sup>进攻C2 &rarr; 1,2-加成产物<br>&bull; Br<sup>&minus;</sup>进攻C4 &rarr; 1,4-加成产物</p>
+</div>
+</div>
+
+<h3 id="k9">6.9 Diels-Alder反应 [4+2]环加成——必考！</h3>
+<div class="card">
+<svg width="500" height="140" viewBox="0 0 500 140" style="display:block;margin:10px auto;">
+  <rect x="5" y="5" width="490" height="130" rx="8" fill="#e8f5e9" stroke="#27ae60" stroke-width="2"/>
+  <text x="250" y="25" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d6b3d">Diels-Alder [4+2] 环加成反应</text>
+  <!-- 二烯 -->
+  <text x="60" y="55" text-anchor="middle" font-size="12" fill="#333">共轭二烯</text>
+  <text x="60" y="72" text-anchor="middle" font-size="10" fill="#888">(4&pi;, s-cis)</text>
+  <rect x="20" y="80" width="80" height="25" rx="4" fill="#27ae60" opacity="0.2" stroke="#27ae60"/>
+  <text x="60" y="97" text-anchor="middle" font-size="11" fill="#0d6b3d">富电子</text>
+  <!-- + -->
+  <text x="130" y="70" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">+</text>
+  <!-- 亲双烯体 -->
+  <text x="200" y="55" text-anchor="middle" font-size="12" fill="#333">亲双烯体</text>
+  <text x="200" y="72" text-anchor="middle" font-size="10" fill="#888">(2&pi;)</text>
+  <rect x="155" y="80" width="90" height="25" rx="4" fill="#e74c3c" opacity="0.2" stroke="#e74c3c"/>
+  <text x="200" y="97" text-anchor="middle" font-size="11" fill="#c0392b">含吸电子基</text>
+  <!-- 箭头 -->
+  <line x1="270" y1="70" x2="340" y2="70" stroke="#0d6b3d" stroke-width="3" marker-end="url(#ar6)"/>
+  <text x="305" y="62" text-anchor="middle" font-size="10" fill="#0d6b3d">&Delta;</text>
+  <!-- 产物 -->
+  <text x="410" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d6b3d">六元环</text>
+  <text x="410" y="90" text-anchor="middle" font-size="10" fill="#888">协同反应，一步完成</text>
+</svg>
+
+<div class="fb"><div class="t">D-A反应三大要点</div>
+<ol>
+<li><strong>s-cis构象</strong>：二烯必须采取s-cis构象才能反应（环戊二烯被"锁"在s-cis，反应活性极高）</li>
+<li><strong>电子匹配</strong>：二烯（富电子）+ 亲双烯体（缺电子，含-CHO、-COOH、-CN、-NO<sub>2</sub>等吸电子基）</li>
+<li><strong>endo规则</strong>：endo产物为动力学主产物（取代基朝向二烯方向）</li>
+</ol>
+</div>
+
+<div class="fb"><div class="t">经典D-A反应实例</div>
+<table><tr><th>二烯</th><th>亲双烯体</th><th>产物</th></tr>
+<tr><td>1,3-丁二烯</td><td>顺丁烯二酸酐</td><td>四氢邻苯二甲酸酐</td></tr>
+<tr><td>1,3-丁二烯</td><td>丙烯醛 CH<sub>2</sub>=CHCHO</td><td>环己烯-4-甲醛</td></tr>
+<tr><td>环戊二烯</td><td>顺丁烯二酸酐</td><td>降冰片烯二酸酐</td></tr>
+<tr><td>1,3-丁二烯</td><td>DEAD(丁炔二酸二乙酯)</td><td>环己二烯二酸二乙酯</td></tr></table>
+</div>
+
+<div class="fb"><div class="t">逆D-A反应（反推原料）</div>
+<p>在六元环产物中找到<strong>双键</strong>，从双键两侧"切开"，还原回二烯和亲双烯体。</p>
+</div>
+
+<div class="warn"><strong>氯丁二烯聚合</strong>：CH<sub>2</sub>=C(Cl)-CH=CH<sub>2</sub> 可发生1,4-加聚反应，生成氯丁橡胶。</div>
+</div>
+
+<h2 id="ex">课后习题精选（含详解）</h2>
+
+<div class="ex"><strong>第1题</strong>：解释名词——共轭效应、互变异构、1,4-加成、双烯合成、二烯亲和物
+<details><summary>答案</summary><div class="sol">
+<p><strong>共轭效应</strong>：&pi;电子或孤对电子通过共轭体系发生电子离域化的现象，使分子更稳定。</p>
+<p><strong>互变异构</strong>：两种异构体通过原子/基团迁移相互转化（如酮-烯醇互变异构）。</p>
+<p><strong>1,4-加成</strong>：共轭二烯中试剂加到1位和4位，双键移到2,3位。</p>
+<p><strong>双烯合成</strong>（Diels-Alder）：共轭二烯与亲双烯体发生[4+2]环加成生成六元环。</p>
+<p><strong>二烯亲和物</strong>：D-A反应中与二烯反应的缺电子化合物（如顺丁烯二酸酐）。</p>
+</div></details></div>
+
+<div class="ex"><strong>第2题</strong>：丁-1-炔与下列试剂反应：(1)热KMnO<sub>4</sub> (2)H<sub>2</sub>/Pt (3)过量Br<sub>2</sub> (4)AgNO<sub>3</sub>氨溶液 (5)CuCl氨溶液 (6)H<sub>2</sub>SO<sub>4</sub>,H<sub>2</sub>O,Hg<sup>2+</sup>
+<details><summary>答案</summary><div class="sol">
+<p>(1) CH<sub>3</sub>CH<sub>2</sub>C&equiv;CH &xrarr;KMnO₄/H⁺; CH<sub>3</sub>CH<sub>2</sub>COOH + CO<sub>2</sub>（端碳氧化为CO₂）</p>
+<p>(2) CH<sub>3</sub>CH<sub>2</sub>C&equiv;CH &xrarr;H₂/Pt; CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>（完全加氢→正丁烷）</p>
+<p>(3) CH<sub>3</sub>CH<sub>2</sub>C&equiv;CH &xrarr;2Br₂; CH<sub>3</sub>CH<sub>2</sub>CBr<sub>2</sub>CHBr<sub>2</sub>（四溴代物）</p>
+<p>(4) CH<sub>3</sub>CH<sub>2</sub>C&equiv;CH + Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup> &rarr; CH<sub>3</sub>CH<sub>2</sub>C&equiv;CAg&darr;（<strong>白色沉淀</strong>）</p>
+<p>(5) CH<sub>3</sub>CH<sub>2</sub>C&equiv;CH + Cu(NH<sub>3</sub>)<sub>2</sub><sup>+</sup> &rarr; CH<sub>3</sub>CH<sub>2</sub>C&equiv;CCu&darr;（<strong>红棕色沉淀</strong>）</p>
+<p>(6) CH<sub>3</sub>CH<sub>2</sub>C&equiv;CH &xrarr;Hg²⁺/H⁺/H₂O; CH<sub>3</sub>CH<sub>2</sub>COCH<sub>3</sub>（马氏水合→2-丁酮）</p>
+</div></details></div>
+
+<div class="ex"><strong>第3题</strong>：以丙炔为原料合成：(1)丙酮 (2)2-溴丙烷 (3)2,2-二溴丙烷 (4)丙-1-醇 (5)正己烷
+<details><summary>答案</summary><div class="sol">
+<p>(1) CH<sub>3</sub>C&equiv;CH &xrarr;HgSO₄/H₂SO₄/H₂O; <strong>CH<sub>3</sub>COCH<sub>3</sub></strong>（Kucherov水合→丙酮）</p>
+<p>(2) CH<sub>3</sub>C&equiv;CH &xrarr;HBr; CH<sub>3</sub>CBr=CH<sub>2</sub> &xrarr;Ni/H₂; <strong>CH<sub>3</sub>CHBrCH<sub>3</sub></strong></p>
+<p>(3) CH<sub>3</sub>C&equiv;CH &xrarr;2HBr; <strong>CH<sub>3</sub>CBr<sub>2</sub>CH<sub>3</sub></strong>（马氏，两个Br在同一碳）</p>
+<p>(4) CH<sub>3</sub>C&equiv;CH &xrarr;BH₃; &xrarr;H₂O₂/NaOH; CH<sub>3</sub>CH=CH(OH) &rarr; CH<sub>3</sub>CH<sub>2</sub>CHO &xrarr;NaBH₄; <strong>CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH</strong></p>
+<p>(5) CH<sub>3</sub>C&equiv;CH &xrarr;NaNH₂; CH<sub>3</sub>C&equiv;CNa &xrarr;CH₃CH₂Br; CH<sub>3</sub>C&equiv;CCH<sub>2</sub>CH<sub>3</sub> &xrarr;H₂/Ni; <strong>CH<sub>3</sub>(CH<sub>2</sub>)<sub>4</sub>CH<sub>3</sub></strong></p>
+</div></details></div>
+
+<div class="ex"><strong>第5题</strong>：完成反应（选做重点）
+<details><summary>答案</summary><div class="sol">
+<p>(1) 1,3-丁二烯 + 丙烯醛 &xrarr;D-A; 4-甲醛基环己烯</p>
+<p>(2) 1,3-丁二烯 + 顺丁烯二酸酐 &xrarr;D-A; 四氢邻苯二甲酸酐</p>
+<p>(3) CH<sub>2</sub>=C(Cl)-CH=CH<sub>2</sub> &xrarr;聚合; 氯丁橡胶 [-CH<sub>2</sub>-C(Cl)=CH-CH<sub>2</sub>-]<sub>n</sub></p>
+<p>(4) 2-甲基-1,3-丁二烯 + HBr(1mol) &rarr; 1,2-加成 + 1,4-加成 + 3,4-加成多种产物</p>
+<p>(5) HC&equiv;C-CH<sub>2</sub>CH<sub>3</sub> &xrarr;BH₃; &xrarr;H₂O₂/OH⁻; CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CHO（反马氏→醛）</p>
+<p>(6) (CH<sub>3</sub>)<sub>2</sub>CHCH<sub>2</sub>CH=CHCH<sub>3</sub> &xrarr;KMnO₄/H⁺; CH<sub>3</sub>CH<sub>2</sub>CH(CH<sub>3</sub>)COOH + CH<sub>3</sub>COOH</p>
+<p>(7) 环戊二烯 + Br<sub>2</sub> &rarr; 3,4-二溴环戊烯(1,2-加成) + 3,5-二溴环戊烯(1,4-加成)</p>
+<p>(8) 环己烯 &xrarr;KMnO₄/H⁺; HOOC(CH<sub>2</sub>)<sub>4</sub>COOH（己二酸）</p>
+<p>(9) 环戊二烯 + DEAD(丁炔二酸二乙酯) &xrarr;D-A; 降冰片二烯二酸二乙酯</p>
+</div></details></div>
+
+<div class="ex"><strong>第7题</strong>：以乙炔为原料合成（不超过3个碳的有机物）
+<details><summary>答案</summary><div class="sol">
+<p>(1) CH<sub>3</sub>CH<sub>2</sub>-CH(OH)-CH<sub>3</sub>：HC&equiv;CH &xrarr;NaNH₂; HC&equiv;CNa &xrarr;CH₃CH₂Br; HC&equiv;CCH₂CH₃ &xrarr;Hg²⁺/H₂O; CH₃COCH₂CH₃ &xrarr;H₂/Ni; 产物</p>
+<p>(2) CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>Br：HC&equiv;CH &xrarr;NaNH₂; NaC&equiv;CH &xrarr;CH₃CH₂Br; CH₃CH₂C&equiv;CH &xrarr;HBr/ROOR; CH₃CH₂CH=CHBr &xrarr;H₂/Ni; 产物</p>
+<p>(3) HC&equiv;CH &xrarr;CuCl/NH₄Cl; H₂C=C(H)-C&equiv;CH（乙烯基乙炔）→ 进一步反应</p>
+<p>(4) 环氧乙烷：HC&equiv;CH &xrarr;Br₂(低温); CHBr=CHBr &xrarr;2KOH; &rarr; NaO⁻ &rarr; 环氧</p>
+<p>(5) CH<sub>3</sub>CH<sub>2</sub>CCl<sub>2</sub>CH<sub>3</sub>：HC&equiv;CNa + CH₃CH₂Br → 1-丁炔 → HCl(2mol)</p>
+<p>(6) 1-己醇路线：HC&equiv;CH + Na → NaC≡CH + 丙基溴 → 戊-1-炔 → Pd/BaSO₄ → OH</p>
+</div></details></div>
+
+<div class="ex"><strong>第8题</strong>：化学鉴别
+<details><summary>答案</summary><div class="sol">
+<p><strong>(1) 乙烷、乙烯、乙炔：</strong></p>
+<p>Step 1：取样加Br<sub>2</sub>/CCl<sub>4</sub> → 乙烷不褪色（饱和），乙烯和乙炔褪色</p>
+<p>Step 2：褪色的两个样加Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup> → 乙炔产生<strong>白色沉淀</strong>，乙烯无现象</p>
+<p><strong>(2) 端炔、共轭二烯、内炔：</strong></p>
+<p>Step 1：Cu(NH<sub>3</sub>)<sub>2</sub><sup>+</sup> → 端炔产生<strong>红棕色沉淀</strong></p>
+<p>Step 2：剩余两者加顺丁烯二酸酐 → 共轭二烯发生D-A反应生成沉淀，内炔无反应</p>
+</div></details></div>
+
+<div class="ex"><strong>第9题</strong>：除去杂质——(1)粗乙烷中少量乙炔 (2)粗乙烯中少量乙炔
+<details><summary>答案</summary><div class="sol">
+<p>(1)(2)均可通过AgNO<sub>3</sub>/NH<sub>3</sub>&middot;H<sub>2</sub>O 或 CuCl/NH<sub>3</sub>&middot;H<sub>2</sub>O 溶液除去。</p>
+<p>原理：端炔与银氨/铜氨溶液生成不溶沉淀，而乙烷/乙烯不反应。</p>
+</div></details></div>
+
+<div class="ex"><strong>第10题</strong>：为什么1,4-加成产物比1,2-加成产物稳定？
+<details><summary>答案</summary><div class="sol">
+<p>1,4-加成产物为<strong>内烯烃</strong>，双键两侧有更多的烷基，&sigma;-&pi;*超共轭效应更强，分子更稳定。</p>
+<p>1,2-加成产物为端烯烃，超共轭效应弱，稳定性较低。</p>
+</div></details></div>
+
+<div class="ex"><strong>第11题</strong>：分子量80，加氢吸收3mol H<sub>2</sub>，臭氧化得甲醛和乙二醛，推结构
+<details><summary>答案</summary><div class="sol">
+<p>分子式 C<sub>6</sub>H<sub>8</sub>（12&times;6+8=80），不饱和度=3（吸收3mol H₂）</p>
+<p>臭氧化产物：HCHO + OHC-CHO → 还原回去 → CH<sub>2</sub>=CH-CH=CH-CH=CH<sub>2</sub></p>
+<p>结论：<strong>己-1,3,5-三烯</strong>（三个共轭双键）</p>
+</div></details></div>
+
+<div class="ex"><strong>第12题</strong>：C<sub>6</sub>H<sub>10</sub>，加氢→2-甲基戊烷，Hg<sup>2+</sup>水合→(CH₃)₂CHCH₂COCH₃，CuCl红色沉淀
+<details><summary>答案</summary><div class="sol">
+<p>&bull; C₆H₁₀ + H₂ → 2-甲基戊烷 → 碳骨架为异己基</p>
+<p>&bull; Hg²⁺水合 → 4-甲基-2-戊酮 → 马氏水合，三键在C1-C2</p>
+<p>&bull; CuCl红色沉淀 → 端炔</p>
+<p>结论：<strong>4-甲基戊-1-炔</strong> (CH<sub>3</sub>)<sub>2</sub>CHCH<sub>2</sub>C&equiv;CH</p>
+</div></details></div>
+
+<div class="ex"><strong>第13题</strong>：A,B,C,D均为C<sub>5</sub>H<sub>8</sub>，使Br<sub>2</sub>/CCl<sub>4</sub>褪色。推断结构
+<details><summary>答案</summary><div class="sol">
+<p><strong>A：戊-1-炔</strong> CH&equiv;C-CH₂CH₂CH₃（AgNO₃白色沉淀→端炔；加氢→正戊烷）</p>
+<p><strong>B：戊-2-炔</strong> CH₃C&equiv;CCH₂CH₃（无Ag沉淀→内炔；KMnO₄→醋酸+丙酸）</p>
+<p><strong>C：戊-1,3-二烯</strong> CH₂=CH-CH=CHCH₃（与顺丁烯二酸酐D-A反应→白色固体）</p>
+<p><strong>D：环戊烯</strong>（只吸收1mol H₂→C₅H₁₀环烷烃；臭氧化→一种醛即戊二醛）</p>
+</div></details></div>
+
+<div class="ex"><strong>第14题</strong>：环戊-1,3-二烯 + HCl低温，为何主产物为3-氯环戊烯？
+<details><summary>答案</summary><div class="sol">
+<p>低温 → <strong>动力学控制</strong> → 1,2-加成为主 → 3-氯环戊烯</p>
+<p>H⁺加到C1后，生成烯丙基碳正离子。碳正离子(2)比(1)更稳定（烯丙型），反应主要按路径(2)进行，Cl⁻进攻C3 → 3-氯环戊烯。</p>
+</div></details></div>
+
+<div class="ex"><strong>第15题</strong>：C<sub>8</sub>H<sub>12</sub>有旋光性，Lindlar部分加氢→C有旋光性，Na/NH₃→D无旋光性
+<details><summary>答案</summary><div class="sol">
+<p>关键：手性碳连接炔基和烯基。</p>
+<p><strong>A</strong>：含一个内炔和一个(E)-双键的手性分子</p>
+<p>Lindlar加氢→(Z)-烯烃(C)，与原有(E)-双键不同→仍有手性→有旋光性</p>
+<p>Na/NH₃→(E)-烯烃(D)，与原有(E)-双键相同→形成对称结构→<strong>内消旋</strong>→无旋光性</p>
+<p>B(完全加氢)→烷烃，碳骨架对称→无旋光性</p>
+</div></details></div>
+
+<h2 id="tips">考前易错点</h2>
+<div class="warn"><strong>易错1</strong>：Lindlar→顺式(Z)，Na/NH₃→反式(E)。不要搞混！记住"L=Lin=顺"。</div>
+<div class="warn"><strong>易错2</strong>：Kucherov水合（马氏）→酮，硼氢化氧化（反马氏）→醛。只有乙炔水合得醛！</div>
+<div class="warn"><strong>易错3</strong>：只有端炔能与Ag⁺/Cu⁺反应，内炔不能！端炔pKa≈25。</div>
+<div class="warn"><strong>易错4</strong>：D-A反应要求二烯采取<strong>s-cis构象</strong>，亲双烯体含<strong>吸电子基</strong>。</div>
+<div class="warn"><strong>易错5</strong>：低温→1,2-加成（动力学），高温→1,4-加成（热力学）。不要反了！</div>
+<div class="warn"><strong>易错6</strong>：炔钠 + 伯卤代烃 → S<sub>N</sub>2增碳。仲/叔卤代烃会发生E2消除，不能用！</div>
+<div class="warn"><strong>易错7</strong>：氧化推结构——端炔KMnO₄氧化产生CO₂（端碳完全氧化），内炔产生两个羧酸。</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>
