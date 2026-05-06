@@ -1,61 +1,10 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>样题A卷精讲 | 有机化学复习</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
-<style>
-:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
-h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
-h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
-h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
-.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
-.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
-.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
-.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
-.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
-.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
-.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
-table{width:100%;border-collapse:collapse;margin:12px 0;}
-th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
-th{background:var(--pri);color:#fff;}
-tr:nth-child(even){background:#f0f7f0;}
-details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
-ul,ol{margin-left:20px;margin-bottom:8px;}
-.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
-.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
-.nav-bar a:hover{background:var(--pri);color:#fff;}
-/* Mobile optimization */
-img{max-width:100%;height:auto;}
-svg{max-width:100%;height:auto;}
-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
-.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0;}
-@media(max-width:600px){
-  body{padding:12px;font-size:15px;line-height:1.7;}
-  h1{font-size:1.4em;}
-  h2{font-size:1.15em;padding:8px 14px;}
-  h3{font-size:1.05em;}
-  .card{padding:12px;}
-  .fb{padding:10px 12px;}
-  .ex,.tip,.warn,.note{padding:8px 12px;}
-  .nav-bar{padding:8px 12px;margin:-12px -12px 16px;}
-  .nav-bar a{padding:8px 12px;font-size:1em;display:inline-block;min-height:44px;line-height:28px;}
-  td,th{padding:4px 6px;font-size:.9em;}
-}
-</style>
-<link rel="stylesheet" href="toc.css">
-</head>
-<body>
-<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="cheatsheet.html">速查表</a></div>
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import sys, os
+sys.path.insert(0, os.path.dirname(__file__))
+from gen_all import write_page
 
+BODY = r'''
 <h1>样题A卷精讲</h1>
 <div class="note"><strong>上海交通大学 有机化学 期中考试（A卷）</strong> | 2021-2022学年第二学期 | 总分100分</div>
 
@@ -77,7 +26,7 @@ table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
 <details><summary>答案</summary><div class="sol"><p>萘环2位接$-\text{OH}$、8位接$-\text{NO}_2$</p></div></details></div>
 
 <div class="ex"><strong>6.</strong> 烯丙基乙炔基醚 → 画结构
-<details><summary>答案</summary><div class="sol"><p>$\text{CH}_2{=}\text{CH}-\text{CH}_2-\text{O}-\text{C}{\equiv}\text{CH}$</p></div></details></div>
+<details><summary>答案</summary><div class="sol"><p>$\text{CH}_2{=}\text{CH}-\text{CH}_2-\text{O}-\text{C≡CH}$</p></div></details></div>
 
 <h2 id="s2">二、选择题（18分，12题&times;1.5分）</h2>
 
@@ -87,7 +36,7 @@ table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
 <div class="ex"><strong>2.</strong> 烯烃加氢最快 → <strong>B</strong>（$\text{H}_2\text{C=CH}_2$）
 <details><summary>解析</summary><div class="sol"><p>取代基越多→烯烃越稳定→在催化剂表面吸附越难→加氢越<strong>慢</strong>。乙烯取代基最少，加氢最快。</p></div></details></div>
 
-<div class="ex"><strong>3.</strong> 能与亚铜氨溶液反应 → <strong>C</strong>（$\text{C}_2\text{H}_5\text{C}{\equiv}\text{CH}$，末端炔）
+<div class="ex"><strong>3.</strong> 能与亚铜氨溶液反应 → <strong>C</strong>（$\text{C}_2\text{H}_5\text{C≡CH}$，末端炔）
 <details><summary>解析</summary><div class="sol"><p>只有<strong>端炔</strong>（末端炔烃）能与银氨/铜氨溶液反应生成沉淀。</p></div></details></div>
 
 <div class="ex"><strong>4.</strong> 有芳香性的 → <strong>A</strong>（甲基环庚三烯正离子，6&pi;电子）
@@ -121,8 +70,7 @@ table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
 <h2 id="s3">三、完成反应（24分，重点题型）</h2>
 
 <div class="ex"><strong>2a.</strong> $(CH_3)_3CCH_2OH + SOCl_2$/吡啶 → ？
-<details><summary>答案</summary><div class="sol"><p>$(CH_3)_3CCH_2Cl$（新戊基氯，构型翻转，SN2机理）</p>
-<div class="tip">SOCl<sub>2</sub>加吡啶时，吡啶使Cl<sup>&minus;</sup>游离，从背面进攻，按SN2机理进行（构型翻转）。新戊基为伯碳，不经碳正离子中间体，故不重排。</div></div></details></div>
+<details><summary>答案</summary><div class="sol"><p>$(CH_3)_3CCH_2Cl$（新戊基氯，构型翻转，SN2机理）</p></div></details></div>
 
 <div class="ex"><strong>2b.</strong> $(CH_3)_3CCH_2OH + $浓HCl/ZnCl₂ → ？
 <details><summary>答案</summary><div class="sol"><p><strong>发生新戊基重排！</strong>伯碳正离子→1,2-甲基迁移→叔碳正离子→叔碳上的Cl</p>
@@ -150,7 +98,7 @@ table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
 
 <div class="ex"><strong>4.</strong> 从乙炔合成1-戊醇
 <details><summary>答案</summary><div class="sol">
-<p>$\text{HC}{\equiv}\text{CH}$ →(NaNH₂)→ $\text{HC}{\equiv}\text{CNa}$ →(CH₃I)→ $\text{CH}_3\text{C}{\equiv}\text{CH}$ →(NaNH₂)→ $\text{CH}_3\text{C}{\equiv}\text{CNa}$ →(环氧乙烷)→ 炔醇 →(H₂/Pt)→ 1-戊醇</p>
+<p>$\text{HC≡CH}$ →(NaNH₂)→ $\text{HC≡CNa}$ →(CH₃I)→ $\text{CH}_3\text{C≡CH}$ →(NaNH₂)→ $\text{CH}_3\text{C≡CNa}$ →(环氧乙烷)→ 炔醇 →(H₂/Pt)→ 1-戊醇</p>
 <div class="tip"><strong>增碳策略</strong>：炔钠+RX（SN2）增碳 + 环氧乙烷开环增两碳</div>
 </div></details></div>
 
@@ -160,9 +108,6 @@ table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
 <p><strong>A</strong> = 2-丁醇 → <strong>B</strong> = 2-丁酮 → <strong>C</strong> = 2-丁烯 → <strong>D</strong> = 2,3-丁二醇 → <strong>E</strong> = 乙醛 + <strong>F</strong> = 乙醛</p>
 <div class="tip">推断链条：醇的氧化类型判断(仲醇→酮)→脱水方向(Zaitsev)→KMnO₄顺式双羟基化→HIO₄断邻二醇</div>
 </div></details></div>
+'''
 
-<script defer src="toc.js"></script>
-<script src="auth.js"></script>
-<script src="progress.js"></script>
-</body>
-</html>
+write_page('exam.html', '样题A卷精讲', '<a href="index.html">&larr; 目录</a><a href="cheatsheet.html">速查表</a>', BODY)

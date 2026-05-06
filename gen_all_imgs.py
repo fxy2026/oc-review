@@ -542,7 +542,7 @@ b2=mpatches.FancyBboxPatch((5.9,0.8),4.8,3.5,boxstyle='round,pad=0.1',
     facecolor='#FBE9E7',edgecolor='#C62828',lw=2)
 ax.add_patch(b2)
 ax.text(8.3,4.0,'Na（或Li）/ 液氨',fontsize=11,fontweight='bold',ha='center',color='#C62828')
-ax.text(8.3,3.4,'Birch还原条件\n(-33°C)',fontsize=9.5,ha='center')
+ax.text(8.3,3.4,'溶解金属还原条件\n(-33°C)',fontsize=9.5,ha='center')
 ax.text(8.3,2.8,'anti加成（反式）',fontsize=10,ha='center',color='orange',fontweight='bold')
 ax.text(8.3,2.2,'RC≡CR  →  (E)-RCH=CHR\n          反式烯烃',fontsize=9.5,ha='center',family='monospace')
 ax.text(8.3,1.4,'自由基负离子机理\n两步单电子还原',fontsize=9,ha='center',color='gray',style='italic')
