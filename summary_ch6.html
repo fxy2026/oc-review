@@ -10,6 +10,7 @@
   onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
 <style>
 :root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+.red{color:#e74c3c;font-weight:bold;}.blue{color:#2980b9;font-weight:bold;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
 h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
@@ -109,9 +110,9 @@ $$ee\% = \frac{[\alpha]_{\text{obs}}}{[\alpha]_{\max}} \times 100\%$$
 <div class="warn">
 两个 $E/Z$ 构型化合物不能算对映体和非对映体！指的是<strong>手性碳</strong>的构型关系。
 </div>
-<p>指甲利对映体：$R$和$S$之间是对映关系，$RR$和$SS$之间也是对映关系</p>
+<p>指的是对映体：$R$和$S$之间是对映关系，$RR$和$SS$之间也是对映关系</p>
 <p><strong>外消旋体</strong>：$R/S$ 等量混合物（等量+旋光相互抵消），旋光度 = 0</p>
-<p><strong>$M$ 构型</strong>：| 以 $\dot{C}$ 为中心，$4$个不同基团按CIP优先序从 $1$ 到 $4$ 排列后的左旋/右旋判断排列方向 |</p>
+<p><strong>旋光方向</strong>：以手性碳为中心，4个不同基团按CIP优先序排列，最小基团朝后，a→b→c 顺时针为 $(+)$ 右旋，逆时针为 $(-)$ 左旋</p>
 <p>$(+)$：右旋（dextrorotatory）&nbsp;&nbsp; $(-)$：左旋（levorotatory）&nbsp;&nbsp;（与 $R/S$ <span class="red">无必然对应关系</span>，需实验测定）</p>
 </div>
 
