@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='360px' height='220px' viewBox='0 0 360 220'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='360.0' height='220.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 28.8,98.1 L 163.9,98.1' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-0 atom-0 atom-1' d='M 28.8,120.7 L 163.9,120.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 195.7,98.1 L 330.8,98.1' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 195.7,120.7 L 330.8,120.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='atom-1' d='M 168.9 109.5
+Q 168.9 102.5, 172.2 98.8
+Q 175.5 95.1, 181.8 95.1
+Q 187.6 95.1, 190.7 99.2
+L 188.1 101.4
+Q 185.8 98.4, 181.8 98.4
+Q 177.5 98.4, 175.2 101.3
+Q 173.0 104.1, 173.0 109.5
+Q 173.0 115.1, 175.3 118.0
+Q 177.6 120.9, 182.2 120.9
+Q 185.3 120.9, 189.0 119.0
+L 190.1 122.0
+Q 188.6 123.0, 186.4 123.5
+Q 184.1 124.1, 181.6 124.1
+Q 175.5 124.1, 172.2 120.3
+Q 168.9 116.6, 168.9 109.5
+' fill='#000000'/>
+<text x="180" y="212" text-anchor="middle" font-size="18" font-family="Microsoft YaHei, SimHei, SimSun, Segoe UI Symbol, DejaVu Sans, sans-serif" fill="black">丙二烯 (累积双键, 中间 sp, 双键互相垂直)</text></svg>

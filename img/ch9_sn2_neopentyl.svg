@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='360px' height='220px' viewBox='0 0 360 220'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='360.0' height='220.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 68.4,17.7 L 121.4,109.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 121.4,109.6 L 174.5,201.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-1 atom-3' d='M 121.4,109.6 L 29.6,162.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-3 atom-1 atom-4' d='M 121.4,109.6 L 213.3,56.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-4 atom-4 atom-5' d='M 213.3,56.5 L 252.7,79.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-4 atom-4 atom-5' d='M 252.7,79.3 L 292.1,102.0' style='fill:none;fill-rule:evenodd;stroke:#7F4C19;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 208.7,59.2 L 213.3,56.5 L 215.3,57.7' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path class='atom-5' d='M 309.4 108.9
+Q 312.1 109.6, 313.5 111.3
+Q 314.9 113.0, 314.9 115.4
+Q 314.9 119.3, 312.3 121.6
+Q 309.9 123.8, 305.1 123.8
+L 295.6 123.8
+L 295.6 95.4
+L 304.0 95.4
+Q 308.8 95.4, 311.3 97.4
+Q 313.7 99.4, 313.7 103.0
+Q 313.7 107.2, 309.4 108.9
+M 299.4 98.6
+L 299.4 107.5
+L 304.0 107.5
+Q 306.8 107.5, 308.2 106.4
+Q 309.7 105.2, 309.7 103.0
+Q 309.7 98.6, 304.0 98.6
+L 299.4 98.6
+M 305.1 120.6
+Q 307.9 120.6, 309.4 119.2
+Q 310.9 117.9, 310.9 115.4
+Q 310.9 113.1, 309.2 111.9
+Q 307.6 110.7, 304.5 110.7
+L 299.4 110.7
+L 299.4 120.6
+L 305.1 120.6
+' fill='#7F4C19'/>
+<path class='atom-5' d='M 321.3 103.2
+L 321.7 106.0
+Q 323.9 102.8, 327.4 102.8
+Q 328.5 102.8, 330.0 103.2
+L 329.4 106.6
+Q 327.7 106.2, 326.8 106.2
+Q 325.1 106.2, 324.0 106.9
+Q 322.9 107.5, 322.0 109.1
+L 322.0 123.8
+L 318.2 123.8
+L 318.2 103.2
+L 321.3 103.2
+' fill='#7F4C19'/>
+<text x="180" y="212" text-anchor="middle" font-size="18" font-family="Microsoft YaHei, SimHei, SimSun, Segoe UI Symbol, DejaVu Sans, sans-serif" fill="black">新戊基: 1° 但 β-位拥挤, 极慢</text></svg>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>考前速查 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">&#x1F4DA; 目录</a><a href="index.html">&larr; 目录</a></div>
+
+<h1>考前速查：核心反应 &amp; 易错清单</h1>
+
+<h2 id="rxn">反应类型总表</h2>
+
+<h3 id="rxn1">烷烃反应（第3章）</h3>
+<div class="card">
+<table>
+<tr><th>反应</th><th>条件</th><th>产物</th><th>要点</th></tr>
+<tr><td>自由基卤代</td><td>$\text{X}_2$/hv或$\Delta$</td><td>卤代烃+HX</td><td>Cl选择性低(1:3.8:5)；Br选择性高(1:82:1600)</td></tr>
+</table>
+<div class="tip"><strong>自由基稳定性</strong>：3&deg; &gt; 2&deg; &gt; 1&deg; &gt; $\text{CH}_3\cdot$（超共轭效应）</div>
+</div>
+
+<h3 id="rxn2">烯烃反应（第5章）</h3>
+<div class="card">
+<table>
+<tr><th>反应</th><th>试剂/条件</th><th>产物</th><th>关键规则</th></tr>
+<tr><td>HX加成</td><td>HBr, HCl, HI</td><td>卤代烃</td><td><strong>Markovnikov规则</strong>：H加到含H多的C</td></tr>
+<tr><td>HBr/ROOR</td><td>HBr+过氧化物</td><td>反马产物</td><td><strong>仅HBr有效！</strong>HCl/HI无此效应</td></tr>
+<tr><td>硼氢化-氧化</td><td>$\text{BH}_3$/THF→$\text{H}_2\text{O}_2$/NaOH</td><td>反马醇</td><td>反马+顺式加成</td></tr>
+<tr><td>$\text{X}_2$加成</td><td>$\text{Br}_2/\text{CCl}_4$</td><td>二卤代物</td><td>溴鎓离子→<strong>反式加成</strong></td></tr>
+<tr><td>$\text{H}_2\text{O}/\text{H}^+$</td><td>稀酸</td><td>马氏醇</td><td>马氏规则</td></tr>
+<tr><td>催化加氢</td><td>$\text{H}_2$/Pt或Pd</td><td>烷烃</td><td><strong>顺式加成</strong></td></tr>
+<tr><td>$\text{KMnO}_4$稀冷</td><td>稀冷中性</td><td>邻二醇</td><td>顺式双羟基化</td></tr>
+<tr><td>$\text{KMnO}_4$浓热</td><td>酸性加热</td><td>断裂→酸/酮</td><td>$\text{R}_2\text{C=}$→酮；$\text{RCH=}$→酸</td></tr>
+<tr><td>臭氧化</td><td>$\text{O}_3$→$\text{Zn}/\text{H}_2\text{O}$</td><td>醛+酮</td><td>双键断裂为两个羰基</td></tr>
+<tr><td>环氧化</td><td>过氧酸(mCPBA)</td><td>环氧化物</td><td>顺式加成，构型保持</td></tr>
+<tr><td>烯丙位溴代</td><td>NBS/hv</td><td>烯丙基溴</td><td>自由基机理，不加到双键</td></tr>
+</table>
+<div class="warn"><strong>碳正离子重排</strong>：遇到碳正离子机理就要考虑重排！1,2-H迁移或1,2-甲基迁移，总是向更稳定方向。</div>
+</div>
+
+<h3 id="rxn3">炔烃和二烯烃反应（第6章）</h3>
+<div class="card">
+<table>
+<tr><th>反应</th><th>试剂/条件</th><th>产物</th><th>要点</th></tr>
+<tr><td>Lindlar加氢</td><td>$\text{H}_2$/Lindlar催化剂</td><td><strong>Z-烯烃</strong>(顺)</td><td>部分加氢，顺式</td></tr>
+<tr><td>Na/液$\text{NH}_3$</td><td>Na在液氨中</td><td><strong>E-烯烃</strong>(反)</td><td>金属还原，反式</td></tr>
+<tr><td>水合(Kucherov)</td><td>$\text{H}_2\text{O}/\text{HgSO}_4/\text{H}_2\text{SO}_4$</td><td>酮(乙炔→乙醛)</td><td>马氏+互变异构</td></tr>
+<tr><td>硼氢化-氧化</td><td>$\text{BH}_3$→$\text{H}_2\text{O}_2$/OH⁻</td><td>醛(端炔)</td><td>反马氏</td></tr>
+<tr><td>炔钠烷基化</td><td>NaNH₂→RX</td><td>增长碳链</td><td>SN2，伯卤代烃最佳</td></tr>
+<tr><td>端炔鉴别</td><td>Ag(NH₃)₂⁺/Cu(NH₃)₂⁺</td><td>白色/红棕色沉淀</td><td>仅端炔反应</td></tr>
+</table>
+
+<div class="warn"><strong>1,2- vs 1,4-加成</strong><br>
+低温/短时间 → <strong>1,2-加成</strong>（动力学控制）<br>
+高温/长时间 → <strong>1,4-加成</strong>（热力学控制，产物更稳定）</div>
+
+<div class="fb"><div class="t">Diels-Alder反应 [4+2]环加成</div>
+<p>共轭二烯(s-cis构象) + 亲双烯体(含吸电子基) → 六元环</p>
+<p><strong>cis规则</strong>：双烯和亲双烯体上取代基的相对构型在产物中保持</p>
+<p><strong>endo规则</strong>：endo产物为主（动力学有利）</p></div>
+</div>
+
+<h3 id="rxn4">芳烃反应（第7章）</h3>
+<div class="card">
+<table>
+<tr><th>反应</th><th>试剂</th><th>亲电试剂</th><th>产物</th></tr>
+<tr><td>硝化</td><td>$\text{HNO}_3/\text{H}_2\text{SO}_4$(浓)</td><td>$\text{NO}_2^+$</td><td>$\text{ArNO}_2$</td></tr>
+<tr><td>卤化</td><td>$\text{Br}_2/\text{FeBr}_3$</td><td>$\text{Br}^+$</td><td>$\text{ArBr}$</td></tr>
+<tr><td>磺化</td><td>$\text{H}_2\text{SO}_4$(发烟)</td><td>$\text{SO}_3$</td><td>$\text{ArSO}_3\text{H}$</td></tr>
+<tr><td>F-C烷基化</td><td>$\text{RCl}/\text{AlCl}_3$</td><td>$\text{R}^+$</td><td>$\text{ArR}$（<strong>会重排！</strong>）</td></tr>
+<tr><td>F-C酰基化</td><td>$\text{RCOCl}/\text{AlCl}_3$(过量)</td><td>$\text{RCO}^+$</td><td>$\text{ArCOR}$（不重排）</td></tr>
+</table>
+
+<div class="fb"><div class="t">定位效应速记</div>
+<p><strong>邻对位定位（多数活化）</strong>：$-\text{NH}_2, -\text{OH}, -\text{OR}, -\text{NHCOR}, -\text{R}, -\text{Ph}$</p>
+<p><strong>邻对位但钝化（特殊！）</strong>：$-\text{F}, -\text{Cl}, -\text{Br}, -\text{I}$</p>
+<p><strong>间位定位（钝化）</strong>：$-\text{NO}_2, -\text{SO}_3\text{H}, -\text{CN}, -\text{CHO}, -\text{COR}, -\text{COOH}$</p></div>
+
+<div class="warn"><strong>条件决定位置（必考！）</strong><br>
+Lewis酸催化(FeBr₃) → <strong>苯环上</strong>亲电取代<br>
+光照(hv)/高温 → <strong>侧链α位</strong>自由基取代<br>
+$\text{KMnO}_4$ → <strong>侧链氧化</strong>为$-\text{COOH}$（需有α-H）</div>
+</div>
+
+<h3 id="rxn5">卤代烃反应（第9章）</h3>
+<div class="card">
+<div class="fb"><div class="t">SN1 / SN2 / E1 / E2 判断总表</div></div>
+<table>
+<tr><th></th><th>SN2</th><th>SN1</th><th>E2</th><th>E1</th></tr>
+<tr><td><strong>底物</strong></td><td>伯 &gt; 仲（叔不行）</td><td>叔 &gt; 仲</td><td>叔 &gt; 仲 &gt; 伯</td><td>叔 &gt; 仲</td></tr>
+<tr><td><strong>试剂</strong></td><td>强亲核</td><td>弱亲核(H₂O,ROH)</td><td>强碱(尤其大碱tBuO⁻)</td><td>弱碱</td></tr>
+<tr><td><strong>溶剂</strong></td><td>极性非质子(DMSO)</td><td>极性质子(H₂O,ROH)</td><td>醇类</td><td>极性质子</td></tr>
+<tr><td><strong>立体化学</strong></td><td><strong>Walden翻转</strong></td><td><strong>外消旋化</strong></td><td><strong>反式共平面</strong></td><td>—</td></tr>
+<tr><td><strong>动力学</strong></td><td>二级</td><td>一级</td><td>二级</td><td>一级</td></tr>
+</table>
+
+<div class="tip"><strong>格氏试剂(Grignard)</strong><br>
+&bull; RX + Mg/乙醚 → RMgX（必须无水无氧！）<br>
+&bull; 不能与活泼氢共存(-OH, -NH, -COOH, -SH)<br>
+&bull; + CO₂ → 羧酸（增一个碳）<br>
+&bull; + 环氧乙烷 → 伯醇（增两个碳）<br>
+&bull; + D₂O → R-D（引入氘）</div>
+</div>
+
+<h2 id="stereo">立体化学速查（第4章）</h2>
+<div class="card">
+<div class="fb"><div class="t">R/S判断三步法</div>
+<ol><li>CIP优先级排序：a &gt; b &gt; c &gt; d</li>
+<li>最小基团d放到最远处（朝后方）</li>
+<li>a→b→c <strong>顺时针=R</strong>，<strong>逆时针=S</strong></li></ol></div>
+
+<div class="fb"><div class="t">Fischer投影式操作规则</div>
+<table>
+<tr><th>操作</th><th>结果</th></tr>
+<tr><td>旋转180&deg;</td><td><strong>同一化合物</strong></td></tr>
+<tr><td>固定一个基团，转其余三个</td><td><strong>同一化合物</strong></td></tr>
+<tr><td>旋转90&deg;</td><td><strong>对映体</strong>（不同！）</td></tr>
+<tr><td>交换任意两个基团</td><td><strong>对映体</strong>（不同！）</td></tr>
+<tr><td>翻面</td><td><strong>不允许！</strong></td></tr>
+</table></div>
+
+<div class="warn"><strong>易错</strong><br>
+&bull; 有手性碳 ≠ 有手性（内消旋体反例）<br>
+&bull; 无手性碳也可有手性（丙二烯型、螺环、联苯轴手性）<br>
+&bull; D/L 与 (+)/(-) 无直接对应关系！<br>
+&bull; 外消旋体 = 等量对映体混合；内消旋体 = 分子内对称面抵消<br>
+&bull; $ee\% = \frac{[\alpha]_{\text{obs}}}{[\alpha]_{\text{pure}}} \times 100\%$</div>
+</div>
+
+<h2 id="naming">命名规则速查（第2章）</h2>
+<div class="card">
+<div class="fb"><div class="t">IUPAC命名四大规则</div>
+<ol><li><strong>最长链</strong>：选含最多取代基的最长碳链</li>
+<li><strong>近端编号</strong>：从最靠近取代基的端开始</li>
+<li><strong>字母优先</strong>：取代基按英文字母序排列(ethyl在methyl前)</li>
+<li><strong>位次组最低</strong>：逐个比较，使编号尽可能小</li></ol></div>
+
+<div class="tip"><strong>特殊命名</strong><br>
+&bull; 桥环：二环[a.b.c]某烷，从桥头碳沿最长桥编号<br>
+&bull; 螺环：螺[a.b]某烷，从小环开始编号<br>
+&bull; 烯炔共存：先烯后炔；同位次时<strong>双键优先给最低编号</strong><br>
+&bull; Z/E：CIP次序规则，两个较大基团同侧=Z，异侧=E</div>
+</div>
+
+<h2 id="mistakes">高频易错点（学长整理）</h2>
+<div class="card">
+<div class="warn"><strong>1. 结构决定性质！</strong> 任何反应先分析底物结构（杂化、官能团、立体），再判断反应类型。</div>
+<div class="warn"><strong>2. 碳正离子重排无处不在</strong>：凡涉及碳正离子中间体的反应（Markovnikov加成、SN1、E1、F-C烷基化），都要检查是否会发生1,2-H或1,2-CH<sub>3</sub>迁移。</div>
+<div class="warn"><strong>3. 不饱和度(DBE)先算</strong>：$$\text{DBE} = \frac{2C+2+N-H-X}{2}$$ 不饱和度=0→饱和；=1→一个双键或环；=4→可能含苯环。</div>
+<div class="warn"><strong>4. 加成的立体化学记忆口诀</strong>：<br>
+&bull; 催化加氢 = 顺式加成<br>
+&bull; Br<sub>2</sub>加成 = 反式加成（溴鎓离子）<br>
+&bull; 硼氢化-氧化 = 顺式+反马<br>
+&bull; 环氧化 = 顺式（构型保持）<br>
+&bull; KMnO<sub>4</sub>稀冷 = 顺式双羟基化</div>
+<div class="warn"><strong>5. 别混淆"条件决定位置"</strong>：<br>
+&bull; Br<sub>2</sub>/FeBr<sub>3</sub>(Lewis酸) → 苯环上EAS<br>
+&bull; Br<sub>2</sub>/hv 或 NBS → 侧链&alpha;位自由基取代<br>
+&bull; KMnO<sub>4</sub> → 侧链氧化（需&alpha;-H）</div>
+<div class="warn"><strong>6. SN2不适用于</strong>：叔碳、桥头碳、乙烯基/芳基卤。<br>
+<strong>SN1不适用于</strong>：伯碳(CH<sub>3</sub>X)、乙烯基/芳基卤、桥头碳。</div>
+<div class="warn"><strong>7. 格氏试剂三禁</strong>：① 活泼氢(-OH/-NH/-SH/-COOH/-C≡CH) ② 水 ③ 分子内含上述基团时需先保护</div>
+<div class="warn"><strong>8. Saytzeff vs Hofmann</strong>：普通碱→Saytzeff(多取代烯)；大碱(t-BuOK)/大离去基(-NR<sub>3</sub><sup>+</sup>)→Hofmann(少取代烯)</div>
+<div class="warn"><strong>9. 合成题解题套路</strong>：<br>
+① 先分析目标分子取代基相对位置<br>
+② 逆推确定引入顺序（哪个基团先引入能正确定位）<br>
+③ 考虑占位(磺酸基)、保护(乙酰化)、间接引入(酰基化-还原)等策略<br>
+④ 检查每步是否合理（有无重排、多取代等问题）</div>
+</div>
+
+<h2 id="exam">样题考点分布</h2>
+<div class="card">
+<table>
+<tr><th>题型</th><th>分值</th><th>核心考点</th></tr>
+<tr><td>命名/写结构</td><td>9分</td><td>桥环命名、E/Z、R/S构型</td></tr>
+<tr><td>选择题</td><td>18分</td><td>芳香性、加成速率、SN2、手性判断</td></tr>
+<tr><td>完成反应</td><td>24分</td><td>SN1/SN2立体化学、碳正离子重排、D-A反应、HIO₄氧化</td></tr>
+<tr><td>化学鉴别</td><td>8分</td><td>FeCl₃(酚)、Lucas试剂(醇)、银氨(端炔)、Br₂(烯)</td></tr>
+<tr><td>反应机理</td><td>16分</td><td>碳正离子重排+分子内F-C、E1消除+环缩小重排</td></tr>
+<tr><td>合成题</td><td>20分</td><td>Grignard+CO₂、炔钠增碳、磺酸基占位策略</td></tr>
+<tr><td>推结构</td><td>5分</td><td>醇氧化/脱水/KMnO₄/HIO₄综合推断</td></tr>
+</table>
+</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

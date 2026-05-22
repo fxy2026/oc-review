@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第10章 醇、酚和醚 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+h4{color:#444;font-size:1.0em;margin:14px 0 8px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+.imgrow{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:10px 0;}
+.imgrow img{max-width:48%;height:auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.full{display:block;max-width:100%;margin:10px auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.med{display:block;max-width:75%;margin:10px auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.small{display:inline-block;max-width:32%;margin:5px;border:1px solid #ddd;border-radius:4px;background:#fff;vertical-align:middle;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">📚 目录</a><a href="ch9.html">← 第9章</a></div>
+<h1>第10章 醇、酚和醚</h1>
+
+<div class="tip"><strong>本章核心思路</strong>：醇/酚/醚都含 C—O—H 或 C—O—C，<strong>它们的所有反应都围绕 O 上的电子或 C—O 键的断裂</strong>。会判断"哪个键断"+"为什么这样断"，所有题目都能解。</div>
+
+<!-- ================ 考前 30 秒速查 ================ -->
+<div class="card" style="background:#fff5f5;border:2px solid #c0392b;">
+<h3 style="color:#c0392b;border-left-color:#c0392b;margin-top:0;">🔥 考前 30 秒速查（必背）</h3>
+<table style="font-size:.95em;">
+<tr><th style="background:#c0392b;">类型</th><th style="background:#c0392b;">规律</th></tr>
+<tr><td>HX / Lucas 速度</td><td>3° ≈ 烯丙基/苄基 &gt; 2° &gt; 1° （走 SN1，可能重排）</td></tr>
+<tr><td>Na 反应活泼性</td><td>CH₃OH &gt; 1° &gt; 2° &gt; 3° （酸性决定）</td></tr>
+<tr><td>氧化难易（醛/酸/酮）</td><td>1°+CrO₃/Py → 醛；1°+K₂Cr₂O₇/H₂SO₄ → 酸；2° → 酮；3° 不动</td></tr>
+<tr><td>酚 + Br₂ 溶剂效应</td><td>H₂O → 多溴（电离活化）；CS₂ → 单溴（不电离）</td></tr>
+<tr><td>磺化温度</td><td>20℃ 邻（动力学）；100℃ 对（热力学）</td></tr>
+<tr><td>构型保留 vs 翻转</td><td>TsCl/Py & SOCl₂/Py 保留；PBr₃ & SN2 翻转；HX & SN1 消旋+可能重排</td></tr>
+<tr><td>看到 HCl-ZnCl₂ 骨架变</td><td>→ Wagner-Meerwein 1,2-迁移（H 或 CH₃ 跳过来稳碳正离子）</td></tr>
+<tr><td>烯丙基苯醚 + Δ</td><td>→ Claisen 重排，烯丙基跨过 O 跳到邻位</td></tr>
+<tr><td>1,2-二醇 + H⁺</td><td>→ Pinacol 重排：失水成酮 + 1,2-迁移（看立体！）</td></tr>
+<tr><td>醚 + HI/过量</td><td>SN2 进攻位阻小那一侧 → 两段都成卤代物（链醚两当量、环醚开环成二碘）</td></tr>
+<tr><td>鉴别四件套</td><td>FeCl₃（验酚）/ Lucas（验醇级）/ HIO₄（验邻二醇）/ Na（验 OH）</td></tr>
+</table>
+</div>
+
+<!-- ================ 习题查询表 ================ -->
+<div class="card" style="background:#fffbf0;border:2px solid #f39c12;">
+<h3 style="color:#e67e22;border-left-color:#e67e22;margin-top:0;">📝 习题 → 本页章节查询</h3>
+<table style="font-size:.92em;">
+<tr><th>习题</th><th>考点</th><th>跳转</th></tr>
+<tr><td>题 1</td><td>命名（醇/酚/醚/硫醇/环氧）</td><td><a href="#k1">10.1 命名</a></td></tr>
+<tr><td>题 2</td><td>丁醇 + 8 试剂</td><td><a href="#k3all">10.3.附 丁醇 8 反应表</a></td></tr>
+<tr><td>题 3</td><td>邻甲酚 + 10 试剂</td><td><a href="#k4">10.4 酚的 10 反应</a></td></tr>
+<tr><td>题 4(1)-(2)</td><td>普通氧化、Williamson</td><td><a href="#k3f">10.3⑥</a> / <a href="#k4b">10.4②</a></td></tr>
+<tr><td>题 4(3)(4)</td><td>Williamson 经典陷阱</td><td><a href="#k5a">10.5①</a></td></tr>
+<tr><td>题 4(5)</td><td>共轭脱水</td><td><a href="#k3e">10.3⑤</a></td></tr>
+<tr><td>题 4(6)</td><td>Oppenauer 氧化</td><td><a href="#k3f">10.3⑥</a></td></tr>
+<tr><td>题 4(7)(8)</td><td>醚的 HI 裂解 / 自氧化</td><td><a href="#k5b">10.5②③</a></td></tr>
+<tr><td>题 4(9)</td><td>分子内 Williamson 关环</td><td><a href="#k5a">10.5①</a></td></tr>
+<tr><td>题 4(10)</td><td>新戊醇重排</td><td><a href="#k6a">10.6①</a></td></tr>
+<tr><td>题 4(11)</td><td>TsCl + NaI 立体化学</td><td><a href="#k3c">10.3③</a></td></tr>
+<tr><td>题 4(12)</td><td>m-甲酚 + Br₂/H₂O</td><td><a href="#k4d">10.4④</a></td></tr>
+<tr><td>题 4(13)(14)</td><td>频哪醇重排立体之谜</td><td><a href="#k6c">10.6③</a></td></tr>
+<tr><td>题 5(1)~(8)</td><td>8 类排序题</td><td><a href="#k7">10.7 排序套路</a></td></tr>
+<tr><td>题 6(1)</td><td>萘的磺化-碱熔</td><td><a href="#k4j">10.4⑩</a></td></tr>
+<tr><td>题 6(2)</td><td>Claisen 4 步合成</td><td><a href="#k5e">10.5⑤</a></td></tr>
+<tr><td>题 6(4)</td><td>HIO₄ + NaBH₄</td><td><a href="#k3f">10.3⑥</a></td></tr>
+<tr><td>题 6(5)(7)</td><td>醚 HI 裂解</td><td><a href="#k5b">10.5②</a></td></tr>
+<tr><td>题 6(6)</td><td>环氧 + Grignard</td><td><a href="#k5d">10.5④</a></td></tr>
+<tr><td>题 7</td><td>合成题（磺化-碱熔 / F-C / Williamson）</td><td><a href="#k4j">10.4⑩</a> + <a href="#k4i">10.4⑨</a></td></tr>
+<tr><td>题 8</td><td>化学鉴别</td><td><a href="#k8">10.8 鉴别方法</a></td></tr>
+<tr><td>题 9(1)(2)(3)(4)</td><td>机理：重排 / 环关 / SN1'</td><td><a href="#k6">10.6 重排</a></td></tr>
+<tr><td>题 10(1)(2)</td><td>醚的酸催化裂解</td><td><a href="#k5b">10.5②</a></td></tr>
+<tr><td>题 11</td><td>C₈H₉OBr 推断</td><td><a href="#k9">10.9 推断套路</a></td></tr>
+</table>
+</div>
+
+<h2 id="kp">核心知识点</h2>
+
+<!-- ================ 10.1 命名 ================ -->
+<h3 id="k1">10.1 命名 (Nomenclature)</h3>
+<div class="card">
+
+<div class="fb"><div class="t">醇的命名 5 条规则</div>
+<ol>
+<li>选含 —OH 的最长碳链为主链；编号让 —OH 位次最小</li>
+<li>词尾用 <strong>-醇</strong>（如：戊-2-醇 = pentan-2-ol）</li>
+<li>多元醇用 <strong>二醇/三醇</strong>（如：丙-1,2,3-三醇 = glycerol 甘油）</li>
+<li>不饱和醇：先标双键/三键位次，再标 OH 位次（"低位优先"是 OH）</li>
+<li>立体描述符 (R/S, E/Z, cis/trans) 写在最前面</li>
+</ol></div>
+
+<div class="fb"><div class="t">酚的命名</div>
+<ul>
+<li><strong>苯酚</strong>系统：C<sub>6</sub>H<sub>5</sub>OH = 苯酚；衍生物按 IUPAC 编号（OH 优先 = C1）</li>
+<li>常用<strong>俗名</strong>：邻甲酚 (o-cresol)、间苯二酚 (resorcinol)、对苯二酚 (hydroquinone)、儿茶酚 (catechol)、百里酚 (thymol)、水杨醇等</li>
+<li>双酚：两个酚环用桥连接（双酚 A、双酚 S 等）</li>
+</ul></div>
+
+<div class="fb"><div class="t">醚的命名 (两种方式)</div>
+<ul>
+<li><strong>俗名</strong>：把 R—O—R' 看作 R 醚（小取代基 + 大取代基 + 醚），例如 CH₃—O—C(CH₃)₃ = 甲基叔丁基醚 (MTBE)</li>
+<li><strong>IUPAC</strong>：大基团为母体，小 OR 作为 "烷氧基" 取代基，例如 1-甲氧基丙烷 = methoxypropane</li>
+<li>环醚：1,2-环氧乙烷 (oxirane) / 四氢呋喃 (THF) / 1,3-二氧六环 (1,3-dioxane)</li>
+</ul></div>
+
+<div class="ex"><strong>命名经典例题</strong>（武大第六版习题 1，部分）
+<details><summary>展开 5 个有图示例</summary><div class="sol">
+<h4>(9) 2-异丙基-5-甲基苯酚（百里酚 thymol）</h4>
+<img class="med" src="img/ch10_thymol.png" alt="thymol">
+<p>OH = C1；异丙基 = C2；甲基 = C5。这是百里香精油的主成分。</p>
+
+<h4>(10) 邻羟基苯甲醇（水杨醇 salicyl alcohol）</h4>
+<img class="med" src="img/ch10_salicyl_alcohol.png" alt="salicyl alcohol">
+<p>苯环上同时挂 —OH 和 —CH₂OH，二者在邻位。水杨苷的水解产物。</p>
+
+<h4>(11) 2,2-二(4-羟基苯基)丙烷（双酚 A）</h4>
+<img class="med" src="img/ch10_bisphenol_A.png" alt="BPA">
+<p>中心 C 上挂 2 个 CH₃ + 2 个对羟基苯基。PC 塑料和环氧树脂的核心单体。</p>
+
+<h4>(12) 2,4,6-三溴-3-甲基苯酚</h4>
+<img class="med" src="img/ch10_2_4_6_tribromo_3_methylphenol.png" alt="tribromocresol">
+
+<h4>(13) (E)-己-3-烯-2-醇</h4>
+<img class="med" src="img/ch10_E_3_hexen_2_ol.png" alt="E-hex-3-en-2-ol">
+<p>OH 在 C2；C3=C4 双键；E 表示同优先级取代基在双键两侧。</p>
+</div></details></div>
+
+</div>
+
+<!-- ================ 10.2 物理性质 + 酸性 ================ -->
+<h3 id="k2">10.2 物理性质 + 酸性顺序</h3>
+<div class="card">
+
+<div class="fb"><div class="t">沸点 / 溶解度 / 酸性 三连</div>
+<table>
+<tr><th>性质</th><th>大小顺序</th><th>原因</th></tr>
+<tr><td><strong>沸点</strong></td><td>多元醇 > 一元醇 > 酚 > 醚 > 烃</td><td>分子间氢键越多 / 越强 → 沸点越高；醚没有 O—H，<strong>没有自身氢键</strong></td></tr>
+<tr><td><strong>水溶性</strong></td><td>低分子醇 > 酚 > 醚 ≫ 高分子醇</td><td>羟基与水形成氢键；分子量太大时长烃链占主导，溶解度降低</td></tr>
+<tr><td><strong>酸性</strong></td><td>酚 > H₂O > 醇 > 醚</td><td>酚负离子被苯环共振稳定（电荷分散到环上）；醇负离子只能靠 +I 烷基稳定；醚没有酸性 H</td></tr>
+</table></div>
+
+<div class="fb"><div class="t">具体 pKa 数据 (记下来用)</div>
+<ul>
+<li>苯酚 pKa ≈ <strong>10</strong>（弱酸，能与 NaOH 反应但不能与 NaHCO₃ 反应）</li>
+<li>H₂O pKa = <strong>15.7</strong></li>
+<li>甲醇 pKa ≈ <strong>16</strong>，乙醇 ≈ 16，叔丁醇 ≈ 18 （叔醇酸性最弱）</li>
+<li>对硝基苯酚 pKa ≈ <strong>7</strong>（强吸电子的 NO₂ 拉电子使其更酸）</li>
+<li>三氟乙醇 CF₃CH₂OH pKa ≈ <strong>12</strong>（吸电子的 F 拉电子使醇变酸）</li>
+</ul></div>
+
+<div class="tip"><strong>口诀</strong>：<strong>有共振稳定 → 酸性强</strong>。苯环、强吸电子基（NO₂、CF₃、—SO₃H）都能拉低 pKa。</div>
+
+</div>
+
+<!-- ================ 10.3 醇的反应 ================ -->
+<h3 id="k3">10.3 醇的反应（六大类）</h3>
+<div class="card">
+<p>记住一个统一思路：<strong>醇的所有反应要么动 O—H，要么动 C—O</strong>。前者轻松（如成醇钠、酰化、Williamson），后者要先把 OH "转换" 成好的离去基才能发生取代/消除。</p>
+</div>
+
+<h4 id="k3a">① 与 HX / Lucas 试剂 (SN1，可能重排)</h4>
+<div class="card">
+<div class="fb"><div class="t">机理：质子化 → OH₂⁺ 离去 → 碳正离子 → X⁻ 加成</div>
+<p>速度由<strong>碳正离子稳定性</strong>决定：</p>
+<p style="text-align:center;font-weight:bold;">3° ≈ 烯丙基/苄基 > 2° > 1°</p></div>
+
+<div class="fb"><div class="t">Lucas 试剂 (HCl / ZnCl₂) — 鉴别醇级数</div>
+<table>
+<tr><th>醇</th><th>反应时间</th><th>现象</th></tr>
+<tr><td>3° 醇</td><td>立即</td><td>溶液立刻变浑浊</td></tr>
+<tr><td>2° 醇</td><td>5~10 分钟</td><td>慢慢变浑浊</td></tr>
+<tr><td>1° 醇</td><td>室温几乎不动</td><td>需加热才反应</td></tr>
+<tr><td>烯丙醇/苄醇</td><td>立即/几分钟</td><td>碳正离子有共振稳定</td></tr>
+</table></div>
+
+<div class="warn"><strong>陷阱</strong>：HX/Lucas 走 SN1 → <strong>可能重排</strong>！如果产物碳骨架对不上反应物，一定是碳正离子重排（见 10.6 节）。</div>
+
+<div class="fb"><div class="t">Lucas SN1 机理 3 步（叔丁醇为例）</div>
+<img class="full" src="img/ch10_lucas_s1.png" alt="Lucas step 1: ZnCl2 质子化 OH">
+<img class="full" src="img/ch10_lucas_s2.png" alt="Lucas step 2: 失水 → 3° C+">
+<img class="full" src="img/ch10_lucas_s3.png" alt="Lucas step 3: Cl- 进攻">
+<p><strong>为什么 3° 醇立刻浑浊</strong>：第 2 步生成的<strong>叔碳正离子非常稳定</strong>，反应可观速度发生；产物 RCl 不溶于水/盐酸 → 浑浊出来。1° 醇生成不稳的 1° C⁺，几乎不走。</p>
+<p><strong>ZnCl₂ 的角色</strong>：路易斯酸，配位 OH 让它变成更好的离去基（强化质子化效果）。</p>
+</div>
+
+<details><summary>📊 习题 5(3) Lucas 排序 — 3 个醇</summary>
+<p>(A) <code>CH₃CH=CH-CH₂OH</code> 烯丙醇 (烯丙基 1°)；(B) <code>CH₂=CH-CH₂CH₂OH</code> 远端双键 (普通 1°)；(C) <code>CH₃CH₂CH(OH)CH₃</code> 2° 醇</p>
+<div class="imgrow">
+<img src="img/ch10_lucas__A_substrate.png" alt="A">
+<img src="img/ch10_lucas__B_substrate.png" alt="B">
+<img src="img/ch10_lucas__C_substrate.png" alt="C">
+</div>
+<p>A 生成<strong>烯丙基阳离子</strong>，可通过共振分散电荷：</p>
+<div class="imgrow">
+<img src="img/ch10_lucas__A_cation1.png" alt="A1">
+<img src="img/ch10_lucas__A_cation2.png" alt="A2">
+</div>
+<p>B 生成的阳离子在端基 1° 位置，<strong>双键离得太远帮不上忙</strong>。C 是普通 2°。</p>
+<p><strong>答案：A &gt; C &gt; B</strong>（A 最快，B 室温几乎不动）</p>
+</details>
+</div>
+
+<h4 id="k3b">② 与 PBr₃ / SOCl₂—吡啶 (Sₙ2，不重排)</h4>
+<div class="card">
+<div class="fb"><div class="t">为什么选 PBr₃ / SOCl₂ 而不是 HX？</div>
+<ul>
+<li>HX 走 SN1，碳正离子<strong>容易重排</strong>，仲/叔醇尤其严重</li>
+<li>PBr₃ 经过 R—O—PBr₂ 中间体，Br⁻ 从背面进攻 → <strong>SN2，构型翻转</strong></li>
+<li>SOCl₂—吡啶 经过四元环过渡态 → <strong>SNi 机理，构型保留</strong>（武大第六版教材考点）</li>
+<li>三者共同点：<strong>都不经过自由碳正离子 → 不重排</strong>（这是和 HX 的核心区别）</li>
+</ul></div>
+
+<div class="fb"><div class="t">用法对比</div>
+<table>
+<tr><th>试剂</th><th>得到</th><th>构型</th><th>典型用法</th></tr>
+<tr><td>PBr₃</td><td>R—Br</td><td>翻转</td><td>清洁的伯/仲溴代</td></tr>
+<tr><td>SOCl₂ / 吡啶</td><td>R—Cl</td><td>保留 (SNi 机理)</td><td>清洁的伯/仲氯代</td></tr>
+<tr><td>HX / ZnCl₂</td><td>R—X</td><td>SN1 可能重排</td><td>主要用于鉴别 / 简单制备</td></tr>
+</table></div>
+</div>
+
+<h4 id="k3c">③ 与 TsCl / MsCl (磺酸酯，构型保留)</h4>
+<div class="card">
+<div class="fb"><div class="t">核心思路：把 OH 变成"很愿意走"的离去基 OTs</div>
+<p>反应发生在 <strong>S 原子上</strong>，不在 C 上 → 手性碳<strong>构型保留</strong>。然后让 OTs 走 SN2 / SN1，化学家可以精准控制立体化学。</p></div>
+
+<details><summary>📊 习题 4(11) 氘代醇 → 碘代物 (经典立体化学实验)</summary>
+<p>题目：(S)-1-氘代-1-丙醇 ──TsCl/吡啶──► ?? ──NaI/丙酮──► ??</p>
+<p><strong>大白话讲</strong>：</p>
+<ul>
+<li>第 1 步 TsCl/吡啶：把 OH 换成 OTs，<strong>C 上一动没动</strong>（反应在 S 上）</li>
+<li>第 2 步 NaI/丙酮：典型 SN2，I⁻ 从背面进攻，<strong>构型翻转</strong></li>
+<li>净效果：构型 <strong>S → R</strong></li>
+</ul>
+<img class="full" src="img/ch10_tscl_d__00_overall.png" alt="overall">
+<p>D 的作用：制造手性中心（C 上挂 4 个不同基团 = C₂H₅、OH、H、D），方便用旋光仪观测构型变化。</p>
+<p><strong>比喻</strong>：旧 OH 像生锈的锁——直接换不动；TsCl 是润滑剂把锁变松（变 OTs），NaI 一推就掉，新锁 (I) 装上。</p>
+</details>
+</div>
+
+<h4 id="k3d">④ 与金属 Na (生成醇钠)</h4>
+<div class="card">
+<div class="fb"><div class="t">反应：2 ROH + 2 Na → 2 RO⁻Na⁺ + H₂↑</div>
+<p>速度由醇的<strong>酸性</strong>决定：</p>
+<p style="text-align:center;font-weight:bold;">CH₃OH > 1° > 2° > 3°</p>
+<p>叔醇的 OH 因为周围烷基<strong>阻碍 Na 接触 + 烷基 +I 效应降低酸性</strong>，反应最慢。</p></div>
+
+<div class="tip">RO⁻ 是<strong>强碱</strong>+<strong>强亲核试剂</strong>，是 Williamson 醚合成的主角（见 10.5）。</div>
+</div>
+
+<h4 id="k3e">⑤ 酸催化脱水 (E1，可能重排)</h4>
+<div class="card">
+<div class="fb"><div class="t">机理：H₂SO₄ 质子化 → 失水 → 碳正离子 → 失 H⁺ → 烯</div>
+<p>规则：</p>
+<ol>
+<li>速度：3° > 2° > 1°（碳正离子稳定性决定）</li>
+<li>位置：<strong>Zaitsev 规则</strong>——脱去 β-H 较多的方向，得到取代基多的烯烃</li>
+<li>立体：<strong>共轭烯 > 普通烯 &gt; 末端烯</strong>（产物稳定性也影响选择）</li>
+<li><strong>可能重排</strong>（同 HX 一样走碳正离子）</li>
+</ol></div>
+
+<details><summary>📊 习题 5(5) 脱水速度排序</summary>
+<p>三者都是 <strong>1° 醇</strong>，差别在苯环离 OH 多远：</p>
+<ul>
+<li>(A) <strong>2-苯基乙醇</strong> PhCH₂CH₂OH（Ph 离 OH 1 个 CH₂）</li>
+<li>(B) <strong>3-苯基-1-丙醇</strong> Ph(CH₂)₃OH（Ph 离 OH 2 个 CH₂）</li>
+<li>(C) <strong>2-环己基乙醇</strong> 环己基-CH₂CH₂OH（无苯环）</li>
+</ul>
+<p><strong>A</strong> 脱水：失水后 1° 阳离子可经 1 次 H 迁移变成<strong>苄基阳离子（共振稳定）</strong> → 失 H → <strong>苯乙烯</strong>（直接共轭烯烃）→ 反应最快</p>
+<p><strong>B</strong> 脱水：要经过 2 次 H 迁移才能到苄基阳离子 → 给共轭烯（β-甲基苯乙烯）→ 慢于 A</p>
+<p><strong>C</strong> 脱水：无苯环可借共振稳定 → 产物 = 乙烯基环己烷（非共轭）→ 最慢</p>
+<p><strong>答案：A &gt; B &gt; C</strong>（共轭产物最稳定，反应越靠它越快）</p>
+</details>
+
+<div class="warn"><strong>新戊醇 + HCl/ZnCl₂ 的诡异产物</strong>——见 10.6 节（甲基迁移）。</div>
+</div>
+
+<h4 id="k3f">⑥ 氧化反应（伯/仲/叔截然不同）</h4>
+<div class="card">
+
+<div class="fb"><div class="t">温和氧化 (CrO₃-吡啶 / PCC) — 1° 停在醛</div>
+<img class="full" src="img/ch10_oxidation_primary_mild.png" alt="primary mild oxidation">
+<p>CrO₃/吡啶 (Collins 试剂) 和 PCC 都是温和氧化剂，<strong>不会过度氧化醛</strong>。</p></div>
+
+<div class="fb"><div class="t">强氧化 (K₂Cr₂O₇/H₂SO₄ 或 KMnO₄) — 1° 一路氧化到酸</div>
+<img class="full" src="img/ch10_oxidation_primary_strong.png" alt="primary strong oxidation">
+<p>强氧化条件下，醛会被进一步氧化成羧酸。</p></div>
+
+<div class="fb"><div class="t">仲醇：任意氧化剂都给酮 (停)</div>
+<img class="full" src="img/ch10_oxidation_secondary.png" alt="secondary oxidation">
+<p>酮没有 α-C—H 可被氧化（除非断 C—C，需更激烈条件）。</p></div>
+
+<div class="fb"><div class="t">叔醇：一般不被氧化</div>
+<p>叔醇的 α-C 上没有 H，常规氧化剂动不了。只有 KMnO₄ 在剧烈条件下才会断 C—C 链。</p></div>
+
+<div class="fb"><div class="t">HIO₄ 切邻二醇 (cis-glycol cleavage)</div>
+<p>HIO₄（高碘酸）是个"剪刀"——专剪相邻两 C 都挂 OH 的 C—C 键，给两个羰基。</p>
+<img class="full" src="img/ch10_HIO4_diol_cleave.png" alt="HIO4 cleavage">
+<p><strong>记法</strong>：邻二醇 + HIO₄ → 两个 C=O（醛或酮，看原 C 上的 H 数）</p>
+<p>反应不会切普通的 C—C（必须 2 个 OH 紧贴）。常用于鉴别邻二醇。</p></div>
+
+<div class="fb"><div class="t">Oppenauer 氧化 — 仲醇 + 三叔丁氧基铝 + 丙酮</div>
+<p>试剂 <code>[(CH₃)₃CO]₃Al</code>（三叔丁氧基铝，aluminum tri-tert-butoxide）+ 过量丙酮。把仲醇变酮，<strong>同时不动 C=C 双键</strong>（化学选择性极好）。</p>
+<p>机理：丙酮（C=O）做<strong>氢受体</strong>，仲醇做<strong>氢供体</strong>，铝催化两者氢转移 → 仲醇变酮、丙酮变 2-丙醇。</p>
+<img class="med" src="img/ch10_oppenauer_product.png" alt="Oppenauer product">
+<p>典型用于含双键的仲醇氧化（见习题 4(6)）。</p></div>
+
+<details><summary>📊 一图总结：1° / 2° / 3° 醇氧化</summary>
+<table>
+<tr><th>醇级</th><th>温和氧化 (CrO₃/Py, PCC)</th><th>强氧化 (K₂Cr₂O₇/H₂SO₄)</th></tr>
+<tr><td>1°（伯醇）</td><td>醛 R—CHO</td><td>羧酸 R—COOH</td></tr>
+<tr><td>2°（仲醇）</td><td>酮 R—CO—R'</td><td>酮（停在酮）</td></tr>
+<tr><td>3°（叔醇）</td><td>不反应</td><td>剧烈条件断 C—C</td></tr>
+</table>
+</details>
+</div>
+
+<!-- ================ 10.3 完整丁醇示例 ================ -->
+<h3 id="k3all">10.3.附 — 一张图看丁醇与 8 种试剂</h3>
+<div class="card">
+<p>习题 2：丁-1-醇 (1°) 和丁-2-醇 (2°) 与 8 种试剂的产物对比。</p>
+<table>
+<tr><th>试剂</th><th>丁-1-醇 → 产物</th><th>丁-2-醇 → 产物</th></tr>
+<tr><td>HBr</td><td>1-溴丁烷</td><td>2-溴丁烷</td></tr>
+<tr><td>PBr₃</td><td>1-溴丁烷</td><td>2-溴丁烷 (不重排)</td></tr>
+<tr><td>SOCl₂/吡啶</td><td>1-氯丁烷</td><td>2-氯丁烷 (不重排)</td></tr>
+<tr><td>Na</td><td>正丁醇钠 + ½H₂</td><td>仲丁醇钠 + ½H₂</td></tr>
+<tr><td>H₂SO₄, Δ</td><td>1-丁烯</td><td><strong>2-丁烯</strong> (Zaitsev)</td></tr>
+<tr><td>CrO₃/吡啶</td><td><strong>丁醛</strong> (停在醛)</td><td>丁酮 (2-丁酮)</td></tr>
+<tr><td>K₂Cr₂O₇/H₂SO₄</td><td><strong>丁酸</strong> (强氧化到酸)</td><td>丁酮 (酮不再氧化)</td></tr>
+<tr><td>ZnCl₂/HCl (Lucas)</td><td>1-氯丁烷 (慢)</td><td>2-氯丁烷 (5-10min)</td></tr>
+</table>
+<p>具体每个反应的真结构图，见 <code>第10章_丁-1-醇与丁-2-醇的八种反应.md</code> 笔记文件。</p>
+</div>
+
+<!-- ================ 10.4 酚的反应 ================ -->
+<h3 id="k4">10.4 酚的反应 (10 大反应)</h3>
+<div class="card">
+<p>酚的特点：苯环 <strong>O 上的 H 可电离</strong>（酸性比醇强 ~10⁶ 倍）→ 苯氧负离子是强亲核试剂；同时 <strong>O 给苯环推电子</strong>，使邻/对位强烈活化（亲电取代极易）。</p>
+</div>
+
+<h4 id="k4a">① 酚的酸性 + 成盐 (NaOH)</h4>
+<div class="card">
+<div class="fb"><div class="t">关键: 苯酚 + NaOH (aq) → 苯酚钠</div>
+<p>苯酚是<strong>弱酸 (pKa ≈ 10)</strong>，可与 NaOH 反应：</p>
+<p style="text-align:center;font-family:monospace;">C₆H₅—OH + NaOH → C₆H₅—O⁻Na⁺ + H₂O</p>
+<p>但 pKa 比碳酸 (≈6.4) 大，<strong>不与 NaHCO₃ 反应</strong>（常用于和羧酸区分）</p>
+<p>苯氧负离子的稳定性：负电荷可<strong>共振分散到苯环上的 o/p 位</strong>。</p></div>
+</div>
+
+<h4 id="k4b">② Williamson 醚合成</h4>
+<div class="card">
+<div class="fb"><div class="t">两步：① 酚 + NaOH 成钠盐 → ② 酚钠 + R-X (SN2)</div>
+<p>这是经典制备<strong>芳醚</strong>的方法。R-X 必须是 <strong>1° 或 2°</strong>（3° 卤代会走 E2 消除而不取代）。</p>
+<p>常用 R-X：CH₃I、CH₃Br、PhCH₂Br（苯甲基溴/苄基溴）、烯丙基氯等。</p>
+<p>也可以用 <strong>(CH₃)₂SO₄</strong>（硫酸二甲酯，常用为 OH → OCH₃ 的甲基化试剂）。</p></div>
+
+<details><summary>📊 实例：邻甲酚 + 苄基溴/NaOH → 邻甲基苯甲基醚</summary>
+<img class="full" src="img/ch10_ocresol__sub1_o-cresol_rxn2_NaOH.png" alt="benzyl ether">
+</details>
+</div>
+
+<h4 id="k4c">③ 酰化反应 → 酯</h4>
+<div class="card">
+<div class="fb"><div class="t">酚 + 乙酸酐 → 苯基乙酸酯 (O—酰化)</div>
+<p>用乙酸酐 (CH₃CO)₂O 或乙酰氯 CH₃COCl + 吡啶。</p></div>
+
+<details><summary>📊 实例：邻甲酚 + 乙酸酐</summary>
+<img class="full" src="img/ch10_ocresol__sub1_o-cresol_rxn3_x.png" alt="acetylation">
+</details>
+</div>
+
+<h4 id="k4d">④ 卤代 — 溶剂决定取代数 (重要！)</h4>
+<div class="card">
+<div class="fb"><div class="t">Br₂ / H₂O — 直接多溴化 (二溴或三溴)</div>
+<p>水是极性质子溶剂，能<strong>电离酚成苯氧负离子</strong>（活化能力 ↑10⁶）。Br₂ 一次性打到所有 o/p 位。</p>
+<p>典型：苯酚 + Br₂/H₂O → <strong>2,4,6-三溴苯酚</strong>（白色沉淀，定量实验）。</p>
+<img class="full" src="img/ch10_phenolBr2_H2O.png" alt="phenol Br2/H2O 三溴">
+<img class="full" src="img/ch10_ocresol__sub1_o-cresol_rxn4_Br2__H2O.png" alt="o-cresol Br2/H2O"></div>
+
+<div class="fb"><div class="t">Br₂ / CS₂ — 单溴化</div>
+<p>CS₂ 是非极性溶剂，不能电离酚，反应缓和，<strong>只上一个 Br</strong>。位置：对位为主（位阻小），邻位次之。</p>
+<img class="full" src="img/ch10_phenolBr2_CS2.png" alt="phenol Br2/CS2 对位单溴">
+<img class="full" src="img/ch10_ocresol__sub1_o-cresol_rxn5_Br2__CS2.png" alt="o-cresol Br2/CS2"></div>
+
+<div class="tip"><strong>口诀</strong>：水里电离打多取代，非极性溶剂只上一个。同套规律适用于<strong>萘酚 / 甲酚 / 取代苯酚</strong>。</div>
+
+<details><summary>📊 习题 4(12) 间甲酚 + Br₂/H₂O</summary>
+<img class="full" src="img/ch10_mcresol_Br2.png" alt="m-cresol Br2/H2O">
+<p><strong>底物 m-甲酚</strong>：OH 在 C1，CH₃ 在 C3（meta）。</p>
+<p><strong>活化位置分析</strong>：OH 强活化 C2、C4、C6；CH₃ 也活化 C2、C4、C6（其 o/p 位）。三个位置都被双重活化。</p>
+<p><strong>位阻决定取舍</strong>：C2 夹在 OH 和 CH₃ 中间 → 最拥挤；C4 和 C6 都比较"开放"。</p>
+<p>所以 Br 进入 <strong>C4 和 C6</strong>。按最低位次原则重新编号 → <strong>2,4-二溴-5-甲基苯酚</strong>。</p>
+</details>
+</div>
+
+<h4 id="k4e">⑤ 硝化 + 磺化（温度敏感）</h4>
+<div class="card">
+<div class="fb"><div class="t">硝化：冷稀 HNO₃ → 单硝化 (邻+对混合)</div>
+<img class="full" src="img/ch10_ocresol__sub1_o-cresol_rxn8_x.png" alt="nitration">
+<p>因为酚太活泼，<strong>不用浓 HNO₃</strong>（会过度氧化）。冷稀就够了。</p></div>
+
+<div class="fb"><div class="t">磺化：动力学 vs 热力学控制</div>
+<table>
+<tr><th>温度</th><th>位置</th><th>原因</th></tr>
+<tr><td>20°C (低温)</td><td><strong>邻位 (o-)</strong></td><td>动力学控制 —— 邻位 TS 能量低，反应快</td></tr>
+<tr><td>100°C (高温)</td><td><strong>对位 (p-)</strong></td><td>热力学控制 —— 磺化可逆，邻→对异构，对位产物位阻小更稳定</td></tr>
+</table>
+<div class="imgrow">
+<img src="img/ch10_ocresol__sub1_o-cresol_rxn9_H2SO4__20_C.png" alt="20C">
+<img src="img/ch10_ocresol__sub1_o-cresol_rxn10_H2SO4__100_C.png" alt="100C">
+</div></div>
+
+<div class="tip"><strong>口诀</strong>：低温抢快（邻），高温抢稳（对）。萘的磺化 (α-位 vs β-位) 也是这套。</div>
+</div>
+
+<h4 id="k4f">⑥ FeCl₃ 显色 (鉴别)</h4>
+<div class="card">
+<p>酚 + FeCl₃ 水溶液 → <strong>紫色 / 蓝紫 / 红色配合物</strong>。这是<strong>酚类的特征反应</strong>，鉴别题首选。</p>
+<p>原理：酚的 OH 与 Fe³⁺ 形成配合物 [Fe(OAr)₆]³⁻。</p>
+<p>注意：1,3-二酮等也能与 FeCl₃ 显色，但一般本科水平里"FeCl₃ 显色 = 酚"。</p>
+</div>
+
+<h4 id="k4g">⑦ 加氢 (H₂ / Ni)</h4>
+<div class="card">
+<p>苯环被加氢成环己烷，OH 保留：</p>
+<img class="full" src="img/ch10_ocresol__sub1_o-cresol_rxn7_H2___Ni.png" alt="hydrogenation">
+<p>典型：苯酚 → 环己醇；邻甲酚 → 2-甲基环己醇。</p>
+</div>
+
+<h4 id="k4h">⑧ Reimer-Tiemann 反应 (甲酰化)</h4>
+<div class="card">
+<div class="fb"><div class="t">酚 + CHCl₃ + NaOH → 邻醛基苯酚</div>
+<img class="full" src="img/ch10_reimer_tiemann.png" alt="Reimer-Tiemann">
+<p>用于给苯环上引入<strong>—CHO</strong>（醛基），位置选邻位。产物例：苯酚 → 水杨醛 (邻羟基苯甲醛)。</p>
+<p>机理：CHCl₃ + OH⁻ 生成 <strong>:CCl₂ 卡宾</strong>，卡宾进攻苯酚的邻位 → 三氯甲基中间体 → 水解成 CHO。</p></div>
+</div>
+
+<h4 id="k4i">⑨ Friedel-Crafts 烷基化 / 酰基化</h4>
+<div class="card">
+<p>酚（或酚醚）+ AlCl₃ + RCl 或 RCOCl → 邻/对烷基（或酰基）酚。</p>
+<p>问题 7(8) 中 间苯二酚 (1,3-苯二酚) + CH₃(CH₂)₃COCl / AlCl₃ → <strong>4-戊酰基-1,3-苯二酚</strong>（= 2,4-二羟基苯戊酮）。</p>
+<p>位置选择：C4 位 <strong>同时被两个 OH 活化</strong>（邻位于 OH-3、对位于 OH-1）而且位阻小（不像 C2 夹在两 OH 之间）。</p>
+</div>
+
+<h4 id="k4j">⑩ 怎么"造"出酚 — 磺化-碱熔法 (工业经典)</h4>
+<div class="card">
+<div class="fb"><div class="t">3 步从苯造苯酚 (习题 6(1), 7(2), 7(4) 都考)</div>
+<img class="full" src="img/ch10_phenol_synthesis_sulfonation.png" alt="phenol synthesis">
+<ol>
+<li><strong>磺化</strong>：苯 + 浓 H₂SO₄ → 苯磺酸（Ar—SO₃H）</li>
+<li><strong>碱熔</strong>：Ar—SO₃H + NaOH (固态, ~300°C 高温熔融) → Ar—O⁻Na⁺ + Na₂SO₃</li>
+<li><strong>酸化</strong>：Ar—O⁻Na⁺ + H⁺ (H₂SO₄/HCl) → Ar—OH</li>
+</ol>
+<p>核心：<strong>SO₃H 是好的离去基，OH⁻ 在高温下能取代它</strong>（亲核芳香取代 SNAr 的简化版）。</p></div>
+
+<div class="warn"><strong>这是为什么芳醚合成那么"绕"</strong>：苯环上不能直接放 OH（不像烷烃可水解卤代烷得醇）。要先磺化（或卤代）再"换"成 OH。</div>
+
+<div class="tip">同套路用萘：习题 6(1) 中萘 + 浓 H₂SO₄ → 1-萘磺酸 → NaOH → α-萘酚钠 → CH₃I → α-甲氧基萘。</div>
+</div>
+
+<!-- ================ 10.5 醚的反应 ================ -->
+<h3 id="k5">10.5 醚的反应</h3>
+<div class="card">
+<p>醚的 O—R 键比较稳定，<strong>常温下不太反应</strong>。主要反应是<strong>酸催化裂解</strong>和<strong>自氧化</strong>。</p>
+</div>
+
+<h4 id="k5a">① Williamson 醚合成 (反向看)</h4>
+<div class="card">
+<p>RO⁻ + R'-X → R—O—R' + X⁻ （SN2）。前面 10.4 第②条详述。</p>
+<div class="warn"><strong>关键</strong>：R'-X 必须是<strong>非位阻</strong>（1° 或 2°），3° 卤代会被强碱夺 β-H 发生 <strong>E2 消除</strong>，得到烯烃而不是醚。</div>
+
+<div class="fb"><div class="t">机理（连环图）</div>
+<img class="full" src="img/ch10_will_s1.png" alt="Williamson SN2 链式">
+<img class="full" src="img/ch10_will_s2.png" alt="Williamson 分子内关环">
+<p><strong>链式</strong>：苯酚钠（强亲核 O⁻）从背面进攻烯丙基氯的 CH₂，Cl⁻ 离去 → 苯基烯丙基醚（这是后面 Claisen 重排的底物）。</p>
+<p><strong>分子内关环</strong>：底物两端"一头 OH、一头 Cl"。NaOH 先把 OH 脱质子成 O⁻，O⁻ <strong>反咬</strong>分子内的 C-Cl → 五元环 THF。链长决定环大小：4 C → THF, 3 C → oxetane, 5 C → THP。</p>
+</div>
+
+<details><summary>📊 习题 4(3)(4) 经典陷阱</summary>
+<p>(3) <code>(CH₃)₃C-Br + CH₃CH₂CH₂ONa</code> → <strong>异丁烯</strong>（不是醚！）</p>
+<p>解释：叔卤代 + 强碱 RO⁻ → E2 消除 → 异丁烯 + CH₃CH₂CH₂OH</p>
+<hr>
+<p>(4) <code>(CH₃)₃C-ONa + CH₃CH₂CH₂Br</code> → <strong>叔丁基丙基醚 + 丙烯</strong></p>
+<p>解释：这次卤代是 1°（可以走 SN2 给醚），但 RO⁻ 是强碱也会夺 β-H 给消除产物（丙烯）。所以两种产物都有。</p>
+<p><strong>规律</strong>：Williamson 中 <strong>RO⁻ 用复杂的，R'-X 用简单的</strong>（不能反过来）。</p>
+</details>
+
+<details><summary>📊 习题 4(9) 分子内 Williamson — 关环成环醚</summary>
+<p>反应：<code>ClCH₂CH₂CH₂CH₂OH + NaOH → 四氢呋喃 (THF)</code></p>
+<img class="full" src="img/ch10_intramolecular_williamson.png" alt="intramolecular Williamson">
+<p><strong>关键</strong>：底物里<strong>一头是 OH、另一头是 Cl</strong>。NaOH 把 OH 变成 O⁻，O⁻ 自己进攻同分子的 C-Cl → 形成 5 元环醚。</p>
+<p>这就是<strong>分子内 Williamson</strong>，专门用来造环醚 (THF / oxetane / dioxane 等)。底物链长决定环大小：4 C → THF (5 环)、3 C → oxetane (4 环)、5 C → THP (6 环)。</p>
+<p>同思路用于习题 7(5)：邻羟基苯乙醇 → 2,3-二氢苯并呋喃（先把脂肪 OH 换 Br，然后另一边 phenol-OH 关环）。</p>
+</details>
+</div>
+
+<h4 id="k5b">② 酸催化裂解 (HI / HBr)</h4>
+<div class="card">
+<div class="fb"><div class="t">R-O-R' + HI → R-I + R'-OH (或 R-OH + R'-I)</div>
+<p>机理：</p>
+<ol>
+<li>H⁺ 质子化 O → R-O⁺(H)-R' （好的离去基）</li>
+<li>I⁻ 进攻 <strong>位阻小的 C</strong> 那一头（SN2）</li>
+<li>另一头变成醇</li>
+</ol></div>
+
+<details><summary>📊 习题 10(1) 甲基叔丁基醚 + H₂SO₄</summary>
+<img class="med" src="img/ch10_MTBE.png" alt="MTBE">
+<p>反应：MTBE + H₂SO₄ → <strong>异丁烯 + 甲醇</strong></p>
+<p>因为叔丁基侧位阻大，I⁻/酸 不能从那边进攻 → 改走 <strong>SN1</strong>：先生成<strong>叔丁基正离子</strong>，然后失质子成异丁烯。</p>
+<p>一头 = 叔丁基 → 走 SN1 → 烯（消除）；另一头 = 甲基 → 走 SN2 / 自由离去 → 甲醇</p>
+</details>
+
+<details><summary>📊 习题 10(2) 手性甲基仲丁基醚 + HI (立体化学)</summary>
+<p>反应：(R)-CH₃-O-CH(CH₃)CH₂CH₃ + HI → CH₃I + (R)-仲丁醇（构型不变）</p>
+<p>解释：I⁻ <strong>进攻位阻小的甲基</strong>（SN2 翻转<strong>甲基的</strong>构型，但甲基没有手性）；仲丁基那头变成仲丁醇，<strong>C—O 键自始至终没断</strong> → <strong>构型完全保留</strong>。</p>
+<p><strong>这道题证明了 SN2 在甲基侧发生，仲丁基侧只是变成 OH 一动没动</strong>。</p>
+</details>
+
+<details><summary>📊 习题 6(5) 二丙基醚 + 过量 HI</summary>
+<p>(CH₃CH₂CH₂)₂O + 过量 HI → <strong>2 当量 1-碘丙烷 + H₂O</strong></p>
+<p>第一份 HI 把醚切成 1-碘丙烷 + 正丙醇；过量 HI 把正丙醇也变成 1-碘丙烷。</p>
+</details>
+
+<details><summary>📊 习题 6(7) THF + 过量 HI</summary>
+<p>THF 是环醚 —— 两次 HI 都从同一个分子进攻：</p>
+<img class="med" src="img/ch10_1_4_diiodobutane.png" alt="1,4-diiodobutane">
+<p>产物 = <strong>1,4-二碘丁烷</strong>。</p>
+</details>
+</div>
+
+<h4 id="k5c">③ 自氧化 (α-H 生成过氧化物)</h4>
+<div class="card">
+<p>醚长时间暴露在空气中，<strong>α-H 被 O₂ 缓慢夺取</strong>，生成<strong>过氧化物</strong>（很危险，加热会爆炸）。</p>
+<p>典型：THF + O₂ → 2-羟基过氧化四氢呋喃。所以<strong>实验室存放老乙醚 / THF 前要先除过氧化物</strong>（用 FeSO₄ 或新蒸）。</p>
+</div>
+
+<h4 id="k5d">④ 环氧化合物的开环 (重要)</h4>
+<div class="card">
+<div class="fb"><div class="t">环氧 + Grignard / 亲核试剂 → 长链醇</div>
+<p>环氧的三元环张力大，亲核试剂容易开环。</p>
+<p>例：环氧乙烷 + CH₃CH₂MgBr → CH₃CH₂—CH₂—CH₂—OMgBr → (H₂O) → 丁醇</p>
+<p>这是 Grignard <strong>增 2 C 法</strong>（醛/酮增 1 C，环氧增 2 C）。</p></div>
+
+<details><summary>📊 习题 6(6) 环氧丙烷 + 乙基格氏 → ?</summary>
+<p>H₂C—CHCH₃ (环氧丙烷) + CH₃CH₂MgBr → ... → H₂O 后水解 → 戊-2-醇？</p>
+<p>注意：开环位置 —— 在<strong>非碱性条件</strong>下亲核试剂从<strong>取代少的 C</strong>进攻（位阻小）→ 得 <strong>CH₃CH(OH)—CH₂—CH₂CH₃</strong> = 戊-2-醇。</p>
+<p>然后 KMnO₄ → 戊-2-酮。</p>
+</details>
+</div>
+
+<h4 id="k5e">⑤ Claisen 重排 (烯丙基苯醚 + Δ)</h4>
+<div class="card">
+<div class="fb"><div class="t">关键：烯丙基<strong>跨过 O</strong>跳到苯环邻位</div>
+<img class="full" src="img/ch10_synth4__RXN2_Claisen.png" alt="Claisen">
+<p>条件极简：<strong>只要加热</strong>。无需催化剂、溶剂、酸碱。</p>
+<p>机理：6 元环过渡态（[3,3]-σ 迁移）—— 旧的 O-CH₂ 键断、新的"邻位 C-CH₂" 键形成。</p></div>
+
+<div class="fb"><div class="t">机理 2 步（连环图）</div>
+<img class="full" src="img/ch10_claisen_s1.png" alt="Claisen step 1: [3,3]-σ 重排">
+<img class="full" src="img/ch10_claisen_s2.png" alt="Claisen step 2: 酮-烯醇互变">
+<p><strong>Step 1</strong>：六元环过渡态里 3 对电子<strong>同时移动</strong>（C–O 键断、C=C 双键迁移、新 C–C 键合）→ 得到<strong>邻位带烯丙基的 2,4-环己二烯酮</strong>（暂时失去芳香性）。</p>
+<p><strong>Step 2</strong>：酮式 → 烯醇式互变（很快），<strong>恢复芳香性</strong>，得到稳定的邻烯丙基苯酚。</p>
+</div>
+
+<div class="tip"><strong>为什么必走邻位</strong>：6 元环过渡态里，<strong>烯丙基的远端 C</strong> 只能够到苯环的邻位 C，<em>几何上根本搭不到对位</em>。这是 [3,3] 重排的本征几何约束。</div>
+
+<div class="warn"><strong>反应一定走邻位</strong>（不会走 meta/para），由 6 元过渡态几何决定。如果两邻位都被占，烯丙基可继续重排到 para 位 (para-Claisen)。</div>
+
+<details><summary>📊 习题 6(2) 完整 4 步 — Williamson → Claisen → O₃</summary>
+<p><code>C₆H₅ONa + ClCH₂CH=CH₂ → A → Δ → B → O₃ → Zn,H₂O → C + D</code></p>
+<p>A = 苯基烯丙基醚；B = 邻烯丙基苯酚（Claisen 重排产物）；C = 邻羟基苯乙醛；D = 甲醛</p>
+<div class="imgrow">
+<img src="img/ch10_synth4__01_A_aryl_allyl_ether.png" alt="A">
+<img src="img/ch10_synth4__02_B_o_allylphenol.png" alt="B">
+<img src="img/ch10_synth4__03_C_aldehyde.png" alt="C">
+<img src="img/ch10_synth4__04_D_HCHO.png" alt="D">
+</div>
+</details>
+</div>
+
+<!-- ================ 10.6 碳正离子重排 ================ -->
+<h3 id="k6">10.6 碳正离子重排 (Wagner-Meerwein) — 最容易出错的考点</h3>
+<div class="card">
+<div class="warn"><strong>判定信号</strong>：看到 <strong>HCl-ZnCl₂ / 浓 H₂SO₄ / 醇脱水加热</strong>，并且<strong>产物碳骨架对不上反应物</strong> → 一定是碳正离子重排。</div>
+</div>
+
+<h4 id="k6a">① 1,2-甲基迁移 (新戊醇经典)</h4>
+<div class="card">
+<div class="fb"><div class="t">习题 4(10) — 新戊醇 + HCl/ZnCl₂</div>
+<img class="full" src="img/ch10_neopentyl__00_overall.png" alt="neopentyl rearrangement">
+<p>产物是 <strong>2-氯-2-甲基丁烷</strong>，不是预期的 1-氯-2,2-二甲基丙烷！</p></div>
+
+<div class="fb"><div class="t">机理 4 步</div>
+<ol>
+<li>HCl 质子化 OH → OH₂⁺</li>
+<li>OH₂⁺ 离去 → <strong>一级碳正离子</strong>（极不稳定！）</li>
+<li><strong>1,2-甲基迁移</strong>：旁边 4° C 上的 CH₃ 带着电子对跳过来 → 三级碳正离子（稳定）</li>
+<li>Cl⁻ 进攻三级阳离子</li>
+</ol>
+<div class="imgrow">
+<img src="img/ch10_neopentyl__03_primary_cation.png" alt="1° cation">
+<img src="img/ch10_neopentyl__04_tertiary_cation.png" alt="3° cation">
+</div></div>
+
+<div class="tip"><strong>比喻</strong>：一级 C⁺ 像端着炸弹站不稳的人。旁边人（CH₃）跳过来拉一把，自己变成更稳的三级 C⁺，原来不稳的 C 变成乙基的一部分。</div>
+</div>
+
+<h4 id="k6b">② 1,2-氢迁移</h4>
+<div class="card">
+<p>同样是 1,2-迁移，但跳过来的是 H 而不是 CH₃。例如 3-甲基-2-丁醇 + HBr → 2-溴-2-甲基丁烷（仲 → 叔）。</p>
+<p><strong>迁移倾向：H ≈ Ar &gt; 烷基 &gt; CH₃</strong>（一般情况下；但被立体电子效应限制时另说，见频哪醇）。</p>
+
+<div class="fb"><div class="t">机理 4 步 — 3-甲基-2-丁醇 + HBr</div>
+<img class="full" src="img/ch10_wm_s1.png" alt="WM step 1: 质子化">
+<img class="full" src="img/ch10_wm_s2.png" alt="WM step 2: −H2O → 2° C+">
+<img class="full" src="img/ch10_wm_s3.png" alt="WM step 3: 1,2-H 迁移 → 3° C+">
+<img class="full" src="img/ch10_wm_s4.png" alt="WM step 4: Br− 进攻">
+</div>
+
+<div class="tip"><strong>看图重点</strong>：第 2 步生成的是 <strong>2° C⁺</strong>（在原 OH 那个 C 上）；第 3 步右边邻 C 上的 H 带着键跳过来，<strong>正电跳到原来挂 CH₃ 的 C 上 → 3°</strong>。整体动 1 步 H 就稳了。</div>
+</div>
+
+<h4 id="k6c">③ 频哪醇重排 (Pinacol Rearrangement)</h4>
+<div class="card">
+<div class="fb"><div class="t">1,2-二醇 + H⁺ → 酮 (一个 OH 离去 + 另一边 1,2-迁移)</div>
+<img class="full" src="img/ch10_pinacol_rxn.png" alt="pinacol → pinacolone">
+<p>底物 = 频哪醇 (2,3-二甲基-2,3-丁二醇)；产物 = 频哪酮 = 3,3-二甲基-2-丁酮。</p></div>
+
+<div class="fb"><div class="t">机理 4 步（连环图）</div>
+<img class="full" src="img/ch10_pinacol_s1.png" alt="Pinacol step 1: 质子化">
+<img class="full" src="img/ch10_pinacol_s2.png" alt="Pinacol step 2: −H2O 给 3° C+">
+<img class="full" src="img/ch10_pinacol_s3.png" alt="Pinacol step 3: 1,2-CH3 迁移 → 氧鎓离子">
+<img class="full" src="img/ch10_pinacol_s4.png" alt="Pinacol step 4: −H+ 给酮">
+<ol>
+<li>H⁺ 质子化一个 OH → OH₂⁺</li>
+<li>OH₂⁺ 离去 → 邻 C 变成 3° 碳正离子（另一边 OH 还在）</li>
+<li><strong>另一边的 CH₃ (或 H) 1,2-迁移到正电中心</strong> → 现在正电跳到原来挂 OH 那个 C 上，由于 O 上的孤对，正电立刻稳到 O 上 → 氧鎓离子（=O⁺H 结构）</li>
+<li>原来还挂 OH⁺ 的 C 失质子 → <strong>形成 C=O (酮)</strong></li>
+</ol></div>
+
+<div class="tip"><strong>为什么不是 1° C⁺ → 重排</strong>：Pinacol 第一步离去后已经是 3° C⁺（很稳了），按理不该再重排。<strong>真正驱动力是"产物是稳定的酮（C=O 双键）"</strong>，能量大幅释放，所以反应硬走 1,2-迁移到底。这点与新戊醇式（1° → 3° 求稳）不一样。</div>
+
+<div class="warn"><strong>关键</strong>：习题 4(13) 和 4(14) 是<strong>同样的扁平结构</strong>但<strong>立体不同</strong>（cis vs trans 二醇）—— 因为<strong>迁移必须 anti-periplanar 于离去基</strong>（立体电子效应），所以 (13) 缩环 6→5（环 C 迁移）、(14) 仅甲基迁移环不变。</div>
+
+<details><summary>📊 频哪醇重排的扩环 / 缩环</summary>
+<p><strong>缩环</strong>：双环丁基二醇 + H⁺ → 螺[3.4]辛-1-酮（习题 9-3）</p>
+<div class="imgrow">
+<img src="img/ch10_double_cyclobutanol.png" alt="bicyclobutanol">
+<img src="img/ch10_spiro_3_4_ketone.png" alt="spiro 3.4">
+</div>
+<p>4 元环的 C-C 键迁移过去，得到张力释放、更稳定的 5 元环 + 4 元环 = 螺环结构。</p>
+</details>
+
+<details><summary>📊 习题 4(13)/(14) 立体之谜的 cis/trans 二醇底物</summary>
+<div class="imgrow">
+<img src="img/ch10_pinacol_cis_diol.png" alt="cis diol (题4(13) 模型)">
+<img src="img/ch10_pinacol_trans_diol.png" alt="trans diol (题4(14) 模型)">
+</div>
+<p><strong>口诀</strong>：迁移基团必须与离去基反平面 (anti-periplanar)。</p>
+<ul>
+<li><strong>cis 二醇 (4(13))</strong>：两 OH 同侧 → 与离去 OH₂⁺ 反平面的位置是<strong>环上 C-C 键</strong> → 环 C 整体跳过来 → <strong>缩环</strong> (6→5)。</li>
+<li><strong>trans 二醇 (4(14))</strong>：两 OH 反侧 → 与离去 OH₂⁺ 反平面的位置是<strong>邻 C 上的 CH₃</strong> → 只是 CH₃ 跳 → <strong>环不变</strong>，仅产物多一个甲基。</li>
+</ul>
+<p>核心一句话：<strong>同样的扁平结构，只因为 OH 朝向不同，决定了谁能跳，决定了缩不缩环</strong>。</p>
+</details>
+</div>
+
+<h4 id="k6d">④ 烯丙基重排 (SN1')</h4>
+<div class="card">
+<div class="fb"><div class="t">习题 9(2) — 烯丙醇 + HBr 给两种产物</div>
+<img class="full" src="img/ch10_SN1_prime.png" alt="SN1 prime allylic">
+<p>底物：3-丁烯-2-醇 (CH₃-CH(OH)-CH=CH₂)，仲烯丙醇。</p>
+<p>OH 离去后生成<strong>烯丙基阳离子</strong>，可以共振 — 正电荷可以在 C2 (原位) 或 C4 (双键另一端) 上：</p>
+<p style="text-align:center;font-family:monospace;">CH₃-CH⁺-CH=CH₂ ⇌ CH₃-CH=CH-CH₂⁺</p>
+<p>Br⁻ 进攻<strong>两个共振位置都行</strong>：</p>
+<ul>
+<li>进攻 C2 → 3-溴-1-丁烯 (CH₃CHBr-CH=CH₂)，<strong>SN1 直接产物</strong></li>
+<li>进攻 C4 → 1-溴-2-丁烯 (CH₃-CH=CH-CH₂Br)，<strong>SN1' 重排产物</strong></li>
+</ul>
+<p><strong>这就是 SN1'（allylic rearrangement）</strong>：亲核试剂从烯丙基阳离子的<strong>另一端</strong>进攻，得到双键位移的产物。</p></div>
+
+<div class="fb"><div class="t">机理 4 步（连环图）</div>
+<img class="full" src="img/ch10_sn1p_s1.png" alt="SN1' step 1: 质子化">
+<img class="full" src="img/ch10_sn1p_s2.png" alt="SN1' step 2: −H2O 给烯丙基 C+">
+<img class="full" src="img/ch10_sn1p_s3.png" alt="SN1' step 3: 共振分到另一端">
+<div class="imgrow">
+<img src="img/ch10_sn1p_s4a.png" alt="SN1' step 4a: 进攻 C2 → 直接产物">
+<img src="img/ch10_sn1p_s4b.png" alt="SN1' step 4b: 进攻 C4 → 重排产物">
+</div>
+</div>
+
+<div class="tip"><strong>判定要点</strong>：只要底物是<strong>烯丙基/苄基醇 + 酸性条件</strong>，就要警惕重排产物。两个共振端都可能被进攻。</div>
+</div>
+
+<!-- ================ 10.7 排序题套路 ================ -->
+<h3 id="k7">10.7 排序题套路 (习题 5 八题)</h3>
+<div class="card">
+
+<div class="fb"><div class="t">每一种排序背后的"决定因素"</div>
+<table>
+<tr><th>排啥</th><th>背后机理</th><th>口诀</th></tr>
+<tr><td>(1) 与 HBr 速度</td><td>碳正离子稳定性</td><td>3° > 苄/烯丙基 > 2° > 1°</td></tr>
+<tr><td>(2) 与 Na 活泼性</td><td>醇的酸性</td><td>CH₃OH > 1° > 2° > 3°</td></tr>
+<tr><td>(3) 与 Lucas 试剂</td><td>碳正离子稳定性 (SN1)</td><td>3° > 苄/烯丙基 > 2° > 1°</td></tr>
+<tr><td>(4) 氧化难易</td><td>α-C 上 H 数</td><td>1° > 2° > 3° (易→难)</td></tr>
+<tr><td>(5) 酸性脱水</td><td>碳正离子稳定 + 烯烃稳定（共轭好）</td><td>能给共轭烯 > 能给 3° C⁺ > ...</td></tr>
+<tr><td>(6) 酸性</td><td>共轭/电子效应</td><td>酚 > H₂O > 醇 > 醚</td></tr>
+<tr><td>(7) 沸点</td><td>氢键数 + 分子量</td><td>多元醇 > 一元醇 > 酚 > 醚</td></tr>
+<tr><td>(8) 水溶解度</td><td>氢键数 (类似沸点)</td><td>多元醇 > 一元醇 > 酚 > 醚</td></tr>
+</table></div>
+
+<div class="tip">所有排序题的<strong>核心都是 2-3 条原则</strong>：碳正离子稳定性、酸碱性、氢键 — 不要逐题硬记答案，理解原理就够了。</div>
+
+</div>
+
+<!-- ================ 10.8 鉴别方法 ================ -->
+<h3 id="k8">10.8 鉴别方法 (习题 8)</h3>
+<div class="card">
+<div class="fb"><div class="t">5 个常用鉴别试剂</div>
+<table>
+<tr><th>试剂</th><th>用来鉴别</th><th>现象</th></tr>
+<tr><td><strong>FeCl₃</strong></td><td>酚 vs 非酚</td><td>酚显紫色/蓝紫色</td></tr>
+<tr><td><strong>Lucas (HCl/ZnCl₂)</strong></td><td>3°/2°/1° 醇</td><td>3° 立刻浑浊，2° 5-10min，1° 几乎不动</td></tr>
+<tr><td><strong>HIO₄</strong></td><td>邻二醇</td><td>切 C-C 给两 C=O；不切普通醇</td></tr>
+<tr><td><strong>HIO₄/AgNO₃</strong></td><td>邻二醇 (升级版)</td><td>HIO₃ + AgNO₃ → AgIO₃↓ 黄色沉淀</td></tr>
+<tr><td><strong>金属 Na</strong></td><td>醇 vs 醚 / 烃</td><td>醇产生 H₂↑ 气泡，醚/烃不反应</td></tr>
+<tr><td><strong>AgNO₃ 醇液</strong></td><td>烯丙基/苄基卤 (活泼)</td><td>立即 AgX↓ 浅黄色沉淀</td></tr>
+<tr><td><strong>浓 H₂SO₄</strong></td><td>醚 vs 烷烃</td><td>醚溶解（O 上质子化），烷烃不溶</td></tr>
+</table></div>
+
+<div class="ex"><strong>实战 — 习题 8(2)</strong>：鉴别 (CH₃)₃COH（叔丁醇）、CH₃CH₂CH₂CH₂OH（正丁醇）、CH₃CH₂CH(OH)CH₃（仲丁醇）、CH₃CH(OH)CH(OH)CH₃（2,3-丁二醇）
+<details><summary>方案</summary><div class="sol">
+<p><strong>第一步</strong>：加 HIO₄/AgNO₃ → 只有 <strong>2,3-丁二醇</strong>（邻二醇）产生 AgIO₃ 黄色沉淀。</p>
+<p><strong>第二步</strong>：剩下三个加 Lucas 试剂：</p>
+<ul>
+<li><strong>叔丁醇</strong>：立刻浑浊</li>
+<li><strong>仲丁醇</strong>：5-10 分钟浑浊</li>
+<li><strong>正丁醇</strong>：室温几乎不反应（需加热）</li>
+</ul>
+</div></details></div>
+
+</div>
+
+<!-- ================ 10.9 推断题套路 ================ -->
+<h3 id="k9">10.9 推断题套路 (习题 11)</h3>
+<div class="card">
+<div class="fb"><div class="t">5 步法</div>
+<ol>
+<li><strong>算不饱和度</strong>：度 = (2n+2−H+N−X)/2，n=C 数。每 1 度 = 1 个 π 键或 1 个环。</li>
+<li><strong>看反应行为给提示</strong>：
+<ul>
+<li>不与 KMnO₄ / Br₂/CCl₄ 反应 → <strong>没有 C=C 或 OH</strong></li>
+<li>溶于冷 H₂SO₄ → 有<strong>醚 / 醇 / 烯烃 / 胺</strong>（可质子化）</li>
+<li>FeCl₃ 显紫色 → 有<strong>酚 OH</strong></li>
+<li>AgNO₃/ROH 起沉淀 → 有<strong>烯丙基/苄基 X</strong></li>
+<li>Na 产生 H₂ → 有 <strong>OH 或 NH</strong></li>
+<li>Lucas 立即浑浊 → <strong>3° 醇 / 烯丙醇 / 苄醇</strong></li>
+</ul></li>
+<li><strong>反推产物结构</strong>：从最终产物倒推回 A 的官能团位置</li>
+<li><strong>试着写结构</strong>，验证与所有反应都吻合</li>
+<li><strong>注意苯环</strong>：4 度不饱和常意味着苯环</li>
+</ol></div>
+
+<div class="ex"><strong>习题 11 范例</strong>：A (C₈H₉OBr)，溶于冷 H₂SO₄ 但不与 KMnO₄/Br₂ 反应，与 AgNO₃/醇 产生淡黄沉淀。A + 热 KMnO₄ → B (C₈H₈O₃)；B + HBr → 邻羟基苯甲酸。推 A、B 结构。
+<details><summary>分析</summary><div class="sol">
+<ol>
+<li>A 不饱和度 = (2×8+2−9−1)/2 = 4 → 含<strong>苯环</strong></li>
+<li>不与 KMnO₄/Br₂ → 没有 C=C / 没有羟基</li>
+<li>溶于冷 H₂SO₄ → 是<strong>醚</strong>（或胺，但 A 不含 N）</li>
+<li>AgNO₃ 沉淀 → 含<strong>活泼 X (苄基-Br 或烯丙基-Br)</strong></li>
+<li>B + HBr → 邻羟基苯甲酸 → B 是 <strong>邻甲氧基苯甲酸</strong> (HBr 把 OCH₃ 切成 OH)</li>
+<li>A 经 KMnO₄ 强氧化得 B (—COOH)：A 上必有可被氧化的 —CH₂Br 或 —CH₃ → 邻位有 OCH₃</li>
+<li>结论：<strong>A = 邻甲氧基苄溴 (o-CH₃O-C₆H₄-CH₂Br)</strong>，B = 邻甲氧基苯甲酸</li>
+</ol>
+</div></details></div>
+
+</div>
+
+<!-- ================ 习题精讲 ================ -->
+<h2 id="ex">习题精讲（已被实战验证的几道）</h2>
+
+<div class="ex"><strong>例题 1 — 新戊醇 + HCl/ZnCl₂</strong>（习题 4(10)）
+<details><summary>展开</summary><div class="sol">
+<p>反应：(CH₃)₃C-CH₂-OH ──HCl/ZnCl₂──► <strong>2-氯-2-甲基丁烷</strong></p>
+<p>关键观察：碳骨架变了 → 一定是<strong>碳正离子重排</strong>。</p>
+<p>机理：质子化 → OH₂⁺ 离去 → 一级碳正离子（极不稳定）→ <strong>CH₃ 从邻 C 跳过来</strong> → 三级碳正离子 → Cl⁻ 抓住。</p>
+<img class="full" src="img/ch10_neopentyl__00_overall.png" alt="overall">
+<p>详细笔记：<code>第10章_新戊醇重排.md</code></p>
+</div></details></div>
+
+<div class="ex"><strong>例题 2 — Lucas 反应快慢</strong>（习题 5(3)）
+<details><summary>展开</summary><div class="sol">
+<p>3 个醇：(A) 烯丙醇 CH₃CH=CHCH₂OH；(B) 远端双键 CH₂=CHCH₂CH₂OH；(C) 2-丁醇</p>
+<p>速度由<strong>OH 离开后碳正离子的稳定性</strong>决定：</p>
+<ul>
+<li>A → 烯丙基阳离子（共振稳定，分到双键两端）→ <strong>最稳</strong></li>
+<li>C → 普通 2° 阳离子</li>
+<li>B → 普通 1° 阳离子（双键太远，没贡献）→ <strong>最不稳</strong></li>
+</ul>
+<p><strong>答案：A &gt; C &gt; B</strong>。详细：<code>第10章_Lucas快慢讲解.md</code></p>
+</div></details></div>
+
+<div class="ex"><strong>例题 3 — 氘代醇 TsCl→NaI 立体化学</strong>（习题 4(11)）
+<details><summary>展开</summary><div class="sol">
+<p>(S)-1-氘代-1-丙醇 ──TsCl/Py──► OTs (保留) ──NaI/丙酮──► (R)-碘代物（翻转）</p>
+<p>大白话：整道题就是 <strong>OH → I 分两步</strong>。第 1 步把 OH 换成<strong>松动的 OTs</strong>，第 2 步 I⁻ 把 OTs 踢走。</p>
+<p>D 的作用：标记 C 上有 4 个不同基团（创造手性中心），<strong>方便用旋光仪观测构型变化</strong>。</p>
+<p>详细：<code>第10章_氘代醇TsCl_NaI讲解.md</code></p>
+</div></details></div>
+
+<div class="ex"><strong>例题 4 — 4 步合成 (Williamson + Claisen + 臭氧化)</strong>（习题 6(2)）
+<details><summary>展开</summary><div class="sol">
+<p>整道题 3 个反应串起来：</p>
+<ol>
+<li><strong>Williamson</strong>：苯酚钠 + 烯丙基氯 → 苯基烯丙基醚 (A)</li>
+<li><strong>Claisen</strong>：A + Δ → 邻烯丙基苯酚 (B)。烯丙基"跨过 O"跳邻位。</li>
+<li><strong>臭氧化 + Zn/H₂O</strong>：B + O₃/Zn → 邻羟基苯乙醛 (C) + 甲醛 (D)。O₃ 剪 C=C 给醛。</li>
+</ol>
+<p>详细：<code>第10章_4步合成题讲解.md</code></p>
+</div></details></div>
+
+<div class="ex"><strong>例题 5 — HIO₄ 切邻二醇 + NaBH₄ 还原</strong>（习题 6(4)）
+<details><summary>展开</summary><div class="sol">
+<p>1-(羟甲基)环己醇 ──HIO₄──► 环己酮 + 甲醛 ──NaBH₄──► 环己醇 + 甲醇</p>
+<p>HIO₄ 像剪刀，剪邻二醇得两 C=O；NaBH₄ 像氢炮，把 C=O 还原成 C-OH。</p>
+<p>详细：<code>第10章_HIO4切二醇_NaBH4还原.md</code></p>
+</div></details></div>
+
+<div class="ex"><strong>例题 6 — 频哪醇重排（13 vs 14 的立体奥秘）</strong>
+<details><summary>展开</summary><div class="sol">
+<p>底物 1,2-二甲基-1,2-环己二醇有两种立体（cis vs trans）。同样 H⁺ 催化，但：</p>
+<ul>
+<li><strong>(13) 缩环</strong>：环 C-C 键带电子对迁移 → 6 元环变 5 元环，得 <strong>1-乙酰基-1-甲基环戊烷</strong></li>
+<li><strong>(14) 甲基迁移</strong>：CH₃ 迁移 → 环不变，得 <strong>2,2-二甲基环己酮</strong></li>
+</ul>
+<p><strong>原因</strong>：迁移基团必须与离去基团<strong>反式共平面 (anti-periplanar)</strong>。在椅式构象上"轴向位挂的是环 C-C 键 vs CH₃"决定了哪一个迁移。</p>
+<p>这是<strong>立体电子效应压过迁移倾向</strong>的经典例子。</p>
+</div></details></div>
+
+<div class="ex"><strong>例题 7 — 习题 5(1) HBr 速度排序 (苄醇 vs 普通醇)</strong>
+<details><summary>展开</summary><div class="sol">
+<p>4 个醇：</p>
+<ul>
+<li>(A) <code>PhCH(OH)CH₃</code> — 苄基仲醇</li>
+<li>(B) <code>PhCH₂CH₂OH</code> — 普通 1° 醇（苯环不挨着 OH）</li>
+<li>(C) <code>环己基-CH(OH)CH₃</code> — 普通 2° 醇</li>
+<li>(D) <code>环己醇</code> — 普通 2° 醇</li>
+</ul>
+<p>速度由<strong>OH 离去后的碳正离子稳定性</strong>决定（HBr 走 SN1）：</p>
+<ul>
+<li>A → <strong>苄基阳离子</strong>（共振稳定到苯环上）→ 最稳</li>
+<li>C → 普通 2°（α-C 上有 2 个烷基：环己基 + CH₃）→ 稍稳一点</li>
+<li>D → 普通 2°（α-C 在环上，只算 2 个环烷基）→ 中等</li>
+<li>B → 普通 1°（即使苯环存在，离 OH 隔了一个 CH₂，没共振贡献）→ 最不稳</li>
+</ul>
+<p><strong>答案：A &gt; C &gt; D &gt; B</strong>（教材标准答案）</p>
+<p><strong>记忆点</strong>：苯环只有<strong>紧贴 OH 那个 C</strong>才能提供共振稳定。隔一个 CH₂ 就彻底没用了——和 Lucas 排序题（5(3)）同样规律。</p>
+</div></details></div>
+
+<!-- ================ 自检 10 题 ================ -->
+<h2 id="selftest">📝 自检 10 题（先想答案再展开）</h2>
+<div class="tip">每道题先关掉答案自己想 30 秒，再点击展开看答案。这 10 题覆盖了本章所有高频考点。</div>
+
+<div class="ex"><strong>自检 1</strong>：丁-1-醇 vs 丁-2-醇 与 Lucas 试剂反应，谁快？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>丁-2-醇快</strong>。Lucas 走 SN1，速度由碳正离子稳定性决定（3°≈苄/烯丙基 &gt; 2° &gt; 1°）。</p>
+<p>丁-2-醇生成 2° 阳离子，5-10 分钟出现浑浊；丁-1-醇生成 1° 阳离子，室温几乎不反应。</p>
+<p>→ 详见 <a href="#k3a">10.3①</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 2</strong>：用 PBr₃ 和 HBr 分别把 <strong>3-甲基-2-丁醇</strong>（仲醇）变溴代物，产物一样吗？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>不一样！这是典型的"用 HX 导致重排"的例子。</strong></p>
+<ul>
+<li><strong>PBr₃ → 3-溴-2-甲基丁烷</strong> `(CH₃)₂CH-CHBr-CH₃`<br>
+经过 R-O-PBr₂ 中间体，Br⁻ 在 OH 原位 SN2 进攻 → <strong>骨架完全保留</strong></li>
+<li><strong>HBr → 主产物 2-溴-2-甲基丁烷</strong> `(CH₃)₂C(Br)-CH₂CH₃`<br>
+SN1 走仲碳正离子 → 旁边 C 上的 H <strong>1,2-迁移</strong> → 更稳定的叔碳正离子 → Br⁻ 进攻 → <strong>骨架"重排"了</strong></li>
+</ul>
+<p><strong>核心规律</strong>：仲醇/伯醇与 HX 反应时<strong>容易经过碳正离子重排到更稳定的位置</strong>；PBr₃/SOCl₂ 不经过碳正离子 → 干净不重排。新戊醇 + HCl/ZnCl₂ 也是同一套（习题 4(10)）。</p>
+<p>→ 详见 <a href="#k3b">10.3②</a> + <a href="#k6a">10.6①</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 3</strong>：苯酚 (pKa≈10) 和乙醇 (pKa≈16) 谁酸性强？为什么差 10⁶ 倍？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>苯酚强</strong>。失去 H⁺ 后：</p>
+<ul>
+<li>苯氧负离子 ArO⁻：负电荷可<strong>共振分散到苯环 o/p 位</strong>（4 个共振式），稳定！</li>
+<li>乙醇负离子 EtO⁻：负电荷只能靠 +I 烷基效应稳定，弱</li>
+</ul>
+<p>共振稳定 vs 仅 +I → 酸性差距 10⁶。带 NO₂ 等吸电子基的苯酚酸性更强（如对硝基苯酚 pKa≈7）。</p>
+<p>→ 详见 <a href="#k2">10.2</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 4</strong>：苯酚 + 过量 Br₂/H₂O 给什么？换成 Br₂/CS₂ 呢？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>Br₂/H₂O</strong>：<strong>2,4,6-三溴苯酚</strong>（白色沉淀，定量实验）。机理：H₂O 把酚电离为 ArO⁻（活化能力 ↑10⁶），Br₂ 立刻在三个 o/p 位都上 Br。</p>
+<p><strong>Br₂/CS₂</strong>：<strong>对溴苯酚（主）+ 邻溴苯酚（次）</strong>，只单溴。CS₂ 不能电离酚。</p>
+<p>→ 详见 <a href="#k4d">10.4④</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 5</strong>：苯酚 + H₂SO₄ 在 20°C 和 100°C 分别给什么产物？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>20°C → 邻磺酸（动力学控制）</strong>：邻位过渡态能量低，反应快</p>
+<p><strong>100°C → 对磺酸（热力学控制）</strong>：磺化可逆，邻 ↔ 对 反复转换，最后堆积在更稳定（位阻小）的对位产物上</p>
+<p><strong>口诀</strong>：低温抢快，高温抢稳。萘 α vs β 磺化也是这套规律。</p>
+<p>→ 详见 <a href="#k4e">10.4⑤</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 6</strong>：Claisen 重排的条件是什么？产物位置在哪？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>条件极简：只要加热</strong>。无需催化剂、酸碱、溶剂特殊。</p>
+<p><strong>反应物</strong>：烯丙基芳基醚（Ar-O-CH₂-CH=CH₂）</p>
+<p><strong>产物</strong>：邻烯丙基苯酚（烯丙基"跨过 O"跳到苯环邻位，OH 留在原位）</p>
+<p>机理：6 元环过渡态（[3,3]-σ 迁移）。如果两邻位都被占，可继续走 para-Claisen。</p>
+<p>→ 详见 <a href="#k5e">10.5⑤</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 7</strong>：新戊醇 + HCl/ZnCl₂ → ？为什么不是 1-氯-2,2-二甲基丙烷？
+<details><summary>展开答案</summary><div class="sol">
+<p>产物是 <strong>2-氯-2-甲基丁烷</strong>（碳骨架变了！）。</p>
+<p>机理：质子化 → OH₂⁺ 离去 → <strong>一级碳正离子</strong>（极不稳定）→ 旁边 4° C 上一个 CH₃ <strong>带着电子对跳过来</strong> → 三级碳正离子（稳定）→ Cl⁻ 抓住。</p>
+<p>这就是 <strong>1,2-甲基迁移 (Wagner-Meerwein 重排)</strong>。看到 HCl/ZnCl₂ 或浓 H₂SO₄ 且产物骨架对不上 → 必然重排。</p>
+<p>→ 详见 <a href="#k6a">10.6①</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 8</strong>：习题 4(13) 和 4(14) 底物画起来一样（1,2-二甲基-1,2-环己二醇），但产物完全不同。为什么？
+<details><summary>展开答案</summary><div class="sol">
+<p>两者是<strong>立体异构体</strong>（cis vs trans 二醇）。在椅式构象上，C2 上 OH₂⁺ 占轴向位时：</p>
+<ul>
+<li><strong>(13)</strong> 题：C1 轴向位是<strong>环 C-C 键</strong> → 环碳迁移 → <strong>缩环 6→5</strong> → 1-乙酰基-1-甲基环戊烷</li>
+<li><strong>(14)</strong> 题：C1 轴向位是 <strong>CH₃</strong> → 甲基迁移 → 环不变 → 2,2-二甲基环己酮</li>
+</ul>
+<p><strong>核心规则</strong>：迁移基团必须与离去基团<strong>反式共平面（anti-periplanar，~180°）</strong>。立体电子效应压过迁移倾向。</p>
+<p>→ 详见 <a href="#k6c">10.6③</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 9</strong>：THF + 过量 HI 给什么？为什么？
+<details><summary>展开答案</summary><div class="sol">
+<p>产物是 <strong>1,4-二碘丁烷</strong> + H₂O。</p>
+<p>机理：</p>
+<ol>
+<li>HI 质子化 THF 的 O → 5 元环离子</li>
+<li>I⁻ 进攻 α-C（SN2）开环 → 4-碘-1-丁醇</li>
+<li>过量 HI 继续把另一头的 OH 变成 I → 1,4-二碘丁烷</li>
+</ol>
+<p>→ 详见 <a href="#k5b">10.5②</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 10</strong>：如何区分 苯酚 / 苯甲醚 / 环己醇 / 环己烯-2-醇？
+<details><summary>展开答案</summary><div class="sol">
+<p>用三个试剂依次：</p>
+<ol>
+<li><strong>FeCl₃</strong>：<strong>苯酚</strong>显紫色（苯甲醚没 OH 不显色，环己醇和环己烯-2-醇也不显色）</li>
+<li><strong>Lucas 试剂</strong>：剩三个加 Lucas
+<ul>
+<li><strong>环己烯-2-醇</strong>（烯丙醇型）→ 立刻浑浊（共振稳定烯丙基阳离子）</li>
+<li><strong>环己醇</strong>（普通 2°）→ 5-10 分钟浑浊</li>
+<li><strong>苯甲醚</strong> → 不反应（醚不与 Lucas 反应）</li>
+</ul></li>
+</ol>
+<p>→ 详见 <a href="#k8">10.8 鉴别</a>（即习题 8(3)）</p>
+</div></details></div>
+
+<!-- ================ 考前提醒 ================ -->
+<h2 id="tips">考前提醒</h2>
+
+<div class="warn"><strong>看到 HCl/ZnCl₂ 或 浓 H₂SO₄/Δ + 产物骨架对不上 → 一定是碳正离子重排</strong>。这是醇章最大的"陷阱"。</div>
+
+<div class="warn"><strong>构型问题三档</strong>：① TsCl/SOCl₂-Py = 构型保留（反应在 S 上）；② PBr₃ / 一般 SN2 = 构型翻转；③ HX / 浓 H₂SO₄ = SN1 可能消旋 + 可能重排。</div>
+
+<div class="warn"><strong>溶剂效应（卤代酚）</strong>：H₂O = 极性质子 → 酚电离 → 多溴；CS₂ = 非极性 → 单溴。</div>
+
+<div class="warn"><strong>磺化温度</strong>：低温（20°C）邻位 = 动力学；高温（100°C）对位 = 热力学。萘的磺化 α vs β 也是这套。</div>
+
+<div class="warn"><strong>Claisen 重排</strong>：烯丙基苯醚 + Δ → 邻烯丙基苯酚（"烯丙基跨过 O 跳邻位"）。只加热，无需催化剂。</div>
+
+<div class="warn"><strong>Williamson 醚合成</strong>：RO⁻ 用复杂的，R-X 用简单的（1°/2°）。3° R-X 会被夺 H 走 E2，得到烯烃而不是醚。</div>
+
+<div class="warn"><strong>氧化口诀</strong>：1° 醇 → CrO₃/Py 给醛、K₂Cr₂O₇/H₂SO₄ 给酸；2° 醇 → 任意氧化剂都给酮；3° 醇一般不被氧化。</div>
+
+<div class="warn"><strong>排序题三大决定因素</strong>：碳正离子稳定性（HX/Lucas/脱水）、醇的酸性（Na 反应/酸性强弱）、氢键（沸点/溶解度）。</div>
+
+<div class="warn"><strong>鉴别套路</strong>：FeCl₃ 验酚 / Lucas 验醇级数 / HIO₄ 验邻二醇 / Na 验 OH。三个一起用基本可以鉴别本章所有化合物。</div>
+
+<div class="warn"><strong>推断题</strong>：先算不饱和度（≥4 几乎一定有苯环），然后用各试剂"诊断"官能团，最后从产物倒推。</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>
