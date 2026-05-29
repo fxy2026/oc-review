@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第13章 羧酸衍生物 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+h4{color:#444;font-size:1.0em;margin:14px 0 8px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+.imgrow{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:10px 0;}
+.imgrow img{max-width:48%;height:auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.full{display:block;max-width:100%;margin:10px auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.med{display:block;max-width:75%;margin:10px auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.small{display:inline-block;max-width:32%;margin:5px;border:1px solid #ddd;border-radius:4px;background:#fff;vertical-align:middle;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">📚 目录</a><a href="ch12.html">← 第12章</a><a href="ch14.html">第14章 →</a></div>
+<h1>第13章 羧酸衍生物</h1>
+
+<div class="tip"><strong>本章核心思路</strong>：酰氯、酸酐、酯、酰胺、腈都含<strong>"羰基 + 一个可离去的杂原子基团"</strong>。它们的反应几乎全是同一招——<strong>亲核酰基取代（加成-消除，经四面体中间体）</strong>。只要会判断"<strong>谁是离去基、它好不好走</strong>"，活性顺序、水解醇解氨解、Claisen 缩合就都通了。</div>
+
+<!-- ================ 考前 30 秒速查 ================ -->
+<div class="card" style="background:#fff5f5;border:2px solid #c0392b;">
+<h3 style="color:#c0392b;border-left-color:#c0392b;margin-top:0;">🔥 考前 30 秒速查（必背）</h3>
+<table style="font-size:.95em;">
+<tr><th style="background:#c0392b;">类型</th><th style="background:#c0392b;">规律</th></tr>
+<tr><td>衍生物反应活性</td><td>酰氯 &gt; 酸酐 &gt; 酯 &gt; 酰胺（&gt; 羧酸根）；只能由活泼→不活泼</td></tr>
+<tr><td>统一机理</td><td>亲核酰基取代 = 加成（Nu 进攻羰基 C，sp²→sp³）+ 消除（离去基走）</td></tr>
+<tr><td>酯碱性水解</td><td>BAC2（碱-酰氧断裂-双分子），<strong>不可逆</strong>（羧酸根夺质子拉平衡）</td></tr>
+<tr><td>酯酸性水解 / 酯化</td><td>AAC2，可逆；¹⁸O 标记证明<strong>酰氧断裂</strong>（醇 O 进酯）</td></tr>
+<tr><td>Claisen 酯缩合</td><td>2 个有 α-H 的酯 + EtONa → β-酮酸酯；酯须 ≥2 个 α-H</td></tr>
+<tr><td>丙二酸酯合成法</td><td>→ 造<strong>支链羧酸 RCH₂COOH</strong>（拔氢-烷基化-水解-脱羧）</td></tr>
+<tr><td>乙酰乙酸酯合成法</td><td>→ 造<strong>甲基酮 CH₃COCH₂R</strong>（拔氢-烷基化-水解-脱羧）</td></tr>
+<tr><td>β-羰基羧酸脱羧</td><td>β-酮酸/丙二酸受热极易脱羧（六元环过渡态经烯醇）</td></tr>
+<tr><td>Hofmann 降解</td><td>RCONH₂ + Br₂/NaOH → RNH₂，<strong>少一个碳</strong>，经异氰酸酯</td></tr>
+<tr><td>Gabriel 合成</td><td>邻苯二甲酰亚胺 K 盐 + RX → 水解 → <strong>纯伯胺</strong>（不多烷基化）</td></tr>
+<tr><td>还原口诀</td><td>酯→1° 醇；酰胺→胺(不增碳)；腈→1° 胺(增 1 碳)；酰氯停在醛用 Rosenmund</td></tr>
+</table>
+</div>
+
+<!-- ================ 题型 → 本页章节查询 ================ -->
+<div class="card" style="background:#fffbf0;border:2px solid #f39c12;">
+<h3 style="color:#e67e22;border-left-color:#e67e22;margin-top:0;">📝 题型 → 本页章节查询</h3>
+<table style="font-size:.92em;">
+<tr><th>题型</th><th>考点</th><th>跳转</th></tr>
+<tr><td>活性排序 / 选择</td><td>酰氯&gt;酸酐&gt;酯&gt;酰胺</td><td><a href="#k1">13.1 五类化合物</a></td></tr>
+<tr><td>机理（弯箭头）</td><td>亲核酰基取代通用</td><td><a href="#k2">13.2 通用机理</a></td></tr>
+<tr><td>水解 / 醇解 / 氨解</td><td>相互转化网络</td><td><a href="#k3">13.3 相互转化</a></td></tr>
+<tr><td>机理 / 同位素</td><td>酯水解 BAC2 / AAC2 / ¹⁸O</td><td><a href="#k4">13.4 酯水解机理</a></td></tr>
+<tr><td>反应填空</td><td>还原（酯/酰胺/腈/酰氯）</td><td><a href="#k5">13.5 还原</a></td></tr>
+<tr><td>机理 / 完成</td><td>Claisen 酯缩合 / Dieckmann</td><td><a href="#k6">13.6 Claisen 缩合</a></td></tr>
+<tr><td>脱羧</td><td>β-酮酸 / 丙二酸脱羧</td><td><a href="#k7">13.7 脱羧</a></td></tr>
+<tr><td>合成题（造羧酸）</td><td>丙二酸酯合成法</td><td><a href="#k8">13.8 丙二酸酯法</a></td></tr>
+<tr><td>合成题（造甲基酮）</td><td>乙酰乙酸酯合成法</td><td><a href="#k9">13.9 乙酰乙酸酯法</a></td></tr>
+<tr><td>机理 / 完成（降一碳制胺）</td><td>Hofmann 降解（异氰酸酯）</td><td><a href="#k10">13.10 Hofmann 降解</a></td></tr>
+<tr><td>合成题（制纯伯胺）</td><td>Gabriel 合成</td><td><a href="#k11">13.11 Gabriel</a></td></tr>
+<tr><td>鉴别</td><td>酯/酰胺/腈 区分</td><td><a href="#k12">13.12 鉴别</a></td></tr>
+</table>
+</div>
+
+<h2 id="kp">核心知识点</h2>
+
+<!-- ================ 13.1 五类化合物 + 活性 ================ -->
+<h3 id="k1">13.1 五类化合物 + 相对活性（最常考的排序）</h3>
+<div class="card">
+<p>羧酸衍生物 = 羧酸的 —OH 被别的基团换掉得到的产物。核心五类（腈虽不含羰基，但水解 / 还原行为与衍生物一脉相承，一起记）：</p>
+<div class="imgrow">
+<img src="img/ch13_acyl_chloride.svg" alt="酰氯">
+<img src="img/ch13_anhydride.svg" alt="酸酐">
+<img src="img/ch13_ester.svg" alt="酯">
+<img src="img/ch13_amide.svg" alt="酰胺">
+<img src="img/ch13_nitrile.svg" alt="腈">
+</div>
+
+<div class="fb"><div class="t">相对活性顺序（亲核酰基取代的快慢）</div>
+<p style="text-align:center;font-weight:bold;font-size:1.05em;">酰氯 &gt; 酸酐 &gt; 酯 &gt; 酰胺（&gt; 羧酸根）</p>
+<p>判定靠两条<strong>方向一致</strong>的理由：</p>
+<ol>
+<li><strong>离去基好不好走</strong>：Cl⁻ &gt; RCOO⁻ &gt; RO⁻ &gt; NH₂⁻（共轭碱越稳定越好走）。</li>
+<li><strong>相邻杂原子给羰基共轭供电的强弱</strong>：N 给电子最强（酰胺羰基被"喂得最饱"、最钝），O 次之，Cl 几乎不给（酰氯羰基最缺电子、最活泼）。</li>
+</ol></div>
+
+<div class="warn"><strong>方向铁律</strong>：相互转化<strong>只能由活泼的 → 不活泼的</strong>（酰氯能一步到酸酐 / 酯 / 酰胺；酰胺不能直接"升级"回酯，要先水解成酸再重做）。考完成反应时，写出"酰胺 → 酯"这种逆向一步法直接判错。</div>
+
+<div class="tip"><strong>记忆图像</strong>：把羰基 C 想成一个"饿肚子的人"。Cl 不给它饭吃（最饿、最想抓住进来的 Nu）→ 最活泼；N 拼命喂饭（最饱、对 Nu 没兴趣）→ 最钝。</div>
+</div>
+
+<!-- ================ 13.2 通用机理 ================ -->
+<h3 id="k2">13.2 亲核酰基取代通用机理（加成-消除）</h3>
+<div class="card">
+<p>这是整章的"母机理"。<strong>所有</strong>水解、醇解、氨解、Claisen 缩合都套这个模板：先加成成<strong>四面体中间体</strong>，再消除离去基重建 C=O。以乙酰氯醇解（+ CH₃OH → 乙酸甲酯）为例：</p>
+
+<div class="fb"><div class="t">机理 3 步（连环图）</div>
+<img class="full" src="img/ch13_nas_s1.svg" alt="NAS step 1: Nu 加成 → 四面体中间体">
+<img class="full" src="img/ch13_nas_s2.svg" alt="NAS step 2: 离去基离去">
+<img class="full" src="img/ch13_nas_s3.svg" alt="NAS step 3: 去质子得产物">
+<p><strong>Step 1 加成</strong>：亲核试剂（这里是甲醇的 O）用孤对电子<strong>进攻平面羰基 C</strong>，C 由 sp²→sp³，原来的 π 电子被推到 O 上 → 生成<strong>带氧负的四面体中间体</strong>（决速步）。</p>
+<p><strong>Step 2 消除</strong>：O 上的负电对回头压下来重建 C=O，把<strong>离去基（Cl⁻）挤走</strong> → 得质子化的酯。</p>
+<p><strong>Step 3</strong>：去掉多余质子 → 乙酸甲酯。净结果：<strong>Cl 被 OCH₃ 取代</strong>。</p>
+</div>
+
+<div class="fb"><div class="t">四面体中间体——本章的灵魂</div>
+<img class="med" src="img/ch13_tetrahedral.svg" alt="四面体中间体">
+<p>羰基 C 由 sp²（平面）变成 sp³（四面体），同时连着<strong>进来的 Nu、原来的离去基、和氧负</strong>。它<strong>能否往前走</strong>取决于离去基好不好走——这就是活性顺序的本质。</p>
+</div>
+
+<div class="note"><strong>和醛酮加成的区别</strong>：醛酮的羰基 C 上<strong>没有离去基</strong>，所以 Nu 加成后<strong>停在加成产物</strong>（醇）；衍生物有离去基，所以四面体中间体会<strong>继续消除</strong> → 整体表现为"取代"。一句话：醛酮=加成，衍生物=加成-消除（取代）。</div>
+</div>
+
+<!-- ================ 13.3 相互转化网络 ================ -->
+<h3 id="k3">13.3 相互转化网络（水解 / 醇解 / 氨解）</h3>
+<div class="card">
+<p>把"由活泼→不活泼"的方向铁律落实到具体反应。<strong>酰氯是合成枢纽</strong>（最活泼，一步能到所有更钝的衍生物）。先由羧酸用 SOCl₂ 造酰氯：</p>
+
+<div class="fb"><div class="t">① SOCl₂ 制酰氯（合成起点）</div>
+<img class="full" src="img/ch13_socl2.svg" alt="SOCl2 制酰氯">
+<p>RCOOH + SOCl₂ → <strong>RCOCl</strong> + SO₂↑ + HCl↑。副产物都是气体，跑掉即可，<strong>产物纯</strong>。也可用 PCl₅ / PCl₃。</p></div>
+
+<div class="fb"><div class="t">② 酰氯 + 羧酸根 → 酸酐</div>
+<img class="full" src="img/ch13_acyl_to_anhydride.svg" alt="酰氯 → 酸酐">
+</div>
+
+<div class="fb"><div class="t">③ 酰氯 + 醇 → 酯（醇解）</div>
+<img class="full" src="img/ch13_acyl_to_ester.svg" alt="酰氯 → 酯">
+<p>常加<strong>吡啶 / Et₃N</strong> 中和放出的 HCl。这条路线比"酸 + 醇"直接 Fischer 酯化<strong>更彻底</strong>——酯化是可逆平衡，经酰氯则<strong>不可逆</strong>。</p></div>
+
+<div class="fb"><div class="t">④ 酰氯 + 氨 / 胺 → 酰胺（氨解）</div>
+<img class="full" src="img/ch13_acyl_to_amide.svg" alt="酰氯 → 酰胺">
+</div>
+
+<div class="fb"><div class="t">⑤ 酰氯 + R₂CuLi → 酮（停在酮）</div>
+<img class="full" src="img/ch13_acyl_to_ketone.svg" alt="酰氯 → 酮">
+<p>二烃基铜锂（Gilman 试剂）温和，<strong>只取代一次停在酮</strong>，不会过加成到 3° 醇（与 RMgX 不同）。</p></div>
+
+<div class="fb"><div class="t">水解一句话总结</div>
+<table style="font-size:.92em;">
+<tr><th>底物</th><th>水解条件</th><th>产物</th></tr>
+<tr><td>酰氯</td><td>遇水即水解（剧烈）</td><td>羧酸 + HCl</td></tr>
+<tr><td>酸酐</td><td>较易水解</td><td>2 分子羧酸</td></tr>
+<tr><td>酯</td><td>酸催化可逆 / 碱(皂化)不可逆</td><td>羧酸(根) + 醇</td></tr>
+<tr><td>酰胺</td><td>需较强酸/碱 + 加热（最难）</td><td>羧酸(根) + 胺/NH₃</td></tr>
+<tr><td>腈</td><td>酸/碱 + 加热（中途经酰胺）</td><td>羧酸（或先停在酰胺）</td></tr>
+</table>
+<p>难易顺序与活性顺序完全一致：<strong>酰氯最易、酰胺最难</strong>。</p></div>
+
+<div class="warn"><strong>常考陷阱</strong>：酰氯 + 醇 / 胺会放 HCl，写方程别忘了 HCl（或写"加吡啶吸收"）。酯化要高产率得移走水或用过量一方，否则只到平衡。</div>
+</div>
+
+<!-- ================ 13.4 酯水解机理 ================ -->
+<h3 id="k4">13.4 酯水解机理（BAC2 / AAC2 + ¹⁸O 标记）</h3>
+<div class="card">
+<div class="fb"><div class="t">碱性水解（皂化）= BAC2</div>
+<p>命名拆解：<strong>B</strong>ase（碱）+ <strong>AC</strong>yl-oxygen（酰氧断裂）+ <strong>2</strong>（双分子）。以乙酸乙酯 + OH⁻ 为例：</p>
+<img class="full" src="img/ch13_bac2_s1.svg" alt="BAC2 step 1: OH- 加成 → 四面体中间体">
+<img class="full" src="img/ch13_bac2_s2.svg" alt="BAC2 step 2: EtO- 离去">
+<img class="full" src="img/ch13_bac2_s3.svg" alt="BAC2 step 3: 羧酸根夺质子（不可逆）">
+<p><strong>Step 1</strong>：OH⁻ 进攻羰基 C → 四面体中间体（套用 13.2 母机理）。</p>
+<p><strong>Step 2</strong>：消除 EtO⁻ → 乙酸 + 乙醇（<strong>断的是酰氧 C–O 键</strong>，不是醇侧的 O–C 键）。</p>
+<p><strong>Step 3 关键</strong>：碱立刻夺走羧酸的质子生成<strong>羧酸根</strong> —— 这步<strong>把整个平衡拉到底，所以皂化不可逆</strong>。</p></div>
+
+<div class="fb"><div class="t">酸性水解 / 酯化 = AAC2（可逆）+ ¹⁸O 同位素证明</div>
+<p>酸催化酯化 RCOOH + R'OH ⇌ RCOOR' + H₂O，机理是<strong>A</strong>cid（酸）+ <strong>AC</strong>yl-oxygen + 2，与皂化对称但<strong>可逆</strong>。</p>
+<p><strong>经典证据</strong>：用 ¹⁸O 标记醇的氧（R'–¹⁸OH）做酯化，发现 <strong>¹⁸O 全部进了酯</strong>（RCO–¹⁸O–R'），生成的水里没有 ¹⁸O。</p>
+<p style="text-align:center;font-family:monospace;">CH₃CO–OH + CH₃–¹⁸OH ⇌ CH₃CO–¹⁸O–CH₃ + H₂O</p>
+<p>结论：断裂的是<strong>羧酸的酰氧 C–OH 键</strong>（酰氧断裂），脱去的水里的 O 来自<strong>羧酸</strong>而非醇。这正好与 BAC2/AAC2 经四面体中间体、消除 RO⁻ 的机理吻合。</p></div>
+
+<div class="warn"><strong>方向别搞反</strong>：正常酯化 / 水解是<strong>酰氧断裂</strong>（C(=O)—O 断）。只有特殊情况（3° 醇 / SN1 型）才走"烷氧断裂"（O—R 断）。同位素题答"醇 O 进酯、水 O 来自酸"。</div>
+</div>
+
+<!-- ================ 13.5 还原 ================ -->
+<h3 id="k5">13.5 还原（酯 / 酰胺 / 腈 / 酰氯，增不增碳是考点）</h3>
+<div class="card">
+<div class="fb"><div class="t">酯 + LiAlH₄ → 1° 醇</div>
+<img class="full" src="img/ch13_red_ester.svg" alt="酯还原">
+<p>LiAlH₄ 把酯一路还原到<strong>伯醇</strong>（同时放出 R'OH）。NaBH₄ 太弱，<strong>不还原酯</strong>（只还原醛酮）。</p></div>
+
+<div class="fb"><div class="t">酰氯 → 醛（停在醛要用温和试剂）</div>
+<img class="full" src="img/ch13_red_acylcl_aldehyde.svg" alt="酰氯还原成醛">
+<p>酰氯遇 LiAlH₄ 会一路冲到 1° 醇；要<strong>停在醛</strong>，用 <strong>LiAlH(OtBu)₃</strong>（三叔丁氧基氢化铝锂）或 <strong>Rosenmund 还原</strong>（Pd/BaSO₄ 毒化催化剂 + H₂）。</p></div>
+
+<div class="fb"><div class="t">酰胺 + LiAlH₄ → 胺（羰基变 CH₂，<strong>不增碳</strong>）</div>
+<img class="full" src="img/ch13_red_amide.svg" alt="酰胺还原成胺">
+<p>RCONH₂ → RCH₂NH₂：原来的羰基 C 变成 CH₂，碳数不变。</p></div>
+
+<div class="fb"><div class="t">腈 + LiAlH₄（或 H₂/Ni）→ 1° 胺（<strong>增 1 个碳</strong>）</div>
+<img class="full" src="img/ch13_red_nitrile.svg" alt="腈还原成胺">
+<p>R–C≡N → R–CH₂–NH₂：腈的 C 进入了 CH₂NH₂，所以<strong>比 R 多 1 个碳</strong>——这是合成上"增碳制伯胺"的常用法（先 RX + NaCN 增碳成腈，再还原）。</p></div>
+
+<div class="tip"><strong>增碳口诀</strong>：腈还原<strong>增 1 碳</strong>（R-CN 的 C 算进产物）；酰胺还原<strong>不增碳</strong>（羰基 C 原地变 CH₂）。合成题判断碳数对不对，盯这一点。</div>
+</div>
+
+<!-- ================ 13.6 Claisen 酯缩合 ================ -->
+<h3 id="k6">13.6 Claisen 酯缩合（造 β-酮酸酯）</h3>
+<div class="card">
+<div class="fb"><div class="t">2 个有 α-H 的酯 + EtONa → β-酮酸酯</div>
+<p>典型：2 分子乙酸乙酯 → <strong>乙酰乙酸乙酯</strong>（CH₃CO–CH₂–COOEt，1,3-二羰基）。这也是乙酰乙酸酯合成法的原料来源。</p>
+<p>$$2\ \text{CH}_3\text{COOEt} \xrightarrow{\text{EtONa};\ \text{H}_3\text{O}^+} \text{CH}_3\text{CO-CH}_2\text{-COOEt} + \text{EtOH}$$</p></div>
+
+<div class="fb"><div class="t">机理 4 步（连环图）</div>
+<img class="full" src="img/ch13_claisen_s1.svg" alt="Claisen step 1: 拔 α-H 生成烯醇负">
+<img class="full" src="img/ch13_claisen_s2.svg" alt="Claisen step 2: 碳负进攻另一分子羰基 → 四面体中间体">
+<img class="full" src="img/ch13_claisen_s3.svg" alt="Claisen step 3: 消除 EtO- 得 β-酮酸酯">
+<img class="full" src="img/ch13_claisen_s4.svg" alt="Claisen step 4: 产物去质子锁平衡">
+<p><strong>Step 1</strong>：EtO⁻ 拔走一个酯的 α-H → <strong>酯的 α-碳负离子（烯醇负离子）</strong>。</p>
+<p><strong>Step 2</strong>：这个碳负离子作亲核体，进攻<strong>另一分子酯</strong>的羰基 C → 四面体中间体（又是母机理！）。</p>
+<p><strong>Step 3</strong>：消除 EtO⁻ → 乙酰乙酸乙酯（β-酮酸酯）。</p>
+<p><strong>Step 4 关键</strong>：产物的 α-H 夹在两个羰基之间，<strong>酸性极强</strong>，立刻被 EtO⁻ 拔成稳定的烯醇负盐 —— <strong>这一步把平衡彻底拉向产物</strong>（最后再 H₃O⁺ 酸化得中性产物）。</p></div>
+
+<div class="warn"><strong>酯必须有 ≥2 个 α-H</strong>：因为产物需要保留 1 个活泼 H（被 Step 4 拔走锁平衡）。乙酸乙酯有 3 个 α-H ✓；异丁酸乙酯 (CH₃)₂CHCOOEt 只有 1 个 α-H，自身 Claisen <strong>走不通</strong>。</div>
+
+<div class="fb"><div class="t">两个变体</div>
+<ul>
+<li><strong>分子内 Claisen = Dieckmann 缩合</strong>：二元酸二酯成环 → 环状 β-酮酸酯（如己二酸二乙酯 → 2-氧代环戊烷甲酸乙酯）。</li>
+<li><strong>交叉 Claisen</strong>：让一方<strong>无 α-H 只当亲电体</strong>（草酸酯、苯甲酸酯、甲酸酯）+ 一方有 α-H → 产物单一，避免混合物。</li>
+</ul></div>
+
+<div class="warn"><strong>别和羟醛缩合混</strong>：Claisen 产物是 <strong>β-酮酸酯（1,3-二羰基）</strong>；羟醛（Aldol）产物是 <strong>β-羟基醛酮</strong>。区别在于酯的羰基有离去基 OEt（加成后消除），醛酮没有（停在加成）。碱要用<strong>对应酯烷氧基的醇钠</strong>（乙酯配 EtONa），避免酯交换。</div>
+</div>
+
+<!-- ================ 13.7 脱羧 ================ -->
+<h3 id="k7">13.7 脱羧（β-酮酸 / 丙二酸的六元环过渡态）</h3>
+<div class="card">
+<div class="fb"><div class="t">β-羰基羧酸受热极易脱羧</div>
+<p>羧基的 β 位若有 C=O（即 β-酮酸、β-二酸如丙二酸），<strong>受热极易脱 CO₂</strong>；普通羧酸（如乙酸）很难脱羧。</p>
+<p>$$\text{RCOCH}_2\text{COOH} \xrightarrow{\Delta} \text{RCOCH}_3 + \text{CO}_2\uparrow$$</p></div>
+
+<div class="fb"><div class="t">为什么——六元环过渡态</div>
+<p>脱羧走<strong>六元环过渡态</strong>：羧基的 OH 氢转移到 β 位的羰基 O 上，同时 C–C 键断裂放出 CO₂，先生成<strong>烯醇</strong>，烯醇再互变成更稳定的酮（或酸）。</p>
+<p><strong>关键</strong>：必须有 <strong>β-位羰基 O</strong> 在六元环里"接住"那个氢——普通羧酸搭不出这个六元环，所以脱羧难。丙二酸的两个羧基里，一个就充当另一个的"β-羰基"，故同样易脱羧。</p>
+<ul>
+<li>乙酰乙酸 CH₃COCH₂COOH ──Δ──► <strong>丙酮 CH₃COCH₃ + CO₂</strong></li>
+<li>丙二酸 HOOC–CH₂–COOH ──Δ──► <strong>乙酸 CH₃COOH + CO₂</strong></li>
+</ul></div>
+
+<div class="warn"><strong>易错</strong>：① 只有<strong>β-位有羰基（酮/酸/酯）</strong>才易脱羧，α-羟基酸、普通羧酸不在此列。② 机理是<strong>协同的六元环 H 转移（经烯醇）</strong>，不是离子型，别画碳负离子。③ 这是丙二酸酯 / 乙酰乙酸酯合成法的"收尾步"（见 13.8、13.9）。</div>
+</div>
+
+<!-- ================ 13.8 丙二酸酯合成法 ================ -->
+<h3 id="k8">13.8 丙二酸酯合成法（造支链羧酸 RCH₂COOH）</h3>
+<div class="card">
+<div class="fb"><div class="t">总反应：丙二酸二乙酯 → 取代乙酸</div>
+<p>$$\text{CH}_2(\text{COOEt})_2 \xrightarrow{\text{EtONa}} \overset{-}{\text{CH}}(\text{COOEt})_2 \xrightarrow{\text{RX}} \text{RCH}(\text{COOEt})_2 \xrightarrow{\text{H}_3\text{O}^+,\Delta} \text{RCH}_2\text{COOH}$$</p>
+<p>核心：被<strong>两个酯基夹住的活泼亚甲基</strong>（pKa≈13）容易被 EtONa 拔成碳负离子，去做 SN2 烷基化；最后水解 + 脱羧卸掉"工具羧基"。</p></div>
+
+<div class="fb"><div class="t">机理 / 步骤（连环图，以制戊酸为例）</div>
+<img class="full" src="img/ch13_malonic_s1.svg" alt="丙二酸酯 step 1: 拔活泼亚甲基 H">
+<img class="full" src="img/ch13_malonic_s2.svg" alt="丙二酸酯 step 2: 烷基化">
+<img class="full" src="img/ch13_malonic_s3.svg" alt="丙二酸酯 step 3: 水解成二酸">
+<img class="full" src="img/ch13_malonic_s4.svg" alt="丙二酸酯 step 4: 脱羧得戊酸">
+<ol>
+<li><strong>EtONa 拔氢</strong>：活泼亚甲基的 H 被拔走 → 碳负离子（被两边酯羰基共振稳定）。</li>
+<li><strong>烷基化</strong>：+ R–X（这里 1-溴丙烷，SN2）→ C 上接上丙基。</li>
+<li><strong>水解</strong>：H₃O⁺ 把两个酯水解成<strong>取代丙二酸</strong>。</li>
+<li><strong>脱羧</strong>：加热（β-二酸，六元环过渡态）放 CO₂ → <strong>戊酸 RCH₂COOH</strong>。</li>
+</ol></div>
+
+<div class="tip"><strong>二取代乙酸</strong>：需要 RR'CHCOOH 时，<strong>先拔氢接 R，再拔一次氢接 R'</strong>，最后水解脱羧。</div>
+<div class="warn"><strong>易错</strong>：① 烷基化卤代烃<strong>用 1°/甲基/烯丙/苄</strong>，3° 卤代烃只会被碳负离子做 E2 消除，接不上。② <strong>别漏最后脱羧步</strong>——合成题漏写脱羧扣分。③ 丙二酸酯法只造<strong>羧酸</strong>，造甲基酮要用乙酰乙酸酯法。</div>
+</div>
+
+<!-- ================ 13.9 乙酰乙酸酯合成法 ================ -->
+<h3 id="k9">13.9 乙酰乙酸酯合成法（造甲基酮 CH₃COCH₂R）</h3>
+<div class="card">
+<div class="fb"><div class="t">总反应：乙酰乙酸乙酯 → 甲基酮</div>
+<p>$$\text{CH}_3\text{COCH}_2\text{COOEt} \xrightarrow{\text{EtONa}} \text{烯醇负} \xrightarrow{\text{RX}} \text{CH}_3\text{COCHR-COOEt} \xrightarrow{\text{稀碱},\Delta} \text{CH}_3\text{COCH}_2\text{R}$$</p>
+<p>与丙二酸酯法同构，只是活泼 H 夹在<strong>一个酮 + 一个酯</strong>之间（pKa≈11）。</p></div>
+
+<div class="fb"><div class="t">机理 / 步骤（连环图，以制 2-戊酮为例）</div>
+<img class="full" src="img/ch13_aae_s1.svg" alt="乙酰乙酸酯 step 1: 拔 α-H">
+<img class="full" src="img/ch13_aae_s2.svg" alt="乙酰乙酸酯 step 2: 烷基化">
+<img class="full" src="img/ch13_aae_s3.svg" alt="乙酰乙酸酯 step 3: 水解成 β-酮酸">
+<img class="full" src="img/ch13_aae_s4.svg" alt="乙酰乙酸酯 step 4: 脱羧得 2-戊酮">
+<ol>
+<li>EtONa 拔 α-H → 碳负离子（酮 + 酯共同稳定）。</li>
+<li>+ CH₃CH₂Br（SN2）→ α-烷基化。</li>
+<li>稀碱水解酯 → <strong>β-酮酸</strong>。</li>
+<li>加热脱羧（β-酮酸，六元环过渡态）→ <strong>2-戊酮 CH₃COCH₂CH₂CH₃</strong>（甲基酮）。</li>
+</ol></div>
+
+<div class="tip"><strong>两法用途速辨（合成题先逆推）</strong>：目标是 <strong>RCH₂COOH（乙酸 α 位接 R）→ 丙二酸酯法</strong>；目标是 <strong>CH₃COCH₂R（甲基酮）→ 乙酰乙酸酯法</strong>。</div>
+</div>
+
+<!-- ================ 13.10 Hofmann 降解 ================ -->
+<h3 id="k10">13.10 Hofmann 降解（酰胺 → 伯胺，少一个碳）</h3>
+<div class="card">
+<div class="fb"><div class="t">总反应：RCONH₂ + Br₂/NaOH → RNH₂（碳数 −1）</div>
+<p>以丙酰胺 → 乙胺为例。<strong>产物伯胺比原酰胺少一个碳</strong>，关键是中间经过<strong>异氰酸酯</strong>（R 基迁移到 N）。</p></div>
+
+<div class="fb"><div class="t">机理 5 步（连环图）</div>
+<img class="full" src="img/ch13_hof_s1.svg" alt="Hofmann step 1: N-溴代">
+<img class="full" src="img/ch13_hof_s2.svg" alt="Hofmann step 2: 去质子">
+<img class="full" src="img/ch13_hof_s3.svg" alt="Hofmann step 3: R 迁移 → 异氰酸酯">
+<img class="full" src="img/ch13_hof_s4.svg" alt="Hofmann step 4: 异氰酸酯水解">
+<img class="full" src="img/ch13_hof_s5.svg" alt="Hofmann step 5: 脱羧得伯胺">
+<ol>
+<li><strong>N-溴代</strong>：Br₂/NaOH 把酰胺一个 N–H 换成 N–Br。</li>
+<li><strong>去质子</strong>：OH⁻ 夺走剩下的 N–H → N-溴代酰胺负离子（N 上带负电）。</li>
+<li><strong>R 迁移（关键步）</strong>：R 基<strong>带着成键电子对从羰基 C 迁移到相邻 N 上</strong>，同时 Br⁻ 离去 → 生成<strong>异氰酸酯 R–N=C=O</strong>。<u>正是这步让 R 从"挂在羰基 C 上"变成"挂在 N 上"，最终的氨基碳来自原羰基碳，所以产物比原 R 链少算一个碳。</u></li>
+<li><strong>水解</strong>：异氰酸酯 + H₂O → 氨基甲酸 R–NH–COOH（不稳定）。</li>
+<li><strong>脱羧</strong>：氨基甲酸自动脱 CO₂ → <strong>伯胺 R–NH₂</strong>。</li>
+</ol></div>
+
+<div class="warn"><strong>必考点</strong>：① 产物一定是<strong>伯胺</strong>（不会是 2°/3°）。② <strong>少一个碳</strong>——原羰基碳以 CO₂ 形式离开。③ <strong>异氰酸酯</strong>是核心中间体，机理题画出 R 迁移 + N=C=O 才给分。</div>
+
+<div class="tip"><strong>对比记忆</strong>：腈还原制胺是<strong>增 1 碳</strong>；Hofmann 降解是<strong>减 1 碳</strong>。两者一增一减，合成调碳数时各取所需。</div>
+</div>
+
+<!-- ================ 13.11 Gabriel 合成 ================ -->
+<h3 id="k11">13.11 Gabriel 合成（制纯伯胺）</h3>
+<div class="card">
+<div class="fb"><div class="t">邻苯二甲酰亚胺 K 盐 + RX → 水解 → 纯 1° 胺</div>
+<img class="full" src="img/ch13_gabriel_s1.svg" alt="Gabriel step 1: N-烷基化">
+<img class="full" src="img/ch13_gabriel_s2.svg" alt="Gabriel step 2: 水解得纯伯胺">
+<p><strong>Step 1</strong>：邻苯二甲酰亚胺的 N⁻（酰亚胺 N–H 酸性强，易成盐）作亲核体，对 R–X 做 SN2 → N-烷基邻苯二甲酰亚胺。</p>
+<p><strong>Step 2</strong>：水解（或用肼 N₂H₄ 肼解）→ <strong>纯净伯胺</strong> + 邻苯二甲酸（副产物）。</p></div>
+
+<div class="warn"><strong>为什么不用 RX + NH₃ 直接做胺</strong>：直接氨解会<strong>过度烷基化</strong>——生成的 1° 胺更亲核，继续被烷基化成 2°、3° 甚至季铵盐的混合物。Gabriel 用酰亚胺氮"<strong>一次性只接一个 R</strong>"，水解后只得单一伯胺，干净。R–X 同样要用 <strong>1°/烯丙/苄基</strong>（3° 卤代会走消除）。</div>
+
+<div class="tip"><strong>制伯胺三选一</strong>：① <strong>Gabriel</strong>（RX → 纯伯胺）；② <strong>腈还原</strong>（RX + NaCN → RCN → RCH₂NH₂，增 1 碳）；③ <strong>还原胺化</strong>（羰基 + NH₃ + NaBH₃CN）。都是为了绕开"直接氨解多烷基化"。</div>
+</div>
+
+<!-- ================ 13.12 鉴别 ================ -->
+<h3 id="k12">13.12 鉴别方法</h3>
+<div class="card">
+<div class="fb"><div class="t">常见衍生物的区分思路</div>
+<table style="font-size:.92em;">
+<tr><th>化合物</th><th>特征 / 试剂</th><th>现象</th></tr>
+<tr><td><strong>酰氯</strong></td><td>遇水/醇剧烈反应；+ AgNO₃</td><td>立即放热水解，加 AgNO₃ 生成 AgCl↓</td></tr>
+<tr><td><strong>酯</strong></td><td>异羟肟酸铁试验（NH₂OH/FeCl₃）</td><td>显紫红色（酯特征）</td></tr>
+<tr><td><strong>酰胺</strong></td><td>强碱共热放氨；难水解</td><td>湿润红色石蕊试纸变蓝（NH₃）</td></tr>
+<tr><td><strong>腈</strong></td><td>强酸/碱长时间煮才水解</td><td>水解后才显羧酸性</td></tr>
+<tr><td><strong>β-酮酸酯</strong></td><td>FeCl₃（含烯醇式 1,3-二羰基）</td><td>显紫色（烯醇式与 Fe³⁺ 配位）</td></tr>
+</table></div>
+
+<div class="tip"><strong>实战思路</strong>：先看"遇水反应剧烈程度"分出活性档（酰氯最剧烈、酰胺最钝）；β-酮酸酯（如乙酰乙酸乙酯）因有烯醇式，能像酚一样<strong>与 FeCl₃ 显紫色</strong>，是与普通酯的快速区分点。</div>
+</div>
+
+<!-- ================ 习题精讲 ================ -->
+<h2 id="ex">习题精讲（典型合成 / 机理）</h2>
+
+<div class="ex"><strong>例题 1 — 由乙酰乙酸乙酯合成 2-戊酮</strong>
+<details><summary>展开</summary><div class="sol">
+<p>目标 CH₃COCH₂CH₂CH₃ 是<strong>甲基酮</strong> → 用乙酰乙酸酯法。</p>
+<ol>
+<li>CH₃COCH₂COOEt ──EtONa──► 碳负离子</li>
+<li>──CH₃CH₂Br（SN2）──► CH₃COCH(C₂H₅)COOEt</li>
+<li>──稀碱水解──► β-酮酸 CH₃COCH(C₂H₅)COOH</li>
+<li>──Δ 脱羧──► <strong>CH₃COCH₂CH₂CH₃（2-戊酮）</strong></li>
+</ol>
+<p>关键：所接的乙基（来自 CH₃CH₂Br）+ 原乙酰甲基拼成 2-戊酮；别漏脱羧步。</p>
+</div></details></div>
+
+<div class="ex"><strong>例题 2 — 由丙二酸二乙酯合成正丁酸</strong>
+<details><summary>展开</summary><div class="sol">
+<p>目标 CH₃CH₂CH₂COOH = C₂H₅CH₂COOH，是"乙酸 α 位接乙基"型<strong>支链羧酸</strong> → 丙二酸酯法。</p>
+<ol>
+<li>CH₂(COOEt)₂ ──EtONa──► ⁻CH(COOEt)₂</li>
+<li>──CH₃CH₂Br──► C₂H₅CH(COOEt)₂</li>
+<li>──H₃O⁺ 水解──► C₂H₅CH(COOH)₂（取代丙二酸）</li>
+<li>──Δ 脱羧──► <strong>C₂H₅CH₂COOH（正丁酸）</strong></li>
+</ol>
+</div></details></div>
+
+<div class="ex"><strong>例题 3 — 丙酰胺 Hofmann 降解给什么？</strong>
+<details><summary>展开</summary><div class="sol">
+<p>CH₃CH₂CONH₂ ──Br₂/NaOH──► <strong>乙胺 CH₃CH₂NH₂</strong>（不是丙胺！）</p>
+<p>原因：经异氰酸酯 CH₃CH₂–N=C=O 中间体，原来的羰基碳以 CO₂ 形式离开 → <strong>产物少一个碳</strong>。</p>
+<p>机理要点：N-溴代 → 去质子 → R 迁移到 N（同时 Br⁻ 走）成异氰酸酯 → 水解 → 脱羧得伯胺。</p>
+</div></details></div>
+
+<div class="ex"><strong>例题 4 — 把乙酸高产率转成乙酸乙酯</strong>
+<details><summary>展开</summary><div class="sol">
+<p>直接 Fischer 酯化（CH₃COOH + EtOH/H⁺）是<strong>可逆平衡</strong>，产率受限。改走酰氯路线：</p>
+<p>CH₃COOH ──SOCl₂──► CH₃COCl ──C₂H₅OH（吡啶）──► <strong>CH₃COOC₂H₅</strong></p>
+<p>酰氯醇解<strong>不可逆</strong>，产率高；SOCl₂ 的副产物 SO₂/HCl 都是气体易除。</p>
+</div></details></div>
+
+<div class="ex"><strong>例题 5 — 己二酸二乙酯 + EtONa 给什么（Dieckmann）？</strong>
+<details><summary>展开</summary><div class="sol">
+<p>分子内 Claisen（Dieckmann 缩合）：一端的 α-碳负离子进攻同分子另一端的酯羰基，关五元环。</p>
+<p>产物 = <strong>2-氧代环戊烷甲酸乙酯</strong>（环状 β-酮酸酯）。</p>
+<p>能成五/六元环时分子内缩合最有利。</p>
+</div></details></div>
+
+<div class="ex"><strong>例题 6 — 由 1-溴丁烷制戊胺（增碳）</strong>
+<details><summary>展开</summary><div class="sol">
+<p>要<strong>增 1 个碳</strong>的伯胺 → 腈法：</p>
+<p>C₄H₉Br ──NaCN（SN2）──► C₄H₉CN（戊腈）──LiAlH₄──► <strong>C₄H₉CH₂NH₂（戊胺）</strong></p>
+<p>腈的 C 进入 CH₂NH₂，所以产物比原卤代烃多 1 个碳。若想<strong>不增碳</strong>得纯伯胺，则用 Gabriel。</p>
+</div></details></div>
+
+<!-- ================ 自检 10 题 ================ -->
+<h2 id="selftest">📝 自检 10 题（先想答案再展开）</h2>
+<div class="tip">每道题先关掉答案自己想 30 秒，再点击展开看答案。这 10 题覆盖本章所有高频考点。</div>
+
+<div class="ex"><strong>自检 1</strong>：酰氯、酸酐、酯、酰胺谁最活泼？给两条理由。
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>酰氯最活泼</strong>，顺序：酰氯 &gt; 酸酐 &gt; 酯 &gt; 酰胺。</p>
+<p>① 离去基好走：Cl⁻ &gt; RCOO⁻ &gt; RO⁻ &gt; NH₂⁻；② 相邻杂原子给羰基共轭供电：N 最强（酰胺最钝）、Cl 几乎不给（酰氯最活泼）。两条方向一致。</p>
+<p>→ 详见 <a href="#k1">13.1</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 2</strong>：亲核酰基取代的"四面体中间体"是什么？为什么衍生物表现为取代而醛酮表现为加成？
+<details><summary>展开答案</summary><div class="sol">
+<p>Nu 进攻羰基 C 后，C 由 sp²→sp³ 生成带氧负的<strong>四面体中间体</strong>。</p>
+<p>衍生物羰基 C 上<strong>有离去基</strong>，中间体会消除离去基重建 C=O → 整体"取代"；醛酮没离去基，停在加成产物（醇）。</p>
+<p>→ 详见 <a href="#k2">13.2</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 3</strong>：酯的皂化为什么不可逆？机理代号是什么？
+<details><summary>展开答案</summary><div class="sol">
+<p>代号 <strong>BAC2</strong>（碱-酰氧断裂-双分子）。OH⁻ 加成 → 四面体中间体 → 消除 RO⁻ 得羧酸 → <strong>碱立刻夺羧酸质子成羧酸根</strong>，这步把平衡彻底拉到底 → <strong>不可逆</strong>。</p>
+<p>→ 详见 <a href="#k4">13.4</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 4</strong>：¹⁸O 标记醇做酯化，¹⁸O 进了哪里？说明什么？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>¹⁸O 全部进了酯</strong>（RCO–¹⁸O–R'），水里没有。说明断的是<strong>羧酸的酰氧 C–OH 键（酰氧断裂）</strong>，脱去的水里 O 来自羧酸而非醇。</p>
+<p>→ 详见 <a href="#k4">13.4</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 5</strong>：Claisen 酯缩合对酯的 α-H 有什么要求？为什么？产物是什么类？
+<details><summary>展开答案</summary><div class="sol">
+<p>酯必须有 <strong>≥2 个 α-H</strong>。因为产物（β-酮酸酯）要保留 1 个夹在两羰基间的活泼 H，被 EtO⁻ 拔成稳定烯醇负盐<strong>锁定平衡</strong>。</p>
+<p>产物是 <strong>β-酮酸酯（1,3-二羰基）</strong>，别和羟醛缩合的 β-羟基醛酮混。</p>
+<p>→ 详见 <a href="#k6">13.6</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 6</strong>：丙二酸酯法和乙酰乙酸酯法分别造什么？合成时怎么选？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>丙二酸酯法 → 支链羧酸 RCH₂COOH</strong>；<strong>乙酰乙酸酯法 → 甲基酮 CH₃COCH₂R</strong>。</p>
+<p>逆推：目标是"乙酸 α 位接 R"型羧酸用丙二酸酯法；目标是甲基酮用乙酰乙酸酯法。两法都是拔氢-烷基化-水解-脱羧，<strong>别漏脱羧</strong>，烷基化卤代烃用 1°（不能 3°）。</p>
+<p>→ 详见 <a href="#k8">13.8</a> + <a href="#k9">13.9</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 7</strong>：为什么 β-酮酸 / 丙二酸受热极易脱羧，乙酸却不会？
+<details><summary>展开答案</summary><div class="sol">
+<p>β-羰基羧酸脱羧走<strong>六元环过渡态</strong>：β 位的羰基 O 在六元环里接住羧基的 H，同时 C–C 断放 CO₂ → 经烯醇互变成酮/酸。</p>
+<p>普通羧酸（乙酸）<strong>没有 β-羰基</strong>，搭不出这个六元环，所以脱羧难。机理是协同 H 转移，不画碳负离子。</p>
+<p>→ 详见 <a href="#k7">13.7</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 8</strong>：丙酰胺 Hofmann 降解给乙胺还是丙胺？为什么？关键中间体是？
+<details><summary>展开答案</summary><div class="sol">
+<p>给 <strong>乙胺 CH₃CH₂NH₂</strong>（少一个碳！）。关键中间体 = <strong>异氰酸酯 CH₃CH₂–N=C=O</strong>。</p>
+<p>R 基带电子对从羰基 C 迁移到 N（Br⁻ 同时离去），原羰基碳最后以 CO₂ 离开 → 产物比原酰胺少 1 个碳，且一定是<strong>伯胺</strong>。</p>
+<p>→ 详见 <a href="#k10">13.10</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 9</strong>：为什么制纯伯胺不直接用 RX + NH₃？两个干净的替代法是？
+<details><summary>展开答案</summary><div class="sol">
+<p>直接氨解会<strong>过度烷基化</strong>（伯胺更亲核，继续被烷基化成 2°/3°/季铵混合物）。</p>
+<p>干净替代：① <strong>Gabriel 合成</strong>（酰亚胺 N 一次只接一个 R，水解得纯伯胺，不增碳）；② <strong>腈还原</strong>（RX→RCN→RCH₂NH₂，增 1 碳）。</p>
+<p>→ 详见 <a href="#k11">13.11</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 10</strong>：腈还原和酰胺还原，碳数各怎么变？怎么用来调碳？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>腈还原增 1 碳</strong>：R–C≡N → R–CH₂–NH₂（腈的 C 进了 CH₂NH₂）。</p>
+<p><strong>酰胺还原不增碳</strong>：RCONH₂ → RCH₂NH₂（羰基 C 原地变 CH₂）。</p>
+<p>需要增碳制伯胺用腈法；只想还原不动碳骨架用酰胺；要减碳则用 Hofmann 降解。</p>
+<p>→ 详见 <a href="#k5">13.5</a></p>
+</div></details></div>
+
+<!-- ================ 考前提醒 ================ -->
+<h2 id="tips">考前提醒</h2>
+
+<div class="warn"><strong>活性顺序 + 方向铁律</strong>：酰氯 &gt; 酸酐 &gt; 酯 &gt; 酰胺；只能由活泼→不活泼。看到"酰胺直接变酯"一步法 → 判错。</div>
+
+<div class="warn"><strong>统一机理</strong>：水解 / 醇解 / 氨解 / Claisen 全是<strong>亲核酰基取代（加成-消除，经四面体中间体）</strong>。机理题先画 Nu 进攻羰基 C → 四面体中间体 → 消除离去基。</div>
+
+<div class="warn"><strong>酯水解</strong>：皂化 = BAC2（不可逆，羧酸根锁平衡）；酯化/酸性水解 = AAC2（可逆）。¹⁸O 题答"酰氧断裂、醇 O 进酯"。</div>
+
+<div class="warn"><strong>Claisen 缩合</strong>：酯须 ≥2 个 α-H；产物是 β-酮酸酯（1,3-二羰基），别和羟醛缩合的 β-羟基醛酮混。分子内的叫 Dieckmann。</div>
+
+<div class="warn"><strong>两套合成法</strong>：丙二酸酯法 → 支链羧酸；乙酰乙酸酯法 → 甲基酮。流程都是拔氢-烷基化-水解-脱羧，<strong>别漏脱羧</strong>，烷基化用 1° 卤代烃。</div>
+
+<div class="warn"><strong>Hofmann 降解</strong>：RCONH₂ + Br₂/NaOH → RNH₂，<strong>少一个碳</strong>，经异氰酸酯（R 迁移到 N）。一定得伯胺。</div>
+
+<div class="warn"><strong>制纯伯胺</strong>：Gabriel（不增碳）/ 腈还原（增 1 碳）/ 还原胺化，三选一，别直接 RX + NH₃（多烷基化）。</div>
+
+<div class="warn"><strong>还原碳数</strong>：酯→1° 醇；酰胺→胺(不增碳)；腈→1° 胺(增 1 碳)；酰氯停在醛用 LiAlH(OtBu)₃ 或 Rosenmund。</div>
+
+<div class="warn"><strong>脱羧</strong>：只有 β-位有羰基（酮/酸/酯）才易脱羧，走六元环过渡态经烯醇。普通羧酸、α-羟基酸不脱。</div>
+
+<div class="note">本章按沈增明《有机化学》第三版（SJTU 自编）的羧酸衍生物章组织；内容核对自《真题考点全解》《详解》+ 标准有机化学。波谱不在本页范围。具体试剂条件 / 个别产物，考前以教材为准。</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

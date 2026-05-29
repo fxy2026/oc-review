@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第11章 醛和酮 | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+h4{color:#444;font-size:1.0em;margin:14px 0 8px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+.imgrow{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:10px 0;}
+.imgrow img{max-width:48%;height:auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.full{display:block;max-width:100%;margin:10px auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.med{display:block;max-width:75%;margin:10px auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.small{display:inline-block;max-width:32%;margin:5px;border:1px solid #ddd;border-radius:4px;background:#fff;vertical-align:middle;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">📚 目录</a><a href="ch10.html">← 第10章</a></div>
+<h1>第11章 醛和酮</h1>
+
+<div class="tip"><strong>本章核心思路</strong>：醛酮的灵魂是 <strong>羰基 C=O</strong>。C 部分正电（亲电），O 部分负电（亲核/能被质子化），α-H 因羰基拉电子而有酸性。<strong>三条主线：① 羰基碳的亲核加成；② α-H 的烯醇/烯醇负离子化学；③ 羰基的氧化还原。</strong>把每个反应归到这三条线，就不会乱。</div>
+
+<!-- ================ 考前 30 秒速查 ================ -->
+<div class="card" style="background:#fff5f5;border:2px solid #c0392b;">
+<h3 style="color:#c0392b;border-left-color:#c0392b;margin-top:0;">🔥 考前 30 秒速查（必背）</h3>
+<table style="font-size:.95em;">
+<tr><th style="background:#c0392b;">类型</th><th style="background:#c0392b;">规律</th></tr>
+<tr><td>亲核加成活性</td><td>HCHO &gt; RCHO &gt; R₂CO &gt; 大位阻酮（电子 + 位阻一致）</td></tr>
+<tr><td>羟醛缩合（有 α-H）</td><td>稀碱低温 → β-羟基醛酮；浓碱/Δ → 脱水 → α,β-不饱和醛酮</td></tr>
+<tr><td>Cannizzaro（无 α-H）</td><td>HCHO / PhCHO + 浓强碱 → 歧化（醇 + 羧酸盐）</td></tr>
+<tr><td>碘仿黄沉 CHI₃</td><td>CH₃CO– 或 CH₃CH(OH)– 结构（甲基酮 / 乙醛 / 乙醇 / 2-醇）</td></tr>
+<tr><td>缩醛 / 缩酮</td><td>2 ROH / 干 HCl，可逆，<strong>保护羰基</strong>（稀酸水解还原）</td></tr>
+<tr><td>Wittig</td><td>Ph₃P=CHR + 醛酮 → 烯（定向 C=C）+ Ph₃P=O</td></tr>
+<tr><td>NaBH₄ vs LiAlH₄</td><td>NaBH₄ 只还原醛酮；LiAlH₄ 强，连酸/酯一起还原 → 醇</td></tr>
+<tr><td>C=O → CH₂</td><td>Clemmensen（Zn-Hg/HCl，<strong>耐酸</strong>）｜Wolff-Kishner（NH₂NH₂/KOH/Δ，<strong>耐碱</strong>）</td></tr>
+<tr><td>鉴别三件套</td><td>2,4-DNP（验羰基）/ Tollens 银镜（验醛）/ 碘仿（验甲基酮）</td></tr>
+<tr><td>Tollens vs Fehling</td><td>Tollens 脂肪+芳醛都灵；Fehling 只对<strong>脂肪醛</strong>（芳醛阴性）</td></tr>
+</table>
+</div>
+
+<!-- ================ 知识点导航 ================ -->
+<div class="card" style="background:#fffbf0;border:2px solid #f39c12;">
+<h3 style="color:#e67e22;border-left-color:#e67e22;margin-top:0;">📝 本页章节导航</h3>
+<table style="font-size:.92em;">
+<tr><th>三条主线</th><th>反应</th><th>跳转</th></tr>
+<tr><td rowspan="5">① 亲核加成</td><td>活性顺序</td><td><a href="#k2">11.2 活性</a></td></tr>
+<tr><td>+HCN（增 1 C）</td><td><a href="#k3a">11.3①</a></td></tr>
+<tr><td>+NaHSO₃ / +RMgX</td><td><a href="#k3b">11.3②③</a></td></tr>
+<tr><td>+ROH 缩醛（保护）</td><td><a href="#k3d">11.3④</a></td></tr>
+<tr><td>Wittig / +含氮亲核体</td><td><a href="#k3e">11.3⑤</a> / <a href="#k3f">11.3⑥</a></td></tr>
+<tr><td rowspan="4">② α-H 反应</td><td>羟醛缩合（稀碱 vs 浓碱）</td><td><a href="#k4a">11.4①</a></td></tr>
+<tr><td>交叉羟醛</td><td><a href="#k4b">11.4②</a></td></tr>
+<tr><td>卤仿 / 碘仿</td><td><a href="#k4c">11.4③</a></td></tr>
+<tr><td>Mannich / Stork 烯胺</td><td><a href="#k4d">11.4④</a> / <a href="#k4e">11.4⑤</a></td></tr>
+<tr><td rowspan="3">③ 氧化还原</td><td>NaBH₄ / LiAlH₄ 还原</td><td><a href="#k5a">11.5①</a></td></tr>
+<tr><td>Clemmensen / Wolff-Kishner</td><td><a href="#k5b">11.5②</a></td></tr>
+<tr><td>Tollens / Fehling / Cannizzaro</td><td><a href="#k5c">11.5③</a> / <a href="#k5d">11.5④</a></td></tr>
+<tr><td>鉴别</td><td>2,4-DNP / Tollens / 碘仿</td><td><a href="#k6">11.6 鉴别</a></td></tr>
+</table>
+</div>
+
+<div class="note"><strong>教材依据</strong>：本页按沈增明《有机化学》（第三版，SJTU 自编）醛酮章组织；反应条件与产物已对照标准有机化学核对。⚠️ 醛酮章<strong>无独立真题卷</strong>，碘仿底物范围 / Cannizzaro 适用 / 缩醛保护等细节，考前请再用教材核对一遍措辞。波谱内容本页不做。</div>
+
+<h2 id="kp">核心知识点</h2>
+
+<!-- ================ 11.1 命名 ================ -->
+<h3 id="k1">11.1 命名 (Nomenclature)</h3>
+<div class="card">
+
+<div class="fb"><div class="t">醛的命名</div>
+<ul>
+<li>选含 —CHO 的最长碳链为主链，词尾用 <strong>-醛 (-al)</strong>；醛基碳<strong>永远是 C1</strong>（不必标位次）。</li>
+<li>例：CH₃CH₂CHO = 丙醛 (propanal)；CH₃CH=CHCHO = 2-丁烯醛 (but-2-enal，巴豆醛/巴豆醛)。</li>
+<li>常用俗名：甲醛 HCHO (formaldehyde)、乙醛 CH₃CHO (acetaldehyde)、苯甲醛 PhCHO (benzaldehyde)、肉桂醛 PhCH=CHCHO (cinnamaldehyde)。</li>
+</ul></div>
+
+<div class="fb"><div class="t">酮的命名</div>
+<ul>
+<li>选含 C=O 的最长链为主链，词尾用 <strong>-酮 (-one)</strong>，编号让羰基位次最小。</li>
+<li>例：CH₃COCH₂CH₃ = 丁-2-酮 (butan-2-one)；CH₃COCH₃ = 丙酮 (propanone/acetone)。</li>
+<li>芳酮：PhCOCH₃ = 苯乙酮 (acetophenone)；PhCOPh = 二苯甲酮 (benzophenone)。</li>
+<li>含两个官能团时优先级：<strong>羧酸 &gt; 酯 &gt; 酰胺 &gt; 醛 &gt; 酮 &gt; 醇 &gt; 胺</strong>。醛比酮优先（同时有醛酮时，醛为后缀、酮作"氧代 (oxo-)"取代基）。</li>
+</ul></div>
+
+<div class="tip"><strong>易错</strong>：醛基 C1 不写位次（"丁醛"不写"丁-1-醛"）；酮一定要写位次（"戊-2-酮"≠"戊-3-酮"）。</div>
+</div>
+
+<!-- ================ 11.2 结构与活性 ================ -->
+<h3 id="k2">11.2 羰基结构 + 亲核加成活性顺序</h3>
+<div class="card">
+
+<div class="fb"><div class="t">羰基 C=O 的极性</div>
+<p>C=O 中 O 电负性大 → 电子偏向 O：<strong>C 带 δ⁺（亲电中心，挨亲核试剂打）、O 带 δ⁻（亲核 / 可被质子化）</strong>。共振式 C=O ↔ C⁺–O⁻ 描述了这点。所以醛酮的两类进攻方式：<strong>亲核试剂打 C、亲电试剂（H⁺）抓 O</strong>。</p></div>
+
+<div class="fb"><div class="t">亲核加成活性顺序（电子 + 位阻一致）</div>
+<p style="text-align:center;font-weight:bold;">HCHO &gt; RCHO &gt; R₂CO &gt; 大位阻酮</p>
+<div class="imgrow">
+<img src="img/ch11_react_hcho.png" alt="HCHO 最活泼">
+<img src="img/ch11_react_rcho.png" alt="RCHO 居中">
+</div>
+<img class="med" src="img/ch11_react_r2co.png" alt="R2CO 较钝">
+<ul>
+<li><strong>电子效应</strong>：烷基 +I 推电子，部分中和羰基碳的 δ⁺ → 烷基越多，C 越"不缺电子"，越不易被亲核进攻。</li>
+<li><strong>位阻效应</strong>：烷基越多越大，亲核试剂越难接近羰基碳。</li>
+<li>两效应方向一致 → 甲醛（0 烷基）最活泼，酮（2 烷基）较钝。芳醛因苯环共轭分散羰基，比脂肪醛略钝。</li>
+</ul></div>
+
+<div class="tip"><strong>口诀</strong>：<strong>烷基越多 → 越不活泼</strong>（既挡路又喂电子）。这个顺序同时决定了 HCN/NaHSO₃/Grignard 等所有亲核加成的难易，以及谁能/不能做 NaHSO₃ 加成。</div>
+</div>
+
+<!-- ================ 11.3 亲核加成 ================ -->
+<h2 id="line1">主线 ① 亲核加成（羰基碳被进攻）</h2>
+<h3 id="k3">11.3 亲核加成反应（六类）</h3>
+<div class="card">
+<p>统一机理骨架：<strong>亲核试剂 Nu⁻ 进攻羰基碳 → 四面体烷氧负离子 → 质子化得加成产物</strong>。酸催化时先质子化 O 活化羰基，再让中性 Nu 进攻。</p>
+</div>
+
+<h4 id="k3a">① 与 HCN — α-羟基腈（氰醇，增 1 C）</h4>
+<div class="card">
+<div class="fb"><div class="t">机理 2 步</div>
+<img class="full" src="img/ch11_hcn_s1.png" alt="HCN step 1: CN- 进攻">
+<img class="full" src="img/ch11_hcn_s2.png" alt="HCN step 2: 质子化">
+<p><strong>Step 1</strong>：CN⁻（强亲核体）从羰基平面上下进攻 C → 四面体烷氧负离子（决速步）。</p>
+<p><strong>Step 2</strong>：烷氧负离子被 HCN/H⁺ 质子化 → <strong>α-羟基腈（氰醇）</strong>。</p>
+<p><strong>用途</strong>：① 给碳链<strong>增 1 个 C</strong>（–CN）；② –CN 可水解成 –COOH（得 α-羟基酸）或还原成 –CH₂NH₂。</p></div>
+<div class="warn"><strong>催化条件</strong>：需<strong>微量碱</strong>提供 CN⁻（纯 HCN 解离弱、太慢；强酸又把 CN⁻ 质子化掉）。常用 KCN + 微量酸调 pH。</div>
+</div>
+
+<h4 id="k3b">② 与 NaHSO₃ — α-羟基磺酸钠（白色结晶，鉴别）</h4>
+<div class="card">
+<div class="fb"><div class="t">醛 / 甲基酮 + 饱和 NaHSO₃ → 白色结晶析出</div>
+<img class="full" src="img/ch11_bisulfite.png" alt="NaHSO3 加成">
+<p>亲核的 S 进攻羰基碳 → α-羟基磺酸钠（加成物难溶，结晶析出）。</p></div>
+<div class="tip"><strong>选择性 = 鉴别价值</strong>：只有<strong>醛和位阻小的甲基酮（CH₃CO–）</strong>能反应（位阻大的酮不行）→ 可用来<strong>鉴别醛/甲基酮</strong>，也用于<strong>提纯</strong>（加成结晶分离后，稀酸或稀碱即可逆回羰基）。</div>
+</div>
+
+<h4 id="k3c">③ 与 Grignard 试剂 RMgX — 增碳成醇</h4>
+<div class="card">
+<div class="fb"><div class="t">R⁻ 进攻羰基碳 → 烷氧镁 → 水解成醇</div>
+<table>
+<tr><th>羰基底物</th><th>产物</th><th>增碳</th></tr>
+<tr><td>甲醛 HCHO</td><td><strong>1° 醇</strong></td><td>RMgX 的 R 直接接 CH₂OH</td></tr>
+<tr><td>其他醛 RCHO</td><td><strong>2° 醇</strong></td><td>—</td></tr>
+<tr><td>酮 R₂CO</td><td><strong>3° 醇</strong></td><td>—</td></tr>
+<tr><td>CO₂</td><td>羧酸（+1 C）</td><td>见 ch9 Grignard</td></tr>
+<tr><td>环氧乙烷</td><td>1° 醇（+2 C）</td><td>见 ch10 环氧开环</td></tr>
+</table>
+<p>这是<strong>逆推合成醇</strong>的主力：看到目标醇，就在 C–OH 的某根 C–C 键处"断"，一边做 RMgX、一边做羰基。</p></div>
+<div class="warn"><strong>陷阱</strong>：Grignard 遇活泼 H（–OH / –NH / –COOH / 端炔 ≡C–H）会被<strong>当场质子化失活</strong>（变回 RH）。底物含这些基团时要先保护。</div>
+</div>
+
+<h4 id="k3d">④ 与醇 ROH — 缩醛 / 缩酮（保护羰基）</h4>
+<div class="card">
+<div class="fb"><div class="t">机理 4 步（酸催化，半缩醛 → 缩醛）</div>
+<img class="full" src="img/ch11_acetal_s1.png" alt="acetal step 1: 质子化羰基">
+<img class="full" src="img/ch11_acetal_s2.png" alt="acetal step 2: ROH 进攻 → 半缩醛">
+<img class="full" src="img/ch11_acetal_s3.png" alt="acetal step 3: 失水 → 氧鎓离子">
+<img class="full" src="img/ch11_acetal_s4.png" alt="acetal step 4: 第二个 ROH → 缩醛">
+<ol>
+<li><strong>质子化羰基 O</strong> → 羰基碳更缺电子（活化）。</li>
+<li>第 1 分子 <strong>ROH 的 O 进攻碳</strong> + 失 H⁺ → <strong>半缩醛 (hemiacetal)</strong>（一个 OH + 一个 OR 在同一碳）。</li>
+<li>半缩醛的 OH 质子化 → <strong>脱 H₂O 生成氧鎓离子</strong>（C=O⁺R，共振稳定）。</li>
+<li>第 2 分子 ROH 进攻氧鎓 + 失 H⁺ → <strong>缩醛 (acetal)</strong>（一个碳上两个 OR）。</li>
+</ol></div>
+<div class="tip"><strong>缩醛是"保护基"</strong>：缩醛<strong>在碱/亲核/还原条件下惰性</strong>，但<strong>稀酸 + 水可定量水解还原回羰基</strong>。所以遇到"分子里有羰基又有别处要做 Grignard/还原"的合成题——先把羰基做成缩醛（常用<strong>乙二醇 → 1,3-二氧戊环</strong>环状缩醛），保护好，做完别处反应再稀酸脱保护。</div>
+<div class="warn"><strong>全程可逆</strong>：成缩醛需<strong>无水 + 除水</strong>（推平衡向右）；脱保护用<strong>稀酸 + 大量水</strong>（推平衡向左）。这是"水位"控制的经典案例。</div>
+</div>
+
+<h4 id="k3e">⑤ Wittig 反应 — 定向成烯</h4>
+<div class="card">
+<div class="fb"><div class="t">叶立德 (ylide) + 醛酮 → 烯 + Ph₃P=O</div>
+<img class="med" src="img/ch11_wittig_ylide.png" alt="叶立德结构">
+<p><strong>叶立德怎么来</strong>：Ph₃P + R–CH₂–X →（SN2）→ 鏻盐 [Ph₃P–CH₂R]⁺X⁻ → 强碱（如 BuLi）拔走 α-H → <strong>叶立德 Ph₃P⁺–CH⁻R（≡ Ph₃P=CHR）</strong>。</p></div>
+
+<div class="fb"><div class="t">机理 2 步（连环图）</div>
+<img class="full" src="img/ch11_wittig_s1.png" alt="Wittig step 1: 叶立德进攻羰基">
+<img class="full" src="img/ch11_wittig_s2.png" alt="Wittig step 2: 四元环裂解 → 烯">
+<p><strong>Step 1</strong>：叶立德的碳负进攻醛酮羰基碳 → 经内鎓盐（betaine）/ <strong>氧磷四元环（oxaphosphetane）</strong>中间体。</p>
+<p><strong>Step 2</strong>：四元环顺向裂解，<strong>P–O 强键的形成（Ph₃P=O）</strong>是驱动力 → 把 C=O 换成 <strong>C=C</strong>。</p></div>
+
+<div class="tip"><strong>为什么爱用 Wittig</strong>：双键<strong>位置完全确定</strong>（就在原羰基碳处），不像醇脱水那样可能给混合烯、也不重排。是<strong>定向造碳碳双键</strong>的标准方法。</div>
+<div class="note"><strong>例</strong>：苯甲醛 + Ph₃P=CH₂ → <strong>苯乙烯 PhCH=CH₂</strong> + Ph₃P=O。要造 R₂C=CHR'，把"=CHR'"放进叶立德、"R₂C="留在羰基即可。</div>
+</div>
+
+<h4 id="k3f">⑥ 与含氮亲核体 — 肟 / 腙 / 缩氨脲（鉴别）</h4>
+<div class="card">
+<div class="fb"><div class="t">羰基 + H₂N–G → C=N–G + H₂O（加成 - 消除）</div>
+<img class="full" src="img/ch11_oxime.png" alt="丙酮 + 羟胺 → 肟">
+<table>
+<tr><th>试剂 H₂N–G</th><th>产物</th><th>用途</th></tr>
+<tr><td>羟胺 NH₂OH</td><td>肟 (oxime) C=N–OH</td><td>结构鉴定；肟可 Beckmann 重排（了解）</td></tr>
+<tr><td>肼 NH₂NH₂</td><td>腙 (hydrazone) C=N–NH₂</td><td>Wolff-Kishner 还原中间体</td></tr>
+<tr><td>2,4-二硝基苯肼 (2,4-DNP)</td><td>2,4-二硝基苯腙</td><td><strong>黄/橙红色沉淀 → 验羰基</strong></td></tr>
+<tr><td>氨基脲 H₂N–CO–NHNH₂</td><td>缩氨脲 (semicarbazone)</td><td>结晶鉴定</td></tr>
+</table>
+<img class="full" src="img/ch11_dnp.png" alt="2,4-DNP 验羰基"></div>
+<div class="tip"><strong>2,4-DNP（布拉迪试剂）</strong>：醛和酮都给<strong>黄→橙红色沉淀</strong>，是"<strong>这分子里有没有羰基</strong>"的总开关式鉴别（不区分醛酮，区分醛酮再用 Tollens / 碘仿）。</div>
+</div>
+
+<!-- ================ 11.4 α-H 反应 ================ -->
+<h2 id="line2">主线 ② α-H 反应（烯醇 / 烯醇负离子化学）</h2>
+<h3 id="k4">11.4 α-H 的反应</h3>
+<div class="card">
+<p>羰基的 <strong>α-H 因 C=O 拉电子而有酸性</strong>（拔掉后生成被羰基共振稳定的<strong>烯醇负离子</strong>）。α-碳因此能当<strong>亲核试剂</strong>去进攻别的亲电体——这是羟醛、卤仿、Mannich、烯胺的共同根。</p>
+</div>
+
+<h4 id="k4a">① 羟醛缩合 (Aldol) — 稀碱 vs 浓碱</h4>
+<div class="card">
+<div class="fb"><div class="t">机理（稀碱低温，停在 β-羟基醛）</div>
+<img class="full" src="img/ch11_aldol_s1.png" alt="aldol step 1: 拔 α-H 成烯醇负离子">
+<img class="full" src="img/ch11_aldol_s2.png" alt="aldol 共振: 负电分到 O">
+<img class="full" src="img/ch11_aldol_s3.png" alt="aldol step 2: α-碳进攻另一分子羰基">
+<img class="full" src="img/ch11_aldol_s4.png" alt="aldol step 3: 质子化 → β-羟基醛">
+<ol>
+<li>稀 OH⁻ 拔 α-H → <strong>烯醇负离子</strong>（碳负离子，被羰基共振稳定，负电主要分到 O 上）。</li>
+<li>烯醇负离子的 <strong>α-碳进攻另一分子的羰基碳</strong> → β-烷氧负离子。</li>
+<li>质子化 → <strong>β-羟基醛/酮</strong>（"3-羟基丁醛"，稀碱低温停在此）。</li>
+</ol></div>
+
+<div class="fb"><div class="t">浓碱 / 加热 → 脱水 → α,β-不饱和醛酮</div>
+<img class="full" src="img/ch11_aldol_dehydrate.png" alt="脱水 → 2-丁烯醛">
+<p>β-羟基醛在浓碱/加热下走 <strong>E1cb 消除</strong>（先拔 α-H 成碳负离子，再赶走 β-OH⁻）→ <strong>α,β-不饱和醛酮</strong>。产物里 <strong>C=C 与 C=O 共轭</strong>，能量大幅降低 → 热力学把产物推到这。</p>
+<p><strong>例</strong>：2 CH₃CHO ─稀NaOH/低温→ 3-羟基丁醛 ─浓碱/Δ→ <strong>2-丁烯醛（巴豆醛）</strong>。</p></div>
+
+<div class="tip"><strong>记法</strong>：稀碱低温 = "温柔"，只做到加成（β-羟基）；浓碱加热 = "狠"，连水一起脱掉，凑成稳定的共轭烯酮。双键<strong>永远在 α,β 之间</strong>（与羰基共轭）。</div>
+<div class="warn"><strong>前提：底物必须有 α-H</strong>。没有 α-H（HCHO/PhCHO/三甲基乙醛）做不了烯醇负离子，浓碱下走的是 <strong>Cannizzaro</strong>（见 <a href="#k5d">11.5④</a>）。</div>
+</div>
+
+<h4 id="k4b">② 交叉羟醛 (Crossed Aldol)</h4>
+<div class="card">
+<div class="fb"><div class="t">关键：一方<strong>无 α-H 只当亲电体</strong>，一方有 α-H 当亲核体</div>
+<img class="full" src="img/ch11_aldol_crossed.png" alt="苯甲醛 + 乙醛 → 肉桂醛">
+<p>两种都有 α-H 的醛混在一起会给<strong>4 种</strong>交叉产物（乱）。考试一般限定为：<strong>无 α-H 的醛（HCHO、PhCHO）只作羰基亲电体</strong>，另一个有 α-H 的供烯醇负离子 → 产物干净。</p>
+<p><strong>例</strong>：苯甲醛（无 α-H）+ 乙醛（有 α-H）─碱→ 脱水 → <strong>肉桂醛 PhCH=CH–CHO</strong>。</p></div>
+<div class="tip"><strong>判别口诀</strong>：交叉羟醛里，<strong>谁没有 α-H 谁挨打（当羰基），谁有 α-H 谁出拳（当 α-碳亲核体）</strong>。</div>
+</div>
+
+<h4 id="k4c">③ 卤仿 / 碘仿反应 (Haloform)</h4>
+<div class="card">
+<div class="fb"><div class="t">机理 2 步（甲基酮 + 3 X₂/NaOH → CHX₃↓ + 羧酸盐）</div>
+<img class="full" src="img/ch11_haloform_s1.png" alt="haloform step 1: 三卤代甲基">
+<img class="full" src="img/ch11_haloform_s2.png" alt="haloform step 2: 裂解出 CHX3">
+<ol>
+<li><strong>碘代</strong>：碱拔 α-H 成烯醇负离子，X₂ 逐个卤代甲基。每代一个 X，–C 上吸电子↑ → 剩下 H 更酸 → 越代越快 → 一口气代到 <strong>–CX₃</strong>。</li>
+<li><strong>裂解</strong>：OH⁻ 进攻羰基碳，<strong>CX₃⁻ 作为稳定的离去基</strong>离去 → 羧酸根 + <strong>CHX₃↓（碘仿为黄色沉淀）</strong>。</li>
+</ol></div>
+<div class="warn"><strong>碘仿（黄沉）鉴别范围</strong>——只对含以下结构者阳性：<strong>① 甲基酮 CH₃CO–R；② 乙醛 CH₃CHO；③ 能被次碘酸氧化成上述结构的醇：乙醇 CH₃CH₂OH 和 仲醇 CH₃CH(OH)–R（即 2-醇）</strong>。<br>注意：甲醇、其它伯醇、非甲基酮 <strong>阴性</strong>。"甲基酮"指 CH₃ 直接连在羰基上（乙酰基），不是分子里随便哪个甲基。</div>
+</div>
+
+<h4 id="k4d">④ Mannich 反应 — 造 β-氨基酮</h4>
+<div class="card">
+<div class="fb"><div class="t">机理：甲醛 + 仲胺 → 亚胺离子；酮烯醇 α-碳进攻它</div>
+<img class="full" src="img/ch11_mannich_s1.png" alt="Mannich step 1: 亚胺离子生成">
+<img class="full" src="img/ch11_mannich_s2.png" alt="Mannich step 2: 烯醇 α-碳进攻">
+<p><strong>三组分</strong>：含 α-H 的酮 + 甲醛（HCHO）+ 仲胺（如二甲胺）。</p>
+<ol>
+<li>HCHO + 仲胺缩合 → <strong>亚胺离子 CH₂=N⁺R₂</strong>（亲电体）。</li>
+<li>酮的烯醇 α-碳进攻亚胺离子 → <strong>β-氨基酮（Mannich 碱）</strong>。</li>
+</ol>
+<p>Mannich 碱受热消除胺 → α,β-不饱和酮（一个间接造烯酮的路子）。</p></div>
+</div>
+
+<h4 id="k4e">⑤ 烯胺 (Stork) 烷基化 — α-碳定向修饰</h4>
+<div class="card">
+<div class="fb"><div class="t">机理：酮 + 仲胺 → 烯胺；烯胺 α-碳当亲核体</div>
+<img class="full" src="img/ch11_enamine_s1.png" alt="enamine step 1: 酮 + 仲胺 → 烯胺">
+<img class="full" src="img/ch11_enamine_s2.png" alt="enamine step 2: α-碳烷基化">
+<ol>
+<li>酮 + <strong>仲胺（吡咯烷 / 哌啶 / 吗啉）</strong>脱水 → <strong>烯胺（enamine, C=C–N）</strong>。N 推电子使 <strong>β-碳（=原 α-碳）带亲核性</strong>。</li>
+<li>烯胺 α-碳进攻 R–X（烷基化）或酰氯（酰基化），再<strong>水解</strong>把 C=N 变回 C=O → <strong>α-取代的酮</strong>。</li>
+</ol></div>
+<div class="tip"><strong>Stork 烯胺法的价值</strong>：直接用强碱拔酮的 α-H 烷基化容易<strong>多取代 + 自身羟醛</strong>；走烯胺则<strong>温和、单取代、选择性好</strong>。是"给酮的 α-位精准接一个基团"的经典方法。</div>
+</div>
+
+<!-- ================ 11.5 氧化还原 ================ -->
+<h2 id="line3">主线 ③ 氧化还原</h2>
+<h3 id="k5">11.5 氧化与还原</h3>
+
+<h4 id="k5a">① 还原成醇 — NaBH₄ / LiAlH₄</h4>
+<div class="card">
+<div class="fb"><div class="t">机理：H⁻ 进攻羰基碳 → 烷氧负离子 → 质子化成醇</div>
+<img class="full" src="img/ch11_nabh4.png" alt="NaBH4 还原醛酮">
+<img class="full" src="img/ch11_lialh4.png" alt="LiAlH4 还原酸/酯/醛酮">
+<table>
+<tr><th>还原剂</th><th>能还原</th><th>不动</th><th>条件</th></tr>
+<tr><td><strong>NaBH₄</strong>（温和）</td><td>醛、酮 → 醇</td><td>–COOH、–COOR、C=C</td><td>可在醇/水中用（较缓和）</td></tr>
+<tr><td><strong>LiAlH₄</strong>（强）</td><td>醛、酮、<strong>羧酸、酯、酰胺、腈</strong> → 醇/胺</td><td>孤立 C=C</td><td>遇水/质子剧烈反应，<strong>须无水醚</strong>，后处理再加水</td></tr>
+</table>
+<p><strong>选择性记法</strong>：分子里同时有酮和酯、只想还原酮 → 用 <strong>NaBH₄</strong>（酯不动）。要把酯/酸也还原到醇 → 用 <strong>LiAlH₄</strong>。</p></div>
+<div class="tip"><strong>催化加氢 H₂/Ni 也能还原 C=O → 醇</strong>，但<strong>同时会还原 C=C</strong>（不选择性）。要保留双键只还羰基 → 用 NaBH₄。</div>
+</div>
+
+<h4 id="k5b">② 羰基彻底还原成 CH₂ — Clemmensen / Wolff-Kishner</h4>
+<div class="card">
+<div class="fb"><div class="t">C=O → CH₂（不是 → CH–OH，是去掉氧）</div>
+<img class="full" src="img/ch11_clemmensen.png" alt="Clemmensen 还原">
+<table>
+<tr><th>方法</th><th>试剂</th><th>适用底物</th></tr>
+<tr><td><strong>Clemmensen</strong></td><td>Zn-Hg（锌汞齐）/ 浓 HCl，Δ</td><td><strong>耐酸</strong>、不耐碱的底物</td></tr>
+<tr><td><strong>Wolff-Kishner</strong>（黄鸣龙改良）</td><td>NH₂NH₂ + KOH/NaOH，高沸醇，Δ</td><td><strong>耐碱</strong>、不耐酸的底物</td></tr>
+</table></div>
+
+<div class="fb"><div class="t">Wolff-Kishner 机理 2 步</div>
+<img class="full" src="img/ch11_wk_s1.png" alt="WK step 1: 成腙">
+<img class="full" src="img/ch11_wk_s2.png" alt="WK step 2: 放 N2 → CH2">
+<p><strong>Step 1</strong>：酮 + 肼 → <strong>腙 (C=N–NH₂)</strong>；<strong>Step 2</strong>：强碱 / 加热下放出 <strong>N₂</strong>，C=O 变成 <strong>CH₂</strong>。</p></div>
+
+<div class="tip"><strong>经典用法</strong>：Friedel-Crafts <strong>酰基化</strong>给芳酮（不重排），再用 Clemmensen/Wolff-Kishner 把 C=O 还原成 CH₂ → 等于在苯环上<strong>"安全"接一条直链烷基</strong>（避开 F-C 烷基化的碳正离子重排！）。这是 ch7 ↔ ch11 的串联考点。</div>
+<div class="warn"><strong>选耐酸还是耐碱</strong>：底物含<strong>对酸敏感基团</strong>（如缩醛、叔醇）→ 用 Wolff-Kishner（碱性）；含<strong>对碱敏感基团</strong>（如酯易皂化）→ 用 Clemmensen（酸性）。</div>
+</div>
+
+<h4 id="k5c">③ 氧化 / 鉴别 — Tollens（银镜）/ Fehling（砖红）</h4>
+<div class="card">
+<div class="fb"><div class="t">醛易被氧化成羧酸（酮不被一般氧化剂动）</div>
+<img class="full" src="img/ch11_tollens.png" alt="Tollens 银镜">
+<img class="full" src="img/ch11_fehling.png" alt="Fehling 砖红">
+<table>
+<tr><th>试剂</th><th>现象</th><th>选择性</th></tr>
+<tr><td><strong>Tollens [Ag(NH₃)₂]⁺</strong>（银氨溶液）</td><td><strong>银镜</strong>（析出 Ag）</td><td>脂肪醛、芳醛都灵；酮不反应</td></tr>
+<tr><td><strong>Fehling</strong>（Cu²⁺ 酒石酸碱液）</td><td><strong>砖红 Cu₂O↓</strong></td><td><strong>只对脂肪醛</strong>；芳醛（如苯甲醛）一般阴性</td></tr>
+</table>
+<p>醛 → 羧酸（被氧化），金属离子被还原（Ag⁺→Ag、Cu²⁺→Cu₂O）。</p></div>
+<div class="tip"><strong>Tollens vs Fehling 的差别 = 区分脂肪醛/芳醛</strong>：两者都验醛，但 Fehling 对芳醛不灵。所以苯甲醛：Tollens 阳性、Fehling 阴性。</div>
+</div>
+
+<h4 id="k5d">④ Cannizzaro 反应 — 无 α-H 醛的歧化</h4>
+<div class="card">
+<div class="fb"><div class="t">机理 2 步（歧化：一半氧化、一半还原）</div>
+<img class="full" src="img/ch11_cannizzaro_s1.png" alt="Cannizzaro step 1: OH- 加成">
+<img class="full" src="img/ch11_cannizzaro_s2.png" alt="Cannizzaro step 2: H- 转移歧化">
+<p><strong>条件（缺一不可）：① 醛无 α-H；② 浓强碱</strong>。</p>
+<ol>
+<li>OH⁻ 进攻一分子醛羰基 → <strong>四面体烷氧负离子中间体</strong>。</li>
+<li>该中间体的 <strong>C–H 以 H⁻ 转移</strong>到另一分子醛的羰基碳上 → <strong>给出 H⁻ 的被氧化成羧酸根，接受 H⁻ 的被还原成醇</strong>（歧化）。</li>
+</ol></div>
+<div class="warn"><strong>为什么必须无 α-H</strong>：有 α-H 时碱会优先拔 α-H 走<strong>羟醛缩合</strong>（快得多）。只有不能做羟醛的醛（HCHO/PhCHO/三甲基乙醛）才"退而求其次"走 Cannizzaro。<strong>判断第一件事永远是数 α-H。</strong></div>
+<div class="note"><strong>例</strong>：苯甲醛 + 浓 NaOH/Δ → <strong>苯甲醇 + 苯甲酸钠</strong>（理想各 50%）。<br><strong>交叉 Cannizzaro</strong>：常用 <strong>HCHO 当还原剂</strong>（HCHO 给 H⁻ 倾向最强 → 被氧化成甲酸盐，另一无 α-H 醛被定向还原成醇），产物干净。</div>
+</div>
+
+<!-- ================ 11.6 鉴别 ================ -->
+<h2 id="k6">11.6 鉴别方法</h2>
+<div class="card">
+<div class="fb"><div class="t">醛酮专属鉴别试剂</div>
+<table>
+<tr><th>试剂</th><th>用来鉴别</th><th>阳性现象</th></tr>
+<tr><td><strong>2,4-DNP（2,4-二硝基苯肼）</strong></td><td>有没有羰基（醛+酮总开关）</td><td>黄 / 橙红色沉淀</td></tr>
+<tr><td><strong>Tollens（银氨）</strong></td><td>醛 vs 酮</td><td>醛出银镜；酮无反应</td></tr>
+<tr><td><strong>Fehling（Cu²⁺碱液）</strong></td><td>脂肪醛 vs 芳醛</td><td>脂肪醛砖红 Cu₂O↓；芳醛阴性</td></tr>
+<tr><td><strong>NaHSO₃（饱和）</strong></td><td>醛 / 甲基酮（位阻小）</td><td>白色结晶加成物析出</td></tr>
+<tr><td><strong>碘仿 I₂/NaOH</strong></td><td>甲基酮 / 乙醛 / 乙醇 / 2-醇</td><td>黄色 CHI₃↓（特殊气味）</td></tr>
+</table></div>
+
+<div class="ex"><strong>实战 — 鉴别 丙醛 / 丙酮 / 苯甲醛 / 苯乙酮</strong>
+<details><summary>方案</summary><div class="sol">
+<p><strong>第一步 — 2,4-DNP</strong>：四个都显黄/橙红（都含羰基）→ 确认都是醛酮，但不能彼此区分。</p>
+<p><strong>第二步 — Tollens（银镜）</strong>：只有<strong>丙醛、苯甲醛</strong>出银镜（醛）；丙酮、苯乙酮无（酮）。先把醛/酮两类分开。</p>
+<p><strong>第三步 — 碘仿</strong>（对剩下需细分的）：</p>
+<ul>
+<li><strong>丙酮 CH₃COCH₃</strong>（甲基酮）→ 黄沉；<strong>苯乙酮 CH₃COPh</strong>（甲基酮）→ 黄沉；要区分这两个酮，可用 <strong>Fehling</strong> 无效（都阴），改看其它（如 NaHSO₃ 对苯乙酮位阻大不灵、对丙酮灵）。</li>
+<li>两个醛里：<strong>丙醛</strong>（脂肪醛）→ Fehling 砖红；<strong>苯甲醛</strong>（芳醛）→ Fehling 阴性。这样丙醛/苯甲醛也分开了。</li>
+</ul>
+<p><strong>总结路线</strong>：2,4-DNP 确认羰基 → Tollens 分醛酮 → 碘仿 / Fehling / NaHSO₃ 细分。</p>
+</div></details></div>
+
+<div class="tip"><strong>跨章联动</strong>：把 ch11 的醛酮鉴别和 ch10 的 FeCl₃（酚）、Lucas（醇级）、HIO₄（邻二醇）拼在一起，就能鉴别期末范围里几乎所有含氧化合物。</div>
+</div>
+
+<!-- ================ 合成应用 ================ -->
+<h2 id="synth">合成应用</h2>
+
+<div class="card">
+<div class="fb"><div class="t">醛酮在合成里的"七种武器"</div>
+<table>
+<tr><th>目标</th><th>用醛酮的反应</th><th>要点</th></tr>
+<tr><td>增碳成醇</td><td>RMgX + 醛/酮 → 2°/3° 醇</td><td>在 C–OH 处断键逆推</td></tr>
+<tr><td>增 1 C 成酸</td><td>HCN 加成 → 氰醇 → 水解 → α-羟基酸</td><td>–CN 水解</td></tr>
+<tr><td>造 C=C（定向）</td><td>Wittig</td><td>双键位置确定、不重排</td></tr>
+<tr><td>延长碳链 + 共轭烯酮</td><td>羟醛缩合（浓碱）</td><td>α,β-不饱和醛酮</td></tr>
+<tr><td>羰基 → CH₂（接直链烷基）</td><td>F-C 酰化 → Clemmensen/W-K</td><td>避开 F-C 烷基化重排</td></tr>
+<tr><td>给酮 α-位接基团</td><td>Stork 烯胺 / Mannich</td><td>温和、单取代</td></tr>
+<tr><td>保护羰基</td><td>缩醛（乙二醇）→ 做完别处 → 稀酸脱保护</td><td>碱/还原条件下惰性</td></tr>
+</table></div>
+
+<div class="ex"><strong>合成例 — 由苯 + C₂ 单元合成 正丙苯 (PhCH₂CH₂CH₃)</strong>
+<details><summary>展开</summary><div class="sol">
+<p><strong>错误想法</strong>：苯 + 1-氯丙烷 / AlCl₃（F-C 烷基化）→ 由于 1° 碳正离子<strong>重排成 2°</strong>，主产物是<strong>异丙苯</strong>，得不到正丙苯。</p>
+<p><strong>正确路线（醛酮救场）</strong>：</p>
+<ol>
+<li>苯 + 丙酰氯 CH₃CH₂COCl / AlCl₃ →（F-C <strong>酰化</strong>，酰基阳离子共振稳定<strong>不重排</strong>）→ <strong>苯丙酮 PhCOCH₂CH₃</strong>。</li>
+<li>苯丙酮 ──<strong>Clemmensen（Zn-Hg/HCl）或 Wolff-Kishner</strong>──► C=O → CH₂ → <strong>正丙苯 PhCH₂CH₂CH₃</strong> ✓。</li>
+</ol>
+<p><strong>核心</strong>：要在苯环上接<strong>无重排的直链烷基</strong>，走"酰化 → 还原羰基"两步，绕开 F-C 烷基化的碳正离子重排。</p>
+</div></details></div>
+
+<div class="ex"><strong>合成例 — 用羟醛缩合造 α,β-不饱和醛</strong>
+<details><summary>展开</summary><div class="sol">
+<p>目标：2-乙基-2-己烯醛（己醛自身羟醛缩合的脱水产物）。</p>
+<ol>
+<li>2 分子<strong>己醛 CH₃(CH₂)₄CHO</strong>，稀 NaOH → β-羟基醛（一分子的 α-碳进攻另一分子羰基）。</li>
+<li>浓碱 / 加热脱水 → <strong>2-乙基-2-己烯醛（α,β-不饱和醛）</strong>。</li>
+</ol>
+<p>双键在 α,β 之间、与 CHO 共轭。这是"自身羟醛"——若用两种不同的醛要小心交叉产物（见 <a href="#k4b">11.4②</a>）。</p>
+</div></details></div>
+</div>
+
+<!-- ================ 自检 8 题 ================ -->
+<h2 id="selftest">📝 自检 8 题（先想答案再展开）</h2>
+<div class="tip">每道题先关掉答案自己想 30 秒，再点击展开。这 8 题覆盖本章所有高频考点。</div>
+
+<div class="ex"><strong>自检 1</strong>：甲醛、乙醛、丙酮三者与 HCN 加成，谁最快？为什么？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>甲醛最快</strong>。亲核加成活性 <strong>HCHO &gt; RCHO &gt; R₂CO</strong>。烷基既<strong>+I 喂电子</strong>（中和羰基碳 δ⁺）又<strong>位阻挡路</strong>，两效应一致 → 烷基越多越慢。甲醛 0 烷基最活泼，丙酮 2 烷基最钝。</p>
+<p>→ 详见 <a href="#k2">11.2</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 2</strong>：苯甲醛 + 浓 NaOH 给什么？乙醛 + 稀 NaOH 给什么？为什么不同？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>苯甲醛（无 α-H）→ Cannizzaro</strong>：歧化为<strong>苯甲醇 + 苯甲酸钠</strong>。</p>
+<p><strong>乙醛（有 α-H）→ 羟醛缩合</strong>：稀碱低温得<strong>3-羟基丁醛</strong>（浓碱加热再脱水得 2-丁烯醛）。</p>
+<p><strong>分水岭就是 α-H</strong>：有 α-H → 碱优先拔它走羟醛（快）；无 α-H 才走 Cannizzaro。判断第一步永远是数 α-H。</p>
+<p>→ 详见 <a href="#k4a">11.4①</a> + <a href="#k5d">11.5④</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 3</strong>：下列哪些给碘仿（黄沉）？乙醇 / 甲醇 / 丙酮 / 苯乙酮 / 戊-3-酮 / 异丙醇？
+<details><summary>展开答案</summary><div class="sol">
+<p>阳性（黄沉）：<strong>乙醇 CH₃CH₂OH、丙酮 CH₃COCH₃、苯乙酮 CH₃COPh、异丙醇 CH₃CH(OH)CH₃</strong>。</p>
+<p>阴性：<strong>甲醇</strong>（无 CH₃CO/CH₃CHOH 结构）、<strong>戊-3-酮 CH₃CH₂COCH₂CH₃</strong>（不是甲基酮，羰基两边都是乙基）。</p>
+<p><strong>判据</strong>：含 <strong>CH₃CO–</strong>（甲基直接连羰基）或能被氧化成它的 <strong>CH₃CH(OH)–</strong>（乙醇、2-醇）才阳性。</p>
+<p>→ 详见 <a href="#k4c">11.4③</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 4</strong>：分子里同时有酮和酯，只想还原酮、保留酯，用什么试剂？反过来想都还原成醇呢？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>只还酮、保留酯 → NaBH₄</strong>（温和，不动 –COOR、–COOH、C=C）。</p>
+<p><strong>酮和酯都还原成醇 → LiAlH₄</strong>（强，连酸/酯/酰胺/腈一起还）。</p>
+<p>若还想保留 C=C 只还羰基 → 仍用 NaBH₄（别用 H₂/Ni，会把双键也加氢）。</p>
+<p>→ 详见 <a href="#k5a">11.5①</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 5</strong>：要在苯环上接一条<strong>正丙基</strong>（–CH₂CH₂CH₃），为什么不能直接 F-C 烷基化？正确怎么做？
+<details><summary>展开答案</summary><div class="sol">
+<p>直接 F-C 烷基化（苯 + 1-氯丙烷/AlCl₃）→ 1° 碳正离子<strong>重排成 2°</strong> → 主产物是<strong>异丙苯</strong>，拿不到正丙苯。</p>
+<p><strong>正确：F-C 酰化 → 还原羰基</strong>：① 苯 + 丙酰氯/AlCl₃ → 苯丙酮（酰基阳离子不重排）；② Clemmensen 或 Wolff-Kishner 把 C=O → CH₂ → <strong>正丙苯</strong>。</p>
+<p>→ 详见 <a href="#k5b">11.5②</a> + 合成应用</p>
+</div></details></div>
+
+<div class="ex"><strong>自检 6</strong>：Wittig 反应造苯乙烯需要哪两个原料？产物副产物是什么？为什么爱用 Wittig？
+<details><summary>展开答案</summary><div class="sol">
+<p>原料：<strong>苯甲醛 PhCHO + 叶立德 Ph₃P=CH₂</strong>。产物：<strong>苯乙烯 PhCH=CH₂</strong>；副产物：<strong>三苯氧膦 Ph₃P=O</strong>（P–O 强键形成是驱动力）。</p>
+<p><strong>优点</strong>：双键<strong>位置完全确定</strong>（就在原羰基碳上），不像醇脱水会给混合烯、也不重排。是定向造 C=C 的标准法。</p>
+<p>→ 详见 <a href="#k3e">11.3⑤</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 7</strong>：缩醛是什么？为什么能当"保护基"？怎么脱保护？
+<details><summary>展开答案</summary><div class="sol">
+<p>缩醛 = 同一碳上挂<strong>两个 OR</strong>（醛/酮 + 2 ROH / 干 HCl，常用乙二醇成环状缩醛）。</p>
+<p><strong>当保护基</strong>：缩醛在<strong>碱 / 亲核试剂 / 还原剂</strong>条件下<strong>惰性</strong> → 把怕被这些条件破坏的羰基先变成缩醛藏起来，做完别处反应再放出来。</p>
+<p><strong>脱保护</strong>：<strong>稀酸 + 大量水</strong>，水解还原回羰基（全程可逆，靠"水位"控制方向）。</p>
+<p>→ 详见 <a href="#k3d">11.3④</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 8</strong>：交叉羟醛里，给苯甲醛 + 丙酮 / 浓碱，主产物是什么？谁当亲核体、谁当亲电体？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>苯甲醛无 α-H → 只当亲电体（羰基挨打）</strong>；<strong>丙酮有 α-H → 供烯醇负离子（α-碳当亲核体）</strong>。</p>
+<p>丙酮 α-碳进攻苯甲醛羰基 → β-羟基酮 → 浓碱脱水 → <strong>苯亚甲基丙酮 PhCH=CH–CO–CH₃</strong>（α,β-不饱和酮，与羰基共轭）。</p>
+<p>口诀：<strong>没 α-H 的挨打，有 α-H 的出拳。</strong></p>
+<p>→ 详见 <a href="#k4b">11.4②</a></p>
+</div></details></div>
+
+<!-- ================ 考前提醒 ================ -->
+<h2 id="tips">考前提醒</h2>
+
+<div class="warn"><strong>判断羟醛 vs Cannizzaro 第一步永远是"数 α-H"</strong>：有 α-H → 羟醛缩合（稀碱→β-羟基、浓碱→脱水共轭烯酮）；无 α-H + 浓强碱 → Cannizzaro 歧化（醇 + 羧酸盐）。</div>
+
+<div class="warn"><strong>亲核加成活性 HCHO &gt; RCHO &gt; R₂CO</strong>：烷基既挡路（位阻）又喂电子（+I），方向一致，越多越钝。决定所有亲核加成的难易 + 谁能做 NaHSO₃ 加成。</div>
+
+<div class="warn"><strong>碘仿黄沉只认 CH₃CO– / CH₃CH(OH)–</strong>：甲基酮、乙醛、乙醇、2-醇阳性；甲醇、其它伯醇、非甲基酮阴性。</div>
+
+<div class="warn"><strong>NaBH₄ 温和（只还醛酮），LiAlH₄ 强（连酸酯一起还）</strong>。选择性还原酮而保留酯/双键 → NaBH₄；要还原酸/酯 → LiAlH₄（无水醚）。</div>
+
+<div class="warn"><strong>C=O → CH₂ 两法</strong>：Clemmensen（Zn-Hg/HCl，<strong>耐酸</strong>）vs Wolff-Kishner（NH₂NH₂/KOH/Δ，<strong>耐碱</strong>）。配 F-C 酰化可在苯环上安全接<strong>不重排</strong>的直链烷基。</div>
+
+<div class="warn"><strong>Wittig 定向造 C=C</strong>：叶立德 + 醛酮 → 烯 + Ph₃P=O，双键位置确定、不重排。</div>
+
+<div class="warn"><strong>缩醛 = 羰基保护基</strong>：碱/还原条件下惰性，稀酸 + 水可定量脱保护回羰基。合成多步题里常用乙二醇成环状缩醛保护羰基。</div>
+
+<div class="warn"><strong>鉴别套路</strong>：2,4-DNP 验羰基（醛酮总开关）→ Tollens 银镜分醛酮 → 碘仿验甲基酮 / Fehling 分脂肪醛芳醛 / NaHSO₃ 分位阻。拼上 ch10 的 FeCl₃ / Lucas / HIO₄ 即可鉴别期末范围所有含氧物。</div>
+
+<div class="warn"><strong>Grignard 遇活泼 H 自杀失活</strong>（–OH/–NH/–COOH/端炔）。底物含这些基团时先保护。Grignard + 甲醛→1°醇、+ 其它醛→2°醇、+ 酮→3°醇。</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

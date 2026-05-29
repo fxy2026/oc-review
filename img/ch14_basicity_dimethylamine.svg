@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='380px' height='240px' viewBox='0 0 380 240'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='380.0' height='240.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 30.4,188.4 L 101.7,147.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-0 atom-0 atom-1' d='M 101.7,147.2 L 173.1,106.0' style='fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 206.7,106.0 L 278.1,147.2' style='fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 278.1,147.2 L 349.4,188.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='atom-1' d='M 183.6 82.2
+L 192.9 97.2
+Q 193.8 98.6, 195.3 101.3
+Q 196.8 104.0, 196.9 104.2
+L 196.9 82.2
+L 200.6 82.2
+L 200.6 110.5
+L 196.8 110.5
+L 186.8 94.1
+Q 185.6 92.2, 184.4 90.0
+Q 183.2 87.8, 182.8 87.1
+L 182.8 110.5
+L 179.2 110.5
+L 179.2 82.2
+L 183.6 82.2
+' fill='#0000FF'/>
+<path class='atom-1' d='M 178.8 51.0
+L 182.7 51.0
+L 182.7 63.0
+L 197.1 63.0
+L 197.1 51.0
+L 201.0 51.0
+L 201.0 79.3
+L 197.1 79.3
+L 197.1 66.2
+L 182.7 66.2
+L 182.7 79.3
+L 178.8 79.3
+L 178.8 51.0
+' fill='#0000FF'/>
+<text x="190" y="232" text-anchor="middle" font-size="18" font-family="Microsoft YaHei, SimHei, SimSun, Segoe UI Symbol, DejaVu Sans, sans-serif" fill="black">二甲胺 (2°): 烷基 +I 给电子 + 铵正离子溶剂化适中 → 水溶液中最强</text></svg>

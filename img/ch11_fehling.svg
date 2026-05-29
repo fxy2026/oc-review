@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='900px' height='240px' viewBox='0 0 900 240'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='900.0' height='240.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 117.3,128.1 L 197.7,93.9' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 197.7,93.9 L 267.5,146.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 267.5,146.4 L 300.6,132.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 300.6,132.3 L 333.6,118.2' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 269.3,131.3 L 295.4,120.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 295.4,120.2 L 328.5,106.2' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 193.7,95.6 L 197.7,93.9 L 201.2,96.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 264.0,143.7 L 267.5,146.4 L 269.2,145.7' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path class='atom-3' d='M 334.0 106.2
+Q 334.0 100.3, 336.9 97.0
+Q 339.8 93.6, 345.3 93.6
+Q 350.8 93.6, 353.7 97.0
+Q 356.7 100.3, 356.7 106.2
+Q 356.7 112.2, 353.7 115.6
+Q 350.7 119.0, 345.3 119.0
+Q 339.9 119.0, 336.9 115.6
+Q 334.0 112.3, 334.0 106.2
+M 345.3 116.2
+Q 349.1 116.2, 351.1 113.7
+Q 353.2 111.2, 353.2 106.2
+Q 353.2 101.4, 351.1 98.9
+Q 349.1 96.4, 345.3 96.4
+Q 341.5 96.4, 339.5 98.9
+Q 337.4 101.3, 337.4 106.2
+Q 337.4 111.2, 339.5 113.7
+Q 341.5 116.2, 345.3 116.2
+' fill='#FF0000'/>
+<path class='bond-3 atom-4 atom-5' d='M 545.4,98.0 L 621.0,54.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-4 atom-5 atom-6' d='M 621.0,54.3 L 696.6,98.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-5 atom-6 atom-7' d='M 696.6,105.5 L 729.0,86.9' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-5 atom-6 atom-7' d='M 729.0,86.9 L 761.3,68.2' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-5 atom-6 atom-7' d='M 690.1,94.2 L 722.4,75.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-5 atom-6 atom-7' d='M 722.4,75.5 L 754.8,56.8' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-6 atom-6 atom-8' d='M 696.6,98.0 L 696.6,133.9' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-6 atom-6 atom-8' d='M 696.6,133.9 L 696.6,169.9' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 617.2,56.5 L 621.0,54.3 L 624.8,56.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 692.9,95.8 L 696.6,98.0 L 696.6,99.8' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path class='atom-3' d='M 760.9 54.4
+Q 760.9 48.4, 763.9 45.1
+Q 766.8 41.8, 772.3 41.8
+Q 777.8 41.8, 780.7 45.1
+Q 783.6 48.4, 783.6 54.4
+Q 783.6 60.4, 780.7 63.8
+Q 777.7 67.2, 772.3 67.2
+Q 766.8 67.2, 763.9 63.8
+Q 760.9 60.4, 760.9 54.4
+M 772.3 64.4
+Q 776.1 64.4, 778.1 61.9
+Q 780.1 59.3, 780.1 54.4
+Q 780.1 49.5, 778.1 47.1
+Q 776.1 44.6, 772.3 44.6
+Q 768.5 44.6, 766.4 47.0
+Q 764.4 49.5, 764.4 54.4
+Q 764.4 59.4, 766.4 61.9
+Q 768.5 64.4, 772.3 64.4
+' fill='#FF0000'/>
+<path class='atom-4' d='M 685.3 185.4
+Q 685.3 179.4, 688.2 176.1
+Q 691.2 172.8, 696.6 172.8
+Q 702.1 172.8, 705.1 176.1
+Q 708.0 179.4, 708.0 185.4
+Q 708.0 191.4, 705.0 194.8
+Q 702.1 198.2, 696.6 198.2
+Q 691.2 198.2, 688.2 194.8
+Q 685.3 191.4, 685.3 185.4
+M 696.6 195.4
+Q 700.4 195.4, 702.4 192.9
+Q 704.5 190.3, 704.5 185.4
+Q 704.5 180.5, 702.4 178.1
+Q 700.4 175.6, 696.6 175.6
+Q 692.9 175.6, 690.8 178.0
+Q 688.8 180.5, 688.8 185.4
+Q 688.8 190.4, 690.8 192.9
+Q 692.9 195.4, 696.6 195.4
+' fill='#FF0000'/>
+<path class='atom-4' d='M 711.5 176.8
+L 720.0 176.8
+L 720.0 178.7
+L 711.5 178.7
+L 711.5 176.8
+' fill='#FF0000'/>
+<path d='M 388.0,120.0 L 512.0,120.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 505.8,123.6 L 512.0,120.0 L 505.8,116.4' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<text x="450" y="24" text-anchor="middle" font-size="20" font-family="Microsoft YaHei, SimHei, SimSun, Segoe UI Symbol, DejaVu Sans, sans-serif" fill="black">Fehling (Cu2+ 酒石酸碱液): 脂肪醛 → 羧酸根 + 砖红 Cu2O↓; 芳醛一般不灵</text></svg>

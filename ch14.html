@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第14章 胺（含氮化合物） | 有机化学复习</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+<style>
+:root{--pri:#0d6b3d;--acc:#c0392b;--bg:#fffef9;--card:#fff;--border:#d5e8d4;--form:#edf7ed;--ex:#fffbf0;--tip:#e8f5e9;--warn:#fff3e0;--note:#f3e5f5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:var(--bg);color:#333;line-height:1.9;padding:20px;max-width:1000px;margin:0 auto;}
+h1{text-align:center;color:var(--pri);font-size:1.8em;margin:20px 0;border-bottom:3px solid var(--pri);padding-bottom:10px;}
+h2{color:#fff;font-size:1.3em;margin:35px 0 15px;padding:10px 18px;background:linear-gradient(135deg,var(--pri),#27ae60);border-radius:6px;}
+h3{color:var(--pri);font-size:1.1em;margin:20px 0 10px;border-left:4px solid var(--acc);padding-left:12px;}
+h4{color:#444;font-size:1.0em;margin:14px 0 8px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;margin:14px 0;}
+.fb{background:var(--form);border:2px solid #27ae60;border-radius:8px;padding:14px 18px;margin:12px 0;}
+.fb .t{font-weight:bold;color:#0d6b3d;margin-bottom:6px;}
+.ex{background:var(--ex);border-left:4px solid #f39c12;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;}
+.sol{background:#f5f5f5;border:1px dashed #aaa;border-radius:5px;padding:14px;margin-top:8px;}
+.sol .st{font-weight:bold;color:var(--acc);margin-bottom:4px;}
+.tip{background:var(--tip);border-left:4px solid #27ae60;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.warn{background:var(--warn);border-left:4px solid #e67e22;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+.note{background:var(--note);border-left:4px solid #8e24aa;border-radius:0 8px 8px 0;padding:10px 16px;margin:10px 0;}
+table{width:100%;border-collapse:collapse;margin:12px 0;}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center;}
+th{background:var(--pri);color:#fff;}
+tr:nth-child(even){background:#f0f7f0;}
+details{margin:8px 0;}details summary{cursor:pointer;font-weight:bold;color:var(--pri);padding:4px;}
+ul,ol{margin-left:20px;margin-bottom:8px;}
+.nav-bar{position:sticky;top:0;z-index:100;background:var(--bg);padding:10px 15px;border-bottom:2px solid var(--border);margin:-20px -20px 20px;font-size:.9em;display:flex;gap:12px;flex-wrap:wrap;}
+.nav-bar a{color:var(--pri);text-decoration:none;font-weight:bold;padding:3px 8px;border-radius:4px;}
+.nav-bar a:hover{background:var(--pri);color:#fff;}
+.imgrow{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:10px 0;}
+.imgrow img{max-width:48%;height:auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.full{display:block;max-width:100%;margin:10px auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.med{display:block;max-width:75%;margin:10px auto;border:1px solid #ddd;border-radius:4px;background:#fff;}
+img.small{display:inline-block;max-width:32%;margin:5px;border:1px solid #ddd;border-radius:4px;background:#fff;vertical-align:middle;}
+</style>
+<link rel="stylesheet" href="toc.css">
+</head>
+<body>
+<div class="nav-bar"><a href="index.html">📚 目录</a><a href="ch13.html">← 第13章</a></div>
+<h1>第14章 胺（含氮化合物）</h1>
+
+<div class="tip"><strong>本章核心思路</strong>：胺的一切都围绕 <strong>N 上那对孤对电子</strong>。孤对给质子 → <strong>碱性</strong>；孤对当亲核试剂 → <strong>烷基化/酰化/与 HNO₂ 反应</strong>；芳胺孤对进苯环 → <strong>碱性弱 + 苯环活化</strong>。再加一条主线：<strong>芳基重氮盐 ArN₂⁺ 是"万能中转站"</strong>——放氮换基团、留氮做偶联。抓住这两条，本章全通。</div>
+
+<!-- ================ 考前 30 秒速查 ================ -->
+<div class="card" style="background:#fff5f5;border:2px solid #c0392b;">
+<h3 style="color:#c0392b;border-left-color:#c0392b;margin-top:0;">🔥 考前 30 秒速查（必背）</h3>
+<table style="font-size:.95em;">
+<tr><th style="background:#c0392b;">类型</th><th style="background:#c0392b;">规律</th></tr>
+<tr><td>碱性（水溶液，考试默认）</td><td>2° &gt; 1° ≈ 3° &gt; NH₃ &gt; 芳胺 &gt; 酰胺（脂肪胺&gt;氨&gt;芳胺）</td></tr>
+<tr><td>芳胺为啥弱碱</td><td>N 孤对进苯环共轭离域，不愿给质子；环上 –NO₂ 更弱、–CH₃/–OCH₃ 更强</td></tr>
+<tr><td>重氮化条件</td><td>ArNH₂ + NaNO₂/HCl，<strong>必须 0–5℃</strong>（高于则分解成酚）</td></tr>
+<tr><td>重氮盐放氮（换基）</td><td>CuCl/CuBr/CuCN（Sandmeyer→Cl/Br/CN）、KI→I、H₃PO₂→H（脱氨）、H₂O/Δ→OH</td></tr>
+<tr><td>重氮盐留氮（偶联）</td><td>+ 酚（弱碱）/ 芳胺（弱酸）→ 偶氮染料 Ar–N=N–Ar′（进攻对位）</td></tr>
+<tr><td>Hofmann 消除取向</td><td><strong>少取代烯（Hofmann，反 Saytzeff）</strong>——离去基 –NR₃⁺ 又大又带正电</td></tr>
+<tr><td>Hinsberg 鉴别（苯磺酰氯）</td><td>1° → 溶 NaOH；2° → 不溶 NaOH（沉淀）；3° → 不反应</td></tr>
+<tr><td>HNO₂ 鉴别</td><td>脂 1° 放 N₂↑；芳 1° 成稳定重氮盐；2° 黄色亚硝胺；3° 无（芳 3° 对位 C-亚硝化绿）</td></tr>
+<tr><td>制备增不增碳</td><td>腈 R–CN 还原 <strong>+1 碳</strong>；酰胺 / 硝基 / 还原胺化 <strong>不增碳</strong></td></tr>
+<tr><td>纯 1° 胺怎么造</td><td>Gabriel（酰亚胺只接一个 R）/ 还原胺化（控级数）——别用 RX+NH₃（多烷基化）</td></tr>
+</table>
+</div>
+
+<!-- ================ 考点 → 本页章节查询 ================ -->
+<div class="card" style="background:#fffbf0;border:2px solid #f39c12;">
+<h3 style="color:#e67e22;border-left-color:#e67e22;margin-top:0;">📝 考点 → 本页章节查询</h3>
+<table style="font-size:.92em;">
+<tr><th>考点</th><th>题型</th><th>跳转</th></tr>
+<tr><td>胺的分类与命名</td><td>命名 / 选择</td><td><a href="#k1">14.1 命名</a></td></tr>
+<tr><td>碱性强弱排序</td><td>选择 / 排序</td><td><a href="#k2">14.2 碱性</a></td></tr>
+<tr><td>制备（还原硝基/腈/酰胺、还原胺化、Gabriel）</td><td>合成</td><td><a href="#k3">14.3 制备</a></td></tr>
+<tr><td>酰化 / 磺酰化（Hinsberg）</td><td>鉴别 / 完成</td><td><a href="#k4">14.4 反应</a></td></tr>
+<tr><td>与 HNO₂ 反应（1°/2°/3°，脂/芳）</td><td>鉴别 / 完成</td><td><a href="#k4c">14.4③</a></td></tr>
+<tr><td>季铵盐 / Hofmann 消除（择多反 Saytzeff）</td><td>机理 / 完成</td><td><a href="#k5">14.5 季铵盐</a></td></tr>
+<tr><td>重氮化机理</td><td>机理</td><td><a href="#k6a">14.6①</a></td></tr>
+<tr><td>Sandmeyer + 放氮各产物</td><td>完成 / 合成</td><td><a href="#k6b">14.6②</a></td></tr>
+<tr><td>偶联（偶氮染料）</td><td>完成 / 合成</td><td><a href="#k6c">14.6③</a></td></tr>
+<tr><td>重氮盐综合合成（中转站思路）</td><td>合成</td><td><a href="#k7">14.7 合成应用</a></td></tr>
+<tr><td>化学鉴别</td><td>鉴别</td><td><a href="#k8">14.8 鉴别</a></td></tr>
+<tr><td>易错清单</td><td>—</td><td><a href="#tips">考前提醒</a></td></tr>
+</table>
+</div>
+
+<div class="note"><strong>关于本章范围</strong>：本页按<strong>沈增明《有机化学》第三版（SJTU 自编）</strong>的章节组织，对应武大六版 ch11+ 的"胺"。⚠️ 因复习站主体真题卷只到 ch10，胺无独立真题卷，所有具体试剂条件 / 产物均依教材 + 标准有机；遇 ⚠️ 标注处考前请用沈增明三版课本最终核对。<strong>波谱（IR/NMR）本章不做。</strong></div>
+
+<h2 id="kp">核心知识点</h2>
+
+<!-- ================ 14.1 命名 ================ -->
+<h3 id="k1">14.1 分类与命名 (Classification &amp; Nomenclature)</h3>
+<div class="card">
+
+<div class="fb"><div class="t">分类：按 N 上连几个烃基</div>
+<table>
+<tr><th>级数</th><th>结构</th><th>例</th></tr>
+<tr><td><strong>伯胺 (1°)</strong></td><td>R–NH₂（N 上 1 个烃基）</td><td>CH₃CH₂NH₂ 乙胺、C₆H₅NH₂ 苯胺</td></tr>
+<tr><td><strong>仲胺 (2°)</strong></td><td>R₂NH（N 上 2 个烃基）</td><td>(CH₃)₂NH 二甲胺</td></tr>
+<tr><td><strong>叔胺 (3°)</strong></td><td>R₃N（N 上 3 个烃基）</td><td>(CH₃)₃N 三甲胺</td></tr>
+<tr><td><strong>季铵盐/碱</strong></td><td>R₄N⁺X⁻ / R₄N⁺OH⁻</td><td>(CH₃)₄N⁺OH⁻ 氢氧化四甲铵</td></tr>
+</table>
+<div class="warn">⚠️ <strong>胺的级数看 N 上烃基个数</strong>（和醇/卤代烃看 α-碳上烃基个数<strong>完全不同</strong>）。例如 (CH₃)₃C–NH₂ 叔丁胺虽然碳是 3°，但<strong>它是伯胺</strong>（N 只连 1 个烃基）。</div>
+</div>
+
+<div class="fb"><div class="t">命名 3 种方式</div>
+<ul>
+<li><strong>简单胺（习惯命名）</strong>：烃基名 + "胺"。如 CH₃NH₂ 甲胺、(C₂H₅)₂NH 二乙胺、CH₃NHC₂H₅ 甲乙胺。</li>
+<li><strong>复杂胺（系统命名）</strong>：把 –NH₂ 作为<strong>氨基</strong>取代基，或以胺为母体词尾 "-胺"。如 CH₃CH(NH₂)CH₂CH₃ = 丁-2-胺。</li>
+<li><strong>N-取代</strong>：N 上的取代基用 <strong>N-</strong> 标位。如 C₆H₅–NH–CH₃ = N-甲基苯胺；C₆H₅N(CH₃)₂ = N,N-二甲基苯胺。</li>
+</ul>
+<p>常见芳胺俗名：苯胺 (aniline)、对甲苯胺 (p-toluidine)、二苯胺、α/β-萘胺。</p></div>
+</div>
+
+<!-- ================ 14.2 碱性 ================ -->
+<h3 id="k2">14.2 碱性强弱排序 (重点中的重点)</h3>
+<div class="card">
+<p>胺的碱性 = <strong>N 上孤对给质子（结合 H⁺）的能力</strong>。两个相互拉扯的因素决定排序：① 烷基 <strong>+I 给电子</strong>使孤对更富电子（增碱）；② 形成铵正离子后，<strong>N–H 越多、水的氢键溶剂化越好</strong>，正离子越稳（增碱）。</p>
+
+<div class="fb"><div class="t">水溶液中（考试默认）的标准序</div>
+<p style="text-align:center;font-weight:bold;font-size:1.05em;">2° 胺 &gt; 1° 胺 ≈ 3° 胺 &gt; NH₃ &gt; 芳胺（苯胺）&gt; 酰胺</p>
+<p>一句话：<strong>脂肪胺 &gt; 氨 &gt; 芳胺</strong>。</p>
+<ul>
+<li><strong>脂肪胺 &gt; 氨</strong>：烷基 +I 给电子，孤对更富电子、铵正离子也被稳定。</li>
+<li><strong>为啥不是简单 3°&gt;2°&gt;1°</strong>：气相里纯诱导确实 3°&gt;2°&gt;1°；但<strong>水溶液</strong>还要算铵正离子的氢键溶剂化（N–H 越多越稳），与诱导效应方向相反，两者折中 → 实测约 <strong>2°&gt;1°≈3°</strong>。⚠️ 不同教材/底物略有出入，以沈增明三版课本表述为准。</li>
+<li><strong>芳胺最弱</strong>：N 孤对部分进入苯环共轭离域，"分给"了苯环 → 给质子能力大降。</li>
+<li><strong>酰胺几乎中性</strong>：N 孤对被相邻羰基拉去共轭，别当普通胺。</li>
+</ul></div>
+
+<div class="fb"><div class="t">芳胺看环上取代基（吸电子减碱、给电子增碱）</div>
+<div class="imgrow">
+<img src="img/ch14_basicity_dimethylamine.svg" alt="二甲胺 (2°): 水溶液中最强">
+<img src="img/ch14_basicity_aniline.svg" alt="苯胺: 孤对离域, 弱碱">
+<img src="img/ch14_basicity_pNO2aniline.svg" alt="对硝基苯胺: 比苯胺还弱">
+</div>
+<p>苯胺孤对进苯环已经弱；对位再挂 <strong>–NO₂（强吸电子）</strong>把孤对进一步抽走 → <strong>对硝基苯胺比苯胺还弱</strong>。反之挂给电子基（–CH₃、–OCH₃、–NH₂）则比苯胺强。</p></div>
+
+<div class="ex"><strong>例题（碱性排序）</strong>：排列 苯胺、对硝基苯胺、二甲胺、氨 的碱性。
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>二甲胺（2° 脂肪胺）&gt; 氨 &gt; 苯胺 &gt; 对硝基苯胺</strong></p>
+<ol>
+<li>大类定档：脂肪胺 &gt; 氨 &gt; 芳胺。→ 二甲胺先，氨次，两个苯胺最后。</li>
+<li>两个芳胺里：苯胺 &gt; 对硝基苯胺（–NO₂ 吸电子使孤对更离域，碱性更弱）。</li>
+</ol>
+</div></details></div>
+
+<div class="warn"><strong>三大易错</strong>：① 别直接套气相 "3°&gt;2°&gt;1°"——考试问水溶液答 <strong>2°&gt;1°≈3°</strong> 并说溶剂化原因；② 苯胺弱碱是<strong>孤对共轭离域</strong>不是诱导；③ 酰胺 N 几乎无碱性。</div>
+</div>
+
+<!-- ================ 14.3 制备 ================ -->
+<h3 id="k3">14.3 制备 (4 大路线)</h3>
+<div class="card">
+<p>造胺的核心矛盾：<strong>直接用 RX + NH₃ 会"过度烷基化"</strong>（生成的 1° 胺比氨更亲核，继续被烷基化成 2°、3°、季铵的混合物，没法停）。所以制单一级数的胺要走"绕开"路线。</p>
+</div>
+
+<h4 id="k3a">① 还原硝基化合物（芳胺主路）</h4>
+<div class="card">
+<div class="fb"><div class="t">Ar–NO₂ ──Fe/HCl 或 Sn/HCl 或 H₂/Ni──► Ar–NH₂</div>
+<img class="full" src="img/ch14_prep_nitro.svg" alt="硝基苯 → 苯胺">
+<p>工业/实验室造<strong>芳胺</strong>的标准路：苯先硝化得硝基苯，再还原得苯胺。还原剂常用 <strong>Fe/HCl、Sn/HCl 或催化氢化 (H₂/Ni)</strong>。</p></div>
+</div>
+
+<h4 id="k3b">② 还原腈 / 酰胺（注意增不增碳！）</h4>
+<div class="card">
+<div class="fb"><div class="t">腈还原：R–CN ──LiAlH₄ 或 H₂/Ni──► R–CH₂NH₂（伯胺，<strong>增 1 碳</strong>）</div>
+<img class="full" src="img/ch14_prep_nitrile.svg" alt="丁腈 → 戊胺 (增1碳)">
+<p>腈那个 <strong>C 进了 –CH₂NH₂</strong>，所以产物比原料<strong>多一个碳</strong>。常配合"卤代烃 + NaCN 先增碳"使用（见 14.7 合成）。</p></div>
+
+<div class="fb"><div class="t">酰胺还原：R–CONH₂ ──LiAlH₄──► R–CH₂NH₂（<strong>不增碳</strong>）</div>
+<img class="full" src="img/ch14_prep_amide.svg" alt="丁酰胺 → 丁胺 (不增碳)">
+<p>酰胺的<strong>羰基碳被还原成 CH₂</strong>，碳数不变。</p></div>
+
+<div class="warn">⚠️ <strong>"增不增碳"是考点</strong>：腈还原 +1 碳；酰胺还原不增碳。LiAlH₄ 强（能还原腈/酰胺/酯/酸）；NaBH₄ 弱（只还原醛酮，<strong>动不了腈/酰胺</strong>）。</div>
+</div>
+
+<h4 id="k3c">③ 还原胺化（由醛酮造胺，可控级数）</h4>
+<div class="card">
+<div class="fb"><div class="t">醛/酮 + 氨/胺 → 亚胺 → 还原 → 胺</div>
+<p>$$\text{R}_2\text{C=O} + \text{R'NH}_2 \xrightarrow{-\text{H}_2\text{O}} \text{R}_2\text{C=NR'} \xrightarrow{\text{NaBH}_3\text{CN 或 H}_2/\text{Ni}} \text{R}_2\text{CH-NHR'}$$</p>
+<img class="full" src="img/ch14_redamin_s1.svg" alt="还原胺化 step 1: 加成成氨基醇">
+<img class="full" src="img/ch14_redamin_s2.svg" alt="还原胺化 step 2: 脱水成亚胺">
+<img class="full" src="img/ch14_redamin_s3.svg" alt="还原胺化 step 3: 还原 C=N 成胺">
+<img class="full" src="img/ch14_redamin_overall.svg" alt="还原胺化总反应">
+<p><strong>三步推电子</strong>：① 胺 N 孤对进攻羰基 C → 半缩胺醇（氨基醇）；② 失水形成 <strong>C=N 亚胺（Schiff 碱）</strong>；③ <strong>NaBH₃CN</strong>（氰基硼氢化钠，弱酸下选择性还原 C=N 而不大动 C=O）送 H⁻ 把 C=N 还原成 C–N。</p>
+<p>用<strong>氨</strong>得 1° 胺、用 1° 胺得 2° 胺、用 2° 胺得 3° 胺——<strong>级数可控</strong>，这是它优于 RX+NH₃ 的地方。</p></div>
+</div>
+
+<h4 id="k3d">④ Gabriel 合成（专造<strong>纯</strong> 1° 胺）</h4>
+<div class="card">
+<div class="fb"><div class="t">邻苯二甲酰亚胺 K 盐 + RX（SN2）→ 水解 → 纯 1° 胺</div>
+<img class="full" src="img/ch14_gabriel_s1.svg" alt="Gabriel step 1: 成钾盐">
+<img class="full" src="img/ch14_gabriel_s2.svg" alt="Gabriel step 2: N-烷基化 SN2">
+<img class="full" src="img/ch14_gabriel_s3.svg" alt="Gabriel step 3: 水解得伯胺">
+<img class="full" src="img/ch14_gabriel_overall.svg" alt="Gabriel 总思路">
+<ol>
+<li><strong>成盐</strong>：邻苯二甲酰亚胺（N–H 夹在两个羰基间，酸性强）+ KOH → 钾盐，N⁻ 受两个羰基共振稳定，是好亲核试剂。</li>
+<li><strong>N-烷基化</strong>：N⁻ + R–X（1° / 2° 卤代，SN2）→ N-烷基邻苯二甲酰亚胺。<strong>N 上只能接一个 R</strong>（接上后 N 不再有亲核性）。</li>
+<li><strong>水解</strong>：用 H₃O⁺ 或肼 (N₂H₄) 把酰亚胺切开 → 释放<strong>纯 1° 胺</strong> + 邻苯二甲酸（或酰肼）。</li>
+</ol>
+<p><strong>为啥能得"纯" 1° 胺</strong>：酰亚胺氮"一次性只接一个 R"，从根上杜绝了多烷基化。</p></div>
+<div class="tip"><strong>比喻</strong>：直接 RX+NH₃ 像开放餐厅人人能加菜（接了还想再接，停不下来）；Gabriel 像盒饭——一个盒子只装一个 R，封好再拆，干净单一。</div>
+</div>
+
+<!-- ================ 14.4 胺的反应 ================ -->
+<h3 id="k4">14.4 胺的反应（孤对当亲核试剂）</h3>
+<div class="card">
+<p>除了碱性（成盐），胺的化学反应都是 <strong>N 孤对去进攻亲电体</strong>：进攻酰基 → 酰化；进攻磺酰基 → 磺酰化（Hinsberg）；进攻 NO⁺ → 与亚硝酸反应。</p>
+</div>
+
+<h4 id="k4a">① 烷基化（→ 注意多烷基化）</h4>
+<div class="card">
+<p>胺 + R–X（SN2）→ 高一级的胺。但如 14.3 所说，<strong>停不住</strong>，会一路烷基化到季铵盐。所以<strong>烷基化不是好的"制单一胺"方法</strong>（要造胺用还原胺化/Gabriel），但它是<strong>穷尽甲基化（Hofmann）的第一步</strong>（见 14.5）。</p>
+</div>
+
+<h4 id="k4b">② 酰化 / 磺酰化 — Hinsberg 鉴别 1°/2°/3°（重要）</h4>
+<div class="card">
+<div class="fb"><div class="t">酰化：1°/2° 胺 + 酰氯/酸酐 → 酰胺；3° 胺不酰化（N 无 H）</div>
+<p>1° 胺 + (CH₃CO)₂O → N-取代乙酰胺（R–NHCOCH₃）。<strong>苯胺乙酰化</strong>常用于"先保护 –NH₂ 降低活性、做完亲电取代再水解还原"（防止苯胺被氧化或过度取代）。</p></div>
+
+<div class="fb"><div class="t">Hinsberg 试验（苯磺酰氯 PhSO₂Cl + NaOH）—— 一步分清 1°/2°/3°</div>
+<table>
+<tr><th>胺</th><th>与 PhSO₂Cl 反应</th><th>加 NaOH 后现象</th></tr>
+<tr><td><strong>1° 胺</strong></td><td>生成 N-单取代磺酰胺 R–NH–SO₂Ph（<strong>还剩 1 个 N–H</strong>）</td><td>N–H 被两个吸电子基拉得很酸 → <strong>溶于 NaOH 成清亮溶液</strong></td></tr>
+<tr><td><strong>2° 胺</strong></td><td>生成 N,N-二取代磺酰胺 R₂N–SO₂Ph（<strong>无 N–H</strong>）</td><td>无酸性 N–H → <strong>不溶 NaOH，呈沉淀/油状</strong></td></tr>
+<tr><td><strong>3° 胺</strong></td><td>N 无 H，<strong>不生成磺酰胺</strong></td><td>不反应（静置可回收原胺）</td></tr>
+</table>
+<img class="full" src="img/ch14_hinsberg_1.svg" alt="1° 胺 + 苯磺酰氯 → 溶于 NaOH">
+<img class="full" src="img/ch14_hinsberg_2.svg" alt="2° 胺 + 苯磺酰氯 → 不溶 NaOH">
+<img class="med" src="img/ch14_hinsberg_3.svg" alt="3° 胺不反应">
+<p><strong>记法</strong>：1° → <strong>溶</strong>（剩的 N–H 够酸）；2° → <strong>不溶沉淀</strong>（没 N–H）；3° → <strong>不反应</strong>（没 H 可换）。</p></div>
+</div>
+
+<h4 id="k4c">③ 与亚硝酸 HNO₂ 反应（鉴别 + 制重氮盐）</h4>
+<div class="card">
+<div class="fb"><div class="t">试剂：NaNO₂ + HCl（冷，0–5℃，原位生成 HNO₂ → 亲电的 NO⁺）</div>
+<table>
+<tr><th>胺类型</th><th>现象 / 产物</th></tr>
+<tr><td><strong>脂肪 1° 胺</strong></td><td>生成的脂肪重氮盐极不稳 → 立即分解<strong>放出 N₂ 气泡</strong>（定量放氮）</td></tr>
+<tr><td><strong>芳香 1° 胺</strong></td><td>0–5℃ 生成<strong>稳定的芳基重氮盐 Ar–N₂⁺</strong>（不放气，留作 Sandmeyer/偶联，见 14.6）</td></tr>
+<tr><td><strong>2° 胺（脂/芳）</strong></td><td>生成<strong>黄色油状/固体的 N-亚硝基胺（亚硝胺，致癌）</strong></td></tr>
+<tr><td><strong>3° 胺</strong></td><td>脂肪 3° 只成盐无特征；芳香 3°（如 N,N-二甲基苯胺）<strong>对位发生 C-亚硝化得绿色固体</strong></td></tr>
+</table></div>
+<div class="fb"><div class="t">为什么这样分</div>
+<p>NO⁺ 进攻 N 孤对：<strong>1° 胺</strong>（N 上 2 个 H）最终脱水成 –N₂⁺（脂肪的极不稳放 N₂；芳基的被苯环共轭稳定可保存）；<strong>2° 胺</strong>（N 上 1 个 H）亚硝化后停在稳定的 N–N=O 亚硝胺；<strong>3° 胺</strong>（N 无 H）无法成亚硝胺。</p></div>
+<div class="warn">⚠️ <strong>脂肪 1° 胺放 N₂、芳香 1° 胺不放（成稳定重氮盐）</strong>——脂/芳的关键差别，别混。⚠️ 温度必须 0–5℃，否则芳基重氮盐也分解。</div>
+</div>
+
+<!-- ================ 14.5 季铵盐 + Hofmann 消除 ================ -->
+<h3 id="k5">14.5 季铵盐 / 季铵碱 / Hofmann 消除（机理重点）</h3>
+<div class="card">
+<div class="fb"><div class="t">Hofmann 彻底（穷尽）甲基化 3 步</div>
+<img class="full" src="img/ch14_hofmann_s1.svg" alt="Hofmann step 1: 过量 CH3I 穷尽甲基化">
+<img class="full" src="img/ch14_hofmann_s2.svg" alt="Hofmann step 2: Ag2O/H2O 换 OH-">
+<img class="full" src="img/ch14_hofmann_s3.svg" alt="Hofmann step 3: 加热 E2 消除">
+<ol>
+<li><strong>穷尽甲基化</strong>：胺 + <strong>过量 CH₃I</strong> → 把 N 上所有 H 都甲基化 → <strong>季铵盐 R–N⁺(CH₃)₃ I⁻</strong>。</li>
+<li><strong>换碱</strong>：+ <strong>Ag₂O / H₂O</strong> → 把 I⁻ 换成 OH⁻ → <strong>季铵碱 R–N⁺(CH₃)₃ OH⁻</strong>（强碱）。</li>
+<li><strong>加热消除</strong>：Δ → <strong>E2 消除</strong>得烯烃 + 三甲胺（+ H₂O）。</li>
+</ol></div>
+
+<div class="fb"><div class="t">Hofmann 消除取向：少取代烯（反 Saytzeff！）</div>
+<div class="imgrow">
+<img src="img/ch14_hofmann_product.svg" alt="Hofmann 主产物: 1-丁烯 少取代">
+<img src="img/ch14_saytzeff_minor.svg" alt="Saytzeff 次产物: 2-丁烯 多取代">
+</div>
+<p>以 2-丁胺为例：穷尽甲基化 → 季铵碱 → Δ → <strong>主要得 1-丁烯（Hofmann，少取代）</strong>而非 2-丁烯（Saytzeff，多取代）。</p>
+<p><strong>推电子 / 为什么</strong>：季铵碱里 <strong>–N⁺(CH₃)₃ 是个又大又带正电的离去基</strong>。E2 时大位阻迫使碱 OH⁻ 去拔<strong>位阻最小的端位 β-H</strong>（端甲基上的 H）；加上正电使端位 β-H 酸性差异，综合导致<strong>少取代烯为主</strong>（Hofmann 规则）。</p></div>
+
+<div class="warn"><strong>对比记忆</strong>：普通碱 / 普通离去基 → <strong>Zaitsev（多取代）</strong>；大碱 (t-BuOK) / 大正电离去基 (–NR₃⁺、–SR₂⁺) → <strong>Hofmann（少取代）</strong>。⚠️ 必须 <strong>Ag₂O/H₂O 换成 OH⁻</strong>才能加热消除——光季铵碘盐不消除。</div>
+
+<div class="tip"><strong>用途</strong>：① 测定原胺含几个 N–H/结构——数消耗的 CH₃I：消耗 3 当量 → 原是 1° 胺；2 当量 → 2° 胺；1 当量 → 3° 胺（⚠️ 注意"成季铵那一步也耗 1 个 CH₃I"）。② 由胺定向制少取代烯烃。</p></div>
+</div>
+
+<!-- ================ 14.6 重氮盐 ================ -->
+<h3 id="k6">14.6 重氮盐 —— 芳环官能团转化的"万能中转站"</h3>
+<div class="card">
+<div class="warn"><strong>主线</strong>：芳基重氮盐 Ar–N₂⁺ 有两条去向 —— <strong>放氮</strong>（–N₂⁺ 换成别的基，走掉 N₂ 气）和<strong>留氮</strong>（偶联，N 保留在 –N=N– 里）。–N₂⁺ 是<strong>超级好的离去基</strong>（走掉就是稳定 N₂）。</div>
+</div>
+
+<h4 id="k6a">① 重氮化机理（怎么造重氮盐）</h4>
+<div class="card">
+<div class="fb"><div class="t">芳香 1° 胺 + NaNO₂/HCl（0–5℃）→ Ar–N₂⁺</div>
+<img class="full" src="img/ch14_diazo_overall.svg" alt="重氮化总反应">
+<img class="full" src="img/ch14_diazo_s1.svg" alt="重氮化 step 1: 生成 NO+">
+<img class="full" src="img/ch14_diazo_s2.svg" alt="重氮化 step 2: N 进攻 NO+ 成亚硝胺">
+<img class="full" src="img/ch14_diazo_s3.svg" alt="重氮化 step 3: 互变成重氮酸">
+<img class="full" src="img/ch14_diazo_s4.svg" alt="重氮化 step 4: 脱水成重氮盐">
+<ol>
+<li><strong>生成 NO⁺</strong>：NaNO₂ + HCl → HNO₂，再质子化脱水 → 亲电的<strong>亚硝酰正离子 NO⁺</strong>。</li>
+<li><strong>N 进攻</strong>：苯胺 N 孤对进攻 NO⁺ → N-亚硝基苯胺（N-nitroso）。</li>
+<li><strong>互变</strong>：异构成重氮酸 Ar–N=N–OH。</li>
+<li><strong>脱水</strong>：H⁺ 质子化 OH + 脱水 → <strong>芳基重氮盐 Ar–N₂⁺</strong>（被苯环共轭稳定，0–5℃ 可存在）。</li>
+</ol></div>
+<div class="warn">⚠️ <strong>0–5℃ 红线</strong>：温度高于此，芳基重氮盐自己分解（提前水解成酚），后续反应全乱。⚠️ 重氮盐<strong>是芳胺独有</strong>（脂肪 1° 胺的重氮盐当场放 N₂ 分解，见 14.4③）。</div>
+</div>
+
+<h4 id="k6b">② 放氮：取代（Sandmeyer + 水解 + 脱氨）</h4>
+<div class="card">
+<div class="fb"><div class="t">Sandmeyer：Ar–N₂⁺ + Cu(I) 盐 → Ar–X + N₂↑</div>
+<img class="full" src="img/ch14_sandmeyer_cucl.svg" alt="Sandmeyer CuCl → 氯苯">
+<img class="full" src="img/ch14_sandmeyer_cubr.svg" alt="Sandmeyer CuBr → 溴苯">
+<img class="full" src="img/ch14_sandmeyer_cucn.svg" alt="Sandmeyer CuCN → 苯甲腈">
+<p><strong>CuCl → 氯苯、CuBr → 溴苯、CuCN → 苯甲腈</strong>（引入 –CN，后续可水解成 –COOH 或还原成 –CH₂NH₂）。机理是 Cu(I) 催化的单电子/自由基过程。</p></div>
+
+<div class="fb"><div class="t">其它放氮去向（不需 Cu）</div>
+<img class="full" src="img/ch14_diazo_ki.svg" alt="KI → 碘苯">
+<img class="full" src="img/ch14_diazo_hydrolysis.svg" alt="H2O/Δ → 苯酚 (水解)">
+<img class="full" src="img/ch14_diazo_h3po2.svg" alt="H3PO2 → 苯 (脱氨)">
+<table>
+<tr><th>试剂</th><th>产物</th><th>用途</th></tr>
+<tr><td><strong>KI</strong>（不需 Cu）</td><td>Ar–I 碘苯</td><td>引入碘（Ar–I 直接卤代很难）</td></tr>
+<tr><td><strong>HBF₄, Δ</strong>（Schiemann）</td><td>Ar–F 氟苯</td><td>引入氟（唯一可行路）</td></tr>
+<tr><td><strong>H₃O⁺ / H₂O, Δ</strong>（水解）</td><td>Ar–OH 苯酚</td><td>由苯胺造酚的经典路</td></tr>
+<tr><td><strong>H₃PO₂</strong>（次磷酸，脱氨）</td><td>Ar–H 苯</td><td>"先用 –NH₂ 定位、做完再去掉"</td></tr>
+</table></div>
+<div class="tip"><strong>–NH₂ 当"临时定位 / 占位基"</strong>：先用强活化的氨基把取代基导到指定位置，最后用 <strong>重氮化 + H₃PO₂</strong> 把氨基整个抹掉（变 H）。这是合成里极常用的一招。</div>
+</div>
+
+<h4 id="k6c">③ 留氮：偶联（→ 偶氮染料）</h4>
+<div class="card">
+<div class="fb"><div class="t">Ar–N₂⁺ + 富电子芳烃（酚 / 芳胺）→ 偶氮化合物 Ar–N=N–Ar′</div>
+<img class="full" src="img/ch14_coupling_phenol.svg" alt="重氮盐 + 苯酚 → 对羟基偶氮苯">
+<img class="full" src="img/ch14_coupling_amine.svg" alt="重氮盐 + N,N-二甲基苯胺 → 甲基橙骨架">
+<img class="med" src="img/ch14_azo_chromophore.svg" alt="偶氮基 -N=N- 发色团">
+<p>这是一次<strong>亲电芳香取代（EAS）</strong>：Ar–N₂⁺ 当亲电试剂，进攻富电子芳环的<strong>对位</strong>（对位被占则邻位）。<strong>不放 N₂</strong>，N 全保留在 –N=N– 偶氮基里。</p>
+<p>偶氮基 <strong>–N=N–</strong> 与两侧芳环大共轭 → 是<strong>发色团</strong>，产物有鲜艳颜色，是<strong>偶氮染料 / 酸碱指示剂</strong>（如甲基橙、刚果红）的核心。</p></div>
+<div class="warn">⚠️ <strong>偶联只对强活化芳环（酚 / 芳胺）</strong>有效（重氮盐亲电性不强，普通苯打不动）。⚠️ <strong>条件</strong>：与酚偶联在<strong>弱碱</strong>性（让酚变成更活泼的酚氧负离子）；与芳胺偶联在<strong>弱酸</strong>性（既不把胺质子化失活、又保证重氮盐稳定）。⚠️ 取代类放 N₂、偶联类不放 N₂。</div>
+</div>
+
+<!-- ================ 14.7 合成应用 ================ -->
+<h3 id="k7">14.7 合成应用 — 重氮盐"中转站"思路</h3>
+<div class="card">
+<p>本章最常考的合成题，几乎都靠"<strong>苯胺 → 重氮盐 → 换成各种基团</strong>"这条中转链。苯环上很多基团（OH、F、I、CN）<strong>无法直接 EAS 引入</strong>，但都能通过重氮盐"换"上去。</p>
+
+<div class="fb"><div class="t">由苯造苯酚（经苯胺中转）</div>
+<p>苯 <span style="font-family:monospace;">──HNO₃/H₂SO₄──►</span> 硝基苯 <span style="font-family:monospace;">──Fe/HCl──►</span> 苯胺 <span style="font-family:monospace;">──NaNO₂/HCl,0–5℃──►</span> 苯重氮盐 <span style="font-family:monospace;">──H₃O⁺,Δ──►</span> <strong>苯酚</strong></p></div>
+
+<div class="fb"><div class="t">由苯胺造溴苯 / 氟苯 / 碘苯 / 苯甲腈</div>
+<p>苯胺 → 重氮盐，再分别用 <strong>CuBr→溴苯、HBF₄/Δ→氟苯、KI→碘苯、CuCN→苯甲腈</strong>。</p></div>
+
+<div class="ex"><strong>例题：由苯合成 1,3,5-三溴苯</strong>（–NH₂ 当临时定位基的经典）
+<details><summary>展开思路</summary><div class="sol">
+<p>直接溴代苯只能得到一溴/二溴（邻对位定位）。借助苯胺的强活化邻对位定位：</p>
+<ol>
+<li>苯 → 硝化 → 还原 → <strong>苯胺</strong>（–NH₂ 强活化，定位邻对位）。</li>
+<li>苯胺 + 过量 Br₂/H₂O → <strong>2,4,6-三溴苯胺</strong>（三个 o/p 位全溴代）。</li>
+<li>重氮化 (NaNO₂/HCl, 0–5℃) → 2,4,6-三溴苯重氮盐。</li>
+<li><strong>H₃PO₂（脱氨）</strong>→ <strong>1,3,5-三溴苯</strong>（把定位用的氨基抹掉）。</li>
+</ol>
+<p><strong>套路</strong>：氨基先把溴导到对称的 1,3,5 位置，用完再用重氮盐 + H₃PO₂ 去掉。</p>
+</div></details></div>
+
+<div class="ex"><strong>例题：增碳制伯胺</strong>（1-溴丁烷 → 戊胺）
+<details><summary>展开思路</summary><div class="sol">
+<p>C₄H₉Br <span style="font-family:monospace;">──NaCN(SN2)──►</span> C₄H₉CN（丁腈，<strong>增 1 碳</strong>）<span style="font-family:monospace;">──LiAlH₄──►</span> <strong>C₄H₉CH₂NH₂ 戊胺</strong></p>
+<p>对比：若要<strong>不增碳</strong>得伯胺，用 Gabriel（1-溴丁烷 → 正丁胺）。</p>
+</div></details></div>
+</div>
+
+<!-- ================ 14.8 鉴别方法 ================ -->
+<h3 id="k8">14.8 鉴别方法</h3>
+<div class="card">
+<div class="fb"><div class="t">胺的鉴别两大法宝</div>
+<table>
+<tr><th>方法</th><th>区分对象</th><th>现象</th></tr>
+<tr><td><strong>Hinsberg（苯磺酰氯 + NaOH）</strong></td><td>1° / 2° / 3° 胺</td><td>1° 溶 NaOH；2° 不溶沉淀；3° 不反应</td></tr>
+<tr><td><strong>HNO₂（NaNO₂/HCl, 0–5℃）</strong></td><td>脂/芳 × 1°/2°/3°</td><td>脂 1° 放 N₂↑；芳 1° 成重氮盐；2° 黄色亚硝胺；芳 3° 对位绿</td></tr>
+<tr><td>是否溶于稀盐酸</td><td>胺 vs 非碱性物</td><td>胺（碱）成盐溶于稀 HCl，再加碱又析出</td></tr>
+<tr><td>FeCl₃ / 溴水</td><td>区分胺与酚</td><td>酚显色/沉淀；苯胺也被溴水多溴（2,4,6-三溴苯胺白沉，需配合区分）</td></tr>
+</table></div>
+
+<div class="ex"><strong>实战</strong>：鉴别 正丁胺（脂 1°）、二乙胺（2°）、三乙胺（3°）
+<details><summary>方案</summary><div class="sol">
+<p>各加 NaNO₂/HCl（冷，0–5℃）：</p>
+<ul>
+<li><strong>正丁胺</strong> → <strong>冒 N₂ 气泡</strong>（脂肪 1° 胺重氮盐立即分解放氮）</li>
+<li><strong>二乙胺</strong> → <strong>黄色油状亚硝胺</strong></li>
+<li><strong>三乙胺</strong> → 无明显现象（只成盐）</li>
+</ul>
+<p>或用 Hinsberg 一步分级：正丁胺溶 NaOH、二乙胺不溶沉淀、三乙胺不反应。</p>
+</div></details></div>
+
+<div class="ex"><strong>实战</strong>：鉴别 苯胺、N-甲基苯胺、N,N-二甲基苯胺
+<details><summary>方案</summary><div class="sol">
+<p>加 NaNO₂/HCl（冷）：</p>
+<ul>
+<li><strong>苯胺</strong>（芳 1°）→ 生成稳定重氮盐（再加 β-萘酚/碱可偶联显色证实）</li>
+<li><strong>N-甲基苯胺</strong>（2°）→ 黄色油状亚硝胺</li>
+<li><strong>N,N-二甲基苯胺</strong>（芳 3°）→ <strong>对位 C-亚硝化得绿色固体</strong></li>
+</ul>
+</div></details></div>
+</div>
+
+<!-- ================ 反应类型总表 ================ -->
+<h2 id="alltable">反应类型总表（一页速览）</h2>
+<div class="card">
+<table style="font-size:.92em;">
+<tr><th>反应</th><th>试剂 / 条件</th><th>产物 / 要点</th></tr>
+<tr><td>成盐（碱性）</td><td>+ HCl</td><td>铵盐（脂肪胺&gt;氨&gt;芳胺）</td></tr>
+<tr><td>烷基化</td><td>+ RX</td><td>升一级胺；过量 → 季铵盐（多烷基化）</td></tr>
+<tr><td>酰化</td><td>+ (RCO)₂O / RCOCl</td><td>1°/2° → 酰胺；3° 不反应；苯胺保护用</td></tr>
+<tr><td>磺酰化（Hinsberg）</td><td>+ PhSO₂Cl / NaOH</td><td>1° 溶 / 2° 沉 / 3° 不反应</td></tr>
+<tr><td>与 HNO₂</td><td>NaNO₂/HCl, 0–5℃</td><td>脂 1° 放 N₂；芳 1° 重氮盐；2° 亚硝胺；芳 3° 对位绿</td></tr>
+<tr><td>穷尽甲基化 + 消除</td><td>过量 CH₃I → Ag₂O/H₂O → Δ</td><td>Hofmann 烯（少取代，反 Saytzeff）+ 三甲胺</td></tr>
+<tr><td>重氮化</td><td>ArNH₂ + NaNO₂/HCl, 0–5℃</td><td>Ar–N₂⁺（万能中转站）</td></tr>
+<tr><td>Sandmeyer</td><td>ArN₂⁺ + CuCl/CuBr/CuCN</td><td>Ar–Cl / Ar–Br / Ar–CN（放 N₂）</td></tr>
+<tr><td>重氮盐其它放氮</td><td>KI / HBF₄Δ / H₂OΔ / H₃PO₂</td><td>Ar–I / Ar–F / Ar–OH / Ar–H</td></tr>
+<tr><td>偶联</td><td>ArN₂⁺ + 酚(弱碱)/芳胺(弱酸)</td><td>偶氮染料 Ar–N=N–Ar′（留 N₂，进对位）</td></tr>
+<tr><td>制备：还原硝基</td><td>Fe/HCl, Sn/HCl, H₂/Ni</td><td>Ar–NO₂ → Ar–NH₂（芳胺主路）</td></tr>
+<tr><td>制备：还原腈</td><td>LiAlH₄ / H₂/Ni</td><td>R–CN → RCH₂NH₂（+1 碳）</td></tr>
+<tr><td>制备：还原胺化</td><td>R₂C=O + 胺 → NaBH₃CN</td><td>控级数得 1°/2°/3° 胺</td></tr>
+<tr><td>制备：Gabriel</td><td>酰亚胺K盐 + RX → 水解</td><td>纯 1° 胺</td></tr>
+</table>
+</div>
+
+<!-- ================ 自检 10 题 ================ -->
+<h2 id="selftest">📝 自检 10 题（先想答案再展开）</h2>
+<div class="tip">每道题先关掉答案自己想 30 秒，再点击展开看答案。这 10 题覆盖了本章所有高频考点。</div>
+
+<div class="ex"><strong>自检 1</strong>：把 二甲胺、氨、苯胺、对硝基苯胺 按碱性从强到弱排列。
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>二甲胺 &gt; 氨 &gt; 苯胺 &gt; 对硝基苯胺</strong></p>
+<p>大类：脂肪胺（二甲胺，2°）&gt; 氨 &gt; 芳胺。两个芳胺里苯胺 &gt; 对硝基苯胺（–NO₂ 吸电子把 N 孤对进一步抽离，碱性更弱）。</p>
+<p>→ 详见 <a href="#k2">14.2</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 2</strong>：(CH₃)₃C–NH₂（叔丁胺）是几级胺？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>伯胺 (1°)</strong>！胺的级数看 <strong>N 上连几个烃基</strong>——这里 N 只连 1 个（叔丁基），所以是 1° 胺。别被"叔丁基"里的"叔"骗了（那说的是碳的级数）。</p>
+<p>→ 详见 <a href="#k1">14.1</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 3</strong>：为什么不能用 RX + 过量 NH₃ 干净地制 1° 胺？该用什么？
+<details><summary>展开答案</summary><div class="sol">
+<p>因为会<strong>过度（多）烷基化</strong>：生成的 1° 胺比氨更亲核，会继续被 RX 烷基化成 2°、3°、季铵盐的混合物，停不下来。</p>
+<p>要纯 1° 胺用 <strong>Gabriel 合成</strong>（酰亚胺一次只接一个 R）；要控级数用<strong>还原胺化</strong>。</p>
+<p>→ 详见 <a href="#k3d">14.3④</a> + <a href="#k3c">14.3③</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 4</strong>：丁腈 (CH₃CH₂CH₂CN) 用 LiAlH₄ 还原得什么？碳数变了吗？
+<details><summary>展开答案</summary><div class="sol">
+<p>得 <strong>丁胺 CH₃CH₂CH₂CH₂NH₂</strong>，<strong>增 1 个碳</strong>（腈的 C 进了 –CH₂NH₂）。</p>
+<p>对比：酰胺 RCONH₂ 还原成 RCH₂NH₂ <strong>不增碳</strong>。这是"增不增碳"的经典考点。</p>
+<p>→ 详见 <a href="#k3b">14.3②</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 5</strong>：用 Hinsberg 试验（苯磺酰氯/NaOH）怎么一步分清 1°/2°/3° 胺？
+<details><summary>展开答案</summary><div class="sol">
+<ul>
+<li><strong>1° 胺</strong>：生成 N-单取代磺酰胺，<strong>还剩 1 个酸性 N–H</strong> → <strong>溶于 NaOH</strong>（清亮）</li>
+<li><strong>2° 胺</strong>：生成 N,N-二取代磺酰胺，<strong>无 N–H</strong> → <strong>不溶 NaOH</strong>（沉淀/油状）</li>
+<li><strong>3° 胺</strong>：N 无 H，<strong>不反应</strong>（静置回收）</li>
+</ul>
+<p>→ 详见 <a href="#k4b">14.4②</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 6</strong>：正丁胺、二乙胺、三乙胺 各加 NaNO₂/HCl（冷）有什么现象？
+<details><summary>展开答案</summary><div class="sol">
+<ul>
+<li><strong>正丁胺</strong>（脂 1°）→ <strong>冒 N₂ 气泡</strong>（重氮盐立即分解）</li>
+<li><strong>二乙胺</strong>（2°）→ <strong>黄色油状亚硝胺</strong></li>
+<li><strong>三乙胺</strong>（3°）→ 无明显现象（只成盐）</li>
+</ul>
+<p>⚠️ 脂肪 1° 胺放 N₂，但芳香 1° 胺<strong>不放</strong>（成稳定重氮盐）。</p>
+<p>→ 详见 <a href="#k4c">14.4③</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 7</strong>：2-丁胺经穷尽甲基化 → 季铵碱 → 加热，主产物是 1-丁烯还是 2-丁烯？为什么？
+<details><summary>展开答案</summary><div class="sol">
+<p>主产物是 <strong>1-丁烯（Hofmann 取向，少取代）</strong>，不是 2-丁烯（Saytzeff，多取代）。</p>
+<p><strong>原因</strong>：离去基 –N⁺(CH₃)₃ 又大又带正电，E2 时大位阻迫使碱去拔<strong>位阻最小的端位 β-H</strong> → 给少取代烯。这与普通卤代烃的 Zaitsev 相反。</p>
+<p>⚠️ 必须先 Ag₂O/H₂O 把 I⁻ 换成 OH⁻ 才能消除。</p>
+<p>→ 详见 <a href="#k5">14.5</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 8</strong>：苯胺重氮化的温度要求是什么？写出重氮盐的 3 大去向。
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>必须 0–5℃</strong>（高于此芳基重氮盐分解，提前水解成酚）。</p>
+<p>三大去向：</p>
+<ol>
+<li><strong>取代放 N₂</strong>：CuCl/CuBr/CuCN(Sandmeyer)→Ar–Cl/Br/CN；KI→Ar–I；H₃PO₂→Ar–H；H₂O/Δ→Ar–OH。</li>
+<li><strong>偶联留 N₂</strong>：+ 酚/芳胺 → 偶氮染料 Ar–N=N–Ar′。</li>
+</ol>
+<p>→ 详见 <a href="#k6">14.6</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 9</strong>：由苯怎么造苯酚？由苯怎么造 1,3,5-三溴苯？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>造苯酚</strong>：苯 →(硝化)→ 硝基苯 →(Fe/HCl)→ 苯胺 →(NaNO₂/HCl,0–5℃)→ 重氮盐 →(H₃O⁺,Δ 水解)→ 苯酚。</p>
+<p><strong>造 1,3,5-三溴苯</strong>：苯 → 苯胺 →(过量 Br₂/H₂O)→ 2,4,6-三溴苯胺 →(重氮化)→ →(H₃PO₂ 脱氨)→ 1,3,5-三溴苯。氨基当临时定位基，用完抹掉。</p>
+<p>→ 详见 <a href="#k7">14.7</a></p>
+</div></details></div>
+
+<div class="ex"><strong>自检 10</strong>：为什么芳胺（苯胺）碱性比脂肪胺弱很多？酰胺呢？
+<details><summary>展开答案</summary><div class="sol">
+<p><strong>苯胺弱</strong>：N 孤对部分进入苯环大 π 共轭离域，"分给"了苯环 → 给质子能力大降（这是<strong>共振离域</strong>，不是诱导）。</p>
+<p><strong>酰胺几乎中性</strong>：N 孤对被相邻羰基拉去共轭（N–C=O ↔ N⁺=C–O⁻），N 上几乎没有可给质子的电子 → 别把酰胺当普通胺。</p>
+<p>→ 详见 <a href="#k2">14.2</a></p>
+</div></details></div>
+
+<!-- ================ 考前提醒 ================ -->
+<h2 id="tips">考前提醒</h2>
+
+<div class="warn"><strong>碱性序（水溶液）</strong>：2°&gt;1°≈3°&gt;NH₃&gt;芳胺&gt;酰胺。脂肪胺&gt;氨&gt;芳胺。别套气相 "3°&gt;2°&gt;1°"。苯胺弱是<strong>孤对共轭离域</strong>。</div>
+
+<div class="warn"><strong>胺的级数看 N 上烃基个数</strong>（不是看碳级数）。(CH₃)₃C–NH₂ 是<strong>伯胺</strong>。</div>
+
+<div class="warn"><strong>重氮化必须 0–5℃</strong>；重氮盐<strong>放氮换基</strong>（Sandmeyer CuCl/Br/CN、KI、H₃PO₂、H₂O）或<strong>留氮偶联</strong>（酚/芳胺 → 偶氮染料，进对位）。重氮盐是芳胺独有。</div>
+
+<div class="warn"><strong>Hofmann 消除给少取代烯（反 Saytzeff）</strong>——离去基 –NR₃⁺ 又大又带正电，E2 拔最易接近的端位 β-H。必须 Ag₂O/H₂O 换成 OH⁻ 才能加热消除。</div>
+
+<div class="warn"><strong>Hinsberg（苯磺酰氯）</strong>：1° 溶 NaOH（剩酸性 N–H）/ 2° 不溶沉淀（无 N–H）/ 3° 不反应（无 H）。</div>
+
+<div class="warn"><strong>HNO₂ 鉴别</strong>：脂 1° 放 N₂↑；芳 1° 成稳定重氮盐；2° 黄色亚硝胺；脂 3° 无、芳 3° 对位 C-亚硝化绿。脂/芳 1° 的差别（放不放 N₂）必考。</div>
+
+<div class="warn"><strong>制备增不增碳</strong>：腈 R–CN 还原 +1 碳；酰胺/硝基/还原胺化不增碳。LiAlH₄ 强（还原腈/酰胺）、NaBH₄ 弱（动不了）。</div>
+
+<div class="warn"><strong>造纯 1° 胺</strong>用 Gabriel 或还原胺化，<strong>别用 RX+NH₃</strong>（多烷基化得混合物）。</div>
+
+<div class="warn"><strong>苯胺当合成中转 / 定位</strong>：苯环上 OH/F/I/CN 难直接 EAS 引入 → 经苯胺→重氮盐"换"上去；–NH₂ 还能当临时定位基（用完 H₃PO₂ 脱掉）。</div>
+
+<script defer src="toc.js"></script>
+<script src="auth.js"></script>
+<script src="progress.js"></script>
+</body>
+</html>

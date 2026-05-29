@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='380px' height='230px' viewBox='0 0 380 230'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='380.0' height='230.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 76.8,195.5 L 170.1,141.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 178.2,146.3 L 178.2,99.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 178.2,99.2 L 178.2,52.2' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 162.0,146.3 L 162.0,99.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 162.0,99.2 L 162.0,52.2' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-1 atom-3' d='M 170.1,141.6 L 208.5,163.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-1 atom-3' d='M 208.5,163.8 L 246.9,186.0' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 165.4,144.3 L 170.1,141.6 L 172.0,142.7' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path class='atom-2' d='M 157.1 33.9
+Q 157.1 27.1, 160.5 23.3
+Q 163.8 19.5, 170.1 19.5
+Q 176.4 19.5, 179.8 23.3
+Q 183.1 27.1, 183.1 33.9
+Q 183.1 40.8, 179.7 44.7
+Q 176.3 48.6, 170.1 48.6
+Q 163.9 48.6, 160.5 44.7
+Q 157.1 40.9, 157.1 33.9
+M 170.1 45.4
+Q 174.4 45.4, 176.8 42.5
+Q 179.1 39.6, 179.1 33.9
+Q 179.1 28.4, 176.8 25.6
+Q 174.4 22.7, 170.1 22.7
+Q 165.8 22.7, 163.4 25.5
+Q 161.1 28.3, 161.1 33.9
+Q 161.1 39.7, 163.4 42.5
+Q 165.8 45.4, 170.1 45.4
+' fill='#FF0000'/>
+<path class='atom-3' d='M 250.5 195.6
+Q 250.5 188.8, 253.8 185.0
+Q 257.2 181.2, 263.5 181.2
+Q 269.7 181.2, 273.1 185.0
+Q 276.5 188.8, 276.5 195.6
+Q 276.5 202.5, 273.1 206.4
+Q 269.7 210.3, 263.5 210.3
+Q 257.2 210.3, 253.8 206.4
+Q 250.5 202.5, 250.5 195.6
+M 263.5 207.1
+Q 267.8 207.1, 270.1 204.2
+Q 272.5 201.3, 272.5 195.6
+Q 272.5 190.0, 270.1 187.2
+Q 267.8 184.4, 263.5 184.4
+Q 259.1 184.4, 256.8 187.2
+Q 254.5 190.0, 254.5 195.6
+Q 254.5 201.3, 256.8 204.2
+Q 259.1 207.1, 263.5 207.1
+' fill='#FF0000'/>
+<path class='atom-3' d='M 280.9 181.5
+L 284.7 181.5
+L 284.7 193.5
+L 299.2 193.5
+L 299.2 181.5
+L 303.0 181.5
+L 303.0 209.8
+L 299.2 209.8
+L 299.2 196.7
+L 284.7 196.7
+L 284.7 209.8
+L 280.9 209.8
+L 280.9 181.5
+' fill='#FF0000'/>
+<text x="190" y="222" text-anchor="middle" font-size="18" font-family="Microsoft YaHei, SimHei, SimSun, Segoe UI Symbol, DejaVu Sans, sans-serif" fill="black">乙酸: NaHCO3 中放 CO2 气泡 (羧酸通性, 区别于酚)</text></svg>
