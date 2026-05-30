@@ -361,6 +361,59 @@ x - (1-x) = 0.192 → x = 0.596</p>
 <p>共<strong>3种</strong>立体异构体（而非$2^2=4$种），2种有旋光性。</p>
 </div></details></div>
 
+<!-- ==================== 强化：真题原型 + 必背 + 易错（2026-05-30 增补，源：真题考点全解.md A卷） ==================== -->
+<h2 id="exam-master">★ 真题原型例题（A 卷实证，立体化学贯穿全卷）</h2>
+
+<div class="ex"><strong>真题原型 1（A 卷一-4，命名/写结构）</strong>：给出 Fischer 投影式，命名为 <strong>(2R,3R)-戊-2,3-二醇</strong>。
+<details open><summary>完整解法</summary><div class="sol">
+<p class="st">考点：Fischer 投影式逐个手性碳定 R/S（横前竖后规则的直接应用）。</p>
+<p><strong>第①步</strong>：识别主链与手性碳。戊-2,3-二醇 CH₃−CH(OH)−CH(OH)−CH₂... 不对，主链是戊烷 C5，C2 与 C3 各挂一个 OH，是<strong>两个手性碳</strong>。</p>
+<p><strong>第②步（定 C2）</strong>：C2 上挂 OH、C3端(−CHOH−CH₃,即含O的碳)、CH₃(C1)、H。CIP 排序 <strong>OH &gt; C3(连O) &gt; C1(CH₃) &gt; H</strong>。在 Fischer 式中先用"固定一基转其余三个"把 H 转到竖线（朝后），再看 a→b→c 旋向；若 H 仍在横线（朝前）则<strong>判完取反</strong>。本题结果为 <strong>R</strong>。</p>
+<p><strong>第③步（定 C3）</strong>：C3 上挂 OH、C2端(连O) 、C4(−CH₂CH₃ 即 C2H5)、H。CIP 排序 <strong>OH &gt; C2(连O) &gt; C4(CH₂CH₃) &gt; H</strong>，同法判得 <strong>R</strong>。</p>
+<p><strong>结论</strong>：合并写作 <strong>(2R,3R)-戊-2,3-二醇</strong>。$2$ 个不同手性碳 → 理论 $2^2=4$ 个异构体（2R3R / 2S3S / 2R3S / 2S3R），其中 2R3R 与 2S3S 互为对映体。</p>
+</div></details></div>
+
+<div class="ex"><strong>真题原型 2（A 卷二-1，选择：无手性的化合物）</strong>：四个选项中选"<strong>没有手性</strong>"的一个。
+<details open><summary>完整解法</summary><div class="sol">
+<p class="st">考点：手性判据 = 找对称面(σ)或对称中心(i)，<strong>有就无手性</strong>。</p>
+<p><strong>判法</strong>：逐个画分子，找<strong>对称面/对称中心</strong>。答案 = 那个<strong>有对称面</strong>的化合物（B）。</p>
+<p><strong>关键陷阱</strong>：<strong>"有手性碳 ≠ 有手性"</strong>。内消旋体(meso，如 meso-酒石酸 / meso-2,3-二溴丁烷)虽然<strong>有手性碳</strong>，但因分子内有对称面 → <strong>无手性、不旋光</strong>，常被设成"看着像手性其实不是"的诱饵。</p>
+</div></details></div>
+
+<div class="ex"><strong>真题原型 3（A 卷二-12，选择：手性碘化物在丙酮/水中转化）</strong>：手性 PhCH(C₂H₅)I 在丙酮/水中转为相应的醇，产物构型如何？
+<details open><summary>完整解法</summary><div class="sol">
+<p class="st">考点：SN2 的立体化学结论（虽属 ch9，但立体化学结果在 ch4 的语境里高频）。</p>
+<p><strong>分析</strong>：水作亲核体，从离去基 I 的<strong>背面进攻</strong>该手性碳 → <strong>SN2 / Walden 翻转</strong>，新生成的醇<strong>构型翻转</strong>（答案钉死为翻转 B）。</p>
+<p><strong>立体化学三条铁律</strong>：$S_N2$ = <strong>Walden 翻转</strong>；$S_N1$ = <strong>外消旋</strong>（平面 C⁺ 两面等概率进攻）；$E2$ = <strong>反式共平面</strong>。</p>
+</div></details></div>
+
+<h2 id="must-know">★ 必背块（立体化学默写线）</h2>
+<div class="card">
+<div class="fb"><div class="t">R/S 判定三步（CIP）</div>
+<p>① CIP 排序 a&gt;b&gt;c&gt;d → ② 最小基(通常 H)朝后 → ③ a→b→c <strong>顺时针 = R，逆时针 = S</strong>。</p>
+<p><strong>Fischer 横键朝前</strong>：若 H 在横线上（朝观察者），按原位判完旋向后<strong>取反</strong>（R↔S）。</p>
+</div>
+<div class="fb"><div class="t">Fischer 操作守恒律</div>
+<p>旋 $180°$ = 同一物；旋 $90°$ = 对映体；交换任意两基 = 对映体；交换两次 = 同一物；固定一基转其余三个 = 同一物；<strong>禁止翻面</strong>。</p>
+</div>
+<div class="fb"><div class="t">异构体计数与旋光判据</div>
+<p>$n$ 个<strong>不同</strong>手性碳 → 最多 $2^n$ 个旋光异构体；含<strong>相同取代</strong>手性碳(A−A 型) → 出现内消旋体，实际数 $&lt; 2^n$。</p>
+<p>内消旋体 $[\alpha]=0$（分子内对称抵消，不可拆分）；外消旋体 $[\alpha]=0$（等量对映体混合，可拆分）。</p>
+</div>
+<div class="fb"><div class="t">ee% 与比旋光度</div>
+<p>$$ee\% = \frac{|[\alpha]_{\text{obs}}|}{|[\alpha]_{\text{pure}}|}\times 100\%$$</p>
+<p>比旋光度 $[\alpha]_\lambda^T=\dfrac{\alpha}{c\times l}$ 是物质<strong>固有常数</strong>，与浓度/管长无关。</p>
+</div>
+<div class="fb"><div class="t">无手性碳也可有手性（来源清单）</div>
+<p>轴手性（丙二烯 C=C=C 两端不同、联苯阻转异构）+ 螺环手性 + 杂原子手性（季铵 $\text{N}^+abcd$、亚砜）。判据始终是<strong>找对称面，无对称面即有手性</strong>。</p>
+</div>
+</div>
+
+<h2 id="pitfalls">★ 易错点（立体化学陷阱）</h2>
+<div class="warn"><strong>易错 1：有手性碳 ≠ 有手性</strong>。内消旋体(meso)有手性碳但有对称面 → 无手性、不旋光。这是选择题"无手性化合物"的标准诱饵。</div>
+<div class="warn"><strong>易错 2：D/L 与 (+)/(−) 无关，D/L 与 R/S 也无固定对应</strong>。D/L 只看 Fischer 最下手性碳 OH 在左还是右；旋光方向只能实测，R 不一定是右旋。</div>
+<div class="warn"><strong>易错 3：Fischer 横键朝前，所见旋向要取反</strong>。判 R/S 时若没把 H 转到竖线（朝后）就直接读，结果会与真值相反。对称轴 $C_n$ <strong>不能</strong>单独判手性（酒石酸有 $C_2$ 轴仍有手性）。</div>
+
 <h2 id="tips">考前提醒</h2>
 <div class="warn"><strong>R/S判断必须熟练</strong>：CIP排序→d放后方→顺R逆S。若d不在后方，判完取反。</div>
 <div class="warn"><strong>Fischer投影式操作</strong>：180&deg;旋转=同一物质；90&deg;旋转=对映体；交换一对=对映体</div>
